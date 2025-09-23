@@ -1,0 +1,31 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "name": "Syed Shahbaz",
+      "role": "Founder & CEO",
+      "avatar": "/images/syed-shahbaz.jpg",
+      "bio": "Syed Shahbaz, with over 25 years of experience as a Senior Data Scientist, brings a wealth of expertise as a past Oracle ERP consultant and corporate trainer across global markets. His career spans roles in database administration, where he has excelled in implementing Oracle ERP solutions and guiding teams in big data architecture, AI/ML algorithms, and deep learning frameworks. Syed has mentored over 10,000 students globally and organized 1000+ workshops, emphasizing practical AI applications, and cloud computing solutions to advance technology education. At AI Buddy, founded by Syed Shahbaz, the vision is clear: democratize AI education for everyone. Syed's mission is to empower learners with the skills needed to thrive in the evolving tech landscape. By bridging theory with hands-on practice, AI Buddy prepares individuals and teams to innovate and lead in AI-driven industries. Syed Shahbaz's leadership ensures AI Buddy remains a hub for cutting-edge knowledge and practical insights, shaping the future of artificial intelligence education.",
+      "expertise": ["Data Science", "AI/ML", "Oracle ERP", "Big Data Architecture", "Deep Learning", "Corporate Training"],
+      "courses": ["AI/ML Fundamentals", "Data Science Mastery", "Oracle ERP Solutions", "Big Data Architecture"],
+      "social": {
+        "linkedin": "https://linkedin.com/in/syedshahbaz",
+        "website": "https://aibuddy.online"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Saba Roohi",
+      "role": "To be updated",
+      "avatar": "/images/saba-roohi.jpg",
+      "bio": "Details to be added later.",
+      "expertise": ["To be updated"],
+      "courses": ["To be updated"],
+      "social": {
+        "linkedin": "",
+        "website": ""
+      }
+    }
+  ]
+}
+

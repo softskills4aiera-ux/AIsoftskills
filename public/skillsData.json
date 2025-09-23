@@ -1,0 +1,173 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "title": "Communication Skills (Human)",
+      "description": "Master the art of effective communication in professional and personal settings",
+      "topics": [
+        "Active Listening",
+        "Public Speaking",
+        "Written Communication",
+        "Non-verbal Communication",
+        "Conflict Resolution",
+        "Presentation Skills"
+      ],
+      "topicColor": "blue",
+      "practiceExercises": [
+        "Role-play difficult conversations",
+        "Record and analyze your presentations",
+        "Practice active listening with a partner",
+        "Write professional emails and get feedback"
+      ],
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": 2,
+      "title": "Adaptive Learning & Lifelong Learning Skills",
+      "description": "Develop the ability to learn continuously and adapt to new challenges",
+      "topics": [
+        "Learning Strategies",
+        "Memory Techniques",
+        "Information Processing",
+        "Skill Transfer",
+        "Learning Agility",
+        "Continuous Improvement"
+      ],
+      "topicColor": "green",
+      "practiceExercises": [
+        "Learn a new skill every month",
+        "Use spaced repetition techniques",
+        "Teach others what you've learned",
+        "Reflect on your learning process"
+      ],
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": 3,
+      "title": "Prompt-Context Engineering (Machine)",
+      "description": "Learn to effectively communicate with AI systems and optimize prompts",
+      "topics": [
+        "Prompt Design",
+        "Context Management",
+        "AI Communication",
+        "Prompt Optimization",
+        "Bias Recognition",
+        "Ethical AI Use"
+      ],
+      "topicColor": "purple",
+      "practiceExercises": [
+        "Practice writing clear prompts",
+        "Test different prompt variations",
+        "Analyze AI responses critically",
+        "Learn prompt engineering frameworks"
+      ],
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": 4,
+      "title": "Critical Thinking & Problem Solving",
+      "description": "Develop analytical skills to solve complex problems systematically",
+      "topics": [
+        "Logical Reasoning",
+        "Problem Analysis",
+        "Creative Solutions",
+        "Decision Making",
+        "Risk Assessment",
+        "Root Cause Analysis"
+      ],
+      "topicColor": "yellow",
+      "practiceExercises": [
+        "Solve logic puzzles daily",
+        "Analyze case studies",
+        "Practice the 5 Whys technique",
+        "Evaluate arguments critically"
+      ],
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": 5,
+      "title": "Design Thinking (Creativity to Solve Problems)",
+      "description": "Apply creative problem-solving methodologies to innovate solutions",
+      "topics": [
+        "Empathy",
+        "Ideation",
+        "Prototyping",
+        "Testing",
+        "Iteration",
+        "User-Centered Design"
+      ],
+      "topicColor": "pink",
+      "practiceExercises": [
+        "Redesign everyday objects",
+        "Conduct user interviews",
+        "Create rapid prototypes",
+        "Facilitate design thinking workshops"
+      ],
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": 6,
+      "title": "Teamwork & Collaboration",
+      "description": "Excel in team environments and foster productive collaboration",
+      "topics": [
+        "Team Dynamics",
+        "Leadership",
+        "Conflict Management",
+        "Remote Collaboration",
+        "Cross-functional Teams",
+        "Team Building"
+      ],
+      "topicColor": "blue",
+      "practiceExercises": [
+        "Join cross-functional projects",
+        "Practice giving and receiving feedback",
+        "Lead team meetings",
+        "Participate in team building activities"
+      ],
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": 7,
+      "title": "Data-Driven Decision Making",
+      "description": "Make informed decisions based on data analysis and evidence",
+      "topics": [
+        "Data Analysis",
+        "Statistical Thinking",
+        "Data Visualization",
+        "Hypothesis Testing",
+        "Metrics & KPIs",
+        "Evidence-Based Decisions"
+      ],
+      "topicColor": "green",
+      "practiceExercises": [
+        "Analyze real datasets",
+        "Create data visualizations",
+        "Practice A/B testing",
+        "Learn basic statistics"
+      ],
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+      "id": 8,
+      "title": "Managing Mental & Physical Health",
+      "description": "Maintain well-being and resilience in professional environments",
+      "topics": [
+        "Stress Management",
+        "Work-Life Balance",
+        "Mental Health Awareness",
+        "Physical Wellness",
+        "Resilience Building",
+        "Mindfulness Practices"
+      ],
+      "topicColor": "red",
+      "practiceExercises": [
+        "Practice daily meditation",
+        "Establish healthy routines",
+        "Track your stress levels",
+        "Exercise regularly"
+      ],
+      "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    }
+  ]
+}
+
