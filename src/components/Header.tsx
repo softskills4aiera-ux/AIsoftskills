@@ -39,7 +39,7 @@ const Header: React.FC<HeaderProps> = ({ isLoggedIn, isAdmin, onLogin }) => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="text-3xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent leading-tight mb-2"
               >
-                AI-ERA Soft Skills Academy
+                Ai-ERA Soft Skills Academy
               </motion.h1>
               <motion.p 
                 initial={{ opacity: 0, x: -30, scale: 0.95 }}

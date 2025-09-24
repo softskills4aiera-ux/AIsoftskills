@@ -694,7 +694,7 @@ const LeadCaptureModal: React.FC<LeadCaptureModalProps> = ({
                     transition={{ delay: 0.5 }}
                     className="text-xs text-gray-500 dark:text-gray-400 text-center"
                   >
-                    By submitting this form, you agree to receive communications from Aiera Academy. 
+                    By submitting this form, you agree to receive communications from Ai-ERA Soft Skills Academy. 
                     We respect your privacy and will never share your information.
                   </motion.p>
                 </form>

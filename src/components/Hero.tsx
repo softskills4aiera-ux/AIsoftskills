@@ -75,7 +75,7 @@ const Hero: React.FC<HeroProps> = ({ isLoggedIn }) => {
                 className="text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6"
               >
                 Master the Skills of the{' '}
-                <span className="gradient-text">AI-ERA</span>
+                <span className="gradient-text">Ai-ERA</span>
               </motion.h1>
               <motion.p
                 initial={{ y: 20, opacity: 0 }}

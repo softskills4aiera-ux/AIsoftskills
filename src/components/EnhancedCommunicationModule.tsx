@@ -3013,8 +3013,8 @@ Learn more: https://aiera-softskills.com`;
       const currentSub = module1Subtopics[currentSubtopic];
       shareText = `🎉 ${userName} just completed the "${currentSub.title}" subtopic and earned the ${currentSub.badge.name} badge (${currentSub.badge.emoji})! ${currentSub.shareMessage} 
 
-Check out Aiera Soft Skills Academy for more learning opportunities: https://aiera-softskills.com`;
-      shareTitle = `${userName} completed ${currentSub.title} - Aiera Soft Skills Academy`;
+Check out Ai-ERA Soft Skills Academy for more learning opportunities: https://aiera-softskills.com`;
+      shareTitle = `${userName} completed ${currentSub.title} - Ai-ERA Soft Skills Academy`;
     }
     
     console.log('Share text:', shareText);
@@ -3087,7 +3087,7 @@ Best regards,
 ${userName}
 
 ---
-Learn more about Aiera Soft Skills Academy: https://aiera-softskills.com`;
+Learn more about Ai-ERA Soft Skills Academy: https://aiera-softskills.com`;
     } else {
       // Email subtopic completion
       const currentSub = module1Subtopics[currentSubtopic];
@@ -3098,7 +3098,7 @@ I'm excited to share that ${userName} just completed the "${currentSub.title}" s
 
 ${currentSub.badge.description}
 
-This achievement demonstrates progress in communication skills development through Aiera Soft Skills Academy. The program helps students master essential skills for academic success, career readiness, and personal growth.
+This achievement demonstrates progress in communication skills development through Ai-ERA Soft Skills Academy. The program helps students master essential skills for academic success, career readiness, and personal growth.
 
 Keep up the great work!
 
@@ -3106,7 +3106,7 @@ Best regards,
 ${userName}
 
 ---
-Learn more about Aiera Soft Skills Academy: https://aiera-softskills.com`;
+Learn more about Ai-ERA Soft Skills Academy: https://aiera-softskills.com`;
     }
     
     console.log('Email content:', { subject, body });

@@ -41,7 +41,7 @@ const downloadComprehensiveBrochure = (brochureData: BrochureData | null, userNa
   doc.rect(0, 0, pageWidth, pageHeight, 'F');
   
   doc.setTextColor(255, 255, 255); // White text
-  yPosition = addText('Aiera Soft Skills Academy', 20, 60, pageWidth - 40, 24, true);
+  yPosition = addText('Ai-ERA Soft Skills Academy', 20, 60, pageWidth - 40, 24, true);
   yPosition = addText('Empowering Future Leaders Through AI-Driven Learning', 20, yPosition, pageWidth - 40, 16, true);
   
   yPosition = 120;
@@ -195,11 +195,11 @@ const downloadComprehensiveBrochure = (brochureData: BrochureData | null, userNa
   yPosition += 20;
   
   // Footer
-  yPosition = addText('Thank you for your interest in Aiera Soft Skills Academy!', 20, yPosition, pageWidth - 40, 12, true);
+  yPosition = addText('Thank you for your interest in Ai-ERA Soft Skills Academy!', 20, yPosition, pageWidth - 40, 12, true);
   yPosition = addText('Start your journey to professional excellence today.', 20, yPosition, pageWidth - 40, 12);
 
   // Save the PDF
-  const fileName = `Aiera_Soft_Skills_Brochure_${userName.replace(/\s+/g, '_')}_${new Date().toISOString().slice(0, 10)}.pdf`;
+  const fileName = `Ai-ERA_Soft_Skills_Brochure_${userName.replace(/\s+/g, '_')}_${new Date().toISOString().slice(0, 10)}.pdf`;
   doc.save(fileName);
 };
 

@@ -58,7 +58,7 @@ const BrochureInstructors: React.FC<BrochureInstructorsProps> = ({
     if (!brochureData) return '';
     
     return `
-Aiera Soft Skills Academy
+Ai-ERA Soft Skills Academy
 ${brochureData.title}
 
 ${brochureData.description}
@@ -78,7 +78,7 @@ CONTACT INFORMATION:
 Email: info@aiera-softskills.com
 Website: https://aiera-softskills.com
 
-Thank you for your interest in Aiera Soft Skills Academy!
+Thank you for your interest in Ai-ERA Soft Skills Academy!
 This brochure was generated on ${new Date().toLocaleDateString()}.
     `.trim();
   };
@@ -121,7 +121,7 @@ This brochure was generated on ${new Date().toLocaleDateString()}.
     doc.rect(0, 0, pageWidth, pageHeight, 'F');
     
     doc.setTextColor(255, 255, 255); // White text
-    yPosition = addText('Aiera Soft Skills Academy', 20, 60, pageWidth - 40, 24, true);
+    yPosition = addText('Ai-ERA Soft Skills Academy', 20, 60, pageWidth - 40, 24, true);
     yPosition = addText('Empowering Future Leaders Through AI-Driven Learning', 20, yPosition, pageWidth - 40, 16, true);
     
     yPosition = 120;
@@ -275,7 +275,7 @@ This brochure was generated on ${new Date().toLocaleDateString()}.
     yPosition += 20;
     
     // Footer
-    yPosition = addText('Thank you for your interest in Aiera Soft Skills Academy!', 20, yPosition, pageWidth - 40, 12, true);
+    yPosition = addText('Thank you for your interest in Ai-ERA Soft Skills Academy!', 20, yPosition, pageWidth - 40, 12, true);
     yPosition = addText('Start your journey to professional excellence today.', 20, yPosition, pageWidth - 40, 12);
 
     // Save the PDF

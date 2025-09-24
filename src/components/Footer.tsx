@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
                 <span className="text-white font-bold text-2xl">A</span>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-white">AI-ERA</h3>
+                <h3 className="text-2xl font-bold text-white">Ai-ERA</h3>
                 <p className="text-gray-400">Soft Skills Academy</p>
               </div>
             </div>
@@ -159,6 +159,8 @@ const Footer: React.FC = () => {
                   softskills4aiera@gmail.com
                 </a>
               </motion.div>
+              {/* Phone Number - Commented out for now, easy to restore later */}
+              {/* 
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -175,6 +177,9 @@ const Footer: React.FC = () => {
                   +91 6304872757
                 </a>
               </motion.div>
+              */}
+              {/* Address - Commented out for now, easy to restore later */}
+              {/* 
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -196,6 +201,7 @@ const Footer: React.FC = () => {
                   <div className="text-xs text-gray-500 hover:text-neon-blue mt-1">📍 Click for directions</div>
                 </a>
               </motion.div>
+              */}
             </div>
           </motion.div>
         </div>
@@ -210,7 +216,7 @@ const Footer: React.FC = () => {
         >
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 AI-ERA Soft Skills Academy. All rights reserved.
+              © 2024 Ai-ERA Soft Skills Academy. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-neon-blue transition-colors duration-300">
