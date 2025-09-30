@@ -516,8 +516,6 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
   // Assessment handling
   const handleAssessmentAnswer = (questionId: number, answer: string) => {
     setAssessmentAnswers(prev => ({ ...prev, [questionId]: answer }));
-    console.log('Assessment answer set:', questionId, answer);
-    console.log('Current answers:', assessmentAnswers);
   };
 
   const calculateAssessmentScore = (): number => {
@@ -2146,38 +2144,33 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
             </div>
             <div className="space-y-6">
               {assessment.questions.map((question, index) => (
-                <div key={question.id} className="bg-gray-50 dark:bg-gray-700 rounded-xl p-6">
-                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                <div key={question.id} className="bg-gray-50 dark:bg-gray-700 rounded-xl p-8">
+                  <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
                     {index + 1}. {question.question}
                   </h4>
-                  <div className="space-y-3">
+                  <div className="space-y-4">
                     {question.options.map((option, optionIndex) => (
-                      <label key={optionIndex} className="flex items-center space-x-3 cursor-pointer">
+                      <label key={optionIndex} className="flex items-center space-x-4 cursor-pointer p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
                         <input
                           type="radio"
                           name={`assessment-${question.id}`}
                           value={option}
                           checked={assessmentAnswers[question.id] === option}
                           onChange={() => handleAssessmentAnswer(question.id, option)}
-                          className="w-4 h-4 text-blue-600"
+                          className="w-5 h-5 text-blue-600"
                         />
-                        <span className="text-gray-700 dark:text-gray-300">{option}</span>
+                        <span className="text-lg text-gray-700 dark:text-gray-300">{option}</span>
                       </label>
                     ))}
                   </div>
                   
                   {/* Show explanation if question has one and user has selected an answer */}
-                  {(() => {
-                    const hasExplanation = !!question.explanation;
-                    const hasAnswer = !!assessmentAnswers[question.id];
-                    console.log(`Q${question.id}: hasExplanation=${hasExplanation}, hasAnswer=${hasAnswer}, answer=${assessmentAnswers[question.id]}`);
-                    return hasExplanation && hasAnswer;
-                  })() && (
-                    <div className="mt-4 p-4 bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 rounded-lg">
-                      <p className="text-sm font-semibold text-blue-800 dark:text-blue-300 mb-2">
+                  {question.explanation && assessmentAnswers[question.id] && (
+                    <div className="mt-6 p-5 bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 rounded-lg">
+                      <p className="text-base font-bold text-blue-800 dark:text-blue-300 mb-3">
                         💡 Explanation:
                       </p>
-                      <p className="text-sm text-blue-700 dark:text-blue-200 leading-relaxed">
+                      <p className="text-lg text-blue-700 dark:text-blue-200 leading-relaxed">
                         {question.explanation}
                       </p>
                     </div>
