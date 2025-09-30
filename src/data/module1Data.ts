@@ -34,10 +34,10 @@ export interface SubtopicData {
     successCriteria?: string[];
     contexts?: {
       academic: {
-        title: string;
-        description: string;
-        instructions: string[];
-        successCriteria: string[];
+    title: string;
+    description: string;
+    instructions: string[];
+    successCriteria: string[];
       };
       professional: {
         title: string;
@@ -200,14 +200,14 @@ export const module1Data: SubtopicData[] = [
         academic: {
           title: "Study Group Active Listening",
           description: "Practice active listening during study group sessions",
-          instructions: [
+      instructions: [
             "Join a study group or create one with classmates",
             "During discussions, focus entirely on what others are saying",
             "Ask at least 3 clarifying questions per session",
             "Summarize what you heard before contributing your own ideas",
             "Reflect on how active listening improved the group dynamic"
-          ],
-          successCriteria: [
+      ],
+      successCriteria: [
             "Demonstrated full attention during group discussions",
             "Asked thoughtful, clarifying questions",
             "Successfully summarized others' points before adding your own",
@@ -234,14 +234,14 @@ export const module1Data: SubtopicData[] = [
         personal: {
           title: "Relationship Listening Practice",
           description: "Strengthen personal relationships through active listening",
-          instructions: [
+      instructions: [
             "Choose a family member or close friend for this challenge",
             "Have a conversation where you focus entirely on listening",
             "Ask open-ended questions to encourage deeper sharing",
             "Practice reflecting back what you heard",
             "Notice how this changes the quality of your relationship"
-          ],
-          successCriteria: [
+      ],
+      successCriteria: [
             "Demonstrated genuine interest in the other person's perspective",
             "Asked questions that encouraged deeper sharing",
             "Successfully reflected back what you heard",
@@ -281,60 +281,60 @@ export const module1Assessment: AssessmentData = {
   id: 'module1-assessment',
   title: 'Communication Skills Assessment',
   description: 'Comprehensive test covering all communication skills subtopics',
-  questions: [
+      questions: [
     // Questions from Active Listening (5 questions)
-    {
-      id: 1,
+        {
+          id: 1,
       question: "In a job interview, the interviewer asks about your experience with team projects. You should:",
-      options: [
+          options: [
         "Immediately start listing all your achievements",
         "Listen to the full question, pause, then provide a relevant example",
         "Ask them to repeat the question if you didn't hear it clearly",
         "Give a brief answer and ask about the company culture"
-      ],
-      correct: 1,
+          ],
+          correct: 1,
       explanation: "Active listening involves hearing the complete question before responding, which allows you to provide a more relevant and thoughtful answer."
-    },
-    {
-      id: 2,
+        },
+        {
+          id: 2,
       question: "During a group project meeting, your teammate is explaining their research. The best way to show engagement is:",
-      options: [
+          options: [
         "Nod while checking your phone",
         "Maintain eye contact and ask clarifying questions",
         "Interrupt to share your own ideas",
         "Take detailed notes without looking up"
-      ],
-      correct: 1,
+          ],
+          correct: 1,
       explanation: "Active listening requires full attention and engagement, demonstrated through eye contact and thoughtful questions."
-    },
-    {
-      id: 3,
+        },
+        {
+          id: 3,
       question: "Your friend is sharing a personal problem. The most supportive response is:",
-      options: [
+          options: [
         "Immediately offer solutions",
         "Listen fully, acknowledge their feelings, and ask what they need",
         "Change the subject to something positive",
         "Tell them to stop complaining"
-      ],
-      correct: 1,
+          ],
+          correct: 1,
       explanation: "Sometimes people need to be heard and understood before they can move forward. Acknowledging feelings shows empathy."
-    },
-    {
-      id: 4,
+        },
+        {
+          id: 4,
       question: "In a virtual meeting with poor connection, you miss some words. You should:",
-      options: [
+          options: [
         "Pretend you understand and figure it out later",
         "Ask for clarification on the key points you missed",
         "Wait for someone else to ask questions",
         "Send a private message to a colleague"
-      ],
-      correct: 1,
+          ],
+          correct: 1,
       explanation: "It's better to ask for clarification than to make assumptions. This shows professionalism and ensures understanding."
-    },
-    {
-      id: 5,
+        },
+        {
+          id: 5,
       question: "During a lecture, you're struggling to follow a complex explanation. The best approach is:",
-      options: [
+          options: [
         "Take notes on everything without asking questions",
         "Ask specific questions about unclear parts",
         "Wait until after class to ask questions",
@@ -348,61 +348,61 @@ export const module1Assessment: AssessmentData = {
     {
       id: 6,
       question: "You're presenting your final project to a class of 30 students. To manage nervousness, you should:",
-      options: [
+          options: [
         "Memorize your entire presentation word-for-word",
         "Practice with friends, focus on your message, and use breathing techniques",
         "Avoid eye contact to reduce anxiety",
         "Read directly from your slides"
-      ],
-      correct: 1,
+          ],
+          correct: 1,
       explanation: "Preparation, practice, and breathing techniques help manage nervousness while maintaining connection with your audience."
-    },
-    {
+        },
+        {
       id: 7,
       question: "During a job interview presentation, you notice the interviewer looking confused. You should:",
-      options: [
+          options: [
         "Continue with your planned presentation",
         "Pause, ask if they have questions, and clarify the confusing part",
         "Speed up to finish quickly",
         "Ignore their reaction and keep going"
-      ],
-      correct: 1,
+          ],
+          correct: 1,
       explanation: "Adapting to your audience's needs shows good communication skills and ensures your message is understood."
-    },
-    {
+        },
+        {
       id: 8,
       question: "You're giving a presentation about climate change to a mixed audience. The best approach is:",
-      options: [
+          options: [
         "Use only scientific terminology to sound professional",
         "Start with relatable examples, use clear language, and include visual aids",
         "Focus only on statistics and data",
         "Speak as quickly as possible to cover more content"
-      ],
-      correct: 1,
+          ],
+          correct: 1,
       explanation: "Effective presentations connect with the audience through relatable examples and clear communication."
-    },
-    {
+        },
+        {
       id: 9,
       question: "Your voice starts shaking during an important presentation. The best response is:",
-      options: [
+          options: [
         "Stop speaking and apologize",
         "Take a deep breath, slow down, and continue with confidence",
         "Speak louder to cover the shaking",
         "Rush through the rest quickly"
-      ],
-      correct: 1,
+          ],
+          correct: 1,
       explanation: "Managing nervousness with breathing and pacing shows professionalism and helps you regain control."
-    },
-    {
+        },
+        {
       id: 10,
       question: "When presenting virtually, the most important factor for engagement is:",
-      options: [
+          options: [
         "Having perfect lighting and background",
         "Maintaining eye contact with the camera and speaking clearly",
         "Using lots of animations in your slides",
         "Speaking as fast as possible to keep attention"
-      ],
-      correct: 1,
+          ],
+          correct: 1,
       explanation: "Virtual presentations require extra focus on eye contact and clear speech to maintain audience engagement."
     },
 
@@ -410,61 +410,61 @@ export const module1Assessment: AssessmentData = {
     {
       id: 11,
       question: "You need to email your professor about a grade dispute. The most professional approach is:",
-      options: [
+          options: [
         "Send an immediate angry email demanding an explanation",
         "Write a respectful email with specific examples and request a meeting",
         "Post about it on social media first",
         "Send a text message instead"
-      ],
-      correct: 1,
+          ],
+          correct: 1,
       explanation: "Professional written communication requires respect, specificity, and appropriate channels for serious matters."
-    },
-    {
+        },
+        {
       id: 12,
       question: "When writing a cover letter for a job application, you should:",
-      options: [
+          options: [
         "Use the same template for all applications",
         "Customize it for the specific role, highlight relevant skills, and show enthusiasm",
         "Keep it under 50 words",
         "Focus only on your academic achievements"
-      ],
-      correct: 1,
+          ],
+          correct: 1,
       explanation: "Effective cover letters are tailored to the specific role and demonstrate how your skills match their needs."
-    },
-    {
+        },
+        {
       id: 13,
       question: "You're writing a group project report. The best approach for collaboration is:",
-      options: [
+          options: [
         "Have one person write everything",
         "Assign sections, use shared documents, and review each other's work",
         "Write your part separately and combine at the end",
         "Use only bullet points"
-      ],
-      correct: 1,
+          ],
+          correct: 1,
       explanation: "Collaborative writing requires clear organization, shared tools, and peer review for quality and consistency."
-    },
-    {
+        },
+        {
       id: 14,
       question: "When writing a complaint email to a company, the most effective approach is:",
-      options: [
+          options: [
         "Use all caps and exclamation marks to show urgency",
         "Be specific about the problem, provide evidence, and suggest a solution",
         "Threaten legal action immediately",
         "Send multiple emails to different departments"
-      ],
-      correct: 1,
+          ],
+          correct: 1,
       explanation: "Professional complaint writing requires specificity, evidence, and constructive suggestions for resolution."
-    },
-    {
+        },
+        {
       id: 15,
       question: "You're writing a LinkedIn post about your internship experience. The best strategy is:",
-      options: [
+          options: [
         "Share only positive experiences",
         "Be authentic, share both challenges and learnings, and engage with comments",
         "Use only hashtags without text",
         "Copy someone else's successful post"
-      ],
-      correct: 1,
+          ],
+          correct: 1,
       explanation: "Authentic professional writing on social media builds credibility and meaningful connections."
     },
 
@@ -472,61 +472,61 @@ export const module1Assessment: AssessmentData = {
     {
       id: 16,
       question: "During a job interview, your body language should convey:",
-      options: [
+          options: [
         "Relaxation by slouching in your chair",
         "Confidence through good posture, appropriate eye contact, and open gestures",
         "Nervousness by fidgeting with your hands",
         "Disinterest by avoiding eye contact"
-      ],
-      correct: 1,
+          ],
+          correct: 1,
       explanation: "Professional body language demonstrates confidence, engagement, and respect for the interviewer."
-    },
-    {
+        },
+        {
       id: 17,
       question: "In a virtual meeting, the most important non-verbal element is:",
-      options: [
+          options: [
         "Having a perfect background",
         "Maintaining eye contact with the camera and appropriate facial expressions",
         "Wearing formal business attire",
         "Having perfect lighting"
-      ],
-      correct: 1,
+          ],
+          correct: 1,
       explanation: "Virtual communication relies heavily on facial expressions and eye contact to convey engagement and understanding."
-    },
-    {
+        },
+        {
       id: 18,
       question: "When giving a presentation, your gestures should:",
-      options: [
+          options: [
         "Be minimal to avoid distraction",
         "Emphasize key points naturally and help illustrate concepts",
         "Be large and dramatic for attention",
         "Follow a specific pattern regardless of content"
-      ],
-      correct: 1,
+          ],
+          correct: 1,
       explanation: "Effective gestures support your message and help the audience understand and remember key points."
-    },
-    {
+        },
+        {
       id: 19,
       question: "During a difficult conversation with a friend, your body language should:",
-      options: [
+          options: [
         "Show dominance by standing tall",
         "Be open and approachable, showing you're listening",
         "Cross your arms to show you're serious",
         "Avoid physical contact completely"
-      ],
-      correct: 1,
+          ],
+          correct: 1,
       explanation: "Supportive body language in personal conversations shows empathy and creates a safe space for discussion."
-    },
-    {
+        },
+        {
       id: 20,
       question: "When meeting someone for the first time, the most important non-verbal cue is:",
-      options: [
+          options: [
         "A firm handshake",
         "Genuine smile and appropriate eye contact",
         "Perfect posture",
         "Expensive clothing"
-      ],
-      correct: 1,
+          ],
+          correct: 1,
       explanation: "First impressions are most influenced by genuine warmth and engagement, not physical attributes."
     },
 

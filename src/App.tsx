@@ -6,13 +6,13 @@ import InstructorsSection from './components/InstructorsSection';
 import AIHero from './components/AIHero';
 import Footer from './components/Footer';
 import Module1Simple from './modules/Module1Simple';
-// import Module2 from './modules/Module2';
-import Module3 from './modules/Module3';
-import Module4 from './modules/Module4';
-import Module5 from './modules/Module5';
-import Module6 from './modules/Module6';
-import Module7 from './modules/Module7';
-import Module8 from './modules/Module8';
+import Module2New from './modules/Module2New';
+import Module3New from './modules/Module3New';
+import Module4New from './modules/Module4New';
+import Module5New from './modules/Module5New';
+import Module6New from './modules/Module6New';
+import Module7New from './modules/Module7New';
+import Module8New from './modules/Module8New';
 // import TeamworkModule from './components/modules/TeamworkModule';
 import CourseCatalog from './components/CourseCatalog';
 import { ThemeProvider } from './context/ThemeContext';
@@ -96,38 +96,37 @@ function App() {
           onNavigateCatalog={() => setCurrentView('catalog')}
         />;
       case 'adaptive-learning':
-        // return <Module2 
-        //   onNavigateHome={() => setCurrentView('home')}
-        //   onNavigateCatalog={() => setCurrentView('catalog')}
-        // />;
-        return <div>Module 2 temporarily disabled for testing</div>;
+        return <Module2New 
+          onNavigateHome={() => setCurrentView('home')}
+          onNavigateCatalog={() => setCurrentView('catalog')}
+        />;
       case 'prompt-engineering':
-        return <Module3 
+        return <Module3New 
           onNavigateHome={() => setCurrentView('home')}
           onNavigateCatalog={() => setCurrentView('catalog')}
         />;
       case 'critical-thinking':
-        return <Module4 
+        return <Module4New 
           onNavigateHome={() => setCurrentView('home')}
           onNavigateCatalog={() => setCurrentView('catalog')}
         />;
       case 'design-thinking':
-        return <Module5 
+        return <Module5New 
           onNavigateHome={() => setCurrentView('home')}
           onNavigateCatalog={() => setCurrentView('catalog')}
         />;
       case 'teamwork':
-        return <Module6 
+        return <Module6New 
           onNavigateHome={() => setCurrentView('home')}
           onNavigateCatalog={() => setCurrentView('catalog')}
         />;
       case 'data-driven':
-        return <Module7 
+        return <Module7New 
           onNavigateHome={() => setCurrentView('home')}
           onNavigateCatalog={() => setCurrentView('catalog')}
         />;
       case 'mental-physical-health':
-        return <Module8 
+        return <Module8New 
           onNavigateHome={() => setCurrentView('home')}
           onNavigateCatalog={() => setCurrentView('catalog')}
         />;
