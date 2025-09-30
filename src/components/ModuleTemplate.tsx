@@ -516,6 +516,8 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
   // Assessment handling
   const handleAssessmentAnswer = (questionId: number, answer: string) => {
     setAssessmentAnswers(prev => ({ ...prev, [questionId]: answer }));
+    console.log('Assessment answer set:', questionId, answer);
+    console.log('Current answers:', assessmentAnswers);
   };
 
   const calculateAssessmentScore = (): number => {
@@ -2163,19 +2165,59 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
                       </label>
                     ))}
                   </div>
+                  
+                  {/* Show explanation if question has one and user has selected an answer */}
+                  {(() => {
+                    const hasExplanation = !!question.explanation;
+                    const hasAnswer = !!assessmentAnswers[question.id];
+                    console.log(`Q${question.id}: hasExplanation=${hasExplanation}, hasAnswer=${hasAnswer}, answer=${assessmentAnswers[question.id]}`);
+                    return hasExplanation && hasAnswer;
+                  })() && (
+                    <div className="mt-4 p-4 bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 rounded-lg">
+                      <p className="text-sm font-semibold text-blue-800 dark:text-blue-300 mb-2">
+                        💡 Explanation:
+                      </p>
+                      <p className="text-sm text-blue-700 dark:text-blue-200 leading-relaxed">
+                        {question.explanation}
+                      </p>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
 
-            <div className="text-center mt-8">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+              {/* Back to Subtopics Button */}
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => setCurrentView('subtopic-select')}
+                className="bg-gray-500 hover:bg-gray-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center gap-2"
+              >
+                <ArrowLeft size={20} />
+                Back to Subtopics
+              </motion.button>
+              
+              {/* Submit Assessment Button */}
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={handleAssessmentSubmit}
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center gap-2"
               >
                 Submit Assessment
-                <ArrowRight className="inline-block ml-2" size={20} />
+                <ArrowRight size={20} />
+              </motion.button>
+              
+              {/* Back to Module Overview Button */}
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => setCurrentView('intro')}
+                className="bg-gray-500 hover:bg-gray-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center gap-2"
+              >
+                Module Overview
+                <ArrowRight size={20} />
               </motion.button>
             </div>
           </div>
