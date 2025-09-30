@@ -956,6 +956,364 @@ export const module2Data: SubtopicData[] = [
       description: 'Master of transferring skills and knowledge across contexts'
     },
     shareMessage: 'Just mastered the art of skill transfer! 🔄 #SkillTransfer #LifelongLearning'
+  },
+  {
+    id: 'learning-agility',
+    title: 'Learning Agility',
+    emoji: '⚡',
+    context: 'professional',
+    discover: {
+      scenario: 'Your company just adopted a new technology stack that you\'ve never worked with before. You need to get up to speed quickly while continuing to deliver on your current projects.',
+      problemExplanation: [
+        'Rapidly changing work environments require constant adaptation',
+        'Traditional learning methods are too slow for modern pace',
+        'Fear of failure prevents experimentation with new approaches',
+        'Difficulty balancing learning with current responsibilities'
+      ],
+      solutionApproach: [
+        'Embrace a growth mindset and view challenges as opportunities',
+        'Use rapid learning techniques: just-in-time learning, micro-learning',
+        'Practice deliberate experimentation in safe environments',
+        'Build a personal learning network for quick knowledge access',
+        'Apply the 70-20-10 learning model: 70% experience, 20% relationships, 10% formal learning'
+      ]
+    },
+    video: {
+      title: 'Developing Learning Agility',
+      duration: 6,
+      content: [
+        'Learning agility is the ability to learn quickly and adapt to new situations.',
+        'In today\'s fast-paced world, learning agility is a critical skill for success.',
+        'The growth mindset is the foundation of learning agility.',
+        'Believe that you can develop any skill with effort and practice.',
+        'Rapid learning starts with knowing what you need to learn.',
+        'Focus on just-in-time learning: learn what you need when you need it.',
+        'Experimentation is key to learning agility.',
+        'Try new approaches, fail fast, learn quickly, iterate.',
+        'Build relationships with people who know what you need to learn.',
+        'Your network is your fastest path to new knowledge.',
+        'The 70-20-10 model shows how we really learn.',
+        '70% from challenging experiences and assignments.',
+        '20% from developmental relationships and feedback.',
+        '10% from formal coursework and training.',
+        'Reflect on your experiences to extract maximum learning.',
+        'Ask: What worked? What didn\'t? What will I do differently?'
+      ]
+    },
+    quiz: {
+      title: 'Learning Agility Quiz',
+      questions: [
+        {
+          id: 21,
+          question: 'What is learning agility?',
+          options: ['Learning many things at once', 'The ability to learn quickly and adapt to new situations', 'Only learning from books', 'Avoiding mistakes'],
+          correct: 1,
+          explanation: 'Learning agility is the ability to learn quickly from experience and adapt to new situations.'
+        },
+        {
+          id: 22,
+          question: 'What mindset supports learning agility?',
+          options: ['Fixed mindset', 'Growth mindset', 'Perfectionist mindset', 'Risk-averse mindset'],
+          correct: 1,
+          explanation: 'A growth mindset believes abilities can be developed through effort and learning.'
+        },
+        {
+          id: 23,
+          question: 'What does the 70-20-10 learning model mean?',
+          options: ['70% reading, 20% writing, 10% practice', '70% experience, 20% relationships, 10% formal learning', '70% theory, 20% application, 10% review', '70% solo, 20% group, 10% teaching'],
+          correct: 1,
+          explanation: 'The 70-20-10 model emphasizes learning from experience (70%), relationships (20%), and formal training (10%).'
+        },
+        {
+          id: 24,
+          question: 'What is just-in-time learning?',
+          options: ['Learning everything in advance', 'Learning what you need when you need it', 'Always being late to learn', 'Learning only from experience'],
+          correct: 1,
+          explanation: 'Just-in-time learning means learning what you need exactly when you need to apply it.'
+        },
+        {
+          id: 25,
+          question: 'Why is experimentation important for learning agility?',
+          options: ['It wastes time', 'It helps you learn quickly through trial and error', 'It should be avoided', 'It only works in science'],
+          correct: 1,
+          explanation: 'Experimentation allows rapid learning through trying new approaches and learning from failures.'
+        }
+      ]
+    },
+    challenge: {
+      title: 'Learning Agility Challenge',
+      description: 'Develop your ability to learn quickly and adapt to new situations',
+      contexts: {
+        academic: {
+          title: 'Academic Learning Agility Challenge',
+          description: 'Rapidly learn a new academic subject or skill using agile learning techniques',
+          instructions: [
+            'Choose a new subject you need to learn quickly',
+            'Set a specific, time-bound learning goal',
+            'Use just-in-time learning: focus on what you need now',
+            'Experiment with different learning approaches',
+            'Seek feedback from peers or instructors',
+            'Reflect on what worked and iterate',
+            'Document your rapid learning process'
+          ],
+          successCriteria: [
+            'You can demonstrate competency in the new subject',
+            'You learned faster than with traditional methods',
+            'You can teach others your rapid learning approach',
+            'You adapted your learning strategy based on feedback',
+            'You built a reusable rapid learning framework'
+          ]
+        },
+        professional: {
+          title: 'Professional Learning Agility Challenge',
+          description: 'Quickly adapt to a new technology, role, or business context',
+          instructions: [
+            'Identify a new professional skill or technology to master',
+            'Apply the 70-20-10 model to your learning',
+            'Find mentors or peers who can accelerate your learning',
+            'Take on challenging projects that force you to learn',
+            'Experiment in safe environments before going live',
+            'Reflect regularly on your learning progress',
+            'Share your learning journey with colleagues'
+          ],
+          successCriteria: [
+            'You\'re productive with the new skill within 2-4 weeks',
+            'You can apply learning agility to future changes',
+            'You\'ve built a learning network for ongoing development',
+            'You demonstrate adaptability in changing situations',
+            'You help others develop learning agility'
+          ]
+        },
+        personal: {
+          title: 'Personal Learning Agility Challenge',
+          description: 'Develop adaptability and rapid learning in personal life',
+          instructions: [
+            'Choose a personal skill or habit you want to develop quickly',
+            'Break it down into small, achievable experiments',
+            'Learn from others who have mastered this skill',
+            'Try different approaches and learn from failures',
+            'Reflect on your progress weekly',
+            'Adjust your approach based on what you learn',
+            'Celebrate small wins and maintain momentum'
+          ],
+          successCriteria: [
+            'You make visible progress in a short timeframe',
+            'You adapt your approach based on results',
+            'You demonstrate resilience when facing setbacks',
+            'You can quickly learn new personal skills',
+            'You maintain a growth mindset in all areas'
+          ]
+        }
+      }
+    },
+    feedback: {
+      strengths: [
+        'You demonstrate strong adaptability to new situations',
+        'Your growth mindset enables continuous learning',
+        'You learn effectively from experience and feedback',
+        'Your experimentation approach accelerates learning',
+        'You build helpful learning networks'
+      ],
+      improvements: [
+        'Increase your comfort with ambiguity and uncertainty',
+        'Practice more deliberate reflection on experiences',
+        'Seek out more challenging learning opportunities',
+        'Build stronger relationships with diverse learners',
+        'Document and refine your learning processes'
+      ],
+      nextSteps: [
+        'Take on a stretch assignment outside your comfort zone',
+        'Build a personal learning network across domains',
+        'Practice rapid learning in low-stakes situations',
+        'Mentor others in developing learning agility',
+        'Continuously refine your learning strategies'
+      ]
+    },
+    badge: {
+      name: 'Agile Learner',
+      emoji: '⚡',
+      description: 'Master of rapid learning and adaptation'
+    },
+    shareMessage: 'Just developed serious learning agility! ⚡ #LearningAgility #GrowthMindset'
+  },
+  {
+    id: 'continuous-improvement',
+    title: 'Continuous Improvement',
+    emoji: '📈',
+    context: 'professional',
+    discover: {
+      scenario: 'You want to keep growing and improving throughout your career, but you\'re not sure how to maintain momentum and avoid plateaus.',
+      problemExplanation: [
+        'Many people plateau after initial learning phase',
+        'Lack of systematic approach to ongoing improvement',
+        'Difficulty measuring progress in soft skills',
+        'Competing priorities make improvement seem optional'
+      ],
+      solutionApproach: [
+        'Implement the Kaizen philosophy: small, continuous improvements',
+        'Use the PDCA cycle: Plan, Do, Check, Act',
+        'Build deliberate practice into daily routines',
+        'Track progress with learning journals and metrics',
+        'Create accountability systems and feedback loops'
+      ]
+    },
+    video: {
+      title: 'The Power of Continuous Improvement',
+      duration: 6,
+      content: [
+        'Continuous improvement is the practice of constantly getting better.',
+        'Small improvements compound into remarkable results over time.',
+        'Kaizen is the Japanese philosophy of continuous improvement.',
+        'It means making small improvements every single day.',
+        'The PDCA cycle is a systematic approach to improvement.',
+        'Plan: Identify what to improve and how.',
+        'Do: Implement the improvement on a small scale.',
+        'Check: Measure the results and learn from them.',
+        'Act: Standardize if successful, or try a different approach.',
+        'Deliberate practice is how experts get better.',
+        'Focus on specific weaknesses, get feedback, iterate.',
+        'Track your progress to stay motivated and see growth.',
+        'Use a learning journal, metrics, or regular reviews.',
+        'Accountability accelerates improvement.',
+        'Share goals with others, join communities, find mentors.',
+        'Remember: 1% better every day leads to 37x improvement in a year.'
+      ]
+    },
+    quiz: {
+      title: 'Continuous Improvement Quiz',
+      questions: [
+        {
+          id: 26,
+          question: 'What is Kaizen?',
+          options: ['A Japanese martial art', 'The philosophy of continuous small improvements', 'A one-time change initiative', 'A type of meditation'],
+          correct: 1,
+          explanation: 'Kaizen is the Japanese philosophy of making small, continuous improvements every day.'
+        },
+        {
+          id: 27,
+          question: 'What does PDCA stand for?',
+          options: ['Plan, Do, Check, Act', 'Prepare, Deliver, Complete, Assess', 'Practice, Develop, Create, Apply', 'Plan, Design, Create, Accomplish'],
+          correct: 0,
+          explanation: 'PDCA stands for Plan, Do, Check, Act - a cycle for continuous improvement.'
+        },
+        {
+          id: 28,
+          question: 'What is deliberate practice?',
+          options: ['Practicing anything repeatedly', 'Focused practice on specific weaknesses with feedback', 'Practicing only what you\'re good at', 'Casual, unfocused practice'],
+          correct: 1,
+          explanation: 'Deliberate practice involves focused effort on specific weaknesses with regular feedback.'
+        },
+        {
+          id: 29,
+          question: 'Why track progress in continuous improvement?',
+          options: ['It\'s not necessary', 'To stay motivated and measure growth', 'Only for professional goals', 'To impress others'],
+          correct: 1,
+          explanation: 'Tracking progress helps maintain motivation and provides evidence of improvement over time.'
+        },
+        {
+          id: 30,
+          question: 'What happens with 1% daily improvement over a year?',
+          options: ['No significant change', 'About 37x improvement', 'Exactly 365% improvement', 'Burnout'],
+          correct: 1,
+          explanation: 'Due to compounding, improving 1% daily leads to being 37 times better after a year (1.01^365).'
+        }
+      ]
+    },
+    challenge: {
+      title: 'Continuous Improvement Challenge',
+      description: 'Build a sustainable system for lifelong improvement',
+      contexts: {
+        academic: {
+          title: 'Academic Continuous Improvement Challenge',
+          description: 'Develop a system for ongoing academic excellence',
+          instructions: [
+            'Identify one academic skill to improve systematically',
+            'Apply the PDCA cycle weekly to your study approach',
+            'Track your progress with specific metrics (grades, time, comprehension)',
+            'Build deliberate practice into your daily routine',
+            'Get regular feedback from instructors or peers',
+            'Reflect monthly on what\'s working and iterate',
+            'Share your improvement system with classmates'
+          ],
+          successCriteria: [
+            'You show measurable improvement in your chosen skill',
+            'You have a documented improvement system',
+            'You can sustain improvement over multiple months',
+            'You help others implement continuous improvement',
+            'You adapt your system based on results'
+          ]
+        },
+        professional: {
+          title: 'Professional Continuous Improvement Challenge',
+          description: 'Create a career-long improvement framework',
+          instructions: [
+            'Choose a professional skill critical to your career',
+            'Set up a PDCA improvement cycle with weekly iterations',
+            'Build accountability through mentors or peer groups',
+            'Practice deliberately outside of work hours',
+            'Track leading and lagging indicators of improvement',
+            'Review progress monthly and adjust approach',
+            'Document and share your improvement journey'
+          ],
+          successCriteria: [
+            'You demonstrate consistent skill improvement',
+            'Your system is sustainable long-term',
+            'You receive recognition for your growth',
+            'You mentor others in continuous improvement',
+            'You\'ve built a career-long learning habit'
+          ]
+        },
+        personal: {
+          title: 'Personal Continuous Improvement Challenge',
+          description: 'Build a lifelong habit of personal growth',
+          instructions: [
+            'Select a personal area for ongoing improvement',
+            'Implement small daily improvements (1% better)',
+            'Create a simple tracking system (journal, app, chart)',
+            'Build accountability with friends or family',
+            'Celebrate small wins to maintain motivation',
+            'Review and adjust your approach monthly',
+            'Share your improvement story to inspire others'
+          ],
+          successCriteria: [
+            'You maintain the improvement habit for 90+ days',
+            'You show measurable progress in your chosen area',
+            'You\'ve inspired others to start improving',
+            'You can adapt your system to new areas',
+            'You embody a continuous improvement mindset'
+          ]
+        }
+      }
+    },
+    feedback: {
+      strengths: [
+        'You demonstrate commitment to ongoing growth',
+        'Your systematic approach ensures consistent progress',
+        'You effectively track and measure improvement',
+        'You build sustainable improvement habits',
+        'You help others embrace continuous improvement'
+      ],
+      improvements: [
+        'Be patient with the compounding process',
+        'Focus on process goals, not just outcomes',
+        'Increase your feedback frequency for faster learning',
+        'Share your journey more to build accountability',
+        'Celebrate small wins to maintain momentum'
+      ],
+      nextSteps: [
+        'Expand continuous improvement to new areas',
+        'Mentor someone else in building improvement habits',
+        'Read about Kaizen and continuous improvement',
+        'Join or create an improvement-focused community',
+        'Document your long-term improvement journey'
+      ]
+    },
+    badge: {
+      name: 'Kaizen Master',
+      emoji: '📈',
+      description: 'Champion of continuous improvement and lifelong growth'
+    },
+    shareMessage: 'Committed to getting 1% better every day! 📈 #ContinuousImprovement #Kaizen'
   }
 ];
 
@@ -977,3 +1335,59 @@ export const saveModuleProgress = (progress: any): void => {
 };
 
 export const module2Subtopics = module2Data;
+
+// Module 2 Assessment - 30 Questions (5 from each subtopic)
+export const module2Assessment: AssessmentData = {
+  id: 'module2-assessment',
+  title: 'Adaptive Learning & Lifelong Learning Assessment',
+  description: 'Comprehensive test covering all adaptive learning and lifelong learning skills',
+  questions: [
+    // Learning Strategies (1-5)
+    { id: 1, question: 'What is the main benefit of active learning over passive learning?', options: ['It takes less time', 'It improves long-term retention and understanding', 'It requires less effort', 'It works for all subjects equally'], correct: 1, explanation: 'Active learning improves retention by engaging multiple cognitive processes.' },
+    { id: 2, question: 'The Feynman Technique involves:', options: ['Speed reading', 'Explaining concepts in simple terms', 'Memorizing with flashcards', 'Highlighting text'], correct: 1, explanation: 'The Feynman Technique tests understanding by explaining concepts simply.' },
+    { id: 3, question: 'Spaced repetition helps learning by:', options: ['Cramming information', 'Reviewing at increasing intervals', 'Reading once thoroughly', 'Only reviewing before exams'], correct: 1, explanation: 'Spaced repetition strengthens memory by reviewing at optimal intervals.' },
+    { id: 4, question: 'The Pomodoro Technique uses:', options: ['45 min work, 15 min break', '25 min work, 5 min break', '60 min work, 10 min break', 'Continuous study'], correct: 1, explanation: 'Pomodoro uses 25-minute focused sessions with 5-minute breaks.' },
+    { id: 5, question: 'What is the 80/20 rule in learning?', options: ['Study 80 hours per week', 'Focus on the most important 20% of content', 'Take 80% breaks', 'Learn 80% theory, 20% practice'], correct: 1, explanation: 'The 80/20 rule suggests 20% of content yields 80% of results.' },
+    
+    // Memory Techniques (6-10)
+    { id: 6, question: 'The Method of Loci (Memory Palace) uses:', options: ['Random images', 'Familiar locations to store information', 'Alphabetical lists', 'Color coding'], correct: 1, explanation: 'Method of Loci uses familiar spatial locations to organize and recall information.' },
+    { id: 7, question: 'Why are absurd, vivid images more memorable?', options: ['They\'re easier to draw', 'They stand out and trigger emotional engagement', 'They take less effort', 'They\'re more realistic'], correct: 1, explanation: 'Absurd images are memorable because they\'re unusual and emotionally engaging.' },
+    { id: 8, question: 'Chunking helps memory by:', options: ['Breaking information into smaller pieces', 'Memorizing everything at once', 'Using only visual memory', 'Avoiding repetition'], correct: 0, explanation: 'Chunking breaks information into manageable, memorable pieces.' },
+    { id: 9, question: 'Active recall is superior to re-reading because:', options: ['It\'s faster', 'It strengthens retrieval pathways', 'It requires no effort', 'It works without understanding'], correct: 1, explanation: 'Active recall strengthens memory by practicing retrieval.' },
+    { id: 10, question: 'How often should you review using spaced repetition?', options: ['Only once', 'At increasing intervals over time', 'Every day forever', 'Only before exams'], correct: 1, explanation: 'Spaced repetition reviews at increasing intervals for optimal retention.' },
+    
+    // Information Processing (11-15)
+    { id: 11, question: 'SQ3R stands for:', options: ['Study, Question, Read, Recite, Review', 'Survey, Question, Read, Recite, Review', 'Scan, Question, Read, Remember, Review', 'Speed, Quality, Read, Review, Repeat'], correct: 1, explanation: 'SQ3R is Survey, Question, Read, Recite, Review - a systematic reading method.' },
+    { id: 12, question: 'Critical thinking in information processing involves:', options: ['Reading quickly', 'Evaluating credibility and relevance', 'Accepting all information', 'Memorizing facts'], correct: 1, explanation: 'Critical thinking evaluates information quality, credibility, and relevance.' },
+    { id: 13, question: 'The 5W+H framework includes:', options: ['5 words and 1 header', 'Who, What, When, Where, Why, How', '5 weeks and 1 hour', '5 ways and 1 habit'], correct: 1, explanation: '5W+H helps analyze information systematically.' },
+    { id: 14, question: 'Information organization is important because:', options: ['It looks professional', 'It enables effective retrieval and connections', 'It reduces information amount', 'It impresses others'], correct: 1, explanation: 'Organization enables retrieval and helps create knowledge connections.' },
+    { id: 15, question: 'The first step in SQ3R is:', options: ['Question', 'Survey (overview)', 'Read carefully', 'Recite immediately'], correct: 1, explanation: 'Survey provides an overview before detailed reading.' },
+    
+    // Skill Transfer (16-20)
+    { id: 16, question: 'Skill transfer means:', options: ['Learning new skills', 'Applying skills from one context to another', 'Forgetting old skills', 'Teaching skills to others'], correct: 1, explanation: 'Skill transfer applies knowledge across different contexts.' },
+    { id: 17, question: 'The key to skill transfer is understanding:', options: ['Surface procedures', 'Underlying principles', 'Specific examples only', 'Individual cases'], correct: 1, explanation: 'Understanding principles enables transfer across contexts.' },
+    { id: 18, question: 'Metacognition means:', options: ['Learning fast', 'Thinking about your own thinking', 'Memorizing facts', 'Taking notes'], correct: 1, explanation: 'Metacognition is awareness and understanding of your own thought processes.' },
+    { id: 19, question: 'Analogies help skill transfer by:', options: ['Making learning faster', 'Revealing connections between domains', 'Reducing practice needs', 'Memorizing procedures'], correct: 1, explanation: 'Analogies reveal structural similarities across different domains.' },
+    { id: 20, question: 'Pattern recognition enables transfer by:', options: ['Reducing study time', 'Identifying common structures across contexts', 'Avoiding mistakes', 'Simplifying content'], correct: 1, explanation: 'Pattern recognition identifies transferable structures and principles.' },
+    
+    // Learning Agility (21-25)
+    { id: 21, question: 'Learning agility is:', options: ['Learning many things', 'Quickly learning and adapting to new situations', 'Only learning from books', 'Avoiding change'], correct: 1, explanation: 'Learning agility combines rapid learning with adaptation.' },
+    { id: 22, question: 'A growth mindset believes:', options: ['Talent is fixed', 'Abilities develop through effort', 'Some people can\'t learn', 'Intelligence is unchangeable'], correct: 1, explanation: 'Growth mindset believes abilities can be developed through dedication and hard work.' },
+    { id: 23, question: 'The 70-20-10 learning model suggests:', options: ['70% theory, 20% practice, 10% review', '70% experience, 20% relationships, 10% formal learning', '70% reading, 20% writing, 10% testing', '70% solo, 20% group, 10% teaching'], correct: 1, explanation: 'Most learning comes from experience (70%), relationships (20%), and formal training (10%).' },
+    { id: 24, question: 'Just-in-time learning means:', options: ['Always being late', 'Learning what you need when you need it', 'Learning everything in advance', 'Never preparing'], correct: 1, explanation: 'Just-in-time learning focuses on immediate application needs.' },
+    { id: 25, question: 'Experimentation supports learning agility by:', options: ['Wasting time', 'Enabling rapid learning through trial and error', 'Avoiding mistakes', 'Following rules strictly'], correct: 1, explanation: 'Experimentation accelerates learning through rapid feedback cycles.' },
+    
+    // Continuous Improvement (26-30)
+    { id: 26, question: 'Kaizen philosophy emphasizes:', options: ['Dramatic changes', 'Small, continuous improvements', 'Waiting for perfection', 'Competing with others'], correct: 1, explanation: 'Kaizen focuses on small, consistent improvements that compound over time.' },
+    { id: 27, question: 'PDCA cycle stands for:', options: ['Prepare, Deliver, Complete, Assess', 'Plan, Do, Check, Act', 'Practice, Develop, Create, Apply', 'Perfect, Deploy, Control, Achieve'], correct: 1, explanation: 'PDCA is Plan, Do, Check, Act - a continuous improvement cycle.' },
+    { id: 28, question: 'Deliberate practice focuses on:', options: ['Practicing what you\'re good at', 'Targeting specific weaknesses with feedback', 'Casual, relaxed practice', 'Quantity over quality'], correct: 1, explanation: 'Deliberate practice systematically targets weaknesses with feedback.' },
+    { id: 29, question: 'Why track progress in continuous improvement?', options: ['To compete with others', 'To stay motivated and measure growth', 'It\'s not important', 'Only for work goals'], correct: 1, explanation: 'Tracking provides motivation and evidence of improvement.' },
+    { id: 30, question: 'Improving 1% daily compounds to approximately:', options: ['365% improvement yearly', '37x improvement yearly', 'No real difference', '100% improvement yearly'], correct: 1, explanation: 'Daily 1% improvement compounds to ~37x improvement over a year (1.01^365 ≈ 37.8).' }
+  ],
+  gradingScale: {
+    excellent: { min: 27, max: 30, message: 'Outstanding! You\'re a master of adaptive learning!', xpReward: 300 },
+    good: { min: 21, max: 26, message: 'Great work! You have strong learning skills!', xpReward: 250 },
+    satisfactory: { min: 15, max: 20, message: 'Good progress! Keep practicing these techniques!', xpReward: 200 },
+    needsImprovement: { min: 0, max: 14, message: 'Review the material and develop your learning strategies!', xpReward: 100 }
+  }
+};
