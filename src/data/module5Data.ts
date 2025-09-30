@@ -8,6 +8,9 @@ export interface ModuleProgress {
   challengeResponses: { [key: string]: string };
   lastAccessed: string;
   totalXP: number;
+  successStreak: number;
+  highestStreak: number;
+  lastStreakDate: string;
 }
 
 export interface SubtopicData {
@@ -53,6 +56,24 @@ export interface SubtopicData {
     description: string;
   };
   shareMessage: string;
+}
+
+export interface AssessmentData {
+  title: string;
+  description: string;
+  questions: {
+    id: number;
+    question: string;
+    options: string[];
+    correct: number;
+    explanation?: string;
+  }[];
+  gradingScale: {
+    excellent: { min: number; max: number; message: string; xpReward: number };
+    good: { min: number; max: number; message: string; xpReward: number };
+    satisfactory: { min: number; max: number; message: string; xpReward: number };
+    needsImprovement: { min: number; max: number; message: string; xpReward: number };
+  };
 }
 
 export const module5Subtopics: SubtopicData[] = [
@@ -1114,8 +1135,9 @@ Example: Tom planned a family reunion that everyone loved because he asked each 
   }
 ];
 
-export const module5Assessment = {
+export const module5Assessment: AssessmentData = {
   title: "Design Thinking Mastery Assessment",
+  description: "Test your mastery of design thinking and creative problem-solving skills. This comprehensive assessment evaluates your understanding of empathy, ideation, prototyping, and user-centered design principles.",
   questions: [
     {
       id: 1,
@@ -1177,9 +1199,53 @@ export const module5Assessment = {
       correct: 1,
       explanation: "Empathy helps understand different perspectives and builds stronger relationships in all contexts."
     }
-  ]
+  ],
+  gradingScale: {
+    excellent: { min: 80, max: 100, message: "Excellent! You've mastered design thinking!", xpReward: 100 },
+    good: { min: 70, max: 79, message: "Good job! You have strong design thinking skills.", xpReward: 75 },
+    satisfactory: { min: 60, max: 69, message: "Satisfactory. Keep practicing to improve further.", xpReward: 50 },
+    needsImprovement: { min: 0, max: 59, message: "Keep learning! Design thinking improves with practice.", xpReward: 25 }
+  }
 };
 
+// Local Storage Helper Functions
+export const saveModuleProgress = (progress: ModuleProgress): void => {
+  localStorage.setItem('module5Progress', JSON.stringify(progress));
+};
+
+export const loadModuleProgress = (): ModuleProgress | null => {
+  const stored = localStorage.getItem('module5Progress');
+  return stored ? JSON.parse(stored) : null;
+};
+
+export const updateSubtopicProgress = (subtopicId: string, score: number, response: string): void => {
+  const progress = loadModuleProgress() || {
+    moduleId: 'design-thinking',
+    currentSubtopic: 0,
+    completedSubtopics: [],
+    quizScores: {},
+    badges: [],
+    challengeResponses: {},
+    lastAccessed: new Date().toISOString(),
+    totalXP: 0,
+    successStreak: 0,
+    highestStreak: 0,
+    lastStreakDate: ''
+  };
+
+  // Update progress
+  progress.quizScores[subtopicId] = score;
+  progress.challengeResponses[subtopicId] = response;
+  
+  if (!progress.completedSubtopics.includes(parseInt(subtopicId.split('-')[1]))) {
+    progress.completedSubtopics.push(parseInt(subtopicId.split('-')[1]));
+  }
+  
+  progress.totalXP += score;
+  progress.lastAccessed = new Date().toISOString();
+  
+  saveModuleProgress(progress);
+};
 
 
 

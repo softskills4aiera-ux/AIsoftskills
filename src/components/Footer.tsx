@@ -20,11 +20,10 @@ const Footer: React.FC = () => {
                 <span className="text-white font-bold text-2xl">A</span>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-white">Ai-ERA</h3>
-                <p className="text-gray-400">Soft Skills Academy</p>
+                <h3 className="text-2xl font-bold text-white whitespace-nowrap">Ai-ERA Soft Skills Academy</h3>
               </div>
             </div>
-            <p className="text-gray-300 text-lg mb-6 max-w-md">
+            <p className="text-gray-300 text-xl mb-6 max-w-md">
               Empowering Future-Ready Professionals with essential soft skills for the AI era. 
               Transform your career with our comprehensive training programs.
             </p>
@@ -66,7 +65,7 @@ const Footer: React.FC = () => {
             transition={{ delay: 0.1, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-lg font-semibold text-white mb-6">Quick Links</h4>
+            <h4 className="text-xl font-semibold text-white mb-6">Quick Links</h4>
             <ul className="space-y-3">
               <motion.li
                 initial={{ opacity: 0, x: -20 }}
@@ -141,7 +140,7 @@ const Footer: React.FC = () => {
             transition={{ delay: 0.2, duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-lg font-semibold text-white mb-6">Contact Us</h4>
+            <h4 className="text-xl font-semibold text-white mb-6">Contact Us</h4>
             <div className="space-y-4">
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
@@ -215,10 +214,10 @@ const Footer: React.FC = () => {
           className="border-t border-gray-800 mt-12 pt-8"
         >
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 Ai-ERA Soft Skills Academy. All rights reserved.
+            <p className="text-gray-400 text-xl mb-4 md:mb-0">
+              © 2025 Ai-ERA Soft Skills Academy. All rights reserved.
             </p>
-            <div className="flex space-x-6 text-sm">
+            <div className="flex space-x-6 text-xl">
               <a href="#" className="text-gray-400 hover:text-neon-blue transition-colors duration-300">
                 Privacy Policy
               </a>
@@ -240,7 +239,7 @@ const Footer: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mt-8"
         >
-          <p className="text-neon-blue text-lg font-semibold">
+          <p className="text-neon-blue text-xl font-semibold">
             "Empowering Future-Ready Professionals."
           </p>
         </motion.div>

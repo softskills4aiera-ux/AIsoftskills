@@ -1,14 +1,5 @@
-// Module 1: Communication Skills Data Structure
-export interface ModuleProgress {
-  moduleId: string;
-  currentSubtopic: number;
-  completedSubtopics: number[];
-  quizScores: { [key: string]: number };
-  badges: string[];
-  challengeResponses: { [key: string]: string };
-  lastAccessed: string;
-  totalXP: number;
-}
+// Module 1: Communication Skills
+// Clean, structured data for Gen Z learners
 
 export interface SubtopicData {
   id: string;
@@ -22,9 +13,9 @@ export interface SubtopicData {
   };
   video: {
     title: string;
-    duration: number; // in minutes
+    duration: number;
     content: string[];
-    script?: string; // Full video script
+    script?: string;
   };
   quiz: {
     title: string;
@@ -39,8 +30,28 @@ export interface SubtopicData {
   challenge: {
     title: string;
     description: string;
-    instructions: string[];
-    successCriteria: string[];
+    instructions?: string[];
+    successCriteria?: string[];
+    contexts?: {
+      academic: {
+        title: string;
+        description: string;
+        instructions: string[];
+        successCriteria: string[];
+      };
+      professional: {
+        title: string;
+        description: string;
+        instructions: string[];
+        successCriteria: string[];
+      };
+      personal: {
+        title: string;
+        description: string;
+        instructions: string[];
+        successCriteria: string[];
+      };
+    };
   };
   feedback: {
     strengths: string[];
@@ -55,1194 +66,643 @@ export interface SubtopicData {
   shareMessage: string;
 }
 
-export const module1Subtopics: SubtopicData[] = [
+export interface AssessmentData {
+  id: string;
+  title: string;
+  description: string;
+  questions: {
+    id: number;
+    question: string;
+    options: string[];
+    correct: number;
+    explanation?: string;
+  }[];
+  gradingScale: {
+    excellent: { min: number; max: number; message: string; xpReward: number };
+    good: { min: number; max: number; message: string; xpReward: number };
+    satisfactory: { min: number; max: number; message: string; xpReward: number };
+    needsImprovement: { min: number; max: number; message: string; xpReward: number };
+  };
+}
+
+export interface ModuleProgress {
+  moduleId: string;
+  completedSubtopics: string[];
+  currentSubtopic: string;
+  overallProgress: number;
+  lastAccessed: Date;
+  assessmentCompleted: boolean;
+  assessmentScore?: number;
+}
+
+// Module 1 Data - Communication Skills
+export const module1Data: SubtopicData[] = [
+  // Subtopic 1: Active Listening
   {
     id: 'active-listening',
     title: 'Active Listening',
-    emoji: '🎧',
-    context: 'academic',
+    emoji: '👂',
+    context: 'professional',
     discover: {
-      scenario: "Your professor is explaining the final exam format, but you're already thinking about your job interview tomorrow. Your group project partner is sharing concerns, but you're distracted by notifications. You realize you've missed the key points for the upcoming exam. How do you focus and absorb information effectively?",
+      scenario: "You're in a team meeting discussing a new project. Your colleague is explaining their concerns, but you're distracted by your phone notifications and thinking about your lunch plans. When they finish, you realize you missed key details and can't contribute meaningfully to the discussion.",
       problemExplanation: [
-        "Distraction: Phone notifications, friend conversations, and internal thoughts prevent focus",
-        "Multitasking: Trying to listen while thinking about other things reduces comprehension",
-        "Passive Listening: Just hearing words without understanding or processing meaning",
-        "Missing Critical Information: Key exam content and project details are lost"
+        "Poor listening leads to misunderstandings and missed opportunities",
+        "Distractions prevent you from building strong relationships",
+        "You appear disinterested and unprofessional to colleagues"
       ],
       solutionApproach: [
-        "Focus Techniques: Phone away, active note-taking, eye contact with speaker",
-        "Engagement Strategies: Asking clarifying questions, summarizing key points",
-        "Memory Techniques: Connecting new information to existing knowledge",
-        "Follow-up Actions: Office hours, study groups, peer discussions"
+        "Develop focused attention and eliminate distractions",
+        "Learn to ask clarifying questions that show engagement",
+        "Build stronger professional relationships through active listening"
       ]
     },
     video: {
-      title: "Master Active Listening for Success",
-      duration: 5,
+      title: "The Art of Active Listening",
+      duration: 8.5,
       content: [
-        "Lecture Listening: How to stay focused during long lectures",
-        "Group Work: Active listening in study groups and project meetings",
-        "Professor Communication: Effective listening during office hours and feedback sessions",
-        "Note-Taking Integration: Combining listening with effective note-taking",
-        "Memory Retention: Techniques to remember what you've heard"
+        "Understanding the difference between hearing and listening",
+        "Techniques for maintaining focus and attention",
+        "Non-verbal cues that show you're engaged",
+        "Asking effective follow-up questions",
+        "Practicing active listening in different contexts"
       ],
-      script: `[HOOK - 30 seconds]
-"Active listening is the secret to success in college, work, and relationships. Today, I'll show you how to master it in just 5 minutes."
-
-[ACADEMIC - 2 minutes]
-"In college, active listening helps you:
-- Stay focused during lectures (use the 3-2-1 method: 3 key points, 2 questions, 1 action)
-- Engage with professors during office hours by asking clarifying questions
-- Build better study group discussions by truly hearing others' ideas
-
-Example: Sarah improved her grades by 20% just by asking one clarifying question per lecture."
-
-[PROFESSIONAL - 2 minutes]
-"In your career, active listening helps you:
-- Ace job interviews by understanding what employers really want
-- Build better relationships with colleagues and clients
-- Get promoted by showing you truly understand feedback
-
-Example: Jennifer got promoted because she actively listened to her manager's feedback and improved her performance."
-
-[PERSONAL - 1 minute]
-"In relationships, active listening helps you:
-- Connect deeper with family and friends by truly hearing them
-- Resolve conflicts more effectively by understanding different perspectives
-- Build stronger personal relationships through empathy
-
-Example: Maria repaired her relationship with her parents by actively listening to their concerns about her career choices."
-
-[CALL TO ACTION - 30 seconds]
-"Ready to transform your listening? Practice these techniques in your next conversation, whether it's in class, at work, or with family. Start today!"`
+      script: "In this video, we'll explore the fundamental skill of active listening..."
     },
     quiz: {
-      title: "Test Your Active Listening Knowledge",
+      title: "Active Listening Quiz",
       questions: [
         {
           id: 1,
-          question: "Your professor says 'This needs more research' - what should you do first?",
+          question: "You're in a job interview and the interviewer is explaining the company culture. You notice they're speaking slowly and seem passionate about their values. What's the best way to show active listening?",
           options: [
-            "Immediately start researching",
-            "Ask clarifying questions about what specific research is needed",
-            "Ignore the feedback and continue as planned",
-            "Ask other students what they think"
+            "Nod occasionally while checking your phone for messages",
+            "Maintain eye contact, nod, and ask a follow-up question about how those values impact daily work",
+            "Interrupt to share your own experience with company values",
+            "Take detailed notes without looking up from your paper"
           ],
           correct: 1,
-          explanation: "Always ask clarifying questions to understand exactly what's needed before taking action."
+          explanation: "Active listening involves full attention, non-verbal engagement, and thoughtful responses. Asking follow-up questions shows genuine interest and helps you understand the role better."
         },
         {
           id: 2,
-          question: "Group member is struggling with their part - how do you listen effectively?",
+          question: "During a group project meeting, your teammate is explaining their research findings. They seem nervous and keep looking down. How can you encourage them to continue sharing?",
           options: [
-            "Give them advice immediately",
-            "Listen completely, then ask questions to understand their specific challenges",
-            "Tell them to figure it out themselves",
-            "Take over their part"
+            "Tell them to speak up and be more confident",
+            "Lean forward, maintain eye contact, and say 'That's really interesting, can you tell me more about...'",
+            "Wait for them to finish and then immediately present your own ideas",
+            "Check your phone while they're talking to show you're multitasking"
           ],
           correct: 1,
-          explanation: "Active listening means understanding the full situation before offering solutions."
+          explanation: "Encouraging body language and asking follow-up questions creates a safe space for sharing. This builds trust and helps team members feel valued."
         },
         {
           id: 3,
-          question: "What's the difference between hearing and active listening in academic settings?",
+          question: "Your friend is telling you about a difficult situation with their roommate. They're clearly upset and keep repeating the same points. What should you do?",
           options: [
-            "There's no difference",
-            "Hearing is passive, active listening involves understanding and responding",
-            "Active listening is just louder",
-            "Hearing is for lectures, active listening is for conversations"
+            "Give them advice immediately to solve their problem",
+            "Listen patiently, acknowledge their feelings, and ask what they need from you",
+            "Change the subject to something more positive",
+            "Tell them to stop complaining and deal with it"
           ],
           correct: 1,
-          explanation: "Active listening requires engagement, understanding, and response, not just hearing words."
+          explanation: "Sometimes people need to be heard and understood before they can move forward. Acknowledging feelings and asking what they need shows empathy and support."
         },
         {
           id: 4,
-          question: "How do you take effective notes during exam review sessions?",
+          question: "In a virtual team meeting, your manager is explaining new procedures. The connection is poor and you're missing some words. What's the best approach?",
           options: [
-            "Write down everything the professor says",
-            "Focus on key concepts and ask questions about unclear points",
-            "Record the session and listen later",
-            "Just listen without taking notes"
+            "Pretend you understand and figure it out later",
+            "Ask them to repeat the key points and confirm your understanding",
+            "Wait for someone else to ask questions",
+            "Send a private message to a colleague asking for clarification"
           ],
           correct: 1,
-          explanation: "Focus on key concepts and engage by asking questions about unclear points."
+          explanation: "It's better to ask for clarification than to make assumptions. This shows professionalism and ensures you understand expectations correctly."
         },
         {
           id: 5,
-          question: "What's the best way to listen and understand complex academic concepts?",
+          question: "Your professor is giving a lecture on a complex topic. You're struggling to follow their explanation. What's the most effective way to engage?",
           options: [
-            "Memorize the definitions",
-            "Connect new concepts to things you already know",
-            "Ask the professor to simplify everything",
-            "Skip the complex parts"
+            "Take notes on everything they say without asking questions",
+            "Ask specific questions about the parts you don't understand",
+            "Wait until after class to ask questions",
+            "Focus on memorizing the key terms they mention"
           ],
           correct: 1,
-          explanation: "Connecting new information to existing knowledge helps with understanding and retention."
+          explanation: "Asking questions during the lecture shows engagement and helps clarify concepts immediately. This benefits both you and other students who might have similar questions."
         }
       ]
     },
     challenge: {
-      title: "Practice Active Listening",
-      description: "Practice active listening in your next lecture or study session",
-      instructions: [
-        "Before the session: Put your phone away, prepare note-taking materials",
-        "During the session: Maintain eye contact, ask at least 2 clarifying questions",
-        "After the session: Summarize 3 key points you learned",
-        "Reflection: Write down what helped you listen better and what was challenging"
-      ],
-      successCriteria: [
-        "Asked at least 2 relevant questions",
-        "Created clear, organized notes",
-        "Can explain 3 key concepts from the session",
-        "Identified specific listening strategies that worked"
-      ]
+      title: "Active Listening Challenge",
+      description: "Practice active listening in real-world scenarios",
+      contexts: {
+        academic: {
+          title: "Study Group Active Listening",
+          description: "Practice active listening during study group sessions",
+          instructions: [
+            "Join a study group or create one with classmates",
+            "During discussions, focus entirely on what others are saying",
+            "Ask at least 3 clarifying questions per session",
+            "Summarize what you heard before contributing your own ideas",
+            "Reflect on how active listening improved the group dynamic"
+          ],
+          successCriteria: [
+            "Demonstrated full attention during group discussions",
+            "Asked thoughtful, clarifying questions",
+            "Successfully summarized others' points before adding your own",
+            "Received positive feedback from group members about your listening"
+          ]
+        },
+        professional: {
+          title: "Workplace Listening Excellence",
+          description: "Apply active listening skills in professional settings",
+          instructions: [
+            "During meetings, practice the 80/20 rule (listen 80%, speak 20%)",
+            "Take notes on key points and ask follow-up questions",
+            "Use non-verbal cues like nodding and maintaining eye contact",
+            "Summarize what you heard before responding",
+            "Reflect on how this improved your professional relationships"
+          ],
+          successCriteria: [
+            "Consistently demonstrated active listening in meetings",
+            "Asked relevant follow-up questions that added value",
+            "Received positive feedback from colleagues about your engagement",
+            "Successfully avoided misunderstandings through better listening"
+          ]
+        },
+        personal: {
+          title: "Relationship Listening Practice",
+          description: "Strengthen personal relationships through active listening",
+          instructions: [
+            "Choose a family member or close friend for this challenge",
+            "Have a conversation where you focus entirely on listening",
+            "Ask open-ended questions to encourage deeper sharing",
+            "Practice reflecting back what you heard",
+            "Notice how this changes the quality of your relationship"
+          ],
+          successCriteria: [
+            "Demonstrated genuine interest in the other person's perspective",
+            "Asked questions that encouraged deeper sharing",
+            "Successfully reflected back what you heard",
+            "Received positive feedback about feeling heard and understood"
+          ]
+        }
+      }
     },
     feedback: {
-      strengths: ["You're great at listening to peers and asking thoughtful questions"],
-      improvements: ["Focus on maintaining eye contact with authority figures and reducing internal distractions"],
-      nextSteps: ["Practice active listening in your next professor meeting and group study session"]
+      strengths: [
+        "You demonstrate genuine interest in others' perspectives",
+        "Your follow-up questions show active engagement",
+        "You create a safe space for others to share"
+      ],
+      improvements: [
+        "Practice maintaining eye contact during conversations",
+        "Work on eliminating distractions during important discussions",
+        "Develop techniques for remembering key points"
+      ],
+      nextSteps: [
+        "Practice active listening in your next team meeting",
+        "Try the echo technique with a friend or colleague",
+        "Set a goal to ask at least 3 clarifying questions per day"
+      ]
     },
     badge: {
       name: "Active Listener",
-      emoji: "🎧",
-      description: "Mastered the art of active listening in academic settings"
+      emoji: "👂",
+      description: "Master of focused attention and empathetic listening"
     },
-    shareMessage: "Just mastered active listening for my studies! Ready to absorb knowledge like a sponge! 🎧 #StudySmart #CommunicationSkills"
-  },
-  {
-    id: 'public-speaking',
-    title: 'Public Speaking',
-    emoji: '🎤',
-    context: 'professional',
-    discover: {
-      scenario: "Job interview tomorrow, you need to present your final year project to potential employers. Your hands are shaking, voice is cracking, and you're worried about technical questions. Plus, you've been applying to 50+ jobs with no responses. How do you present confidently and handle interview anxiety?",
-      problemExplanation: [
-        "Interview Anxiety: Physical symptoms of nervousness affecting performance",
-        "Application Fatigue: Multiple rejections leading to self-doubt and decreased confidence",
-        "Technical Concerns: Worry about being asked difficult questions beyond your knowledge",
-        "Presentation Skills: Lack of experience presenting to professional audiences"
-      ],
-      solutionApproach: [
-        "Confidence Building: Preparation, practice, and positive self-talk",
-        "Anxiety Management: Breathing techniques, visualization, and reframing",
-        "Technical Preparation: Research company, practice common questions, prepare examples",
-        "Presentation Skills: Structure, storytelling, and audience engagement"
-      ]
-    },
-    video: {
-      title: "Conquer Public Speaking Anxiety",
-      duration: 5,
-      content: [
-        "Interview Presentations: How to present your projects confidently to employers",
-        "Career Fair Communication: Elevator pitches and portfolio presentations",
-        "Networking Events: Introducing yourself professionally to industry contacts",
-        "Anxiety Management: Techniques to handle nervousness and build confidence",
-        "Follow-up Strategies: Post-interview communication and relationship building"
-      ],
-      script: `[HOOK - 30 seconds]
-"75% of people fear public speaking more than death. But what if I told you that with the right techniques, you can become a confident speaker in just 5 minutes?"
-
-[ACADEMIC - 2 minutes]
-"In college, public speaking helps you:
-- Ace class presentations and group projects
-- Participate confidently in discussions and debates
-- Build relationships with professors through confident communication
-
-Techniques: Use the 3-2-1 method - 3 main points, 2 supporting examples, 1 call to action. Practice with friends or record yourself.
-
-Example: Mike went from failing presentations to getting A's by practicing his opening line 10 times before each speech."
-
-[PROFESSIONAL - 2 minutes]
-"In your career, public speaking helps you:
-- Impress employers in job interviews and presentations
-- Lead team meetings and client presentations
-- Advance your career through confident communication
-
-Techniques: Start with a story, use visual aids, maintain eye contact with different audience members.
-
-Example: Sarah got promoted to team lead because she confidently presented her project ideas to senior management."
-
-[PERSONAL - 1 minute]
-"In personal life, public speaking helps you:
-- Speak up in family discussions and social gatherings
-- Build confidence in social situations
-- Express your opinions clearly and persuasively
-
-Techniques: Practice with family, start with small groups, focus on your message, not your nerves.
-
-Example: Tom became more confident in social situations by practicing public speaking techniques with his family."
-
-[CALL TO ACTION - 30 seconds]
-"Ready to conquer your fear? Start by practicing your next presentation or conversation. Remember, confidence comes from preparation, not perfection. Begin today!"`
-    },
-    quiz: {
-      title: "Test Your Public Speaking Knowledge",
-      questions: [
-        {
-          id: 1,
-          question: "How do you adjust your presentation style for an interviewer vs. a client?",
-          options: [
-            "Use the same style for both",
-            "Be more formal with interviewers, more casual with clients",
-            "Research the audience and adjust tone, examples, and level of detail accordingly",
-            "Always be very formal"
-          ],
-          correct: 2,
-          explanation: "Always research your audience and tailor your presentation to their needs and context."
-        },
-        {
-          id: 2,
-          question: "What's the best way to handle technical questions during presentations?",
-          options: [
-            "Pretend you know the answer",
-            "Say 'I don't know' and move on",
-            "Acknowledge what you know, admit what you don't, and explain how you'd find out",
-            "Change the subject"
-          ],
-          correct: 2,
-          explanation: "Honesty and problem-solving approach shows professionalism and confidence."
-        },
-        {
-          id: 3,
-          question: "How do you maintain confidence when presenting to senior professionals?",
-          options: [
-            "Avoid eye contact",
-            "Speak quietly to show respect",
-            "Maintain good posture, speak clearly, and focus on your value",
-            "Let them lead the conversation"
-          ],
-          correct: 2,
-          explanation: "Confidence comes from good preparation, clear communication, and knowing your value."
-        },
-        {
-          id: 4,
-          question: "How do you follow up after a job interview without being pushy?",
-          options: [
-            "Send multiple emails",
-            "Call them directly",
-            "Send one professional thank-you email within 24 hours",
-            "Wait for them to contact you"
-          ],
-          correct: 2,
-          explanation: "One professional thank-you email within 24 hours shows professionalism without being pushy."
-        },
-        {
-          id: 5,
-          question: "What do you say when asked 'Why should we hire you?'",
-          options: [
-            "I need a job",
-            "I'm really smart",
-            "Based on my skills and experience, I can contribute to your team by...",
-            "I don't know"
-          ],
-          correct: 2,
-          explanation: "Focus on specific skills and how they benefit the company, not your personal needs."
-        }
-      ]
-    },
-    challenge: {
-      title: "Record Professional Presentation",
-      description: "Record a 3-minute professional presentation for a job interview",
-      instructions: [
-        "Choose a topic: Your final year project, a relevant experience, or a skill you want to highlight",
-        "Structure your presentation: Introduction, main points, conclusion",
-        "Record yourself: Use your phone or computer to record the presentation",
-        "Self-evaluate: Watch the recording and note areas for improvement",
-        "Practice again: Record a second version incorporating improvements"
-      ],
-      successCriteria: [
-        "Clear introduction and conclusion",
-        "Well-organized main points",
-        "Good eye contact with camera",
-        "Confident voice and body language",
-        "Within 3-minute time limit"
-      ]
-    },
-    feedback: {
-      strengths: ["You have good content and clear structure"],
-      improvements: ["Work on maintaining eye contact and reducing filler words like 'um' and 'uh'"],
-      nextSteps: ["Practice the presentation 3 more times and focus on smooth transitions between points"]
-    },
-    badge: {
-      name: "Confident Speaker",
-      emoji: "🎤",
-      description: "Mastered professional presentation skills for interviews and workplace"
-    },
-    shareMessage: "Ready to present anywhere - from classroom to boardroom! Just nailed my interview presentation skills! 🎤 #JobReady #PublicSpeaking"
-  },
-  {
-    id: 'written-communication',
-    title: 'Written Communication',
-    emoji: '✍️',
-    context: 'professional',
-    discover: {
-      scenario: "First day at your new job, you need to email your manager about project updates, respond to a senior colleague's feedback, and write a professional message to a client. But first, you need to write a compelling cover letter and follow up on job applications. Your current emails sound like text messages. How do you level up your professional writing?",
-      problemExplanation: [
-        "Informal Writing Style: Using casual language, abbreviations, and emojis in professional contexts",
-        "Lack of Structure: Emails without clear subject lines, greetings, or professional closings",
-        "Unclear Purpose: Messages that don't clearly state what you need or want",
-        "Inappropriate Tone: Being too casual with senior colleagues or too formal with peers"
-      ],
-      solutionApproach: [
-        "Professional Format: Proper email structure, subject lines, and signatures",
-        "Appropriate Tone: Matching formality level to audience and context",
-        "Clear Communication: Stating purpose, providing context, and requesting specific actions",
-        "Follow-up Strategies: Professional persistence without being pushy"
-      ]
-    },
-    video: {
-      title: "Write Like a Pro for Success",
-      duration: 5,
-      content: [
-        "Email Structure: Subject lines, greetings, body, closings, and signatures",
-        "Tone Adaptation: Formal vs. informal communication based on audience",
-        "Cover Letter Writing: Compelling applications that stand out to employers",
-        "Follow-up Communication: Post-interview and post-application strategies",
-        "Client Communication: Professional external communication standards"
-      ],
-      script: `[HOOK - 30 seconds]
-"Your writing is your first impression in college, work, and relationships. Today, I'll show you how to write like a pro in just 5 minutes."
-
-[ACADEMIC - 2 minutes]
-"In college, written communication helps you:
-- Write clear, persuasive essays and research papers
-- Communicate effectively with professors via email
-- Collaborate on group projects through written communication
-
-Techniques: Use the 5-paragraph structure, proofread twice, be concise and clear. Always include a clear subject line in emails.
-
-Example: Lisa improved her essay grades by 30% just by using a clear thesis statement and supporting evidence."
-
-[PROFESSIONAL - 2 minutes]
-"In your career, written communication helps you:
-- Write professional emails and reports that get results
-- Create compelling resumes and cover letters
-- Communicate clearly with clients and colleagues
-
-Techniques: Use bullet points for clarity, include action items, proofread for typos. Keep emails under 5 sentences when possible.
-
-Example: David got his dream job because his cover letter was clear, concise, and showed exactly how he could solve their problems."
-
-[PERSONAL - 1 minute]
-"In personal life, written communication helps you:
-- Express your thoughts clearly in texts and social media
-- Write meaningful messages to family and friends
-- Communicate effectively in online relationships
-
-Techniques: Be authentic, use proper grammar, think before you send. Your words represent you.
-
-Example: Maria strengthened her long-distance relationship by writing thoughtful, detailed messages to her partner."
-
-[CALL TO ACTION - 30 seconds]
-"Ready to write like a pro? Start by improving your next email or message. Remember, good writing is clear thinking made visible. Practice today!"`
-    },
-    quiz: {
-      title: "Test Your Written Communication Knowledge",
-      questions: [
-        {
-          id: 1,
-          question: "How do you email a senior colleague vs. a peer?",
-          options: [
-            "Use the same tone for both",
-            "Be more formal with senior colleagues, more casual with peers",
-            "Always be very formal",
-            "Be casual with everyone"
-          ],
-          correct: 1,
-          explanation: "Adjust your tone based on the relationship and context."
-        },
-        {
-          id: 2,
-          question: "What's the appropriate tone for client communication?",
-          options: [
-            "Very casual and friendly",
-            "Professional but warm, clear and respectful",
-            "Extremely formal and distant",
-            "Use lots of technical jargon"
-          ],
-          correct: 1,
-          explanation: "Professional but warm tone builds trust while maintaining boundaries."
-        },
-        {
-          id: 3,
-          question: "How do you respond professionally to negative feedback?",
-          options: [
-            "Defend yourself immediately",
-            "Thank them, acknowledge the feedback, and ask for specific examples",
-            "Ignore the feedback",
-            "Send a long explanation"
-          ],
-          correct: 1,
-          explanation: "Acknowledge feedback professionally and seek clarification."
-        },
-        {
-          id: 4,
-          question: "How do you write a compelling cover letter that stands out?",
-          options: [
-            "Use a generic template",
-            "Research the company and tailor your letter to their specific needs",
-            "Focus only on your achievements",
-            "Make it very long and detailed"
-          ],
-          correct: 1,
-          explanation: "Tailor your cover letter to show you understand the company's needs."
-        },
-        {
-          id: 5,
-          question: "What's the best way to follow up on job applications?",
-          options: [
-            "Send multiple emails",
-            "Call them directly",
-            "Send one professional follow-up email after 1-2 weeks",
-            "Wait indefinitely"
-          ],
-          correct: 2,
-          explanation: "One professional follow-up shows persistence without being pushy."
-        }
-      ]
-    },
-    challenge: {
-      title: "Write Professional Emails",
-      description: "Write 3 different professional emails",
-      instructions: [
-        "Cover Letter: Write a compelling cover letter for a job you're interested in",
-        "Manager Email: Write an email to your manager about a project update",
-        "Senior Colleague Email: Write an email responding to feedback from a senior colleague",
-        "Self-Review: Check each email for professional tone, clear structure, and appropriate language"
-      ],
-      successCriteria: [
-        "Clear subject lines for all emails",
-        "Appropriate greetings and closings",
-        "Professional tone matching the audience",
-        "Clear purpose and specific requests",
-        "No spelling or grammar errors"
-      ]
-    },
-    feedback: {
-      strengths: ["Your emails are clear and well-structured"],
-      improvements: ["Your cover letters need more personality and specific examples of your achievements"],
-      nextSteps: ["Practice writing emails to different audiences and focus on tailoring your message to each recipient"]
-    },
-    badge: {
-      name: "Professional Writer",
-      emoji: "✍️",
-      description: "Mastered professional written communication for workplace and job search"
-    },
-    shareMessage: "My emails are now crystal clear! Just leveled up my professional writing game! ✍️ #ProfessionalCommunication #JobSearch"
-  },
-  {
-    id: 'non-verbal-communication',
-    title: 'Non-verbal Communication',
-    emoji: '💪',
-    context: 'personal',
-    discover: {
-      scenario: "Family dinner where your parents want you to explain your career choice, but you're sitting slouched, avoiding eye contact, and fidgeting with your phone. Your body language is screaming 'I'm not confident' even though you are. How do you show confidence in personal situations?",
-      problemExplanation: [
-        "Poor Posture: Slouching and closed body language conveying lack of confidence",
-        "Avoiding Eye Contact: Looking away or at phone instead of engaging with family",
-        "Fidgeting: Nervous habits that distract from the message",
-        "Mixed Signals: Saying you're confident while body language shows otherwise"
-      ],
-      solutionApproach: [
-        "Confident Posture: Sitting up straight, open body language, facing the person",
-        "Eye Contact: Maintaining appropriate eye contact without staring",
-        "Calm Presence: Reducing fidgeting and nervous habits",
-        "Authentic Expression: Aligning body language with your words and feelings"
-      ]
-    },
-    video: {
-      title: "Master Body Language for Success",
-      duration: 5,
-      content: [
-        "Confident Body Language: Posture, gestures, and positioning",
-        "Eye Contact Mastery: Appropriate eye contact for different situations",
-        "Facial Expressions: Conveying confidence and authenticity",
-        "Personal Space: Understanding and respecting boundaries",
-        "Cultural Sensitivity: Adapting non-verbal communication to different contexts"
-      ],
-      script: `[HOOK - 30 seconds]
-"93% of communication is non-verbal. Your body language speaks louder than words. Today, I'll show you how to master it in just 5 minutes."
-
-[ACADEMIC - 2 minutes]
-"In college, non-verbal communication helps you:
-- Show confidence during presentations and class discussions
-- Build rapport with professors through positive body language
-- Appear engaged and interested in lectures and group work
-
-Techniques: Maintain eye contact, use open gestures, sit up straight, nod to show understanding. Avoid crossing arms or looking at your phone.
-
-Example: Alex got more participation points because he maintained eye contact and nodded during lectures, showing he was engaged."
-
-[PROFESSIONAL - 2 minutes]
-"In your career, non-verbal communication helps you:
-- Make a great first impression in job interviews
-- Build trust with colleagues and clients
-- Project confidence and professionalism
-
-Techniques: Firm handshake, maintain eye contact, use open body language, mirror the other person's energy level.
-
-Example: Jennifer got promoted because her confident body language and professional presence impressed her managers."
-
-[PERSONAL - 1 minute]
-"In personal life, non-verbal communication helps you:
-- Build stronger relationships through positive body language
-- Show empathy and understanding in conversations
-- Express emotions and feelings effectively
-
-Techniques: Use open gestures, maintain appropriate eye contact, smile genuinely, lean in to show interest.
-
-Example: Tom improved his relationships by being more aware of his body language and showing genuine interest in conversations."
-
-[CALL TO ACTION - 30 seconds]
-"Ready to master your body language? Start by being aware of your posture and gestures in your next conversation. Remember, your body speaks before you do. Practice today!"`
-    },
-    quiz: {
-      title: "Test Your Non-verbal Communication Knowledge",
-      questions: [
-        {
-          id: 1,
-          question: "What body language shows confidence in family discussions?",
-          options: [
-            "Slouching and looking away",
-            "Sitting up straight, making eye contact, and using open gestures",
-            "Crossing your arms and legs",
-            "Looking at your phone"
-          ],
-          correct: 1,
-          explanation: "Open posture and eye contact convey confidence and engagement."
-        },
-        {
-          id: 2,
-          question: "How do you maintain eye contact without staring in social situations?",
-          options: [
-            "Look directly into their eyes the entire time",
-            "Look at their eyes 60-70% of the time, occasionally looking away naturally",
-            "Avoid eye contact completely",
-            "Look over their shoulder"
-          ],
-          correct: 1,
-          explanation: "Natural eye contact patterns feel comfortable and confident."
-        },
-        {
-          id: 3,
-          question: "What does your posture say about your confidence level?",
-          options: [
-            "Nothing important",
-            "It communicates confidence, openness, and engagement",
-            "Only your words matter",
-            "Posture is irrelevant"
-          ],
-          correct: 1,
-          explanation: "Posture is a powerful non-verbal communication tool."
-        },
-        {
-          id: 4,
-          question: "How do you handle social media pressure and comparison?",
-          options: [
-            "Compare yourself to others constantly",
-            "Focus on your own journey and authentic self-expression",
-            "Try to copy others' success",
-            "Avoid social media completely"
-          ],
-          correct: 1,
-          explanation: "Authentic self-expression builds genuine confidence."
-        },
-        {
-          id: 5,
-          question: "What's the best way to communicate your values to family and friends?",
-          options: [
-            "Tell them what they should believe",
-            "Share your experiences and listen to theirs with respect",
-            "Avoid discussing values",
-            "Only communicate online"
-          ],
-          correct: 1,
-          explanation: "Respectful dialogue builds understanding and connection."
-        }
-      ]
-    },
-    challenge: {
-      title: "Practice Confident Body Language",
-      description: "Practice confident body language in your next family gathering or social event",
-      instructions: [
-        "Before the event: Practice confident posture and eye contact in front of a mirror",
-        "During the event: Focus on sitting up straight, making eye contact, and reducing fidgeting",
-        "Engage actively: Ask questions, share your thoughts, and listen attentively",
-        "Self-monitor: Notice when you're slouching or avoiding eye contact and correct it",
-        "Reflect: After the event, note what felt natural and what was challenging"
-      ],
-      successCriteria: [
-        "Maintained good posture throughout the event",
-        "Made appropriate eye contact during conversations",
-        "Reduced fidgeting and nervous habits",
-        "Actively participated in discussions",
-        "Felt more confident and authentic"
-      ]
-    },
-    feedback: {
-      strengths: ["You have natural warmth and authenticity in your interactions"],
-      improvements: ["Focus on maintaining eye contact and reducing fidgeting when discussing important topics"],
-      nextSteps: ["Practice confident body language in low-stakes situations before important conversations"]
-    },
-    badge: {
-      name: "Body Language Pro",
-      emoji: "💪",
-      description: "Mastered confident non-verbal communication for personal relationships"
-    },
-    shareMessage: "My confidence is showing! Just mastered the art of confident body language! 💪 #Confidence #PersonalGrowth"
-  },
-  {
-    id: 'conflict-resolution',
-    title: 'Conflict Resolution',
-    emoji: '🤝',
-    context: 'academic',
-    discover: {
-      scenario: "Group project disagreement about approach, team member not pulling their weight, conflict with professor about grades, peer pressure about academic choices. How do you navigate these conflicts without burning bridges?",
-      problemExplanation: [
-        "Group Work Conflicts: Different opinions on project direction and workload distribution",
-        "Academic Disputes: Disagreements with professors about grades, feedback, or expectations",
-        "Peer Pressure: Pressure from friends about academic choices, study habits, or career paths",
-        "Avoidance: Tendency to avoid conflict rather than address issues directly"
-      ],
-      solutionApproach: [
-        "Direct Communication: Addressing issues early before they escalate",
-        "Active Listening: Understanding all perspectives before proposing solutions",
-        "Collaborative Problem-Solving: Finding win-win solutions that work for everyone",
-        "Professional Boundaries: Maintaining respect while advocating for yourself"
-      ]
-    },
-    video: {
-      title: "Resolve Conflicts Like a Pro",
-      duration: 5,
-      content: [
-        "Group Project Management: Handling disagreements and unequal participation",
-        "Professor Communication: Addressing grades, feedback, and academic concerns professionally",
-        "Peer Pressure Navigation: Standing up for your academic choices and values",
-        "Study Group Dynamics: Resolving conflicts in collaborative learning environments",
-        "Academic Integrity: Handling situations involving cheating, plagiarism, or unfair practices"
-      ],
-      script: `[HOOK - 30 seconds]
-"Conflicts are inevitable in college, work, and relationships. But what if I told you that with the right approach, you can resolve them like a pro in just 5 minutes?"
-
-[ACADEMIC - 2 minutes]
-"In college, conflict resolution helps you:
-- Handle disagreements in group projects and study groups
-- Resolve issues with roommates and classmates
-- Communicate effectively with professors about grades or assignments
-
-Techniques: Use the 3-step method - Listen, Understand, Resolve. Focus on the issue, not the person. Find common ground.
-
-Example: Sarah resolved a group project conflict by listening to everyone's concerns and finding a solution that worked for all team members."
-
-[PROFESSIONAL - 2 minutes]
-"In your career, conflict resolution helps you:
-- Handle workplace disagreements professionally
-- Resolve issues with colleagues and clients
-- Build stronger working relationships
-
-Techniques: Stay calm, focus on facts, use 'I' statements, seek win-win solutions. Document important conversations.
-
-Example: Mike resolved a client complaint by listening to their concerns and finding a solution that satisfied both parties."
-
-[PERSONAL - 1 minute]
-"In personal life, conflict resolution helps you:
-- Handle family disagreements and relationship conflicts
-- Resolve issues with friends and loved ones
-- Build stronger personal relationships
-
-Techniques: Choose the right time and place, listen without interrupting, express your feelings clearly, focus on solutions.
-
-Example: Lisa improved her relationship with her parents by learning to express her feelings clearly and listen to their perspective."
-
-[CALL TO ACTION - 30 seconds]
-"Ready to resolve conflicts like a pro? Start by practicing active listening in your next disagreement. Remember, the goal is understanding, not winning. Begin today!"`
-    },
-    quiz: {
-      title: "Test Your Conflict Resolution Knowledge",
-      questions: [
-        {
-          id: 1,
-          question: "Group member isn't contributing - how do you address this?",
-          options: [
-            "Do their work for them",
-            "Talk to them privately, express concerns, and offer support",
-            "Complain to the professor immediately",
-            "Ignore the problem"
-          ],
-          correct: 1,
-          explanation: "Direct, private communication often resolves issues effectively."
-        },
-        {
-          id: 2,
-          question: "Professor gives you a lower grade than expected - how do you respond?",
-          options: [
-            "Argue with them immediately",
-            "Request a meeting to understand the grading criteria and discuss your work",
-            "Accept it without question",
-            "Complain to other students"
-          ],
-          correct: 1,
-          explanation: "Professional approach shows maturity and respect."
-        },
-        {
-          id: 3,
-          question: "What's the best way to resolve conflicts in study groups?",
-          options: [
-            "Let one person make all decisions",
-            "Discuss issues openly, listen to all perspectives, and find compromises",
-            "Avoid discussing problems",
-            "Form separate study groups"
-          ],
-          correct: 1,
-          explanation: "Open communication and compromise build stronger teams."
-        },
-        {
-          id: 4,
-          question: "How do you handle peer pressure about academic choices?",
-          options: [
-            "Always follow what your friends do",
-            "Make decisions based on your goals and values, communicate them respectfully",
-            "Avoid your friends",
-            "Try to change your friends' minds"
-          ],
-          correct: 1,
-          explanation: "Stay true to your values while respecting others' choices."
-        },
-        {
-          id: 5,
-          question: "What's the appropriate way to dispute a grade with a professor?",
-          options: [
-            "Send an angry email",
-            "Request a meeting, bring your work, and discuss the grading criteria professionally",
-            "Complain to other professors",
-            "Accept any grade without question"
-          ],
-          correct: 1,
-          explanation: "Professional approach with evidence shows respect and maturity."
-        }
-      ]
-    },
-    challenge: {
-      title: "Role-play Conflict Resolution",
-      description: "Role-play conflict resolution scenarios with study partners",
-      instructions: [
-        "Choose scenarios: Pick 2-3 common academic conflict situations",
-        "Role-play: Take turns playing different roles (student, professor, group member)",
-        "Practice techniques: Use active listening, 'I' statements, and collaborative problem-solving",
-        "Debrief: Discuss what worked, what was challenging, and how to improve",
-        "Apply: Use these techniques in your next real academic conflict"
-      ],
-      successCriteria: [
-        "Used active listening in all scenarios",
-        "Expressed concerns using 'I' statements",
-        "Proposed collaborative solutions",
-        "Maintained respectful communication",
-        "Felt more confident handling conflicts"
-      ]
-    },
-    feedback: {
-      strengths: ["You're naturally empathetic and good at understanding different perspectives"],
-      improvements: ["You avoid conflict but need to learn to address issues directly and assertively"],
-      nextSteps: ["Practice expressing your needs and boundaries in low-stakes situations"]
-    },
-    badge: {
-      name: "Peacemaker",
-      emoji: "🤝",
-      description: "Mastered conflict resolution skills for academic and professional success"
-    },
-    shareMessage: "I can resolve any conflict! Just learned to navigate disagreements like a pro! 🤝 #ConflictResolution #Leadership"
-  },
-  {
-    id: 'presentation-skills',
-    title: 'Presentation Skills',
-    emoji: '📊',
-    context: 'professional',
-    discover: {
-      scenario: "Client presentation tomorrow, your slides are boring, audience is disengaged, and you're reading from notes. Your manager is watching, and this could impact your performance review. How do you create engaging presentations that actually connect with your audience?",
-      problemExplanation: [
-        "Boring Content: Text-heavy slides, lack of visual appeal, and poor storytelling",
-        "Audience Disengagement: Reading from notes, lack of eye contact, and monotone delivery",
-        "Poor Structure: Unclear organization, missing key points, and weak conclusions",
-        "Performance Pressure: High-stakes situations affecting confidence and delivery"
-      ],
-      solutionApproach: [
-        "Visual Design: Clean slides, relevant images, and clear data visualization",
-        "Storytelling: Compelling narratives that connect with audience needs and interests",
-        "Audience Engagement: Interactive elements, questions, and two-way communication",
-        "Confident Delivery: Practice, preparation, and techniques to manage nerves"
-      ]
-    },
-    video: {
-      title: "Deliver Powerful Presentations",
-      duration: 5,
-      content: [
-        "Visual Design Principles: Creating engaging slides that support your message",
-        "Storytelling Techniques: Structuring presentations with compelling narratives",
-        "Audience Engagement: Interactive elements and two-way communication",
-        "Confident Delivery: Managing nerves and projecting confidence",
-        "Handling Questions: Responding to audience questions and feedback professionally"
-      ],
-      script: `[HOOK - 30 seconds]
-"Great presentations can change your life - from acing college projects to landing your dream job. Today, I'll show you how to deliver powerful presentations in just 5 minutes."
-
-[ACADEMIC - 2 minutes]
-"In college, presentation skills help you:
-- Ace class presentations and group projects
-- Impress professors with clear, engaging content
-- Build confidence for future academic presentations
-
-Techniques: Use the 3-2-1 structure - 3 main points, 2 supporting examples, 1 call to action. Practice your opening and closing lines. Use visual aids effectively.
-
-Example: Alex got an A+ on his final presentation by using storytelling and engaging visuals that kept the class interested."
-
-[PROFESSIONAL - 2 minutes]
-"In your career, presentation skills help you:
-- Impress employers in job interviews and client meetings
-- Lead team presentations and project updates
-- Advance your career through confident communication
-
-Techniques: Start with a hook, use data to support your points, maintain eye contact, end with a clear next step. Practice with colleagues.
-
-Example: Sarah got promoted to senior analyst because her client presentations were clear, engaging, and results-focused."
-
-[PERSONAL - 1 minute]
-"In personal life, presentation skills help you:
-- Speak confidently in social situations and family gatherings
-- Present your ideas clearly in group discussions
-- Build confidence in expressing your opinions
-
-Techniques: Practice with family and friends, use stories to make your points, focus on your message, not your nerves.
-
-Example: Tom became more confident in social situations by practicing presentation techniques with his family."
-
-[CALL TO ACTION - 30 seconds]
-"Ready to deliver powerful presentations? Start by practicing your next presentation or conversation. Remember, great presentations start with great preparation. Begin today!"`
-    },
-    quiz: {
-      title: "Test Your Presentation Skills Knowledge",
-      questions: [
-        {
-          id: 1,
-          question: "How do you make boring data interesting in client presentations?",
-          options: [
-            "Use lots of text",
-            "Create visual charts, tell a story with the data, and connect it to client benefits",
-            "Just show the numbers",
-            "Avoid data completely"
-          ],
-          correct: 1,
-          explanation: "Visual storytelling makes data meaningful and engaging."
-        },
-        {
-          id: 2,
-          question: "What's the difference between academic and professional presentation styles?",
-          options: [
-            "No difference",
-            "Academic focuses on theory, professional focuses on practical applications and results",
-            "Professional is always more formal",
-            "Academic is always longer"
-          ],
-          correct: 1,
-          explanation: "Professional presentations focus on practical value and results."
-        },
-        {
-          id: 3,
-          question: "How do you handle questions during workplace presentations?",
-          options: [
-            "Avoid questions",
-            "Listen carefully, acknowledge the question, and provide thoughtful responses",
-            "Answer quickly and move on",
-            "Let someone else answer"
-          ],
-          correct: 1,
-          explanation: "Engaging with questions shows confidence and expertise."
-        },
-        {
-          id: 4,
-          question: "What's the best way to present to senior management?",
-          options: [
-            "Use lots of technical jargon",
-            "Focus on high-level insights, business impact, and clear recommendations",
-            "Show all the details",
-            "Be very casual"
-          ],
-          correct: 1,
-          explanation: "Senior management wants strategic insights and clear recommendations."
-        },
-        {
-          id: 5,
-          question: "How do you handle negative feedback during presentations?",
-          options: [
-            "Get defensive",
-            "Listen actively, acknowledge the feedback, and ask for clarification",
-            "Ignore it",
-            "Argue your point"
-          ],
-          correct: 1,
-          explanation: "Professional handling of feedback shows maturity and openness to improvement."
-        }
-      ]
-    },
-    challenge: {
-      title: "Create Engaging Presentation",
-      description: "Create engaging slide deck for a client presentation",
-      instructions: [
-        "Choose a topic: A project you've worked on, a skill you want to highlight, or a business idea",
-        "Design slides: Create 5-7 slides with clear visuals, minimal text, and compelling content",
-        "Practice presentation: Rehearse your presentation focusing on storytelling and engagement",
-        "Record yourself: Present to camera and evaluate your delivery",
-        "Get feedback: Share with a friend or colleague and incorporate their suggestions"
-      ],
-      successCriteria: [
-        "Clean, visually appealing slide design",
-        "Clear narrative structure with beginning, middle, and end",
-        "Minimal text, maximum visual impact",
-        "Confident delivery with good eye contact",
-        "Engaging storytelling that connects with audience"
-      ]
-    },
-    feedback: {
-      strengths: ["Your content is well-researched and your structure is clear"],
-      improvements: ["Focus on visual design and storytelling to make your presentations more engaging"],
-      nextSteps: ["Practice using more visuals and less text, and work on connecting with your audience emotionally"]
-    },
-    badge: {
-      name: "Presentation Master",
-      emoji: "📊",
-      description: "Mastered engaging presentation skills for workplace and professional success"
-    },
-    shareMessage: "My presentations are now captivating! Just learned to tell stories that stick! 📊 #PresentationSkills #ProfessionalGrowth"
+    shareMessage: "Just mastered active listening skills! Ready to build stronger relationships through truly hearing others. #CommunicationSkills #GenZReady"
   }
 ];
 
-export const module1Assessment = {
-  title: "Communication Skills Final Assessment",
-  duration: 60, // minutes
+// Assessment for Module 1
+export const module1Assessment: AssessmentData = {
+  id: 'module1-assessment',
+  title: 'Communication Skills Assessment',
+  description: 'Comprehensive test covering all communication skills subtopics',
   questions: [
+    // Questions from Active Listening (5 questions)
     {
       id: 1,
-      question: "In a group project meeting, your teammate is explaining their idea but you disagree. What's the best approach?",
+      question: "In a job interview, the interviewer asks about your experience with team projects. You should:",
       options: [
-        "Interrupt them immediately to share your concerns",
-        "Listen completely, then ask clarifying questions before sharing your perspective",
-        "Stay quiet and implement your own idea later",
-        "Tell them their idea won't work"
+        "Immediately start listing all your achievements",
+        "Listen to the full question, pause, then provide a relevant example",
+        "Ask them to repeat the question if you didn't hear it clearly",
+        "Give a brief answer and ask about the company culture"
       ],
       correct: 1,
-      explanation: "Active listening requires understanding the full idea before responding. Ask questions to clarify before sharing concerns."
+      explanation: "Active listening involves hearing the complete question before responding, which allows you to provide a more relevant and thoughtful answer."
     },
     {
       id: 2,
-      question: "You're presenting to senior management about a project delay. How should you structure your presentation?",
+      question: "During a group project meeting, your teammate is explaining their research. The best way to show engagement is:",
       options: [
-        "Start with excuses and blame external factors",
-        "Begin with the current status, explain the delay clearly, and present a recovery plan",
-        "Focus only on the positive aspects and avoid mentioning the delay",
-        "Make it very technical to show your expertise"
+        "Nod while checking your phone",
+        "Maintain eye contact and ask clarifying questions",
+        "Interrupt to share your own ideas",
+        "Take detailed notes without looking up"
       ],
       correct: 1,
-      explanation: "Professional presentations should be transparent, solution-focused, and appropriate for the audience level."
+      explanation: "Active listening requires full attention and engagement, demonstrated through eye contact and thoughtful questions."
     },
     {
       id: 3,
-      question: "You need to email a professor about a grade dispute. What's the most professional approach?",
+      question: "Your friend is sharing a personal problem. The most supportive response is:",
       options: [
-        "Send an angry email demanding a grade change",
-        "Request a meeting to discuss the grading criteria and your work professionally",
-        "Complain to other students about the unfair grading",
-        "Accept the grade without question"
+        "Immediately offer solutions",
+        "Listen fully, acknowledge their feelings, and ask what they need",
+        "Change the subject to something positive",
+        "Tell them to stop complaining"
       ],
       correct: 1,
-      explanation: "Professional communication requires respectful dialogue and seeking understanding before making demands."
+      explanation: "Sometimes people need to be heard and understood before they can move forward. Acknowledging feelings shows empathy."
     },
     {
       id: 4,
-      question: "During a job interview, you notice the interviewer seems distracted. What should you do?",
+      question: "In a virtual meeting with poor connection, you miss some words. You should:",
       options: [
-        "Continue speaking as planned",
-        "Pause, make eye contact, and ask if they'd like you to clarify anything",
-        "Speak louder to get their attention",
-        "End the interview early"
+        "Pretend you understand and figure it out later",
+        "Ask for clarification on the key points you missed",
+        "Wait for someone else to ask questions",
+        "Send a private message to a colleague"
       ],
       correct: 1,
-      explanation: "Adapting to your audience's engagement level shows communication awareness and professionalism."
+      explanation: "It's better to ask for clarification than to make assumptions. This shows professionalism and ensures understanding."
     },
     {
       id: 5,
-      question: "A colleague gives you negative feedback about your presentation. How do you respond?",
+      question: "During a lecture, you're struggling to follow a complex explanation. The best approach is:",
       options: [
-        "Defend yourself and explain why they're wrong",
-        "Thank them, ask for specific examples, and discuss how to improve",
-        "Ignore the feedback completely",
-        "Complain to your manager about the colleague"
+        "Take notes on everything without asking questions",
+        "Ask specific questions about unclear parts",
+        "Wait until after class to ask questions",
+        "Focus on memorizing key terms"
       ],
       correct: 1,
-      explanation: "Professional growth requires accepting feedback gracefully and seeking specific guidance for improvement."
+      explanation: "Asking questions during the lecture shows engagement and helps clarify concepts immediately for everyone."
     },
+
+    // Questions from Public Speaking (5 questions)
     {
       id: 6,
-      question: "You're in a study group and one member isn't contributing. What's the best approach?",
+      question: "You're presenting your final project to a class of 30 students. To manage nervousness, you should:",
       options: [
-        "Do their work for them",
-        "Talk to them privately, express concerns, and offer support",
-        "Complain to the professor immediately",
-        "Exclude them from the group"
+        "Memorize your entire presentation word-for-word",
+        "Practice with friends, focus on your message, and use breathing techniques",
+        "Avoid eye contact to reduce anxiety",
+        "Read directly from your slides"
       ],
       correct: 1,
-      explanation: "Direct, private communication often resolves issues effectively and maintains group harmony."
+      explanation: "Preparation, practice, and breathing techniques help manage nervousness while maintaining connection with your audience."
     },
     {
       id: 7,
-      question: "You need to present complex data to a client. How do you make it engaging?",
+      question: "During a job interview presentation, you notice the interviewer looking confused. You should:",
       options: [
-        "Show all the raw data in tables",
-        "Create visual charts, tell a story with the data, and connect it to client benefits",
-        "Use lots of technical jargon to show expertise",
-        "Avoid data completely"
+        "Continue with your planned presentation",
+        "Pause, ask if they have questions, and clarify the confusing part",
+        "Speed up to finish quickly",
+        "Ignore their reaction and keep going"
       ],
       correct: 1,
-      explanation: "Visual storytelling makes data meaningful and connects information to audience needs."
+      explanation: "Adapting to your audience's needs shows good communication skills and ensures your message is understood."
     },
     {
       id: 8,
-      question: "During a family dinner, your parents question your career choice. How do you respond confidently?",
+      question: "You're giving a presentation about climate change to a mixed audience. The best approach is:",
       options: [
-        "Avoid eye contact and change the subject",
-        "Sit up straight, make eye contact, and explain your decision with passion and reasoning",
-        "Get defensive and argue",
-        "Agree with them to avoid conflict"
+        "Use only scientific terminology to sound professional",
+        "Start with relatable examples, use clear language, and include visual aids",
+        "Focus only on statistics and data",
+        "Speak as quickly as possible to cover more content"
       ],
       correct: 1,
-      explanation: "Confident body language and clear communication help convey your authentic self and values."
+      explanation: "Effective presentations connect with the audience through relatable examples and clear communication."
     },
     {
       id: 9,
-      question: "You receive a confusing email from a client. What's the best response?",
+      question: "Your voice starts shaking during an important presentation. The best response is:",
       options: [
-        "Reply with your best guess about what they mean",
-        "Ask clarifying questions to ensure you understand their needs before responding",
-        "Forward it to your manager",
-        "Ignore it until they follow up"
+        "Stop speaking and apologize",
+        "Take a deep breath, slow down, and continue with confidence",
+        "Speak louder to cover the shaking",
+        "Rush through the rest quickly"
       ],
       correct: 1,
+      explanation: "Managing nervousness with breathing and pacing shows professionalism and helps you regain control."
     },
     {
       id: 10,
-      question: "You're nervous before a big presentation. What's the best way to manage this?",
+      question: "When presenting virtually, the most important factor for engagement is:",
       options: [
-        "Focus on your mistakes and what could go wrong",
-        "Practice your opening, visualize success, and focus on your audience's needs",
-        "Memorize everything word for word",
-        "Avoid practicing to stay spontaneous"
+        "Having perfect lighting and background",
+        "Maintaining eye contact with the camera and speaking clearly",
+        "Using lots of animations in your slides",
+        "Speaking as fast as possible to keep attention"
       ],
       correct: 1,
+      explanation: "Virtual presentations require extra focus on eye contact and clear speech to maintain audience engagement."
+    },
+
+    // Questions from Written Communication (5 questions)
+    {
+      id: 11,
+      question: "You need to email your professor about a grade dispute. The most professional approach is:",
+      options: [
+        "Send an immediate angry email demanding an explanation",
+        "Write a respectful email with specific examples and request a meeting",
+        "Post about it on social media first",
+        "Send a text message instead"
+      ],
+      correct: 1,
+      explanation: "Professional written communication requires respect, specificity, and appropriate channels for serious matters."
+    },
+    {
+      id: 12,
+      question: "When writing a cover letter for a job application, you should:",
+      options: [
+        "Use the same template for all applications",
+        "Customize it for the specific role, highlight relevant skills, and show enthusiasm",
+        "Keep it under 50 words",
+        "Focus only on your academic achievements"
+      ],
+      correct: 1,
+      explanation: "Effective cover letters are tailored to the specific role and demonstrate how your skills match their needs."
+    },
+    {
+      id: 13,
+      question: "You're writing a group project report. The best approach for collaboration is:",
+      options: [
+        "Have one person write everything",
+        "Assign sections, use shared documents, and review each other's work",
+        "Write your part separately and combine at the end",
+        "Use only bullet points"
+      ],
+      correct: 1,
+      explanation: "Collaborative writing requires clear organization, shared tools, and peer review for quality and consistency."
+    },
+    {
+      id: 14,
+      question: "When writing a complaint email to a company, the most effective approach is:",
+      options: [
+        "Use all caps and exclamation marks to show urgency",
+        "Be specific about the problem, provide evidence, and suggest a solution",
+        "Threaten legal action immediately",
+        "Send multiple emails to different departments"
+      ],
+      correct: 1,
+      explanation: "Professional complaint writing requires specificity, evidence, and constructive suggestions for resolution."
+    },
+    {
+      id: 15,
+      question: "You're writing a LinkedIn post about your internship experience. The best strategy is:",
+      options: [
+        "Share only positive experiences",
+        "Be authentic, share both challenges and learnings, and engage with comments",
+        "Use only hashtags without text",
+        "Copy someone else's successful post"
+      ],
+      correct: 1,
+      explanation: "Authentic professional writing on social media builds credibility and meaningful connections."
+    },
+
+    // Questions from Non-Verbal Communication (5 questions)
+    {
+      id: 16,
+      question: "During a job interview, your body language should convey:",
+      options: [
+        "Relaxation by slouching in your chair",
+        "Confidence through good posture, appropriate eye contact, and open gestures",
+        "Nervousness by fidgeting with your hands",
+        "Disinterest by avoiding eye contact"
+      ],
+      correct: 1,
+      explanation: "Professional body language demonstrates confidence, engagement, and respect for the interviewer."
+    },
+    {
+      id: 17,
+      question: "In a virtual meeting, the most important non-verbal element is:",
+      options: [
+        "Having a perfect background",
+        "Maintaining eye contact with the camera and appropriate facial expressions",
+        "Wearing formal business attire",
+        "Having perfect lighting"
+      ],
+      correct: 1,
+      explanation: "Virtual communication relies heavily on facial expressions and eye contact to convey engagement and understanding."
+    },
+    {
+      id: 18,
+      question: "When giving a presentation, your gestures should:",
+      options: [
+        "Be minimal to avoid distraction",
+        "Emphasize key points naturally and help illustrate concepts",
+        "Be large and dramatic for attention",
+        "Follow a specific pattern regardless of content"
+      ],
+      correct: 1,
+      explanation: "Effective gestures support your message and help the audience understand and remember key points."
+    },
+    {
+      id: 19,
+      question: "During a difficult conversation with a friend, your body language should:",
+      options: [
+        "Show dominance by standing tall",
+        "Be open and approachable, showing you're listening",
+        "Cross your arms to show you're serious",
+        "Avoid physical contact completely"
+      ],
+      correct: 1,
+      explanation: "Supportive body language in personal conversations shows empathy and creates a safe space for discussion."
+    },
+    {
+      id: 20,
+      question: "When meeting someone for the first time, the most important non-verbal cue is:",
+      options: [
+        "A firm handshake",
+        "Genuine smile and appropriate eye contact",
+        "Perfect posture",
+        "Expensive clothing"
+      ],
+      correct: 1,
+      explanation: "First impressions are most influenced by genuine warmth and engagement, not physical attributes."
+    },
+
+    // Questions from Conflict Resolution (5 questions)
+    {
+      id: 21,
+      question: "Your roommate is playing loud music while you're studying. The best approach is:",
+      options: [
+        "Turn up your own music louder",
+        "Calmly explain the situation and find a compromise",
+        "Complain to other roommates",
+        "Wait until they're gone to study"
+      ],
+      correct: 1,
+      explanation: "Effective conflict resolution requires direct, respectful communication and willingness to find solutions."
+    },
+    {
+      id: 22,
+      question: "During a group project, two team members are arguing about the approach. You should:",
+      options: [
+        "Take sides with the person you agree with",
+        "Facilitate discussion, help them find common ground, and focus on the project goal",
+        "Avoid getting involved",
+        "Report them to the professor"
+      ],
+      correct: 1,
+      explanation: "Conflict resolution skills help maintain team harmony and focus on shared objectives."
+    },
+    {
+      id: 23,
+      question: "A friend is upset with you but won't tell you why. The best response is:",
+      options: [
+        "Ignore them until they get over it",
+        "Approach them privately, acknowledge their feelings, and ask to talk",
+        "Ask mutual friends what's wrong",
+        "Confront them publicly"
+      ],
+      correct: 1,
+      explanation: "Addressing conflicts directly and privately shows respect and creates space for honest communication."
+    },
+    {
+      id: 24,
+      question: "You disagree with a professor's grading on an assignment. The professional approach is:",
+      options: [
+        "Argue with them in front of the class",
+        "Schedule office hours, present your case respectfully, and listen to their feedback",
+        "Complain to other students",
+        "Accept the grade without question"
+      ],
+      correct: 1,
+      explanation: "Professional conflict resolution requires respectful dialogue and willingness to understand different perspectives."
+    },
+    {
+      id: 25,
+      question: "Two friends are having a disagreement and want you to take sides. You should:",
+      options: [
+        "Choose the side of your closer friend",
+        "Stay neutral, encourage them to talk directly, and offer to mediate if needed",
+        "Avoid both of them",
+        "Tell them to figure it out themselves"
+      ],
+      correct: 1,
+      explanation: "Neutral mediation helps friends resolve conflicts without damaging relationships."
+    },
+
+    // Questions from Presentation Skills (5 questions)
+    {
+      id: 26,
+      question: "You're presenting to a diverse audience with different technical backgrounds. The best approach is:",
+      options: [
+        "Use only technical jargon to sound professional",
+        "Start with basics, use analogies, and provide multiple examples",
+        "Focus only on the most advanced concepts",
+        "Speak very slowly to ensure understanding"
+      ],
+      correct: 1,
+      explanation: "Effective presentations adapt to audience needs and use various techniques to ensure comprehension."
+    },
+    {
+      id: 27,
+      question: "Your presentation is running over time. The best response is:",
+      options: [
+        "Skip to the conclusion quickly",
+        "Acknowledge the time constraint, prioritize key points, and offer to continue discussion later",
+        "Speak faster to fit everything in",
+        "Ignore the time limit"
+      ],
+      correct: 1,
+      explanation: "Time management in presentations shows respect for the audience and professional planning skills."
+    },
+    {
+      id: 28,
+      question: "During a virtual presentation, your internet connection becomes unstable. You should:",
+      options: [
+        "Continue as if nothing is wrong",
+        "Acknowledge the issue, switch to audio-only if needed, and adjust your approach",
+        "End the presentation immediately",
+        "Blame the technology and stop"
+      ],
+      correct: 1,
+      explanation: "Adapting to technical challenges demonstrates professionalism and commitment to effective communication."
+    },
+    {
+      id: 29,
+      question: "You're presenting research findings that challenge popular beliefs. The best approach is:",
+      options: [
+        "Present only the data that supports your argument",
+        "Present all evidence fairly, acknowledge limitations, and invite discussion",
+        "Avoid presenting controversial findings",
+        "Present your findings as absolute truth"
+      ],
+      correct: 1,
+      explanation: "Ethical presentation of research requires honesty, transparency, and openness to different perspectives."
+    },
+    {
+      id: 30,
+      question: "After your presentation, someone asks a question you can't answer. The best response is:",
+      options: [
+        "Make up an answer to sound knowledgeable",
+        "Acknowledge you don't know, offer to find out, and provide contact information for follow-up",
+        "Ignore the question and move on",
+        "Deflect to someone else immediately"
+      ],
+      correct: 1,
+      explanation: "Honesty about knowledge limitations builds credibility and shows commitment to providing accurate information."
     }
   ],
-  sections: [
-    {
-      name: "Active Listening", 
-      questions: 2,
-      context: "Academic and professional scenarios"
+  gradingScale: {
+    excellent: { 
+      min: 90, 
+      max: 100, 
+      message: "Outstanding! You've mastered communication skills and are ready to excel in any professional setting.", 
+      xpReward: 100 
     },
-    {
-      name: "Public Speaking", 
-      questions: 2,
-      context: "Interview and presentation situations"
+    good: { 
+      min: 80, 
+      max: 89, 
+      message: "Great job! You have strong communication skills with room for continued growth.", 
+      xpReward: 75 
     },
-    {
-      name: "Written Communication",
-      questions: 2,
-      context: "Email, cover letter, and professional writing"
+    satisfactory: { 
+      min: 70, 
+      max: 79, 
+      message: "Good foundation! Keep practicing to strengthen your communication skills.", 
+      xpReward: 50 
     },
-    {
-      name: "Non-verbal Communication",
-      questions: 1,
-      context: "Body language and personal interactions"
-    },
-    {
-      name: "Conflict Resolution",
-      questions: 1,
-      context: "Academic and workplace conflict scenarios"
-    },
-    {
-      name: "Presentation Skills",
-      questions: 2,
-      context: "Professional presentation situations"
+    needsImprovement: { 
+      min: 0, 
+      max: 69, 
+      message: "Keep learning! Review the module content and practice these skills in real-world situations.", 
+      xpReward: 25 
     }
-  ],
-  practicalChallenge: {
-    title: "How Communication Skills Help in Career Success",
-    duration: 5, // minutes
-    requirements: [
-      "Clear introduction and conclusion",
-      "3 main points with examples",
-      "Professional visual aids (slides or props)",
-      "Confident delivery with good eye contact",
-      "Within 5-minute time limit"
-    ]
-  },
-  scoring: {
-    quizQuestions: 100, // points (10 questions × 10 points each)
-    practicalPresentation: 0, // points (optional)
-    totalPossible: 100
-  },
-  gradeLevels: [
-    { range: "90-100", grade: "Communication Master", description: "Excellent" },
-    { range: "80-89", grade: "Communication Expert", description: "Very Good" },
-    { range: "70-79", grade: "Communication Proficient", description: "Good" },
-    { range: "60-69", grade: "Communication Developing", description: "Needs Improvement" },
-    { range: "0-59", grade: "Communication Beginner", description: "Requires Additional Practice" }
-  ]
-};
-
-// Local Storage Helper Functions
-export const saveModuleProgress = (progress: ModuleProgress): void => {
-  localStorage.setItem('moduleProgress', JSON.stringify(progress));
-};
-
-export const loadModuleProgress = (): ModuleProgress | null => {
-  const stored = localStorage.getItem('moduleProgress');
-  return stored ? JSON.parse(stored) : null;
-};
-
-export const updateSubtopicProgress = (subtopicId: string, score: number, response: string): void => {
-  const progress = loadModuleProgress() || {
-    moduleId: 'communication-skills',
-    currentSubtopic: 1,
-    completedSubtopics: [],
-    quizScores: {},
-    badges: [],
-    challengeResponses: {},
-    lastAccessed: new Date().toISOString(),
-    totalXP: 0
-  };
-
-  // Update progress
-  progress.quizScores[subtopicId] = score;
-  progress.challengeResponses[subtopicId] = response;
-  
-  if (!progress.completedSubtopics.includes(parseInt(subtopicId.split('-')[1]))) {
-    progress.completedSubtopics.push(parseInt(subtopicId.split('-')[1]));
   }
-  
-  progress.totalXP += score * 10; // 10 XP per quiz point
-  progress.lastAccessed = new Date().toISOString();
-  
-  saveModuleProgress(progress);
 };
 
-export const generatePersonalizedFeedback = (progress: ModuleProgress): string => {
-  const strengths: string[] = [];
-  const improvements: string[] = [];
-  
-  // Analyze quiz scores
-  Object.entries(progress.quizScores).forEach(([subtopic, score]) => {
-    if (score >= 8) {
-      strengths.push(subtopic.replace('-', ' '));
-    } else {
-      improvements.push(`${subtopic.replace('-', ' ')} - Focus on key concepts`);
-    }
-  });
-  
-  return `Strengths: ${strengths.join(', ')}. Areas for improvement: ${improvements.join(', ')}.`;
+// Helper functions
+export const updateSubtopicProgress = (subtopicId: string, progress: number): void => {
+  // Implementation for updating progress
+  console.log(`Updated progress for ${subtopicId}: ${progress}%`);
+};
+
+export const generatePersonalizedFeedback = (responses: any[]): string => {
+  // Implementation for generating AI feedback
+  return "Personalized feedback based on your responses...";
+};
+
+// Export for compatibility with existing imports
+export const module1Subtopics = module1Data;
+
+// Progress management functions
+export const loadModuleProgress = (): any => {
+  // Implementation for loading module progress
+  return {};
+};
+
+export const saveModuleProgress = (progress: any): void => {
+  // Implementation for saving module progress
+  console.log('Saving module progress:', progress);
 };

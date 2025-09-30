@@ -1,4 +1,4 @@
-// Module 1: Communication Skills Data Structure
+// Module 4: Critical Thinking Data Structure
 export interface ModuleProgress {
   moduleId: string;
   currentSubtopic: number;
@@ -8,6 +8,9 @@ export interface ModuleProgress {
   challengeResponses: { [key: string]: string };
   lastAccessed: string;
   totalXP: number;
+  successStreak: number;
+  highestStreak: number;
+  lastStreakDate: string;
 }
 
 export interface SubtopicData {
@@ -54,992 +57,921 @@ export interface SubtopicData {
   shareMessage: string;
 }
 
-export const module1Subtopics: SubtopicData[] = [
+export interface AssessmentData {
+  title: string;
+  description: string;
+  questions: {
+    id: number;
+    question: string;
+    options: string[];
+    correct: number;
+    explanation?: string;
+  }[];
+  gradingScale: {
+    excellent: { min: number; max: number; message: string; xpReward: number };
+    good: { min: number; max: number; message: string; xpReward: number };
+    satisfactory: { min: number; max: number; message: string; xpReward: number };
+    needsImprovement: { min: number; max: number; message: string; xpReward: number };
+  };
+}
+
+export const module4Subtopics: SubtopicData[] = [
   {
-    id: 'active-listening',
-    title: 'Active Listening',
-    emoji: '🎧',
+    id: 'logical-reasoning',
+    title: 'Logical Reasoning',
+    emoji: '🧠',
     context: 'academic',
     discover: {
-      scenario: "Your professor is explaining the final exam format, but you're already thinking about your job interview tomorrow. Your group project partner is sharing concerns, but you're distracted by notifications. You realize you've missed the key points for the upcoming exam. How do you focus and absorb information effectively?",
+      scenario: "You're analyzing a complex research paper with conflicting data. Your professor asks you to evaluate the methodology and conclusions. You need to identify logical fallacies, assess evidence quality, and form your own reasoned opinion. How do you approach this systematically?",
       problemExplanation: [
-        "Distraction: Phone notifications, friend conversations, and internal thoughts prevent focus",
-        "Multitasking: Trying to listen while thinking about other things reduces comprehension",
-        "Passive Listening: Just hearing words without understanding or processing meaning",
-        "Missing Critical Information: Key exam content and project details are lost"
+        "Complex Information: Multiple data sources with conflicting conclusions",
+        "Bias Recognition: Identifying personal and author biases in research",
+        "Evidence Evaluation: Distinguishing between correlation and causation",
+        "Logical Fallacies: Recognizing common reasoning errors in arguments"
       ],
       solutionApproach: [
-        "Focus Techniques: Phone away, active note-taking, eye contact with speaker",
-        "Engagement Strategies: Asking clarifying questions, summarizing key points",
-        "Memory Techniques: Connecting new information to existing knowledge",
-        "Follow-up Actions: Office hours, study groups, peer discussions"
+        "Systematic Analysis: Break down arguments into premises and conclusions",
+        "Evidence Assessment: Evaluate source credibility and methodology",
+        "Bias Identification: Recognize personal and author biases",
+        "Logical Structure: Identify fallacies and weak reasoning"
       ]
     },
     video: {
-      title: "Active Listening for Academic Success",
+      title: "Master Logical Reasoning for Academic Success",
       duration: 5,
       content: [
-        "Lecture Listening: How to stay focused during long lectures",
-        "Group Work: Active listening in study groups and project meetings",
-        "Professor Communication: Effective listening during office hours and feedback sessions",
-        "Note-Taking Integration: Combining listening with effective note-taking",
-        "Memory Retention: Techniques to remember what you've heard"
+        "Argument Analysis: Breaking down complex arguments into components",
+        "Evidence Evaluation: Assessing source credibility and methodology",
+        "Logical Fallacies: Recognizing common reasoning errors",
+        "Bias Recognition: Identifying personal and author biases",
+        "Critical Reading: Analyzing research papers and academic texts"
       ]
     },
     quiz: {
-      title: "Test Your Active Listening Knowledge",
+      title: "Test Your Logical Reasoning Skills",
       questions: [
         {
           id: 1,
-          question: "Your professor says 'This needs more research' - what should you do first?",
+          question: "What's the first step in analyzing a complex argument?",
           options: [
-            "Immediately start researching",
-            "Ask clarifying questions about what specific research is needed",
-            "Ignore the feedback and continue as planned",
-            "Ask other students what they think"
+            "Accept the conclusion",
+            "Identify the premises and conclusion",
+            "Look for supporting evidence",
+            "Check the author's credentials"
           ],
           correct: 1,
-          explanation: "Always ask clarifying questions to understand exactly what's needed before taking action."
+          explanation: "Always start by identifying the premises (supporting statements) and the conclusion (what's being argued for)."
         },
         {
           id: 2,
-          question: "Group member is struggling with their part - how do you listen effectively?",
+          question: "How do you distinguish between correlation and causation?",
           options: [
-            "Give them advice immediately",
-            "Listen completely, then ask questions to understand their specific challenges",
-            "Tell them to figure it out themselves",
-            "Take over their part"
+            "They're the same thing",
+            "Correlation shows relationship, causation shows cause-effect",
+            "Causation is always stronger than correlation",
+            "You can't distinguish between them"
           ],
           correct: 1,
-          explanation: "Active listening means understanding the full situation before offering solutions."
+          explanation: "Correlation shows a relationship between variables, while causation shows that one variable causes another."
         },
         {
           id: 3,
-          question: "What's the difference between hearing and active listening in academic settings?",
+          question: "What is a logical fallacy?",
           options: [
-            "There's no difference",
-            "Hearing is passive, active listening involves understanding and responding",
-            "Active listening is just louder",
-            "Hearing is for lectures, active listening is for conversations"
+            "A true statement",
+            "An error in reasoning that weakens an argument",
+            "A complex argument",
+            "A statistical error"
           ],
           correct: 1,
-          explanation: "Active listening requires engagement, understanding, and response, not just hearing words."
+          explanation: "A logical fallacy is an error in reasoning that makes an argument invalid or weak."
         },
         {
           id: 4,
-          question: "How do you take effective notes during exam review sessions?",
+          question: "How do you evaluate the credibility of a source?",
           options: [
-            "Write down everything the professor says",
-            "Focus on key concepts and ask questions about unclear points",
-            "Record the session and listen later",
-            "Just listen without taking notes"
+            "Check if it supports your opinion",
+            "Look at the author's credentials, publication, and methodology",
+            "See if it's recent",
+            "Check if it's popular"
           ],
           correct: 1,
-          explanation: "Focus on key concepts and engage by asking questions about unclear points."
+          explanation: "Evaluate credibility by examining the author's expertise, publication quality, and research methodology."
         },
         {
           id: 5,
-          question: "What's the best way to listen and understand complex academic concepts?",
+          question: "What's the best approach to handling conflicting information?",
           options: [
-            "Memorize the definitions",
-            "Connect new concepts to things you already know",
-            "Ask the professor to simplify everything",
-            "Skip the complex parts"
+            "Choose the most recent source",
+            "Analyze the methodology and evidence quality of each source",
+            "Go with your gut feeling",
+            "Ask someone else to decide"
           ],
           correct: 1,
-          explanation: "Connecting new information to existing knowledge helps with understanding and retention."
+          explanation: "Analyze the methodology and evidence quality to determine which source is more reliable."
         }
       ]
     },
     challenge: {
-      title: "Practice Active Listening",
-      description: "Practice active listening in your next lecture or study session",
+      title: "Practice Logical Reasoning",
+      description: "Analyze a complex argument or research paper using logical reasoning principles",
       instructions: [
-        "Before the session: Put your phone away, prepare note-taking materials",
-        "During the session: Maintain eye contact, ask at least 2 clarifying questions",
-        "After the session: Summarize 3 key points you learned",
-        "Reflection: Write down what helped you listen better and what was challenging"
+        "Choose a research paper or article with a clear argument",
+        "Identify the main premises and conclusion",
+        "Evaluate the evidence quality and methodology",
+        "Look for any logical fallacies or biases",
+        "Form your own reasoned opinion based on the analysis"
       ],
       successCriteria: [
-        "Asked at least 2 relevant questions",
-        "Created clear, organized notes",
-        "Can explain 3 key concepts from the session",
-        "Identified specific listening strategies that worked"
+        "Clearly identified premises and conclusion",
+        "Evaluated evidence quality and methodology",
+        "Identified at least one potential bias or fallacy",
+        "Formed a reasoned opinion with supporting evidence"
       ]
     },
     feedback: {
-      strengths: ["You're great at listening to peers and asking thoughtful questions"],
-      improvements: ["Focus on maintaining eye contact with authority figures and reducing internal distractions"],
-      nextSteps: ["Practice active listening in your next professor meeting and group study session"]
+      strengths: ["You're excellent at breaking down complex arguments and identifying key components"],
+      improvements: ["Focus on recognizing subtle biases and evaluating evidence quality more systematically"],
+      nextSteps: ["Practice analyzing different types of arguments and research methodologies"]
     },
     badge: {
-      name: "Active Listener",
-      emoji: "🎧",
-      description: "Mastered the art of active listening in academic settings"
+      name: "Logical Thinker",
+      emoji: "🧠",
+      description: "Mastered logical reasoning and argument analysis"
     },
-    shareMessage: "Just mastered active listening for my studies! Ready to absorb knowledge like a sponge! 🎧 #StudySmart #CommunicationSkills"
+    shareMessage: "Just mastered logical reasoning! Ready to analyze any argument like a pro! 🧠 #CriticalThinking #AcademicSuccess"
   },
   {
-    id: 'public-speaking',
-    title: 'Public Speaking',
-    emoji: '🎤',
+    id: 'problem-analysis',
+    title: 'Problem Analysis',
+    emoji: '🔍',
     context: 'professional',
     discover: {
-      scenario: "Job interview tomorrow, you need to present your final year project to potential employers. Your hands are shaking, voice is cracking, and you're worried about technical questions. Plus, you've been applying to 50+ jobs with no responses. How do you present confidently and handle interview anxiety?",
+      scenario: "Your team's project is behind schedule and over budget. The client is unhappy, and your manager wants a solution. You need to identify the root causes, analyze the problem systematically, and propose evidence-based solutions. How do you approach this complex problem?",
       problemExplanation: [
-        "Interview Anxiety: Physical symptoms of nervousness affecting performance",
-        "Application Fatigue: Multiple rejections leading to self-doubt and decreased confidence",
-        "Technical Concerns: Worry about being asked difficult questions beyond your knowledge",
-        "Presentation Skills: Lack of experience presenting to professional audiences"
+        "Surface Symptoms: Visible problems like delays and budget overruns",
+        "Root Causes: Underlying issues causing the surface problems",
+        "Multiple Factors: Interconnected problems affecting each other",
+        "Stakeholder Perspectives: Different views on what the real problem is"
       ],
       solutionApproach: [
-        "Confidence Building: Preparation, practice, and positive self-talk",
-        "Anxiety Management: Breathing techniques, visualization, and reframing",
-        "Technical Preparation: Research company, practice common questions, prepare examples",
-        "Presentation Skills: Structure, storytelling, and audience engagement"
+        "Problem Definition: Clearly define what the problem is and isn't",
+        "Root Cause Analysis: Use techniques like 5 Whys and fishbone diagrams",
+        "Data Collection: Gather evidence to understand the problem fully",
+        "Solution Generation: Brainstorm multiple potential solutions"
       ]
     },
     video: {
-      title: "Public Speaking for Professional Success",
+      title: "Systematic Problem Analysis for Professional Success",
       duration: 5,
       content: [
-        "Interview Presentations: How to present your projects confidently to employers",
-        "Career Fair Communication: Elevator pitches and portfolio presentations",
-        "Networking Events: Introducing yourself professionally to industry contacts",
-        "Anxiety Management: Techniques to handle nervousness and build confidence",
-        "Follow-up Strategies: Post-interview communication and relationship building"
+        "Problem Definition: Clearly defining the problem scope and boundaries",
+        "Root Cause Analysis: Using 5 Whys and fishbone diagrams",
+        "Data Collection: Gathering evidence and stakeholder input",
+        "Solution Generation: Brainstorming multiple approaches",
+        "Implementation Planning: Creating actionable solution plans"
       ]
     },
     quiz: {
-      title: "Test Your Public Speaking Knowledge",
+      title: "Test Your Problem Analysis Skills",
       questions: [
         {
           id: 1,
-          question: "How do you adjust your presentation style for an interviewer vs. a client?",
+          question: "What's the first step in problem analysis?",
           options: [
-            "Use the same style for both",
-            "Be more formal with interviewers, more casual with clients",
-            "Research the audience and adjust tone, examples, and level of detail accordingly",
-            "Always be very formal"
+            "Jump to solutions",
+            "Clearly define the problem",
+            "Gather all possible data",
+            "Ask others for their opinions"
           ],
-          correct: 2,
-          explanation: "Always research your audience and tailor your presentation to their needs and context."
+          correct: 1,
+          explanation: "Always start by clearly defining what the problem is and what it isn't."
         },
         {
           id: 2,
-          question: "What's the best way to handle technical questions during presentations?",
+          question: "What is root cause analysis?",
           options: [
-            "Pretend you know the answer",
-            "Say 'I don't know' and move on",
-            "Acknowledge what you know, admit what you don't, and explain how you'd find out",
-            "Change the subject"
+            "Finding the first problem that occurred",
+            "Identifying the underlying causes of surface problems",
+            "Blaming someone for the problem",
+            "Finding the most obvious cause"
           ],
-          correct: 2,
-          explanation: "Honesty and problem-solving approach shows professionalism and confidence."
+          correct: 1,
+          explanation: "Root cause analysis identifies the underlying causes that lead to surface problems."
         },
         {
           id: 3,
-          question: "How do you maintain confidence when presenting to senior professionals?",
+          question: "How do you handle multiple potential causes of a problem?",
           options: [
-            "Avoid eye contact",
-            "Speak quietly to show respect",
-            "Maintain good posture, speak clearly, and focus on your value",
-            "Let them lead the conversation"
+            "Choose the most obvious one",
+            "Investigate each potential cause systematically",
+            "Ask the team to vote",
+            "Go with your first instinct"
           ],
-          correct: 2,
-          explanation: "Confidence comes from good preparation, clear communication, and knowing your value."
+          correct: 1,
+          explanation: "Systematically investigate each potential cause to understand the full picture."
         },
         {
           id: 4,
-          question: "How do you follow up after a job interview without being pushy?",
+          question: "What's the benefit of gathering data before proposing solutions?",
           options: [
-            "Send multiple emails",
-            "Call them directly",
-            "Send one professional thank-you email within 24 hours",
-            "Wait for them to contact you"
+            "It delays decision-making",
+            "It provides evidence-based understanding of the problem",
+            "It confuses the issue",
+            "It's unnecessary for simple problems"
           ],
-          correct: 2,
-          explanation: "One professional thank-you email within 24 hours shows professionalism without being pushy."
+          correct: 1,
+          explanation: "Data provides evidence-based understanding that leads to better solutions."
         },
         {
           id: 5,
-          question: "What do you say when asked 'Why should we hire you?'",
+          question: "How do you ensure your problem analysis is comprehensive?",
           options: [
-            "I need a job",
-            "I'm really smart",
-            "Based on my skills and experience, I can contribute to your team by...",
-            "I don't know"
+            "Focus on one perspective",
+            "Consider multiple perspectives and use structured analysis tools",
+            "Trust your experience",
+            "Ask only experts"
           ],
-          correct: 2,
-          explanation: "Focus on specific skills and how they benefit the company, not your personal needs."
+          correct: 1,
+          explanation: "Comprehensive analysis requires multiple perspectives and structured tools."
         }
       ]
     },
     challenge: {
-      title: "Record Professional Presentation",
-      description: "Record a 3-minute professional presentation for a job interview",
+      title: "Practice Problem Analysis",
+      description: "Analyze a real problem using systematic problem analysis techniques",
       instructions: [
-        "Choose a topic: Your final year project, a relevant experience, or a skill you want to highlight",
-        "Structure your presentation: Introduction, main points, conclusion",
-        "Record yourself: Use your phone or computer to record the presentation",
-        "Self-evaluate: Watch the recording and note areas for improvement",
-        "Practice again: Record a second version incorporating improvements"
+        "Choose a problem you're currently facing (academic, professional, or personal)",
+        "Clearly define the problem and its scope",
+        "Use the 5 Whys technique to identify root causes",
+        "Gather data and evidence about the problem",
+        "Generate multiple potential solutions"
       ],
       successCriteria: [
-        "Clear introduction and conclusion",
-        "Well-organized main points",
-        "Good eye contact with camera",
-        "Confident voice and body language",
-        "Within 3-minute time limit"
+        "Clearly defined problem statement",
+        "Identified at least 3 potential root causes",
+        "Gathered relevant data and evidence",
+        "Generated at least 3 different solution approaches"
       ]
     },
     feedback: {
-      strengths: ["You have good content and clear structure"],
-      improvements: ["Work on maintaining eye contact and reducing filler words like 'um' and 'uh'"],
-      nextSteps: ["Practice the presentation 3 more times and focus on smooth transitions between points"]
+      strengths: ["You're great at identifying patterns and breaking down complex problems"],
+      improvements: ["Focus on gathering more data before jumping to conclusions and considering multiple perspectives"],
+      nextSteps: ["Practice using structured analysis tools like fishbone diagrams and 5 Whys"]
     },
     badge: {
-      name: "Confident Speaker",
-      emoji: "🎤",
-      description: "Mastered professional presentation skills for interviews and workplace"
+      name: "Problem Solver",
+      emoji: "🔍",
+      description: "Mastered systematic problem analysis and root cause identification"
     },
-    shareMessage: "Ready to present anywhere - from classroom to boardroom! Just nailed my interview presentation skills! 🎤 #JobReady #PublicSpeaking"
+    shareMessage: "Just mastered problem analysis! Ready to tackle any challenge systematically! 🔍 #ProblemSolving #CriticalThinking"
   },
   {
-    id: 'written-communication',
-    title: 'Written Communication',
-    emoji: '✍️',
-    context: 'professional',
-    discover: {
-      scenario: "First day at your new job, you need to email your manager about project updates, respond to a senior colleague's feedback, and write a professional message to a client. But first, you need to write a compelling cover letter and follow up on job applications. Your current emails sound like text messages. How do you level up your professional writing?",
-      problemExplanation: [
-        "Informal Writing Style: Using casual language, abbreviations, and emojis in professional contexts",
-        "Lack of Structure: Emails without clear subject lines, greetings, or professional closings",
-        "Unclear Purpose: Messages that don't clearly state what you need or want",
-        "Inappropriate Tone: Being too casual with senior colleagues or too formal with peers"
-      ],
-      solutionApproach: [
-        "Professional Format: Proper email structure, subject lines, and signatures",
-        "Appropriate Tone: Matching formality level to audience and context",
-        "Clear Communication: Stating purpose, providing context, and requesting specific actions",
-        "Follow-up Strategies: Professional persistence without being pushy"
-      ]
-    },
-    video: {
-      title: "Professional Written Communication",
-      duration: 5,
-      content: [
-        "Email Structure: Subject lines, greetings, body, closings, and signatures",
-        "Tone Adaptation: Formal vs. informal communication based on audience",
-        "Cover Letter Writing: Compelling applications that stand out to employers",
-        "Follow-up Communication: Post-interview and post-application strategies",
-        "Client Communication: Professional external communication standards"
-      ]
-    },
-    quiz: {
-      title: "Test Your Written Communication Knowledge",
-      questions: [
-        {
-          id: 1,
-          question: "How do you email a senior colleague vs. a peer?",
-          options: [
-            "Use the same tone for both",
-            "Be more formal with senior colleagues, more casual with peers",
-            "Always be very formal",
-            "Be casual with everyone"
-          ],
-          correct: 1,
-          explanation: "Adjust your tone based on the relationship and context."
-        },
-        {
-          id: 2,
-          question: "What's the appropriate tone for client communication?",
-          options: [
-            "Very casual and friendly",
-            "Professional but warm, clear and respectful",
-            "Extremely formal and distant",
-            "Use lots of technical jargon"
-          ],
-          correct: 1,
-          explanation: "Professional but warm tone builds trust while maintaining boundaries."
-        },
-        {
-          id: 3,
-          question: "How do you respond professionally to negative feedback?",
-          options: [
-            "Defend yourself immediately",
-            "Thank them, acknowledge the feedback, and ask for specific examples",
-            "Ignore the feedback",
-            "Send a long explanation"
-          ],
-          correct: 1,
-          explanation: "Acknowledge feedback professionally and seek clarification."
-        },
-        {
-          id: 4,
-          question: "How do you write a compelling cover letter that stands out?",
-          options: [
-            "Use a generic template",
-            "Research the company and tailor your letter to their specific needs",
-            "Focus only on your achievements",
-            "Make it very long and detailed"
-          ],
-          correct: 1,
-          explanation: "Tailor your cover letter to show you understand the company's needs."
-        },
-        {
-          id: 5,
-          question: "What's the best way to follow up on job applications?",
-          options: [
-            "Send multiple emails",
-            "Call them directly",
-            "Send one professional follow-up email after 1-2 weeks",
-            "Wait indefinitely"
-          ],
-          correct: 2,
-          explanation: "One professional follow-up shows persistence without being pushy."
-        }
-      ]
-    },
-    challenge: {
-      title: "Write Professional Emails",
-      description: "Write 3 different professional emails",
-      instructions: [
-        "Cover Letter: Write a compelling cover letter for a job you're interested in",
-        "Manager Email: Write an email to your manager about a project update",
-        "Senior Colleague Email: Write an email responding to feedback from a senior colleague",
-        "Self-Review: Check each email for professional tone, clear structure, and appropriate language"
-      ],
-      successCriteria: [
-        "Clear subject lines for all emails",
-        "Appropriate greetings and closings",
-        "Professional tone matching the audience",
-        "Clear purpose and specific requests",
-        "No spelling or grammar errors"
-      ]
-    },
-    feedback: {
-      strengths: ["Your emails are clear and well-structured"],
-      improvements: ["Your cover letters need more personality and specific examples of your achievements"],
-      nextSteps: ["Practice writing emails to different audiences and focus on tailoring your message to each recipient"]
-    },
-    badge: {
-      name: "Professional Writer",
-      emoji: "✍️",
-      description: "Mastered professional written communication for workplace and job search"
-    },
-    shareMessage: "My emails are now crystal clear! Just leveled up my professional writing game! ✍️ #ProfessionalCommunication #JobSearch"
-  },
-  {
-    id: 'non-verbal-communication',
-    title: 'Non-verbal Communication',
-    emoji: '💪',
+    id: 'decision-making',
+    title: 'Decision Making',
+    emoji: '⚖️',
     context: 'personal',
     discover: {
-      scenario: "Family dinner where your parents want you to explain your career choice, but you're sitting slouched, avoiding eye contact, and fidgeting with your phone. Your body language is screaming 'I'm not confident' even though you are. How do you show confidence in personal situations?",
+      scenario: "You're choosing between two job offers: one with higher pay but less growth potential, and another with lower pay but better learning opportunities. You also have family considerations and long-term career goals. How do you make this important decision systematically?",
       problemExplanation: [
-        "Poor Posture: Slouching and closed body language conveying lack of confidence",
-        "Avoiding Eye Contact: Looking away or at phone instead of engaging with family",
-        "Fidgeting: Nervous habits that distract from the message",
-        "Mixed Signals: Saying you're confident while body language shows otherwise"
+        "Multiple Criteria: Different factors to consider (pay, growth, location, etc.)",
+        "Uncertainty: Unknown future outcomes and consequences",
+        "Emotional Factors: Personal preferences and family considerations",
+        "Time Pressure: Need to decide quickly with limited information"
       ],
       solutionApproach: [
-        "Confident Posture: Sitting up straight, open body language, facing the person",
-        "Eye Contact: Maintaining appropriate eye contact without staring",
-        "Calm Presence: Reducing fidgeting and nervous habits",
-        "Authentic Expression: Aligning body language with your words and feelings"
+        "Criteria Definition: Identify all important decision factors",
+        "Information Gathering: Collect relevant data and insights",
+        "Option Evaluation: Use decision-making frameworks",
+        "Risk Assessment: Consider potential outcomes and consequences"
       ]
     },
     video: {
-      title: "Non-verbal Communication for Personal Success",
+      title: "Effective Decision Making for Life Choices",
       duration: 5,
       content: [
-        "Confident Body Language: Posture, gestures, and positioning",
-        "Eye Contact Mastery: Appropriate eye contact for different situations",
-        "Facial Expressions: Conveying confidence and authenticity",
-        "Personal Space: Understanding and respecting boundaries",
-        "Cultural Sensitivity: Adapting non-verbal communication to different contexts"
+        "Decision Frameworks: Using structured approaches for complex decisions",
+        "Criteria Weighting: Prioritizing different factors and considerations",
+        "Risk Assessment: Evaluating potential outcomes and consequences",
+        "Information Gathering: Collecting relevant data and insights",
+        "Implementation Planning: Creating action plans for chosen options"
       ]
     },
     quiz: {
-      title: "Test Your Non-verbal Communication Knowledge",
+      title: "Test Your Decision Making Skills",
       questions: [
         {
           id: 1,
-          question: "What body language shows confidence in family discussions?",
+          question: "What's the first step in making a complex decision?",
           options: [
-            "Slouching and looking away",
-            "Sitting up straight, making eye contact, and using open gestures",
-            "Crossing your arms and legs",
-            "Looking at your phone"
+            "Choose the safest option",
+            "Identify all your criteria and priorities",
+            "Ask others for advice",
+            "Go with your gut feeling"
           ],
           correct: 1,
-          explanation: "Open posture and eye contact convey confidence and engagement."
+          explanation: "Start by identifying all criteria that matter to you and their relative importance."
         },
         {
           id: 2,
-          question: "How do you maintain eye contact without staring in social situations?",
+          question: "How do you handle decisions with incomplete information?",
           options: [
-            "Look directly into their eyes the entire time",
-            "Look at their eyes 60-70% of the time, occasionally looking away naturally",
-            "Avoid eye contact completely",
-            "Look over their shoulder"
+            "Wait until you have all information",
+            "Make the best decision with available information and plan for contingencies",
+            "Choose randomly",
+            "Avoid making the decision"
           ],
           correct: 1,
-          explanation: "Natural eye contact patterns feel comfortable and confident."
+          explanation: "Make the best decision with available information while planning for different scenarios."
         },
         {
           id: 3,
-          question: "What does your posture say about your confidence level?",
+          question: "What's the benefit of using decision-making frameworks?",
           options: [
-            "Nothing important",
-            "It communicates confidence, openness, and engagement",
-            "Only your words matter",
-            "Posture is irrelevant"
+            "They guarantee the right decision",
+            "They provide structure and reduce bias in decision-making",
+            "They make decisions faster",
+            "They eliminate the need for thinking"
           ],
           correct: 1,
-          explanation: "Posture is a powerful non-verbal communication tool."
+          explanation: "Frameworks provide structure and help reduce cognitive biases in decision-making."
         },
         {
           id: 4,
-          question: "How do you handle social media pressure and comparison?",
+          question: "How do you evaluate the quality of your decision-making process?",
           options: [
-            "Compare yourself to others constantly",
-            "Focus on your own journey and authentic self-expression",
-            "Try to copy others' success",
-            "Avoid social media completely"
+            "By the outcome of the decision",
+            "By how systematic and thorough your process was",
+            "By how quickly you made the decision",
+            "By how others react to your decision"
           ],
           correct: 1,
-          explanation: "Authentic self-expression builds genuine confidence."
+          explanation: "Good decision-making is about the process, not just the outcome."
         },
         {
           id: 5,
-          question: "What's the best way to communicate your values to family and friends?",
+          question: "What should you do after making a decision?",
           options: [
-            "Tell them what they should believe",
-            "Share your experiences and listen to theirs with respect",
-            "Avoid discussing values",
-            "Only communicate online"
+            "Never look back",
+            "Implement the decision and monitor outcomes",
+            "Second-guess yourself",
+            "Wait to see what happens"
           ],
           correct: 1,
-          explanation: "Respectful dialogue builds understanding and connection."
+          explanation: "Implement your decision and monitor outcomes to learn and improve."
         }
       ]
     },
     challenge: {
-      title: "Practice Confident Body Language",
-      description: "Practice confident body language in your next family gathering or social event",
+      title: "Practice Decision Making",
+      description: "Make a real decision using a structured decision-making framework",
       instructions: [
-        "Before the event: Practice confident posture and eye contact in front of a mirror",
-        "During the event: Focus on sitting up straight, making eye contact, and reducing fidgeting",
-        "Engage actively: Ask questions, share your thoughts, and listen attentively",
-        "Self-monitor: Notice when you're slouching or avoiding eye contact and correct it",
-        "Reflect: After the event, note what felt natural and what was challenging"
+        "Choose a decision you need to make (academic, career, or personal)",
+        "Identify all your criteria and their importance",
+        "Gather information about your options",
+        "Use a decision matrix or similar framework",
+        "Make your decision and create an implementation plan"
       ],
       successCriteria: [
-        "Maintained good posture throughout the event",
-        "Made appropriate eye contact during conversations",
-        "Reduced fidgeting and nervous habits",
-        "Actively participated in discussions",
-        "Felt more confident and authentic"
+        "Clearly identified decision criteria and priorities",
+        "Gathered relevant information about options",
+        "Used a structured framework for evaluation",
+        "Created an implementation plan for the chosen option"
       ]
     },
     feedback: {
-      strengths: ["You have natural warmth and authenticity in your interactions"],
-      improvements: ["Focus on maintaining eye contact and reducing fidgeting when discussing important topics"],
-      nextSteps: ["Practice confident body language in low-stakes situations before important conversations"]
+      strengths: ["You're good at considering multiple factors and thinking through consequences"],
+      improvements: ["Focus on using more structured frameworks and gathering additional information"],
+      nextSteps: ["Practice using decision matrices and other structured decision-making tools"]
     },
     badge: {
-      name: "Body Language Pro",
-      emoji: "💪",
-      description: "Mastered confident non-verbal communication for personal relationships"
+      name: "Decision Maker",
+      emoji: "⚖️",
+      description: "Mastered systematic decision making and risk assessment"
     },
-    shareMessage: "My confidence is showing! Just mastered the art of confident body language! 💪 #Confidence #PersonalGrowth"
+    shareMessage: "Just mastered decision making! Ready to make smart choices in any situation! ⚖️ #DecisionMaking #LifeSkills"
   },
   {
-    id: 'conflict-resolution',
-    title: 'Conflict Resolution',
-    emoji: '🤝',
+    id: 'evidence-evaluation',
+    title: 'Evidence Evaluation',
+    emoji: '📊',
     context: 'academic',
     discover: {
-      scenario: "Group project disagreement about approach, team member not pulling their weight, conflict with professor about grades, peer pressure about academic choices. How do you navigate these conflicts without burning bridges?",
+      scenario: "You're writing a research paper and need to evaluate different sources. Some studies show conflicting results, others have small sample sizes, and some seem biased. Your professor emphasizes evidence-based arguments. How do you assess the quality and reliability of different sources?",
       problemExplanation: [
-        "Group Work Conflicts: Different opinions on project direction and workload distribution",
-        "Academic Disputes: Disagreements with professors about grades, feedback, or expectations",
-        "Peer Pressure: Pressure from friends about academic choices, study habits, or career paths",
-        "Avoidance: Tendency to avoid conflict rather than address issues directly"
+        "Source Quality: Varying reliability and credibility of different sources",
+        "Conflicting Evidence: Studies showing different results on the same topic",
+        "Bias Detection: Identifying potential biases in research and reporting",
+        "Methodology Assessment: Understanding research design and statistical validity"
       ],
       solutionApproach: [
-        "Direct Communication: Addressing issues early before they escalate",
-        "Active Listening: Understanding all perspectives before proposing solutions",
-        "Collaborative Problem-Solving: Finding win-win solutions that work for everyone",
-        "Professional Boundaries: Maintaining respect while advocating for yourself"
+        "Source Credibility: Evaluate author expertise and publication quality",
+        "Methodology Review: Assess research design and statistical methods",
+        "Bias Identification: Look for potential conflicts of interest and biases",
+        "Evidence Synthesis: Weigh different sources based on quality and relevance"
       ]
     },
     video: {
-      title: "Conflict Resolution for Academic Success",
+      title: "Evaluating Evidence for Academic Research",
       duration: 5,
       content: [
-        "Group Project Management: Handling disagreements and unequal participation",
-        "Professor Communication: Addressing grades, feedback, and academic concerns professionally",
-        "Peer Pressure Navigation: Standing up for your academic choices and values",
-        "Study Group Dynamics: Resolving conflicts in collaborative learning environments",
-        "Academic Integrity: Handling situations involving cheating, plagiarism, or unfair practices"
+        "Source Credibility: Evaluating author expertise and publication quality",
+        "Research Methodology: Understanding study design and statistical validity",
+        "Bias Detection: Identifying potential conflicts of interest and biases",
+        "Evidence Synthesis: Weighing different sources based on quality",
+        "Critical Reading: Analyzing research papers and academic sources"
       ]
     },
     quiz: {
-      title: "Test Your Conflict Resolution Knowledge",
+      title: "Test Your Evidence Evaluation Skills",
       questions: [
         {
           id: 1,
-          question: "Group member isn't contributing - how do you address this?",
+          question: "What's the most important factor in evaluating a research source?",
           options: [
-            "Do their work for them",
-            "Talk to them privately, express concerns, and offer support",
-            "Complain to the professor immediately",
-            "Ignore the problem"
+            "How recent it is",
+            "The methodology and research design quality",
+            "How many times it's been cited",
+            "The author's reputation"
           ],
           correct: 1,
-          explanation: "Direct, private communication often resolves issues effectively."
+          explanation: "The methodology and research design are the most important factors in determining source quality."
         },
         {
           id: 2,
-          question: "Professor gives you a lower grade than expected - how do you respond?",
+          question: "How do you identify potential bias in research?",
           options: [
-            "Argue with them immediately",
-            "Request a meeting to understand the grading criteria and discuss your work",
-            "Accept it without question",
-            "Complain to other students"
+            "Look at the conclusions",
+            "Check for funding sources, author affiliations, and study limitations",
+            "See if you agree with the results",
+            "Check the sample size"
           ],
           correct: 1,
-          explanation: "Professional approach shows maturity and respect."
+          explanation: "Check funding sources, author affiliations, and study limitations to identify potential biases."
         },
         {
           id: 3,
-          question: "What's the best way to resolve conflicts in study groups?",
+          question: "What's the difference between correlation and causation in research?",
           options: [
-            "Let one person make all decisions",
-            "Discuss issues openly, listen to all perspectives, and find compromises",
-            "Avoid discussing problems",
-            "Form separate study groups"
+            "They're the same thing",
+            "Correlation shows relationship, causation shows cause-effect",
+            "Causation is always more important",
+            "You can't distinguish between them"
           ],
           correct: 1,
-          explanation: "Open communication and compromise build stronger teams."
+          explanation: "Correlation shows a relationship between variables, while causation shows that one causes another."
         },
         {
           id: 4,
-          question: "How do you handle peer pressure about academic choices?",
+          question: "How do you handle conflicting evidence from different sources?",
           options: [
-            "Always follow what your friends do",
-            "Make decisions based on your goals and values, communicate them respectfully",
-            "Avoid your friends",
-            "Try to change your friends' minds"
+            "Choose the most recent study",
+            "Evaluate the methodology and quality of each source",
+            "Go with the majority opinion",
+            "Ignore the conflicting evidence"
           ],
           correct: 1,
-          explanation: "Stay true to your values while respecting others' choices."
+          explanation: "Evaluate the methodology and quality of each source to determine which is more reliable."
         },
         {
           id: 5,
-          question: "What's the appropriate way to dispute a grade with a professor?",
+          question: "What makes a study's sample size adequate?",
           options: [
-            "Send an angry email",
-            "Request a meeting, bring your work, and discuss the grading criteria professionally",
-            "Complain to other professors",
-            "Accept any grade without question"
+            "At least 100 participants",
+            "Large enough to detect meaningful differences with appropriate statistical power",
+            "As many as possible",
+            "At least 1000 participants"
           ],
           correct: 1,
-          explanation: "Professional approach with evidence shows respect and maturity."
+          explanation: "Sample size should be large enough to detect meaningful differences with appropriate statistical power."
         }
       ]
     },
     challenge: {
-      title: "Role-play Conflict Resolution",
-      description: "Role-play conflict resolution scenarios with study partners",
+      title: "Practice Evidence Evaluation",
+      description: "Evaluate the quality of different research sources on a topic of interest",
       instructions: [
-        "Choose scenarios: Pick 2-3 common academic conflict situations",
-        "Role-play: Take turns playing different roles (student, professor, group member)",
-        "Practice techniques: Use active listening, 'I' statements, and collaborative problem-solving",
-        "Debrief: Discuss what worked, what was challenging, and how to improve",
-        "Apply: Use these techniques in your next real academic conflict"
+        "Choose a topic you're interested in researching",
+        "Find 3-5 different sources (academic papers, articles, reports)",
+        "Evaluate each source's methodology and credibility",
+        "Identify any potential biases or limitations",
+        "Rank the sources by quality and explain your reasoning"
       ],
       successCriteria: [
-        "Used active listening in all scenarios",
-        "Expressed concerns using 'I' statements",
-        "Proposed collaborative solutions",
-        "Maintained respectful communication",
-        "Felt more confident handling conflicts"
+        "Found diverse sources on the chosen topic",
+        "Evaluated methodology and credibility of each source",
+        "Identified potential biases or limitations",
+        "Provided clear ranking with reasoning"
       ]
     },
     feedback: {
-      strengths: ["You're naturally empathetic and good at understanding different perspectives"],
-      improvements: ["You avoid conflict but need to learn to address issues directly and assertively"],
-      nextSteps: ["Practice expressing your needs and boundaries in low-stakes situations"]
+      strengths: ["You're excellent at identifying credible sources and understanding research methodology"],
+      improvements: ["Focus on recognizing subtle biases and evaluating statistical validity more systematically"],
+      nextSteps: ["Practice evaluating different types of research studies and methodologies"]
     },
     badge: {
-      name: "Peacemaker",
-      emoji: "🤝",
-      description: "Mastered conflict resolution skills for academic and professional success"
+      name: "Evidence Evaluator",
+      emoji: "📊",
+      description: "Mastered evidence evaluation and research methodology assessment"
     },
-    shareMessage: "I can resolve any conflict! Just learned to navigate disagreements like a pro! 🤝 #ConflictResolution #Leadership"
+    shareMessage: "Just mastered evidence evaluation! Ready to assess any research like a pro! 📊 #ResearchSkills #CriticalThinking"
   },
   {
-    id: 'presentation-skills',
-    title: 'Presentation Skills',
-    emoji: '📊',
+    id: 'creative-solutions',
+    title: 'Creative Solutions',
+    emoji: '💡',
     context: 'professional',
     discover: {
-      scenario: "Client presentation tomorrow, your slides are boring, audience is disengaged, and you're reading from notes. Your manager is watching, and this could impact your performance review. How do you create engaging presentations that actually connect with your audience?",
+      scenario: "Your company's traditional marketing approach isn't working for younger customers. The team is stuck in conventional thinking, and competitors are gaining market share. You need to develop innovative solutions that break away from standard approaches. How do you foster creative thinking and generate breakthrough ideas?",
       problemExplanation: [
-        "Boring Content: Text-heavy slides, lack of visual appeal, and poor storytelling",
-        "Audience Disengagement: Reading from notes, lack of eye contact, and monotone delivery",
-        "Poor Structure: Unclear organization, missing key points, and weak conclusions",
-        "Performance Pressure: High-stakes situations affecting confidence and delivery"
+        "Conventional Thinking: Team stuck in traditional approaches and assumptions",
+        "Market Changes: Shifting customer preferences and competitive landscape",
+        "Innovation Barriers: Fear of failure and resistance to new ideas",
+        "Solution Constraints: Limited resources and time pressure"
       ],
       solutionApproach: [
-        "Visual Design: Clean slides, relevant images, and clear data visualization",
-        "Storytelling: Compelling narratives that connect with audience needs and interests",
-        "Audience Engagement: Interactive elements, questions, and two-way communication",
-        "Confident Delivery: Practice, preparation, and techniques to manage nerves"
+        "Divergent Thinking: Generate many different ideas without judgment",
+        "Assumption Challenging: Question existing beliefs and approaches",
+        "Cross-Pollination: Draw ideas from different industries and disciplines",
+        "Prototype Testing: Quickly test and iterate on new concepts"
       ]
     },
     video: {
-      title: "Presentation Skills for Workplace Success",
+      title: "Creative Problem Solving for Professional Innovation",
       duration: 5,
       content: [
-        "Visual Design Principles: Creating engaging slides that support your message",
-        "Storytelling Techniques: Structuring presentations with compelling narratives",
-        "Audience Engagement: Interactive elements and two-way communication",
-        "Confident Delivery: Managing nerves and projecting confidence",
-        "Handling Questions: Responding to audience questions and feedback professionally"
+        "Divergent Thinking: Generating multiple creative solutions",
+        "Assumption Challenging: Questioning existing beliefs and approaches",
+        "Cross-Pollination: Drawing ideas from different fields",
+        "Brainstorming Techniques: Structured approaches to idea generation",
+        "Innovation Implementation: Turning creative ideas into actionable solutions"
       ]
     },
     quiz: {
-      title: "Test Your Presentation Skills Knowledge",
+      title: "Test Your Creative Problem Solving Skills",
       questions: [
         {
           id: 1,
-          question: "How do you make boring data interesting in client presentations?",
+          question: "What's the first step in creative problem solving?",
           options: [
-            "Use lots of text",
-            "Create visual charts, tell a story with the data, and connect it to client benefits",
-            "Just show the numbers",
-            "Avoid data completely"
+            "Choose the best solution",
+            "Generate many different ideas without judgment",
+            "Research the problem thoroughly",
+            "Ask experts for advice"
           ],
           correct: 1,
-          explanation: "Visual storytelling makes data meaningful and engaging."
+          explanation: "Start with divergent thinking - generate many ideas without judging them initially."
         },
         {
           id: 2,
-          question: "What's the difference between academic and professional presentation styles?",
+          question: "How do you overcome creative blocks?",
           options: [
-            "No difference",
-            "Academic focuses on theory, professional focuses on practical applications and results",
-            "Professional is always more formal",
-            "Academic is always longer"
+            "Work harder on the same approach",
+            "Change your perspective, take breaks, and try different techniques",
+            "Ask others to solve it for you",
+            "Give up and try something else"
           ],
           correct: 1,
-          explanation: "Professional presentations focus on practical value and results."
+          explanation: "Change perspective, take breaks, and try different creative techniques to overcome blocks."
         },
         {
           id: 3,
-          question: "How do you handle questions during workplace presentations?",
+          question: "What is cross-pollination in creative thinking?",
           options: [
-            "Avoid questions",
-            "Listen carefully, acknowledge the question, and provide thoughtful responses",
-            "Answer quickly and move on",
-            "Let someone else answer"
+            "Working with different people",
+            "Drawing ideas from different industries and disciplines",
+            "Mixing different solutions together",
+            "Working in different locations"
           ],
           correct: 1,
-          explanation: "Engaging with questions shows confidence and expertise."
+          explanation: "Cross-pollination means drawing ideas and approaches from different industries and disciplines."
         },
         {
           id: 4,
-          question: "What's the best way to present to senior management?",
+          question: "How do you evaluate creative solutions?",
           options: [
-            "Use lots of technical jargon",
-            "Focus on high-level insights, business impact, and clear recommendations",
-            "Show all the details",
-            "Be very casual"
+            "Choose the most original one",
+            "Evaluate feasibility, impact, and alignment with goals",
+            "Go with your favorite",
+            "Ask others to vote"
           ],
           correct: 1,
-          explanation: "Senior management wants strategic insights and clear recommendations."
+          explanation: "Evaluate creative solutions based on feasibility, potential impact, and alignment with goals."
         },
         {
           id: 5,
-          question: "How do you handle negative feedback during presentations?",
+          question: "What's the benefit of prototyping creative solutions?",
           options: [
-            "Get defensive",
-            "Listen actively, acknowledge the feedback, and ask for clarification",
-            "Ignore it",
-            "Argue your point"
+            "It's faster than planning",
+            "It allows quick testing and iteration of ideas",
+            "It impresses stakeholders",
+            "It's cheaper than research"
           ],
           correct: 1,
-          explanation: "Professional handling of feedback shows maturity and openness to improvement."
+          explanation: "Prototyping allows quick testing and iteration of creative ideas before full implementation."
         }
       ]
     },
     challenge: {
-      title: "Create Engaging Presentation",
-      description: "Create engaging slide deck for a client presentation",
+      title: "Practice Creative Problem Solving",
+      description: "Develop creative solutions to a real problem using structured creative thinking techniques",
       instructions: [
-        "Choose a topic: A project you've worked on, a skill you want to highlight, or a business idea",
-        "Design slides: Create 5-7 slides with clear visuals, minimal text, and compelling content",
-        "Practice presentation: Rehearse your presentation focusing on storytelling and engagement",
-        "Record yourself: Present to camera and evaluate your delivery",
-        "Get feedback: Share with a friend or colleague and incorporate their suggestions"
+        "Choose a problem that needs innovative solutions",
+        "Use brainstorming to generate at least 20 different ideas",
+        "Apply assumption challenging to question existing approaches",
+        "Use cross-pollination to draw ideas from other fields",
+        "Select and develop the most promising creative solutions"
       ],
       successCriteria: [
-        "Clean, visually appealing slide design",
-        "Clear narrative structure with beginning, middle, and end",
-        "Minimal text, maximum visual impact",
-        "Confident delivery with good eye contact",
-        "Engaging storytelling that connects with audience"
+        "Generated at least 20 diverse ideas",
+        "Challenged existing assumptions about the problem",
+        "Applied cross-pollination techniques",
+        "Developed at least 3 promising creative solutions"
       ]
     },
     feedback: {
-      strengths: ["Your content is well-researched and your structure is clear"],
-      improvements: ["Focus on visual design and storytelling to make your presentations more engaging"],
-      nextSteps: ["Practice using more visuals and less text, and work on connecting with your audience emotionally"]
+      strengths: ["You're great at thinking outside the box and generating diverse ideas"],
+      improvements: ["Focus on systematically evaluating creative solutions and implementing them effectively"],
+      nextSteps: ["Practice using different creative thinking techniques and tools"]
     },
     badge: {
-      name: "Presentation Master",
-      emoji: "📊",
-      description: "Mastered engaging presentation skills for workplace and professional success"
+      name: "Creative Innovator",
+      emoji: "💡",
+      description: "Mastered creative problem solving and innovative thinking"
     },
-    shareMessage: "My presentations are now captivating! Just learned to tell stories that stick! 📊 #PresentationSkills #ProfessionalGrowth"
+    shareMessage: "Just mastered creative problem solving! Ready to innovate and think outside the box! 💡 #Innovation #CreativeThinking"
+  },
+  {
+    id: 'risk-assessment',
+    title: 'Risk Assessment',
+    emoji: '⚠️',
+    context: 'personal',
+    discover: {
+      scenario: "You're considering starting your own business while still in college. You have some savings, a business idea, and market research, but you're also concerned about financial risk, time management, and potential failure. How do you systematically assess the risks and make an informed decision?",
+      problemExplanation: [
+        "Financial Risk: Potential loss of savings and income",
+        "Time Risk: Balancing business with academic responsibilities",
+        "Market Risk: Uncertainty about customer demand and competition",
+        "Personal Risk: Impact on relationships and future opportunities"
+      ],
+      solutionApproach: [
+        "Risk Identification: List all potential risks and their consequences",
+        "Probability Assessment: Estimate likelihood of different scenarios",
+        "Impact Analysis: Evaluate potential consequences of each risk",
+        "Mitigation Planning: Develop strategies to reduce or manage risks"
+      ]
+    },
+    video: {
+      title: "Risk Assessment for Personal Decision Making",
+      duration: 5,
+      content: [
+        "Risk Identification: Identifying all potential risks and consequences",
+        "Probability Assessment: Estimating likelihood of different scenarios",
+        "Impact Analysis: Evaluating potential consequences of risks",
+        "Risk Mitigation: Developing strategies to reduce or manage risks",
+        "Decision Integration: Incorporating risk assessment into decision making"
+      ]
+    },
+    quiz: {
+      title: "Test Your Risk Assessment Skills",
+      questions: [
+        {
+          id: 1,
+          question: "What's the first step in risk assessment?",
+          options: [
+            "Calculate the probability of risks",
+            "Identify all potential risks and their consequences",
+            "Develop mitigation strategies",
+            "Make a decision based on risks"
+          ],
+          correct: 1,
+          explanation: "Start by identifying all potential risks and understanding their potential consequences."
+        },
+        {
+          id: 2,
+          question: "How do you assess the probability of a risk occurring?",
+          options: [
+            "Use your gut feeling",
+            "Analyze historical data, expert opinions, and relevant factors",
+            "Ask others what they think",
+            "Assume it's 50/50"
+          ],
+          correct: 1,
+          explanation: "Use historical data, expert opinions, and analysis of relevant factors to assess probability."
+        },
+        {
+          id: 3,
+          question: "What's the difference between high-probability and high-impact risks?",
+          options: [
+            "They're the same thing",
+            "High-probability risks are likely to occur, high-impact risks have severe consequences",
+            "High-impact risks are more important",
+            "You can't distinguish between them"
+          ],
+          correct: 1,
+          explanation: "High-probability risks are likely to occur, while high-impact risks have severe consequences."
+        },
+        {
+          id: 4,
+          question: "How do you prioritize risks for attention?",
+          options: [
+            "Focus on the most likely risks",
+            "Focus on risks with high probability and high impact",
+            "Focus on the most expensive risks",
+            "Focus on risks you can control"
+          ],
+          correct: 1,
+          explanation: "Prioritize risks that have both high probability of occurring and high impact if they do occur."
+        },
+        {
+          id: 5,
+          question: "What's the purpose of risk mitigation strategies?",
+          options: [
+            "To eliminate all risks",
+            "To reduce the probability or impact of risks",
+            "To make decisions easier",
+            "To avoid taking any risks"
+          ],
+          correct: 1,
+          explanation: "Risk mitigation strategies aim to reduce either the probability of risks occurring or their impact if they do occur."
+        }
+      ]
+    },
+    challenge: {
+      title: "Practice Risk Assessment",
+      description: "Conduct a systematic risk assessment for an important decision you're facing",
+      instructions: [
+        "Choose a decision with significant risks (career, financial, personal)",
+        "Identify all potential risks and their consequences",
+        "Assess the probability of each risk occurring",
+        "Evaluate the potential impact of each risk",
+        "Develop mitigation strategies for the most important risks"
+      ],
+      successCriteria: [
+        "Identified at least 5 different risks",
+        "Assessed probability and impact for each risk",
+        "Prioritized risks based on probability and impact",
+        "Developed mitigation strategies for top risks"
+      ]
+    },
+    feedback: {
+      strengths: ["You're good at identifying potential risks and thinking through consequences"],
+      improvements: ["Focus on more systematic probability assessment and developing concrete mitigation strategies"],
+      nextSteps: ["Practice using risk assessment frameworks and tools"]
+    },
+    badge: {
+      name: "Risk Assessor",
+      emoji: "⚠️",
+      description: "Mastered risk assessment and mitigation planning"
+    },
+    shareMessage: "Just mastered risk assessment! Ready to make informed decisions in any situation! ⚠️ #RiskManagement #DecisionMaking"
   }
 ];
 
-export const module1Assessment = {
-  title: "Communication Skills Final Assessment",
-  duration: 60, // minutes
+export const module4Assessment: AssessmentData = {
+  title: "Critical Thinking Final Assessment",
+  description: "Test your mastery of critical thinking and analytical problem-solving skills. This comprehensive assessment evaluates your understanding of logical reasoning, problem analysis, and decision-making processes.",
   questions: [
     {
       id: 1,
-      question: "In a group project meeting, your teammate is explaining their idea but you disagree. What's the best approach?",
+      question: "You're analyzing a complex problem with multiple potential causes. What's the first step in logical reasoning?",
       options: [
-        "Interrupt them immediately to share your concerns",
-        "Listen completely, then ask clarifying questions before sharing your perspective",
-        "Stay quiet and implement your own idea later",
-        "Tell them their idea won't work"
+        "Jump to the most obvious conclusion",
+        "Gather all relevant information and data",
+        "Make assumptions based on experience",
+        "Follow your intuition"
       ],
       correct: 1,
-      explanation: "Active listening requires understanding the full idea before responding. Ask questions to clarify before sharing concerns."
+      explanation: "Logical reasoning requires gathering all relevant information before making conclusions. This ensures a comprehensive analysis."
     },
     {
       id: 2,
-      question: "You're presenting to senior management about a project delay. How should you structure your presentation?",
+      question: "When faced with conflicting information from multiple sources, what's the best approach?",
       options: [
-        "Start with excuses and blame external factors",
-        "Begin with the current status, explain the delay clearly, and present a recovery plan",
-        "Focus only on the positive aspects and avoid mentioning the delay",
-        "Make it very technical to show your expertise"
+        "Choose the source you trust most",
+        "Analyze the credibility of each source and cross-reference information",
+        "Ignore the conflicting information",
+        "Use the most recent information"
       ],
       correct: 1,
-      explanation: "Professional presentations should be transparent, solution-focused, and appropriate for the audience level."
+      explanation: "Critical thinking requires evaluating source credibility and cross-referencing information to determine accuracy."
     },
     {
       id: 3,
-      question: "You need to email a professor about a grade dispute. What's the most professional approach?",
+      question: "What is the most important aspect of problem-solving?",
       options: [
-        "Send an angry email demanding a grade change",
-        "Request a meeting to discuss the grading criteria and your work professionally",
-        "Complain to other students about the unfair grading",
-        "Accept the grade without question"
+        "Finding the quickest solution",
+        "Identifying the root cause of the problem",
+        "Implementing the first solution that comes to mind",
+        "Avoiding difficult problems"
       ],
       correct: 1,
-      explanation: "Professional communication requires respectful dialogue and seeking understanding before making demands."
+      explanation: "Root cause analysis is essential for effective problem-solving as it addresses the underlying issue rather than just symptoms."
     },
     {
       id: 4,
-      question: "During a job interview, you notice the interviewer seems distracted. What should you do?",
+      question: "When making a decision under uncertainty, what should you prioritize?",
       options: [
-        "Continue speaking as planned",
-        "Pause, make eye contact, and ask if they'd like you to clarify anything",
-        "Speak louder to get their attention",
-        "End the interview early"
+        "Making a quick decision to avoid delays",
+        "Gathering more information to reduce uncertainty",
+        "Following your gut feeling",
+        "Avoiding the decision entirely"
       ],
       correct: 1,
-      explanation: "Adapting to your audience's engagement level shows communication awareness and professionalism."
+      explanation: "Critical thinking involves gathering relevant information to make informed decisions, even when complete certainty isn't possible."
     },
     {
       id: 5,
-      question: "A colleague gives you negative feedback about your presentation. How do you respond?",
+      question: "What is the best approach to evaluating evidence?",
       options: [
-        "Defend yourself and explain why they're wrong",
-        "Thank them, ask for specific examples, and discuss how to improve",
-        "Ignore the feedback completely",
-        "Complain to your manager about the colleague"
+        "Accept all evidence that supports your viewpoint",
+        "Examine evidence objectively and consider alternative explanations",
+        "Only use evidence from trusted sources",
+        "Ignore evidence that contradicts your beliefs"
       ],
       correct: 1,
-      explanation: "Professional growth requires accepting feedback gracefully and seeking specific guidance for improvement."
+      explanation: "Critical thinking requires objective evaluation of evidence and consideration of alternative explanations to avoid confirmation bias."
     },
     {
       id: 6,
-      question: "You're in a study group and one member isn't contributing. What's the best approach?",
+      question: "What is the most effective way to approach complex problems?",
       options: [
-        "Do their work for them",
-        "Talk to them privately, express concerns, and offer support",
-        "Complain to the professor immediately",
-        "Exclude them from the group"
+        "Break them down into smaller, manageable parts",
+        "Try to solve everything at once",
+        "Avoid complex problems entirely",
+        "Ask someone else to solve them"
       ],
-      correct: 1,
-      explanation: "Direct, private communication often resolves issues effectively and maintains group harmony."
-    },
-    {
-      id: 7,
-      question: "You need to present complex data to a client. How do you make it engaging?",
-      options: [
-        "Show all the raw data in tables",
-        "Create visual charts, tell a story with the data, and connect it to client benefits",
-        "Use lots of technical jargon to show expertise",
-        "Avoid data completely"
-      ],
-      correct: 1,
-      explanation: "Visual storytelling makes data meaningful and connects information to audience needs."
-    },
-    {
-      id: 8,
-      question: "During a family dinner, your parents question your career choice. How do you respond confidently?",
-      options: [
-        "Avoid eye contact and change the subject",
-        "Sit up straight, make eye contact, and explain your decision with passion and reasoning",
-        "Get defensive and argue",
-        "Agree with them to avoid conflict"
-      ],
-      correct: 1,
-      explanation: "Confident body language and clear communication help convey your authentic self and values."
-    },
-    {
-      id: 9,
-      question: "You receive a confusing email from a client. What's the best response?",
-      options: [
-        "Reply with your best guess about what they mean",
-        "Ask clarifying questions to ensure you understand their needs before responding",
-        "Forward it to your manager",
-        "Ignore it until they follow up"
-      ],
-      correct: 1,
-      explanation: "Clarifying communication prevents misunderstandings and shows professionalism."
-    },
-    {
-      id: 10,
-      question: "You're nervous before a big presentation. What's the best way to manage this?",
-      options: [
-        "Focus on your mistakes and what could go wrong",
-        "Practice your opening, visualize success, and focus on your audience's needs",
-        "Memorize everything word for word",
-        "Avoid practicing to stay spontaneous"
-      ],
-      correct: 1,
-      explanation: "Confidence comes from preparation, positive visualization, and audience-focused thinking."
+      correct: 0,
+      explanation: "Breaking complex problems into smaller parts makes them more manageable and allows for systematic analysis and solution development."
     }
   ],
-  sections: [
-    {
-      name: "Active Listening", 
-      questions: 2,
-      context: "Academic and professional scenarios"
-    },
-    {
-      name: "Public Speaking", 
-      questions: 2,
-      context: "Interview and presentation situations"
-    },
-    {
-      name: "Written Communication",
-      questions: 2,
-      context: "Email, cover letter, and professional writing"
-    },
-    {
-      name: "Non-verbal Communication",
-      questions: 1,
-      context: "Body language and personal interactions"
-    },
-    {
-      name: "Conflict Resolution",
-      questions: 1,
-      context: "Academic and workplace conflict scenarios"
-    },
-    {
-      name: "Presentation Skills",
-      questions: 2,
-      context: "Professional presentation situations"
-    }
-  ],
-  practicalChallenge: {
-    title: "How Communication Skills Help in Career Success",
-    duration: 5, // minutes
-    requirements: [
-      "Clear introduction and conclusion",
-      "3 main points with examples",
-      "Professional visual aids (slides or props)",
-      "Confident delivery with good eye contact",
-      "Within 5-minute time limit"
-    ]
-  },
-  scoring: {
-    quizQuestions: 100, // points (10 questions × 10 points each)
-    practicalPresentation: 0, // points (optional)
-    totalPossible: 100
-  },
-  gradeLevels: [
-    { range: "90-100", grade: "Communication Master", description: "Excellent" },
-    { range: "80-89", grade: "Communication Expert", description: "Very Good" },
-    { range: "70-79", grade: "Communication Proficient", description: "Good" },
-    { range: "60-69", grade: "Communication Developing", description: "Needs Improvement" },
-    { range: "0-59", grade: "Communication Beginner", description: "Requires Additional Practice" }
-  ]
+  gradingScale: {
+    excellent: { min: 80, max: 100, message: "Excellent! You've mastered critical thinking!", xpReward: 100 },
+    good: { min: 70, max: 79, message: "Good job! You have strong critical thinking skills.", xpReward: 75 },
+    satisfactory: { min: 60, max: 69, message: "Satisfactory. Keep practicing to improve further.", xpReward: 50 },
+    needsImprovement: { min: 0, max: 59, message: "Keep learning! Critical thinking improves with practice.", xpReward: 25 }
+  }
 };
 
 // Local Storage Helper Functions
 export const saveModuleProgress = (progress: ModuleProgress): void => {
-  localStorage.setItem('moduleProgress', JSON.stringify(progress));
+  localStorage.setItem('module4Progress', JSON.stringify(progress));
 };
 
 export const loadModuleProgress = (): ModuleProgress | null => {
-  const stored = localStorage.getItem('moduleProgress');
+  const stored = localStorage.getItem('module4Progress');
   return stored ? JSON.parse(stored) : null;
 };
 
 export const updateSubtopicProgress = (subtopicId: string, score: number, response: string): void => {
   const progress = loadModuleProgress() || {
-    moduleId: 'communication-skills',
-    currentSubtopic: 1,
+    moduleId: 'critical-thinking',
+    currentSubtopic: 0,
     completedSubtopics: [],
     quizScores: {},
     badges: [],
     challengeResponses: {},
     lastAccessed: new Date().toISOString(),
-    totalXP: 0
+    totalXP: 0,
+    successStreak: 0,
+    highestStreak: 0,
+    lastStreakDate: ''
   };
 
   // Update progress
+  progress.lastAccessed = new Date().toISOString();
   progress.quizScores[subtopicId] = score;
   progress.challengeResponses[subtopicId] = response;
   
-  if (!progress.completedSubtopics.includes(parseInt(subtopicId.split('-')[1]))) {
-    progress.completedSubtopics.push(parseInt(subtopicId.split('-')[1]));
-  }
-  
-  progress.totalXP += score * 10; // 10 XP per quiz point
-  progress.lastAccessed = new Date().toISOString();
-  
-  saveModuleProgress(progress);
-};
+  // Add XP based on score
+  const xpEarned = Math.round(score / 10); // 1 XP per 10 points
+  progress.totalXP += xpEarned;
 
-export const generatePersonalizedFeedback = (progress: ModuleProgress): string => {
-  const strengths: string[] = [];
-  const improvements: string[] = [];
-  
-  // Analyze quiz scores
-  Object.entries(progress.quizScores).forEach(([subtopic, score]) => {
-    if (score >= 8) {
-      strengths.push(subtopic.replace('-', ' '));
-    } else {
-      improvements.push(`${subtopic.replace('-', ' ')} - Focus on key concepts`);
-    }
-  });
-  
-  return `Strengths: ${strengths.join(', ')}. Areas for improvement: ${improvements.join(', ')}.`;
+  // Update success streak
+  const today = new Date().toISOString().split('T')[0];
+  if (progress.lastStreakDate === today) {
+    // Already updated today, don't change streak
+  } else if (progress.lastStreakDate === new Date(Date.now() - 86400000).toISOString().split('T')[0]) {
+    // Consecutive day, increment streak
+    progress.successStreak += 1;
+    progress.highestStreak = Math.max(progress.highestStreak, progress.successStreak);
+  } else {
+    // Streak broken, reset to 1
+    progress.successStreak = 1;
+    progress.highestStreak = Math.max(progress.highestStreak, 1);
+  }
+  progress.lastStreakDate = today;
+
+  // Add to completed subtopics if not already there
+  const subtopicIndex = module4Subtopics.findIndex(subtopic => subtopic.id === subtopicId);
+  if (subtopicIndex !== -1 && !progress.completedSubtopics.includes(subtopicIndex)) {
+    progress.completedSubtopics.push(subtopicIndex);
+  }
+
+  // Award badge based on score
+  if (score >= 80 && !progress.badges.includes('Critical Thinker')) {
+    progress.badges.push('Critical Thinker');
+  }
+
+  saveModuleProgress(progress);
 };

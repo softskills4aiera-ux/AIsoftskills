@@ -353,15 +353,14 @@ This brochure was generated on ${new Date().toLocaleDateString()}.
   }
 
   return (
-    <div>
-      {/* Brochure Card */}
-      <motion.div
-            initial={{ x: -50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="glassmorphism dark:glassmorphism-dark rounded-2xl p-8"
-          >
+    <motion.div
+      initial={{ x: -50, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="glassmorphism dark:glassmorphism-dark rounded-2xl p-8 h-full flex flex-col"
+      style={{ height: '100%' }}
+    >
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
                 {brochureData.title}
@@ -418,13 +417,13 @@ This brochure was generated on ${new Date().toLocaleDateString()}.
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.5, ease: "easeOut" }}
-                  className="space-y-4"
+                  className="space-y-4 flex-grow overflow-y-auto max-h-[400px] custom-scrollbar"
                 >
                   <div className="text-center mb-6">
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                       🎯 Course Topics Unlocked!
                     </h3>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                    <p className="text-base text-gray-600 dark:text-gray-400">
                       Thank you for your interest! Here are the detailed course topics:
                     </p>
                   </div>
@@ -440,9 +439,9 @@ This brochure was generated on ${new Date().toLocaleDateString()}.
                     >
                       <button
                         onClick={() => toggleCategory(index)}
-                        className="w-full px-4 py-3 text-left bg-gray-50 dark:bg-dark-400 hover:bg-gray-100 dark:hover:bg-dark-500 transition-colors duration-200 flex items-center justify-between"
+                        className="w-full px-4 py-4 text-left bg-gray-50 dark:bg-dark-400 hover:bg-gray-100 dark:hover:bg-dark-500 transition-colors duration-200 flex items-center justify-between"
                       >
-                        <span className="font-semibold text-gray-900 dark:text-white">
+                        <span className="font-bold text-gray-900 dark:text-white text-2xl">
                           {topic.category}
                         </span>
                         {expandedCategories.includes(index) ? (
@@ -459,13 +458,13 @@ This brochure was generated on ${new Date().toLocaleDateString()}.
                             animate={{ height: "auto", opacity: 1 }}
                             exit={{ height: 0, opacity: 0 }}
                             transition={{ duration: 0.3 }}
-                            className="px-4 py-3 bg-white dark:bg-dark-300"
+                            className="px-4 py-4 bg-white dark:bg-dark-300"
                           >
-                            <ul className="space-y-2">
+                            <ul className="space-y-3">
                               {topic.courses.map((course, courseIndex) => (
-                                <li key={courseIndex} className="text-sm text-gray-600 dark:text-gray-300 flex items-center">
-                                  <span className="w-2 h-2 bg-neon-blue rounded-full mr-3"></span>
-                                  {course}
+                                <li key={courseIndex} className="text-2xl font-extrabold text-gray-800 dark:text-gray-100 flex items-center">
+                                  <span className="w-2 h-2 bg-neon-blue rounded-full mr-3 flex-shrink-0"></span>
+                                  <span className="leading-relaxed">{course}</span>
                                 </li>
                               ))}
                             </ul>
@@ -483,38 +482,36 @@ This brochure was generated on ${new Date().toLocaleDateString()}.
                 >
                   <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-dark-400 dark:to-dark-500 rounded-xl p-6 border border-blue-200 dark:border-blue-800">
                     <div className="text-4xl mb-4">🔒</div>
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                    <h3 className="text-3xl font-semibold text-gray-900 dark:text-white mb-2">
                       Course Topics Locked
                     </h3>
                     <p className="text-gray-600 dark:text-gray-400 mb-4">
                       Provide your details above to unlock the complete course brochure and see all available topics.
                     </p>
-                    <div className="text-sm text-gray-500 dark:text-gray-500">
+                    <div className="text-3xl text-gray-500 dark:text-gray-500">
                       📧 We'll send you the full course details
                     </div>
                   </div>
                 </motion.div>
               )}
             </AnimatePresence>
-          </motion.div>
 
-      {/* Lead Capture Modal */}
-      <LeadCaptureModal
-        isOpen={isLeadCaptureModalOpen}
-        onClose={() => setIsLeadCaptureModalOpen(false)}
-        onSuccess={handleLeadCaptureSuccess}
-        actionType={leadCaptureAction}
-      />
+          {/* Lead Capture Modal */}
+          <LeadCaptureModal
+            isOpen={isLeadCaptureModalOpen}
+            onClose={() => setIsLeadCaptureModalOpen(false)}
+            onSuccess={handleLeadCaptureSuccess}
+            actionType={leadCaptureAction}
+          />
 
+          {/* Brochure Preview Modal */}
+          <BrochureModal
+            isOpen={isBrochureModalOpen}
+            onClose={() => setIsBrochureModalOpen(false)}
+            brochureData={brochureData}
+          />
 
-      {/* Brochure Preview Modal */}
-      <BrochureModal
-        isOpen={isBrochureModalOpen}
-        onClose={() => setIsBrochureModalOpen(false)}
-        brochureData={brochureData}
-      />
-
-    </div>
+    </motion.div>
   );
 };
 

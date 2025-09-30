@@ -5,9 +5,14 @@ import BrochureSection from './components/BrochureSection';
 import InstructorsSection from './components/InstructorsSection';
 import AIHero from './components/AIHero';
 import Footer from './components/Footer';
-import EnhancedCommunicationModule from './components/EnhancedCommunicationModule';
-import EnhancedAdaptiveLearningModule from './components/modules/EnhancedAdaptiveLearningModule';
-import PromptEngineeringModule from './components/modules/PromptEngineeringModule';
+import Module1Simple from './modules/Module1Simple';
+// import Module2 from './modules/Module2';
+import Module3 from './modules/Module3';
+import Module4 from './modules/Module4';
+import Module5 from './modules/Module5';
+import Module6 from './modules/Module6';
+import Module7 from './modules/Module7';
+import Module8 from './modules/Module8';
 // import TeamworkModule from './components/modules/TeamworkModule';
 import CourseCatalog from './components/CourseCatalog';
 import { ThemeProvider } from './context/ThemeContext';
@@ -86,34 +91,46 @@ function App() {
       case 'catalog':
         return <CourseCatalog onSelectCourse={handleCourseSelect} />;
       case 'communication':
-        return <EnhancedCommunicationModule 
+        return <Module1Simple 
           onNavigateHome={() => setCurrentView('home')}
           onNavigateCatalog={() => setCurrentView('catalog')}
         />;
       case 'adaptive-learning':
-        return <EnhancedAdaptiveLearningModule 
+        // return <Module2 
+        //   onNavigateHome={() => setCurrentView('home')}
+        //   onNavigateCatalog={() => setCurrentView('catalog')}
+        // />;
+        return <div>Module 2 temporarily disabled for testing</div>;
+      case 'prompt-engineering':
+        return <Module3 
           onNavigateHome={() => setCurrentView('home')}
           onNavigateCatalog={() => setCurrentView('catalog')}
         />;
-      case 'prompt-engineering':
-        return <PromptEngineeringModule />;
-      case 'teamwork':
       case 'critical-thinking':
+        return <Module4 
+          onNavigateHome={() => setCurrentView('home')}
+          onNavigateCatalog={() => setCurrentView('catalog')}
+        />;
       case 'design-thinking':
+        return <Module5 
+          onNavigateHome={() => setCurrentView('home')}
+          onNavigateCatalog={() => setCurrentView('catalog')}
+        />;
+      case 'teamwork':
+        return <Module6 
+          onNavigateHome={() => setCurrentView('home')}
+          onNavigateCatalog={() => setCurrentView('catalog')}
+        />;
       case 'data-driven':
+        return <Module7 
+          onNavigateHome={() => setCurrentView('home')}
+          onNavigateCatalog={() => setCurrentView('catalog')}
+        />;
       case 'mental-physical-health':
-        return <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-gray-800">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Coming Soon!</h2>
-            <p className="text-gray-600 dark:text-gray-400 mb-6">This module is being updated to match the new design.</p>
-            <button 
-              onClick={() => setCurrentView('catalog')} 
-              className="btn-primary"
-            >
-              Back to Catalog
-            </button>
-          </div>
-        </div>;
+        return <Module8 
+          onNavigateHome={() => setCurrentView('home')}
+          onNavigateCatalog={() => setCurrentView('catalog')}
+        />;
       case 'home':
       default:
         return (
@@ -129,9 +146,9 @@ function App() {
               {/* Brochure and Instructors Section - Side by Side */}
               <section id="brochure-section" className="py-20 px-6 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-midnight-800 dark:to-midnight-700">
                 <div className="max-w-7xl mx-auto">
-                  <div className="grid lg:grid-cols-2 gap-12">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
                     {/* Brochure Section */}
-                    <div className="w-full">
+                    <div className="h-[700px]" style={{ height: '700px' }}>
                       <BrochureSection 
                         onLeadCaptureSuccess={handleLeadCaptureSuccess}
                         isLoggedIn={isLoggedIn}
@@ -140,7 +157,7 @@ function App() {
                     </div>
                     
                     {/* Instructors Section */}
-                    <div className="w-full">
+                    <div className="h-[700px]" style={{ height: '700px' }}>
                       <InstructorsSection />
                     </div>
                   </div>

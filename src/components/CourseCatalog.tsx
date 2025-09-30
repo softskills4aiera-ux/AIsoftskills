@@ -164,7 +164,7 @@ const CourseCatalog: React.FC<{ onSelectCourse: (courseId: string) => void }> = 
       prerequisites: []
     },
     {
-      id: 'mental-health',
+      id: 'mental-physical-health',
       title: 'Managing Mental & Physical Health',
       emoji: '💪',
       description: 'Maintain work-life balance, manage stress, and build resilience.',
@@ -236,18 +236,18 @@ const CourseCatalog: React.FC<{ onSelectCourse: (courseId: string) => void }> = 
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-violet-500 rounded-2xl flex items-center justify-center text-white font-bold text-xl">
+              <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-violet-500 rounded-2xl flex items-center justify-center text-white font-bold text-2xl">
                 📚
               </div>
               <div>
-                <h1 className="text-2xl font-bold gradient-text-lime">Course Catalog</h1>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Choose your learning journey</p>
+                <h1 className="text-3xl font-bold gradient-text-lime">Course Catalog</h1>
+                <p className="text-xl text-gray-600 dark:text-gray-400">Choose your learning journey</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
               <div className="streak-counter">🔥 {userProgress.streak}</div>
               <div className="xp-badge">{userProgress.xp} XP</div>
-              <div className="text-sm font-semibold text-gray-600 dark:text-gray-400">
+              <div className="text-xl font-semibold text-gray-600 dark:text-gray-400">
                 Level {userProgress.level}
               </div>
             </div>
@@ -259,13 +259,13 @@ const CourseCatalog: React.FC<{ onSelectCourse: (courseId: string) => void }> = 
       <div className="max-w-7xl mx-auto px-6 py-6">
         <div className="flex flex-col md:flex-row gap-4 mb-8">
           <div className="flex-1 relative">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={24} />
             <input
               type="text"
               placeholder="Search courses..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-10 pr-4 py-3 rounded-2xl bg-white/50 dark:bg-midnight-700/50 border border-white/30 dark:border-white/20 focus:outline-none focus:ring-2 focus:ring-neon-lime/50"
+              className="w-full pl-12 pr-4 py-4 rounded-2xl bg-white/50 dark:bg-midnight-700/50 border border-white/30 dark:border-white/20 focus:outline-none focus:ring-2 focus:ring-neon-lime/50 text-lg"
             />
           </div>
           <div className="flex gap-2">
@@ -273,7 +273,7 @@ const CourseCatalog: React.FC<{ onSelectCourse: (courseId: string) => void }> = 
               <button
                 key={difficulty}
                 onClick={() => setFilterDifficulty(difficulty)}
-                className={`px-4 py-2 rounded-xl font-medium transition-all duration-200 ${
+                className={`px-6 py-3 rounded-xl font-medium transition-all duration-200 text-lg ${
                   filterDifficulty === difficulty
                     ? 'bg-gradient-to-r from-neon-lime to-teal-400 text-midnight-900'
                     : 'bg-white/50 dark:bg-midnight-700/50 text-gray-600 dark:text-gray-400 hover:bg-white/70 dark:hover:bg-midnight-600/50'
@@ -289,102 +289,102 @@ const CourseCatalog: React.FC<{ onSelectCourse: (courseId: string) => void }> = 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
           <div className="emoji-card">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-teal-500 to-violet-500 rounded-xl flex items-center justify-center text-white">
-                <BookOpen size={20} />
+              <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-violet-500 rounded-xl flex items-center justify-center text-white">
+                <BookOpen size={24} />
               </div>
               <div>
                 <div className="text-2xl font-bold gradient-text-lime">{userProgress.completedCourses.length}</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Completed</div>
+                <div className="text-lg text-gray-600 dark:text-gray-400">Completed</div>
               </div>
             </div>
           </div>
           <div className="emoji-card">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-violet-500 to-neon-purple rounded-xl flex items-center justify-center text-white">
-                <Target size={20} />
+              <div className="w-12 h-12 bg-gradient-to-r from-violet-500 to-neon-purple rounded-xl flex items-center justify-center text-white">
+                <Target size={24} />
               </div>
               <div>
                 <div className="text-2xl font-bold gradient-text-lime">{courses.filter(c => c.status === 'available').length}</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Available</div>
+                <div className="text-lg text-gray-600 dark:text-gray-400">Available</div>
               </div>
             </div>
           </div>
           <div className="emoji-card">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-neon-lime to-teal-400 rounded-xl flex items-center justify-center text-white">
-                <Trophy size={20} />
+              <div className="w-12 h-12 bg-gradient-to-r from-neon-lime to-teal-400 rounded-xl flex items-center justify-center text-white">
+                <Trophy size={24} />
               </div>
               <div>
                 <div className="text-2xl font-bold gradient-text-lime">{userProgress.badges.length}</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Badges</div>
+                <div className="text-lg text-gray-600 dark:text-gray-400">Badges</div>
               </div>
             </div>
           </div>
           <div className="emoji-card">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-orange-400 to-red-500 rounded-xl flex items-center justify-center text-white">
-                <TrendingUp size={20} />
+              <div className="w-12 h-12 bg-gradient-to-r from-orange-400 to-red-500 rounded-xl flex items-center justify-center text-white">
+                <TrendingUp size={24} />
               </div>
               <div>
                 <div className="text-2xl font-bold gradient-text-lime">{userProgress.level}</div>
-                <div className="text-sm text-gray-600 dark:text-gray-400">Level</div>
+                <div className="text-lg text-gray-600 dark:text-gray-400">Level</div>
               </div>
             </div>
           </div>
         </div>
 
         {/* Course Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
           {filteredCourses.map((course, index) => (
             <motion.div
               key={course.id}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className={`card-genz p-6 relative overflow-hidden ${
+              className={`card-genz p-6 relative overflow-hidden min-h-[400px] flex flex-col ${
                 course.status === 'locked' ? 'opacity-60' : 'hover:scale-[1.02]'
               }`}
             >
               {/* Course Header */}
               <div className="flex items-start justify-between mb-4">
-                <div className={`w-16 h-16 bg-gradient-to-r ${course.color} rounded-2xl flex items-center justify-center text-2xl shadow-lg`}>
+                <div className={`w-20 h-20 bg-gradient-to-r ${course.color} rounded-2xl flex items-center justify-center text-4xl shadow-lg`}>
                   {course.emoji}
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-2xl">{getStatusIcon(course.status)}</span>
+                  <span className="text-3xl">{getStatusIcon(course.status)}</span>
                   {course.status === 'completed' && (
-                    <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs">✓</span>
+                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                      <span className="text-white text-sm">✓</span>
                     </div>
                   )}
                 </div>
               </div>
 
               {/* Course Info */}
-              <div className="mb-4">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{course.title}</h3>
-                <p className="text-gray-600 dark:text-gray-400 text-sm mb-3">{course.description}</p>
+              <div className="mb-4 flex-1">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-2">{course.title}</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-lg mb-4 line-clamp-3">{course.description}</p>
                 
-                <div className="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-500 mb-3">
-                  <div className="flex items-center gap-1">
-                    <Clock size={14} />
-                    <span>{course.duration}</span>
+                <div className="flex items-center gap-6 text-base text-gray-500 dark:text-gray-500 mb-4">
+                  <div className="flex items-center gap-2">
+                    <Clock size={18} />
+                    <span className="font-medium">{course.duration}</span>
                   </div>
-                  <div className="flex items-center gap-1">
-                    <Users size={14} />
-                    <span>{course.students.toLocaleString()}</span>
+                  <div className="flex items-center gap-2">
+                    <Users size={18} />
+                    <span className="font-medium">{course.students.toLocaleString()}</span>
                   </div>
-                  <div className="flex items-center gap-1">
-                    <Star size={14} className="text-yellow-500" />
-                    <span>{course.rating}</span>
+                  <div className="flex items-center gap-2">
+                    <Star size={18} className="text-yellow-500" />
+                    <span className="font-medium">{course.rating}</span>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-2 mb-3">
-                  <span className={`px-2 py-1 rounded-lg text-xs font-medium ${getDifficultyColor(course.difficulty)}`}>
+                  <span className={`px-3 py-2 rounded-lg text-base font-bold ${getDifficultyColor(course.difficulty)}`}>
                     {course.difficulty}
                   </span>
-                  <span className="xp-badge text-xs">+{course.xpReward} XP</span>
+                  <span className="xp-badge text-base font-bold">+{course.xpReward} XP</span>
                 </div>
               </div>
 
@@ -392,8 +392,8 @@ const CourseCatalog: React.FC<{ onSelectCourse: (courseId: string) => void }> = 
               {course.progress !== undefined && (
                 <div className="mb-4">
                   <div className="flex justify-between items-center mb-1">
-                    <span className="text-xs text-gray-600 dark:text-gray-400">Progress</span>
-                    <span className="text-xs text-gray-600 dark:text-gray-400">{course.progress}%</span>
+                    <span className="text-base text-gray-600 dark:text-gray-400 font-medium">Progress</span>
+                    <span className="text-base text-gray-600 dark:text-gray-400 font-medium">{course.progress}%</span>
                   </div>
                   <div className="progress-bar">
                     <div 
@@ -407,12 +407,12 @@ const CourseCatalog: React.FC<{ onSelectCourse: (courseId: string) => void }> = 
               {/* Prerequisites */}
               {course.prerequisites.length > 0 && course.status === 'locked' && (
                 <div className="mb-4">
-                  <div className="text-xs text-gray-500 dark:text-gray-400 mb-2">Prerequisites:</div>
+                  <div className="text-base text-gray-500 dark:text-gray-400 mb-2 font-medium">Prerequisites:</div>
                   <div className="flex flex-wrap gap-1">
                     {course.prerequisites.map((prereq, i) => {
                       const prereqCourse = courseData.find(c => c.id === prereq);
                       return (
-                        <span key={i} className="text-xs bg-gray-100 dark:bg-midnight-600 text-gray-600 dark:text-gray-400 px-2 py-1 rounded-full flex items-center gap-1">
+                        <span key={i} className="text-sm bg-gray-100 dark:bg-midnight-600 text-gray-600 dark:text-gray-400 px-3 py-2 rounded-full flex items-center gap-2 font-medium">
                           {prereqCourse?.emoji} {prereqCourse?.title}
                         </span>
                       );
@@ -425,7 +425,7 @@ const CourseCatalog: React.FC<{ onSelectCourse: (courseId: string) => void }> = 
               <div className="mb-4">
                 <div className="flex flex-wrap gap-1">
                   {course.badges.map((badge, i) => (
-                    <span key={i} className="text-xs bg-gradient-to-r from-neon-lime/20 to-teal-400/20 text-gray-700 dark:text-gray-300 px-2 py-1 rounded-full">
+                    <span key={i} className="text-base bg-gradient-to-r from-neon-lime/20 to-teal-400/20 text-gray-700 dark:text-gray-300 px-3 py-2 rounded-full font-medium">
                       🏆 {badge}
                     </span>
                   ))}
@@ -438,7 +438,7 @@ const CourseCatalog: React.FC<{ onSelectCourse: (courseId: string) => void }> = 
                 whileTap={{ scale: course.status === 'locked' ? 1 : 0.95 }}
                 onClick={() => course.status !== 'locked' && onSelectCourse(course.id)}
                 disabled={course.status === 'locked'}
-                className={`w-full py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center gap-2 ${
+                className={`w-full py-4 rounded-xl font-bold transition-all duration-200 flex items-center justify-center gap-2 text-lg ${
                   course.status === 'completed'
                     ? 'bg-gradient-to-r from-green-500 to-emerald-500 text-white'
                     : course.status === 'available'
@@ -454,7 +454,7 @@ const CourseCatalog: React.FC<{ onSelectCourse: (courseId: string) => void }> = 
                 ) : course.status === 'available' ? (
                   <>
                     <span>Start Course</span>
-                    <ArrowRight size={16} />
+                    <ArrowRight size={20} />
                   </>
                 ) : (
                   <>
@@ -471,8 +471,8 @@ const CourseCatalog: React.FC<{ onSelectCourse: (courseId: string) => void }> = 
         {filteredCourses.length === 0 && (
           <div className="text-center py-12">
             <div className="text-6xl mb-4">🔍</div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">No courses found</h3>
-            <p className="text-gray-600 dark:text-gray-400">Try adjusting your search or filter criteria</p>
+            <h3 className="text-3xl font-semibold text-gray-900 dark:text-white mb-3">No courses found</h3>
+            <p className="text-xl text-gray-600 dark:text-gray-400">Try adjusting your search or filter criteria</p>
           </div>
         )}
       </div>

@@ -281,7 +281,7 @@ const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, brochure
                     </h4>
                     <ul className="space-y-2">
                       {topic.courses.map((course, courseIndex) => (
-                        <li key={courseIndex} className="text-sm text-gray-600 dark:text-gray-300 flex items-center">
+                        <li key={courseIndex} className="text-lg font-bold text-gray-800 dark:text-gray-100 flex items-center">
                           <span className="w-2 h-2 bg-neon-blue rounded-full mr-3"></span>
                           {course}
                         </li>
@@ -313,46 +313,6 @@ const BrochureModal: React.FC<BrochureModalProps> = ({ isOpen, onClose, brochure
               </div>
             </div>
 
-            {/* Pricing */}
-            <div className="mb-8">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                Pricing Plans
-              </h3>
-              <div className="grid md:grid-cols-3 gap-6">
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.1 }}
-                  className="bg-gradient-to-br from-neon-blue to-blue-500 text-white p-6 rounded-xl text-center"
-                >
-                  <h4 className="font-semibold text-lg mb-2">Individual</h4>
-                  <p className="text-3xl font-bold mb-2">{brochureData.pricing.individual}</p>
-                  <p className="text-blue-100 text-sm">Perfect for personal development</p>
-                </motion.div>
-                
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2 }}
-                  className="bg-gradient-to-br from-neon-purple to-purple-500 text-white p-6 rounded-xl text-center"
-                >
-                  <h4 className="font-semibold text-lg mb-2">Team</h4>
-                  <p className="text-3xl font-bold mb-2">{brochureData.pricing.team}</p>
-                  <p className="text-purple-100 text-sm">Ideal for small teams</p>
-                </motion.div>
-                
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3 }}
-                  className="bg-gradient-to-br from-neon-green to-green-500 text-white p-6 rounded-xl text-center"
-                >
-                  <h4 className="font-semibold text-lg mb-2">Enterprise</h4>
-                  <p className="text-3xl font-bold mb-2">{brochureData.pricing.enterprise}</p>
-                  <p className="text-green-100 text-sm">Custom solutions for large organizations</p>
-                </motion.div>
-              </div>
-            </div>
 
             {/* CTA */}
             <motion.div

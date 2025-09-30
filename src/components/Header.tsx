@@ -30,14 +30,14 @@ const Header: React.FC<HeaderProps> = ({ isLoggedIn, isAdmin, onLogin }) => {
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             <div className="w-12 h-12 bg-gradient-to-br from-neon-blue to-neon-purple rounded-xl flex items-center justify-center shadow-lg ring-2 ring-neon-blue/30 hover:ring-neon-blue/50 transition-all duration-300">
-              <span className="text-white font-bold text-2xl drop-shadow-lg">A</span>
+              <span className="text-white font-bold text-3xl drop-shadow-lg">A</span>
             </div>
             <div className="text-left">
               <motion.h1 
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-3xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent leading-tight mb-2"
+                className="text-4xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent leading-tight mb-2"
               >
                 Ai-ERA Soft Skills Academy
               </motion.h1>
@@ -65,7 +65,7 @@ const Header: React.FC<HeaderProps> = ({ isLoggedIn, isAdmin, onLogin }) => {
                   stiffness: 100,
                   damping: 15
                 }}
-                className="text-sm text-gray-600 dark:text-gray-300"
+                className="text-base text-gray-600 dark:text-gray-300"
               >
                 Unlock your potential with AI-powered learning
               </motion.p>

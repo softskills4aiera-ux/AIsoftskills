@@ -8,6 +8,9 @@ export interface ModuleProgress {
   challengeResponses: { [key: string]: string };
   lastAccessed: string;
   totalXP: number;
+  successStreak: number;
+  highestStreak: number;
+  lastStreakDate: string;
 }
 
 export interface SubtopicData {
@@ -53,6 +56,24 @@ export interface SubtopicData {
     description: string;
   };
   shareMessage: string;
+}
+
+export interface AssessmentData {
+  title: string;
+  description: string;
+  questions: {
+    id: number;
+    question: string;
+    options: string[];
+    correct: number;
+    explanation?: string;
+  }[];
+  gradingScale: {
+    excellent: { min: number; max: number; message: string; xpReward: number };
+    good: { min: number; max: number; message: string; xpReward: number };
+    satisfactory: { min: number; max: number; message: string; xpReward: number };
+    needsImprovement: { min: number; max: number; message: string; xpReward: number };
+  };
 }
 
 export const module7Subtopics: SubtopicData[] = [
@@ -1114,8 +1135,9 @@ Example: Tom researched different investment options by comparing historical ret
   }
 ];
 
-export const module7Assessment = {
+export const module7Assessment: AssessmentData = {
   title: "Data-Driven Decision Making Mastery Assessment",
+  description: "Test your mastery of data-driven decision making and analytical skills. This comprehensive assessment evaluates your understanding of data analysis, statistical thinking, and evidence-based decision making.",
   questions: [
     {
       id: 1,
@@ -1177,8 +1199,53 @@ export const module7Assessment = {
           correct: 1,
           explanation: "The goal is to extract meaningful insights and support evidence-based decisions."
         }
-      ]
+      ],
+      gradingScale: {
+        excellent: { min: 80, max: 100, message: "Excellent! You've mastered data-driven decision making!", xpReward: 100 },
+        good: { min: 70, max: 79, message: "Good job! You have strong analytical skills.", xpReward: 75 },
+        satisfactory: { min: 60, max: 69, message: "Satisfactory. Keep practicing to improve further.", xpReward: 50 },
+        needsImprovement: { min: 0, max: 59, message: "Keep learning! Data analysis skills improve with practice.", xpReward: 25 }
+      }
     };
+
+// Local Storage Helper Functions
+export const saveModuleProgress = (progress: ModuleProgress): void => {
+  localStorage.setItem('module7Progress', JSON.stringify(progress));
+};
+
+export const loadModuleProgress = (): ModuleProgress | null => {
+  const stored = localStorage.getItem('module7Progress');
+  return stored ? JSON.parse(stored) : null;
+};
+
+export const updateSubtopicProgress = (subtopicId: string, score: number, response: string): void => {
+  const progress = loadModuleProgress() || {
+    moduleId: 'data-driven',
+    currentSubtopic: 0,
+    completedSubtopics: [],
+    quizScores: {},
+    badges: [],
+    challengeResponses: {},
+    lastAccessed: new Date().toISOString(),
+    totalXP: 0,
+    successStreak: 0,
+    highestStreak: 0,
+    lastStreakDate: ''
+  };
+
+  // Update progress
+  progress.quizScores[subtopicId] = score;
+  progress.challengeResponses[subtopicId] = response;
+  
+  if (!progress.completedSubtopics.includes(parseInt(subtopicId.split('-')[1]))) {
+    progress.completedSubtopics.push(parseInt(subtopicId.split('-')[1]));
+  }
+  
+  progress.totalXP += score;
+  progress.lastAccessed = new Date().toISOString();
+  
+  saveModuleProgress(progress);
+};
 
 
 

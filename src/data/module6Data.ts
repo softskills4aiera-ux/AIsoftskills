@@ -1,4 +1,4 @@
-// Module 1: Communication Skills Data Structure
+// Module 6: Teamwork & Collaboration Data Structure
 export interface ModuleProgress {
   moduleId: string;
   currentSubtopic: number;
@@ -8,6 +8,9 @@ export interface ModuleProgress {
   challengeResponses: { [key: string]: string };
   lastAccessed: string;
   totalXP: number;
+  successStreak: number;
+  highestStreak: number;
+  lastStreakDate: string;
 }
 
 export interface SubtopicData {
@@ -24,7 +27,6 @@ export interface SubtopicData {
     title: string;
     duration: number; // in minutes
     content: string[];
-    script?: string; // Full video script
   };
   quiz: {
     title: string;
@@ -55,1194 +57,921 @@ export interface SubtopicData {
   shareMessage: string;
 }
 
-export const module1Subtopics: SubtopicData[] = [
+export interface AssessmentData {
+  title: string;
+  description: string;
+  questions: {
+    id: number;
+    question: string;
+    options: string[];
+    correct: number;
+    explanation?: string;
+  }[];
+  gradingScale: {
+    excellent: { min: number; max: number; message: string; xpReward: number };
+    good: { min: number; max: number; message: string; xpReward: number };
+    satisfactory: { min: number; max: number; message: string; xpReward: number };
+    needsImprovement: { min: number; max: number; message: string; xpReward: number };
+  };
+}
+
+export const module6Subtopics: SubtopicData[] = [
   {
-    id: 'active-listening',
-    title: 'Active Listening',
-    emoji: '🎧',
+    id: 'team-dynamics',
+    title: 'Team Dynamics',
+    emoji: '👥',
     context: 'academic',
     discover: {
-      scenario: "Your professor is explaining the final exam format, but you're already thinking about your job interview tomorrow. Your group project partner is sharing concerns, but you're distracted by notifications. You realize you've missed the key points for the upcoming exam. How do you focus and absorb information effectively?",
+      scenario: "Your group project team has different personalities: one member is very quiet, another dominates discussions, and a third always arrives late. The project deadline is approaching, but you're struggling to work together effectively. How do you build better team dynamics and collaboration?",
       problemExplanation: [
-        "Distraction: Phone notifications, friend conversations, and internal thoughts prevent focus",
-        "Multitasking: Trying to listen while thinking about other things reduces comprehension",
-        "Passive Listening: Just hearing words without understanding or processing meaning",
-        "Missing Critical Information: Key exam content and project details are lost"
+        "Personality Conflicts: Different working styles and communication preferences",
+        "Role Confusion: Unclear responsibilities and expectations",
+        "Communication Issues: Poor information sharing and feedback",
+        "Motivation Differences: Varying levels of commitment and engagement"
       ],
       solutionApproach: [
-        "Focus Techniques: Phone away, active note-taking, eye contact with speaker",
-        "Engagement Strategies: Asking clarifying questions, summarizing key points",
-        "Memory Techniques: Connecting new information to existing knowledge",
-        "Follow-up Actions: Office hours, study groups, peer discussions"
+        "Team Building: Understanding different personalities and working styles",
+        "Role Clarity: Defining clear responsibilities and expectations",
+        "Communication Protocols: Establishing effective communication channels",
+        "Motivation Strategies: Engaging all team members and building commitment"
       ]
     },
     video: {
-      title: "Master Active Listening for Success",
+      title: "Building Effective Team Dynamics",
       duration: 5,
       content: [
-        "Lecture Listening: How to stay focused during long lectures",
-        "Group Work: Active listening in study groups and project meetings",
-        "Professor Communication: Effective listening during office hours and feedback sessions",
-        "Note-Taking Integration: Combining listening with effective note-taking",
-        "Memory Retention: Techniques to remember what you've heard"
-      ],
-      script: `[HOOK - 30 seconds]
-"Active listening is the secret to success in college, work, and relationships. Today, I'll show you how to master it in just 5 minutes."
-
-[ACADEMIC - 2 minutes]
-"In college, active listening helps you:
-- Stay focused during lectures (use the 3-2-1 method: 3 key points, 2 questions, 1 action)
-- Engage with professors during office hours by asking clarifying questions
-- Build better study group discussions by truly hearing others' ideas
-
-Example: Sarah improved her grades by 20% just by asking one clarifying question per lecture."
-
-[PROFESSIONAL - 2 minutes]
-"In your career, active listening helps you:
-- Ace job interviews by understanding what employers really want
-- Build better relationships with colleagues and clients
-- Get promoted by showing you truly understand feedback
-
-Example: Jennifer got promoted because she actively listened to her manager's feedback and improved her performance."
-
-[PERSONAL - 1 minute]
-"In relationships, active listening helps you:
-- Connect deeper with family and friends by truly hearing them
-- Resolve conflicts more effectively by understanding different perspectives
-- Build stronger personal relationships through empathy
-
-Example: Maria repaired her relationship with her parents by actively listening to their concerns about her career choices."
-
-[CALL TO ACTION - 30 seconds]
-"Ready to transform your listening? Practice these techniques in your next conversation, whether it's in class, at work, or with family. Start today!"`
+        "Personality Types: Understanding different working styles and preferences",
+        "Role Definition: Clarifying responsibilities and expectations",
+        "Communication Protocols: Establishing effective team communication",
+        "Conflict Resolution: Managing disagreements and building consensus",
+        "Team Motivation: Engaging all members and building commitment"
+      ]
     },
     quiz: {
-      title: "Test Your Active Listening Knowledge",
+      title: "Test Your Team Dynamics Knowledge",
       questions: [
         {
           id: 1,
-          question: "Your professor says 'This needs more research' - what should you do first?",
+          question: "What's the first step in building effective team dynamics?",
           options: [
-            "Immediately start researching",
-            "Ask clarifying questions about what specific research is needed",
-            "Ignore the feedback and continue as planned",
-            "Ask other students what they think"
+            "Assign roles immediately",
+            "Understand each team member's strengths and working style",
+            "Set strict deadlines",
+            "Choose a team leader"
           ],
           correct: 1,
-          explanation: "Always ask clarifying questions to understand exactly what's needed before taking action."
+          explanation: "Understanding each member's strengths and working style helps build better collaboration."
         },
         {
           id: 2,
-          question: "Group member is struggling with their part - how do you listen effectively?",
+          question: "How do you handle a team member who dominates discussions?",
           options: [
-            "Give them advice immediately",
-            "Listen completely, then ask questions to understand their specific challenges",
-            "Tell them to figure it out themselves",
-            "Take over their part"
+            "Let them lead everything",
+            "Create structured discussion formats and encourage others to participate",
+            "Ignore them",
+            "Complain to the professor"
           ],
           correct: 1,
-          explanation: "Active listening means understanding the full situation before offering solutions."
+          explanation: "Structured discussion formats help ensure everyone has a chance to contribute."
         },
         {
           id: 3,
-          question: "What's the difference between hearing and active listening in academic settings?",
+          question: "What's the best way to clarify team roles and responsibilities?",
           options: [
-            "There's no difference",
-            "Hearing is passive, active listening involves understanding and responding",
-            "Active listening is just louder",
-            "Hearing is for lectures, active listening is for conversations"
+            "Assume everyone knows what to do",
+            "Have a team meeting to discuss and document roles clearly",
+            "Let the professor assign roles",
+            "Work it out as you go"
           ],
           correct: 1,
-          explanation: "Active listening requires engagement, understanding, and response, not just hearing words."
+          explanation: "Clear documentation of roles and responsibilities prevents confusion and conflicts."
         },
         {
           id: 4,
-          question: "How do you take effective notes during exam review sessions?",
+          question: "How do you motivate a team member who seems disengaged?",
           options: [
-            "Write down everything the professor says",
-            "Focus on key concepts and ask questions about unclear points",
-            "Record the session and listen later",
-            "Just listen without taking notes"
+            "Ignore them and do their work",
+            "Have a private conversation to understand their concerns and find ways to engage them",
+            "Complain about them to others",
+            "Give them easier tasks"
           ],
           correct: 1,
-          explanation: "Focus on key concepts and engage by asking questions about unclear points."
+          explanation: "Understanding their concerns and finding ways to engage them is more effective than ignoring the issue."
         },
         {
           id: 5,
-          question: "What's the best way to listen and understand complex academic concepts?",
+          question: "What's the key to successful team communication?",
           options: [
-            "Memorize the definitions",
-            "Connect new concepts to things you already know",
-            "Ask the professor to simplify everything",
-            "Skip the complex parts"
+            "Meeting frequently",
+            "Establishing clear communication protocols and regular check-ins",
+            "Using only email",
+            "Letting everyone communicate however they want"
           ],
           correct: 1,
-          explanation: "Connecting new information to existing knowledge helps with understanding and retention."
+          explanation: "Clear protocols and regular check-ins ensure everyone stays informed and engaged."
         }
       ]
     },
     challenge: {
-      title: "Practice Active Listening",
-      description: "Practice active listening in your next lecture or study session",
+      title: "Practice Team Dynamics",
+      description: "Apply team dynamics principles to improve collaboration in your current group project",
       instructions: [
-        "Before the session: Put your phone away, prepare note-taking materials",
-        "During the session: Maintain eye contact, ask at least 2 clarifying questions",
-        "After the session: Summarize 3 key points you learned",
-        "Reflection: Write down what helped you listen better and what was challenging"
+        "Assess your current team's dynamics and identify areas for improvement",
+        "Have a team meeting to discuss working styles and preferences",
+        "Clarify roles and responsibilities for each team member",
+        "Establish communication protocols and regular check-ins",
+        "Implement strategies to engage all team members"
       ],
       successCriteria: [
-        "Asked at least 2 relevant questions",
-        "Created clear, organized notes",
-        "Can explain 3 key concepts from the session",
-        "Identified specific listening strategies that worked"
+        "Identified team dynamics issues and improvement areas",
+        "Clarified roles and responsibilities for all members",
+        "Established effective communication protocols",
+        "Implemented strategies to engage all team members"
       ]
     },
     feedback: {
-      strengths: ["You're great at listening to peers and asking thoughtful questions"],
-      improvements: ["Focus on maintaining eye contact with authority figures and reducing internal distractions"],
-      nextSteps: ["Practice active listening in your next professor meeting and group study session"]
+      strengths: ["You're great at understanding different personalities and building consensus"],
+      improvements: ["Focus on establishing clearer communication protocols and addressing conflicts more directly"],
+      nextSteps: ["Practice facilitating team discussions and managing different working styles"]
     },
     badge: {
-      name: "Active Listener",
-      emoji: "🎧",
-      description: "Mastered the art of active listening in academic settings"
+      name: "Team Builder",
+      emoji: "👥",
+      description: "Mastered team dynamics and collaboration building"
     },
-    shareMessage: "Just mastered active listening for my studies! Ready to absorb knowledge like a sponge! 🎧 #StudySmart #CommunicationSkills"
+    shareMessage: "Just mastered team dynamics! Ready to build amazing teams that work together! 👥 #Teamwork #Collaboration"
   },
   {
-    id: 'public-speaking',
-    title: 'Public Speaking',
-    emoji: '🎤',
+    id: 'leadership-skills',
+    title: 'Leadership Skills',
+    emoji: '🎯',
     context: 'professional',
     discover: {
-      scenario: "Job interview tomorrow, you need to present your final year project to potential employers. Your hands are shaking, voice is cracking, and you're worried about technical questions. Plus, you've been applying to 50+ jobs with no responses. How do you present confidently and handle interview anxiety?",
+      scenario: "You've been asked to lead a cross-functional project team at your internship. The team includes people from different departments with varying experience levels. Some team members are resistant to change, and you need to deliver results while building team cohesion. How do you develop your leadership skills and guide the team to success?",
       problemExplanation: [
-        "Interview Anxiety: Physical symptoms of nervousness affecting performance",
-        "Application Fatigue: Multiple rejections leading to self-doubt and decreased confidence",
-        "Technical Concerns: Worry about being asked difficult questions beyond your knowledge",
-        "Presentation Skills: Lack of experience presenting to professional audiences"
+        "Authority Challenges: Leading without formal authority or experience",
+        "Resistance to Change: Team members reluctant to adopt new approaches",
+        "Cross-Functional Complexity: Managing people from different departments and backgrounds",
+        "Results Pressure: Balancing team building with delivering outcomes"
       ],
       solutionApproach: [
-        "Confidence Building: Preparation, practice, and positive self-talk",
-        "Anxiety Management: Breathing techniques, visualization, and reframing",
-        "Technical Preparation: Research company, practice common questions, prepare examples",
-        "Presentation Skills: Structure, storytelling, and audience engagement"
+        "Leadership Styles: Understanding different approaches to leadership",
+        "Influence Without Authority: Building trust and credibility",
+        "Change Management: Guiding teams through transitions and improvements",
+        "Results Focus: Balancing people and performance outcomes"
       ]
     },
     video: {
-      title: "Conquer Public Speaking Anxiety",
+      title: "Developing Leadership Skills for Professional Success",
       duration: 5,
       content: [
-        "Interview Presentations: How to present your projects confidently to employers",
-        "Career Fair Communication: Elevator pitches and portfolio presentations",
-        "Networking Events: Introducing yourself professionally to industry contacts",
-        "Anxiety Management: Techniques to handle nervousness and build confidence",
-        "Follow-up Strategies: Post-interview communication and relationship building"
-      ],
-      script: `[HOOK - 30 seconds]
-"75% of people fear public speaking more than death. But what if I told you that with the right techniques, you can become a confident speaker in just 5 minutes?"
-
-[ACADEMIC - 2 minutes]
-"In college, public speaking helps you:
-- Ace class presentations and group projects
-- Participate confidently in discussions and debates
-- Build relationships with professors through confident communication
-
-Techniques: Use the 3-2-1 method - 3 main points, 2 supporting examples, 1 call to action. Practice with friends or record yourself.
-
-Example: Mike went from failing presentations to getting A's by practicing his opening line 10 times before each speech."
-
-[PROFESSIONAL - 2 minutes]
-"In your career, public speaking helps you:
-- Impress employers in job interviews and presentations
-- Lead team meetings and client presentations
-- Advance your career through confident communication
-
-Techniques: Start with a story, use visual aids, maintain eye contact with different audience members.
-
-Example: Sarah got promoted to team lead because she confidently presented her project ideas to senior management."
-
-[PERSONAL - 1 minute]
-"In personal life, public speaking helps you:
-- Speak up in family discussions and social gatherings
-- Build confidence in social situations
-- Express your opinions clearly and persuasively
-
-Techniques: Practice with family, start with small groups, focus on your message, not your nerves.
-
-Example: Tom became more confident in social situations by practicing public speaking techniques with his family."
-
-[CALL TO ACTION - 30 seconds]
-"Ready to conquer your fear? Start by practicing your next presentation or conversation. Remember, confidence comes from preparation, not perfection. Begin today!"`
+        "Leadership Styles: Understanding different approaches and when to use them",
+        "Influence Without Authority: Building trust and credibility with peers",
+        "Change Management: Guiding teams through transitions and improvements",
+        "Decision Making: Making tough decisions while maintaining team morale",
+        "Results Delivery: Balancing people development with performance outcomes"
+      ]
     },
     quiz: {
-      title: "Test Your Public Speaking Knowledge",
+      title: "Test Your Leadership Skills Knowledge",
       questions: [
         {
           id: 1,
-          question: "How do you adjust your presentation style for an interviewer vs. a client?",
+          question: "What's the most important quality of an effective leader?",
           options: [
-            "Use the same style for both",
-            "Be more formal with interviewers, more casual with clients",
-            "Research the audience and adjust tone, examples, and level of detail accordingly",
-            "Always be very formal"
+            "Being the smartest person in the room",
+            "Building trust and inspiring others to achieve common goals",
+            "Making all decisions quickly",
+            "Having the most experience"
           ],
-          correct: 2,
-          explanation: "Always research your audience and tailor your presentation to their needs and context."
+          correct: 1,
+          explanation: "Building trust and inspiring others to achieve common goals is fundamental to effective leadership."
         },
         {
           id: 2,
-          question: "What's the best way to handle technical questions during presentations?",
+          question: "How do you lead effectively without formal authority?",
           options: [
-            "Pretend you know the answer",
-            "Say 'I don't know' and move on",
-            "Acknowledge what you know, admit what you don't, and explain how you'd find out",
-            "Change the subject"
+            "Use your title to force compliance",
+            "Build trust, demonstrate expertise, and focus on shared goals",
+            "Avoid making decisions",
+            "Let others lead"
           ],
-          correct: 2,
-          explanation: "Honesty and problem-solving approach shows professionalism and confidence."
+          correct: 1,
+          explanation: "Leading without authority requires building trust, demonstrating expertise, and focusing on shared goals."
         },
         {
           id: 3,
-          question: "How do you maintain confidence when presenting to senior professionals?",
+          question: "What's the best approach to managing resistance to change?",
           options: [
-            "Avoid eye contact",
-            "Speak quietly to show respect",
-            "Maintain good posture, speak clearly, and focus on your value",
-            "Let them lead the conversation"
+            "Ignore the resistance",
+            "Understand concerns, communicate benefits, and involve people in the process",
+            "Force the change through",
+            "Avoid making changes"
           ],
-          correct: 2,
-          explanation: "Confidence comes from good preparation, clear communication, and knowing your value."
+          correct: 1,
+          explanation: "Understanding concerns, communicating benefits, and involving people helps reduce resistance to change."
         },
         {
           id: 4,
-          question: "How do you follow up after a job interview without being pushy?",
+          question: "How do you balance team building with delivering results?",
           options: [
-            "Send multiple emails",
-            "Call them directly",
-            "Send one professional thank-you email within 24 hours",
-            "Wait for them to contact you"
+            "Focus only on results",
+            "Integrate team development into project work and celebrate both people and performance",
+            "Focus only on team building",
+            "Alternate between the two"
           ],
-          correct: 2,
-          explanation: "One professional thank-you email within 24 hours shows professionalism without being pushy."
+          correct: 1,
+          explanation: "Integrating team development into project work creates sustainable high performance."
         },
         {
           id: 5,
-          question: "What do you say when asked 'Why should we hire you?'",
+          question: "What's the key to making effective team decisions?",
           options: [
-            "I need a job",
-            "I'm really smart",
-            "Based on my skills and experience, I can contribute to your team by...",
-            "I don't know"
+            "Make all decisions yourself",
+            "Gather input, consider options, and make decisions that align with team goals",
+            "Let the team vote on everything",
+            "Avoid making decisions"
           ],
-          correct: 2,
-          explanation: "Focus on specific skills and how they benefit the company, not your personal needs."
+          correct: 1,
+          explanation: "Effective decisions balance input gathering with clear direction and goal alignment."
         }
       ]
     },
     challenge: {
-      title: "Record Professional Presentation",
-      description: "Record a 3-minute professional presentation for a job interview",
+      title: "Practice Leadership Skills",
+      description: "Take on a leadership role in a project or initiative and apply leadership principles",
       instructions: [
-        "Choose a topic: Your final year project, a relevant experience, or a skill you want to highlight",
-        "Structure your presentation: Introduction, main points, conclusion",
-        "Record yourself: Use your phone or computer to record the presentation",
-        "Self-evaluate: Watch the recording and note areas for improvement",
-        "Practice again: Record a second version incorporating improvements"
+        "Identify an opportunity to lead a project or initiative",
+        "Assess your team's needs and your leadership approach",
+        "Build trust and credibility with team members",
+        "Guide the team through challenges and changes",
+        "Focus on both team development and results delivery"
       ],
       successCriteria: [
-        "Clear introduction and conclusion",
-        "Well-organized main points",
-        "Good eye contact with camera",
-        "Confident voice and body language",
-        "Within 3-minute time limit"
+        "Successfully led a project or initiative",
+        "Built trust and credibility with team members",
+        "Managed challenges and changes effectively",
+        "Delivered results while developing the team"
       ]
     },
     feedback: {
-      strengths: ["You have good content and clear structure"],
-      improvements: ["Work on maintaining eye contact and reducing filler words like 'um' and 'uh'"],
-      nextSteps: ["Practice the presentation 3 more times and focus on smooth transitions between points"]
+      strengths: ["You're great at inspiring others and building consensus around goals"],
+      improvements: ["Focus on developing more systematic approaches to change management and decision making"],
+      nextSteps: ["Practice leading different types of teams and projects to build leadership versatility"]
     },
     badge: {
-      name: "Confident Speaker",
-      emoji: "🎤",
-      description: "Mastered professional presentation skills for interviews and workplace"
+      name: "Team Leader",
+      emoji: "🎯",
+      description: "Mastered leadership skills and team guidance"
     },
-    shareMessage: "Ready to present anywhere - from classroom to boardroom! Just nailed my interview presentation skills! 🎤 #JobReady #PublicSpeaking"
-  },
-  {
-    id: 'written-communication',
-    title: 'Written Communication',
-    emoji: '✍️',
-    context: 'professional',
-    discover: {
-      scenario: "First day at your new job, you need to email your manager about project updates, respond to a senior colleague's feedback, and write a professional message to a client. But first, you need to write a compelling cover letter and follow up on job applications. Your current emails sound like text messages. How do you level up your professional writing?",
-      problemExplanation: [
-        "Informal Writing Style: Using casual language, abbreviations, and emojis in professional contexts",
-        "Lack of Structure: Emails without clear subject lines, greetings, or professional closings",
-        "Unclear Purpose: Messages that don't clearly state what you need or want",
-        "Inappropriate Tone: Being too casual with senior colleagues or too formal with peers"
-      ],
-      solutionApproach: [
-        "Professional Format: Proper email structure, subject lines, and signatures",
-        "Appropriate Tone: Matching formality level to audience and context",
-        "Clear Communication: Stating purpose, providing context, and requesting specific actions",
-        "Follow-up Strategies: Professional persistence without being pushy"
-      ]
-    },
-    video: {
-      title: "Write Like a Pro for Success",
-      duration: 5,
-      content: [
-        "Email Structure: Subject lines, greetings, body, closings, and signatures",
-        "Tone Adaptation: Formal vs. informal communication based on audience",
-        "Cover Letter Writing: Compelling applications that stand out to employers",
-        "Follow-up Communication: Post-interview and post-application strategies",
-        "Client Communication: Professional external communication standards"
-      ],
-      script: `[HOOK - 30 seconds]
-"Your writing is your first impression in college, work, and relationships. Today, I'll show you how to write like a pro in just 5 minutes."
-
-[ACADEMIC - 2 minutes]
-"In college, written communication helps you:
-- Write clear, persuasive essays and research papers
-- Communicate effectively with professors via email
-- Collaborate on group projects through written communication
-
-Techniques: Use the 5-paragraph structure, proofread twice, be concise and clear. Always include a clear subject line in emails.
-
-Example: Lisa improved her essay grades by 30% just by using a clear thesis statement and supporting evidence."
-
-[PROFESSIONAL - 2 minutes]
-"In your career, written communication helps you:
-- Write professional emails and reports that get results
-- Create compelling resumes and cover letters
-- Communicate clearly with clients and colleagues
-
-Techniques: Use bullet points for clarity, include action items, proofread for typos. Keep emails under 5 sentences when possible.
-
-Example: David got his dream job because his cover letter was clear, concise, and showed exactly how he could solve their problems."
-
-[PERSONAL - 1 minute]
-"In personal life, written communication helps you:
-- Express your thoughts clearly in texts and social media
-- Write meaningful messages to family and friends
-- Communicate effectively in online relationships
-
-Techniques: Be authentic, use proper grammar, think before you send. Your words represent you.
-
-Example: Maria strengthened her long-distance relationship by writing thoughtful, detailed messages to her partner."
-
-[CALL TO ACTION - 30 seconds]
-"Ready to write like a pro? Start by improving your next email or message. Remember, good writing is clear thinking made visible. Practice today!"`
-    },
-    quiz: {
-      title: "Test Your Written Communication Knowledge",
-      questions: [
-        {
-          id: 1,
-          question: "How do you email a senior colleague vs. a peer?",
-          options: [
-            "Use the same tone for both",
-            "Be more formal with senior colleagues, more casual with peers",
-            "Always be very formal",
-            "Be casual with everyone"
-          ],
-          correct: 1,
-          explanation: "Adjust your tone based on the relationship and context."
-        },
-        {
-          id: 2,
-          question: "What's the appropriate tone for client communication?",
-          options: [
-            "Very casual and friendly",
-            "Professional but warm, clear and respectful",
-            "Extremely formal and distant",
-            "Use lots of technical jargon"
-          ],
-          correct: 1,
-          explanation: "Professional but warm tone builds trust while maintaining boundaries."
-        },
-        {
-          id: 3,
-          question: "How do you respond professionally to negative feedback?",
-          options: [
-            "Defend yourself immediately",
-            "Thank them, acknowledge the feedback, and ask for specific examples",
-            "Ignore the feedback",
-            "Send a long explanation"
-          ],
-          correct: 1,
-          explanation: "Acknowledge feedback professionally and seek clarification."
-        },
-        {
-          id: 4,
-          question: "How do you write a compelling cover letter that stands out?",
-          options: [
-            "Use a generic template",
-            "Research the company and tailor your letter to their specific needs",
-            "Focus only on your achievements",
-            "Make it very long and detailed"
-          ],
-          correct: 1,
-          explanation: "Tailor your cover letter to show you understand the company's needs."
-        },
-        {
-          id: 5,
-          question: "What's the best way to follow up on job applications?",
-          options: [
-            "Send multiple emails",
-            "Call them directly",
-            "Send one professional follow-up email after 1-2 weeks",
-            "Wait indefinitely"
-          ],
-          correct: 2,
-          explanation: "One professional follow-up shows persistence without being pushy."
-        }
-      ]
-    },
-    challenge: {
-      title: "Write Professional Emails",
-      description: "Write 3 different professional emails",
-      instructions: [
-        "Cover Letter: Write a compelling cover letter for a job you're interested in",
-        "Manager Email: Write an email to your manager about a project update",
-        "Senior Colleague Email: Write an email responding to feedback from a senior colleague",
-        "Self-Review: Check each email for professional tone, clear structure, and appropriate language"
-      ],
-      successCriteria: [
-        "Clear subject lines for all emails",
-        "Appropriate greetings and closings",
-        "Professional tone matching the audience",
-        "Clear purpose and specific requests",
-        "No spelling or grammar errors"
-      ]
-    },
-    feedback: {
-      strengths: ["Your emails are clear and well-structured"],
-      improvements: ["Your cover letters need more personality and specific examples of your achievements"],
-      nextSteps: ["Practice writing emails to different audiences and focus on tailoring your message to each recipient"]
-    },
-    badge: {
-      name: "Professional Writer",
-      emoji: "✍️",
-      description: "Mastered professional written communication for workplace and job search"
-    },
-    shareMessage: "My emails are now crystal clear! Just leveled up my professional writing game! ✍️ #ProfessionalCommunication #JobSearch"
-  },
-  {
-    id: 'non-verbal-communication',
-    title: 'Non-verbal Communication',
-    emoji: '💪',
-    context: 'personal',
-    discover: {
-      scenario: "Family dinner where your parents want you to explain your career choice, but you're sitting slouched, avoiding eye contact, and fidgeting with your phone. Your body language is screaming 'I'm not confident' even though you are. How do you show confidence in personal situations?",
-      problemExplanation: [
-        "Poor Posture: Slouching and closed body language conveying lack of confidence",
-        "Avoiding Eye Contact: Looking away or at phone instead of engaging with family",
-        "Fidgeting: Nervous habits that distract from the message",
-        "Mixed Signals: Saying you're confident while body language shows otherwise"
-      ],
-      solutionApproach: [
-        "Confident Posture: Sitting up straight, open body language, facing the person",
-        "Eye Contact: Maintaining appropriate eye contact without staring",
-        "Calm Presence: Reducing fidgeting and nervous habits",
-        "Authentic Expression: Aligning body language with your words and feelings"
-      ]
-    },
-    video: {
-      title: "Master Body Language for Success",
-      duration: 5,
-      content: [
-        "Confident Body Language: Posture, gestures, and positioning",
-        "Eye Contact Mastery: Appropriate eye contact for different situations",
-        "Facial Expressions: Conveying confidence and authenticity",
-        "Personal Space: Understanding and respecting boundaries",
-        "Cultural Sensitivity: Adapting non-verbal communication to different contexts"
-      ],
-      script: `[HOOK - 30 seconds]
-"93% of communication is non-verbal. Your body language speaks louder than words. Today, I'll show you how to master it in just 5 minutes."
-
-[ACADEMIC - 2 minutes]
-"In college, non-verbal communication helps you:
-- Show confidence during presentations and class discussions
-- Build rapport with professors through positive body language
-- Appear engaged and interested in lectures and group work
-
-Techniques: Maintain eye contact, use open gestures, sit up straight, nod to show understanding. Avoid crossing arms or looking at your phone.
-
-Example: Alex got more participation points because he maintained eye contact and nodded during lectures, showing he was engaged."
-
-[PROFESSIONAL - 2 minutes]
-"In your career, non-verbal communication helps you:
-- Make a great first impression in job interviews
-- Build trust with colleagues and clients
-- Project confidence and professionalism
-
-Techniques: Firm handshake, maintain eye contact, use open body language, mirror the other person's energy level.
-
-Example: Jennifer got promoted because her confident body language and professional presence impressed her managers."
-
-[PERSONAL - 1 minute]
-"In personal life, non-verbal communication helps you:
-- Build stronger relationships through positive body language
-- Show empathy and understanding in conversations
-- Express emotions and feelings effectively
-
-Techniques: Use open gestures, maintain appropriate eye contact, smile genuinely, lean in to show interest.
-
-Example: Tom improved his relationships by being more aware of his body language and showing genuine interest in conversations."
-
-[CALL TO ACTION - 30 seconds]
-"Ready to master your body language? Start by being aware of your posture and gestures in your next conversation. Remember, your body speaks before you do. Practice today!"`
-    },
-    quiz: {
-      title: "Test Your Non-verbal Communication Knowledge",
-      questions: [
-        {
-          id: 1,
-          question: "What body language shows confidence in family discussions?",
-          options: [
-            "Slouching and looking away",
-            "Sitting up straight, making eye contact, and using open gestures",
-            "Crossing your arms and legs",
-            "Looking at your phone"
-          ],
-          correct: 1,
-          explanation: "Open posture and eye contact convey confidence and engagement."
-        },
-        {
-          id: 2,
-          question: "How do you maintain eye contact without staring in social situations?",
-          options: [
-            "Look directly into their eyes the entire time",
-            "Look at their eyes 60-70% of the time, occasionally looking away naturally",
-            "Avoid eye contact completely",
-            "Look over their shoulder"
-          ],
-          correct: 1,
-          explanation: "Natural eye contact patterns feel comfortable and confident."
-        },
-        {
-          id: 3,
-          question: "What does your posture say about your confidence level?",
-          options: [
-            "Nothing important",
-            "It communicates confidence, openness, and engagement",
-            "Only your words matter",
-            "Posture is irrelevant"
-          ],
-          correct: 1,
-          explanation: "Posture is a powerful non-verbal communication tool."
-        },
-        {
-          id: 4,
-          question: "How do you handle social media pressure and comparison?",
-          options: [
-            "Compare yourself to others constantly",
-            "Focus on your own journey and authentic self-expression",
-            "Try to copy others' success",
-            "Avoid social media completely"
-          ],
-          correct: 1,
-          explanation: "Authentic self-expression builds genuine confidence."
-        },
-        {
-          id: 5,
-          question: "What's the best way to communicate your values to family and friends?",
-          options: [
-            "Tell them what they should believe",
-            "Share your experiences and listen to theirs with respect",
-            "Avoid discussing values",
-            "Only communicate online"
-          ],
-          correct: 1,
-          explanation: "Respectful dialogue builds understanding and connection."
-        }
-      ]
-    },
-    challenge: {
-      title: "Practice Confident Body Language",
-      description: "Practice confident body language in your next family gathering or social event",
-      instructions: [
-        "Before the event: Practice confident posture and eye contact in front of a mirror",
-        "During the event: Focus on sitting up straight, making eye contact, and reducing fidgeting",
-        "Engage actively: Ask questions, share your thoughts, and listen attentively",
-        "Self-monitor: Notice when you're slouching or avoiding eye contact and correct it",
-        "Reflect: After the event, note what felt natural and what was challenging"
-      ],
-      successCriteria: [
-        "Maintained good posture throughout the event",
-        "Made appropriate eye contact during conversations",
-        "Reduced fidgeting and nervous habits",
-        "Actively participated in discussions",
-        "Felt more confident and authentic"
-      ]
-    },
-    feedback: {
-      strengths: ["You have natural warmth and authenticity in your interactions"],
-      improvements: ["Focus on maintaining eye contact and reducing fidgeting when discussing important topics"],
-      nextSteps: ["Practice confident body language in low-stakes situations before important conversations"]
-    },
-    badge: {
-      name: "Body Language Pro",
-      emoji: "💪",
-      description: "Mastered confident non-verbal communication for personal relationships"
-    },
-    shareMessage: "My confidence is showing! Just mastered the art of confident body language! 💪 #Confidence #PersonalGrowth"
+    shareMessage: "Just mastered leadership skills! Ready to lead teams to success! 🎯 #Leadership #TeamSuccess"
   },
   {
     id: 'conflict-resolution',
     title: 'Conflict Resolution',
     emoji: '🤝',
-    context: 'academic',
+    context: 'personal',
     discover: {
-      scenario: "Group project disagreement about approach, team member not pulling their weight, conflict with professor about grades, peer pressure about academic choices. How do you navigate these conflicts without burning bridges?",
+      scenario: "Your study group is falling apart due to conflicts over workload distribution and meeting times. One member feels they're doing more work, another is frustrated with last-minute changes, and a third is struggling with personal issues affecting their participation. How do you resolve these conflicts and rebuild team cohesion?",
       problemExplanation: [
-        "Group Work Conflicts: Different opinions on project direction and workload distribution",
-        "Academic Disputes: Disagreements with professors about grades, feedback, or expectations",
-        "Peer Pressure: Pressure from friends about academic choices, study habits, or career paths",
-        "Avoidance: Tendency to avoid conflict rather than address issues directly"
+        "Workload Disputes: Perceived unfair distribution of tasks and responsibilities",
+        "Communication Breakdown: Misunderstandings and lack of clear expectations",
+        "Personal Issues: External factors affecting team participation",
+        "Trust Erosion: Previous conflicts damaging team relationships"
       ],
       solutionApproach: [
-        "Direct Communication: Addressing issues early before they escalate",
-        "Active Listening: Understanding all perspectives before proposing solutions",
-        "Collaborative Problem-Solving: Finding win-win solutions that work for everyone",
-        "Professional Boundaries: Maintaining respect while advocating for yourself"
+        "Conflict Analysis: Understanding the root causes of disagreements",
+        "Communication Repair: Rebuilding trust and improving dialogue",
+        "Fair Process: Establishing equitable procedures for decision making",
+        "Relationship Building: Restoring trust and team cohesion"
       ]
     },
     video: {
-      title: "Resolve Conflicts Like a Pro",
+      title: "Conflict Resolution for Personal and Professional Relationships",
       duration: 5,
       content: [
-        "Group Project Management: Handling disagreements and unequal participation",
-        "Professor Communication: Addressing grades, feedback, and academic concerns professionally",
-        "Peer Pressure Navigation: Standing up for your academic choices and values",
-        "Study Group Dynamics: Resolving conflicts in collaborative learning environments",
-        "Academic Integrity: Handling situations involving cheating, plagiarism, or unfair practices"
-      ],
-      script: `[HOOK - 30 seconds]
-"Conflicts are inevitable in college, work, and relationships. But what if I told you that with the right approach, you can resolve them like a pro in just 5 minutes?"
-
-[ACADEMIC - 2 minutes]
-"In college, conflict resolution helps you:
-- Handle disagreements in group projects and study groups
-- Resolve issues with roommates and classmates
-- Communicate effectively with professors about grades or assignments
-
-Techniques: Use the 3-step method - Listen, Understand, Resolve. Focus on the issue, not the person. Find common ground.
-
-Example: Sarah resolved a group project conflict by listening to everyone's concerns and finding a solution that worked for all team members."
-
-[PROFESSIONAL - 2 minutes]
-"In your career, conflict resolution helps you:
-- Handle workplace disagreements professionally
-- Resolve issues with colleagues and clients
-- Build stronger working relationships
-
-Techniques: Stay calm, focus on facts, use 'I' statements, seek win-win solutions. Document important conversations.
-
-Example: Mike resolved a client complaint by listening to their concerns and finding a solution that satisfied both parties."
-
-[PERSONAL - 1 minute]
-"In personal life, conflict resolution helps you:
-- Handle family disagreements and relationship conflicts
-- Resolve issues with friends and loved ones
-- Build stronger personal relationships
-
-Techniques: Choose the right time and place, listen without interrupting, express your feelings clearly, focus on solutions.
-
-Example: Lisa improved her relationship with her parents by learning to express her feelings clearly and listen to their perspective."
-
-[CALL TO ACTION - 30 seconds]
-"Ready to resolve conflicts like a pro? Start by practicing active listening in your next disagreement. Remember, the goal is understanding, not winning. Begin today!"`
+        "Conflict Analysis: Understanding root causes and different conflict styles",
+        "Communication Repair: Rebuilding trust and improving dialogue",
+        "Mediation Skills: Facilitating resolution between conflicting parties",
+        "Fair Process: Establishing equitable procedures for decision making",
+        "Relationship Restoration: Rebuilding trust and team cohesion"
+      ]
     },
     quiz: {
-      title: "Test Your Conflict Resolution Knowledge",
+      title: "Test Your Conflict Resolution Skills",
       questions: [
         {
           id: 1,
-          question: "Group member isn't contributing - how do you address this?",
+          question: "What's the first step in resolving a conflict?",
           options: [
-            "Do their work for them",
-            "Talk to them privately, express concerns, and offer support",
-            "Complain to the professor immediately",
-            "Ignore the problem"
+            "Choose a side",
+            "Understand all perspectives and identify the root cause",
+            "Ignore the conflict",
+            "Make a quick decision"
           ],
           correct: 1,
-          explanation: "Direct, private communication often resolves issues effectively."
+          explanation: "Understanding all perspectives and identifying root causes is essential for effective conflict resolution."
         },
         {
           id: 2,
-          question: "Professor gives you a lower grade than expected - how do you respond?",
+          question: "How do you handle a conflict where both parties feel wronged?",
           options: [
-            "Argue with them immediately",
-            "Request a meeting to understand the grading criteria and discuss your work",
-            "Accept it without question",
-            "Complain to other students"
+            "Choose the person you like more",
+            "Focus on interests rather than positions and find common ground",
+            "Avoid the conflict",
+            "Let them work it out themselves"
           ],
           correct: 1,
-          explanation: "Professional approach shows maturity and respect."
+          explanation: "Focusing on underlying interests rather than positions helps find mutually beneficial solutions."
         },
         {
           id: 3,
-          question: "What's the best way to resolve conflicts in study groups?",
+          question: "What's the best approach to mediating a conflict between team members?",
           options: [
-            "Let one person make all decisions",
-            "Discuss issues openly, listen to all perspectives, and find compromises",
-            "Avoid discussing problems",
-            "Form separate study groups"
+            "Take sides",
+            "Remain neutral, listen to all parties, and facilitate dialogue",
+            "Make the decision yourself",
+            "Ignore the conflict"
           ],
           correct: 1,
-          explanation: "Open communication and compromise build stronger teams."
+          explanation: "Effective mediation requires neutrality, active listening, and facilitating constructive dialogue."
         },
         {
           id: 4,
-          question: "How do you handle peer pressure about academic choices?",
+          question: "How do you prevent conflicts from recurring?",
           options: [
-            "Always follow what your friends do",
-            "Make decisions based on your goals and values, communicate them respectfully",
-            "Avoid your friends",
-            "Try to change your friends' minds"
+            "Avoid difficult topics",
+            "Establish clear processes, expectations, and communication protocols",
+            "Hope they don't happen again",
+            "Change the team"
           ],
           correct: 1,
-          explanation: "Stay true to your values while respecting others' choices."
+          explanation: "Clear processes, expectations, and communication protocols help prevent future conflicts."
         },
         {
           id: 5,
-          question: "What's the appropriate way to dispute a grade with a professor?",
+          question: "What's the key to rebuilding trust after a conflict?",
           options: [
-            "Send an angry email",
-            "Request a meeting, bring your work, and discuss the grading criteria professionally",
-            "Complain to other professors",
-            "Accept any grade without question"
+            "Pretend it never happened",
+            "Acknowledge the issue, take responsibility, and demonstrate consistent behavior",
+            "Blame others",
+            "Start over with new people"
           ],
           correct: 1,
-          explanation: "Professional approach with evidence shows respect and maturity."
+          explanation: "Rebuilding trust requires acknowledgment, responsibility, and consistent demonstration of improved behavior."
         }
       ]
     },
     challenge: {
-      title: "Role-play Conflict Resolution",
-      description: "Role-play conflict resolution scenarios with study partners",
+      title: "Practice Conflict Resolution",
+      description: "Apply conflict resolution skills to address a real conflict in your personal or professional life",
       instructions: [
-        "Choose scenarios: Pick 2-3 common academic conflict situations",
-        "Role-play: Take turns playing different roles (student, professor, group member)",
-        "Practice techniques: Use active listening, 'I' statements, and collaborative problem-solving",
-        "Debrief: Discuss what worked, what was challenging, and how to improve",
-        "Apply: Use these techniques in your next real academic conflict"
+        "Identify a conflict you're involved in or can help resolve",
+        "Analyze the root causes and different perspectives involved",
+        "Use active listening and empathy to understand all parties",
+        "Facilitate dialogue and work toward a mutually acceptable solution",
+        "Establish processes to prevent similar conflicts in the future"
       ],
       successCriteria: [
-        "Used active listening in all scenarios",
-        "Expressed concerns using 'I' statements",
-        "Proposed collaborative solutions",
-        "Maintained respectful communication",
-        "Felt more confident handling conflicts"
+        "Identified root causes and understood all perspectives",
+        "Used effective communication and listening skills",
+        "Facilitated dialogue between conflicting parties",
+        "Reached a mutually acceptable resolution"
       ]
     },
     feedback: {
-      strengths: ["You're naturally empathetic and good at understanding different perspectives"],
-      improvements: ["You avoid conflict but need to learn to address issues directly and assertively"],
-      nextSteps: ["Practice expressing your needs and boundaries in low-stakes situations"]
+      strengths: ["You're excellent at understanding different perspectives and finding common ground"],
+      improvements: ["Focus on developing more systematic approaches to conflict prevention and trust rebuilding"],
+      nextSteps: ["Practice mediating conflicts and establishing better communication protocols"]
     },
     badge: {
-      name: "Peacemaker",
+      name: "Conflict Resolver",
       emoji: "🤝",
-      description: "Mastered conflict resolution skills for academic and professional success"
+      description: "Mastered conflict resolution and relationship building"
     },
-    shareMessage: "I can resolve any conflict! Just learned to navigate disagreements like a pro! 🤝 #ConflictResolution #Leadership"
+    shareMessage: "Just mastered conflict resolution! Ready to turn conflicts into opportunities for growth! 🤝 #ConflictResolution #Teamwork"
   },
   {
-    id: 'presentation-skills',
-    title: 'Presentation Skills',
-    emoji: '📊',
+    id: 'remote-collaboration',
+    title: 'Remote Collaboration',
+    emoji: '💻',
     context: 'professional',
     discover: {
-      scenario: "Client presentation tomorrow, your slides are boring, audience is disengaged, and you're reading from notes. Your manager is watching, and this could impact your performance review. How do you create engaging presentations that actually connect with your audience?",
+      scenario: "Your team is now working remotely, and you're struggling with collaboration. Video calls are awkward, people miss important updates, and it's hard to maintain team cohesion. Some team members are more engaged than others, and you're concerned about project quality and deadlines. How do you build effective remote collaboration?",
       problemExplanation: [
-        "Boring Content: Text-heavy slides, lack of visual appeal, and poor storytelling",
-        "Audience Disengagement: Reading from notes, lack of eye contact, and monotone delivery",
-        "Poor Structure: Unclear organization, missing key points, and weak conclusions",
-        "Performance Pressure: High-stakes situations affecting confidence and delivery"
+        "Communication Barriers: Lack of face-to-face interaction and informal communication",
+        "Technology Challenges: Different tools and comfort levels with remote work technology",
+        "Engagement Issues: Difficulty maintaining team connection and motivation",
+        "Coordination Problems: Managing schedules, time zones, and project coordination"
       ],
       solutionApproach: [
-        "Visual Design: Clean slides, relevant images, and clear data visualization",
-        "Storytelling: Compelling narratives that connect with audience needs and interests",
-        "Audience Engagement: Interactive elements, questions, and two-way communication",
-        "Confident Delivery: Practice, preparation, and techniques to manage nerves"
+        "Technology Mastery: Using the right tools for different types of collaboration",
+        "Communication Protocols: Establishing clear communication channels and expectations",
+        "Engagement Strategies: Building team connection and maintaining motivation",
+        "Coordination Systems: Managing schedules, deadlines, and project workflows"
       ]
     },
     video: {
-      title: "Deliver Powerful Presentations",
+      title: "Mastering Remote Collaboration and Virtual Teamwork",
       duration: 5,
       content: [
-        "Visual Design Principles: Creating engaging slides that support your message",
-        "Storytelling Techniques: Structuring presentations with compelling narratives",
-        "Audience Engagement: Interactive elements and two-way communication",
-        "Confident Delivery: Managing nerves and projecting confidence",
-        "Handling Questions: Responding to audience questions and feedback professionally"
-      ],
-      script: `[HOOK - 30 seconds]
-"Great presentations can change your life - from acing college projects to landing your dream job. Today, I'll show you how to deliver powerful presentations in just 5 minutes."
-
-[ACADEMIC - 2 minutes]
-"In college, presentation skills help you:
-- Ace class presentations and group projects
-- Impress professors with clear, engaging content
-- Build confidence for future academic presentations
-
-Techniques: Use the 3-2-1 structure - 3 main points, 2 supporting examples, 1 call to action. Practice your opening and closing lines. Use visual aids effectively.
-
-Example: Alex got an A+ on his final presentation by using storytelling and engaging visuals that kept the class interested."
-
-[PROFESSIONAL - 2 minutes]
-"In your career, presentation skills help you:
-- Impress employers in job interviews and client meetings
-- Lead team presentations and project updates
-- Advance your career through confident communication
-
-Techniques: Start with a hook, use data to support your points, maintain eye contact, end with a clear next step. Practice with colleagues.
-
-Example: Sarah got promoted to senior analyst because her client presentations were clear, engaging, and results-focused."
-
-[PERSONAL - 1 minute]
-"In personal life, presentation skills help you:
-- Speak confidently in social situations and family gatherings
-- Present your ideas clearly in group discussions
-- Build confidence in expressing your opinions
-
-Techniques: Practice with family and friends, use stories to make your points, focus on your message, not your nerves.
-
-Example: Tom became more confident in social situations by practicing presentation techniques with his family."
-
-[CALL TO ACTION - 30 seconds]
-"Ready to deliver powerful presentations? Start by practicing your next presentation or conversation. Remember, great presentations start with great preparation. Begin today!"`
+        "Technology Tools: Choosing and using the right collaboration platforms",
+        "Communication Protocols: Establishing effective remote communication practices",
+        "Virtual Engagement: Building team connection and maintaining motivation",
+        "Project Coordination: Managing schedules, deadlines, and workflows remotely",
+        "Performance Management: Tracking progress and maintaining accountability"
+      ]
     },
     quiz: {
-      title: "Test Your Presentation Skills Knowledge",
+      title: "Test Your Remote Collaboration Skills",
       questions: [
         {
           id: 1,
-          question: "How do you make boring data interesting in client presentations?",
+          question: "What's the most important factor in successful remote collaboration?",
           options: [
-            "Use lots of text",
-            "Create visual charts, tell a story with the data, and connect it to client benefits",
-            "Just show the numbers",
-            "Avoid data completely"
+            "Having the latest technology",
+            "Clear communication protocols and regular check-ins",
+            "Working the same hours",
+            "Being in the same time zone"
           ],
           correct: 1,
-          explanation: "Visual storytelling makes data meaningful and engaging."
+          explanation: "Clear communication protocols and regular check-ins are essential for remote collaboration success."
         },
         {
           id: 2,
-          question: "What's the difference between academic and professional presentation styles?",
+          question: "How do you maintain team engagement in remote work?",
           options: [
-            "No difference",
-            "Academic focuses on theory, professional focuses on practical applications and results",
-            "Professional is always more formal",
-            "Academic is always longer"
+            "Have more meetings",
+            "Create opportunities for informal interaction and recognize contributions",
+            "Send more emails",
+            "Work longer hours"
           ],
           correct: 1,
-          explanation: "Professional presentations focus on practical value and results."
+          explanation: "Informal interaction and recognition help maintain engagement in remote teams."
         },
         {
           id: 3,
-          question: "How do you handle questions during workplace presentations?",
+          question: "What's the best approach to managing different time zones?",
           options: [
-            "Avoid questions",
-            "Listen carefully, acknowledge the question, and provide thoughtful responses",
-            "Answer quickly and move on",
-            "Let someone else answer"
+            "Everyone works the same hours",
+            "Establish core hours, use asynchronous communication, and respect time zone differences",
+            "Ignore time zones",
+            "Work 24/7"
           ],
           correct: 1,
-          explanation: "Engaging with questions shows confidence and expertise."
+          explanation: "Core hours, asynchronous communication, and time zone respect enable effective global collaboration."
         },
         {
           id: 4,
-          question: "What's the best way to present to senior management?",
+          question: "How do you ensure accountability in remote teams?",
           options: [
-            "Use lots of technical jargon",
-            "Focus on high-level insights, business impact, and clear recommendations",
-            "Show all the details",
-            "Be very casual"
+            "Monitor everyone constantly",
+            "Set clear expectations, use project management tools, and have regular check-ins",
+            "Trust everyone completely",
+            "Have daily meetings"
           ],
           correct: 1,
-          explanation: "Senior management wants strategic insights and clear recommendations."
+          explanation: "Clear expectations, project management tools, and regular check-ins ensure accountability without micromanagement."
         },
         {
           id: 5,
-          question: "How do you handle negative feedback during presentations?",
+          question: "What's the key to effective virtual meetings?",
           options: [
-            "Get defensive",
-            "Listen actively, acknowledge the feedback, and ask for clarification",
-            "Ignore it",
-            "Argue your point"
+            "Keep them short",
+            "Have clear agendas, engage all participants, and follow up with action items",
+            "Have them frequently",
+            "Use video for everything"
           ],
           correct: 1,
-          explanation: "Professional handling of feedback shows maturity and openness to improvement."
+          explanation: "Clear agendas, participant engagement, and follow-up action items make virtual meetings effective."
         }
       ]
     },
     challenge: {
-      title: "Create Engaging Presentation",
-      description: "Create engaging slide deck for a client presentation",
+      title: "Practice Remote Collaboration",
+      description: "Improve remote collaboration in your current team or project",
       instructions: [
-        "Choose a topic: A project you've worked on, a skill you want to highlight, or a business idea",
-        "Design slides: Create 5-7 slides with clear visuals, minimal text, and compelling content",
-        "Practice presentation: Rehearse your presentation focusing on storytelling and engagement",
-        "Record yourself: Present to camera and evaluate your delivery",
-        "Get feedback: Share with a friend or colleague and incorporate their suggestions"
+        "Assess your current remote collaboration practices and identify improvement areas",
+        "Establish or improve communication protocols and tools",
+        "Create opportunities for informal team interaction and engagement",
+        "Implement better project coordination and accountability systems",
+        "Measure and improve team performance and satisfaction"
       ],
       successCriteria: [
-        "Clean, visually appealing slide design",
-        "Clear narrative structure with beginning, middle, and end",
-        "Minimal text, maximum visual impact",
-        "Confident delivery with good eye contact",
-        "Engaging storytelling that connects with audience"
+        "Established clear communication protocols and tools",
+        "Created opportunities for team engagement and interaction",
+        "Improved project coordination and accountability",
+        "Measured and improved team performance"
       ]
     },
     feedback: {
-      strengths: ["Your content is well-researched and your structure is clear"],
-      improvements: ["Focus on visual design and storytelling to make your presentations more engaging"],
-      nextSteps: ["Practice using more visuals and less text, and work on connecting with your audience emotionally"]
+      strengths: ["You're great at using technology effectively and maintaining clear communication"],
+      improvements: ["Focus on building more informal team connections and improving engagement strategies"],
+      nextSteps: ["Practice leading remote teams and developing virtual collaboration best practices"]
     },
     badge: {
-      name: "Presentation Master",
-      emoji: "📊",
-      description: "Mastered engaging presentation skills for workplace and professional success"
+      name: "Remote Collaborator",
+      emoji: "💻",
+      description: "Mastered remote collaboration and virtual teamwork"
     },
-    shareMessage: "My presentations are now captivating! Just learned to tell stories that stick! 📊 #PresentationSkills #ProfessionalGrowth"
+    shareMessage: "Just mastered remote collaboration! Ready to lead virtual teams to success! 💻 #RemoteWork #VirtualTeams"
+  },
+  {
+    id: 'inclusive-teams',
+    title: 'Inclusive Teams',
+    emoji: '🌈',
+    context: 'academic',
+    discover: {
+      scenario: "Your diverse study group includes international students, students with different learning styles, and varying levels of English proficiency. Some members feel excluded from discussions, others struggle with cultural differences, and the group isn't leveraging everyone's unique strengths. How do you build a truly inclusive team environment?",
+      problemExplanation: [
+        "Cultural Barriers: Different communication styles and cultural expectations",
+        "Language Challenges: Varying levels of English proficiency affecting participation",
+        "Learning Differences: Different learning styles and academic backgrounds",
+        "Inclusion Gaps: Some members feeling excluded or undervalued"
+      ],
+      solutionApproach: [
+        "Cultural Awareness: Understanding and respecting different cultural perspectives",
+        "Inclusive Communication: Adapting communication styles to include everyone",
+        "Strength Recognition: Identifying and leveraging each member's unique contributions",
+        "Equity Practices: Ensuring fair participation and opportunity for all"
+      ]
+    },
+    video: {
+      title: "Building Inclusive and Diverse Teams",
+      duration: 5,
+      content: [
+        "Cultural Awareness: Understanding and respecting different cultural perspectives",
+        "Inclusive Communication: Adapting styles to include all team members",
+        "Strength Recognition: Identifying and leveraging unique contributions",
+        "Equity Practices: Ensuring fair participation and opportunity",
+        "Bias Awareness: Recognizing and addressing unconscious biases"
+      ]
+    },
+    quiz: {
+      title: "Test Your Inclusive Team Building Skills",
+      questions: [
+        {
+          id: 1,
+          question: "What's the first step in building an inclusive team?",
+          options: [
+            "Set strict rules",
+            "Understand and respect different cultural perspectives and communication styles",
+            "Choose similar people",
+            "Ignore differences"
+          ],
+          correct: 1,
+          explanation: "Understanding and respecting different perspectives and styles is fundamental to inclusion."
+        },
+        {
+          id: 2,
+          question: "How do you ensure all team members can participate effectively?",
+          options: [
+            "Use only English",
+            "Adapt communication styles, provide multiple ways to contribute, and be patient with different approaches",
+            "Let everyone figure it out",
+            "Have the same rules for everyone"
+          ],
+          correct: 1,
+          explanation: "Adapting communication and providing multiple contribution methods ensures effective participation."
+        },
+        {
+          id: 3,
+          question: "What's the best approach to leveraging diverse strengths?",
+          options: [
+            "Give everyone the same tasks",
+            "Identify each person's unique strengths and assign roles that maximize their contributions",
+            "Focus on weaknesses",
+            "Let people choose their own tasks"
+          ],
+          correct: 1,
+          explanation: "Identifying and leveraging unique strengths creates more effective and engaged teams."
+        },
+        {
+          id: 4,
+          question: "How do you address unconscious bias in team interactions?",
+          options: [
+            "Ignore it",
+            "Educate the team, create awareness, and establish inclusive practices",
+            "Blame individuals",
+            "Avoid the topic"
+          ],
+          correct: 1,
+          explanation: "Education, awareness, and inclusive practices help address unconscious bias effectively."
+        },
+        {
+          id: 5,
+          question: "What's the key to maintaining inclusion over time?",
+          options: [
+            "Set it up once",
+            "Continuously assess, adapt practices, and ensure all voices are heard",
+            "Hope it works",
+            "Change the team"
+          ],
+          correct: 1,
+          explanation: "Inclusion requires continuous assessment, adaptation, and ensuring all voices are heard."
+        }
+      ]
+    },
+    challenge: {
+      title: "Practice Inclusive Team Building",
+      description: "Apply inclusive practices to improve diversity and inclusion in your current team",
+      instructions: [
+        "Assess your team's current inclusion practices and identify improvement areas",
+        "Learn about different cultural perspectives and communication styles in your team",
+        "Implement inclusive communication and participation practices",
+        "Identify and leverage each team member's unique strengths",
+        "Establish ongoing practices to maintain inclusion and equity"
+      ],
+      successCriteria: [
+        "Assessed current inclusion practices and identified improvements",
+        "Implemented inclusive communication and participation practices",
+        "Leveraged unique strengths of all team members",
+        "Established ongoing inclusion and equity practices"
+      ]
+    },
+    feedback: {
+      strengths: ["You're excellent at recognizing different perspectives and building cultural awareness"],
+      improvements: ["Focus on developing more systematic approaches to bias awareness and equity practices"],
+      nextSteps: ["Practice leading diverse teams and implementing inclusive practices"]
+    },
+    badge: {
+      name: "Inclusive Leader",
+      emoji: "🌈",
+      description: "Mastered inclusive team building and diversity management"
+    },
+    shareMessage: "Just mastered inclusive team building! Ready to create teams where everyone thrives! 🌈 #Inclusion #Diversity"
+  },
+  {
+    id: 'team-communication',
+    title: 'Team Communication',
+    emoji: '📢',
+    context: 'professional',
+    discover: {
+      scenario: "Your project team is struggling with communication issues. Important updates are getting lost in email threads, decisions are made without everyone's input, and there's confusion about project status and next steps. The client is asking for updates, but the team can't provide clear information. How do you establish effective team communication?",
+      problemExplanation: [
+        "Information Silos: Important updates not reaching all team members",
+        "Decision Confusion: Unclear who makes decisions and how they're communicated",
+        "Status Ambiguity: Team members unsure about project progress and priorities",
+        "Client Communication: Inability to provide clear, consistent updates to stakeholders"
+      ],
+      solutionApproach: [
+        "Communication Channels: Establishing clear channels for different types of information",
+        "Decision Processes: Creating transparent decision-making and communication procedures",
+        "Status Tracking: Implementing systems for project visibility and progress updates",
+        "Stakeholder Management: Ensuring clear, consistent communication with all stakeholders"
+      ]
+    },
+    video: {
+      title: "Effective Team Communication for Project Success",
+      duration: 5,
+      content: [
+        "Communication Channels: Establishing clear channels for different information types",
+        "Decision Processes: Creating transparent decision-making procedures",
+        "Status Tracking: Implementing project visibility and progress systems",
+        "Stakeholder Communication: Managing clear, consistent external communication",
+        "Feedback Loops: Creating systems for continuous communication improvement"
+      ]
+    },
+    quiz: {
+      title: "Test Your Team Communication Skills",
+      questions: [
+        {
+          id: 1,
+          question: "What's the most important element of effective team communication?",
+          options: [
+            "Using the latest technology",
+            "Clarity, consistency, and ensuring everyone has the information they need",
+            "Having frequent meetings",
+            "Using formal language"
+          ],
+          correct: 1,
+          explanation: "Clarity, consistency, and ensuring everyone has needed information are fundamental to effective communication."
+        },
+        {
+          id: 2,
+          question: "How do you ensure important decisions are communicated effectively?",
+          options: [
+            "Send an email",
+            "Use multiple channels, confirm understanding, and provide context for decisions",
+            "Tell people in person",
+            "Post it on a board"
+          ],
+          correct: 1,
+          explanation: "Multiple channels, confirmation, and context ensure decisions are understood and acted upon."
+        },
+        {
+          id: 3,
+          question: "What's the best approach to project status communication?",
+          options: [
+            "Update when asked",
+            "Establish regular updates, use visual tools, and make status easily accessible",
+            "Update only when there are problems",
+            "Let people figure it out"
+          ],
+          correct: 1,
+          explanation: "Regular updates, visual tools, and accessibility ensure everyone stays informed about project status."
+        },
+        {
+          id: 4,
+          question: "How do you handle communication with external stakeholders?",
+          options: [
+            "Let anyone communicate",
+            "Designate spokespeople, prepare consistent messages, and coordinate all external communication",
+            "Respond to each request individually",
+            "Avoid external communication"
+          ],
+          correct: 1,
+          explanation: "Designated spokespeople and coordinated messaging ensure consistent, professional external communication."
+        },
+        {
+          id: 5,
+          question: "What's the key to improving team communication over time?",
+          options: [
+            "Set it up once",
+            "Regularly assess effectiveness, gather feedback, and adapt communication practices",
+            "Hope it improves",
+            "Change the team"
+          ],
+          correct: 1,
+          explanation: "Continuous assessment, feedback, and adaptation ensure communication practices remain effective."
+        }
+      ]
+    },
+    challenge: {
+      title: "Practice Team Communication",
+      description: "Improve communication practices in your current team or project",
+      instructions: [
+        "Assess current communication practices and identify improvement areas",
+        "Establish clear communication channels and protocols",
+        "Implement better decision-making and status communication processes",
+        "Improve stakeholder communication and coordination",
+        "Create feedback systems to continuously improve communication"
+      ],
+      successCriteria: [
+        "Established clear communication channels and protocols",
+        "Improved decision-making and status communication",
+        "Enhanced stakeholder communication and coordination",
+        "Created systems for continuous communication improvement"
+      ]
+    },
+    feedback: {
+      strengths: ["You're excellent at organizing information and ensuring clear communication"],
+      improvements: ["Focus on developing more systematic approaches to stakeholder management and feedback systems"],
+      nextSteps: ["Practice managing complex communication across multiple stakeholders and projects"]
+    },
+    badge: {
+      name: "Communication Coordinator",
+      emoji: "📢",
+      description: "Mastered team communication and stakeholder management"
+    },
+    shareMessage: "Just mastered team communication! Ready to keep everyone informed and aligned! 📢 #TeamCommunication #ProjectSuccess"
   }
 ];
 
-export const module1Assessment = {
-  title: "Communication Skills Final Assessment",
-  duration: 60, // minutes
+export const module6Assessment: AssessmentData = {
+  title: "Teamwork & Collaboration Final Assessment",
+  description: "Test your mastery of teamwork and collaboration skills. This comprehensive assessment evaluates your understanding of team dynamics, leadership, conflict resolution, and effective collaboration.",
   questions: [
     {
       id: 1,
-      question: "In a group project meeting, your teammate is explaining their idea but you disagree. What's the best approach?",
+      question: "What's the most important factor in building effective team dynamics?",
       options: [
-        "Interrupt them immediately to share your concerns",
-        "Listen completely, then ask clarifying questions before sharing your perspective",
-        "Stay quiet and implement your own idea later",
-        "Tell them their idea won't work"
+        "Having the same personalities",
+        "Understanding different working styles and building mutual respect",
+        "Working in the same location",
+        "Having the same goals"
       ],
       correct: 1,
-      explanation: "Active listening requires understanding the full idea before responding. Ask questions to clarify before sharing concerns."
+      explanation: "Understanding different working styles and building mutual respect creates strong team dynamics."
     },
     {
       id: 2,
-      question: "You're presenting to senior management about a project delay. How should you structure your presentation?",
+      question: "How do you lead effectively without formal authority?",
       options: [
-        "Start with excuses and blame external factors",
-        "Begin with the current status, explain the delay clearly, and present a recovery plan",
-        "Focus only on the positive aspects and avoid mentioning the delay",
-        "Make it very technical to show your expertise"
+        "Use your title to force compliance",
+        "Build trust, demonstrate expertise, and focus on shared goals",
+        "Avoid making decisions",
+        "Let others lead"
       ],
       correct: 1,
-      explanation: "Professional presentations should be transparent, solution-focused, and appropriate for the audience level."
+      explanation: "Leading without authority requires building trust, demonstrating expertise, and focusing on shared goals."
     },
     {
       id: 3,
-      question: "You need to email a professor about a grade dispute. What's the most professional approach?",
+      question: "What's the best approach to resolving team conflicts?",
       options: [
-        "Send an angry email demanding a grade change",
-        "Request a meeting to discuss the grading criteria and your work professionally",
-        "Complain to other students about the unfair grading",
-        "Accept the grade without question"
+        "Choose a side quickly",
+        "Understand all perspectives, identify root causes, and find mutually beneficial solutions",
+        "Ignore the conflict",
+        "Let the manager decide"
       ],
       correct: 1,
-      explanation: "Professional communication requires respectful dialogue and seeking understanding before making demands."
+      explanation: "Effective conflict resolution requires understanding all perspectives and finding mutually beneficial solutions."
     },
     {
       id: 4,
-      question: "During a job interview, you notice the interviewer seems distracted. What should you do?",
+      question: "How do you maintain team engagement in remote work?",
       options: [
-        "Continue speaking as planned",
-        "Pause, make eye contact, and ask if they'd like you to clarify anything",
-        "Speak louder to get their attention",
-        "End the interview early"
+        "Have more meetings",
+        "Create opportunities for informal interaction and recognize contributions",
+        "Send more emails",
+        "Work longer hours"
       ],
       correct: 1,
-      explanation: "Adapting to your audience's engagement level shows communication awareness and professionalism."
+      explanation: "Informal interaction and recognition help maintain engagement in remote teams."
     },
     {
       id: 5,
-      question: "A colleague gives you negative feedback about your presentation. How do you respond?",
+      question: "What's the key to building inclusive teams?",
       options: [
-        "Defend yourself and explain why they're wrong",
-        "Thank them, ask for specific examples, and discuss how to improve",
-        "Ignore the feedback completely",
-        "Complain to your manager about the colleague"
+        "Hire similar people",
+        "Understand different perspectives, adapt communication, and leverage unique strengths",
+        "Set strict rules",
+        "Ignore differences"
       ],
       correct: 1,
-      explanation: "Professional growth requires accepting feedback gracefully and seeking specific guidance for improvement."
+      explanation: "Inclusive teams understand different perspectives, adapt communication, and leverage unique strengths."
     },
     {
       id: 6,
-      question: "You're in a study group and one member isn't contributing. What's the best approach?",
+      question: "How do you ensure effective team communication?",
       options: [
-        "Do their work for them",
-        "Talk to them privately, express concerns, and offer support",
-        "Complain to the professor immediately",
-        "Exclude them from the group"
+        "Use only email",
+            "Establish clear channels, regular updates, and confirm understanding",
+        "Have daily meetings",
+        "Let everyone communicate however they want"
       ],
       correct: 1,
-      explanation: "Direct, private communication often resolves issues effectively and maintains group harmony."
-    },
-    {
-      id: 7,
-      question: "You need to present complex data to a client. How do you make it engaging?",
-      options: [
-        "Show all the raw data in tables",
-        "Create visual charts, tell a story with the data, and connect it to client benefits",
-        "Use lots of technical jargon to show expertise",
-        "Avoid data completely"
-      ],
-      correct: 1,
-      explanation: "Visual storytelling makes data meaningful and connects information to audience needs."
-    },
-    {
-      id: 8,
-      question: "During a family dinner, your parents question your career choice. How do you respond confidently?",
-      options: [
-        "Avoid eye contact and change the subject",
-        "Sit up straight, make eye contact, and explain your decision with passion and reasoning",
-        "Get defensive and argue",
-        "Agree with them to avoid conflict"
-      ],
-      correct: 1,
-      explanation: "Confident body language and clear communication help convey your authentic self and values."
-    },
-    {
-      id: 9,
-      question: "You receive a confusing email from a client. What's the best response?",
-      options: [
-        "Reply with your best guess about what they mean",
-        "Ask clarifying questions to ensure you understand their needs before responding",
-        "Forward it to your manager",
-        "Ignore it until they follow up"
-      ],
-      correct: 1,
-    },
-    {
-      id: 10,
-      question: "You're nervous before a big presentation. What's the best way to manage this?",
-      options: [
-        "Focus on your mistakes and what could go wrong",
-        "Practice your opening, visualize success, and focus on your audience's needs",
-        "Memorize everything word for word",
-        "Avoid practicing to stay spontaneous"
-      ],
-      correct: 1,
+      explanation: "Effective communication requires clear channels, regular updates, and confirmation of understanding."
     }
   ],
-  sections: [
-    {
-      name: "Active Listening", 
-      questions: 2,
-      context: "Academic and professional scenarios"
-    },
-    {
-      name: "Public Speaking", 
-      questions: 2,
-      context: "Interview and presentation situations"
-    },
-    {
-      name: "Written Communication",
-      questions: 2,
-      context: "Email, cover letter, and professional writing"
-    },
-    {
-      name: "Non-verbal Communication",
-      questions: 1,
-      context: "Body language and personal interactions"
-    },
-    {
-      name: "Conflict Resolution",
-      questions: 1,
-      context: "Academic and workplace conflict scenarios"
-    },
-    {
-      name: "Presentation Skills",
-      questions: 2,
-      context: "Professional presentation situations"
-    }
-  ],
-  practicalChallenge: {
-    title: "How Communication Skills Help in Career Success",
-    duration: 5, // minutes
-    requirements: [
-      "Clear introduction and conclusion",
-      "3 main points with examples",
-      "Professional visual aids (slides or props)",
-      "Confident delivery with good eye contact",
-      "Within 5-minute time limit"
-    ]
-  },
-  scoring: {
-    quizQuestions: 100, // points (10 questions × 10 points each)
-    practicalPresentation: 0, // points (optional)
-    totalPossible: 100
-  },
-  gradeLevels: [
-    { range: "90-100", grade: "Communication Master", description: "Excellent" },
-    { range: "80-89", grade: "Communication Expert", description: "Very Good" },
-    { range: "70-79", grade: "Communication Proficient", description: "Good" },
-    { range: "60-69", grade: "Communication Developing", description: "Needs Improvement" },
-    { range: "0-59", grade: "Communication Beginner", description: "Requires Additional Practice" }
-  ]
+  gradingScale: {
+    excellent: { min: 80, max: 100, message: "Excellent! You've mastered teamwork and collaboration!", xpReward: 100 },
+    good: { min: 70, max: 79, message: "Good job! You have strong teamwork skills.", xpReward: 75 },
+    satisfactory: { min: 60, max: 69, message: "Satisfactory. Keep practicing to improve further.", xpReward: 50 },
+    needsImprovement: { min: 0, max: 59, message: "Keep learning! Teamwork skills improve with practice.", xpReward: 25 }
+  }
 };
 
 // Local Storage Helper Functions
 export const saveModuleProgress = (progress: ModuleProgress): void => {
-  localStorage.setItem('moduleProgress', JSON.stringify(progress));
+  localStorage.setItem('module6Progress', JSON.stringify(progress));
 };
 
 export const loadModuleProgress = (): ModuleProgress | null => {
-  const stored = localStorage.getItem('moduleProgress');
+  const stored = localStorage.getItem('module6Progress');
   return stored ? JSON.parse(stored) : null;
 };
 
 export const updateSubtopicProgress = (subtopicId: string, score: number, response: string): void => {
   const progress = loadModuleProgress() || {
-    moduleId: 'communication-skills',
-    currentSubtopic: 1,
+    moduleId: 'teamwork',
+    currentSubtopic: 0,
     completedSubtopics: [],
     quizScores: {},
     badges: [],
     challengeResponses: {},
     lastAccessed: new Date().toISOString(),
-    totalXP: 0
+    totalXP: 0,
+    successStreak: 0,
+    highestStreak: 0,
+    lastStreakDate: ''
   };
 
   // Update progress
+  progress.lastAccessed = new Date().toISOString();
   progress.quizScores[subtopicId] = score;
   progress.challengeResponses[subtopicId] = response;
-  
-  if (!progress.completedSubtopics.includes(parseInt(subtopicId.split('-')[1]))) {
-    progress.completedSubtopics.push(parseInt(subtopicId.split('-')[1]));
-  }
-  
-  progress.totalXP += score * 10; // 10 XP per quiz point
-  progress.lastAccessed = new Date().toISOString();
-  
-  saveModuleProgress(progress);
-};
 
-export const generatePersonalizedFeedback = (progress: ModuleProgress): string => {
-  const strengths: string[] = [];
-  const improvements: string[] = [];
-  
-  // Analyze quiz scores
-  Object.entries(progress.quizScores).forEach(([subtopic, score]) => {
-    if (score >= 8) {
-      strengths.push(subtopic.replace('-', ' '));
-    } else {
-      improvements.push(`${subtopic.replace('-', ' ')} - Focus on key concepts`);
-    }
-  });
-  
-  return `Strengths: ${strengths.join(', ')}. Areas for improvement: ${improvements.join(', ')}.`;
+  // Add XP based on score
+  const xpEarned = Math.round(score / 10); // 1 XP per 10 points
+  progress.totalXP += xpEarned;
+
+  // Update success streak
+  const today = new Date().toISOString().split('T')[0];
+  if (progress.lastStreakDate === today) {
+    // Already updated today, don't change streak
+  } else if (progress.lastStreakDate === new Date(Date.now() - 86400000).toISOString().split('T')[0]) {
+    // Consecutive day, increment streak
+    progress.successStreak += 1;
+    progress.highestStreak = Math.max(progress.highestStreak, progress.successStreak);
+  } else {
+    // Streak broken, reset to 1
+    progress.successStreak = 1;
+    progress.highestStreak = Math.max(progress.highestStreak, 1);
+  }
+  progress.lastStreakDate = today;
+
+  // Add to completed subtopics if not already there
+  const subtopicIndex = module6Subtopics.findIndex(subtopic => subtopic.id === subtopicId);
+  if (subtopicIndex !== -1 && !progress.completedSubtopics.includes(subtopicIndex)) {
+    progress.completedSubtopics.push(subtopicIndex);
+  }
+
+  // Award badge based on score
+  if (score >= 80 && !progress.badges.includes('Team Player')) {
+    progress.badges.push('Team Player');
+  }
+
+  saveModuleProgress(progress);
 };

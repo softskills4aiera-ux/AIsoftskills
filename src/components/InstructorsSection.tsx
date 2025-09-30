@@ -30,15 +30,14 @@ const InstructorsSection: React.FC = () => {
   }, []);
 
   return (
-    <div>
-      {/* Instructors Section */}
-      <motion.div
-        initial={{ x: 50, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="glassmorphism dark:glassmorphism-dark rounded-2xl p-8"
-      >
+    <motion.div
+      initial={{ x: 50, opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="glassmorphism dark:glassmorphism-dark rounded-2xl p-8 h-full flex flex-col"
+      style={{ height: '100%' }}
+    >
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
             Meet Our Expert Instructors
@@ -48,8 +47,13 @@ const InstructorsSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-1 gap-6">
-          {instructors.map((instructor) => (
+        <div className="grid md:grid-cols-1 gap-6 flex-grow overflow-y-auto max-h-[500px] custom-scrollbar">
+          {instructors.length === 0 ? (
+            <div className="text-center text-gray-500 dark:text-gray-400">
+              Loading instructors...
+            </div>
+          ) : (
+            instructors.map((instructor) => (
             <motion.div
               key={instructor.id}
               whileHover={{ scale: 1.02, y: -5 }}
@@ -90,18 +94,18 @@ const InstructorsSection: React.FC = () => {
                 </div>
               </div>
             </motion.div>
-          ))}
+            ))
+          )}
         </div>
-      </motion.div>
 
-      {/* Instructor Profile Modal */}
-      {selectedInstructor && (
-        <InstructorProfile
-          instructor={selectedInstructor}
-          onClose={() => setSelectedInstructor(null)}
-        />
-      )}
-    </div>
+        {/* Instructor Profile Modal */}
+        {selectedInstructor && (
+          <InstructorProfile
+            instructor={selectedInstructor}
+            onClose={() => setSelectedInstructor(null)}
+          />
+        )}
+      </motion.div>
   );
 };
 

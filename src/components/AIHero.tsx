@@ -21,6 +21,8 @@ const AIHero: React.FC<AIHeroProps> = ({ onModuleClick, isLoggedIn = false, hasP
   const [showMessage, setShowMessage] = useState(false);
   const [selectedModuleId, setSelectedModuleId] = useState<string | null>(null);
   const [robotAnimation, setRobotAnimation] = useState<'idle' | 'pointing' | 'celebrating'>('idle');
+  const [hoveredModule, setHoveredModule] = useState<any>(null);
+  const [tooltipPosition, setTooltipPosition] = useState({ x: 0, y: 0 });
 
   // Introduction messages
   const introMessages = [
@@ -144,6 +146,22 @@ const AIHero: React.FC<AIHeroProps> = ({ onModuleClick, isLoggedIn = false, hasP
     }
   };
 
+  // Handle module hover for tooltip
+  const handleModuleHover = (module: any, event: React.MouseEvent) => {
+    setHoveredModule(module);
+    const rect = event.currentTarget.getBoundingClientRect();
+    const isLeftColumn = rect.left < window.innerWidth / 2;
+    
+    setTooltipPosition({
+      x: isLeftColumn ? rect.right + 10 : rect.left - 10, // Left column: tooltip on right, Right column: tooltip on left
+      y: rect.top + rect.height / 2 // Center vertically
+    });
+  };
+
+  const handleModuleLeave = () => {
+    setHoveredModule(null);
+  };
+
   // Close video modal
   const closeVideoModal = () => {
     setShowVideoModal(false);
@@ -153,8 +171,8 @@ const AIHero: React.FC<AIHeroProps> = ({ onModuleClick, isLoggedIn = false, hasP
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-100 dark:from-slate-900 dark:via-gray-800 dark:to-indigo-900 relative overflow-hidden">
-      {/* Subtle Pattern Overlay */}
-      <div className="absolute inset-0 opacity-30 bg-gradient-to-br from-white/5 to-transparent"></div>
+      {/* Enhanced Glassmorphism Overlay */}
+      <div className="absolute inset-0 backdrop-blur-sm bg-gradient-to-br from-white/10 via-white/5 to-transparent dark:from-white/5 dark:via-white/2 dark:to-transparent"></div>
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-20 w-72 h-72 bg-blue-200/20 dark:bg-blue-400/10 rounded-full blur-3xl animate-pulse"></div>
@@ -163,7 +181,7 @@ const AIHero: React.FC<AIHeroProps> = ({ onModuleClick, isLoggedIn = false, hasP
       </div>
       
       {/* AI Robot Section */}
-      <div className="relative h-screen flex items-center justify-center z-10 pt-20">
+      <div className="relative h-screen flex items-center justify-center z-10 pt-40">
 
         {/* Robot Introduction Phase */}
         <AnimatePresence>
@@ -199,9 +217,9 @@ const AIHero: React.FC<AIHeroProps> = ({ onModuleClick, isLoggedIn = false, hasP
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
                     transition={{ duration: 0.5 }}
-                    className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-2xl max-w-md mx-auto"
+                    className="bg-white dark:bg-gray-800 rounded-2xl p-5 shadow-2xl max-w-md mx-auto"
                   >
-                    <div className="text-lg font-medium text-gray-800 dark:text-white">
+                    <div className="text-xl font-medium text-gray-800 dark:text-white">
                       {introMessages[currentMessageIndex]}
                     </div>
                   </motion.div>
@@ -292,7 +310,7 @@ const AIHero: React.FC<AIHeroProps> = ({ onModuleClick, isLoggedIn = false, hasP
                     repeat: Infinity,
                     repeatType: "reverse"
                   }}
-                  className="absolute top-1/2 -right-8 transform -translate-y-1/2 text-4xl text-blue-400"
+                  className="absolute top-1/2 -right-8 transform -translate-y-1/2 text-5xl text-blue-400"
                 >
                   👉
                 </motion.div>
@@ -332,8 +350,8 @@ const AIHero: React.FC<AIHeroProps> = ({ onModuleClick, isLoggedIn = false, hasP
 
 
         {/* Modules List - Two Column Staggered Layout */}
-        <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] px-4">
-          <div className="grid grid-cols-2 gap-6" style={{minHeight: '400px'}}>
+        <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1200px] px-4 mt-8">
+          <div className="grid grid-cols-2 gap-5" style={{minHeight: '400px'}}>
             {/* Left Column - First 4 modules */}
             <div className="space-y-3">
               {aiModules.slice(0, 4).map((module, index) => (
@@ -352,23 +370,27 @@ const AIHero: React.FC<AIHeroProps> = ({ onModuleClick, isLoggedIn = false, hasP
                         x: 10,
                         transition: { duration: 0.2 }
                       }}
-                        className={`bg-gradient-to-r ${module.color} backdrop-blur-sm rounded-xl p-4 cursor-pointer shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border h-24 flex items-center ${
+                        className={`bg-gradient-to-r ${module.color} backdrop-blur-md rounded-3xl p-5 cursor-pointer shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border h-36 flex items-center w-full ${
                           selectedModuleId === module.id 
                             ? 'border-yellow-400 border-2 shadow-yellow-400/50 shadow-2xl scale-105' 
                             : 'border-white/30 hover:border-white/50'
                         }`}
                       onClick={() => handleModuleClick(module)}
-                      onMouseEnter={() => playSound('hover')}
+                      onMouseEnter={(e) => {
+                        handleModuleHover(module, e);
+                        playSound('hover');
+                      }}
+                      onMouseLeave={handleModuleLeave}
                     >
                       <div className="flex items-center space-x-4 w-full">
-                          <div className="text-3xl transform hover:scale-110 hover:rotate-6 transition-all duration-300 flex-shrink-0 drop-shadow-lg">
+                          <div className="text-4xl transform hover:scale-110 hover:rotate-6 transition-all duration-300 flex-shrink-0 drop-shadow-lg">
                             {module.icon}
                           </div>
                         <div className="flex-1 min-w-0">
-                          <div className="text-white font-bold text-lg mb-1 line-clamp-1">
+                          <div className="text-white font-extrabold text-2xl mb-1">
                             {module.name}
                           </div>
-                          <div className="text-blue-100 dark:text-blue-200 text-sm leading-relaxed line-clamp-2">
+                          <div className="text-white/90 dark:text-blue-200 text-base leading-normal">
                             {module.description}
                           </div>
                         </div>
@@ -402,23 +424,27 @@ const AIHero: React.FC<AIHeroProps> = ({ onModuleClick, isLoggedIn = false, hasP
                           x: -10,
                           transition: { duration: 0.2 }
                         }}
-                        className={`bg-gradient-to-r ${module.color} backdrop-blur-sm rounded-xl p-4 cursor-pointer shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border h-24 flex items-center ${
+                        className={`bg-gradient-to-r ${module.color} backdrop-blur-md rounded-3xl p-5 cursor-pointer shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border h-36 flex items-center w-full ${
                           selectedModuleId === module.id 
                             ? 'border-yellow-400 border-2 shadow-yellow-400/50 shadow-2xl scale-105' 
                             : 'border-white/30 hover:border-white/50'
                         }`}
                         onClick={() => handleModuleClick(module)}
-                        onMouseEnter={() => playSound('hover')}
+                        onMouseEnter={(e) => {
+                          handleModuleHover(module, e);
+                          playSound('hover');
+                        }}
+                        onMouseLeave={handleModuleLeave}
                       >
                         <div className="flex items-center space-x-4 w-full">
-                          <div className="text-3xl transform hover:scale-110 hover:rotate-6 transition-all duration-300 flex-shrink-0 drop-shadow-lg">
+                          <div className="text-4xl transform hover:scale-110 hover:rotate-6 transition-all duration-300 flex-shrink-0 drop-shadow-lg">
                             {module.icon}
                           </div>
                           <div className="flex-1 min-w-0">
-                            <div className="text-white font-bold text-lg mb-1 line-clamp-1">
+                            <div className="text-white font-extrabold text-2xl mb-1">
                               {module.name}
                             </div>
-                            <div className="text-blue-100 text-sm leading-relaxed line-clamp-2">
+                            <div className="text-white/90 text-base leading-normal">
                               {module.description}
                             </div>
                           </div>
@@ -445,7 +471,7 @@ const AIHero: React.FC<AIHeroProps> = ({ onModuleClick, isLoggedIn = false, hasP
           className="absolute bottom-8 right-8 z-30"
         >
           <motion.div 
-            className={`bg-gradient-to-br backdrop-blur-md rounded-3xl p-6 shadow-2xl border-2 max-w-sm text-center cursor-pointer relative overflow-hidden ${
+            className={`bg-gradient-to-br backdrop-blur-md rounded-3xl p-5 shadow-2xl border-2 max-w-sm text-center cursor-pointer relative overflow-hidden ${
               isDark 
                 ? 'from-indigo-500/20 via-purple-500/20 to-pink-500/20 border-indigo-400/30' 
                 : 'from-blue-400/20 via-purple-400/20 to-pink-400/20 border-blue-300/40'
@@ -476,14 +502,14 @@ const AIHero: React.FC<AIHeroProps> = ({ onModuleClick, isLoggedIn = false, hasP
             <div className="relative z-10">
               <div className="flex items-center justify-center mb-3">
                 <div className="text-2xl mr-2">✨</div>
-                <div className={`text-lg font-bold ${
+                <div className={`text-xl font-bold ${
                   isDark ? 'text-white' : 'text-slate-800'
                 }`}>
                   Want to know more?
                 </div>
                 <div className="text-2xl ml-2">📚</div>
               </div>
-              <div className={`text-sm mb-3 font-medium ${
+              <div className={`text-base mb-3 font-medium ${
                 isDark ? 'text-indigo-200' : 'text-indigo-700'
               }`}>
                 Click here to explore course details
@@ -516,6 +542,33 @@ const AIHero: React.FC<AIHeroProps> = ({ onModuleClick, isLoggedIn = false, hasP
           title={selectedModule?.name || ''}
           videoScript={selectedModule?.videoScript}
         />
+      )}
+
+      {/* Hover Tooltip */}
+      {hoveredModule && (
+        <motion.div
+          initial={{ opacity: 0, y: 10, scale: 0.9 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: 10, scale: 0.9 }}
+          transition={{ duration: 0.2 }}
+          className="fixed z-50 pointer-events-none"
+          style={{
+            left: tooltipPosition.x,
+            top: tooltipPosition.y,
+            transform: 'translateY(-50%)'
+          }}
+        >
+          <div className="bg-gray-900 dark:bg-gray-800 text-white rounded-lg p-4 shadow-2xl border border-gray-700 max-w-xs">
+            <div className="text-lg font-bold mb-2">{hoveredModule.name}</div>
+            <div className="text-sm text-gray-300 leading-relaxed">{hoveredModule.description}</div>
+            {/* Tooltip arrow - positioned based on column */}
+            <div className={`absolute top-1/2 transform -translate-y-1/2 w-0 h-0 border-t-4 border-b-4 border-t-transparent border-b-transparent ${
+              tooltipPosition.x < window.innerWidth / 2 
+                ? 'left-0 -translate-x-full border-r-4 border-r-gray-900 dark:border-r-gray-800' 
+                : 'right-0 translate-x-full border-l-4 border-l-gray-900 dark:border-l-gray-800'
+            }`}></div>
+          </div>
+        </motion.div>
       )}
     </div>
   );

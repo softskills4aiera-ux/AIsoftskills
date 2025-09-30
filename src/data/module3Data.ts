@@ -1,4 +1,82 @@
-export const module3Subtopics = [
+// Module 3: Prompt Engineering Data Structure
+export interface ModuleProgress {
+  moduleId: string;
+  currentSubtopic: number;
+  completedSubtopics: number[];
+  quizScores: { [key: string]: number };
+  badges: string[];
+  challengeResponses: { [key: string]: string };
+  lastAccessed: string;
+  totalXP: number;
+  successStreak: number;
+  highestStreak: number;
+  lastStreakDate: string;
+}
+
+export interface SubtopicData {
+  id: string;
+  title: string;
+  emoji: string;
+  context: 'academic' | 'professional' | 'personal';
+  discover: {
+    scenario: string;
+    problemExplanation: string[];
+    solutionApproach: string[];
+  };
+  video: {
+    title: string;
+    duration: number;
+    content: string[];
+    script?: string;
+  };
+  quiz: {
+    title: string;
+    questions: {
+      id: number;
+      question: string;
+      options: string[];
+      correct: number;
+      explanation?: string;
+    }[];
+  };
+  challenge: {
+    title: string;
+    description: string;
+    instructions: string[];
+    successCriteria: string[];
+  };
+  feedback: {
+    strengths: string[];
+    improvements: string[];
+    nextSteps: string[];
+  };
+  badge: {
+    name: string;
+    emoji: string;
+    description: string;
+  };
+  shareMessage: string;
+}
+
+export interface AssessmentData {
+  title: string;
+  description: string;
+  questions: {
+    id: number;
+    question: string;
+    options: string[];
+    correct: number;
+    explanation?: string;
+  }[];
+  gradingScale: {
+    excellent: { min: number; max: number; message: string; xpReward: number };
+    good: { min: number; max: number; message: string; xpReward: number };
+    satisfactory: { min: number; max: number; message: string; xpReward: number };
+    needsImprovement: { min: number; max: number; message: string; xpReward: number };
+  };
+}
+
+export const module3Subtopics: SubtopicData[] = [
   {
     id: 'prompt-design',
     title: 'Prompt Design',
@@ -19,11 +97,6 @@ export const module3Subtopics = [
         "Iterate and Refine: Test prompts and improve based on results"
       ]
     },
-    scenarios: {
-      academic: ['Writing research prompts for AI tools'],
-      professional: ['Designing prompts for business AI tools'],
-      personal: ['Personal AI assistant prompts']
-    },
     video: {
       title: 'Mastering Prompt Design',
       duration: 5,
@@ -39,6 +112,54 @@ export const module3Subtopics = [
           options: ['Vague instructions', 'Clear, specific instructions', 'Long paragraphs', 'No context'],
           correct: 1,
           explanation: 'Clear, specific instructions help AI understand exactly what you want and provide relevant responses.'
+        },
+        {
+          id: 2,
+          question: 'How do you improve a vague prompt like "Write about marketing"?',
+          options: [
+            'Add more technical terms',
+            'Specify the audience, format, length, and specific aspects of marketing',
+            'Make it longer with more words',
+            'Use more complex vocabulary'
+          ],
+          correct: 1,
+          explanation: 'Adding specific details about audience, format, length, and focus areas transforms vague prompts into effective ones.'
+        },
+        {
+          id: 3,
+          question: 'What\'s the best way to structure a prompt for a research task?',
+          options: [
+            'Ask one big question',
+            'Break it into clear sections: background, specific question, expected format, and context',
+            'Use only bullet points',
+            'Make it as short as possible'
+          ],
+          correct: 1,
+          explanation: 'Structured prompts with clear sections help AI understand the full scope and requirements of research tasks.'
+        },
+        {
+          id: 4,
+          question: 'How do you handle AI responses that don\'t match your expectations?',
+          options: [
+            'Accept whatever the AI gives you',
+            'Refine your prompt with more specific instructions and examples',
+            'Use a different AI tool',
+            'Give up on the task'
+          ],
+          correct: 1,
+          explanation: 'Iterative refinement of prompts based on AI responses is key to getting better results over time.'
+        },
+        {
+          id: 5,
+          question: 'What role do examples play in prompt design?',
+          options: [
+            'They make prompts too long',
+            'They help AI understand the desired format and style',
+            'They confuse the AI',
+            'They\'re unnecessary for good prompts'
+          ],
+          correct: 1,
+          explanation: 'Examples provide clear models for AI to follow, significantly improving output quality and consistency.'
         }
       ]
     },
@@ -552,11 +673,138 @@ Example: 'Act as a senior marketing manager with 10 years of B2B SaaS experience
       description: "Mastered advanced prompt engineering techniques and systems"
     },
     shareMessage: "Just mastered advanced prompt engineering! Building sophisticated AI workflows! 🚀 #PromptEngineering #AIExpert"
+  },
+  {
+    id: 'output-formatting',
+    title: 'Output Formatting',
+    emoji: '📋',
+    context: 'professional',
+    discover: {
+      scenario: "You need AI to generate content in specific formats - tables, bullet points, code, structured reports - but it keeps giving you paragraphs of text. How do you get AI to format output exactly how you need it?",
+      problemExplanation: [
+        "Format Mismatch: AI provides content in wrong format for your needs",
+        "Inconsistent Structure: Output structure varies between requests",
+        "No Clear Specifications: Not telling AI exactly how to format results",
+        "Manual Reformatting: Spending time restructuring AI output manually"
+      ],
+      solutionApproach: [
+        "Format Specification: Clearly define desired output structure",
+        "Template Provision: Give AI examples of perfect formatting",
+        "Structure Commands: Use specific formatting instructions",
+        "Consistency Rules: Establish formatting standards for repeated use"
+      ]
+    },
+    video: {
+      title: "Master AI Output Formatting",
+      duration: 5,
+      content: [
+        "Format Specification: How to request specific output structures",
+        "Template Examples: Providing AI with formatting models",
+        "Structure Commands: Using formatting instructions effectively",
+        "Consistency Techniques: Ensuring uniform output across requests",
+        "Advanced Formatting: Tables, lists, code, and complex structures"
+      ]
+    },
+    quiz: {
+      title: "Test Your Output Formatting Knowledge", 
+      questions: [
+        {
+          id: 1,
+          question: "How do you get AI to format output as a table?",
+          options: [
+            "Ask 'make it organized'",
+            "Specify 'format as table with columns: X, Y, Z'",
+            "Use the word 'table' somewhere in your prompt",
+            "Ask AI to be more structured"
+          ],
+          correct: 1,
+          explanation: "Specific formatting instructions with column definitions ensure AI creates properly structured tables."
+        },
+        {
+          id: 2,
+          question: "What's the best way to get consistent formatting across multiple AI requests?",
+          options: [
+            "Ask nicely each time",
+            "Create formatting templates and reference them in prompts",
+            "Use the same AI tool every time",
+            "Format manually after getting results"
+          ],
+          correct: 1,
+          explanation: "Creating and referencing formatting templates ensures consistent output structure across multiple requests."
+        },
+        {
+          id: 3,
+          question: "How do you get AI to generate code in a specific programming language?",
+          options: [
+            "Just ask for code",
+            "Specify the language and provide context about the task",
+            "Use technical terms only",
+            "Ask for 'good code'"
+          ],
+          correct: 1,
+          explanation: "Specifying the programming language and providing clear context helps AI generate appropriate code."
+        },
+        {
+          id: 4,
+          question: "What's the most effective way to get structured bullet points?",
+          options: [
+            "Ask for 'bullet points'",
+            "Specify the structure: 'Create bullet points with main points and sub-points'",
+            "Use the word 'list'",
+            "Ask for 'organized information'"
+          ],
+          correct: 1,
+          explanation: "Specifying the exact structure you want helps AI create properly formatted bullet points with hierarchy."
+        },
+        {
+          id: 5,
+          question: "How do you ensure AI maintains formatting consistency in long documents?",
+          options: [
+            "Break it into smaller requests",
+            "Provide formatting guidelines at the start and reference them throughout",
+            "Use the same prompt every time",
+            "Format everything manually"
+          ],
+          correct: 1,
+          explanation: "Establishing clear formatting guidelines upfront and referencing them helps maintain consistency throughout long documents."
+        }
+      ]
+    },
+    challenge: {
+      title: "Master AI Output Formatting",
+      description: "Get AI to produce content in 5 different specific formats",
+      instructions: [
+        "Choose 5 formats: Select different output types (table, bullets, code, etc.)",
+        "Write format prompts: Create prompts specifying exact formatting",
+        "Test each format: Verify AI produces correctly formatted output",
+        "Create templates: Build reusable formatting instructions",
+        "Document best practices: Note which formatting techniques work best"
+      ],
+      successCriteria: [
+        "Successfully generated 5 different output formats",
+        "Each format matches specified requirements exactly",
+        "Created reusable formatting templates",
+        "Documented effective formatting techniques",
+        "Can explain when to use different output formats"
+      ]
+    },
+    feedback: {
+      strengths: ["You understand the importance of output formatting in prompt engineering"],
+      improvements: ["Practice with more complex formatting requirements"],
+      nextSteps: ["Create specialized formatting templates for your field"]
+    },
+    badge: {
+      name: "Format Master",
+      emoji: "📋", 
+      description: "Mastered AI output formatting and structure control"
+    },
+    shareMessage: "Just mastered AI output formatting! Getting perfectly structured results every time! 📋 #PromptEngineering #Productivity"
   }
 ];
 
-export const module3Assessment = {
+export const module3Assessment: AssessmentData = {
   title: "Prompt Engineering Assessment",
+  description: "Test your mastery of prompt engineering and AI interaction skills. This comprehensive assessment evaluates your understanding of prompt design, context management, and effective AI communication.",
   questions: [
     {
       id: 1,
@@ -566,28 +814,50 @@ export const module3Assessment = {
       explanation: "Clarity is the most important aspect of prompt design as it ensures the AI understands exactly what you want."
     }
   ],
-  sections: [
-    {
-      name: "Prompt Design",
-      questions: 1,
-      context: "AI interaction scenarios"
-    }
-  ],
-  practicalChallenge: {
-    title: "Create Effective Prompts",
-    duration: 10,
-    requirements: ["Clear instructions", "Specific context", "Expected format"]
-  },
-  scoring: {
-    quizQuestions: 100,
-    practicalPresentation: 0,
-    totalPossible: 100
-  },
-  gradeLevels: [
-    { range: "90-100", grade: "Prompt Master", description: "Excellent" },
-    { range: "80-89", grade: "Prompt Expert", description: "Very Good" },
-    { range: "70-79", grade: "Prompt Proficient", description: "Good" },
-    { range: "60-69", grade: "Prompt Developing", description: "Needs Improvement" },
-    { range: "0-59", grade: "Prompt Beginner", description: "Requires Additional Practice" }
-  ]
+  gradingScale: {
+    excellent: { min: 80, max: 100, message: "Excellent! You've mastered prompt engineering!", xpReward: 100 },
+    good: { min: 70, max: 79, message: "Good job! You have strong prompt engineering skills.", xpReward: 75 },
+    satisfactory: { min: 60, max: 69, message: "Satisfactory. Keep practicing to improve further.", xpReward: 50 },
+    needsImprovement: { min: 0, max: 59, message: "Keep learning! Prompt engineering improves with practice.", xpReward: 25 }
+  }
+};
+
+// Progress management functions for Module 3
+export const saveModuleProgress = (progress: any): void => {
+  localStorage.setItem('module3Progress', JSON.stringify(progress));
+};
+
+export const loadModuleProgress = (): any | null => {
+  const stored = localStorage.getItem('module3Progress');
+  return stored ? JSON.parse(stored) : null;
+};
+
+export const updateSubtopicProgress = (subtopicId: string, score: number, response: string): void => {
+  const progress = loadModuleProgress() || {
+    moduleId: 'prompt-engineering',
+    currentSubtopic: 0,
+    completedSubtopics: [],
+    quizScores: {},
+    badges: [],
+    challengeResponses: {},
+    lastAccessed: new Date().toISOString(),
+    totalXP: 0,
+    successStreak: 0,
+    highestStreak: 0,
+    lastStreakDate: ''
+  };
+
+  // Update progress
+  progress.quizScores[subtopicId] = score;
+  progress.challengeResponses[subtopicId] = response;
+  
+  // Add to completed subtopics if not already there
+  if (!progress.completedSubtopics.includes(progress.currentSubtopic)) {
+    progress.completedSubtopics.push(progress.currentSubtopic);
+  }
+  
+  progress.totalXP += score * 10; // 10 XP per quiz point
+  progress.lastAccessed = new Date().toISOString();
+  
+  saveModuleProgress(progress);
 };

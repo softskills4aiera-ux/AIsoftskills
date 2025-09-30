@@ -8,6 +8,9 @@ export interface ModuleProgress {
   challengeResponses: { [key: string]: string };
   lastAccessed: string;
   totalXP: number;
+  successStreak: number;
+  highestStreak: number;
+  lastStreakDate: string;
 }
 
 export interface SubtopicData {
@@ -53,6 +56,24 @@ export interface SubtopicData {
     description: string;
   };
   shareMessage: string;
+}
+
+export interface AssessmentData {
+  title: string;
+  description: string;
+  questions: {
+    id: number;
+    question: string;
+    options: string[];
+    correct: number;
+    explanation?: string;
+  }[];
+  gradingScale: {
+    excellent: { min: number; max: number; message: string; xpReward: number };
+    good: { min: number; max: number; message: string; xpReward: number };
+    satisfactory: { min: number; max: number; message: string; xpReward: number };
+    needsImprovement: { min: number; max: number; message: string; xpReward: number };
+  };
 }
 
 export const module8Subtopics: SubtopicData[] = [
@@ -1114,8 +1135,9 @@ Example: Tom transformed his family relationships by practicing mindful listenin
   }
 ];
 
-export const module8Assessment = {
+export const module8Assessment: AssessmentData = {
   title: "Managing Mental & Physical Health Mastery Assessment",
+  description: "Test your mastery of mental and physical health management skills. This comprehensive assessment evaluates your understanding of stress management, work-life balance, mindfulness, and overall wellness strategies.",
   questions: [
     {
       id: 1,
@@ -1177,9 +1199,53 @@ export const module8Assessment = {
       correct: 1,
       explanation: "Resilience building is developing the ability to bounce back from setbacks and adapt to change."
     }
-  ]
+  ],
+  gradingScale: {
+    excellent: { min: 80, max: 100, message: "Excellent! You've mastered mental and physical health management!", xpReward: 100 },
+    good: { min: 70, max: 79, message: "Good job! You have strong wellness skills.", xpReward: 75 },
+    satisfactory: { min: 60, max: 69, message: "Satisfactory. Keep practicing to improve further.", xpReward: 50 },
+    needsImprovement: { min: 0, max: 59, message: "Keep learning! Wellness skills improve with practice.", xpReward: 25 }
+  }
 };
 
+// Local Storage Helper Functions
+export const saveModuleProgress = (progress: ModuleProgress): void => {
+  localStorage.setItem('module8Progress', JSON.stringify(progress));
+};
+
+export const loadModuleProgress = (): ModuleProgress | null => {
+  const stored = localStorage.getItem('module8Progress');
+  return stored ? JSON.parse(stored) : null;
+};
+
+export const updateSubtopicProgress = (subtopicId: string, score: number, response: string): void => {
+  const progress = loadModuleProgress() || {
+    moduleId: 'mental-health',
+    currentSubtopic: 0,
+    completedSubtopics: [],
+    quizScores: {},
+    badges: [],
+    challengeResponses: {},
+    lastAccessed: new Date().toISOString(),
+    totalXP: 0,
+    successStreak: 0,
+    highestStreak: 0,
+    lastStreakDate: ''
+  };
+
+  // Update progress
+  progress.quizScores[subtopicId] = score;
+  progress.challengeResponses[subtopicId] = response;
+  
+  if (!progress.completedSubtopics.includes(parseInt(subtopicId.split('-')[1]))) {
+    progress.completedSubtopics.push(parseInt(subtopicId.split('-')[1]));
+  }
+  
+  progress.totalXP += score;
+  progress.lastAccessed = new Date().toISOString();
+  
+  saveModuleProgress(progress);
+};
 
 
 

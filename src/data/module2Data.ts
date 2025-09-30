@@ -1034,7 +1034,9 @@ Example: Rachel transformed her health, relationships, and career satisfaction b
 ];
 
 export const module2Assessment = {
+  id: 'module2-assessment',
   title: "Adaptive Learning & Lifelong Learning Skills Final Assessment",
+  description: 'Comprehensive test covering all adaptive learning and lifelong learning skills',
   duration: 60, // minutes
   questions: [
     {
@@ -1212,7 +1214,33 @@ export const module2Assessment = {
     { range: "70-79", grade: "Adaptive Learning Proficient", description: "Good" },
     { range: "60-69", grade: "Adaptive Learning Developing", description: "Needs Improvement" },
     { range: "0-59", grade: "Adaptive Learning Beginner", description: "Requires Additional Practice" }
-  ]
+  ],
+  gradingScale: {
+    excellent: { 
+      min: 90, 
+      max: 100, 
+      message: "Outstanding! You've mastered adaptive learning skills and are ready to excel in any learning environment.", 
+      xpReward: 100 
+    },
+    good: { 
+      min: 80, 
+      max: 89, 
+      message: "Great job! You have strong adaptive learning skills with room for continued growth.", 
+      xpReward: 75 
+    },
+    satisfactory: { 
+      min: 70, 
+      max: 79, 
+      message: "Good foundation! Keep practicing to strengthen your adaptive learning skills.", 
+      xpReward: 50 
+    },
+    needsImprovement: { 
+      min: 0, 
+      max: 69, 
+      message: "Keep learning! Review the module content and practice these skills in real-world situations.", 
+      xpReward: 25 
+    }
+  }
 };
 
 // Local Storage Helper Functions
