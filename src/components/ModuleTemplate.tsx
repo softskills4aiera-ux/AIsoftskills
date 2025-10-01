@@ -921,30 +921,6 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
               </div>
             )}
           </motion.div>
-
-          {/* Bottom Navigation Buttons */}
-          <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
-            {onNavigateCatalog && (
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={onNavigateCatalog}
-                className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg font-medium transition-all duration-300 shadow-lg"
-              >
-                Back to Catalog
-              </motion.button>
-            )}
-            {onNavigateHome && (
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={onNavigateHome}
-                className="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg font-medium transition-all duration-300 shadow-lg"
-              >
-                Back to Home
-              </motion.button>
-            )}
-          </div>
         </div>
       </div>
     );
@@ -961,9 +937,10 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
             <div className="flex items-center gap-4">
               <button
                 onClick={() => setCurrentView('subtopic-select')}
-                className="p-2 rounded-lg bg-white/50 dark:bg-midnight-700/50 hover:bg-white/70 dark:hover:bg-midnight-600/50 transition-colors"
+                className="p-3 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-600 transition-all duration-300 shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-600"
+                title="Back to Subtopic Selection"
               >
-                <ArrowLeft size={20} />
+                <ArrowLeft size={22} />
               </button>
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
@@ -2257,32 +2234,6 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
   
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-midnight-800 dark:to-midnight-700">
-      {/* Floating Navigation */}
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col space-y-3">
-        {onNavigateHome && (
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            onClick={onNavigateHome}
-            className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm text-gray-900 dark:text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-            title="Back to Home"
-          >
-            <ArrowLeft size={20} />
-          </motion.button>
-        )}
-        {onNavigateCatalog && (
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            onClick={onNavigateCatalog}
-            className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm text-gray-900 dark:text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-            title="Back to Catalog"
-          >
-            <BookOpen size={20} />
-          </motion.button>
-        )}
-      </div>
-
       {/* Main Content */}
       {currentView === 'intro' && renderIntroView()}
       {currentView === 'subtopic-select' && renderSubtopicSelectView()}
