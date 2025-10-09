@@ -2127,16 +2127,16 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
                   </h4>
                   <div className="space-y-4">
                     {question.options.map((option, optionIndex) => (
-                      <label key={optionIndex} className="flex items-center space-x-4 cursor-pointer p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors">
+                      <label key={optionIndex} className="flex items-start space-x-4 cursor-pointer p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors border-2 border-transparent hover:border-blue-300 dark:hover:border-blue-600">
                         <input
                           type="radio"
                           name={`assessment-${question.id}`}
                           value={option}
                           checked={assessmentAnswers[question.id] === option}
                           onChange={() => handleAssessmentAnswer(question.id, option)}
-                          className="w-5 h-5 text-blue-600"
+                          className="w-5 h-5 mt-0.5 text-blue-600 flex-shrink-0"
                         />
-                        <span className="text-lg text-gray-700 dark:text-gray-300">{option}</span>
+                        <span className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed flex-1">{option}</span>
                       </label>
                     ))}
                   </div>
