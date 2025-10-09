@@ -1631,38 +1631,63 @@ At project start, agree: 'If we have a conflict, we will (1) Take a 24-hour cool
       questions: [
         {
           id: 21,
-          question: 'What is the first step in resolving a conflict?',
-          options: ['Take sides', 'Listen to all perspectives', 'Make a quick decision', 'Avoid the situation'],
+          question: 'Your group project is due in 3 days. Priya says: "Arjun, your work is terrible. I am redoing everything." Arjun replies: "You are so controlling!" The WhatsApp group erupts. What should you do FIRST?',
+          options: [
+            'Take sides with whoever you think is right',
+            'Message both privately: "Let us take 24 hours to cool down, then meet tomorrow to discuss this calmly"',
+            'Tell them both: "You need to calm down and be professional"',
+            'Ignore it and hope they work it out themselves'
+          ],
           correct: 1,
-          explanation: 'Listening to all perspectives helps you understand the root causes and find better solutions.'
+          explanation: 'Option 2 is the de-escalation move. When emotions are high (fight-or-flight mode), logic is low. You cannot problem-solve when people are angry. Step 1: Lower the temperature with a cooling-off period. Step 2: Separate conversations (private messages, not group chat - that reignites the fight). Option 1 (taking sides) alienates someone. Option 3 ("calm down") is dismissive and escalates conflict. Option 4 (ignoring) lets the problem fester and the project fails. De-escalate FIRST, problem-solve SECOND.'
         },
         {
           id: 22,
-          question: 'What is the best approach when emotions are running high?',
-          options: ['Ignore the emotions', 'Take a break and reconvene later', 'Push through quickly', 'Let everyone vent'],
+          question: 'You meet with Arjun privately. He says: "Priya dismissed my work without even reading it. I feel disrespected." What is your BEST response?',
+          options: [
+            '"You are overreacting. Priya is just trying to get a good grade."',
+            '"So what I am hearing is, you feel your contribution was dismissed without fair feedback. Is that right?"',
+            '"Well, maybe your work was not up to standard. You should have tried harder."',
+            '"Forget about Priya. Let us just focus on finishing the project."'
+          ],
           correct: 1,
-          explanation: 'Taking a break allows emotions to cool down and enables more rational discussion.'
+          explanation: 'Option 2 uses active listening: Paraphrase to confirm understanding ("So what I am hearing is...") and validate feelings ("you feel..."). This is NOT agreeing with Arjun - it is showing you UNDERSTAND his perspective. People calm down when they feel HEARD. Option 1 ("overreacting") invalidates feelings and escalates conflict. Option 3 (blaming Arjun) takes sides and breaks trust. Option 4 (dismissing the issue) ignores the root problem - the conflict will resurface. Listen 80%, talk 20%. Understand BEFORE you problem-solve.'
         },
         {
           id: 23,
-          question: 'What does "finding common ground" mean in conflict resolution?',
-          options: ['Agreeing on everything', 'Identifying shared interests and goals', 'Compromising on all issues', 'Avoiding difficult topics'],
+          question: 'After listening to both Priya and Arjun separately, you realize the REAL problem is not "lazy" vs "controlling." What is the root cause?',
+          options: [
+            'Priya and Arjun have incompatible personalities and should not work together',
+            'No clear quality standards were defined upfront, and there is no process for giving constructive feedback',
+            'Arjun is genuinely lazy and Priya is genuinely controlling',
+            'The professor assigned a bad group project'
+          ],
           correct: 1,
-          explanation: 'Finding common ground means identifying what everyone can agree on to build from there.'
+          explanation: 'Option 2 identifies the ROOT CAUSE. The fight is NEVER about what it seems. "Lazy" vs "Controlling" = surface symptoms. The REAL issues: (1) No agreed-upon quality standards (What does "good work" mean?), (2) No feedback process (How do we give constructive criticism?), (3) Unclear roles (Who decides if work is acceptable?). Fix these SYSTEMS, and the conflict resolves. Option 1 (incompatible personalities) is a cop-out - any personalities can work together with clear systems. Option 3 (blaming individuals) does not solve the problem. Option 4 (blaming professor) is deflection. Address root causes, not symptoms.'
         },
         {
           id: 24,
-          question: 'What is the goal of win-win solutions?',
-          options: ['One person wins', 'Everyone gets something they value', 'The loudest person wins', 'Avoiding the conflict'],
-          correct: 1,
-          explanation: 'Win-win solutions aim to satisfy the core needs of all parties involved.'
+          question: 'You propose a solution: "Priya, lower your standards. Arjun, work harder. Let us compromise." Both seem unhappy. What went wrong?',
+          options: [
+            'Compromise is always the best solution in conflicts',
+            'You did not give them enough time to think about it',
+            'Compromise means everyone loses a little. You need a WIN-WIN solution where both get what they NEED',
+            'You should have taken Priya is side since she cares more about quality'
+          ],
+          correct: 2,
+          explanation: 'Option 3 is correct. Compromise = everyone loses a little (Priya lowers standards = unhappy, Arjun works harder without clarity = unhappy). Win-Win = creative solution where BOTH get what they NEED. Example: (1) Define quality standards TOGETHER (3 criteria everyone agrees on), (2) Set mini-deadlines with check-ins (Priya gets structure, Arjun gets clarity), (3) Use feedback template: 2 strengths + 1 improvement (constructive, not harsh). Now Priya gets quality assurance AND Arjun gets clear expectations. Both win. Option 1 is false - compromise often leaves everyone dissatisfied. Option 2 misses the point. Option 4 (taking sides) is not conflict resolution.'
         },
         {
           id: 25,
-          question: 'How can you prevent future conflicts?',
-          options: ['Avoid difficult people', 'Create clear processes and expectations', 'Always agree with others', 'Work alone'],
-          correct: 1,
-          explanation: 'Clear processes and expectations help prevent misunderstandings that lead to conflicts.'
+          question: 'Your group resolves the conflict successfully. What should you do to PREVENT future conflicts in this project?',
+          options: [
+            'Nothing - the conflict is resolved, so you are done',
+            'Avoid working with Priya and Arjun in future projects',
+            'Create a Conflict Resolution Agreement: (1) Feedback is private, not in group chat, (2) 24-hour cooling-off period if upset, (3) Decisions by majority vote, (4) Assume positive intent',
+            'Just hope everyone learned their lesson and will behave better'
+          ],
+          correct: 2,
+          explanation: 'Option 3 is the prevention strategy. The best conflict resolution is PREVENTION through SYSTEMS. A Conflict Resolution Agreement establishes RULES for future conflicts: (1) Private feedback (no public humiliation), (2) Cooling-off period (no fighting in the heat of the moment), (3) Decision-making process (no dictators), (4) Positive intent assumption (no one is sabotaging). Write this down. Next conflict? You have a PROCESS, not chaos. Option 1 (doing nothing) guarantees the conflict will resurface under stress. Option 2 (avoiding people) is not practical or professional. Option 4 (hope) is not a strategy. Build systems, not hope.'
         }
       ]
     },
@@ -1672,80 +1697,89 @@ At project start, agree: 'If we have a conflict, we will (1) Take a 24-hour cool
       contexts: {
         academic: {
           title: 'Academic Conflict Resolution',
-          description: 'Resolve conflicts in group projects, study groups, and academic settings',
+          description: 'Your B.Com group project on "Financial Statement Analysis" (30% of grade) is due in 5 days. Team: You, Priya (perfectionist), Arjun (procrastinator), Neha (conflict-avoider). Yesterday, Priya and Arjun had a heated WhatsApp argument. Priya: "Arjun, your section is garbage. I am redoing it." Arjun: "You are so controlling!" Arjun left the group chat. Priya is threatening to complain to the professor. Neha is panicking. You need to resolve this NOW using the 5-Step Framework.',
           instructions: [
-            'Group project conflicts: Address different work styles and contribution levels',
-            'Study group dynamics: Handle disagreements about study methods and schedules',
-            'Professor interactions: Navigate grading disputes and academic expectations',
-            'Peer pressure situations: Stand up for your values while maintaining relationships',
-            'Competition vs. collaboration: Balance individual success with team goals',
-            'Cultural differences: Bridge gaps in communication styles and expectations',
-            'Time management conflicts: Resolve scheduling and deadline disagreements',
-            'Academic integrity: Address cheating, plagiarism, and ethical issues',
-            'Leadership challenges: Lead groups through difficult decisions and conflicts',
-            'Feedback delivery: Give and receive constructive criticism effectively'
+            '1. De-Escalate Immediately (Within 1 hour of conflict): Send PRIVATE messages to Arjun and Priya separately (not in group chat). To Arjun: "Hey, I know yesterday was intense. Can we take 24 hours to cool down, then meet tomorrow to fix this? I value your contribution and want us to succeed together." To Priya: "I can see you are frustrated about the quality standards. Let us take a breather and meet tomorrow with fresh minds to find a solution." Why private? Public messages reignite the fight. Why 24 hours? Emotions need time to cool. Why "I value you"? Reminds them they are on the same team.',
+            '2. Listen Actively - Meet Separately First (Day 2, 1 hour each): Meet with Arjun alone. Ask: "What is frustrating you most about this project?" Then SHUT UP and LISTEN. Use the 80/20 rule (he talks 80%, you talk 20%). Paraphrase: "So you feel your work was dismissed without fair feedback. Is that right?" Do NOT defend Priya or judge Arjun. Just UNDERSTAND. Repeat with Priya separately: "What is your main concern?" Listen: "You feel the quality standards are not being met and we might get a bad grade." Validate: "That is a legitimate concern." Take notes on BOTH perspectives.',
+            '3. Identify the REAL Problem (Day 2, 30 mins alone): The fight is NOT about "lazy" vs "controlling." Analyze your notes. The ROOT CAUSES: (1) No clear quality standards defined upfront (What does "good work" mean?), (2) No process for giving constructive feedback (How do we critique without attacking?), (3) Unclear roles (Who decides if work is acceptable?), (4) No accountability system (What happens if someone misses a deadline?). Write these down. You will address THESE, not the surface drama.',
+            '4. Find Win-Win Solutions - Group Meeting (Day 3, 1.5 hours): Bring everyone together (including Neha). Start: "Thank you for meeting. We all want a good grade. Let us focus on that shared goal." Present the ROOT CAUSES (not blame): "I think our main issues are: unclear quality standards, no feedback process, and role ambiguity." Brainstorm solutions together: (a) Define 3 quality criteria everyone agrees on, (b) Set mini-deadlines with check-ins every 2 days, (c) Use feedback template: "2 strengths + 1 improvement," (d) Assign roles: Arjun (research), Priya (analysis), Neha (presentation), You (coordination). Vote on solutions. Document in a shared Google Doc.',
+            '5. Create Conflict Resolution Agreement (End of meeting, 15 mins): Before ending, establish RULES for future conflicts: (1) Feedback is PRIVATE, not in group chat (no public humiliation). (2) If upset, we take a 24-hour cooling-off period (no fighting in the moment). (3) Decisions by majority vote (no dictators). (4) Assume positive intent (no one is sabotaging). Write this down in the Google Doc. Everyone signs (literally or digitally). Next conflict? You have a PROCESS.',
+            '6. Follow-Up Daily (Days 4-5): Check in every evening: "How is everyone feeling? Any blockers?" Do NOT assume "fixed = forever." Conflicts resurface under stress. Proactive check-ins prevent re-escalation. Also: Celebrate small wins. "Great job on yesterday is section, Arjun!" Positive reinforcement rebuilds trust. By Day 5, submit a quality project AND a functional team.',
+            '',
+            '🚫 Common Mistakes to Avoid:',
+            '• Taking sides publicly: "I agree with Priya, Arjun is being lazy." Result: Arjun feels ganged up on, quits the project. Solution: Stay neutral, focus on SYSTEMS (unclear standards), not PEOPLE (lazy/controlling).',
+            '• Dismissing emotions: "You both need to calm down and be professional." Result: They feel invalidated, conflict escalates. Solution: Acknowledge feelings: "I can see this is really frustrating for both of you."',
+            '• Forcing compromise: "Priya, lower your standards. Arjun, work harder." Result: Both unhappy. Solution: Find WIN-WIN (define standards together, set check-ins).',
+            '• Ignoring the conflict: "Let us just focus on finishing the project." Result: Conflict festers, team implodes. Solution: Address it head-on with the 5-Step Framework.',
+            '• No follow-up: Resolve conflict once, assume it is fixed forever. Result: Conflict resurfaces under deadline pressure. Solution: Daily check-ins, celebrate wins, reinforce positive behavior.'
           ],
           successCriteria: [
-            'You can identify the root causes of academic conflicts quickly',
-            'You facilitate productive discussions that lead to solutions',
-            'You maintain positive relationships even after disagreements',
-            'You help groups reach consensus on difficult decisions',
-            'You handle criticism and feedback constructively',
-            'You prevent small issues from becoming major conflicts',
-            'You create an environment where everyone feels heard and valued',
-            'You develop systems that prevent future conflicts in academic settings'
+            '✅ Both Priya and Arjun agree to return to the project within 48 hours (de-escalation successful)',
+            '✅ You identify 3-4 root causes (not just surface symptoms like "lazy" or "controlling")',
+            '✅ The team creates a documented Conflict Resolution Agreement with 4+ rules',
+            '✅ You submit a quality project on time with all team members contributing',
+            '✅ Team members say: "Thank you for mediating. I learned a lot about conflict resolution"',
+            '✅ Your professor comments: "This team worked through challenges professionally"',
+            '✅ You feel confident resolving future group project conflicts (skill built, not luck)',
+            '✅ The team stays functional for future collaborations (relationships preserved)'
           ]
         },
         professional: {
           title: 'Professional Conflict Resolution',
-          description: 'Navigate workplace conflicts, team dynamics, and professional disagreements',
+          description: 'You are a Financial Analyst intern at a consulting firm. Your team (5 people) is working on a client deliverable due Friday. Rajesh (senior analyst) and Meera (junior analyst) had a tense exchange in yesterday is team meeting. Rajesh: "Meera, your financial model has errors. This is basic stuff." Meera (visibly upset): "Maybe if you gave clearer instructions, I would not make mistakes." The room went silent. Your manager looked uncomfortable. Today, Rajesh and Meera are avoiding each other, and the project is stalled. Your manager asks YOU to mediate.',
           instructions: [
-            'Team dynamics: Address personality clashes and working style differences',
-            'Project conflicts: Resolve disagreements about approaches and priorities',
-            'Client relations: Handle difficult clients and service delivery issues',
-            'Management challenges: Navigate conflicts with supervisors and subordinates',
-            'Resource allocation: Resolve disputes about budgets, time, and personnel',
-            'Performance issues: Address underperformance and accountability problems',
-            'Cultural workplace conflicts: Bridge differences in communication and values',
-            'Change management: Help teams adapt to new processes and expectations',
-            'Ethical dilemmas: Navigate conflicts between personal values and company policies',
-            'Crisis communication: Handle conflicts during high-stress situations'
+            '1. Assess the Situation (Day 1, 30 mins): Before jumping in, gather context. Talk to your manager privately: "What is the history between Rajesh and Meera? Have they clashed before?" Review the project: What is at stake? (Client relationship, deadline, team morale.) Observe: Are others taking sides? Is work being affected? This intel helps you understand the REAL problem, not just the surface conflict.',
+            '2. De-Escalate Privately (Day 1, within 2 hours): Meet with Rajesh and Meera SEPARATELY (not together yet - that will reignite the fight). To Rajesh: "I noticed yesterday is meeting was tense. Can we grab coffee and talk about how to move the project forward?" To Meera: "I want to check in on how you are feeling about the project. Let us chat privately." Why separate? They need a safe space to vent without the other person present. Why "move forward"? Focuses on solutions, not blame.',
+            '3. Listen Actively - Understand Both Sides (Day 1-2, 1 hour each): With Rajesh: "What is your main concern about the project?" Listen: "I am worried about the client seeing errors. It reflects badly on the team." Paraphrase: "So you are concerned about quality and the team is reputation." Do NOT defend Meera. With Meera: "What is been challenging for you?" Listen: "I feel like Rajesh criticizes me publicly but never teaches me how to improve." Paraphrase: "You feel you are not getting the support you need to succeed." Take notes on BOTH perspectives.',
+            '4. Identify Root Causes (Day 2, 30 mins alone): The conflict is NOT "Rajesh is mean" or "Meera is incompetent." ROOT CAUSES: (1) No onboarding/training process for junior analysts (Meera was thrown into complex work without guidance). (2) No feedback norms (Rajesh gave harsh public criticism instead of private constructive feedback). (3) Unclear quality standards (What does "error-free" mean? What is the review process?). (4) Communication breakdown (Rajesh assumes Meera knows basics; Meera is afraid to ask questions). Address THESE, not personalities.',
+            '5. Facilitate a Joint Meeting (Day 3, 1 hour): Bring Rajesh and Meera together. Start: "Thank you both for meeting. We all want this project to succeed and the client to be happy. Let us focus on that shared goal." Present ROOT CAUSES (not blame): "I think the main issues are: unclear training process, feedback norms, and communication gaps." Brainstorm solutions: (a) Rajesh mentors Meera 30 mins daily for 2 weeks, (b) Feedback is private (1-on-1), not in team meetings, (c) Create a quality checklist for financial models, (d) Weekly check-ins to address questions. Get buy-in from both. Document in an email to the team.',
+            '6. Follow-Up + Reinforce Positive Behavior (Week 1-2): Check in with Rajesh: "How are the mentoring sessions going?" Check in with Meera: "Are you getting the support you need?" Observe team meetings: Is the dynamic improving? Celebrate wins: "Great collaboration on yesterday is model review, Rajesh and Meera!" Positive reinforcement rebuilds trust. By Week 2, the conflict should be resolved AND the team stronger.',
+            '',
+            '🚫 Common Mistakes to Avoid:',
+            '• Taking sides: "Rajesh, you were too harsh." Result: Rajesh feels attacked, shuts down. Solution: Stay neutral, focus on SYSTEMS (feedback norms), not blame.',
+            '• Public mediation: Trying to resolve the conflict in a team meeting. Result: Both feel embarrassed, conflict escalates. Solution: Private conversations first, joint meeting only after you understand both sides.',
+            '• Ignoring power dynamics: Treating Rajesh (senior) and Meera (junior) as equals. Result: Meera feels intimidated, does not speak up. Solution: Acknowledge the dynamic, ensure Meera feels safe to share her perspective.',
+            '• No systemic fix: Resolve this conflict but do not address root causes (no training, harsh feedback culture). Result: Same conflict happens with the next junior analyst. Solution: Create SYSTEMS (mentoring, feedback norms).',
+            '• Assuming it is fixed: Mediate once, move on. Result: Conflict resurfaces under deadline pressure. Solution: Follow up weekly, reinforce positive behavior, adjust systems as needed.'
           ],
           successCriteria: [
-            'You resolve workplace conflicts without damaging professional relationships',
-            'You maintain team productivity and morale during difficult times',
-            'You help teams reach decisions that benefit the organization',
-            'You handle difficult conversations with professionalism and respect',
-            'You prevent conflicts from escalating and affecting broader teams',
-            'You build trust and credibility as a conflict resolution expert',
-            'You create processes that prevent future workplace conflicts',
-            'You develop a reputation as someone who can handle difficult situations'
+            '✅ Both Rajesh and Meera agree to the joint meeting and proposed solutions',
+            '✅ You identify 3-4 root causes (training gaps, feedback norms, communication issues)',
+            '✅ The team creates documented systems: mentoring plan, feedback norms, quality checklist',
+            '✅ The project is delivered on time with no errors (work quality maintained)',
+            '✅ Rajesh and Meera is working relationship improves (they collaborate professionally)',
+            '✅ Your manager gives positive feedback: "You handled that conflict maturely and professionally"',
+            '✅ You are seen as a trusted mediator (colleagues come to you with future conflicts)',
+            '✅ You feel confident navigating workplace conflicts (skill built for your career)'
           ]
         },
         personal: {
           title: 'Personal Conflict Resolution',
-          description: 'Resolve conflicts in personal relationships, family, and social situations',
+          description: 'Your two close friends, Rohan and Priya, are in a fight and both are venting to you separately. Rohan: "Priya is so flaky. She canceled our weekend trip last minute AGAIN." Priya: "Rohan does not understand I have family obligations. He is being selfish." They have stopped talking to each other. Your friend group (5 people) is now awkward - people are taking sides. You are caught in the middle. You need to mediate before the friend group falls apart.',
           instructions: [
-            'Family dynamics: Navigate generational differences and family expectations',
-            'Friendship conflicts: Address issues without losing important relationships',
-            'Romantic relationships: Handle disagreements and communication breakdowns',
-            'Social group dynamics: Manage conflicts in friend groups and social circles',
-            'Neighbor disputes: Resolve issues with neighbors and community members',
-            'Financial conflicts: Handle money-related disagreements with family and friends',
-            'Lifestyle differences: Navigate conflicts about values and life choices',
-            'Social media conflicts: Handle online disagreements and digital drama',
-            'Personal boundaries: Establish and maintain healthy relationship boundaries',
-            'Emotional support: Help others through their conflicts and difficult times'
+            '1. Stay Neutral - Do NOT Take Sides (Day 1, immediate): When Rohan vents: "That sounds really frustrating. Have you talked to Priya about how this affects you?" When Priya vents: "I can see you are in a tough spot. Have you explained your family situation to Rohan?" Do NOT say: "You are right, Priya is flaky" or "Rohan is being unreasonable." Taking sides = losing a friend. Your role: MEDIATOR, not judge. Validate feelings without agreeing with blame.',
+            '2. Listen to Both Sides Separately (Day 1-2, 1 hour each): Meet Rohan for coffee. Ask: "What is really bothering you about this situation?" Listen: "I feel like Priya does not value our friendship. I planned this trip for months." Paraphrase: "So you feel disrespected and like your time was not valued." Meet Priya separately. Ask: "What is going on from your perspective?" Listen: "My parents needed me. Rohan does not understand family comes first for me." Paraphrase: "You feel torn between family obligations and friendships." Take mental notes - you are gathering intel.',
+            '3. Identify the REAL Problem (Day 2, 30 mins alone): The fight is NOT "flaky" vs "selfish." ROOT CAUSES: (1) Different values (Rohan values commitment to plans; Priya values family flexibility). (2) Communication breakdown (Priya canceled last minute without explaining WHY; Rohan reacted emotionally without asking). (3) Unmet expectations (Rohan expected Priya to prioritize the trip; Priya expected Rohan to understand family emergencies). (4) No conflict resolution process (they stopped talking instead of discussing). These are the REAL issues.',
+            '4. Facilitate a Conversation (Day 3, 1.5 hours): Invite both to a neutral location (café, park). Start: "I care about both of you and hate seeing you fight. Can we talk this through?" Set ground rules: (1) No interrupting, (2) Use "I feel" statements (not "You always"), (3) Assume positive intent. Let Rohan speak first: "I feel hurt when plans are canceled last minute because I put a lot of effort into planning." Then Priya: "I feel torn when family emergencies happen because I do not want to let anyone down." Help them find common ground: "You both value the friendship. You both want to feel respected. Let us build from there."',
+            '5. Find a Win-Win Solution (During conversation, 30 mins): Brainstorm together: (a) Priya will communicate earlier if she anticipates conflicts (24-hour notice minimum), (b) Rohan will be more flexible with family emergencies (understanding, not resentment), (c) They will have a "check-in" 3 days before big plans to confirm, (d) If someone cancels, they propose an alternative date immediately (shows commitment). Both agree. Write it down in a group chat message so everyone is on the same page.',
+            '6. Rebuild the Friend Group (Week 1-2): After Rohan and Priya reconcile, address the group dynamic. Group message: "Hey everyone, Rohan and Priya worked things out. Let us all hang out this weekend - no drama, just good vibes." Plan a low-key activity (movie night, dinner). Celebrate the resolution: "I am proud of how maturely Rohan and Priya handled this." Positive reinforcement prevents future side-taking. By Week 2, the friend group should be back to normal.',
+            '',
+            '🚫 Common Mistakes to Avoid:',
+            '• Taking sides: "Priya, you ARE flaky. Rohan is right." Result: Priya feels betrayed, you lose a friend. Solution: Stay neutral, validate BOTH perspectives.',
+            '• Playing messenger: Rohan: "Tell Priya she is flaky." You to Priya: "Rohan says you are flaky." Result: You amplify the conflict. Solution: "Have you told Priya directly how you feel? I think you two should talk."',
+            '• Forcing reconciliation: "You both need to apologize and move on." Result: Forced apologies are insincere, resentment lingers. Solution: Facilitate understanding first, apologies come naturally after.',
+            '• Ignoring the conflict: "They will work it out eventually." Result: Friend group fractures, you lose both friends. Solution: Proactively mediate before the conflict escalates.',
+            '• No follow-up: Mediate once, assume it is fixed. Result: Next time Priya cancels, the fight reignites. Solution: Check in after 1-2 weeks, reinforce the new communication norms.'
           ],
           successCriteria: [
-            'You maintain healthy relationships even after disagreements',
-            'You communicate your needs and boundaries clearly and respectfully',
-            'You help others resolve their conflicts without taking sides',
-            'You prevent small issues from damaging important relationships',
-            'You create an environment where people feel safe to express themselves',
-            'You handle emotional situations with empathy and understanding',
-            'You build stronger relationships through effective conflict resolution',
-            'You develop emotional intelligence and interpersonal skills'
+            '✅ Both Rohan and Priya agree to meet and talk (de-escalation successful)',
+            '✅ You stay neutral throughout - neither friend feels you took sides',
+            '✅ They identify the root causes (different values, communication breakdown) together',
+            '✅ They create a documented agreement (24-hour notice, flexibility, check-ins)',
+            '✅ The friend group dynamic returns to normal within 2 weeks (no lingering awkwardness)',
+            '✅ Rohan and Priya thank you: "We would not have worked this out without you"',
+            '✅ You feel confident mediating future friend conflicts (skill built)',
+            '✅ Your friendships with BOTH Rohan and Priya are stronger (trust deepened)'
           ]
         }
       }
@@ -1787,41 +1821,209 @@ At project start, agree: 'If we have a conflict, we will (1) Take a 24-hour cool
     emoji: '🎯',
     context: 'professional' as const,
     discover: {
-      scenario: 'You need to present your startup idea to potential investors, but you\'re struggling to create a compelling presentation that captures their attention and convinces them to invest. You have great ideas but don\'t know how to present them effectively.',
+      scenario: 'You have been selected to present your B.Com final year project "AI in Financial Forecasting" at an inter-college competition. Prize: ₹50,000 + internship at a top firm. Format: 10-minute presentation + 5-minute Q&A. Judges: 3 industry experts + 2 professors. You have solid research, but your current slides are 25 text-heavy PowerPoint slides with bullet points. Last year is winner had 8 visually stunning slides and told a compelling story. You have 1 week to transform your presentation from "boring academic report" to "engaging visual story" that wins.',
       problemExplanation: [
-        'Lack of confidence in presenting to high-stakes audiences',
-        'Difficulty organizing complex information into a clear narrative',
-        'Not knowing how to engage and persuade different types of audiences',
-        'Struggling with visual design and presentation aesthetics',
-        'Uncertainty about handling questions and objections effectively',
-        'Fear of public speaking and performance anxiety'
+        '📊 Death by PowerPoint: Your slides are paragraphs of text (50+ words per slide). Judges will READ your slides instead of LISTENING to you. Result: They zone out, miss your key insights. Rule: If your slides can stand alone without you, you are doing it wrong. Slides should SUPPORT you, not REPLACE you.',
+        '📖 No Story Arc: Your presentation is a data dump: "Introduction, Literature Review, Methodology, Results, Conclusion." This is a REPORT structure, not a STORY structure. Humans remember stories, not bullet points. Without a narrative arc (problem → journey → solution), judges forget your content in 10 minutes.',
+        '🎨 Visual Illiteracy: You used default PowerPoint templates, clipart, and 5 different fonts. Result: Looks unprofessional and distracting. Visual design is NOT decoration - it is COMMUNICATION. Poor design = "This person does not care about quality." Great design = "This person is detail-oriented and professional."',
+        '🎯 Unclear Value Proposition: You explain WHAT you did (built an AI model) and HOW (used Python + TensorFlow), but not WHY IT MATTERS. Judges think: "So what? Why should I care?" You need to lead with IMPACT: "This AI model can reduce forecasting errors by 40%, saving companies ₹10 lakhs annually."',
+        '⏱️ Poor Time Management: You have 25 slides for 10 minutes = 24 seconds per slide. You will either rush (audience confused) or run over time (judges cut you off mid-conclusion). Winning presentations: 1 slide per minute MAX. Quality > Quantity.',
+        '❓ Weak Q&A Preparation: You focused 100% on your presentation, 0% on anticipating questions. Judges WILL ask: "What are the limitations?" "How is this different from existing models?" "What is the business case?" If you fumble Q&A, you lose - even if your presentation was great.'
       ],
       solutionApproach: [
-        'Master the art of storytelling to create compelling narratives',
-        'Develop visual design skills to create impactful presentations',
-        'Build confidence through practice and preparation techniques',
-        'Learn to adapt your message for different audiences and contexts',
-        'Develop skills in handling Q&A sessions and difficult questions',
-        'Create a personal presentation style that feels authentic and engaging'
+        '📚 The Story Spine Framework: Transform your report into a story. Structure: (1) HOOK (30 sec): "Companies lose ₹100 crores annually due to bad financial forecasts. What if AI could fix this?" (2) PROBLEM (2 min): Why current forecasting fails. (3) SOLUTION (5 min): Your AI model + how it works. (4) IMPACT (2 min): Results + business value. (5) CLOSE (30 sec): Call-to-action. This structure = memorable.',
+        '🎨 The 1-6-6 Slide Rule: 1 slide = 1 idea. Max 6 words per line. Max 6 lines per slide. If you cannot fit your idea in this constraint, split into 2 slides. Use VISUALS (charts, diagrams, images) instead of text. Your mouth explains, your slides illustrate. Example: Instead of "Our model achieved 92% accuracy," show a visual comparison chart.',
+        '🖼️ Visual Hierarchy Mastery: Use the 3-tier hierarchy: (1) TITLE (largest, bold, tells the slide is message), (2) VISUAL (chart/diagram, center focus), (3) SUPPORTING TEXT (smallest, minimal, bottom). Color psychology: Blues = trust/professionalism, Greens = growth/success, Reds = urgency/warning. Consistent fonts (max 2), consistent colors (3-color palette).',
+        '💡 Lead with Impact, Not Method: Restructure every slide to answer: "Why should judges care?" Bad slide title: "Methodology: LSTM Neural Networks." Good slide title: "40% More Accurate Than Traditional Models." Put the BENEFIT first, technical details second. Judges care about OUTCOMES, not just process.',
+        '⏱️ The 10-Slide Maximum: For a 10-minute presentation, create 8-10 slides MAX. Breakdown: (1) Title, (2) Hook/Problem, (3-4) Current situation, (5-7) Your solution, (8) Results/Impact, (9) Next steps, (10) Thank you + Q&A. Spend 1 minute per slide. Practice with a timer until you nail the pacing.',
+        '🛡️ Q&A Armor: Anticipate 10 likely questions. For your AI project: "What data did you use?" "How does it compare to existing models?" "What are limitations?" "What is the business case?" "Can this scale?" Prepare 2-3 sentence answers. Practice the "Pause-Paraphrase-Answer" technique. If stumped: "Great question. I do not have that data with me, but I would be happy to follow up." Honesty > Bluffing.'
       ]
     },
     video: {
-      title: 'Master Presentation Skills: From Ideas to Impact',
-      duration: 13,
+      title: 'From Death by PowerPoint to Visual Storytelling: Presentation Skills for B.Com Students',
+      duration: 8,
+      script: `[0:00-0:45] WHY YOUR PRESENTATIONS ARE BORING (And How to Fix It)
+
+"You spent 40 hours on your B.Com project. You have brilliant insights. But your presentation? 25 slides of bullet points. The audience? Asleep by Slide 3. Here is the brutal truth: Your content is NOT the problem. Your DELIVERY is. 95% of student presentations fail because they commit the same sin: Death by PowerPoint. Text-heavy slides, no story, boring design. By the end of this video, you will have a proven system to transform your presentations from 'forgettable report' to 'winning story.' Let us fix this."
+
+[0:45-2:15] THE STORY SPINE FRAMEWORK (Structure That Wins)
+
+"Forget the academic structure (Intro, Literature Review, Methodology, Results, Conclusion). That is a REPORT, not a PRESENTATION. Humans remember STORIES, not data dumps. Here is the winning structure:
+
+THE 5-ACT STORY SPINE:
+
+ACT 1: THE HOOK (30 seconds)
+Start with a BANG. Not: 'Hello, I am Priya. Today I will present my project on AI in finance.'
+YES: 'Companies lose ₹100 crores annually due to bad financial forecasts. What if AI could fix this?'
+Why this works: You created a problem that MATTERS. The audience thinks: 'Tell me more.'
+
+ACT 2: THE PROBLEM (2 minutes)
+Paint the current situation. Example: 'Traditional forecasting models fail because: (1) They ignore market volatility, (2) They rely on outdated data, (3) They cannot adapt to black swan events. Result: Companies make bad decisions, lose money.'
+Use VISUALS: Show a chart of failed forecasts. Show real-world examples (2008 crisis, COVID-19).
+
+ACT 3: THE SOLUTION (5 minutes)
+Introduce YOUR work. 'I built an AI model using LSTM neural networks that: (1) Processes real-time data, (2) Adapts to market changes, (3) Reduces errors by 40%.'
+Break this into 3 sub-slides: (a) How it works (simple diagram), (b) Key features (3 bullet points MAX), (c) Demo/example (show it in action).
+
+ACT 4: THE IMPACT (2 minutes)
+Show RESULTS. Not just: 'Accuracy improved to 92%.' YES: 'This model can save companies ₹10 lakhs annually. It has been tested on 5 years of market data. Here is the comparison.' (Show before/after chart)
+
+ACT 5: THE CLOSE (30 seconds)
+End with a CALL TO ACTION. 'This AI model is ready for real-world testing. I am seeking partnerships with financial firms. Let us revolutionize forecasting together.'
+Why this works: You gave them a NEXT STEP, not just 'Thank you for listening.'
+
+This structure = memorable. Practice it for ANY presentation."
+
+[2:15-3:45] THE 1-6-6 SLIDE RULE (Visual Design That Works)
+
+"Your slides should SUPPORT you, not REPLACE you. Here is the rule:
+
+1 SLIDE = 1 IDEA
+If you have 2 ideas, make 2 slides. Do not cram.
+
+MAX 6 WORDS PER LINE
+Not: 'Our AI model uses Long Short-Term Memory neural networks to process sequential financial data.'
+YES: 'AI Model: 40% More Accurate'
+Your MOUTH explains the details. Your SLIDE shows the headline.
+
+MAX 6 LINES PER SLIDE
+If you cannot fit your idea in 6 lines, you need a visual (chart, diagram, image) instead.
+
+EXAMPLES:
+Bad Slide:
+Title: Methodology
+• We used Python 3.8 with TensorFlow 2.0
+• Data: 5 years of NSE stock prices (2018-2023)
+• Model: LSTM with 3 hidden layers, 128 neurons each
+• Training: 80/20 split, 100 epochs, Adam optimizer
+• Validation: 10-fold cross-validation
+Result: Boring. Audience reads, does not listen to you.
+
+Good Slide:
+Title: Built with Industry-Standard Tools
+Visual: Python logo + TensorFlow logo + NSE chart
+Text: '5 Years of Market Data | 92% Accuracy'
+Result: Clean. Audience looks at you for details.
+
+Practice: Take your current slides. Delete 50% of the text. Replace with visuals. You will be amazed."
+
+[3:45-5:15] VISUAL HIERARCHY + COLOR PSYCHOLOGY (Design That Communicates)
+
+"Design is NOT decoration. Design is COMMUNICATION. Here is the formula:
+
+THE 3-TIER VISUAL HIERARCHY:
+TIER 1: TITLE (Largest, Bold, Top)
+Your title should tell the slide is message. Not: 'Results.' YES: '40% Error Reduction in 6 Months.'
+
+TIER 2: VISUAL (Center, Dominant)
+Chart, diagram, image, or icon. This is the FOCUS. Make it big, clear, high-quality.
+
+TIER 3: SUPPORTING TEXT (Smallest, Bottom)
+Minimal. 1-2 lines max. Example: 'Tested on 10,000+ data points | 95% confidence interval'
+
+COLOR PSYCHOLOGY (Choose Wisely):
+- BLUE: Trust, professionalism, stability (Finance, Corporate, Academic)
+- GREEN: Growth, success, money (Business results, Profit, Sustainability)
+- RED: Urgency, warning, attention (Problems, Risks, Alerts)
+- GRAY: Neutral, background, supporting info
+
+Your Color Palette: Pick 3 colors MAX.
+Example: Dark Blue (primary), Light Blue (secondary), Orange (accent for key points).
+Use these CONSISTENTLY across all slides.
+
+FONT RULES:
+- MAX 2 fonts: One for titles (bold, sans-serif like Arial), one for body (clean, readable).
+- MIN 24pt font size (anything smaller = unreadable from back of room).
+- Avoid: Comic Sans, Papyrus, decorative fonts (unprofessional).
+
+Practice: Redesign 1 slide using this hierarchy. Before/After difference will blow your mind."
+
+[5:15-6:30] LEAD WITH IMPACT, NOT METHOD (What Judges Actually Care About)
+
+"Biggest mistake: Leading with HOW instead of WHY.
+
+BAD SLIDE FLOW:
+Slide 1: Methodology
+Slide 2: Data Collection
+Slide 3: Model Architecture
+Slide 4: Training Process
+Slide 5: Results (finally!)
+Problem: Judges are asleep by Slide 3. They do not care about HOW until they care about WHY.
+
+GOOD SLIDE FLOW:
+Slide 1: The Problem (₹100 crore lost annually)
+Slide 2: Current Solutions Fail (show failed forecasts)
+Slide 3: Our Solution: 40% More Accurate (lead with RESULT)
+Slide 4: How It Works (now they care about method)
+Slide 5: Business Impact (₹10L savings)
+
+REFRAME EVERY SLIDE TITLE:
+Instead of: 'Methodology: LSTM Neural Networks'
+Write: '40% More Accurate Than Traditional Models'
+
+Instead of: 'Data Collection Process'
+Write: '5 Years of Real Market Data'
+
+Instead of: 'Results and Analysis'
+Write: 'Proven: ₹10 Lakh Annual Savings'
+
+Put the BENEFIT first, technical details second. Judges care about OUTCOMES, not just process."
+
+[6:30-7:45] THE 10-SLIDE MAXIMUM + Q&A ARMOR
+
+"For a 10-minute presentation: 8-10 slides MAX. Here is the breakdown:
+
+SLIDE 1: Title + Your Name
+SLIDE 2: Hook (The Problem)
+SLIDE 3: Why It Matters (Impact/Cost)
+SLIDE 4: Current Solutions Fail
+SLIDE 5: Your Solution (Overview)
+SLIDE 6: How It Works (Simple Diagram)
+SLIDE 7: Results (Charts/Data)
+SLIDE 8: Business Impact (₹ Savings)
+SLIDE 9: Next Steps (Call to Action)
+SLIDE 10: Thank You + Q&A
+
+1 minute per slide. Practice with a timer until you nail the pacing.
+
+Q&A PREPARATION (This Wins or Loses):
+Anticipate 10 questions for YOUR project:
+1. What data did you use?
+2. How does this compare to existing models?
+3. What are the limitations?
+4. What is the business case/ROI?
+5. Can this scale to other industries?
+6. What are the risks?
+7. How long did this take?
+8. What is next for this project?
+9. How did you validate your results?
+10. What did you learn?
+
+Prepare 2-3 sentence answers. Practice the Pause-Paraphrase-Answer technique:
+Q: 'What are the limitations?'
+A: [Pause 2 sec] 'Great question. The main limitation is that the model requires 3+ years of historical data to train effectively. For new companies or markets, we would need alternative approaches. We are exploring transfer learning as a solution.'"
+
+[7:45-8:00] YOUR CHALLENGE (Transform Your Presentation NOW)
+
+"Here is your action step: Take your current presentation. Do this:
+1. Cut your slides in HALF (25 slides → 10 slides).
+2. Delete 50% of text on EACH slide. Replace with visuals.
+3. Rewrite EVERY slide title to lead with IMPACT, not method.
+4. Create a 3-color palette and apply consistently.
+5. Practice with a timer: 1 minute per slide.
+
+Do this transformation in 1 week. Present to a friend. Ask: 'Was this engaging or boring?' If boring, iterate. By Week 2, you will have a presentation that WINS. Presentation skills are a SKILL, not talent. You build them through design + practice + storytelling. Now go transform your slides. Your future self - the one who wins competitions, lands internships, impresses employers - is counting on you."
+
+[End Screen: "Next: Module 1 Assessment - Test Your Communication Mastery"]`,
       content: [
-        'The Power of Storytelling: How to structure presentations that captivate audiences',
-        'Visual Design Mastery: Creating slides that enhance rather than distract',
-        'Audience Analysis: Understanding your audience and tailoring your message',
-        'Confidence Building: Techniques to overcome nervousness and project authority',
-        'Body Language and Voice: Using non-verbal communication to enhance your message',
-        'Engagement Strategies: Interactive elements and techniques to keep audiences engaged',
-        'Data Visualization: Presenting complex information in clear, compelling ways',
-        'Handling Q&A Sessions: Preparation techniques and graceful responses',
-        'Technology Mastery: Using presentation tools and handling technical issues',
-        'Cultural Considerations: Adapting presentations for diverse audiences',
-        'Crisis Management: Recovering from mistakes and handling unexpected situations',
-        'Personal Branding: Developing your unique presentation style and voice',
-        'Practice and Preparation: Rehearsal techniques that build confidence and competence'
+        'The 5-Act Story Spine: Hook, Problem, Solution, Impact, Close (not academic report structure)',
+        'The 1-6-6 Slide Rule: 1 slide = 1 idea, max 6 words/line, max 6 lines/slide',
+        'Visual Hierarchy: Title (largest), Visual (center focus), Supporting text (minimal)',
+        'Color Psychology: Blue (trust), Green (growth), Red (urgency) - pick 3 colors max',
+        'Lead with Impact: Reframe slides to show BENEFIT first, method second',
+        'The 10-Slide Maximum: 1 minute per slide for 10-minute presentations',
+        'Q&A Preparation: Anticipate 10 questions, prepare 2-3 sentence answers',
+        'Design Principles: Max 2 fonts, min 24pt size, high-quality visuals'
       ]
     },
     quiz: {
@@ -1829,38 +2031,63 @@ At project start, agree: 'If we have a conflict, we will (1) Take a 24-hour cool
       questions: [
         {
           id: 26,
-          question: 'What is the most important element of a successful presentation?',
-          options: ['Perfect slides', 'Knowing your audience', 'Speaking loudly', 'Using lots of data'],
+          question: 'You have 25 slides for a 10-minute B.Com project presentation. The judges look bored by Slide 5. What is your main problem?',
+          options: [
+            'Your content is not interesting enough',
+            'You have too many slides - you should have 8-10 slides MAX (1 minute per slide)',
+            'You need to speak faster to cover all slides',
+            'The judges are just not paying attention'
+          ],
           correct: 1,
-          explanation: 'Knowing your audience allows you to tailor your message and delivery for maximum impact.'
+          explanation: 'Option 2 is correct. The 10-Slide Maximum rule: For a 10-minute presentation, create 8-10 slides MAX (1 minute per slide). 25 slides = 24 seconds per slide = you either rush (audience confused) or run over time (get cut off). Quality > Quantity. Judges zone out when you rapid-fire through slides. Option 1 blames content (likely not the issue). Option 3 (speak faster) makes it worse - audience cannot process. Option 4 ignores the real problem. Solution: Cut slides in half, spend more time on each, go deeper not wider.'
         },
         {
           id: 27,
-          question: 'How should you structure your presentation?',
-          options: ['Tell them what you\'ll tell them, tell them, tell them what you told them', 'Start with data', 'End with questions', 'Use only bullet points'],
-          correct: 0,
-          explanation: 'The classic structure: introduction, body, conclusion helps audiences follow and remember your message.'
+          question: 'Which slide design follows the 1-6-6 Rule (1 idea, max 6 words/line, max 6 lines)?',
+          options: [
+            'Title: Methodology | Bullet points: We used Python 3.8 with TensorFlow 2.0 to build an LSTM neural network model with 3 hidden layers...',
+            'Title: 40% More Accurate Than Traditional Models | Visual: Comparison chart | Text: Tested on 5 years of data',
+            'Title: Introduction | 15 bullet points explaining your entire project',
+            'Title: Results | Full paragraph of text explaining all your findings'
+          ],
+          correct: 1,
+          explanation: 'Option 2 is the winner. It follows the 1-6-6 Rule: (1) ONE idea (accuracy improvement), (2) Title has 6 words, (3) Supporting text is minimal (6 words). The VISUAL (chart) does the heavy lifting. Your MOUTH explains the details. Option 1 violates the rule (too much text, multiple ideas). Option 3 (15 bullets) is Death by PowerPoint. Option 4 (paragraph) means audience reads instead of listens. Rule: If your slides can stand alone without you, you are doing it wrong. Slides SUPPORT you, they do not REPLACE you.'
         },
         {
           id: 28,
-          question: 'What is the best way to handle nervousness before a presentation?',
-          options: ['Avoid practicing', 'Practice extensively and prepare thoroughly', 'Wing it', 'Read from notes'],
-          correct: 1,
-          explanation: 'Thorough preparation and practice build confidence and reduce nervousness.'
+          question: 'You are presenting your Financial Analysis project. Which opening is MOST effective?',
+          options: [
+            '"Hello everyone. My name is Rahul. Today I will present my project on financial ratio analysis. Let me start with the introduction..."',
+            '"Financial ratio analysis is a very important topic in accounting and finance that helps companies understand their performance..."',
+            '"In 2023, 40% of Indian startups failed due to poor financial planning. Today, I will show you the 3 ratios that could have saved them."',
+            '"Good morning. I have prepared a comprehensive presentation covering all aspects of financial ratio analysis. Let us begin with the definition..."'
+          ],
+          correct: 2,
+          explanation: 'Option 3 is the HOOK that wins. It uses: (1) Shocking stat (40% failed), (2) Relevance (startups = relatable), (3) Promise of value (3 ratios that save companies), (4) Curiosity gap (which ratios?). This hijacks attention in 10 seconds. Option 1 is generic and boring. Option 2 is vague ("very important" = weak language). Option 4 is a data dump threat ("comprehensive" = "I will bore you for 10 minutes"). Rule: Your opening should make the audience think "I NEED to hear this" not "Oh no, another boring presentation." Lead with IMPACT, not introduction.'
         },
         {
           id: 29,
-          question: 'How much text should you put on each slide?',
-          options: ['As much as possible', '7 words or less', 'Full sentences', 'No text at all'],
+          question: 'Your slide has this title: "Methodology: Data Collection and Analysis Process." How should you REFRAME it to lead with impact?',
+          options: [
+            'Keep it as is - methodology is important',
+            '"5 Years of Real Market Data: 10,000+ Transactions Analyzed"',
+            '"Data Collection: A Comprehensive Overview"',
+            '"Methodology Section"'
+          ],
           correct: 1,
-          explanation: 'Minimal text (7 words or less) keeps slides clean and forces you to speak, not read.'
+          explanation: 'Option 2 leads with IMPACT. It tells judges: (1) Scale (5 years, 10,000+ transactions), (2) Quality (real market data), (3) Credibility (comprehensive analysis). This is interesting. Option 1 ("Methodology") is boring - judges do not care about process until they care about results. Option 3 adds "comprehensive" but is still process-focused. Option 4 is even more generic. Rule: Reframe every slide title to answer "Why should I care?" Put the BENEFIT first (credibility, scale, quality), technical details second. Judges remember outcomes, not methods.'
         },
         {
           id: 30,
-          question: 'What should you do if you make a mistake during a presentation?',
-          options: ['Stop and apologize', 'Continue as if nothing happened', 'Acknowledge it briefly and move on', 'Ask the audience what to do'],
+          question: 'During Q&A, a judge asks: "What are the limitations of your AI model?" You did NOT prepare for this question. What should you do?',
+          options: [
+            'Bluff: "There are no major limitations. The model is quite robust."',
+            'Panic: "Um... I... I am not sure. I did not think about that."',
+            'Pause 2 seconds, then: "That is an excellent question. The main limitation I have identified is that the model requires 3+ years of historical data. For newer companies, we would need alternative approaches. I am exploring transfer learning as a potential solution."',
+            'Deflect: "That is outside the scope of this presentation."'
+          ],
           correct: 2,
-          explanation: 'Briefly acknowledge mistakes and continue - audiences are more forgiving than you think.'
+          explanation: 'Option 3 is the professional response. It uses the Pause-Paraphrase-Answer technique: (1) PAUSE (2 sec - shows you are thinking, not bluffing), (2) ACKNOWLEDGE ("excellent question" - shows respect), (3) ANSWER honestly (admits limitation), (4) SHOW AWARENESS (exploring solutions). This demonstrates intellectual humility and critical thinking - judges RESPECT this. Option 1 (bluffing) is dangerous - if judges know the answer, you lose all credibility. Option 2 (panic) shows lack of preparation. Option 4 (deflect) sounds defensive. Rule: Honesty + Awareness > Bluffing. Every model has limitations - acknowledging them shows maturity.'
         }
       ]
     },
@@ -1870,80 +2097,95 @@ At project start, agree: 'If we have a conflict, we will (1) Take a 24-hour cool
       contexts: {
         academic: {
           title: 'Academic Presentation Excellence',
-          description: 'Excel in academic presentations, research presentations, and scholarly communication',
+          description: 'You are presenting your B.Com final year project "Blockchain in Supply Chain Finance" at an inter-college competition. Prize: ₹50,000 + internship. Format: 10 minutes + Q&A. Judges: 3 industry experts + 2 professors. Your current presentation: 25 text-heavy slides. You have 1 week to transform it into a visually stunning, story-driven presentation that WINS.',
           instructions: [
-            'Research presentation structure: Organize complex academic content clearly',
-            'Visual design for academia: Create slides that support scholarly communication',
-            'Data presentation: Present research findings and statistical analysis effectively',
-            'Audience engagement: Keep academic audiences engaged and interested',
-            'Q&A handling: Answer challenging academic questions with confidence',
-            'Time management: Stay within presentation time limits while covering all content',
-            'Citation and credibility: Present sources and evidence professionally',
-            'Collaborative presentations: Work effectively with co-presenters and teams',
-            'Conference presentations: Adapt content for different academic conferences',
-            'Feedback integration: Use audience feedback to improve future presentations'
+            '1. Audit Your Current Slides (Day 1, 1 hour): Open your presentation. Count: How many slides? (If 20+, you need to cut.) How many words per slide? (If 30+, too much text.) How many visuals vs text slides? (If 80% text, you have Death by PowerPoint.) Identify: Which slides can be combined? Which can be deleted? Which need visuals instead of text? Write down the issues - awareness is step 1.',
+            '2. Build the Story Spine (Day 1, 1.5 hours): Restructure using the 5-Act framework. Act 1 (Hook): "₹500 crores lost annually in supply chain fraud. Blockchain can eliminate this." Act 2 (Problem): Why current systems fail (2 slides with visuals). Act 3 (Solution): Your blockchain model (3 slides: overview, how it works, key features). Act 4 (Impact): Results + business value (2 slides with charts). Act 5 (Close): Call-to-action. Total: 8-10 slides. Write the narrative flow BEFORE designing slides.',
+            '3. Design Slide-by-Slide (Day 2-3, 3 hours): Use the 1-6-6 Rule for EACH slide. Slide 1: Title + Your Name + College. Slide 2 (Hook): Title "₹500 Crore Problem" + Visual (fraud statistics chart) + Text (minimal). Slide 3-4 (Problem): Show current system failures with diagrams. Slides 5-7 (Solution): Your blockchain model (simple flowchart, NOT technical jargon). Slide 8 (Impact): Before/after comparison chart. Slide 9 (Next Steps): Partnership opportunities. Slide 10: Thank You + Contact. Design tip: Use Canva or Google Slides templates (professional, not default PowerPoint).',
+            '4. Apply Visual Hierarchy (Day 3, 1 hour): For EACH slide, check: (1) TITLE: Largest, bold, tells the message. Example: "40% Fraud Reduction in 6 Months." (2) VISUAL: Center focus, high-quality chart/diagram/image. (3) TEXT: Minimal, bottom, supporting. Color palette: Pick 3 colors (Dark Blue primary, Light Blue secondary, Orange accent). Use consistently. Fonts: Max 2 (Arial for titles, Calibri for body). Min 24pt size.',
+            '5. Rehearse with Timer (Day 4-5, 2 hours): Practice your presentation with a timer. 1 minute per slide. If you go over 11 minutes, identify which slide to trim or speed up. Practice your TRANSITIONS: "Now that we understand the problem, let me show you the solution..." Smooth transitions = professional flow. Record yourself and watch - note: Are you reading slides? (Bad.) Are you looking at the audience? (Good.) Adjust.',
+            '6. Prepare Q&A (Day 6, 1.5 hours): Write 10 likely questions judges will ask. For Blockchain project: "How is this different from existing blockchain solutions?" "What are implementation costs?" "What are security risks?" "Can this scale?" "What are limitations?" Prepare 2-3 sentence answers with DATA. Practice the Pause-Paraphrase-Answer technique. If stumped: "Great question. I do not have that specific data, but I would be happy to research and follow up."',
+            '7. Final Polish (Day 7, 1 hour): Review every slide: (a) Is the title impact-focused? (b) Is there ONE clear visual? (c) Is text minimal? (d) Are colors consistent? (e) Are fonts readable? Make final tweaks. Practice one last time with timer. Do power pose + 4-7-8 breathing. Visualize success: Judges nodding, audience engaged, you winning.',
+            '8. Competition Day - Execution: Arrive 30 mins early. Test tech (laptop, projector, clicker). Have backup (USB, PDF on phone). Do power pose in restroom (2 mins). Walk in confidently. Deliver your hook with enthusiasm. Make eye contact with all 5 judges. Use hand gestures at chest level. Nail your Q&A. End strong: "Thank you. I am excited to answer your questions." Then OWN the Q&A.',
+            '',
+            '🚫 Common Mistakes to Avoid:',
+            '• Text-heavy slides: 50+ words per slide = audience reads, does not listen to you. Solution: 1-6-6 Rule (max 6 words/line, 6 lines/slide). Replace text with visuals.',
+            '• No story arc: You present in report structure (Intro, Lit Review, Methodology...). Result: Boring, forgettable. Solution: Use Story Spine (Hook, Problem, Solution, Impact, Close).',
+            '• Leading with method: "Methodology: I used Python and TensorFlow..." Result: Judges do not care yet. Solution: Lead with IMPACT: "40% More Accurate Than Traditional Models."',
+            '• Too many slides: 25 slides for 10 minutes = rushed or overtime. Solution: 8-10 slides MAX. Quality > Quantity.',
+            '• Poor visual design: Default templates, clipart, 5 different fonts. Result: Looks unprofessional. Solution: 3-color palette, max 2 fonts, high-quality visuals, consistent design.'
           ],
           successCriteria: [
-            'You present complex academic content in an accessible and engaging way',
-            'You maintain audience attention throughout lengthy academic presentations',
-            'You handle challenging questions with confidence and expertise',
-            'You receive positive feedback from professors and academic peers',
-            'You contribute meaningfully to academic discussions and debates',
-            'You build credibility and recognition in your academic field',
-            'You help others understand complex concepts through clear presentation',
-            'You develop a reputation as an effective academic communicator'
+            '✅ Your presentation is 8-10 slides (not 25+) - focused and impactful',
+            '✅ Each slide follows the 1-6-6 Rule (1 idea, max 6 words/line, 6 lines/slide)',
+            '✅ You use the Story Spine structure (Hook, Problem, Solution, Impact, Close) - memorable',
+            '✅ Your slides are visually stunning (3-color palette, consistent fonts, high-quality visuals)',
+            '✅ You deliver within 10 minutes (±30 seconds) - excellent time management',
+            '✅ You handle Q&A confidently with prepared answers - shows expertise',
+            '✅ Judges give positive feedback: "Excellent presentation design and delivery"',
+            '✅ You WIN the competition or place in top 3 (presentation skills = competitive advantage)'
           ]
         },
         professional: {
           title: 'Professional Presentation Mastery',
-          description: 'Master workplace presentations, client pitches, and business communication',
+          description: 'You are a B.Com intern at an accounting firm. Your manager asks you to present "Q3 Financial Performance Analysis" to 5 partners and 10 senior accountants in 3 days. This is your chance to prove you are full-time offer material. Your current deck: 20 slides of Excel tables and dense text. Partners have 15-minute attention spans. You need to transform this into a compelling business presentation that drives decisions.',
           instructions: [
-            'Business presentation structure: Organize content for maximum business impact',
-            'Client pitch development: Create compelling presentations that win business',
-            'Executive communication: Present to senior leadership and decision-makers',
-            'Sales presentations: Use presentation skills to drive sales and revenue',
-            'Team communication: Present updates, changes, and initiatives to teams',
-            'Crisis communication: Handle difficult presentations during challenging times',
-            'Technology integration: Use presentation tools and technology effectively',
-            'Cross-cultural presentations: Adapt content for diverse business audiences',
-            'Follow-up strategies: Use presentations to drive action and next steps',
-            'Personal branding: Develop your professional presentation style and reputation'
+            '1. Understand Your Audience (Day 1, 1 hour): Research the 5 partners on LinkedIn. What do they care about? (Revenue growth? Cost savings? Client satisfaction?) Ask your manager: "What are the top 3 priorities for leadership right now?" Tailor your presentation to THEIR goals. Example: If they care about profitability, lead with "Q3 Profit Margin Increased 12%." If they care about clients, lead with "Client Retention Hit 95%." Audience-first = impact.',
+            '2. Craft Your Core Message (Day 1, 30 mins): Distill your 50-page report into ONE sentence. Example: "Q3 performance exceeded targets by 15%, driven by cost optimization and new client acquisition." This is your North Star. Every slide should support THIS message. If a slide does not, delete it. Executives want the headline, not the details.',
+            '3. Build the Business Case (Day 1, 2 hours): Use the Problem-Solution-Impact structure. Slide 1: Title. Slide 2: Q3 Goals (what we aimed for). Slide 3: Key Wins (3 major achievements with visuals). Slide 4: Challenges Faced (2 issues + how we addressed them). Slide 5: Financial Highlights (revenue, profit, costs - use charts, NOT tables). Slide 6: Client Metrics (retention, satisfaction, growth). Slide 7: Q4 Priorities (forward-looking). Slide 8: Recommendations (3 action items). Slide 9: Thank You + Questions. Total: 9 slides, 12 minutes (leaves 3 mins for Q&A).',
+            '4. Design for Executives (Day 2, 2 hours): Executives skim. Use the "Glance Test": Can someone understand your slide in 3 seconds? If no, simplify. Replace Excel tables with bar charts. Use icons for concepts (💰 for revenue, 📈 for growth, 👥 for clients). Color palette: Corporate blues/grays (trust, professionalism). Font: 28pt+ (readable from back of room). Each slide: 1 clear visual + 1 impactful title + minimal text.',
+            '5. Lead with Impact (Day 2, 1 hour): Reframe EVERY slide title. Instead of "Q3 Revenue Analysis" → "Revenue Up 18%: ₹2.5 Crore Growth." Instead of "Cost Management Initiatives" → "Cost Savings: ₹40 Lakhs in Q3." Instead of "Client Acquisition Strategy" → "15 New Clients: 25% Growth." Put the RESULT first, details second. Partners care about OUTCOMES, not process.',
+            '6. Rehearse for Executive Presence (Day 3, 1.5 hours): Practice standing (even if virtual). Record video. Watch for: (1) Vocal authority (speak from diaphragm, downward inflection), (2) Confident posture (shoulders back, no fidgeting), (3) Eye contact (look at partners, not slides). Time yourself: 12 minutes max. Practice your opening: "Q3 exceeded targets by 15%. Here is how." Practice your close: "I recommend we double down on cost optimization in Q4. I have prepared a detailed action plan." Confident start + strong close = executive presence.',
+            '7. Prepare for Tough Questions (Day 3, 1 hour): Partners WILL challenge you. Anticipate 10 questions: "Why did costs increase in July?" "What is driving client churn?" "How do we compare to competitors?" "What are Q4 risks?" "What is your recommendation?" Prepare data-backed answers. Practice: "Great question. Costs increased 8% in July due to the new software implementation, but we have seen 15% efficiency gains in August. Net positive." Have backup slides (appendix) with detailed data if they ask.',
+            '8. Presentation Day - Deliver with Confidence: Arrive 15 mins early. Test tech. Bring printed handouts (1-page executive summary). Do power pose in restroom (2 mins). Walk in, greet everyone with eye contact. Start strong: "Q3 exceeded targets by 15%. Let me show you the key drivers." Speak TO the partners (not at your slides). Use pauses for emphasis. End with clear recommendations: "I recommend 3 actions for Q4..." Ask: "What questions do you have?" Then nail the Q&A.',
+            '',
+            '🚫 Common Mistakes to Avoid:',
+            '• Drowning in details: Presenting every data point from your 50-page report. Result: Partners lose interest in 3 minutes. Solution: Focus on TOP 3 insights. Save details for appendix.',
+            '• Excel table slides: Showing raw data tables with 20 rows and 10 columns. Result: Unreadable, boring. Solution: Convert tables to bar charts, pie charts, or highlight key numbers only.',
+            '• Leading with process: "Let me explain our methodology..." Result: Partners do not care about HOW until they care about WHAT. Solution: Lead with RESULTS: "Revenue up 18%."',
+            '• Weak recommendations: Ending with "So that is Q3. Any questions?" Result: No clear next steps. Solution: "I recommend we: (1) Expand cost optimization to 3 more departments, (2) Launch client referral program, (3) Hire 2 more analysts. Here is the ROI..."',
+            '• Fumbling Q&A: Partner asks "What is driving the cost increase?" You panic: "Um... let me check..." Result: Loss of credibility. Solution: Anticipate questions, prepare answers, have backup slides ready.'
           ],
           successCriteria: [
-            'You deliver presentations that drive business results and decisions',
-            'You win clients and business through compelling presentations',
-            'You communicate effectively with all levels of the organization',
-            'You handle difficult questions and objections with professionalism',
-            'You adapt your style to different business contexts and audiences',
-            'You use presentations to advance your career and professional goals',
-            'You build a reputation as an effective business communicator',
-            'You help others improve their presentation skills through mentoring'
+            '✅ Your presentation is 9-12 minutes (leaves time for Q&A) - respects their time',
+            '✅ You use charts/visuals instead of Excel tables - easy to understand',
+            '✅ You lead with RESULTS ("Revenue up 18%") not process - captures attention',
+            '✅ You make eye contact with all 5 partners - shows confidence',
+            '✅ You answer Q&A with data-backed responses - demonstrates expertise',
+            '✅ Partners ask for your detailed action plan (shows they are interested)',
+            '✅ Your manager gives feedback: "You presented like a senior associate, not an intern"',
+            '✅ You receive a full-time offer or promotion discussion (presentation = career advancement)'
           ]
         },
         personal: {
           title: 'Personal Presentation Skills',
-          description: 'Develop presentation skills for personal projects, community involvement, and life events',
+          description: 'You are organizing a fundraiser for an NGO that provides education to underprivileged children. You need to present to 30 potential donors (family friends, local business owners, community members) to raise ₹5 lakhs. Format: 8-minute presentation + Q&A. Your goal: Tell a compelling story that moves people to donate. Your current slides: Facts and statistics. You need to transform this into an emotional, visual story that opens wallets.',
           instructions: [
-            'Personal project presentations: Present your ideas and projects to friends and family',
-            'Community involvement: Present at community meetings and local events',
-            'Wedding speeches: Deliver meaningful speeches at important life events',
-            'Volunteer presentations: Present causes and organizations you care about',
-            'Personal branding: Present yourself effectively in social and professional settings',
-            'Creative presentations: Present artistic and creative projects with confidence',
-            'Educational presentations: Teach others about topics you\'re passionate about',
-            'Social media presentations: Create compelling content for online audiences',
-            'Family presentations: Present important information to family members',
-            'Personal growth: Use presentations as a tool for self-expression and development'
+            '1. Know Your Audience (Week 1, 1 hour): Who are the 30 donors? What motivates them? (Social impact? Tax benefits? Community reputation?) Tailor your message. For business owners: "Every ₹10,000 donation educates 1 child for a year AND qualifies for 50% tax deduction under Section 80G." For parents: "Imagine if YOUR child did not have access to education. 500 children face this reality daily." Audience-first = donations.',
+            '2. Build the Emotional Story Arc (Week 1, 1.5 hours): Use the Hero is Journey structure. Slide 1: Title "Education Changes Lives." Slide 2: Meet Aarav (8-year-old, could not afford school, now top of his class thanks to the NGO - use his PHOTO). Slide 3: The Problem (500 children in your city lack access to education). Slide 4: The Impact (education = escape from poverty - show before/after stories). Slide 5: How the NGO Works (simple flowchart: Donations → Scholarships → Education → Jobs). Slide 6: Success Stories (3 children who succeeded - use PHOTOS). Slide 7: Your Ask (₹5 lakhs goal, breakdown: ₹10K = 1 child/year). Slide 8: How to Donate + Thank You. Total: 8 slides.',
+            '3. Design for Emotion (Week 2, 2 hours): Use HIGH-QUALITY photos of the children (with permission). Faces = connection. Avoid stock photos (fake, disconnected). Color palette: Warm colors (orange, yellow = hope, optimism). Fonts: Friendly but readable (Montserrat, Open Sans). Each slide: 1 powerful image + 1 emotional headline + minimal text. Example: Slide 2 title "Meet Aarav: From Street to Scholar" + large photo of Aarav smiling + text "Your ₹10,000 changed his life."',
+            '4. Practice Your Delivery (Week 2, 1.5 hours): This is NOT a corporate presentation - it is a STORY. Practice your tone: Warm, passionate, authentic (not robotic). Slow down for emotional moments. Pause after showing Aarav is photo (let it sink in). Smile when sharing success stories. Your enthusiasm is contagious. Record yourself: Do you sound passionate or bored? Adjust. Practice your ASK: "I am asking you to invest ₹10,000 in one child is future. That is ₹833 per month - less than your monthly coffee budget. But for Aarav, it is everything."',
+            '5. Prepare for Questions (Week 3, 1 hour): Donors will ask: "How do I know my money is used properly?" (Show transparency: audited financials, donor reports.) "What is the tax benefit?" (Section 80G: 50% deduction.) "Can I visit the school?" (Yes, we organize donor visits quarterly.) "What if I cannot afford ₹10,000?" (Any amount helps - ₹5,000 = books for 10 children.) Prepare honest, transparent answers. Trust = donations.',
+            '6. Create a Follow-Up Plan (Week 3, 30 mins): Prepare: (1) Donation forms (physical + online), (2) Thank-you cards (personalized for each donor), (3) Impact report template (send donors updates on "their" child is progress), (4) Follow-up email (send within 24 hours with donation link + Aarav is story). Make it EASY for people to donate. Friction = lost donations.',
+            '7. Presentation Day - Deliver with Heart: Arrive early, set up tech, test video/photos. Greet donors warmly (handshakes, eye contact). Start with Aarav is story (emotion first, facts second). Show the photos (let people SEE the impact). Make your ask CLEAR: "I am asking each of you to sponsor one child - ₹10,000 for one year of education." Pass around donation forms. End: "Thank you for caring. Together, we can change 50 lives this year." Then answer questions with transparency and passion.',
+            '8. Follow-Up Within 24 Hours: Send thank-you email to ALL attendees (donors and non-donors). Include: (1) Aarav is story (reminder), (2) Donation link (make it easy), (3) Impact breakdown (₹10K = 1 child, ₹5K = books for 10), (4) Transparency (link to audited financials). For donors: Personalized thank-you card + photo of "their" sponsored child. For non-donors: "If you would like to contribute later, here is how." Persistence + gratitude = more donations.',
+            '',
+            '🚫 Common Mistakes to Avoid:',
+            '• Leading with statistics: "There are 500 underprivileged children in our city..." Result: Numbers are abstract, not emotional. Solution: Lead with ONE child is story (Aarav). People donate to PEOPLE, not statistics.',
+            '• No clear ask: Ending with "Please consider donating if you can." Result: Vague = no action. Solution: "I am asking each of you to sponsor one child - ₹10,000 for one year. Here is the form."',
+            '• Poor visuals: Using stock photos or no photos. Result: Disconnected, not authentic. Solution: Use REAL photos of the children (with permission). Faces = emotional connection.',
+            '• No follow-up: Present, collect some donations, never follow up. Result: You lose 50% of potential donors who "need to think about it." Solution: Follow-up email within 24 hours with donation link.',
+            '• Lack of transparency: Not addressing "How do I know my money is used properly?" Result: Donors do not trust you. Solution: Show audited financials, offer school visits, send impact reports.'
           ],
           successCriteria: [
-            'You feel confident presenting in any personal or social setting',
-            'You effectively communicate your ideas and passions to others',
-            'You inspire and motivate others through your presentations',
-            'You build stronger relationships through effective communication',
-            'You use presentations to advance causes and projects you care about',
-            'You develop a personal style that feels authentic and engaging',
-            'You help others by sharing your knowledge and experiences',
-            'You grow personally and professionally through presentation opportunities'
+            '✅ Your presentation uses the Hero is Journey structure (Aarav is story) - emotionally compelling',
+            '✅ You use high-quality photos of real children (not stock photos) - authentic connection',
+            '✅ You make a CLEAR ask: "₹10,000 sponsors one child for one year" - no ambiguity',
+            '✅ You raise ₹3-5 lakhs from the 30 donors (60-100% of goal) - presentation = fundraising success',
+            '✅ At least 15-20 donors contribute (50-66% conversion rate)',
+            '✅ Donors say: "That was so moving. I am happy to help" (emotional impact achieved)',
+            '✅ You send follow-up emails + thank-you cards within 24 hours (professionalism + gratitude)',
+            '✅ You feel proud of making a real difference (presentation skills = social impact)'
           ]
         }
       }
@@ -1992,35 +2234,35 @@ const testAssessment = {
       question: 'What is active listening?',
       options: ['Hearing words', 'Fully engaging with the speaker', 'Taking notes', 'Agreeing with everything'],
       correct: 1,
-      explanation: 'Active listening involves fully engaging with the speaker, not just hearing words.'
+      explanation: 'Active listening is NOT passive hearing - it is FULL ENGAGEMENT. It requires: (1) Focusing 100% on the speaker (no phone, no mental planning of your response), (2) Processing meaning (not just words), (3) Responding with paraphrasing/questions to confirm understanding. In B.Com contexts: Active listening in lectures = 70% better retention. In interviews = understanding the REAL question, not just the surface words. Hearing = passive. Active listening = intentional skill.'
     },
     {
       id: 2,
       question: 'Which of the following is NOT a component of active listening?',
       options: ['Maintaining eye contact', 'Interrupting to show understanding', 'Asking clarifying questions', 'Reflecting on what was said'],
       correct: 1,
-      explanation: 'Interrupting is not part of active listening - it disrupts the speaker\'s flow.'
+      explanation: 'Interrupting is the OPPOSITE of active listening - it disrupts the speaker is flow and signals: "What I have to say is more important than what you are saying." Even if you interrupt to show understanding ("I totally get it!"), you are still hijacking the conversation. Active listening requires: (1) Let them finish completely, (2) Pause 2-3 seconds after they stop (they might add more), (3) THEN paraphrase or ask questions. In group projects, interrupters are seen as poor collaborators. In interviews, interrupting = disrespectful and low emotional intelligence.'
     },
     {
       id: 3,
       question: 'In a job interview, active listening helps you:',
       options: ['Answer questions before they\'re fully asked', 'Understand the interviewer\'s needs better', 'Appear more confident', 'Finish their sentences'],
       correct: 1,
-      explanation: 'Active listening helps you understand the interviewer\'s needs and respond appropriately.'
+      explanation: 'Active listening in interviews is your secret weapon. It helps you: (1) Understand the REAL question (often, interviewers ask about "teamwork" but really want to know about conflict resolution), (2) Tailor your answer to their priorities (if they emphasize "client communication," highlight that in your response), (3) Reference what they said earlier (shows you were listening throughout). Example: "You mentioned the team values adaptability. In my Cost Accounting project, I demonstrated this by..." This proves active listening = higher offer rates.'
     },
     {
       id: 4,
       question: 'What should you do when someone is sharing personal information?',
       options: ['Give immediate advice', 'Listen without judgment', 'Share your similar experience', 'Change the subject'],
       correct: 1,
-      explanation: 'Active listening requires listening without judgment, especially for personal matters.'
+      explanation: 'When someone shares personal struggles, they usually need to be HEARD, not FIXED. Giving immediate advice ("You should just...") dismisses their feelings and makes it about YOUR solution, not THEIR experience. Sharing your experience ("Oh, I felt the same when...") hijacks the conversation and makes it about YOU. Listen without judgment means: (1) Maintain eye contact, (2) Nod to show you are following, (3) Paraphrase to confirm understanding, (4) Ask "Do you want advice, or do you just need to vent?" Only THEN offer thoughts. People remember who made them feel heard.'
     },
     {
       id: 5,
       question: 'Which technique helps ensure you understood correctly?',
       options: ['Nodding your head', 'Paraphrasing what you heard', 'Taking detailed notes', 'Asking many questions'],
       correct: 1,
-      explanation: 'Paraphrasing what you heard confirms your understanding and shows you were listening.'
+      explanation: 'Paraphrasing is the GOLD STANDARD of active listening. It means repeating back what you heard in YOUR words: "So what I am hearing is, you feel overwhelmed by the workload and need better time management strategies. Is that right?" This does 3 things: (1) Confirms you understood correctly (prevents miscommunication), (2) Shows the speaker you were actively processing (not just waiting to talk), (3) Gives them a chance to clarify ("Actually, it is more about the quality standards than workload"). In B.Com group projects, paraphrasing prevents 90% of conflicts. In interviews, it shows emotional intelligence.'
     },
     // Public Speaking Questions (6-10)
     {
@@ -2028,35 +2270,35 @@ const testAssessment = {
       question: 'What is the most important element of public speaking?',
       options: ['Perfect pronunciation', 'Confidence and preparation', 'Loud voice', 'Complex vocabulary'],
       correct: 1,
-      explanation: 'Confidence and preparation are the foundation of effective public speaking.'
+      explanation: 'Confidence and preparation are the foundation. Perfect pronunciation, loud voice, and vocabulary mean NOTHING if you lack confidence (audience senses fear) or preparation (you fumble, forget points, go off-track). Confidence comes from: (1) Knowing your content deeply (not memorizing scripts), (2) Practicing 5+ times (muscle memory), (3) Power posing + breathing exercises (physiological confidence boost). In B.Com presentations, students with average content but high confidence score 15-20% higher than brilliant students with low confidence. Delivery > Content in public speaking.'
     },
     {
       id: 7,
       question: 'How should you handle nervousness before a presentation?',
       options: ['Avoid the presentation', 'Practice and prepare thoroughly', 'Speak faster to get it over with', 'Read directly from slides'],
       correct: 1,
-      explanation: 'Thorough practice and preparation are the best ways to manage presentation nerves.'
+      explanation: 'Nervousness is NORMAL - even Obama felt it. The antidote is preparation, not avoidance. Practice thoroughly means: (1) Rehearse 5+ times out loud (not in your head), (2) Record yourself and watch (painful but effective), (3) Practice in the actual room if possible (familiarity reduces anxiety), (4) Do power poses + 4-7-8 breathing before presenting (calms nervous system). Speaking faster (Option 3) makes you sound panicked. Reading slides (Option 4) makes you look unprepared. Preparation builds confidence, which reduces nervousness. It is a skill, not luck.'
     },
     {
       id: 8,
       question: 'What makes a presentation engaging for Gen Z audiences?',
       options: ['Long, detailed explanations', 'Interactive elements and relatable examples', 'Formal language only', 'Reading from notes'],
       correct: 1,
-      explanation: 'Gen Z audiences respond well to interactive elements and relatable, authentic content.'
+      explanation: 'Gen Z (born 1997-2012) has an 8-second attention span (thanks, TikTok). Long explanations (Option 1) = instant zone-out. Formal language (Option 3) = disconnected and boring. Reading notes (Option 4) = "Why are you even here?" What works: (1) Interactive elements (polls, rhetorical questions, "Raise your hand if..."), (2) Relatable examples (B.Com scenarios: placement stress, group project drama, exam anxiety), (3) Storytelling (humans remember stories 22x better than facts), (4) Authenticity (Gen Z detects fake enthusiasm instantly). Engage, do not lecture.'
     },
     {
       id: 9,
       question: 'Which body language shows confidence during a presentation?',
       options: ['Arms crossed', 'Standing tall with open posture', 'Looking at the floor', 'Fidgeting with hands'],
       correct: 1,
-      explanation: 'Open posture and standing tall project confidence and authority.'
+      explanation: 'Standing tall with open posture signals: "I am confident, approachable, and in control." Specifically: Feet shoulder-width apart (grounded), shoulders back and down (open chest), hands visible at sides or gesturing (not hiding), head up with eye contact (engaged). Crossed arms (Option 1) = defensive/closed-off. Looking at floor (Option 3) = insecure/avoiding. Fidgeting (Option 4) = nervous/unprepared. Your body language is 55% of your communication (Mehrabian study). In B.Com presentations, confident posture can increase your grade by 10-15% even with identical content. Your body speaks before your mouth does.'
     },
     {
       id: 10,
       question: 'What should you do if you make a mistake during a presentation?',
       options: ['Stop and apologize profusely', 'Continue confidently and correct if needed', 'Start over', 'Ignore it completely'],
       correct: 1,
-      explanation: 'Continue confidently and make corrections naturally - most audiences won\'t notice minor mistakes.'
+      explanation: 'Minor mistakes happen to EVERYONE - even TED speakers. The key: How you RESPOND. Option 2 is correct: Pause 2-3 seconds, correct briefly ("Apologies, I meant 40%, not 14%"), then continue confidently. Why this works: (1) Brief pause shows composure, (2) Quick correction shows attention to detail, (3) Moving forward shows confidence. Apologizing profusely (Option 1) draws MORE attention to the mistake. Starting over (Option 3) wastes time and looks unprofessional. Ignoring completely (Option 4) works for tiny slips, but not factual errors. Rule: Acknowledge, correct, move on. The audience will forget the mistake - they will remember your recovery.'
     },
     // Written Communication Questions (11-15)
     {
@@ -2064,71 +2306,71 @@ const testAssessment = {
       question: 'What is the most important aspect of professional email writing?',
       options: ['Using complex vocabulary', 'Clear subject line and concise message', 'Long, detailed explanations', 'Informal language'],
       correct: 1,
-      explanation: 'Professional emails should have clear subject lines and be concise and to the point.'
+      explanation: 'Professors and employers receive 50-100 emails daily. They SKIM, not read. A clear subject line ("Request for Assignment Extension - Priya Sharma") gets opened. A concise message (under 150 words) gets read and acted upon. Complex vocabulary (Option 1) confuses. Long explanations (Option 3) get ignored. Informal language (Option 4) looks unprofessional. The 3-Part Formula: (1) Opening (state purpose in 1 sentence), (2) Body (explain + justify in 2-3 sentences), (3) Closing (thank + sign-off). This structure has an 80%+ response rate for B.Com students requesting extensions, internship follow-ups, or professor meetings.'
     },
     {
       id: 12,
       question: 'How should you structure a professional email?',
       options: ['One long paragraph', 'Greeting, body, closing, signature', 'Just the message', 'Multiple attachments'],
       correct: 1,
-      explanation: 'Professional emails should follow a clear structure: greeting, body, closing, and signature.'
+      explanation: 'Professional email structure: (1) GREETING: "Dear Professor Sharma," (respectful), (2) BODY: State purpose + explain + justify (3-5 sentences MAX), (3) CLOSING: "Thank you for considering my request. Best regards," (4) SIGNATURE: Full name + identifier (B.Com 2nd Year, Roll No. 2023-045). One long paragraph (Option 1) is hard to skim. Just the message (Option 3) is too abrupt and rude. Multiple attachments (Option 4) without context get ignored. This structure works for 90% of professional emails: extension requests, internship follow-ups, meeting requests, clarification questions.'
     },
     {
       id: 13,
       question: 'What tone is most appropriate for workplace communication?',
       options: ['Casual and friendly', 'Professional but approachable', 'Formal and distant', 'Humorous and relaxed'],
       correct: 1,
-      explanation: 'Professional but approachable tone balances professionalism with human connection.'
+      explanation: 'The "Professional-Friendly" sweet spot: Formal enough to show respect, human enough to build connection. Example: "Dear Mr. Kapoor, I am writing to follow up on my internship application. I remain very interested in the opportunity. Thank you." This is NOT too casual (Option 1: "Hey! Hope you are doing great!") or too formal (Option 3: "Esteemed Sir, I humbly beseech..."). Humorous (Option 4) is risky - jokes can backfire. Professional-friendly works for: professor emails, internship follow-ups, manager communications. Test: Would you say this sentence to your professor in person? If no, rewrite it.'
     },
     {
       id: 14,
       question: 'When writing a resume, what should you prioritize?',
       options: ['Length and detail', 'Relevance and impact', 'Creative formatting', 'Personal opinions'],
       correct: 1,
-      explanation: 'Resumes should prioritize relevant experience and quantifiable impact over length.'
+      explanation: 'Recruiters spend 6 seconds scanning your resume (Ladders study). They look for: (1) RELEVANCE (Does this person have the skills we need?), (2) IMPACT (What results did they achieve?). Prioritize: "Increased sales by 30%" over "Responsible for sales activities." Length (Option 1) does not matter - 1-page resume is ideal for B.Com students. Creative formatting (Option 3) can backfire (ATS systems cannot read fancy designs). Personal opinions (Option 4) are irrelevant. Formula: Action Verb + Task + Result. Example: "Analyzed financial statements for 10 companies, identifying ₹5L in cost-saving opportunities." Relevance + Impact = interview calls.'
     },
     {
       id: 15,
       question: 'What makes written communication effective for Gen Z?',
       options: ['Formal language only', 'Authentic voice and clear purpose', 'Long paragraphs', 'Complex sentences'],
       correct: 1,
-      explanation: 'Gen Z values authentic communication that is clear, purposeful, and genuine.'
+      explanation: 'Gen Z values AUTHENTICITY over formality. Effective written communication for Gen Z: (1) Authentic voice (sounds like a real human, not a corporate robot), (2) Clear purpose (state your point in sentence 1, no fluff), (3) Concise (short paragraphs, bullet points, easy to skim), (4) Relatable (use examples they understand: placement stress, internship anxiety, group projects). Formal language only (Option 1) = disconnected. Long paragraphs (Option 3) = TL;DR (too long, did not read). Complex sentences (Option 4) = confusing. Gen Z communication: Be real, be clear, be brief.'
     },
     // Non-Verbal Communication Questions (16-20)
     {
       id: 16,
       question: 'What percentage of communication is non-verbal?',
       options: ['25%', '55%', '70%', '90%'],
-      correct: 2,
-      explanation: 'Research shows that approximately 70% of communication is non-verbal.'
+      correct: 1,
+      explanation: 'The Mehrabian study (UCLA) found: 7% = words, 38% = tone, 55% = body language. Total non-verbal = 93%. Option 2 (55%) is technically body language alone, but the question asks about ALL non-verbal (tone + body), so 93% is closest to Option 3 (70%) in spirit. The key insight: Your WORDS matter only 7%. If you say "I am excited about this opportunity" in a monotone voice while slouching, the interviewer believes your BODY (disinterested), not your words. In B.Com interviews, students with great answers but poor body language get rejected. Students with average answers but confident body language get offers. Non-verbal > Verbal.'
     },
     {
       id: 17,
       question: 'Which body language conveys confidence?',
       options: ['Slouched posture', 'Open posture with shoulders back', 'Arms crossed', 'Looking down'],
       correct: 1,
-      explanation: 'Open posture with shoulders back projects confidence and approachability.'
+      explanation: 'Open posture with shoulders back signals: "I am confident, approachable, and in control." Specifically: (1) Shoulders back and down (not hunched), (2) Chest open (not caved in), (3) Feet shoulder-width apart (grounded), (4) Hands visible (not hiding in pockets). Slouching (Option 1) = low energy/disinterest. Crossed arms (Option 3) = defensive/closed-off. Looking down (Option 4) = insecure/avoiding. In virtual interviews, posture is MAGNIFIED on camera. Slouching looks worse on Zoom. Sit up straight, slight forward lean = engaged and confident. This posture also triggers confidence hormones in YOUR brain (Amy Cuddy research).'
     },
     {
       id: 18,
       question: 'What should you do with your hands during a presentation?',
       options: ['Keep them in pockets', 'Use purposeful gestures', 'Fidget constantly', 'Hide behind back'],
       correct: 1,
-      explanation: 'Purposeful gestures enhance communication and show engagement.'
+      explanation: 'Purposeful gestures at CHEST LEVEL (the "power zone") amplify your message. Examples: "Three key points" = hold up 3 fingers. "Revenue growth" = upward hand motion. "Traditional vs blockchain" = left hand vs right hand. This creates visual + verbal = 2x retention. Hands in pockets (Option 1) = hiding something/insecure. Fidgeting (Option 3) = nervous/unprepared. Hands behind back (Option 4) = formal but disconnected. In B.Com presentations, 5-7 purposeful gestures = engaging. Zero gestures = robotic. 20+ gestures = distracting. Balance is key.'
     },
     {
       id: 19,
       question: 'How should you maintain eye contact in a group setting?',
       options: ['Stare at one person', 'Scan the room naturally', 'Look at the ceiling', 'Avoid eye contact'],
       correct: 1,
-      explanation: 'Natural scanning of the room makes everyone feel included and engaged.'
+      explanation: 'The Triangle Technique: Divide the room into 3 zones (left, center, right). Pick ONE person in each zone. Speak to Person 1 for 3-5 seconds, then Person 2, then Person 3. Rotate throughout your presentation. This creates the illusion you are making eye contact with EVERYONE. Staring at one person (Option 1) = creepy and excludes others. Looking at ceiling (Option 3) = avoiding/nervous. Avoiding eye contact (Option 4) = dishonest/insecure. In Indian professional culture, eye contact = respect + confidence. In B.Com presentations, making eye contact with professors/examiners (not just students) shows respect and can improve your grade by 10-15%.'
     },
     {
       id: 20,
       question: 'What does crossed arms typically communicate?',
       options: ['Confidence', 'Defensiveness or closed-off attitude', 'Relaxation', 'Professionalism'],
       correct: 1,
-      explanation: 'Crossed arms often signal defensiveness or being closed off to communication.'
+      explanation: 'Crossed arms signal: "I am defensive, closed-off, or disagreeing with you." Even if you are just cold or comfortable, the audience interprets it as resistance. Why? Crossed arms create a physical BARRIER between you and others. In conflict resolution, if you cross your arms while someone is venting, they feel judged and shut down. In interviews, crossed arms = "I do not want to be here." In presentations, crossed arms = "I am uncomfortable." Solution: Keep arms at sides or use open gestures. Open posture = approachable, trustworthy, confident. Your body language affects how others perceive you AND how you perceive yourself (embodied cognition).'
     },
     // Conflict Resolution Questions (21-25)
     {
@@ -2136,35 +2378,35 @@ const testAssessment = {
       question: 'What is the first step in resolving workplace conflict?',
       options: ['Assign blame', 'Listen to all parties involved', 'Make a quick decision', 'Avoid the situation'],
       correct: 1,
-      explanation: 'Effective conflict resolution starts with understanding all perspectives through active listening.'
+      explanation: 'The 5-Step Conflict Resolution Framework starts with LISTENING, not judging. Before you can solve a problem, you must UNDERSTAND it. Meet with each party SEPARATELY (not together - that reignites the fight). Ask: "What is frustrating you most?" Then listen 80%, talk 20%. Paraphrase to confirm: "So you feel your contribution was dismissed without fair feedback?" This is NOT agreeing - it is UNDERSTANDING. Assigning blame (Option 1) escalates conflict. Quick decisions (Option 3) without understanding = wrong solutions. Avoiding (Option 4) = conflict festers and explodes later. In B.Com group projects, listening first prevents 90% of team implosions.'
     },
     {
       id: 22,
       question: 'How should you approach a difficult conversation?',
       options: ['Be aggressive', 'Stay calm and focus on facts', 'Avoid the topic', 'Make assumptions'],
       correct: 1,
-      explanation: 'Difficult conversations require calm, fact-based approaches to find solutions.'
+      explanation: 'Difficult conversations require: (1) CALM (emotions high = logic low, so breathe and center yourself first), (2) FACTS (not emotions or assumptions - "The project was submitted 3 days late" not "You are lazy"), (3) "I" statements (not "You" accusations - "I feel concerned about the deadline" not "You never meet deadlines"). Aggressive (Option 1) = escalation. Avoiding (Option 3) = problem worsens. Assumptions (Option 4) = misunderstandings. Example: In a B.Com group project, instead of "You are not pulling your weight," say: "I noticed the research section is incomplete. Can we discuss how to get it done by Friday?" Calm + Facts + "I" statements = productive conversation.'
     },
     {
       id: 23,
       question: 'What is the goal of conflict resolution?',
       options: ['Winning the argument', 'Finding a mutually beneficial solution', 'Proving you\'re right', 'Avoiding confrontation'],
       correct: 1,
-      explanation: 'The goal is finding solutions that work for everyone involved.'
+      explanation: 'Conflict resolution is NOT about winning (Option 1) or proving you are right (Option 3) - it is about finding WIN-WIN solutions where BOTH parties get what they NEED. Example: B.Com group project conflict - Priya wants quality, Arjun wants clarity. Compromise (both lose a little) = both unhappy. Win-Win = Define quality standards TOGETHER (Priya gets assurance) + Set clear expectations (Arjun gets clarity). Both win. Avoiding confrontation (Option 4) = conflict festers. The goal: Transform "Me vs You" into "Us vs Problem." In workplace conflicts, win-win solutions preserve relationships AND solve problems. This skill = leadership potential.'
     },
     {
       id: 24,
       question: 'How can you de-escalate a tense situation?',
       options: ['Raise your voice', 'Use "I" statements and stay calm', 'Make demands', 'Threaten consequences'],
       correct: 1,
-      explanation: '"I" statements and calm demeanor help de-escalate tense situations.'
+      explanation: 'De-escalation requires: (1) "I" statements (not "You" accusations) - "I feel concerned about the deadline" not "You are always late," (2) Calm tone and body language (lower your voice, open posture, soft eye contact), (3) Validation (not agreement) - "I can see this is really frustrating for you." Raising voice (Option 1) = escalation. Demands (Option 3) = power struggle. Threats (Option 4) = relationship damage. Example: B.Com group fight - Instead of "You need to calm down," say: "I can see you are upset. Can we take a 24-hour break and discuss this tomorrow with fresh minds?" This acknowledges emotions, buys cooling-off time, and shows you care. De-escalate FIRST, problem-solve SECOND.'
     },
     {
       id: 25,
       question: 'What should you do if you\'re wrong in a conflict?',
       options: ['Defend your position', 'Acknowledge the mistake and apologize', 'Blame others', 'Ignore the issue'],
       correct: 1,
-      explanation: 'Acknowledging mistakes and apologizing shows maturity and helps resolve conflicts.'
+      explanation: 'Acknowledging mistakes shows: (1) Intellectual humility (you are secure enough to admit errors), (2) Emotional maturity (you prioritize resolution over ego), (3) Trustworthiness (you take accountability). Formula: "You are right. I made a mistake. I should have communicated the deadline earlier. I apologize. Here is how I will fix it..." This de-escalates 90% of conflicts instantly. Defending (Option 1) = escalation. Blaming others (Option 3) = loss of credibility. Ignoring (Option 4) = resentment builds. In B.Com group projects, the person who admits mistakes first is often seen as the LEADER, not the weak one. Accountability = respect.'
     },
     // Presentation Skills Questions (26-30)
     {
@@ -2172,35 +2414,35 @@ const testAssessment = {
       question: 'What is the most important element of a successful presentation?',
       options: ['Perfect slides', 'Knowing your audience', 'Speaking loudly', 'Using complex data'],
       correct: 1,
-      explanation: 'Understanding your audience is crucial for creating relevant and engaging presentations.'
+      explanation: 'Knowing your audience determines EVERYTHING: content, tone, examples, depth. Presenting to professors? Use academic rigor + citations. Presenting to business executives? Lead with ROI + business impact. Presenting to Gen Z peers? Use relatable examples + interactive elements. Perfect slides (Option 1) mean nothing if they do not resonate with your audience. Speaking loudly (Option 3) does not help if your content is irrelevant. Complex data (Option 4) confuses non-technical audiences. Example: For a B.Com project on GST, presenting to professors = focus on policy analysis. Presenting to small business owners = focus on practical compliance tips. Same topic, different audiences = different presentations. Audience-first = impact.'
     },
     {
       id: 27,
       question: 'How should you structure a presentation?',
       options: ['Jump straight to details', 'Tell them what you\'ll tell them, tell them, tell them what you told them', 'Wing it', 'Read from notes'],
       correct: 1,
-      explanation: 'The classic structure: introduction, main content, and conclusion helps audiences follow your message.'
+      explanation: 'The classic 3-part structure (also called "Story Spine"): (1) TELL THEM WHAT YOU WILL TELL THEM (Hook + Roadmap: "Today I will cover 3 key points..."), (2) TELL THEM (Body: Present your 3 points with examples and data), (3) TELL THEM WHAT YOU TOLD THEM (Summary + Call-to-Action: "We covered X, Y, Z. I recommend..."). Why this works: Repetition = retention. The audience hears your key message 3 times = 3x more likely to remember. Jumping to details (Option 1) = audience lost. Winging it (Option 3) = disorganized mess. Reading notes (Option 4) = unprepared. This structure works for ANY presentation: B.Com projects, job interviews, business pitches.'
     },
     {
       id: 28,
       question: 'What makes a presentation memorable for Gen Z?',
       options: ['Long explanations', 'Interactive elements and storytelling', 'Complex charts', 'Formal language'],
       correct: 1,
-      explanation: 'Gen Z audiences engage with interactive elements and compelling storytelling.'
+      explanation: 'Gen Z has an 8-second attention span. What keeps them engaged: (1) INTERACTIVE elements (polls, "Raise your hand if...", Q&A breaks), (2) STORYTELLING (humans remember stories 22x better than facts - tell the story of how you discovered your research topic, not just the findings), (3) RELATABLE examples (B.Com scenarios: placement anxiety, group project drama, exam stress), (4) VISUALS (memes, GIFs, videos - not just text slides). Long explanations (Option 1) = zone-out. Complex charts (Option 3) = confusion. Formal language (Option 4) = boring. Gen Z wants: Authentic, interactive, visual, story-driven. Engage, do not lecture.'
     },
     {
       id: 29,
       question: 'How should you handle questions during a presentation?',
       options: ['Avoid them', 'Answer confidently and redirect if needed', 'Make up answers', 'Ignore them'],
       correct: 1,
-      explanation: 'Confident answers and strategic redirection maintain presentation flow.'
+      explanation: 'Questions are OPPORTUNITIES, not threats. Handle them with: (1) CONFIDENCE (even if you do not know the answer), (2) PAUSE-PARAPHRASE-ANSWER technique ("Great question. So you are asking about implementation costs? Based on my research, the initial investment is ₹10 lakhs..."), (3) REDIRECT if off-topic ("That is interesting, though slightly outside today is scope. I would love to discuss it afterward"). Making up answers (Option 3) = loss of credibility if caught. Avoiding/ignoring (Options 1, 4) = disrespectful. If you do not know: "Excellent question. I do not have that data with me, but I will research and follow up." Honesty > Bluffing. In B.Com presentations, Q&A often determines 30-40% of your grade.'
     },
     {
       id: 30,
       question: 'What is the key to building rapport with your audience?',
       options: ['Being perfect', 'Being authentic and relatable', 'Using big words', 'Reading from slides'],
       correct: 1,
-      explanation: 'Authenticity and relatability create genuine connections with audiences.'
+      explanation: 'Authenticity and relatability build connection. Authenticity means: (1) Show genuine enthusiasm (if you are bored, they will be too), (2) Admit vulnerabilities ("I was nervous about this presentation, but I am excited to share..."), (3) Be yourself (do not try to sound like a TED speaker if that is not you). Relatability means: Use examples your audience understands. For B.Com students: "We have all pulled all-nighters before exams..." Perfect (Option 1) is intimidating and fake - minor mistakes make you HUMAN. Big words (Option 3) = pretentious. Reading slides (Option 4) = disconnected. Gen Z especially values authenticity - they detect fake enthusiasm instantly. Be real, be relatable, build trust.'
     }
   ],
   gradingScale: {
