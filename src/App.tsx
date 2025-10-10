@@ -19,7 +19,7 @@ import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
   const [currentView, setCurrentView] = useState<'home' | 'catalog' | 'communication' | 'critical-thinking' | 'design-thinking' | 'adaptive-learning' | 'prompt-engineering' | 'teamwork' | 'data-driven' | 'mental-physical-health'>('home');
-  const [selectedModule, setSelectedModule] = useState<string>('');
+  // const [selectedModule, setSelectedModule] = useState<string>(''); // Removed unused variable
   const [hasProvidedLeadDetails, setHasProvidedLeadDetails] = useState<boolean>(() => {
     return localStorage.getItem('hasProvidedLeadDetails') === 'true';
   });
@@ -62,23 +62,18 @@ function App() {
         setCurrentView('design-thinking');
         break;
       case 'adaptive-learning':
-        setSelectedModule('adaptive-learning');
         setCurrentView('adaptive-learning');
         break;
       case 'prompt-engineering':
-        setSelectedModule('prompt-engineering');
         setCurrentView('prompt-engineering');
         break;
       case 'teamwork':
-        setSelectedModule('teamwork');
         setCurrentView('teamwork');
         break;
       case 'data-driven':
-        setSelectedModule('data-driven');
         setCurrentView('data-driven');
         break;
       case 'mental-physical-health':
-        setSelectedModule('mental-physical-health');
         setCurrentView('mental-physical-health');
         break;
       default:
