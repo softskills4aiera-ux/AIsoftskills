@@ -217,6 +217,7 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
   const [assessmentResults, setAssessmentResults] = useState<{[key: number]: boolean}>({});
   const [uploadedFiles, setUploadedFiles] = useState<File[]>([]);
   const [isRecording, setIsRecording] = useState(false);
+  const [collapsibleSections, setCollapsibleSections] = useState<Record<string, boolean>>({});
   const [cameraStream, setCameraStream] = useState<MediaStream | null>(null);
 
   // Load progress on component mount
@@ -558,6 +559,51 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
     }
   };
 
+  const toggleCollapsible = (sectionId: string) => {
+    setCollapsibleSections(prev => ({
+      ...prev,
+      [sectionId]: !prev[sectionId]
+    }));
+  };
+
+  const CollapsibleSection = ({ 
+    sectionId, 
+    title, 
+    children, 
+    isOpen = false 
+  }: { 
+    sectionId: string; 
+    title: string; 
+    children: React.ReactNode; 
+    isOpen?: boolean; 
+  }) => {
+    const isExpanded = collapsibleSections[sectionId] ?? isOpen;
+    
+    return (
+      <div className="mb-4">
+        <button
+          onClick={() => toggleCollapsible(sectionId)}
+          className="flex items-center justify-between w-full text-left font-semibold text-lg mb-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg p-2 transition-colors"
+        >
+          <span>{title}</span>
+          <span className="text-xl">{isExpanded ? '▼' : '▶'}</span>
+        </button>
+        {isExpanded && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3 }}
+            className="overflow-hidden"
+          >
+            {children}
+          </motion.div>
+        )}
+      </div>
+    );
+  };
+
+
   const renderStageNavigation = () => {
     const stages = [
       { key: 'discover', label: 'Discover', icon: BookOpen },
@@ -640,7 +686,7 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
         </div>
 
         {/* Main Content */}
-        <div className="max-w-6xl mx-auto px-6 pb-16">
+        <div className="max-w-7xl mx-auto px-6 pb-16">
           <div className="text-center mb-12">
             {/* Module Icon */}
             <motion.div
@@ -964,7 +1010,7 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
           {/* Current Step Content */}
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
             {currentStep === 'discover' && (
-              <div className="space-y-6">
+              <div className="space-y-10">
                 <div className="text-center">
                   <span className="text-6xl mb-4 block">{currentSubtopicData.emoji}</span>
                   <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
@@ -972,40 +1018,80 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
                   </h3>
                 </div>
                 
-                <div className="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-6">
-                  <h4 className="text-xl font-semibold text-blue-900 dark:text-blue-100 mb-3">
+                <div className="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-10">
+                  <h4 className="text-3xl font-semibold text-blue-900 dark:text-blue-100 mb-6">
                     Scenario
                   </h4>
-                  <p className="text-lg text-blue-800 dark:text-blue-200">
+                  <p className="text-xl leading-relaxed text-blue-800 dark:text-blue-200 mb-6">
                     {currentSubtopicData.discover.scenario}
                   </p>
+                  
+                  <CollapsibleSection sectionId="scenario-problems" title="▼ Key Issues" isOpen={true}>
+                    <ul className="space-y-3 text-xl text-blue-800 dark:text-blue-200">
+                      {currentSubtopicData.discover.problemExplanation.slice(0, 3).map((problem, index) => (
+                        <li key={index}>• {problem}</li>
+                      ))}
+                    </ul>
+                  </CollapsibleSection>
+
+                  {currentSubtopicData.discover.problemExplanation.length > 3 && (
+                    <CollapsibleSection sectionId="scenario-more" title="▼ Additional Context" isOpen={false}>
+                      <ul className="space-y-3 text-xl text-blue-800 dark:text-blue-200">
+                        {currentSubtopicData.discover.problemExplanation.slice(3).map((problem, index) => (
+                          <li key={index}>• {problem}</li>
+                        ))}
+                      </ul>
+                    </CollapsibleSection>
+                  )}
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="bg-red-50 dark:bg-red-900/20 rounded-xl p-6">
-                    <h4 className="text-xl font-semibold text-red-900 dark:text-red-100 mb-3">
+                <div className="grid md:grid-cols-2 gap-10">
+                  <div className="bg-red-50 dark:bg-red-900/20 rounded-xl p-10">
+                    <h4 className="text-3xl font-semibold text-red-900 dark:text-red-100 mb-4">
                       Problems
                     </h4>
-                    <ul className="space-y-2">
-                      {currentSubtopicData.discover.problemExplanation.map((problem, index) => (
-                        <li key={index} className="text-lg text-red-800 dark:text-red-200">
-                          • {problem}
-                        </li>
-                      ))}
-                    </ul>
+                    
+                    <CollapsibleSection sectionId="problems-main" title="▼ Core Problems" isOpen={true}>
+                      <ul className="space-y-3 text-xl text-red-800 dark:text-red-200">
+                        {currentSubtopicData.discover.problemExplanation.slice(0, 4).map((problem, index) => (
+                          <li key={index}>• {problem}</li>
+                        ))}
+                      </ul>
+                    </CollapsibleSection>
+
+                    {currentSubtopicData.discover.problemExplanation.length > 4 && (
+                      <CollapsibleSection sectionId="problems-additional" title="▼ Additional Challenges" isOpen={false}>
+                        <ul className="space-y-3 text-xl text-red-800 dark:text-red-200">
+                          {currentSubtopicData.discover.problemExplanation.slice(4).map((problem, index) => (
+                            <li key={index}>• {problem}</li>
+                          ))}
+                        </ul>
+                      </CollapsibleSection>
+                    )}
                   </div>
 
-                  <div className="bg-green-50 dark:bg-green-900/20 rounded-xl p-6">
-                    <h4 className="text-xl font-semibold text-green-900 dark:text-green-100 mb-3">
+                  <div className="bg-green-50 dark:bg-green-900/20 rounded-xl p-10">
+                    <h4 className="text-3xl font-semibold text-green-900 dark:text-green-100 mb-4">
                       Solutions
                     </h4>
-                    <ul className="space-y-2">
-                      {currentSubtopicData.discover.solutionApproach.map((solution, index) => (
-                        <li key={index} className="text-lg text-green-800 dark:text-green-200">
-                          • {solution}
-                        </li>
-                      ))}
-                    </ul>
+                    
+                    <CollapsibleSection sectionId="solutions-main" title="▼ Core Solutions" isOpen={true}>
+                      <ul className="space-y-3 text-xl text-green-800 dark:text-green-200">
+                        {currentSubtopicData.discover.solutionApproach.slice(0, 4).map((solution, index) => (
+                          <li key={index}>• {solution}</li>
+                        ))}
+                      </ul>
+                    </CollapsibleSection>
+
+                    {currentSubtopicData.discover.solutionApproach.length > 4 && (
+                      <CollapsibleSection sectionId="solutions-additional" title="▼ Additional Strategies" isOpen={false}>
+                        <ul className="space-y-3 text-xl text-green-800 dark:text-green-200">
+                          {currentSubtopicData.discover.solutionApproach.slice(4).map((solution, index) => (
+                            <li key={index}>• {solution}</li>
+                          ))}
+                        </ul>
+                      </CollapsibleSection>
+                    )}
                   </div>
                 </div>
 
@@ -1240,15 +1326,21 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
                                 </p>
                               </div>
                               
-                              {/* Explanation */}
+                              {/* Explanation - Gen Z Friendly Format */}
                               {question.explanation && (
-                                <div>
-                                  <p className="text-base font-medium text-gray-700 dark:text-gray-300 mb-1">
-                                    Explanation:
+                                <div className="bg-white dark:bg-gray-800 rounded-lg p-4 border-l-4 border-green-500 mt-3">
+                                  <p className="text-lg font-semibold text-green-700 dark:text-green-300 mb-3 flex items-center gap-2">
+                                    <span>✅</span>
+                                    <span>Why This Works:</span>
                                   </p>
-                                  <p className="text-lg text-gray-600 dark:text-gray-400">
-                                    {question.explanation}
-                                  </p>
+                                  <div className="text-lg text-gray-700 dark:text-gray-300 space-y-2">
+                                    {question.explanation.split(/[.!?]+/).filter(s => s.trim().length > 20).slice(0, 3).map((point, idx) => (
+                                      <div key={idx} className="flex items-start gap-2">
+                                        <span className="text-green-600 dark:text-green-400 font-bold mt-1">•</span>
+                                        <span className="flex-1 leading-relaxed">{point.trim()}</span>
+                                      </div>
+                                    ))}
+                                  </div>
                                 </div>
                               )}
                             </div>
