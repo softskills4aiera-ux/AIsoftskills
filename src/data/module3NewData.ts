@@ -103,21 +103,18 @@ export const module3Data: SubtopicData[] = [
     emoji: '📝',
     context: 'academic',
     discover: {
-      scenario: 'You\'re a B.Com final year student preparing for campus placements. Tomorrow, you have an interview with Deloitte for a Business Analyst role. You want to use ChatGPT to help you prepare, but every time you ask it questions like "tell me about consulting" or "how to prepare for interviews," you get generic Wikipedia-style answers that literally everyone else is reading too. You need to learn how to craft prompts that give you the competitive edge you need to stand out from 200 other candidates.',
+      scenario: "B.Com final year. Deloitte interview tomorrow. Ask ChatGPT 'Tell me about consulting.' Get generic Wikipedia answer everyone reads. Need prompts giving competitive edge vs 200 candidates.",
       problemExplanation: [
-        '🎯 Generic prompts = Generic answers that every candidate gets ("research the company, practice questions, dress well")',
-        '💼 Recruiters can tell when you\'ve used AI without personalizing - it shows in interviews',
-        '📊 73% of B.Com students now use ChatGPT for interview prep, so generic prep won\'t differentiate you',
-        '⚠️ Common mistake: Asking "Tell me about consulting" instead of "I\'m a B.Com Finance student with Excel/SQL skills interviewing for Business Analyst at Deloitte - give me 3 case interview scenarios specific to retail analytics"',
-        '❌ You\'re wasting AI\'s potential by not providing YOUR context: your background, target role, specific company, and what format you need the help in'
+        "Generic prompts = generic answers: 'Research company, dress well.' Every candidate gets. Won't differentiate",
+        "No context: Ask 'Tell me about consulting.' Should: 'I'm B.Com Finance, Excel/SQL, Deloitte—give 3 retail cases'",
+        "Recruiters can tell: Used AI without personalizing. 73% B.Com students use ChatGPT. Generic = obvious",
+        "Waste AI potential: Don't provide YOUR context. AI can't personalize without YOUR info"
       ],
       solutionApproach: [
-        '✅ Use the CLEAR framework: Context (B.Com Finance, Excel skills), Length (2-minute answer), Examples (STAR method), Audience (Big 4 recruiter), Role (AI as interview coach)',
-        '💡 Be hyper-specific: "I led a team project where budget was cut 30% mid-way. Help me craft a 2-minute STAR answer showing problem-solving for consulting interviews"',
-        '🎯 Provide YOUR context: Major, skills, achievements, target company, role requirements, interview format',
-        '📝 Request specific formats: "Give me 3 practice cases", "Structure using STAR method", "Make it a 2-minute answer"',
-        '🔄 Iterate intelligently: "Make this more specific to retail industry", "Add metrics to show impact", "How would a CFO answer this?"',
-        '🔥 Pro tip: Give ChatGPT your resume + job description, then ask: "What are my top 3 selling points for this role and how should I position them?"'
+        "CLEAR: Context (B.Com Finance, Excel), Length (2-min), Examples (STAR), Audience (Big 4), Role (coach)",
+        "Hyper-specific: 'Led team, budget cut 30%. Craft 2-min STAR answer problem-solving consulting interviews'",
+        "Provide YOUR context: Major, skills, target company, role. AI personalizes for YOU",
+        "Iterate: 'Make retail-specific.' 'Add metrics.' 'How would CFO answer?' Refine until perfect"
       ]
     },
     video: {
@@ -467,21 +464,18 @@ Alright, next up we\'re talking about Context Management - how to have long, pro
     emoji: '🎯',
     context: 'professional',
     discover: {
-      scenario: 'You\'re using ChatGPT to help prepare for multiple company interviews - HDFC Bank, Deloitte, and Flipkart. You start by asking about banking interviews, then switch to consulting case prep, then e-commerce roles. By the time you get to your third company, ChatGPT has completely forgotten you\'re a B.Com Finance student and starts giving you generic advice meant for MBA candidates. You\'re frustrated because you have to keep re-explaining your background. You need to learn how to manage context in long AI conversations so it remembers the important stuff.',
+      scenario: "Using ChatGPT for HDFC, Deloitte, Flipkart interviews. Ask banking, then consulting, then e-commerce. By 3rd company, ChatGPT forgot you're B.Com Finance, gives MBA-level advice. Frustrated—keep re-explaining background.",
       problemExplanation: [
-        '🧠 AI has a "context window" - like short-term memory. After ~3000 words of conversation, it starts forgetting earlier details',
-        '❌ You mentioned you\'re a B.Com student 20 messages ago, but now AI is giving you MBA-level advice',
-        '⏰ You waste time re-explaining: "As I mentioned before, I\'m targeting finance roles..." "Remember I said I have Excel skills..."',
-        '🔄 Long conversations about multiple topics (resume + interview + salary negotiation) get messy - AI mixes up what advice applies where',
-        '📉 Your productivity drops because you spend more time correcting AI than getting useful help'
+        "Context window: AI = short-term memory. After ~3000 words, forgets. Now gives MBA advice",
+        "Waste time re-explaining: 'As I mentioned, I'm targeting finance...' Productivity drops",
+        "Long messy conversations: Resume + interview + salary in 1 chat. AI mixes up advice",
+        "No context management: Don't know how keep AI focused. AI forgets who you are"
       ],
       solutionApproach: [
-        '✅ Use context anchors: Start important prompts with "Context: I\'m a B.Com Finance student targeting banking roles. Now, help me..."',
-        '🎯 Set custom instructions (in ChatGPT settings): "I\'m a final year B.Com student from India. Always frame advice for campus placements in finance/consulting/marketing roles."',
-        '📝 Periodically summarize: "So far we\'ve covered my resume strategy for banking roles. Now let\'s focus on consulting case prep..."',
-        '🆕 Start NEW conversations for substantially different topics: One chat for banking prep, separate chat for consulting prep',
-        '🔗 Reference previous context explicitly: "Based on the resume bullets you helped me create earlier, now help me build STAR answers..."',
-        '🔥 Pro tip: For placement season, create separate chats labeled: "Resume Help", "HDFC Bank Prep", "Deloitte Prep", "Salary Negotiation"'
+        "Context anchors: Start 'Context: I'm B.Com Finance targeting banking. Now, help me...' Reminds AI",
+        "Custom instructions: ChatGPT settings: 'I'm final year B.Com India. Frame for placements finance/consulting/marketing.' Set once",
+        "Separate chats: One = banking. Separate = consulting. Don't mix topics. Keeps focused",
+        "Periodically summarize: 'So far: resume for banking. Now: consulting case prep.' Reorients AI"
       ]
     },
     video: {
@@ -824,21 +818,18 @@ Alright, next we\'re diving into AI Communication - how to talk TO ai like you\'
     emoji: '🤖',
     context: 'academic',
     discover: {
-      scenario: 'You\'re working on your final year B.Com project on "Digital Marketing ROI Analysis for Small Businesses." You ask ChatGPT: "Help me with my project." It gives you a generic project outline that could be for ANY business topic. You realize you\'re treating AI like Google - typing in keywords and hoping for magic. But your classmate is having actual CONVERSATIONS with ChatGPT, asking follow-up questions, getting customized help, and their project is 10x better. The difference? They know how to COMMUNICATE with AI, not just query it.',
+      scenario: "B.Com project 'Digital Marketing ROI Analysis.' Ask ChatGPT 'Help me with project.' Get generic outline for ANY topic. Treating AI like Google—keywords, hoping for magic. Classmate has CONVERSATIONS, gets customized help, project 10× better.",
       problemExplanation: [
-        '🔍 You\'re using AI like Google Search: Type keywords → Get answer → Leave. This gets you Wikipedia-level generic content',
-        '❌ You don\'t leverage AI\'s conversational ability: It can ask YOU questions, iterate with you, refine ideas - but only if you engage that way',
-        '🚫 You accept first responses without pushing back: "This is too broad" or "I need more specific examples" - AI needs your feedback',
-        '🤷 You don\'t understand AI\'s strengths (brainstorming, explaining, structuring) vs limitations (can\'t access your college database, doesn\'t know your professor\'s specific requirements)',
-        '💥 Result: You waste AI\'s potential and your time, getting mediocre help when you could get amazing guidance'
+        "Use like Google: Type keywords → answer → leave. Get generic Wikipedia",
+        "Don't leverage conversation: AI can ask YOU questions, iterate. You don't engage that way",
+        "Accept first response: Don't push back. 'Too broad' or 'Need examples'—AI needs feedback",
+        "Don't know strengths vs limits: AI great brainstorming, explaining. Can't access college database, prof requirements"
       ],
       solutionApproach: [
-        '✅ Start with AI asking YOU questions: "Before helping with my marketing project, what do you need to know about my requirements, data availability, and professor\'s expectations?"',
-        '🗣️ Have actual dialogue: First response not perfect? Say "This is good but too theoretical. Give me practical examples from Indian FMCG industry instead"',
-        '🔄 Iterate conversationally: Think of it as pair programming or study buddy session - back and forth until you get what you need',
-        '🎯 Provide feedback: "This explanation is too complex. Explain like you\'re teaching a B.Com student, not an MBA candidate"',
-        '📊 Play to AI\'s strengths: Brainstorming → AI is great. Structuring ideas → AI excels. Finding your college\'s specific project guidelines → AI can\'t help, ask your professor',
-        '🔥 Pro tip: "I\'ll share my draft analysis. Point out gaps, suggest improvements, ask me questions about my data. Let\'s refine this together." ← This is collaboration!'
+        "AI asks YOU: 'Before helping, what need to know about requirements, data, expectations?' Provide details",
+        "Have dialogue: Not perfect? 'Too theoretical. Give Indian FMCG examples instead.' Iterate",
+        "Iterate conversationally: Like study buddy—back and forth. Not one-shot query",
+        "Play to strengths: Brainstorming → AI great. College-specific → ask professor, not AI"
       ]
     },
     video: {
@@ -1184,21 +1175,18 @@ Next up - Prompt Optimization, where we make your AI interactions faster and mor
     emoji: '⚡',
     context: 'professional',
     discover: {
-      scenario: 'It\'s campus placement crunch time. You\'re applying to 20 companies. Each needs a customized resume and cover letter. You\'re using ChatGPT to help, but here\'s the problem: For company #1, it took you 8 tries (8 different prompts) to get a good resume bullet. For company #2, another 7 tries. At this rate, you\'ll spend 40 hours just iterating with AI! Meanwhile, your senior who did placements last year has a library of "optimized prompts" - templates that work perfectly on the FIRST try. She customizes 5 companies in the time you do 1. You need to learn prompt optimization - how to create prompts that consistently produce great results without endless trial-and-error.',
+      scenario: "Placements. Applying 20 companies. Each needs customized resume, cover letter. Company #1: 8 tries to get good resume bullet. Company #2: 7 tries. 40hrs just iterating! Senior has 'optimized prompts'—works FIRST try. She does 5 companies in time you do 1.",
       problemExplanation: [
-        '⏰ Time waste: You spend 30 minutes iterating on each company application because your prompts aren\'t optimized',
-        '🔄 Reinventing the wheel: You start from scratch for each company instead of having reusable templates',
-        '🎯 Inconsistent quality: Sometimes you get great AI outputs, sometimes mediocre - you don\'t know why',
-        '📚 Missing expert techniques: Prompt engineers use few-shot learning, chain-of-thought, structured templates - you\'re just winging it',
-        '📉 No learning curve: You\'re not documenting what works, so you keep making the same mistakes'
+        "Time waste: 30 mins iterating each. 20 companies × 30 mins = 10 hours wasted",
+        "Reinvent wheel: Start from scratch each. No reusable templates. Repeat 20 times",
+        "Inconsistent quality: Sometimes great, sometimes mediocre. Don't know why",
+        "No learning curve: Don't document what works. Same mistakes. No improvement"
       ],
       solutionApproach: [
-        '✅ Build a Prompt Library: Save your 10-15 best-working prompts for common tasks (resume bullets, cover letters, interview answers)',
-        '📝 Use Few-Shot Prompting: Give AI 2-3 examples of what you want, it matches that pattern perfectly. "Here are 3 strong resume bullets: [examples]. Now write 5 more for my internship using this same format."',
-        '🧠 Apply Chain-of-Thought: For complex tasks, add "Let\'s think through this step-by-step:" - AI gives better reasoning',
-        '🔬 A/B Test Your Prompts: Try 2 different prompts for same task, compare outputs, identify which structure works better',
-        '📊 Learn from Community: Check PromptingGuide.ai, r/ChatGPT - see what prompt patterns experts use',
-        '🔥 Create Master Templates: One perfect prompt for each task type, then just customize variables (company name, role, your specific skills)'
+        "Prompt Library: Save 10-15 best prompts. Reuse, don't recreate",
+        "Few-Shot: Give 2-3 examples. 'Here are 3 strong bullets. Write 5 more, same format.' Matches pattern",
+        "Chain-of-Thought: Add 'Let's think step-by-step:' AI gives better reasoning. 40% more accurate",
+        "Master Templates: One perfect prompt per task. Customize variables. 5 companies in time you do 1"
       ]
     },
     video: {
@@ -1579,21 +1567,18 @@ Alright, next we\'re talking about Bias Recognition - because AI can be wrong, b
     emoji: '🔍',
     context: 'academic' as const,
     discover: {
-      scenario: 'You\'re using ChatGPT to research "Best career paths for B.Com graduates in India." The AI heavily emphasizes CA, MBA, and banking roles, barely mentioning entrepreneurship, digital marketing, or fintech startups. You talk to your cousin who works in a startup - she says AI\'s advice is outdated and biased toward traditional paths. You realize: AI can be biased! It might reflect old data (pre-COVID job market), cultural assumptions (corporate jobs are "better"), or training data skews (more content about traditional careers than emerging fields). If you blindly follow AI advice, you might miss opportunities that actually suit you better. You need to learn how to recognize AI biases before making life decisions based on its suggestions.',
+      scenario: "Ask ChatGPT 'Best career paths B.Com India.' AI emphasizes CA, MBA, banking. Barely mentions entrepreneurship, digital marketing, fintech. Cousin (works startup): 'AI's outdated, biased toward traditional.' AI can be biased! Might miss opportunities that suit YOU better.",
       problemExplanation: [
-        '⚠️ AI is trained on past data - reflects what WAS popular, not what IS emerging (may miss trending careers like AI/ML roles, data analytics, digital marketing)',
-        '🌍 Cultural bias: AI might give US-centric advice when you need India-specific guidance (work culture, salary expectations, company preferences different)',
-        '📅 Temporal bias: ChatGPT\'s training data has a cutoff date - doesn\'t know about companies founded last year, recent industry shifts, new-age career paths',
-        '⚖️ Prestige bias: AI might overemphasize "brand name" companies (Big 4, MBB) and undervalue startups or niche firms that could be better for YOUR goals',
-        '❌ Demographic bias: AI advice might not account for your specific situation - gender, economic background, tier-2 city vs metro, family situation'
+        "Past data bias: Trained on past. Reflects WAS popular, not IS emerging. Misses AI/ML roles",
+        "Cultural bias: US-centric advice when need India-specific. Work culture, salary different",
+        "Temporal bias: Data cutoff 1-2 years old. Doesn't know companies founded last year, recent shifts",
+        "Prestige bias: Overemphasize Big 4. Undervalue startups. Might be better for YOUR goals"
       ],
       solutionApproach: [
-        '✅ Always ask: "What perspectives or options might you be missing here? Give me unconventional alternatives too."',
-        '🔄 Request multiple viewpoints: "Give me advice from perspective of: 1) Risk-averse parent, 2) Startup founder, 3) Corporate HR, 4) Recent B.Com grad who chose non-traditional path"',
-        '🔍 Cross-reference: Don\'t stop at AI - talk to seniors, check placement data, consult mentors, read recent reports',
-        '🇮🇳 Specify Indian context: "Focus on Indian job market, tier-2 city opportunities, realistic salary expectations for Indian B.Com freshers"',
-        '📊 Ask for evidence: "What data is this based on? When was this accurate? What\'s changed recently?"',
-        '🔥 Pro tip: Use AI to IDENTIFY its own biases - "What biases might exist in your advice about career choices? What are you potentially overvaluing or undervaluing?"'
+        "Ask what's missing: 'What perspectives missing? Give unconventional alternatives too.' Forces beyond defaults",
+        "Multiple viewpoints: 'Give advice from: 1) Parent, 2) Startup founder, 3) HR, 4) Recent grad non-traditional'",
+        "Cross-reference: Don't stop at AI. Talk seniors, check placement data, consult mentors. AI + humans = truth",
+        "Ask AI identify biases: 'What biases in your advice? What overvaluing or undervaluing?' Self-awareness check"
       ]
     },
     video: {
@@ -1938,22 +1923,18 @@ Next up - Ethical AI Use, where we talk about the line between AI helping you vs
     emoji: '⚖️',
     context: 'professional' as const,
     discover: {
-      scenario: 'Your B.Com professor announces: "For your Financial Analysis assignment, you may use AI tools, but cite them and demonstrate YOUR understanding." Your friend asks ChatGPT to write the entire analysis, copies it, submits. Gets caught - professor recognizes AI writing style. Gets zero. You want to use AI to HELP but not cheat. Where\'s the line? Another scenario: You\'re interning at a company. You want ChatGPT to help draft client emails but the emails contain confidential financial data. Is it okay to paste client info into ChatGPT? What about using AI for work tasks without telling your manager? You need to understand ethical AI use before you make a mistake that affects your grades, your reputation, or your career.',
+      scenario: "Prof: 'Use AI for Financial Analysis assignment, but cite and demonstrate YOUR understanding.' Friend asks ChatGPT write entire analysis, copies, submits. Gets caught. Zero marks. Where's the line? Internship: Want ChatGPT draft client emails with confidential financial data. Okay to paste client info? Need understand ethical AI use.",
       problemExplanation: [
-        '❌ Unclear boundaries: What\'s "AI-assisted learning" vs "AI doing your work"? When does help become cheating?',
-        '🏛️ Academic integrity crisis: Colleges are updating policies, but they vary - what\'s allowed in one class may be cheating in another',
-        '🔒 Privacy disasters: Students pasting confidential internship data into ChatGPT, not realizing it\'s a security breach',
-        '📉 Skill erosion: Over-reliance on AI means you never develop critical thinking, writing, or analysis skills - hurts you in interviews and jobs',
-        '⚠️ Trust issues: If caught using AI unethically, you damage reputation with professors, employers, professional network'
+        "Unclear boundaries: 'AI-assisted' vs 'AI doing work'? When help become cheating? Don't know line",
+        "Academic integrity: Policies vary by class. Allowed one = cheating another. Confusion",
+        "Privacy disasters: Paste confidential internship data into ChatGPT. Security breach. Don't realize public",
+        "Skill erosion: Over-rely AI = never develop critical thinking, writing. Hurts interviews, jobs"
       ],
       solutionApproach: [
-        '✅ THE GOLDEN RULE: Use AI to enhance YOUR thinking, not to replace it. AI should make you smarter, not make you lazy',
-        '📚 Academic: AI for understanding concepts = Good. AI for doing assignments = Bad. AI for structuring YOUR ideas = Gray area (check professor policy)',
-        '📝 Always cite AI: "Analysis framework developed with ChatGPT assistance" or "Concept clarification sourced from Claude AI"',
-        '🔒 NEVER share: Client data, confidential company info, personal information of others, proprietary business strategies, passwords/access credentials',
-        '🏢 Workplace: Check company AI policy FIRST. Some companies ban it, some embrace it, some have specific guidelines',
-        '🧠 Skill development focus: Use AI to LEARN faster, not to AVOID learning. Ask "Am I using AI to understand this better, or to avoid understanding it?"',
-        '🔥 Pro tip: The "Explain it to a friend" test - If you can\'t explain the AI-generated content in your own words to a friend, you don\'t understand it well enough to submit it'
+        "Golden Rule: AI enhances YOUR thinking, not replaces. Makes you smarter, not lazy. LEARN, not AVOID",
+        "Academic: AI understanding = Good. AI doing assignments = Bad. AI structuring YOUR ideas = Gray (check prof)",
+        "Always cite: 'Analysis framework with ChatGPT assistance' or 'Concept from Claude AI.' Give credit",
+        "'Explain to friend' test: Can't explain AI content in own words? Don't understand. Don't submit. Learn first"
       ]
     },
     video: {

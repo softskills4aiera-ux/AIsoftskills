@@ -103,22 +103,18 @@ export const module2Data: SubtopicData[] = [
     emoji: '🧠',
     context: 'academic',
     discover: {
-      scenario: 'You are a B.Com 2nd year student juggling 6 subjects: Financial Accounting, Cost Accounting, Business Law, Economics, Business Statistics, and Marketing. Despite studying 8+ hours daily, you are barely scoring 60%. Your notes are messy, you forget what you studied last week, and exams feel like a blur. Your friends seem to study less but score better. You feel like you are working hard but not smart.',
+      scenario: "B.Com 2nd year. 6 subjects. Study 8hrs daily. Scoring 60%. Notes messy, forget last week, exams = blur. Friends study less, score better. Working hard, not smart.",
       problemExplanation: [
-        'Many students use passive learning methods like re-reading notes or highlighting text',
-        'Without active engagement, information doesn\'t transfer to long-term memory',
-        'Poor time management leads to cramming, which is ineffective for retention',
-        'Lack of metacognitive awareness means students don\'t know how they learn best',
-        'No systematic approach to different types of content (facts, concepts, procedures)'
+        "Passive learning: Re-read notes 5×. Doesn't transfer to long-term memory. Exam: blank",
+        "No active engagement: Read 'Debentures = debt' 10×. Exam: 'Differentiate?' Freeze",
+        "Cramming: Poor time management → cram. Ineffective. Forget after exam",
+        "Don't know how you learn: Visual? Auditory? Kinesthetic? No systematic approach"
       ],
       solutionApproach: [
-        'Identify your learning style and preferences through self-assessment',
-        'Use active learning techniques like retrieval practice and spaced repetition',
-        'Implement the Feynman Technique: explain concepts in simple terms',
-        'Create visual mind maps and concept diagrams for complex topics',
-        'Use the Pomodoro Technique for focused study sessions',
-        'Apply the 80/20 rule: focus on the most important 20% of content',
-        'Regular self-testing to identify knowledge gaps'
+        "Active recall: Close book, quiz yourself. Forces RETRIEVE, not recognize. +50% retention",
+        "Feynman: Explain to 10-year-old. Can't explain simply? Don't understand. Teach friend = master",
+        "Spaced repetition: Review Day 1, 3, 7, 14, 30. Not cram 1 day. Fights forgetting",
+        "80/20 rule: Focus 20% content (80% exam questions). 8hrs → 4hrs, better scores"
       ]
     },
     video: {
@@ -427,22 +423,18 @@ Drop a comment telling me which strategy you will try first - I reply to everyon
     emoji: '🧩',
     context: 'academic',
     discover: {
-      scenario: 'Your Corporate Law exam is in 10 days. You need to memorize 100+ sections, case names, definitions, and legal principles. You have tried highlighting, re-reading, and making notes, but you forget everything within 2 days. Your brain feels like a sieve - information goes in and immediately leaks out. Meanwhile, your friend remembers everything using "weird memory tricks" and you are skeptical but desperate.',
+      scenario: "Corporate Law exam, 10 days. Memorize 100+ sections, cases, definitions. Tried highlighting, re-reading, notes. Forget in 2 days. Brain = sieve. Friend remembers using 'weird memory tricks.'",
       problemExplanation: [
-        'Rote memorization without understanding leads to quick forgetting',
-        'Lack of memory techniques means relying on repetition alone',
-        'No connection between new information and existing knowledge',
-        'Stress and anxiety interfere with memory formation',
-        'Not using multiple senses and memory pathways'
+        "Rote memorization: Repeat without understanding. Brain doesn't store. Quick forgetting",
+        "No memory techniques: Rely repetition alone. Slow, ineffective",
+        "No connections: New info isolated. Brain can't hook to anything. Falls out",
+        "Stress interferes: Anxiety blocks memory. Stressed study = poor retention"
       ],
       solutionApproach: [
-        'Use the Method of Loci (Memory Palace) for spatial memory',
-        'Create vivid, absurd mental images to make information memorable',
-        'Use acronyms and acrostics for lists and sequences',
-        'Apply the chunking technique to break down large amounts of information',
-        'Use spaced repetition software for long-term retention',
-        'Connect new information to personal experiences and emotions',
-        'Practice retrieval regularly instead of just re-reading'
+        "Memory Palace: Pick place (house, campus). Place info at stations. Brain loves spatial memory",
+        "Vivid absurd images: Baby company wearing diaper = Section 3. Absurd = unforgettable",
+        "Acronyms & chunking: PEAR = Profit, Equity, Assets, Revenue. Break 100 into 10 chunks",
+        "Spaced repetition: Review Day 1, 3, 7, 14, 30. Anki app automates. Fights forgetting"
       ]
     },
     video: {
@@ -753,22 +745,18 @@ Drop a comment - which technique will you try first? Let us turn that sieve brai
     emoji: '⚡',
     context: 'academic',
     discover: {
-      scenario: 'Your Business Economics assignment requires analyzing 5 research papers, 10 news articles, and 3 case studies. You have tabs open everywhere - Google Scholar, news sites, PDF files. You are copying random paragraphs into a doc but have NO idea how to organize this chaos. You are drowning in information but producing zero insights. Your brain is mush and the deadline is in 3 days.',
+      scenario: "Business Economics assignment. 5 research papers, 10 news articles, 3 case studies. Tabs everywhere. Copying random paragraphs. NO idea how to organize. Drowning in info, zero insights. Brain = mush. 3 days left.",
       problemExplanation: [
-        'Information overload leads to cognitive fatigue and poor decision-making',
-        'Lack of filtering skills means consuming irrelevant information',
-        'No systematic approach to processing and organizing information',
-        'Difficulty distinguishing between reliable and unreliable sources',
-        'Poor information architecture leads to lost or forgotten knowledge'
+        "Info overload: Too much info → cognitive fatigue. Brain can't process 20 inputs",
+        "No filtering: Read everything cover-to-cover. 80% irrelevant. Waste time",
+        "No system: Copy-paste random paragraphs. Try organize later (never works). Frankenstein doc",
+        "Can't distinguish sources: Reliable vs unreliable? Peer-reviewed vs blog? Use bad sources"
       ],
       solutionApproach: [
-        'Develop critical thinking skills to evaluate information quality',
-        'Use the SQ3R method: Survey, Question, Read, Recite, Review',
-        'Create information hierarchies and mind maps for organization',
-        'Apply the 5W+H framework: Who, What, When, Where, Why, How',
-        'Use digital tools for information capture and retrieval',
-        'Practice active reading and note-taking techniques',
-        'Develop information synthesis skills to connect ideas'
+        "SQ3R: Survey (skim abstract), Question (what need?), Read (relevant only), Recite, Review. Strategic reading",
+        "5W+H: Who, What, When, Where, Why, How. Organize systematically. Not random copy-paste",
+        "Mind maps: Central topic → branches → twigs. Visual hierarchy. Brain processes visually",
+        "Digital tools: Notion (organize), Zotero (sources), Evernote (capture). Retrieve easily"
       ]
     },
     video: {
@@ -1088,22 +1076,18 @@ Drop a comment - what is your biggest info processing struggle? I will reply to 
     emoji: '🔄',
     context: 'professional',
     discover: {
-      scenario: 'You aced Financial Accounting (journal entries, ledgers, trial balance). Now you are in Cost Accounting and it feels like a COMPLETELY different subject. You are re-learning everything from scratch even though your friend says "they are basically the same - just different application." You feel frustrated - why cannot you just TRANSFER what you already know to this new context?',
+      scenario: "Aced Financial Accounting (journal entries, ledgers, trial balance). Now Cost Accounting feels COMPLETELY different. Re-learning from scratch. Friend: 'They're basically same—just different application.' Frustrated—why can't TRANSFER what you know?",
       problemExplanation: [
-        'Lack of metacognitive awareness about underlying principles',
-        'Focus on surface-level features rather than deep understanding',
-        'No systematic approach to identifying transferable skills',
-        'Difficulty recognizing patterns across different contexts',
-        'Poor abstraction skills limit ability to see connections'
+        "No metacognitive awareness: Learn at surface (steps), not principle (WHY works)",
+        "Surface not deep: Financial 'Debit assets.' Cost feels different. Didn't learn 'Debit = IN' (works everywhere)",
+        "Can't identify transferable: Don't see patterns. Financial vs Cost = different. Actually SAME double-entry",
+        "Poor abstraction: Learn Financial alone. Can't abstract principle to Cost, Management, Tax"
       ],
       solutionApproach: [
-        'Develop metacognitive awareness about your learning process',
-        'Focus on underlying principles rather than surface features',
-        'Use analogies and metaphors to connect new and existing knowledge',
-        'Practice identifying patterns across different domains',
-        'Create concept maps showing relationships between skills',
-        'Use the Feynman Technique to deepen understanding',
-        'Regularly reflect on how skills apply across contexts'
+        "Learn principles: Not 'Journal format' (surface). Learn 'Every transaction dual effect—IN/OUT' (principle). Transfers instantly",
+        "Identify core: Ask 'What's UNIVERSAL?' Financial: double-entry. Cost: same. Transfer = instant",
+        "Use analogies: Financial = personal expenses. Cost = business expenses. Same concept, different context",
+        "Reflect: After learning, ask 'What principle? Where else applies?' Reflection = transfer"
       ]
     },
     video: {
@@ -1427,21 +1411,18 @@ Drop a comment - what skill are you going to transfer? Let us level up! Peace!`
     emoji: '⚡',
     context: 'professional',
     discover: {
-      scenario: 'Your internship boss just said: "We are switching from manual Excel to Tally ERP next week. I need you productive by Monday." You have NEVER used Tally. Your classmates took a 3-month course. You have 4 days. Panic mode? OR... Learn FAST using agility techniques? You need to pick up new skills lightning-fast without sacrificing quality.',
+      scenario: "Internship boss: 'Switch to Tally ERP. Need you productive by Monday.' Never used Tally. Classmates took 3-month course. You have 4 days. Panic or learn FAST?",
       problemExplanation: [
-        'B.Com students face constant new tools - Tally, SAP, PowerBI, Advanced Excel - internships demand instant productivity',
-        'Traditional "take a 3-month course" approach is too slow - job market moves faster',
-        'Fear of making mistakes in new software stops you from experimenting (but trial-error is how you learn fastest!)',
-        'Waiting for perfect knowledge before applying = you never start (analysis paralysis)',
-        'No system for rapid skill acquisition - you re-invent the wheel every time you need to learn something new'
+        "Constant new tools: Tally, SAP, PowerBI. Internships demand instant productivity. No time for courses",
+        "Too slow: Traditional '3-month course' = too slow. Job market moves faster",
+        "Fear mistakes: Scared to experiment. But trial-error = learn fastest. Waiting perfect = never start",
+        "No system: Re-invent wheel every time. Need rapid acquisition framework"
       ],
       solutionApproach: [
-        'Use 70-20-10 Model - 70% hands-on practice (open Tally, make mistakes!), 20% ask colleagues, 10% watch tutorials',
-        'Apply Just-In-Time Learning - do NOT learn entire software, learn ONLY the 20% you need for Monday task',
-        'Embrace Experimentation Loop - Try → Fail → Google → Fix → Repeat (each error teaches you something)',
-        'Set Learning Sprints - give yourself hard deadline (1 week to be functional, not 3 months to be expert)',
-        'Build Learning Network - find seniors who use the tool at internships, join online communities, ask targeted questions',
-        'Focus on Minimum Viable Skill - what is smallest skillset that makes you productive? Master THAT first, expand later'
+        "70-20-10: 70% hands-on (open Tally, make mistakes!), 20% ask colleagues, 10% watch tutorials",
+        "Just-In-Time: Don't learn entire software. Learn ONLY 20% you need Monday. Minimum Viable Skill",
+        "Experimentation Loop: Try → Fail → Google → Fix → Repeat. Each error teaches",
+        "Learning Sprints: 1 week functional, not 3 months expert. Pressure = focus"
       ]
     },
     video: {
@@ -1764,21 +1745,18 @@ Drop a comment - what skill are you learning agile-style? Let us crush it! Peace
     emoji: '📈',
     context: 'professional',
     discover: {
-      scenario: 'You scored 65% in Semester 3. Not bad, but not great. You WANT to improve to 75%+ but do not know HOW. You study hard but results stay flat. Your growth has plateaued. Meanwhile, your friend improved from 60% to 78% using "some system." You need a CONTINUOUS improvement framework, not just one-time effort bursts before exams.',
+      scenario: "Scored 65% Semester 3. Want 75%+ but don't know HOW. Study hard, results flat. Plateaued. Friend: 60% → 78% using 'some system.' Need continuous improvement framework, not one-time bursts.",
       problemExplanation: [
-        'Students work hard but see NO improvement semester after semester (effort without system = plateau)',
-        'No tracking mechanism - you have no idea WHAT is working and what is not (flying blind!)',
-        'One-time bursts before exams, then back to old habits (temporary effort ≠ continuous improvement)',
-        'Not identifying weak areas systematically - you repeat same mistakes every exam (no root cause analysis)',
-        'No accountability - improvement goals stay in your head, life gets busy, goals forgotten'
+        "Work hard, no improvement: Effort without system = plateau. Sem 3-6: 65%, 66%, 64%, 65%",
+        "No tracking: No idea WHAT works. Flying blind. Can't improve what don't measure",
+        "One-time bursts: Study hard before exams, back to old habits. Temporary ≠ continuous",
+        "Repeat mistakes: Weak at ratios? Ignore, fail again. Same mistakes every exam"
       ],
       solutionApproach: [
-        'Use Kaizen (Japanese continuous improvement) - improve 1% daily instead of 100% before exams (small daily wins compound!)',
-        'Apply PDCA Cycle every week - Plan (what to improve), Do (try new method), Check (did marks improve?), Act (keep or change)',
-        'Track metrics - grade trend, study hours efficiency, topic-wise scores (data reveals patterns)',
-        'Build Deliberate Practice - focus on weak areas (if ratios are your weakness, solve 10 ratio problems daily)',
-        'Create accountability system - share goals with study partner, monthly check-ins, consequences for missing targets',
-        'Root Cause Analysis - failed a topic? Ask "why" 5 times to find real problem (surface: did not study enough, root: poor time management)'
+        "Kaizen: 1% better daily. Day 1: 40% retention. Day 30: 65%. 1.01^365 = 37× better",
+        "PDCA weekly: Plan (improve what?), Do (try new), Check (marks improve?), Act (keep or change)",
+        "Track metrics: Grade trend, study efficiency, topic scores. Data reveals patterns",
+        "Deliberate Practice: Focus weak areas. Weak ratios? Solve 10 ratio problems daily"
       ]
     },
     video: {

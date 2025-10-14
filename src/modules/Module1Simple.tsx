@@ -9,20 +9,18 @@ const testSubtopics = [
     emoji: '👂',
     context: 'academic' as const,
     discover: {
-      scenario: 'Your Business Law professor is explaining Contract Act sections critical for semester exams. You are physically in class but mentally scrolling Instagram, planning weekend, worrying about pending assignments. 20 minutes later, you realize you have ZERO notes and no idea what Section 10 is about. Your classmate who was actively listening can explain it perfectly. You just wasted 20 minutes and will have to re-learn everything from YouTube later.',
+      scenario: "Business Law class. Prof explaining Contract Act. You: scrolling Instagram. 20 mins later: ZERO notes, no idea what Section 10 is. Classmate can explain perfectly.",
       problemExplanation: [
-        'Physical presence but mental absence = you attend class but learn nothing (time wasted!)',
-        'Missing critical exam information that professors emphasize in lectures (YouTube does not know what YOUR professor thinks is important)',
-        'Not building rapport with professors = no recommendation letters for internships/placements',
-        'Your questions stay in your head, confusion compounds, you fall behind week after week',
-        'Classmates who actively listen get better grades with LESS outside study (they learn in class, you re-learn at home)'
+        "Physical present, mental absent: Attend class, learn nothing. Body there, brain elsewhere",
+        "Miss critical info: Prof emphasizes what's important. YouTube doesn't know YOUR prof's focus",
+        "No prof rapport: Don't engage = no recommendation letters. Profs remember active students",
+        "Questions stay in head: Confusion compounds. Fall behind. Classmates who listen get better grades LESS study"
       ],
       solutionApproach: [
-        'Phone on airplane mode BEFORE class starts (notifications = attention killers)',
-        'Use Cornell note-taking method (main points left, details right, summary bottom)',
-        'Practice "mental paraphrasing" - after each 5-min segment, mentally summarize in your own words',
-        'Ask 1-2 strategic questions per class (shows engagement, clarifies confusion, professors remember active students)',
-        'Post-lecture 5-min review - can you explain 3 key concepts from today? If not, you were not listening'
+        "Phone airplane mode: BEFORE class. Notifications = attention killers",
+        "Cornell notes: Main points left, details right, summary bottom. Active processing",
+        "Mental paraphrase: Every 5 mins, summarize in own words. Can't? Ask NOW",
+        "5-min review: Can explain 3 key concepts? If not, weren't listening"
       ]
     },
     video: {
@@ -346,22 +344,18 @@ Drop a comment - what is your biggest listening challenge? Let us fix it! Peace!
     emoji: '🎤',
     context: 'academic' as const,
     discover: {
-      scenario: 'Tomorrow you have to present your B.Com project on "GST Impact on Small Businesses" to 60+ students, 3 professors, and 2 external examiners. 20% of your final grade depends on this. Last semester, your classmate Rohan went blank mid-presentation, stammered for 2 minutes, and scored 12/20. You have been practicing for days, but every time you imagine standing at that podium, your hands sweat, your throat tightens, and you forget everything. Your slides are ready, your research is solid, but your fear of public humiliation is paralyzing. What if you forget your points? What if someone asks a question you cannot answer? What if your voice shakes and everyone thinks you are incompetent?',
+      scenario: "Tomorrow: B.Com project presentation. 60+ students, 3 profs, 2 examiners. 20% grade. Rohan went blank, scored 12/20. Imagining podium: hands sweat, throat tight, forget everything.",
       problemExplanation: [
-        '🧠 Stage Fright Spiral: Your amygdala (fear center) perceives the audience as a "threat," triggering fight-or-flight response. Result: Shaky hands, rapid heartbeat, mental fog. This is NOT weakness - it is biology. Even Obama felt it.',
-        '📝 Preparation Paradox: You have memorized your script word-for-word, but memory fails under stress. Why? Rote memorization relies on fragile neural pathways. One forgotten word = complete derailment. You need structure, not scripts.',
-        '👥 Audience Projection: You assume everyone is judging you harshly. Reality: 80% of the audience is thinking about their own presentation, lunch plans, or Instagram. They WANT you to succeed (empathy bias). Your imagined scrutiny is 10x worse than reality.',
-        '🎯 Perfectionism Trap: You believe you must deliver a flawless, TED-Talk-level presentation. Result: Crippling pressure. Truth: Authenticity > Perfection. Minor mistakes make you relatable. Steve Jobs forgot his lines multiple times - nobody remembers that.',
-        '🗣️ Vocal Insecurity: Your voice sounds shaky/weak during practice. Why? Shallow breathing due to anxiety. Solution: Diaphragmatic breathing + vocal warm-ups. Your voice is an instrument - it needs tuning.',
-        '⏱️ Time Anxiety: Fear of going over/under time limit adds pressure. You rush through slides, skip examples, confuse the audience. Solution: Rehearse with a timer 5+ times. Muscle memory eliminates time stress.'
+        "Stage fright: Amygdala sees audience as 'threat.' Fight-or-flight: shaky hands, mental fog",
+        "Memorized script fails: Memory fails under stress. One forgotten word = derailment",
+        "Assume harsh judgment: Think everyone judging. Reality: 80% thinking own presentation, lunch",
+        "Voice shaky: Shallow breathing. Voice = instrument, needs tuning"
       ],
       solutionApproach: [
-        '🎭 Reframe the Narrative: Public speaking is NOT a performance where you are judged - it is a CONVERSATION where you share value. Shift from "What will they think of me?" to "What can I teach them?" This mental flip reduces anxiety by 60% (Harvard study).',
-        '🏗️ The 3-Act Structure: Hook (30 sec: shocking stat/story) → Body (3 main points with B.Com examples) → Close (call-to-action + memorable quote). This structure is your safety net - even if you forget details, the framework guides you.',
-        '💪 Power Posing + Breathing: 2 mins before presenting, stand in a "power pose" (hands on hips, chest out) in the restroom. This increases testosterone (confidence) and reduces cortisol (stress). Then: 4-7-8 breathing (inhale 4 sec, hold 7 sec, exhale 8 sec). Calms your nervous system instantly.',
-        '🎤 Vocal Authority Toolkit: (1) Speak from diaphragm, not throat. (2) Vary pace: slow for important points, faster for examples. (3) Use strategic pauses (3-5 sec after key statements). (4) End sentences with downward inflection (sounds confident, not questioning).',
-        '👁️ Eye Contact Formula: Do NOT scan the room randomly (looks nervous). Instead: "Triangle Technique" - pick 3 friendly faces (left, center, right), speak to each for 3-5 seconds, rotate. Creates intimacy with entire room.',
-        '🛡️ Q&A Armor: Prepare for 10 likely questions. For unexpected questions: "Great question. Let me think... [pause 3 sec]... Based on my research, [answer]. If I do not have complete data, I will follow up." Honesty > Bluffing. Examiners respect intellectual humility.'
+        "Reframe: NOT performance, it's CONVERSATION. 'What can I teach them?' Reduces anxiety 60%",
+        "3-Act: Hook (30sec stat/story) → Body (3 points) → Close (call-to-action). Safety net",
+        "Power Pose + Breathing: 2 mins before, power pose. Then 4-7-8 breathing. Calms instantly",
+        "Triangle Eye Contact: Pick 3 friendly faces. Speak each 3-5 sec, rotate. Don't scan randomly"
       ]
     },
     video: {
@@ -697,22 +691,18 @@ PRESENTATION DAY: Arrive 15 mins early. Test tech. Do power pose in restroom. 4-
     emoji: '✍️',
     context: 'professional' as const,
     discover: {
-      scenario: 'It is 11:47 PM. Your Financial Accounting assignment is due tomorrow at 9 AM, but you just realized you misunderstood the question - you analyzed the wrong company is financial statements. You need to email your professor, Dr. Sharma, requesting a 48-hour extension. You have been staring at a blank Gmail screen for 20 minutes. Should you start with "Hey" or "Dear Professor"? How do you explain your mistake without sounding incompetent? What if she thinks you are just procrastinating? One wrong word and you risk sounding unprofessional, desperate, or entitled. Your grade (and reputation) depends on this email.',
+      scenario: "11:47 PM. Assignment due 9 AM. Analyzed WRONG company. Need email prof requesting extension. Staring blank Gmail 20 mins. 'Hey' or 'Dear Professor'? Grade depends on this.",
       problemExplanation: [
-        '📧 Tone Paralysis: You do not know if "Hey Dr. Sharma" is too casual or "Dear Esteemed Professor" is too formal. B.Com students often swing between overly casual (WhatsApp-style) and robotic formality (Victorian-era letters). Result: You sound either disrespectful or like a robot.',
-        '🏗️ Structure Confusion: You do not know where to start. Should you apologize first? Explain the situation? Make the request? You end up with a 300-word rambling email that buries your actual request in paragraph 3. Professors skim emails - if they do not see your point in 10 seconds, they move on.',
-        '❌ Grammar Anxiety: You are terrified of typos, wrong punctuation, or using "your" instead of "you are." One grammar mistake = "This student is careless." You spend 15 minutes Googling "comma rules" instead of writing. Perfectionism becomes procrastination.',
-        '🙏 Request Weakness: You write: "If possible, maybe, could you consider giving me an extension? Only if you have time. No pressure." This sounds uncertain and entitled. Professors respect CLEAR, JUSTIFIED requests, not wishy-washy begging.',
-        '⏰ Timing Disaster: You send the email at 11:58 PM (looks like you are procrastinating) or 6:00 AM (looks desperate). Timing affects perception. Late-night emails scream "I did not plan ahead."',
-        '🔄 No Follow-Up Plan: You send the email, then obsessively refresh your inbox every 5 minutes. After 24 hours of silence, you panic: "Did she ignore me? Should I send another email? What if I annoy her?" You have no follow-up strategy.'
+        "Tone paralysis: 'Hey' too casual or 'Dear Esteemed' too formal? Sound disrespectful or robot",
+        "Structure confusion: Don't know where start. 300-word rambling, bury request paragraph 3. Profs skim—don't see point 10 sec",
+        "Grammar anxiety: Terrified typos, 'your' vs 'you're.' Spend 15 mins Googling comma rules. Perfectionism = procrastination",
+        "Request weak: 'If possible, maybe, could you consider?' Sounds uncertain, entitled. Profs respect CLEAR, JUSTIFIED"
       ],
       solutionApproach: [
-        '🎯 The 3-Part Email Formula: (1) Opening (State purpose in 1 sentence), (2) Body (Explain situation + justify request with 2-3 sentences), (3) Closing (Clear ask + thank you). This structure works for 90% of professional emails. Example: "I am writing to request a 48-hour extension for the Financial Accounting assignment due tomorrow. I misunderstood the assignment requirements and analyzed the wrong company. I have already started the correct analysis and can submit high-quality work by Friday. Thank you for considering my request."',
-        '📏 Tone Calibration: Use the "Professional-Friendly" tone: Formal enough to show respect, human enough to build connection. Formula: "Dear [Title] [Last Name]" + Clear sentences + "Thank you" + "Best regards, [Your Full Name]." Avoid: Emojis, slang ("gonna," "wanna"), exclamation marks (!!!), ALL CAPS.',
-        '✅ The 5-Minute Proofreading Protocol: (1) Write your email, (2) Read it OUT LOUD (catches awkward phrasing), (3) Use Grammarly/spell-check, (4) Check recipient name/email (sending to wrong person = disaster), (5) Wait 5 minutes, re-read, THEN send. This eliminates 95% of errors.',
-        '💪 Request Confidence: Use the "Reason-Request-Reassurance" framework. Reason: "I misunderstood the requirements." Request: "I am requesting a 48-hour extension." Reassurance: "I have already started the correct analysis and will submit quality work." This shows accountability + commitment.',
-        '⏱️ Strategic Timing: Send emails between 8 AM - 6 PM on weekdays (shows professionalism). If you write late at night, use "Schedule Send" for 8 AM next day. For urgent requests, send early morning (shows you are proactive, not procrastinating).',
-        '🔁 Follow-Up Framework: If no response in 48 hours, send a polite follow-up: "Dear Professor Sharma, I wanted to follow up on my email from [date] regarding the assignment extension. I understand you are busy, and I would appreciate any guidance you can provide. Thank you." One follow-up = persistent. Three follow-ups = annoying.'
+        "3-Part: (1) Opening (purpose 1 sentence), (2) Body (explain + justify), (3) Closing (ask + thank you)",
+        "Tone: 'Dear [Title] [Last Name]' + 'Thank you' + 'Best regards.' Avoid emojis, slang, !!!",
+        "5-Min Proofread: Write, read OUT LOUD, Grammarly, check recipient, wait 5 mins, THEN send",
+        "Reason-Request-Reassurance: 'Misunderstood' (reason). 'Requesting 48hr' (request). 'Already started, will submit quality' (reassurance)"
       ]
     },
     video: {
@@ -1069,22 +1059,18 @@ Use the structure: Opening (1 sentence) + Body (2-3 sentences) + Closing (thank 
     emoji: '👥',
     context: 'personal' as const,
     discover: {
-      scenario: 'You are in a virtual interview for a Financial Analyst internship at Deloitte. You have prepared excellent answers about financial modeling, Excel skills, and your B.Com coursework. But 10 minutes in, the interviewer (Ms. Gupta) starts checking her phone, her smile fades, and she leans back in her chair. You finish explaining your Cost Accounting project, and she says: "Okay, thank you. We will be in touch." The call ends abruptly. You are confused - your answers were solid. What went wrong? Your NON-VERBAL communication sabotaged you. You slouched, avoided eye contact with the camera, fidgeted with your pen, and spoke in a monotone. Ms. Gupta interpreted this as: disinterest, lack of confidence, and poor communication skills. Your words said "I am qualified," but your body language screamed "I am unprepared."',
+      scenario: "Virtual Deloitte interview. Prepared excellent answers. 10 mins in: Ms. Gupta checks phone, leans back. 'We'll be in touch.' Ends abruptly. NON-VERBAL sabotaged you. Slouched, fidgeted, monotone.",
       problemExplanation: [
-        '📹 Virtual Interview Blindness: You focused on your WORDS, ignoring that 93% of communication is non-verbal (38% tone, 55% body language - Mehrabian study). On video calls, your body language is MAGNIFIED. Slouching looks worse on camera. Poor eye contact (looking at screen, not camera) makes you seem evasive. You thought content mattered most - wrong. Delivery > Content in first impressions.',
-        '🪑 Posture Disaster: You slouched in your chair, shoulders hunched, leaning to one side. Why this kills you: Slouching signals low energy, disinterest, and lack of confidence. Interviewers subconsciously think: "If they cannot sit up straight for a 30-minute interview, how will they handle client meetings?" Posture is your silent resume.',
-        '👀 Eye Contact Failure: You looked at the interviewer on your screen (natural instinct), not at your webcam. Result: To Ms. Gupta, it looked like you were staring at her chin or avoiding eye contact. In Indian professional culture, eye contact = respect + confidence. Avoiding it = dishonesty or insecurity. You lost trust in the first 5 minutes.',
-        '✋ Fidgeting Epidemic: You clicked your pen, touched your face, adjusted your hair 10+ times. Why this destroys credibility: Fidgeting signals nervousness, lack of preparation, and anxiety. Interviewers think: "They cannot control their nerves in an interview - how will they handle high-pressure client work?" Stillness = confidence.',
-        '😐 Monotone + Blank Face: You spoke in a flat tone with minimal facial expressions (trying to sound "professional"). Result: You sounded robotic and disengaged. Humans connect through emotion. No vocal variety + no facial expression = "This person is boring and will not fit our team culture." Enthusiasm is contagious - so is apathy.',
-        '🚫 Misreading Cues: Ms. Gupta leaned back (disengagement signal), checked her phone (boredom signal), and gave short responses (wrap-it-up signal). You missed ALL of these and kept talking. Why this matters: Non-verbal literacy is a professional skill. If you cannot read a room (or Zoom), you cannot adapt. Adaptability = employability.'
+        "93% non-verbal: Focused WORDS. Ignored 93% = non-verbal (38% tone, 55% body). Delivery > Content",
+        "Posture disaster: Slouched, hunched. Signals low energy, no confidence. Posture = silent resume",
+        "Eye contact fail: Looked at screen, not webcam. To her = avoiding eye contact. Avoiding = dishonesty",
+        "Fidgeting: Clicked pen, touched face 10+ times. Signals nervousness, no prep. Stillness = confidence"
       ],
       solutionApproach: [
-        '🎥 The Camera Eye Contact Trick: In virtual interviews, look at your WEBCAM (not the screen) when speaking. Place a sticky note with an arrow next to your camera as a reminder. When listening, you can look at the screen. This creates the illusion of direct eye contact. Practice this for 5 minutes daily - it feels unnatural at first but becomes automatic.',
-        '🦸 Power Posing (Pre-Interview Ritual): 2 minutes before the interview, stand in a "power pose" (feet wide, hands on hips, chest out) in private. This increases testosterone (confidence) by 20% and decreases cortisol (stress) by 25% (Amy Cuddy, Harvard). Then, sit with: Back straight, shoulders back, feet flat on floor, hands visible on desk (not fidgeting). This posture signals: "I am confident and ready."',
-        '🎭 The 3-Expression Rule: Your face should match your message. Talking about a challenging project? Slight furrow (seriousness). Discussing teamwork? Smile (warmth). Explaining technical skills? Neutral + focused (competence). Practice in a mirror: Say "I am excited about this opportunity" with a blank face, then with a genuine smile. Feel the difference? Interviewers do too.',
-        '✋ Hand Gesture Formula: Keep hands at chest level (power zone), use purposeful gestures to emphasize points. "Three key skills" = hold up 3 fingers. "Growth from 60% to 85%" = upward hand motion. Avoid: Hands below desk (looks like you are hiding something), hands above head (aggressive), fidgeting (nervous). Still hands when not gesturing = composed.',
-        '🎤 Vocal Variety Toolkit: Vary your pace (slow for important points, faster for examples), volume (slightly louder for emphasis), and pitch (downward inflection at end of sentences = confidence). Record yourself answering a question in monotone, then with variety. The second version is 3x more engaging. Enthusiasm is audible.',
-        '👁️ The Cue-Reading Framework: Watch for: (1) Leaning forward = interested, keep going. (2) Leaning back = losing interest, wrap up soon. (3) Checking phone/watch = bored, change approach or ask a question. (4) Nodding = agreement, you are on the right track. (5) Furrowed brow = confusion, clarify your point. Adapt in real-time - this is advanced communication.'
+        "Camera eye contact: Look WEBCAM (not screen) when speaking. Sticky note arrow next to camera",
+        "Power Pose: 2 mins before, power pose. +20% confidence, -25% stress. Sit: back straight, shoulders back",
+        "3-Expression: Face matches message. Challenging? Furrow. Teamwork? Smile. Technical? Neutral + focused",
+        "Vocal Variety: Vary pace, volume, pitch. Downward inflection = confidence. Variety 3× more engaging"
       ]
     },
     video: {
@@ -1459,22 +1445,18 @@ Watch the recording. You will cringe - that is growth. Note: Fidgeting? Slouchin
     emoji: '🤝',
     context: 'professional' as const,
     discover: {
-      scenario: 'Your B.Com group project (30% of final grade) is due in 5 days. You have 4 team members: You, Priya (perfectionist, wants to redo everything), Arjun (procrastinator, has not done his part), and Neha (conflict-avoider, agrees with everyone). Yesterday, Priya and Arjun had a heated argument in the WhatsApp group. Priya: "Arjun, your section is garbage. I am redoing it." Arjun: "Maybe if you were not so controlling, I could actually contribute!" Now Arjun has left the group chat, Priya is furious and threatening to complain to the professor, and Neha is panicking. The project is falling apart. You need to resolve this conflict NOW, or everyone fails.',
+      scenario: "Group project due 5 days. WhatsApp fight. Priya: 'Your section is garbage.' Arjun: 'You're controlling!' Arjun left chat. Project falling apart.",
       problemExplanation: [
-        '🔥 Escalation Spiral: What started as a work-style difference (Priya is detail-oriented, Arjun is last-minute) exploded into personal attacks ("garbage," "controlling"). Why? No one addressed the REAL issue early (unclear roles + missed deadlines). Small conflicts ignored = big explosions later. Now emotions > logic.',
-        '🗣️ Communication Breakdown: Priya gave harsh feedback publicly (WhatsApp group = humiliating). Arjun got defensive and attacked back. Neha stayed silent (conflict-avoidance = enabling dysfunction). Result: No one is listening, everyone is reacting. Conflict resolution Rule #1: Private feedback, public praise. They violated this.',
-        '😤 Emotional Hijacking: Priya feels disrespected (her work is being ignored). Arjun feels attacked (his contribution was dismissed). Neha feels anxious (caught in the middle). When emotions are high, the prefrontal cortex (logic center) shuts down. They are in fight-or-flight mode, not problem-solving mode. You cannot reason with someone in emotional hijack.',
-        '🎯 Unclear Roles + Accountability: Who is responsible for what? Who decides if work is "good enough"? No one defined this upfront. Result: Priya assumed she is the quality controller (she is not). Arjun thought "good enough" was acceptable (it was not). Ambiguity breeds conflict.',
-        '⏰ Deadline Pressure: 5 days left = high stress. Stress amplifies conflict. People say things they do not mean. Priya is not usually cruel; Arjun is not usually defensive. But under pressure, worst behaviors emerge. Conflict resolution under time pressure requires de-escalation FIRST, problem-solving SECOND.',
-        '🚫 No Conflict Resolution Process: When the argument started, no one said: "Let us pause, cool down, and discuss this calmly tomorrow." Instead, they kept fighting until Arjun rage-quit. Groups without a conflict resolution process implode under pressure. You need a system, not hope.'
+        "Escalation: Work-style difference → personal attacks. Didn't address REAL issue early. Small conflicts ignored = big explosions",
+        "Communication breakdown: Priya harsh feedback publicly (WhatsApp = humiliating). Arjun defensive. Neha silent. No one listening",
+        "Emotional hijack: Priya disrespected. Arjun attacked. Neha anxious. Emotions high, logic low. Fight-or-flight mode",
+        "Unclear roles: Who responsible? Who decides 'good enough'? Not defined. Ambiguity breeds conflict"
       ],
       solutionApproach: [
-        '🧊 De-Escalation First (Calm the Storm): Before solving the problem, lower the temperature. Step 1: Private messages to Arjun and Priya separately (not group chat). "Hey, I know yesterday was intense. Can we take 24 hours to cool down, then meet to fix this? I value both of you and want us to succeed together." This acknowledges emotions, buys time, and shows you care. Avoid: "You both need to calm down" (dismissive). Do: "This is stressful for everyone. Let us reset."',
-        '👂 Active Listening (Understand, Do Not Judge): Meet with Arjun and Priya separately first (not together - that will reignite the fight). Ask: "What is frustrating you most about this project?" Listen 80%, talk 20%. Paraphrase: "So you feel your work was dismissed without fair feedback?" (Arjun) or "You feel the quality standards are not being met?" (Priya). This validates their feelings without taking sides. People calm down when they feel HEARD.',
-        '🔍 Identify the REAL Problem (Not the Surface Issue): The fight is not about "garbage work" or "controlling behavior." The REAL issues: (1) No clear quality standards agreed upon upfront, (2) No accountability for deadlines, (3) No process for giving feedback constructively. Address these root causes, not the symptoms. Ask: "What would success look like for you?" Find common ground: Both want a good grade.',
-        '🤝 Find Win-Win Solutions (Not Compromise = Everyone Loses): Compromise: "Priya, lower your standards. Arjun, work harder." Result: Both unhappy. Win-Win: "Let us define quality standards together (3 criteria), set mini-deadlines (check-ins every 2 days), and use a feedback template (2 strengths + 1 improvement)." This gives Priya structure and Arjun clarity. Both win.',
-        '📋 Create a Conflict Resolution Agreement: Before ending the meeting, establish rules: (1) Feedback is private, not in group chat. (2) If someone is upset, we take a 24-hour cooling-off period. (3) Decisions are made by majority vote, not one person. (4) We assume positive intent (no one is trying to sabotage). Write this down. When the next conflict arises (it will), you have a process.',
-        '🔄 Follow-Up + Accountability: After resolving the conflict, check in daily: "How is everyone feeling? Any issues?" Do NOT assume "fixed = forever." Conflicts resurface under stress. Proactive check-ins prevent re-escalation. Also: Celebrate small wins. "Great job on yesterday is section, Arjun!" Positive reinforcement rebuilds trust.'
+        "De-escalate: Private messages separately. 'Take 24hrs cool down, then meet?' Acknowledges emotions, buys time",
+        "Active listening: Meet separately. 'What's frustrating?' Listen 80%, talk 20%. Paraphrase. People calm when HEARD",
+        "Identify REAL: Not 'garbage' or 'controlling.' REAL: No quality standards, no accountability, no feedback process. Root causes",
+        "Win-Win: 'Define standards (3 criteria), mini-deadlines (check-ins every 2 days), feedback template (2 strengths + 1 improvement).' Both win"
       ]
     },
     video: {
@@ -1821,22 +1803,18 @@ At project start, agree: 'If we have a conflict, we will (1) Take a 24-hour cool
     emoji: '🎯',
     context: 'professional' as const,
     discover: {
-      scenario: 'You have been selected to present your B.Com final year project "AI in Financial Forecasting" at an inter-college competition. Prize: ₹50,000 + internship at a top firm. Format: 10-minute presentation + 5-minute Q&A. Judges: 3 industry experts + 2 professors. You have solid research, but your current slides are 25 text-heavy PowerPoint slides with bullet points. Last year is winner had 8 visually stunning slides and told a compelling story. You have 1 week to transform your presentation from "boring academic report" to "engaging visual story" that wins.',
+      scenario: "Inter-college competition. 'AI in Financial Forecasting.' Prize: ₹50K + internship. You: 25 text-heavy slides. Last year's winner: 8 stunning slides, compelling story.",
       problemExplanation: [
-        '📊 Death by PowerPoint: Your slides are paragraphs of text (50+ words per slide). Judges will READ your slides instead of LISTENING to you. Result: They zone out, miss your key insights. Rule: If your slides can stand alone without you, you are doing it wrong. Slides should SUPPORT you, not REPLACE you.',
-        '📖 No Story Arc: Your presentation is a data dump: "Introduction, Literature Review, Methodology, Results, Conclusion." This is a REPORT structure, not a STORY structure. Humans remember stories, not bullet points. Without a narrative arc (problem → journey → solution), judges forget your content in 10 minutes.',
-        '🎨 Visual Illiteracy: You used default PowerPoint templates, clipart, and 5 different fonts. Result: Looks unprofessional and distracting. Visual design is NOT decoration - it is COMMUNICATION. Poor design = "This person does not care about quality." Great design = "This person is detail-oriented and professional."',
-        '🎯 Unclear Value Proposition: You explain WHAT you did (built an AI model) and HOW (used Python + TensorFlow), but not WHY IT MATTERS. Judges think: "So what? Why should I care?" You need to lead with IMPACT: "This AI model can reduce forecasting errors by 40%, saving companies ₹10 lakhs annually."',
-        '⏱️ Poor Time Management: You have 25 slides for 10 minutes = 24 seconds per slide. You will either rush (audience confused) or run over time (judges cut you off mid-conclusion). Winning presentations: 1 slide per minute MAX. Quality > Quantity.',
-        '❓ Weak Q&A Preparation: You focused 100% on your presentation, 0% on anticipating questions. Judges WILL ask: "What are the limitations?" "How is this different from existing models?" "What is the business case?" If you fumble Q&A, you lose - even if your presentation was great.'
+        "Death by PowerPoint: Paragraphs (50+ words/slide). Judges READ instead of LISTEN. Zone out, miss insights",
+        "No story: Data dump. REPORT structure, not STORY. Humans remember stories, not bullet points",
+        "Visual illiteracy: Default templates, clipart, 5 fonts. Looks unprofessional. Poor design = 'doesn't care'",
+        "Unclear value: Explain WHAT, HOW, not WHY IT MATTERS. 'So what?' Need IMPACT: 'Reduce errors 40%, save ₹10L'"
       ],
       solutionApproach: [
-        '📚 The Story Spine Framework: Transform your report into a story. Structure: (1) HOOK (30 sec): "Companies lose ₹100 crores annually due to bad financial forecasts. What if AI could fix this?" (2) PROBLEM (2 min): Why current forecasting fails. (3) SOLUTION (5 min): Your AI model + how it works. (4) IMPACT (2 min): Results + business value. (5) CLOSE (30 sec): Call-to-action. This structure = memorable.',
-        '🎨 The 1-6-6 Slide Rule: 1 slide = 1 idea. Max 6 words per line. Max 6 lines per slide. If you cannot fit your idea in this constraint, split into 2 slides. Use VISUALS (charts, diagrams, images) instead of text. Your mouth explains, your slides illustrate. Example: Instead of "Our model achieved 92% accuracy," show a visual comparison chart.',
-        '🖼️ Visual Hierarchy Mastery: Use the 3-tier hierarchy: (1) TITLE (largest, bold, tells the slide is message), (2) VISUAL (chart/diagram, center focus), (3) SUPPORTING TEXT (smallest, minimal, bottom). Color psychology: Blues = trust/professionalism, Greens = growth/success, Reds = urgency/warning. Consistent fonts (max 2), consistent colors (3-color palette).',
-        '💡 Lead with Impact, Not Method: Restructure every slide to answer: "Why should judges care?" Bad slide title: "Methodology: LSTM Neural Networks." Good slide title: "40% More Accurate Than Traditional Models." Put the BENEFIT first, technical details second. Judges care about OUTCOMES, not just process.',
-        '⏱️ The 10-Slide Maximum: For a 10-minute presentation, create 8-10 slides MAX. Breakdown: (1) Title, (2) Hook/Problem, (3-4) Current situation, (5-7) Your solution, (8) Results/Impact, (9) Next steps, (10) Thank you + Q&A. Spend 1 minute per slide. Practice with a timer until you nail the pacing.',
-        '🛡️ Q&A Armor: Anticipate 10 likely questions. For your AI project: "What data did you use?" "How does it compare to existing models?" "What are limitations?" "What is the business case?" "Can this scale?" Prepare 2-3 sentence answers. Practice the "Pause-Paraphrase-Answer" technique. If stumped: "Great question. I do not have that data with me, but I would be happy to follow up." Honesty > Bluffing.'
+        "Story Spine: HOOK (30sec) → PROBLEM (2min) → SOLUTION (5min) → IMPACT (2min) → CLOSE (30sec). Memorable",
+        "1-6-6 Rule: 1 slide = 1 idea. Max 6 words/line, 6 lines/slide. VISUALS, not text",
+        "Lead impact: 'Methodology: LSTM' → '40% More Accurate.' BENEFIT first, technical second",
+        "10-Slide Max: 1 min/slide. Practice timer. Q&A: Anticipate 10 questions. Stumped? 'Will follow up.' Honesty > Bluffing"
       ]
     },
     video: {
