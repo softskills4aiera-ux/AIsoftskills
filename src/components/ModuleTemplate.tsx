@@ -216,6 +216,7 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
   const [assessmentAnswers, setAssessmentAnswers] = useState<{[key: number]: string}>({});
   const [assessmentScore, setAssessmentScore] = useState<number | null>(null);
   const [assessmentResults, setAssessmentResults] = useState<{[key: number]: boolean}>({});
+  const [currentAssessmentQuestion, setCurrentAssessmentQuestion] = useState(0);
   const [uploadedFiles, setUploadedFiles] = useState<File[]>([]);
   const [isRecording, setIsRecording] = useState(false);
   const [collapsibleSections, setCollapsibleSections] = useState<Record<string, boolean>>({});
@@ -1419,7 +1420,7 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
                                     <span>Why This Works:</span>
                                   </p>
                                   <div className="text-lg text-gray-700 dark:text-gray-300 space-y-2">
-                                    {question.explanation.split(/[.!?]+/).filter(s => s.trim().length > 20).slice(0, 3).map((point, idx) => (
+                                    {question.explanation.split(/[.!?]+/).filter(s => s.trim().length > 10).slice(0, 4).map((point, idx) => (
                                       <div key={idx} className="flex items-start gap-2">
                                         <span className="text-green-600 dark:text-green-400 font-bold mt-1">•</span>
                                         <span className="flex-1 leading-relaxed">{point.trim()}</span>
@@ -2296,41 +2297,99 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
                 📊 Assessment Progress: {assessment.questions.length} questions total
               </p>
             </div>
+            {/* Pagination Controls */}
+            <div className="mb-6 flex justify-between items-center">
+              <button
+                onClick={() => setCurrentAssessmentQuestion(Math.max(0, currentAssessmentQuestion - 5))}
+                disabled={currentAssessmentQuestion === 0}
+                className="px-4 py-2 bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-300 dark:hover:bg-gray-500 transition-colors"
+              >
+                ← Previous 5
+              </button>
+              <span className="text-lg font-medium text-gray-700 dark:text-gray-300">
+                Questions {currentAssessmentQuestion + 1}-{Math.min(currentAssessmentQuestion + 5, assessment.questions.length)} of {assessment.questions.length}
+              </span>
+              <button
+                onClick={() => setCurrentAssessmentQuestion(Math.min(assessment.questions.length - 5, currentAssessmentQuestion + 5))}
+                disabled={currentAssessmentQuestion >= assessment.questions.length - 5}
+                className="px-4 py-2 bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-300 dark:hover:bg-gray-500 transition-colors"
+              >
+                Next 5 →
+              </button>
+            </div>
+
+            {/* Current 5 Questions */}
             <div className="space-y-6">
-              {assessment.questions.map((question, index) => (
-                <div key={question.id} className="bg-gray-50 dark:bg-gray-700 rounded-xl p-8">
-                  <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                    {index + 1}. {question.question}
-                  </h4>
-                  <div className="space-y-4">
-                    {question.options.map((option, optionIndex) => (
-                      <label key={optionIndex} className="flex items-start space-x-4 cursor-pointer p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors border-2 border-transparent hover:border-blue-300 dark:hover:border-blue-600">
-                        <input
-                          type="radio"
-                          name={`assessment-${question.id}`}
-                          value={option}
-                          checked={assessmentAnswers[question.id] === option}
-                          onChange={() => handleAssessmentAnswer(question.id, option)}
-                          className="w-5 h-5 mt-0.5 text-blue-600 flex-shrink-0"
-                        />
-                        <span className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed flex-1">{option}</span>
-                      </label>
-                    ))}
-                  </div>
-                  
-                  {/* Show explanation if question has one and user has selected an answer */}
-                  {question.explanation && assessmentAnswers[question.id] && (
-                    <div className="mt-6 p-5 bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 rounded-lg">
-                      <p className="text-base font-bold text-blue-800 dark:text-blue-300 mb-3">
-                        💡 Explanation:
-                      </p>
-                      <p className="text-lg text-blue-700 dark:text-blue-200 leading-relaxed">
-                        {question.explanation}
-                      </p>
+              {assessment.questions.slice(currentAssessmentQuestion, currentAssessmentQuestion + 5).map((question, index) => {
+                const actualIndex = currentAssessmentQuestion + index;
+                const isCorrect = assessmentAnswers[question.id] === question.options[question.correct];
+                const hasAnswer = assessmentAnswers[question.id];
+                
+                return (
+                  <div key={question.id} className="bg-gray-50 dark:bg-gray-700 rounded-xl p-8">
+                    <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+                      {actualIndex + 1}. {question.question}
+                    </h4>
+                    <div className="space-y-4">
+                      {question.options.map((option, optionIndex) => {
+                        const isSelected = assessmentAnswers[question.id] === option;
+                        const isCorrectOption = option === question.options[question.correct];
+                        
+                        return (
+                          <label key={optionIndex} className={`flex items-start space-x-4 cursor-pointer p-4 rounded-lg transition-colors border-2 ${
+                            isSelected 
+                              ? isCorrect 
+                                ? 'bg-green-50 dark:bg-green-900/30 border-green-400 dark:border-green-500' 
+                                : 'bg-red-50 dark:bg-red-900/30 border-red-400 dark:border-red-500'
+                              : 'hover:bg-gray-100 dark:hover:bg-gray-600 border-transparent hover:border-blue-300 dark:hover:border-blue-600'
+                          }`}>
+                            <div className="flex items-center gap-3">
+                              <input
+                                type="radio"
+                                name={`assessment-${question.id}`}
+                                value={option}
+                                checked={isSelected}
+                                onChange={() => handleAssessmentAnswer(question.id, option)}
+                                className="w-5 h-5 mt-0.5 text-blue-600 flex-shrink-0"
+                              />
+                              {isSelected && (
+                                <span className={`font-bold text-lg ${
+                                  isCorrect 
+                                    ? 'text-green-600 dark:text-green-400' 
+                                    : 'text-red-600 dark:text-red-400'
+                                }`}>
+                                  {isCorrect ? '✓' : '✗'}
+                                </span>
+                              )}
+                              {!isSelected && isCorrectOption && hasAnswer && (
+                                <span className="text-green-600 dark:text-green-400 font-bold text-lg">✓</span>
+                              )}
+                            </div>
+                            <span className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed flex-1">{option}</span>
+                          </label>
+                        );
+                      })}
                     </div>
-                  )}
-                </div>
-              ))}
+                    
+                    {/* Show explanation if question has one and user has selected an answer */}
+                    {question.explanation && assessmentAnswers[question.id] && (
+                      <div className="mt-6 p-5 bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 rounded-lg">
+                        <p className="text-base font-bold text-blue-800 dark:text-blue-300 mb-3">
+                          💡 Explanation:
+                        </p>
+                        <div className="text-lg text-blue-700 dark:text-blue-200 leading-relaxed">
+                          {question.explanation.split(/[.!?]+/).filter(s => s.trim().length > 10).slice(0, 4).map((point, idx) => (
+                            <div key={idx} className="flex items-start gap-2 mb-2">
+                              <span className="text-blue-600 dark:text-blue-400 font-bold mt-1">•</span>
+                              <span className="flex-1">{point.trim()}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
