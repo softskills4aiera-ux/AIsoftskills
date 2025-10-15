@@ -277,63 +277,63 @@ Alright, next up we\'re talking about Context Management - how to have long, pro
       questions: [
         {
           id: 1,
-          question: 'You\'re preparing for a finance internship interview at HDFC Bank. Which prompt will give you the MOST useful preparation help from ChatGPT?',
+          question: 'Preparing for finance internship interview at HDFC Bank. Which prompt gives MOST useful ChatGPT help?',
           options: [
             'Tell me about banking interviews',
             'Help me prepare for HDFC Bank interview',
-            'I\'m a B.Com Finance student applying for a credit analysis internship at HDFC Bank. Give me 5 technical questions they might ask about financial statement analysis and how to answer them using real examples from Indian banking sector.',
+            'B.Com Finance student applying for credit analysis internship at HDFC. Give 5 technical questions about financial statement analysis with answers using Indian banking examples.',
             'What should I know about banks?'
           ],
           correct: 2,
-          explanation: 'Option 3 provides specific context (B.Com Finance, HDFC Bank, credit analysis role), clear goal (5 technical questions with answers), and relevant constraints (Indian banking sector), enabling ChatGPT to give targeted, actionable help instead of generic advice.'
+          explanation: 'Option 3 = specific context (B.Com Finance, HDFC Bank, credit analysis role), clear goal (5 technical questions with answers), relevant constraints (Indian banking sector). Enables ChatGPT to give targeted, actionable help instead of generic advice. Specific context = specific answers. Generic prompt = generic answers.'
         },
         {
           id: 2,
-          question: 'What does the "C" in CLEAR framework stand for, and why is it the most important element?',
+          question: 'What does "C" in CLEAR framework stand for, and why is it most important element?',
           options: [
-            'Clarity - making your request clear',
-            'Context - providing background about YOU, your situation, and your specific needs',
+            'Clarity - making request clear',
+            'Context - providing background about YOU, your situation, and specific needs',
             'Concise - keeping prompts short',
             'Creative - using creative language'
           ],
           correct: 1,
-          explanation: 'Context is crucial because it tells AI who you are, what you need, and why. Without context (your background, target role, specific situation), AI can only give generic answers that work for everyone, which means they work for no one.'
+          explanation: 'Context = crucial because tells AI who you are, what you need, and why. Without context (your background, target role, specific situation), AI can only give generic answers that work for everyone, which means work for no one. Context = personalization. No context = generic waste of time.'
         },
         {
           id: 3,
-          question: 'Why should you iterate on prompts instead of accepting the first AI response?',
+          question: 'Why should iterate on prompts instead of accepting first AI response?',
           options: [
             'To waste time and look busy',
-            'Because iterating helps you refine responses and learn what specific details produce better results for YOUR needs',
-            'It\'s not necessary if your first prompt is good',
+            'Iterating helps refine responses and learn what specific details produce better results for YOUR needs',
+            'Not necessary if first prompt is good',
             'To confuse the AI system'
           ],
           correct: 1,
-          explanation: 'Iteration (using follow-ups like "make this more specific to retail" or "add metrics") helps you fine-tune responses to your exact needs and teaches you what works for future prompts. First responses are rarely perfect.'
+          explanation: 'Iteration (using follow-ups like "make this more specific to retail" or "add metrics") = helps fine-tune responses to exact needs and teaches what works for future prompts. First responses rarely perfect. Iteration = refinement. Accept first response = settle for mediocre. Pros iterate 3-5 times minimum.'
         },
         {
           id: 4,
-          question: 'You need to prepare a full campus placement strategy (resume, cover letter, interview prep, company research). What\'s the BEST approach?',
+          question: 'Need to prepare full campus placement strategy (resume, cover letter, interview prep, company research). What is BEST approach?',
           options: [
-            'Ask ChatGPT to "prepare me completely for placements" in one prompt',
-            'Break it into focused prompts: one for resume review, one for cover letter, one for interview prep, one for company research',
+            'Ask ChatGPT "prepare me completely for placements" in one prompt',
+            'Break into focused prompts: one for resume review, one for cover letter, one for interview prep, one for company research',
             'Avoid using AI for such complex tasks',
-            'Use the shortest possible prompts to save time'
+            'Use shortest possible prompts to save time'
           ],
           correct: 1,
-          explanation: 'Breaking complex tasks into smaller, focused prompts helps AI give detailed, quality responses for each area. One massive prompt overwhelms the AI and produces superficial results across everything.'
+          explanation: 'Breaking complex tasks into smaller, focused prompts = helps AI give detailed, quality responses for each area. One massive prompt overwhelms AI and produces superficial results across everything. Focused prompts = deep quality. One giant prompt = shallow garbage. Pros break down, amateurs dump everything at once.'
         },
         {
           id: 5,
-          question: 'You ask ChatGPT to help with your resume. It gives you bullet points, but they sound generic. What should you do NEXT?',
+          question: 'Ask ChatGPT to help with resume. It gives bullet points but they sound generic. What should do NEXT?',
           options: [
             'Accept it and move on - AI knows best',
             'Give up and write it yourself',
-            'Follow up with: "Make these bullet points more specific by adding metrics and outcomes. For example, instead of \'led a team\', say \'led a 5-person team to complete marketing analysis project 2 weeks ahead of deadline, resulting in 15% improvement in campaign targeting\'"',
-            'Start over with a completely different prompt'
+            'Follow up: "Make these bullet points more specific by adding metrics and outcomes. For example, instead of \'led a team\', say \'led 5-person team to complete marketing analysis project 2 weeks ahead of deadline, resulting in 15% improvement in campaign targeting\'"',
+            'Start over with completely different prompt'
           ],
           correct: 2,
-          explanation: 'Providing an example of what you want (with metrics, specific details, outcomes) teaches the AI your desired style and format. This iterative approach produces much better results than accepting generic output or starting over.'
+          explanation: 'Providing example of what you want (with metrics, specific details, outcomes) = teaches AI your desired style and format. This iterative approach produces much better results than accepting generic output or starting over. Show AI what good looks like = get more good. Generic acceptance = generic results forever.'
         }
       ]
     },
@@ -635,19 +635,19 @@ Alright, next we\'re diving into AI Communication - how to talk TO ai like you\'
       questions: [
         {
           id: 6,
-          question: 'You\'re using one ChatGPT conversation to prep for banking AND consulting interviews. After 30 messages, ChatGPT starts mixing up advice. What\'s the problem?',
+          question: 'Using one ChatGPT conversation to prep for banking AND consulting interviews. After 30 messages, ChatGPT starts mixing up advice. What is problem?',
           options: [
             'ChatGPT is broken',
-            'You\'ve exceeded the context window - AI can\'t remember earlier parts of the conversation',
-            'You need to pay for premium',
-            'AI doesn\'t work for interview prep'
+            'Exceeded context window - AI cannot remember earlier parts of conversation',
+            'Need to pay for premium',
+            'AI does not work for interview prep'
           ],
           correct: 1,
-          explanation: 'AI context windows are limited (~3000-4000 words). In long conversations about multiple topics, AI loses track of earlier context. Solution: Use separate focused chats for banking vs consulting prep.'
+          explanation: 'AI context windows = limited (~3000-4000 words). In long conversations about multiple topics, AI loses track of earlier context. Solution: Use separate focused chats for banking vs consulting prep. One chat for everything = context overload = confused AI = bad advice. Separate chats = clear context = quality advice.'
         },
         {
           id: 7,
-          question: 'What should you set in ChatGPT custom instructions for placement season?',
+          question: 'What should set in ChatGPT custom instructions for placement season?',
           options: [
             'Nothing, just use it normally',
             'Your personal details: "Final year B.Com Finance student, India, targeting banking/consulting roles, campus placements"',
@@ -655,43 +655,43 @@ Alright, next we\'re diving into AI Communication - how to talk TO ai like you\'
             'Random preferences'
           ],
           correct: 1,
-          explanation: 'Custom instructions set persistent context for ALL your chats, so you don\'t have to re-explain that you\'re a B.Com student targeting specific roles in every conversation. Saves massive time.'
+          explanation: 'Custom instructions = set persistent context for ALL your chats, so don\'t have to re-explain that you\'re B.Com student targeting specific roles in every conversation. Saves massive time. Set once, benefit forever. No custom instructions = repeat yourself 50 times = waste hours explaining same background over and over.'
         },
         {
           id: 8,
-          question: 'You\'re preparing for HDFC Bank, Deloitte, and Flipkart interviews. What\'s the BEST chat organization strategy?',
+          question: 'Preparing for HDFC Bank, Deloitte, and Flipkart interviews. What is BEST chat organization strategy?',
           options: [
             'One chat for everything to keep it all together',
             'Three separate chats: one for each company, keeping context focused and avoiding confusion',
-            'Start a new chat every time you have a question',
-            'Don\'t use AI for multiple companies'
+            'Start new chat every time you have question',
+            'Do not use AI for multiple companies'
           ],
           correct: 1,
-          explanation: 'Separate focused chats prevent context confusion. Each chat maintains clear context for one company/role, producing better, more relevant advice. One mega-chat mixes contexts and produces generic outputs.'
+          explanation: 'Separate focused chats = prevent context confusion. Each chat maintains clear context for one company/role, producing better, more relevant advice. One mega-chat mixes contexts and produces generic outputs. Banking advice ≠ consulting advice ≠ e-commerce advice. Separate chats = specialized help. One chat = confused mess.'
         },
         {
           id: 9,
-          question: 'In a long conversation, what should you do every 15-20 messages to maintain quality?',
+          question: 'In long conversation, what should do every 15-20 messages to maintain quality?',
           options: [
             'Nothing, let AI handle it',
-            'Summarize progress and re-state key context: "So we\'ve covered resume strategy. Now for interview prep, remember I\'m targeting business analyst roles..."',
+            'Summarize progress and re-state key context: "So we have covered resume strategy. Now for interview prep, remember I am targeting business analyst roles..."',
             'Start over completely',
             'Ask shorter questions'
           ],
           correct: 1,
-          explanation: 'Periodic summaries "refresh" AI\'s memory by bringing key context back to recent messages. This maintains output quality in long conversations and prevents AI from drifting off-topic.'
+          explanation: 'Periodic summaries = "refresh" AI\'s memory by bringing key context back to recent messages. Maintains output quality in long conversations and prevents AI from drifting off-topic. Think of AI memory like RAM - older stuff fades. Summaries = reload important context. No summaries = AI forgets what you\'re doing = generic garbage responses.'
         },
         {
           id: 10,
-          question: 'You asked ChatGPT to create resume bullets 20 messages ago. Now you want interview answers based on those bullets. What\'s the BEST approach?',
+          question: 'Asked ChatGPT to create resume bullets 20 messages ago. Now want interview answers based on those bullets. What is BEST approach?',
           options: [
             'Just say "use those resume bullets"',
-            'Explicitly reference: "Based on the resume bullets you created (led team project, increased efficiency 30%), help me craft STAR answers for behavioral questions"',
+            'Explicitly reference: "Based on resume bullets you created (led team project, increased efficiency 30%), help me craft STAR answers for behavioral questions"',
             'Hope AI remembers',
-            'Start a new chat and re-do the resume bullets'
+            'Start new chat and re-do resume bullets'
           ],
           correct: 1,
-          explanation: 'Explicit references work better than assuming AI remembers. Actually restating the key info ("led team project, increased efficiency 30%") ensures AI has the context it needs, even if the original message is outside its active memory window.'
+          explanation: 'Explicit references = work better than assuming AI remembers. Actually restating key info ("led team project, increased efficiency 30%") ensures AI has context it needs, even if original message outside its active memory window. Vague references ("use those bullets") = AI confused = bad output. Explicit references = AI clear = quality output.'
         }
       ]
     },
@@ -992,63 +992,63 @@ Next up - Prompt Optimization, where we make your AI interactions faster and mor
       questions: [
         {
           id: 11,
-          question: 'Your B.Com project on "E-commerce Business Models" needs depth. What\'s the BEST communication approach with ChatGPT?',
+          question: 'B.Com project on "E-commerce Business Models" needs depth. What is BEST communication approach with ChatGPT?',
           options: [
             '"Explain e-commerce business models" [take answer, done]',
-            '"I\'m analyzing Flipkart vs Amazon business models for B.Com project. Before you help, what do you need to know about my analysis framework, data sources, and assignment requirements?" [let AI ask clarifying questions]',
-            '"Give me everything about e-commerce" [hope for the best]',
+            '"Analyzing Flipkart vs Amazon business models for B.Com project. Before you help, what do you need to know about my analysis framework, data sources, and assignment requirements?" [let AI ask clarifying questions]',
+            '"Give me everything about e-commerce" [hope for best]',
             '"Write my project" [copy-paste]'
           ],
           correct: 1,
-          explanation: 'Letting AI ask YOU questions first ensures it understands your specific needs (B.Com level, Indian companies, project requirements) before generating, resulting in customized help instead of generic content.'
+          explanation: 'Letting AI ask YOU questions first = ensures it understands your specific needs (B.Com level, Indian companies, project requirements) before generating, resulting in customized help instead of generic content. AI asking questions = tailored output. You just asking = generic garbage. Invite AI to clarify = unlock quality.'
         },
         {
           id: 12,
-          question: 'ChatGPT gives you a draft cover letter for TCS. It\'s okay but sounds generic. What should you do NEXT?',
+          question: 'ChatGPT gives draft cover letter for TCS. It is okay but sounds generic. What should do NEXT?',
           options: [
             'Accept it - AI knows best',
-            'Have a dialogue: "This is a good start, but it sounds too formal and generic. Can you make it more conversational and add specific examples from my campus projects? Also, TCS values innovation - emphasize my hackathon experience more."',
+            'Have dialogue: "This is good start, but sounds too formal and generic. Can you make it more conversational and add specific examples from my campus projects? Also, TCS values innovation - emphasize my hackathon experience more."',
             'Throw it away and write yourself',
-            'Copy-paste and hope for the best'
+            'Copy-paste and hope for best'
           ],
           correct: 1,
-          explanation: 'Providing specific feedback (too formal, needs examples, emphasize hackathon) guides AI to refine the output to YOUR needs. This collaborative iteration produces much better results than accepting first drafts.'
+          explanation: 'Providing specific feedback (too formal, needs examples, emphasize hackathon) = guides AI to refine output to YOUR needs. This collaborative iteration produces much better results than accepting first drafts. Specific feedback = specific improvements. Accept generic = stay generic. Pros iterate 3-5 times with detailed feedback.'
         },
         {
           id: 13,
-          question: 'Why is having a conversation with AI better than one-shot questions?',
+          question: 'Why is having conversation with AI better than one-shot questions?',
           options: [
-            'It wastes time with unnecessary back-and-forth',
-            'Dialogue allows AI to understand your needs, you to provide feedback, and both to refine until output matches your requirements - like working with a study partner',
-            'It makes you look smart',
+            'Wastes time with unnecessary back-and-forth',
+            'Dialogue allows AI to understand your needs, you to provide feedback, and both to refine until output matches requirements - like working with study partner',
+            'Makes you look smart',
             'One-shot is actually better'
           ],
           correct: 1,
-          explanation: 'Conversational iteration (ask → respond → refine → perfect) produces customized, high-quality outputs because AI learns YOUR specific needs through dialogue, just like a real study partner would.'
+          explanation: 'Conversational iteration (ask → respond → refine → perfect) = produces customized, high-quality outputs because AI learns YOUR specific needs through dialogue, just like real study partner would. One-shot = generic. Conversation = customized. Pros treat AI like collaborative partner, not search engine.'
         },
         {
           id: 14,
-          question: 'You need help with Financial Statement Analysis assignment. What should you do BEFORE asking AI to explain concepts?',
+          question: 'Need help with Financial Statement Analysis assignment. What should do BEFORE asking AI to explain concepts?',
           options: [
             'Just ask "explain financial ratios" directly',
-            'Share your current understanding and specific confusion: "I understand current ratio and quick ratio, but I\'m confused about how to interpret them for service companies vs manufacturing. Can you explain with examples from TCS (services) vs Maruti (manufacturing)?"',
+            'Share current understanding and specific confusion: "I understand current ratio and quick ratio, but confused about how to interpret them for service companies vs manufacturing. Can you explain with examples from TCS (services) vs Maruti (manufacturing)?"',
             'Ask for complete explanation of everything',
             'Copy from textbook first'
           ],
           correct: 1,
-          explanation: 'Sharing what you ALREADY know (current ratio, quick ratio) and SPECIFIC confusion (service vs manufacturing interpretation) lets AI fill exact gaps in your understanding rather than explaining things you already know, making learning more efficient.'
+          explanation: 'Sharing what you ALREADY know (current ratio, quick ratio) and SPECIFIC confusion (service vs manufacturing interpretation) = lets AI fill exact gaps in understanding rather than explaining things you already know, making learning more efficient. Share what you know = targeted help. Ask from scratch = waste time on stuff you already understand.'
         },
         {
           id: 15,
-          question: 'For your campus placement preparation, what\'s the BEST way to use AI as a collaborative partner?',
+          question: 'For campus placement preparation, what is BEST way to use AI as collaborative partner?',
           options: [
             'Ask AI to do everything for you',
-            'Share your draft resume/answers, ask AI to critique them, identify gaps, suggest improvements, then YOU refine based on feedback - like having a mentor review your work',
+            'Share draft resume/answers, ask AI to critique them, identify gaps, suggest improvements, then YOU refine based on feedback - like having mentor review work',
             'Never use AI, do everything yourself',
             'Only use AI for spelling check'
           ],
           correct: 1,
-          explanation: 'The mentor-review approach (you create → AI critiques → you refine) helps you learn and improve while maintaining authenticity. It\'s collaborative, not outsourcing. You develop skills while getting better outputs.'
+          explanation: 'Mentor-review approach (you create → AI critiques → you refine) = helps you learn and improve while maintaining authenticity. It\'s collaborative, not outsourcing. You develop skills while getting better outputs. AI doing everything = you learn nothing. You + AI collaboration = learn + quality output. Treat AI like mentor, not ghost writer.'
         }
       ]
     },
@@ -1380,7 +1380,7 @@ Alright, next we\'re talking about Bias Recognition - because AI can be wrong, b
       questions: [
         {
           id: 16,
-          question: 'You need resume bullets for 5 different internships/projects. What\'s the MOST efficient approach using few-shot prompting?',
+          question: 'Need resume bullets for 5 different internships/projects. What is MOST efficient approach using few-shot prompting?',
           options: [
             'Ask "write my resume" 5 different times',
             'Give ChatGPT 3 examples of excellent bullets, then say: "Using this EXACT pattern (action verb + scale + method + impact), write 5 bullets for my experiences: [list experiences]"',
@@ -1388,35 +1388,35 @@ Alright, next we\'re talking about Bias Recognition - because AI can be wrong, b
             'Copy bullets from online'
           ],
           correct: 1,
-          explanation: 'Few-shot prompting (showing 3 examples) teaches AI your desired pattern. Then it can generate 5, 10, or 20 bullets matching that exact quality and format. You optimize once (create good examples), benefit multiple times (all your bullets match that standard).'
+          explanation: 'Few-shot prompting (showing 3 examples) = teaches AI your desired pattern. Then it can generate 5, 10, or 20 bullets matching that exact quality and format. You optimize once (create good examples), benefit multiple times (all bullets match that standard). Show AI what good looks like = get more good. No examples = generic output.'
         },
         {
           id: 17,
-          question: 'You\'re deciding between 3 career options (CA, MBA, Job). Which prompt optimization technique produces the BEST analysis?',
+          question: 'Deciding between 3 career options (CA, MBA, Job). Which prompt optimization technique produces BEST analysis?',
           options: [
             '"Tell me which is best"',
-            'Chain-of-thought: "Let\'s analyze this step-by-step: 1) My financial situation, 2) Time commitment of each option, 3) Career growth potential, 4) Alignment with my strengths, 5) Risk factors. Walk through each step systematically."',
+            'Chain-of-thought: "Let us analyze step-by-step: 1) My financial situation, 2) Time commitment of each option, 3) Career growth potential, 4) Alignment with my strengths, 5) Risk factors. Walk through each step systematically."',
             '"Give me pros and cons"',
             '"What should I do?"'
           ],
           correct: 1,
-          explanation: 'Chain-of-thought prompting ("step-by-step" analysis) makes AI break down complex decisions systematically, considering each factor thoroughly. This produces deeper, more useful analysis than quick generic advice.'
+          explanation: 'Chain-of-thought prompting ("step-by-step" analysis) = makes AI break down complex decisions systematically, considering each factor thoroughly. Produces deeper, more useful analysis than quick generic advice. Force AI to think step-by-step = quality analysis. One-shot question = shallow generic answer. Complex decisions need systematic thinking.'
         },
         {
           id: 18,
-          question: 'You\'re building a prompt library for placement season. What should be your FIRST 3 templates?',
+          question: 'Building prompt library for placement season. What should be FIRST 3 templates?',
           options: [
             'Random prompts you liked',
-            'The 3 most common tasks: Resume bullets, Cover letter opener, Interview STAR answers - create one perfect optimized prompt for each',
+            '3 most common tasks: Resume bullets, Cover letter opener, Interview STAR answers - create one perfect optimized prompt for each',
             'Only interview questions',
-            'Copy others\' templates'
+            'Copy others templates'
           ],
           correct: 1,
-          explanation: 'Focus on highest-frequency tasks first (resume, cover letter, interviews) because these give maximum ROI. One optimized template for each gets reused 20+ times during placements, saving massive time while maintaining quality.'
+          explanation: 'Focus on highest-frequency tasks first (resume, cover letter, interviews) = these give maximum ROI. One optimized template for each gets reused 20+ times during placements, saving massive time while maintaining quality. High-frequency tasks = high impact. Random templates = wasted effort. Build library strategically, not randomly.'
         },
         {
           id: 19,
-          question: 'Two prompts for company research. Which will you make your optimized template? Prompt A: "Tell me about [company]" - Prompt B: "Research [company]: recent news, culture, values, key challenges. Format as: 1) Business overview, 2) Why they\'re hiring, 3) What they value in candidates, 4) Recent initiatives, 5) Questions I should ask them. Sources needed."',
+          question: 'Two prompts for company research. Which will you make optimized template? Prompt A: "Tell me about [company]" - Prompt B: "Research [company]: recent news, culture, values, key challenges. Format as: 1) Business overview, 2) Why they are hiring, 3) What they value in candidates, 4) Recent initiatives, 5) Questions I should ask them. Sources needed."',
           options: [
             'Prompt A - simpler is better',
             'Prompt B - specific structure, clear format, multiple angles, actionable outputs',
@@ -1424,19 +1424,19 @@ Alright, next we\'re talking about Bias Recognition - because AI can be wrong, b
             'Mix both randomly'
           ],
           correct: 1,
-          explanation: 'Prompt B is optimized because it specifies exactly what you need (5 specific aspects), in what format (numbered list), and requests sources. This becomes your reusable template - just change company name. Works perfectly every time vs Prompt A requiring 5-6 iterations.'
+          explanation: 'Prompt B = optimized because specifies exactly what you need (5 specific aspects), in what format (numbered list), and requests sources. This becomes reusable template - just change company name. Works perfectly every time vs Prompt A requiring 5-6 iterations. Specific template = consistent quality. Vague template = inconsistent garbage.'
         },
         {
           id: 20,
-          question: 'You\'ve created 2 different prompt templates for interview answers. How do you determine which to keep in your library?',
+          question: 'Created 2 different prompt templates for interview answers. How to determine which to keep in library?',
           options: [
             'Keep both, why choose?',
-            'A/B test: Use each template 3 times, compare quality of outputs, keep the one that consistently produces better answers with less iteration needed',
+            'A/B test: Use each template 3 times, compare quality of outputs, keep one that consistently produces better answers with less iteration needed',
             'Use whichever is shorter',
             'Pick randomly'
           ],
           correct: 1,
-          explanation: 'A/B testing (systematic comparison) identifies which prompt structure works BEST for your needs. Test each template multiple times, track results (quality, iteration needed, time taken), keep the winner. This evidence-based approach builds a library of prompts you KNOW work.'
+          explanation: 'A/B testing (systematic comparison) = identifies which prompt structure works BEST for your needs. Test each template multiple times, track results (quality, iteration needed, time taken), keep the winner. This evidence-based approach builds library of prompts you KNOW work. Test and measure = quality library. Random guessing = mediocre templates.'
         }
       ]
     },
@@ -1744,7 +1744,7 @@ Next up - Ethical AI Use, where we talk about the line between AI helping you vs
       questions: [
         {
           id: 21,
-          question: 'ChatGPT suggests you should pursue CA or MBA after B.Com, barely mentioning other options. What type of bias is this MOST likely?',
+          question: 'ChatGPT suggests pursue CA or MBA after B.Com, barely mentioning other options. What type of bias is this MOST likely?',
           options: [
             'No bias - CA and MBA are objectively best',
             'Training data bias - traditional paths have more content online than emerging careers, so AI overemphasizes them',
@@ -1752,11 +1752,11 @@ Next up - Ethical AI Use, where we talk about the line between AI helping you vs
             'AI is trying to trick you'
           ],
           correct: 1,
-          explanation: 'AI training includes more content about traditional, established career paths (CA, MBA, banking) than emerging fields (fintech, analytics, startups), leading to overrepresentation of traditional advice. This doesn\'t mean traditional is bad, just that AI might be missing newer options that could suit you better.'
+          explanation: 'AI training = includes more content about traditional, established career paths (CA, MBA, banking) than emerging fields (fintech, analytics, startups), leading to overrepresentation of traditional advice. This doesn\'t mean traditional is bad, just that AI might be missing newer options that could suit you better. More training data = more emphasis. Less data = less visibility.'
         },
         {
           id: 22,
-          question: 'You ask AI about "top companies for B.Com placements." It lists TCS, Infosys, Wipro, Deloitte. Your college placement data shows 15 startups also hired well. What\'s happening?',
+          question: 'Ask AI about "top companies for B.Com placements." It lists TCS, Infosys, Wipro, Deloitte. Your college placement data shows 15 startups also hired well. What is happening?',
           options: [
             'AI is completely wrong',
             'Prestige bias - AI overvalues brand-name companies because more content exists about them, may undervalue lesser-known but great companies',
@@ -1764,11 +1764,11 @@ Next up - Ethical AI Use, where we talk about the line between AI helping you vs
             'Your placement data is wrong'
           ],
           correct: 1,
-          explanation: 'AI tends to emphasize well-known companies (more online content, more historical data) and may miss excellent but less-famous options like fast-growing startups. Always cross-reference AI suggestions with YOUR college\'s actual placement data.'
+          explanation: 'AI = tends to emphasize well-known companies (more online content, more historical data) and may miss excellent but less-famous options like fast-growing startups. Always cross-reference AI suggestions with YOUR college\'s actual placement data. Brand names = more data = AI recommends. Hidden gems = less data = AI misses. Verify with real data.'
         },
         {
           id: 23,
-          question: 'How should you handle AI advice on important career decisions?',
+          question: 'How should handle AI advice on important career decisions?',
           options: [
             'Trust AI completely - it knows better than humans',
             'Use triangulation: AI insights + Recent placement data + Advice from people in that career = Informed decision',
@@ -1776,31 +1776,31 @@ Next up - Ethical AI Use, where we talk about the line between AI helping you vs
             'Just ask your parents'
           ],
           correct: 1,
-          explanation: 'Triangulation (combining AI analysis with current data and human experience) compensates for AI\'s biases. AI gives you frameworks and considerations, data shows current reality, humans provide context and wisdom. All three together = best decisions.'
+          explanation: 'Triangulation (combining AI analysis with current data and human experience) = compensates for AI\'s biases. AI gives frameworks and considerations, data shows current reality, humans provide context and wisdom. All three together = best decisions. AI alone = biased. Data alone = no context. Humans alone = limited perspective. Combine all three = informed choice.'
         },
         {
           id: 24,
           question: 'Best way to counter AI bias when researching career options?',
           options: [
-            'Don\'t ask about careers at all',
+            'Do not ask about careers at all',
             'Ask: "Give me advice from 5 different perspectives: conservative parent, startup founder, corporate HR, entrepreneur, recent grad who chose unconventional path. Include where each perspective might be biased."',
             'Accept first response',
             'Only ask yes/no questions'
           ],
           correct: 1,
-          explanation: 'Requesting multiple perspectives forces AI to present diverse viewpoints, revealing biases in each. This helps you see the full spectrum of options and make decisions based on YOUR priorities, not AI\'s training data skews.'
+          explanation: 'Requesting multiple perspectives = forces AI to present diverse viewpoints, revealing biases in each. Helps you see full spectrum of options and make decisions based on YOUR priorities, not AI\'s training data skews. One perspective = one bias. Multiple perspectives = see all biases = make informed choice. Force AI to show you all angles.'
         },
         {
           id: 25,
-          question: 'AI suggests "Marketing roles pay less than Finance roles for B.Com grads." How should you verify this before making career choice?',
+          question: 'AI suggests "Marketing roles pay less than Finance roles for B.Com grads." How should verify before making career choice?',
           options: [
-            'Believe it - AI has all the data',
+            'Believe it - AI has all data',
             'Cross-reference: Check recent salary reports (AmbitionBox, Glassdoor India), your college placement data, talk to recent grads in both fields, consider total compensation not just base salary',
             'Ignore completely',
             'Ask AI again hoping for different answer'
           ],
           correct: 1,
-          explanation: 'Salary claims need verification with current, India-specific data. AI might be using outdated or US-centric information. Check multiple current sources (salary websites, placement reports, actual professionals) before making major decisions based on compensation assumptions.'
+          explanation: 'Salary claims = need verification with current, India-specific data. AI might be using outdated or US-centric information. Check multiple current sources (salary websites, placement reports, actual professionals) before making major decisions based on compensation assumptions. AI data = may be old/wrong region. Current local data = truth. Verify before deciding career path.'
         }
       ]
     },
@@ -2132,63 +2132,63 @@ Alright, that\'s Module 3! You\'ve now got the complete framework for using AI e
       questions: [
         {
           id: 26,
-          question: 'Your Financial Management assignment: "Analyze TCS financial statements." Which AI use is ETHICAL?',
+          question: 'Financial Management assignment: "Analyze TCS financial statements." Which AI use is ETHICAL?',
           options: [
-            '"Analyze TCS financials for me" [copy AI\'s analysis, submit as yours]',
-            '"I\'ve analyzed TCS financials [paste YOUR work]. Critique my analysis. What did I miss? Are my ratio interpretations correct?" [improve based on AI feedback, cite AI assistance]',
-            'Use AI but don\'t tell anyone',
-            'Don\'t use AI at all even if allowed'
+            '"Analyze TCS financials for me" [copy AI analysis, submit as yours]',
+            '"I have analyzed TCS financials [paste YOUR work]. Critique my analysis. What did I miss? Are my ratio interpretations correct?" [improve based on AI feedback, cite AI assistance]',
+            'Use AI but do not tell anyone',
+            'Do not use AI at all even if allowed'
           ],
           correct: 1,
-          explanation: 'Ethical use: YOU do the work first, AI helps you improve it. You learn through the process and AI feedback. Cite AI assistance. This develops your skills while leveraging AI\'s capabilities. Unethical: AI does the work, you just submit it.'
+          explanation: 'Ethical use = YOU do work first, AI helps you improve it. You learn through process and AI feedback. Cite AI assistance. Develops your skills while leveraging AI\'s capabilities. Unethical = AI does work, you just submit it. You create → AI critiques → You improve = ethical. AI creates → You copy = plagiarism.'
         },
         {
           id: 27,
-          question: 'You\'re interning at HDFC Bank. You want to use ChatGPT to improve your client email. The email contains client\'s loan details (amount, credit score, personal info). What should you do?',
+          question: 'Interning at HDFC Bank. Want to use ChatGPT to improve client email. Email contains client loan details (amount, credit score, personal info). What should do?',
           options: [
             'Paste everything - ChatGPT needs context to help',
-            'REMOVE all client-specific data, use generic placeholders: "Help me write professional email about loan approval. Template should include: greeting, approval notification, next steps, timeline, closing. Don\'t need real client details."',
-            'Use AI at home so company won\'t know',
+            'REMOVE all client-specific data, use generic placeholders: "Help me write professional email about loan approval. Template should include: greeting, approval notification, next steps, timeline, closing. Do not need real client details."',
+            'Use AI at home so company will not know',
             'Only paste client name, not other details'
           ],
           correct: 1,
-          explanation: 'NEVER share confidential client/company data with AI tools. Use generic templates instead. Sharing client information violates privacy, could be a security breach, and can get you fired. Even if AI would help more with full context, protecting confidential information is non-negotiable.'
+          explanation: 'NEVER share confidential client/company data with AI tools. Use generic templates instead. Sharing client information = violates privacy, could be security breach, can get you fired. Even if AI would help more with full context, protecting confidential information = non-negotiable. Privacy > convenience. Always.'
         },
         {
           id: 28,
-          question: 'How should you cite AI assistance in academic work?',
+          question: 'How should cite AI assistance in academic work?',
           options: [
-            'Don\'t mention it - it might hurt your grade',
+            'Do not mention it - might hurt your grade',
             'Clearly state: "Concept clarification and framework assisted by ChatGPT (OpenAI, 2024). Analysis and conclusions are my own."',
-            'Just write "used AI" at the bottom',
+            'Just write "used AI" at bottom',
             'Mention it verbally to professor but not in assignment'
           ],
           correct: 1,
-          explanation: 'Proper citation gives credit to AI assistance while making clear that YOU did the thinking and analysis. It shows academic integrity and transparency. Format: Tool name, Company, Year, plus clarification of what you did vs what AI did.'
+          explanation: 'Proper citation = gives credit to AI assistance while making clear that YOU did thinking and analysis. Shows academic integrity and transparency. Format: Tool name, Company, Year, plus clarification of what you did vs what AI did. Transparency = integrity. Hiding AI use = academic dishonesty. Cite properly = respect rules.'
         },
         {
           id: 29,
-          question: 'The "Understanding Test" for ethical AI use: After AI helps you with a concept/assignment, what should you do?',
+          question: 'The "Understanding Test" for ethical AI use: After AI helps with concept/assignment, what should do?',
           options: [
             'Submit immediately - AI is always right',
-            'Close ChatGPT. Explain the concept out loud to yourself or a friend without looking at notes. If you can\'t explain it clearly, you didn\'t learn it - go back and actually understand it before submitting.',
+            'Close ChatGPT. Explain concept out loud to yourself or friend without looking at notes. If cannot explain clearly, did not learn it - go back and actually understand before submitting.',
             'Just memorize what AI wrote',
             'Add more AI content to make it longer'
           ],
           correct: 1,
-          explanation: 'The "explain it to a friend" test ensures YOU actually understand the content, not just copied AI output. If you can\'t explain it in your own words, you haven\'t learned it - and you\'ll struggle in exams/interviews where AI can\'t help you. Redo the learning process.'
+          explanation: '"Explain it to friend" test = ensures YOU actually understand content, not just copied AI output. If can\'t explain in your own words, haven\'t learned it - and will struggle in exams/interviews where AI can\'t help. Redo learning process. Can explain = learned. Can\'t explain = just copied. Test yourself always.'
         },
         {
           id: 30,
-          question: 'Long-term perspective: What\'s the REAL risk of unethical AI use (beyond getting caught)?',
+          question: 'Long-term perspective: What is REAL risk of unethical AI use (beyond getting caught)?',
           options: [
-            'No real risk if you don\'t get caught',
-            'Skill erosion: You never develop critical thinking, analysis, and communication skills. When jobs/interviews require these skills without AI assistance, you struggle because you never built the foundation.',
-            'It\'s actually fine to always use AI',
+            'No real risk if you do not get caught',
+            'Skill erosion: Never develop critical thinking, analysis, and communication skills. When jobs/interviews require these skills without AI assistance, struggle because never built foundation.',
+            'It is actually fine to always use AI',
             'Only risk is bad grades'
           ],
           correct: 1,
-          explanation: 'The biggest risk isn\'t getting caught - it\'s never developing essential skills. In interviews, you can\'t use ChatGPT. In jobs, you need to think independently. If you over-relied on AI during B.Com, you\'ll lack the analytical and communication skills that make you valuable. Use AI to learn BETTER, not to avoid learning.'
+          explanation: 'Biggest risk = isn\'t getting caught - it\'s never developing essential skills. In interviews, can\'t use ChatGPT. In jobs, need to think independently. If over-relied on AI during B.Com, will lack analytical and communication skills that make you valuable. Use AI to learn BETTER, not to avoid learning. Skills = career. No skills = no career. AI crutch now = career struggle later.'
         }
       ]
     },

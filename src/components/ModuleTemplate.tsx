@@ -189,6 +189,7 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
   const [quizAnswers, setQuizAnswers] = useState<{[key: number]: string}>({});
   const [quizScore, setQuizScore] = useState<number | null>(null);
   const [quizResults, setQuizResults] = useState<{[key: number]: boolean}>({});
+  const [quizSubmitted, setQuizSubmitted] = useState(false);
   const [challengeResponse, setChallengeResponse] = useState('');
   const [selectedChallengeContext, setSelectedChallengeContext] = useState<'academic' | 'professional' | 'personal' | null>(null);
   
@@ -251,6 +252,7 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
     setQuizAnswers({});
     setQuizScore(null);
     setQuizResults({});
+    setQuizSubmitted(false);
     setChallengeResponse('');
     setCurrentStep('discover');
   }, [currentSubtopic]);
@@ -282,6 +284,15 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
 
   const handleQuizSubmit = () => {
     const currentSubtopicData = subtopics[currentSubtopic];
+    
+    // Check if all questions are answered
+    const allAnswered = currentSubtopicData.quiz.questions.every(q => quizAnswers[q.id]);
+    
+    if (!allAnswered) {
+      setQuizSubmitted(true); // Show warnings for unanswered questions
+      return; // Don't proceed to results
+    }
+    
     const score = calculateQuizScore(currentSubtopicData);
     const results: {[key: number]: boolean} = {};
     
@@ -291,6 +302,7 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
     
     setQuizScore(score);
     setQuizResults(results);
+    setQuizSubmitted(true);
     setCurrentStep('quiz-results');
   };
 
@@ -615,8 +627,8 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
     ];
 
     return (
-      <div className="flex justify-center mb-8">
-        <div className="flex space-x-2 bg-white/10 backdrop-blur-sm rounded-full p-2">
+      <div className="flex justify-center mb-8 w-full">
+        <div className="flex flex-wrap justify-center gap-2 bg-white/20 backdrop-blur-sm rounded-2xl p-3 border border-white/30 shadow-lg max-w-4xl">
           {stages.map((stage, index) => {
             const Icon = stage.icon;
             const isActive = currentStep === stage.key;
@@ -626,16 +638,16 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
               <button
                 key={stage.key}
                 onClick={() => setCurrentStep(stage.key as any)}
-                className={`flex items-center space-x-2 px-4 py-2 rounded-full transition-all duration-300 ${
+                className={`flex items-center space-x-2 px-4 py-3 rounded-xl transition-all duration-300 flex-shrink-0 ${
                   isActive 
-                    ? 'bg-white text-gray-900 shadow-lg' 
+                    ? 'bg-white text-gray-900 shadow-lg font-semibold' 
                     : isCompleted
-                    ? 'bg-green-500/20 text-green-300'
-                    : 'text-gray-300 hover:text-white hover:bg-white/10'
+                    ? 'bg-green-500/30 text-green-300 font-medium'
+                    : 'bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-blue-600 hover:to-purple-700 font-medium shadow-md'
                 }`}
               >
-                <Icon size={16} />
-                <span className="text-sm font-medium">{stage.label}</span>
+                <Icon size={18} />
+                <span className="text-sm whitespace-nowrap">{stage.label}</span>
               </button>
             );
           })}
@@ -1208,23 +1220,67 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
                         {questionIndex + 1}. {question.question}
                       </h4>
                       <div className="space-y-3">
-                        {question.options.map((option, optionIndex) => (
-                          <div
-                            key={optionIndex}
-                            onClick={() => handleQuizAnswer(question.id, option)}
-                            className={`p-4 rounded-lg border-2 cursor-pointer transition-all duration-200 ${
-                              quizAnswers[question.id] === option
-                                ? 'border-green-500 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300'
-                                : 'border-gray-200 dark:border-gray-600 hover:border-gray-300 dark:hover:border-gray-500 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300'
-                            }`}
-                          >
-                            <span className="text-lg">{option}</span>
+                        {question.options.map((option, optionIndex) => {
+                          const isSelected = quizAnswers[question.id] === option;
+                          const isCorrect = option === question.options[question.correct];
+                          const showCorrectMark = quizSubmitted && isSelected && isCorrect;
+                          const showWrongMark = quizSubmitted && isSelected && !isCorrect;
+                          
+                          return (
+                            <div
+                              key={optionIndex}
+                              onClick={() => !quizSubmitted && handleQuizAnswer(question.id, option)}
+                              className={`p-4 rounded-lg border-2 cursor-pointer transition-all duration-200 flex items-center justify-between ${
+                                showCorrectMark
+                                  ? 'border-green-500 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300'
+                                  : showWrongMark
+                                  ? 'border-red-500 bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300'
+                                  : isSelected
+                                  ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300'
+                                  : 'border-gray-200 dark:border-gray-600 hover:border-gray-300 dark:hover:border-gray-500 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300'
+                              }`}
+                            >
+                              <span className="text-lg">{option}</span>
+                              {showCorrectMark && <span className="text-2xl font-bold text-green-600 dark:text-green-400">✓</span>}
+                              {showWrongMark && <span className="text-2xl font-bold text-red-600 dark:text-red-400">✗</span>}
+                            </div>
+                          );
+                        })}
+                        {quizSubmitted && !quizAnswers[question.id] && (
+                          <div className="p-3 rounded-lg bg-yellow-50 dark:bg-yellow-900/20 border-2 border-yellow-500 text-yellow-700 dark:text-yellow-300 flex items-center gap-2">
+                            <span className="text-xl">⚠️</span>
+                            <span className="text-sm font-semibold">Please select an answer for this question</span>
                           </div>
-                        ))}
+                        )}
                       </div>
                     </div>
                   ))}
                 </div>
+
+                {/* Warning Banner if submitted with unanswered questions */}
+                {quizSubmitted && currentSubtopicData.quiz.questions.some(q => !quizAnswers[q.id]) && (
+                  <div className="bg-yellow-100 dark:bg-yellow-900/30 border-2 border-yellow-500 rounded-xl p-6 mb-6">
+                    <div className="flex items-start gap-4">
+                      <span className="text-4xl">⚠️</span>
+                      <div className="flex-1">
+                        <h4 className="text-xl font-bold text-yellow-800 dark:text-yellow-200 mb-2">
+                          Some Questions Are Unanswered
+                        </h4>
+                        <p className="text-lg text-yellow-700 dark:text-yellow-300 mb-4">
+                          Please answer all questions before submitting the quiz. Scroll down to see which questions need your attention.
+                        </p>
+                        <motion.button
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                          onClick={() => setQuizSubmitted(false)}
+                          className="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center gap-2"
+                        >
+                          Continue Quiz
+                        </motion.button>
+                      </div>
+                    </div>
+                  </div>
+                )}
 
                 {/* Navigation Buttons */}
                 <div className="flex justify-between items-center pt-6">
@@ -1293,38 +1349,67 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
 
                 {/* Question Review */}
                 <div>
-                  <h4 className="text-3xl font-bold text-green-600 dark:text-green-400 mb-6">
+                  <h4 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
                     Question Review
                   </h4>
-                  <div className="space-y-4">
+                  <div className="space-y-6">
                     {currentSubtopicData.quiz.questions.map((question, questionIndex) => {
                       const userAnswer = quizAnswers[question.id];
                       const correctAnswer = question.options[question.correct];
                       const isCorrect = userAnswer === correctAnswer;
                       
                       return (
-                        <div key={question.id} className="bg-green-50 dark:bg-green-900/10 rounded-xl p-6 border border-green-200 dark:border-green-800">
+                        <div key={question.id} className={`rounded-xl p-6 border-2 ${
+                          isCorrect 
+                            ? 'bg-green-50 dark:bg-green-900/10 border-green-500' 
+                            : 'bg-red-50 dark:bg-red-900/10 border-red-500'
+                        }`}>
                           <div className="flex items-start gap-4">
-                            {/* Green Checkmark */}
-                            <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                              <span className="text-white text-sm font-bold">✓</span>
+                            {/* Checkmark or X */}
+                            <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 mt-1 ${
+                              isCorrect ? 'bg-green-500' : 'bg-red-500'
+                            }`}>
+                              <span className="text-white text-xl font-bold">
+                                {isCorrect ? '✓' : '✗'}
+                              </span>
                             </div>
                             
                             <div className="flex-1">
                               {/* Question */}
-                              <h5 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                              <h5 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                                 {questionIndex + 1}. {question.question}
                               </h5>
                               
                               {/* Your Answer */}
                               <div className="mb-3">
-                                <p className="text-base font-medium text-gray-700 dark:text-gray-300 mb-1">
+                                <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                                   Your Answer:
                                 </p>
-                                <p className="text-lg text-gray-600 dark:text-gray-400">
-                                  {userAnswer || 'No answer selected'}
-                                </p>
+                                <div className={`p-3 rounded-lg border-2 ${
+                                  isCorrect
+                                    ? 'bg-green-100 dark:bg-green-900/30 border-green-500 text-green-800 dark:text-green-200'
+                                    : 'bg-red-100 dark:bg-red-900/30 border-red-500 text-red-800 dark:text-red-200'
+                                }`}>
+                                  <p className="text-lg font-semibold flex items-center gap-2">
+                                    {isCorrect ? '✓' : '✗'}
+                                    {userAnswer || 'No answer selected'}
+                                  </p>
+                                </div>
                               </div>
+                              
+                              {/* Correct Answer (only show if user got it wrong) */}
+                              {!isCorrect && (
+                                <div className="mb-4">
+                                  <p className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                                    Correct Answer:
+                                  </p>
+                                  <div className="p-3 rounded-lg border-2 bg-green-100 dark:bg-green-900/30 border-green-500 text-green-800 dark:text-green-200">
+                                    <p className="text-lg font-semibold flex items-center gap-2">
+                                      ✓ {correctAnswer}
+                                    </p>
+                                  </div>
+                                </div>
+                              )}
                               
                               {/* Explanation - Gen Z Friendly Format */}
                               {question.explanation && (

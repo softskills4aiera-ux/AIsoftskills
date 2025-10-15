@@ -192,63 +192,63 @@ Stop blaming your team. Start understanding team dynamics. Navigate the stages. 
       questions: [
         {
           id: 1,
-          question: 'Your B.Com group project team (Week 1): Everyone is polite, agreeing on everything. "This will be great!" But no real work happens. Week 2: Conflicts erupt. Priya vs Rahul debate. You panic: "Team is broken!" What stage are you in?',
+          question: 'Week 1: Everyone polite, no work. Week 2: Conflicts erupt. You panic: "Team broken!" What stage?',
           options: [
-            'Starting, working, finishing - just normal project phases',
-            'Forming (Week 1: polite, low productivity) → Storming (Week 2: conflict, necessary for growth). This is NORMAL. Navigate storming to reach norming and performing.',
-            'Beginning, middle, end - linear progression',
-            'Planning, doing, reviewing - standard workflow'
+            'Just normal project phases',
+            'Forming → Storming (conflict = growth)',
+            'Linear beginning to end',
+            'Standard workflow progression'
           ],
           correct: 1,
-          explanation: 'Your team is transitioning from FORMING to STORMING (Tuckman Model). Week 1 (Forming): Polite, agreeable, avoiding conflict. Everyone says "This will be great!" but no real work happens. Why? Testing boundaries, unclear roles, surface relationships. Low productivity is normal in forming. Week 2 (Storming): Conflicts erupt (Priya vs Rahul). You think "Team is broken!" Reality: Storming is NORMAL and NECESSARY. Honest opinions emerge, power dynamics surface, roles get tested. Most teams get stuck here because they do not know how to navigate conflict. Navigate storming (acknowledge it, address conflicts, use RACI, build psychological safety, establish norms) to reach norming (Week 4-5: conflicts resolve, productivity rises) and performing (Week 6+: high trust, smooth collaboration, excellent results). In B.Com group projects, expect forming → storming → norming → performing. Do not panic at storming. Navigate it. High performance is earned through navigating these stages, not automatic from Day 1.'
+          explanation: 'Forming → Storming (Tuckman Model). Week 1 (Forming): Polite, no real work. Testing boundaries, unclear roles. Week 2 (Storming): Conflicts erupt. Think "Team broken!" Reality: Storming NORMAL and NECESSARY. Honest opinions emerge, power dynamics surface, roles tested. Navigate storming (acknowledge it, address conflicts, use RACI, build psychological safety) to reach norming (conflicts resolve, productivity rises) and performing (high trust, excellent results). Don\'t panic at storming. Navigate it. High performance earned through stages, not automatic.'
         },
         {
           id: 2,
-          question: 'Week 2: Your team is in storming. Priya wants market research. Rahul says: "Waste of time!" Conflict erupts. Your teammate says: "We should avoid conflict. Everyone should just agree." Is this right?',
+          question: 'Storming: Priya wants research. Rahul: "Waste of time!" Teammate: "Avoid conflict, just agree." Right?',
           options: [
-            'Yes - conflict means team is failing, avoid it at all costs',
-            'No - Storming (conflict) is NORMAL and NECESSARY for team growth. Do not avoid it, NAVIGATE it. Facilitate: "Priya, why research? Rahul, why skip?" Find middle ground.',
-            'Yes - perfect teams never have conflict',
-            'Yes - conflict should be suppressed immediately'
+            'Yes - conflict means failing',
+            'No - Storming NORMAL. Navigate it',
+            'Yes - perfect teams no conflict',
+            'Yes - suppress conflict immediately'
           ],
           correct: 1,
-          explanation: 'NO - avoiding conflict keeps team stuck in forming (polite but unproductive). Storming is NORMAL and NECESSARY. Why? (1) Honest opinions emerge: Priya and Rahul disagree (good! Now you can find best approach). (2) Power dynamics surface: Who makes decisions? (3) Roles get tested: Who does what? Suppressing conflict: Priya and Rahul stay silent, resentment builds, team never reaches high performance. Navigating conflict: You facilitate: "Priya, why is research important?" (Answer: "Ensures we target right market.") "Rahul, why skip it?" (Answer: "Limited time.") "What if we do QUICK research (2 days, not 2 weeks)? Priya gets data, Rahul gets speed." Both agree. Conflict resolved. Team moves to norming. In B.Com teams, do NOT avoid storming. Navigate it: (1) Acknowledge ("Storming is normal"), (2) Address conflicts early, (3) Use tools (RACI, norms, psychological safety), (4) Be patient (2-3 weeks), (5) Celebrate norming. Result: Team reaches performing (high trust, excellent results). Conflict = growth, not failure.'
+          explanation: 'NO - avoiding conflict keeps team stuck (polite but unproductive). Storming NORMAL and NECESSARY. Honest opinions emerge: Priya and Rahul disagree (good! Find best approach). Power dynamics surface: Who decides? Roles tested: Who does what? Suppressing conflict: Silent, resentment builds, never reach high performance. Navigating conflict: Facilitate: "Priya, why research important?" "Rahul, why skip?" "What if QUICK research (2 days)? Priya gets data, Rahul gets speed." Both agree. Conflict resolved. Team moves to norming. Do NOT avoid storming. Navigate it. Conflict = growth, not failure.'
         },
         {
           id: 3,
-          question: 'Week 3: You assign tasks. "Priya, research. Rahul, slides. Ankit, data." Week 4: Priya and Ankit both research (overlap). Nobody writes report (gap). Sarah: "I thought Rahul was doing design!" What tool prevents this?',
+          question: 'Priya and Ankit both research (overlap). Nobody writes report (gap). Sarah confused. What prevents this?',
           options: [
-            'Better communication - just talk more',
-            'RACI Matrix: For EACH task, assign R (Responsible: who does work?), A (Accountable: who approves?), C (Consulted: who gives input?), I (Informed: who needs updates?). Eliminates overlap, gaps, confusion.',
-            'More meetings - schedule daily check-ins',
-            'Stricter deadlines - enforce accountability'
+            'Better communication - talk more',
+            'RACI Matrix - clear roles',
+            'More meetings - daily check-ins',
+            'Stricter deadlines - enforce rules'
           ],
           correct: 1,
-          explanation: 'RACI Matrix prevents role confusion. Problem: You said "Priya, research" but did not clarify: Who approves research? Who gives input? Who needs updates? Result: Priya and Ankit both research (overlap), nobody writes report (gap), Sarah thinks Rahul is doing design (confusion). RACI Solution: For EACH task, assign: R (Responsible: who DOES the work?), A (Accountable: who APPROVES/owns outcome?), C (Consulted: who gives INPUT before?), I (Informed: who needs UPDATES after?). Example: Market Research → R: Priya (does research), A: You (approve scope/quality), C: Rahul, Ankit (give input on what to research), I: Sarah (gets findings for design). RACI eliminates: (1) Overlap (only Priya is R), (2) Gaps (every task has R and A), (3) Confusion (Sarah knows she is I, not R). Create RACI in Week 2 (before storming escalates). Review weekly. In B.Com group projects, RACI transforms chaos into clarity. Without it: duplicated effort, missed work, blame. With it: clear roles, no confusion, smooth collaboration.'
+          explanation: 'RACI Matrix prevents role confusion. Problem: Said "Priya, research" but didn\'t clarify: Who approves? Who gives input? Who needs updates? Result: Overlap, gaps, confusion. RACI Solution: For EACH task, assign: R (Responsible: DOES work), A (Accountable: APPROVES/owns outcome), C (Consulted: gives INPUT before), I (Informed: needs UPDATES after). Example: Market Research → R: Priya (does research), A: You (approve), C: Rahul, Ankit (give input), I: Sarah (gets findings). RACI eliminates: (1) Overlap (only Priya is R), (2) Gaps (every task has R and A), (3) Confusion (Sarah knows she\'s I, not R). RACI transforms chaos into clarity.'
         },
         {
           id: 4,
-          question: 'Ankit is silent in meetings but complains privately: "Nobody listens. Priya and Rahul dominate. I gave up." Google Project Aristotle (2015) found the #1 predictor of team performance is:',
+          question: 'Ankit silent, complains: "Nobody listens. I gave up." Google found #1 predictor of team performance?',
           options: [
-            'Talent - having the smartest team members',
-            'Psychological Safety - team members feel safe to speak up, disagree, make mistakes without punishment. Ankit lacks this. Result: Lost ideas, team underperforms.',
-            'Resources - having the best tools and budget',
-            'Strategy - having the best plan'
+            'Talent - smartest members',
+            'Psychological Safety - safe to speak',
+            'Resources - best tools',
+            'Strategy - best plan'
           ],
           correct: 1,
-          explanation: 'Psychological Safety is the #1 predictor of team performance (Google Project Aristotle, 2015). Google studied 180 teams. Question: What makes teams high-performing? Answer: Psychological safety (team members feel safe to speak up, disagree, make mistakes without punishment) matters MORE than talent, resources, or strategy. Ankit lacks psychological safety: "Nobody listens. Priya and Rahul dominate. I tried to speak up, Rahul interrupted. I gave up." Result: (1) Lost ideas (Ankit has good ideas, team never hears them), (2) Passive resistance (Ankit does minimum work), (3) Team loses 50% of its intelligence (only loud voices heard). Build psychological safety: (1) Invite quiet voices ("Ankit, what do you think?"), (2) Thank dissent ("Thank you for disagreeing"), (3) Share your mistakes ("I messed up"), (4) No blame ("What happened? How can we help?"), (5) Establish norm ("All ideas welcome"). Result: Ankit speaks up, team hears his ideas, performance improves 2×. In B.Com teams, psychological safety is not "nice to have." It is THE differentiator between mediocre and high-performing teams.'
+          explanation: 'Psychological Safety = #1 predictor (Google Project Aristotle, 2015). Google studied 180 teams. Psychological safety (feel safe to speak up, disagree, make mistakes without punishment) matters MORE than talent, resources, or strategy. Ankit lacks it: "Nobody listens. Priya and Rahul dominate. I gave up." Result: (1) Lost ideas (Ankit has good ideas, team never hears), (2) Passive resistance (does minimum work), (3) Team loses 50% intelligence (only loud voices heard). Build psychological safety: (1) Invite quiet voices ("Ankit, what think?"), (2) Thank dissent, (3) Share mistakes, (4) No blame, (5) Establish norm ("All ideas welcome"). Result: Ankit speaks up, performance improves 2×. Psychological safety = THE differentiator between mediocre and high-performing teams.'
         },
         {
           id: 5,
-          question: 'Week 4: Meeting scheduled for 10 AM. Priya arrives 10:00. Rahul arrives 10:15. Ankit arrives 10:30. Sarah forgets. You are frustrated. What is missing?',
+          question: 'Meeting 10 AM. Priya 10:00. Rahul 10:15. Ankit 10:30. Sarah forgets. You frustrated. What\'s missing?',
           options: [
-            'Discipline - team members are lazy',
-            'Team Norms - agreed expectations for how we work together (meetings start 10:00 sharp, attendance mandatory unless 24-hour notice). Different expectations = frustration. Norms create predictability.',
-            'Punishment - need stricter consequences',
-            'Leadership - need someone to enforce rules'
+            'Discipline - team lazy',
+            'Team Norms - agreed expectations',
+            'Punishment - stricter consequences',
+            'Leadership - enforce rules'
           ],
           correct: 1,
-          explanation: 'Team Norms are missing (agreed expectations for how we work together). Problem: No agreed norms. Priya expects: "Meetings start on time." Rahul expects: "10 AM means 10:15 (IST)." Ankit expects: "Meetings are optional if busy." Sarah expects: "Someone will remind me." Different expectations = frustration. Solution: Establish team norms in Week 2. Hold 1-hour meeting. Ask: "How do we want to work together?" Agree on: (1) Meetings: Start 10:00 sharp (no IST), attendance mandatory (unless 24-hour notice), agenda shared 1 day before. (2) Communication: Reply within 24 hours, WhatsApp for urgent, weekly check-ins. (3) Decision-making: Consensus, voting if needed, veto for strong objections. (4) Conflict: Address directly, focus on issue not person, seek win-win. (5) Accountability: Deadlines are commitments, inform 48 hours ahead if miss, peer feedback monthly. Write norms down. Review in Week 4. Update as needed. Norms create predictability and trust. In B.Com teams, without norms: chaos, frustration, misaligned expectations. With norms: smooth collaboration, everyone knows what to expect, high performance.'
+          explanation: 'Team Norms missing. Problem: No agreed expectations. Priya expects: "Meetings start on time." Rahul expects: "10 AM means 10:15 (IST)." Ankit expects: "Meetings optional if busy." Sarah expects: "Someone will remind me." Different expectations = frustration. Solution: Establish team norms in Week 2. Ask: "How want to work together?" Agree on: (1) Meetings: Start 10:00 sharp, attendance mandatory (unless 24-hour notice), agenda shared 1 day before. (2) Communication: Reply within 24 hours, WhatsApp for urgent, weekly check-ins. (3) Decision-making: Consensus, voting if needed, veto for strong objections. (4) Conflict: Address directly, focus on issue not person, seek win-win. (5) Accountability: Deadlines are commitments, inform 48 hours ahead if miss. Write norms down. Review in Week 4. Update as needed. Norms create predictability and trust. Without norms: chaos, frustration. With norms: smooth collaboration, high performance.'
         }
       ]
     },
@@ -554,63 +554,63 @@ Stop waiting for permission. Start building influence. Lead without authority."
       questions: [
         {
           id: 6,
-          question: 'You are smart and organized. Nominated for club president. You decline: "I am not a leader. I do not have authority." Rohan (average student) accepts. 6 months: Club grows 4×, 10 events, ₹2L sponsorships. What is leadership?',
+          question: 'You decline president: "No authority." Rohan accepts. 6 months: Club grows 4×. What is leadership?',
           options: [
-            'Having authority (president title, power to make decisions)',
-            'Influence - inspiring and guiding others to achieve shared goals. Rohan built influence through: Lead by example, inspire with vision, delegate effectively, develop others. No authority needed.',
-            'Being bossy and giving orders',
-            'Having a title and position'
+            'Having authority and title',
+            'Influence - inspiring others',
+            'Being bossy, giving orders',
+            'Having position and power'
           ],
           correct: 1,
-          explanation: 'Leadership is INFLUENCE (inspiring and guiding others), NOT authority (title/position). You confused them. You think: "I am not president (no authority), so I cannot lead." Reality: You can lead WITHOUT authority. Rohan built influence through: (1) Lead by example (arrives early, does grunt work, models behavior), (2) Inspire with vision ("Let us make this #1 club"), (3) Delegate effectively (empowers 10 team leads), (4) Develop others (mentors, creates opportunities). Result: 200 members follow him because they RESPECT him (influence), not because they HAVE TO (authority). You can have influence without authority: Lead study group (10 members, no title needed), mentor juniors (no authority needed), contribute ideas (no position needed). People respect you, follow you, ask for your guidance. You are a leader without a title. In B.Com, build influence first (competence + character + contribution). Authority follows influence. Stop waiting for president title. Start leading now.'
+          explanation: 'Leadership = INFLUENCE (inspiring and guiding others), NOT authority (title/position). Think: "I\'m not president (no authority), so I can\'t lead." Reality: Can lead WITHOUT authority. Rohan built influence through: (1) Lead by example (arrives early, does grunt work, models behavior), (2) Inspire with vision ("Let\'s make this #1 club"), (3) Delegate effectively (empowers 10 team leads), (4) Develop others (mentors, creates opportunities). Result: 200 members follow him because they RESPECT him (influence), not because they HAVE TO (authority). Can have influence without authority: Lead study group (10 members, no title needed), mentor juniors (no authority needed), contribute ideas (no position needed). People respect you, follow you, ask for guidance. You\'re a leader without a title. Build influence first (competence + character + contribution). Authority follows influence. Stop waiting for president title. Start leading now.'
         },
         {
           id: 7,
-          question: 'Rohan (club president) says: "I am here to serve you, not to be served. How can I help you succeed?" This is which leadership style?',
+          question: 'Rohan: "I serve you. How can I help you succeed?" Which leadership style?',
           options: [
-            'Authoritarian leadership: "Do as I say"',
-            'Servant leadership: Focus on serving and developing team members (Simon Sinek: "Leaders eat last" - put team needs before your own)',
-            'Avoiding responsibility and following orders',
-            'Passive leadership: Let team do whatever they want'
+            'Authoritarian - "Do as I say"',
+            'Servant leadership - serve team',
+            'Avoiding responsibility completely',
+            'Passive - let team do anything'
           ],
           correct: 1,
-          explanation: 'Servant leadership focuses on SERVING and DEVELOPING team members, not being served. Rohan asks: "How can I help you succeed?" (servant mindset). He: (1) Mentors 10 team leads (weekly 1-on-1s, feedback, support), (2) Creates opportunities (junior wants to learn marketing? Make them Marketing Lead), (3) Removes obstacles (team needs venue? Rohan negotiates with college), (4) Celebrates team (public recognition, not self-promotion). Result: Team grows, succeeds, stays committed. Servant leadership ≠ weak leadership. It is STRONG leadership that prioritizes team development over personal glory. Simon Sinek: "Leaders eat last" (military: Officers eat after soldiers are fed. Leaders sacrifice for team). Rohan sacrifices time (stays late to help), credit (celebrates team, not himself), comfort (does grunt work). Team appreciates, respects, follows him. In B.Com leadership, serve your team. Ask: "How can I help you succeed?" Mentor, support, remove obstacles, celebrate them. They will follow you because you serve them, not because you boss them.'
+          explanation: 'Servant leadership = focuses on SERVING and DEVELOPING team members, not being served. Rohan asks: "How can I help you succeed?" (servant mindset). He: (1) Mentors 10 team leads (weekly 1-on-1s, feedback, support), (2) Creates opportunities (junior wants to learn marketing? Make them Marketing Lead), (3) Removes obstacles (team needs venue? Rohan negotiates with college), (4) Celebrates team (public recognition, not self-promotion). Result: Team grows, succeeds, stays committed. Servant leadership ≠ weak leadership. It\'s STRONG leadership that prioritizes team development over personal glory. Simon Sinek: "Leaders eat last" (military: Officers eat after soldiers are fed. Leaders sacrifice for team). Rohan sacrifices time (stays late to help), credit (celebrates team, not himself), comfort (does grunt work). Team appreciates, respects, follows him. Serve your team. Ask: "How can I help you succeed?" Mentor, support, remove obstacles, celebrate them. They\'ll follow you because you serve them, not because you boss them.'
         },
         {
           id: 8,
-          question: 'Rohan says: "Let us arrive on time for meetings." He arrives 10 minutes early. Team arrives early too. If Rohan arrived late but said "arrive on time," would team follow?',
+          question: 'Rohan: "Arrive on time." He arrives 10 min early. Team follows. If he arrived late?',
           options: [
-            'Yes - team follows what leader SAYS',
-            'No - team follows what leader DOES (lead by example). If Rohan arrives late, team arrives late (hypocrisy kills leadership). Your BEHAVIOR sets the standard, not your WORDS.',
-            'Yes - authority means team must obey regardless',
-            'No - team should figure it out themselves'
+            'Yes - team follows words',
+            'No - team follows actions',
+            'Yes - authority means obey',
+            'No - team figures it out'
           ],
           correct: 1,
-          explanation: 'Team follows what leader DOES (behavior), not what leader SAYS (words). Rohan arrives 10 minutes early. Team sees his behavior, follows his example. Result: Team arrives early. If Rohan said "arrive on time" but arrived late himself: Team would arrive late too (they follow his behavior, not his words). Hypocrisy kills leadership. Lead by example means: (1) Work ethic (you want team to work hard? Work hard yourself), (2) Integrity (you want honesty? Admit your mistakes), (3) Respect (you want respect? Respect others first). Your BEHAVIOR sets the standard. Team mirrors your actions. You arrive late? Team arrives late. You work hard? Team works hard. You admit mistakes? Team admits mistakes. In B.Com leadership, your actions are your leadership. Do not say "work hard" while you slack off. Do not say "be honest" while you hide mistakes. Model the behavior you want to see. Your team will follow your example, not your words.'
+          explanation: 'Team follows what leader DOES (behavior), not what leader SAYS (words). Rohan arrives 10 minutes early. Team sees his behavior, follows his example. Result: Team arrives early. If Rohan said "arrive on time" but arrived late himself: Team would arrive late too (they follow his behavior, not his words). Hypocrisy kills leadership. Lead by example means: (1) Work ethic (want team to work hard? Work hard yourself), (2) Integrity (want honesty? Admit your mistakes), (3) Respect (want respect? Respect others first). Your BEHAVIOR sets the standard. Team mirrors your actions. You arrive late? Team arrives late. You work hard? Team works hard. You admit mistakes? Team admits mistakes. Your actions are your leadership. Don\'t say "work hard" while you slack off. Don\'t say "be honest" while you hide mistakes. Model the behavior you want to see. Your team will follow your example, not your words.'
         },
         {
           id: 9,
-          question: 'Rohan delegates event organization to Priya. Option A: "Priya, organize event. Figure it out." Option B: "Priya, organize event. Goal: 100 attendees, ₹10K budget. Resources: Venue contacts, checklist. I am here to help." Which is effective delegation?',
+          question: 'Delegate to Priya. A: "Figure it out." B: "Goal: 100 attendees. Resources: contacts, checklist. I\'m here." Which?',
           options: [
-            'Option A - Dump unwanted tasks and avoid work',
-            'Option B - Develop others through responsibility + support. Clear goal, resources, support (not micromanage). Priya learns, succeeds, grows. Delegation develops people.',
-            'Option A - Let them figure it out (builds independence)',
-            'Neither - leader should do everything to control quality'
+            'A - Dump tasks, avoid work',
+            'B - Develop through support',
+            'A - Builds independence',
+            'Neither - do everything yourself'
           ],
           correct: 1,
-          explanation: 'Option B is effective delegation (develop others through responsibility + support). Option A is dumping work ("Figure it out" = no support, no guidance). Result: Priya struggles, event is mediocre, Priya does not learn, you blame her. Option B provides: (1) Clear goal (100 attendees, ₹10K budget - Priya knows success criteria), (2) Resources (venue contacts, checklist - Priya has tools), (3) Support ("I am here to help" - Priya can ask questions). Result: Priya succeeds (120 attendees!), learns (event management skills), grows (confidence, leadership). Effective delegation: (1) Develops others (they learn by doing), (2) Scales impact (10 people > 1 person), (3) Builds succession (when you leave, 10 leaders can take over). Delegation ≠ dumping unwanted tasks or avoiding work. Delegation = developing people through empowerment + support. In B.Com leadership, delegate to develop. Provide clear goals, resources, support. Trust them. Celebrate their success. They will grow into leaders.'
+          explanation: 'Option B = effective delegation (develop others through responsibility + support). Option A = dumping work ("Figure it out" = no support, no guidance). Result: Priya struggles, event is mediocre, Priya doesn\'t learn, you blame her. Option B provides: (1) Clear goal (100 attendees, ₹10K budget - Priya knows success criteria), (2) Resources (venue contacts, checklist - Priya has tools), (3) Support ("I\'m here to help" - Priya can ask questions). Result: Priya succeeds (120 attendees!), learns (event management skills), grows (confidence, leadership). Effective delegation: (1) Develops others (they learn by doing), (2) Scales impact (10 people > 1 person), (3) Builds succession (when you leave, 10 leaders can take over). Delegation ≠ dumping unwanted tasks or avoiding work. Delegation = developing people through empowerment + support. Delegate to develop. Provide clear goals, resources, support. Trust them. Celebrate their success. They\'ll grow into leaders.'
         },
         {
           id: 10,
-          question: 'You are NOT club president (no authority). But you lead study group, mentor juniors, contribute ideas. People respect you and ask: "What should we do?" How did you build influence without authority?',
+          question: 'NOT president. But lead study group, mentor juniors. People ask: "What should we do?" How?',
           options: [
             'Forcing compliance through pressure',
-            'Building influence through COMPETENCE (deliver excellent work), CHARACTER (reliable, honest, caring), CONTRIBUTION (help others, add value). People respect you, follow you.',
-            'Having a title or position',
+            'COMPETENCE + CHARACTER + CONTRIBUTION',
+            'Having title or position',
             'Being aggressive and demanding'
           ],
           correct: 1,
-          explanation: 'You built influence without authority through: (1) COMPETENCE (you deliver excellent work, people trust your judgment - "You are reliable, I trust your suggestions"), (2) CHARACTER (you are honest, caring, reliable, people trust your intentions - "You help others, I respect you"), (3) CONTRIBUTION (you mentor juniors, share knowledge, add value, people appreciate you - "You helped me, I will follow you"). Result: People respect you, follow your suggestions, ask for your guidance. You have INFLUENCE without authority. You are a leader without a title. Rohan did this BEFORE becoming president: Organized study groups (competence), helped juniors (character), contributed ideas (contribution). People noticed. When president position opened: Everyone nominated Rohan (he already had influence). Authority followed influence. In B.Com, do NOT wait for authority (president, manager, team lead). Build influence NOW: Deliver excellent work, help others, contribute ideas, be reliable, be consistent. Over 6 months, you will have influence. People will follow you. Authority will come.'
+          explanation: 'Built influence without authority through: (1) COMPETENCE (deliver excellent work, people trust your judgment - "You\'re reliable, I trust your suggestions"), (2) CHARACTER (you\'re honest, caring, reliable, people trust your intentions - "You help others, I respect you"), (3) CONTRIBUTION (mentor juniors, share knowledge, add value, people appreciate you - "You helped me, I\'ll follow you"). Result: People respect you, follow your suggestions, ask for your guidance. You have INFLUENCE without authority. You\'re a leader without a title. Rohan did this BEFORE becoming president: Organized study groups (competence), helped juniors (character), contributed ideas (contribution). People noticed. When president position opened: Everyone nominated Rohan (he already had influence). Authority followed influence. Do NOT wait for authority (president, manager, team lead). Build influence NOW: Deliver excellent work, help others, contribute ideas, be reliable, be consistent. Over 6 months, you\'ll have influence. People will follow you. Authority will come.'
         }
       ]
     },
@@ -935,63 +935,63 @@ Stop avoiding conflict. Start managing it. Turn disagreements into growth."
       questions: [
         {
           id: 11,
-          question: 'Week 3: Priya vs Rahul conflict (primary vs secondary research). You avoided it: "I hope they resolve it themselves." Week 4: 5/10 grade. "Disjointed. Poor teamwork." Another team addressed same conflict (Day 1, found win-win). Result: 8/10 grade. What does this show?',
+          question: 'You avoided conflict. Week 4: 5/10 grade. Other team addressed it early: 8/10. What does this show?',
           options: [
-            'Conflict should be avoided at all costs',
-            'Healthy conflict, if MANAGED WELL, can improve decisions and relationships. Avoided conflict escalates, damages team. Addressed conflict (early, win-win) strengthens team.',
-            'Conflict is always destructive and means team is failing',
-            'Conflict means team is incompatible'
+            'Conflict should be avoided',
+            'Managed conflict improves decisions',
+            'Conflict always destructive',
+            'Conflict means incompatible'
           ],
           correct: 1,
-          explanation: 'Healthy conflict, if MANAGED WELL, improves decisions and strengthens relationships. Your team: Avoided conflict → escalated to personal attacks → damaged relationship → 5/10 grade. Other team: Addressed conflict early (Day 1) → listened to both sides → found win-win (quick primary research) → strengthened relationship → 8/10 grade. Difference: Conflict management. Managed well, conflict is PRODUCTIVE: (1) Improves decisions (Priya perspective: quality, Rahul perspective: time → win-win solution: quick primary research combines both = BETTER than either pure primary or pure secondary), (2) Strengthens relationships (work through disagreement together = build trust), (3) Builds skills (team learns conflict resolution). Managed poorly (avoided or aggressive), conflict is DESTRUCTIVE: damages relationships, destroys productivity, breaks teams. In B.Com teams, do NOT avoid conflict. MANAGE it. Address early, listen actively, separate people from problem, find win-win. Turn disagreements into growth.'
+          explanation: 'Healthy conflict, if MANAGED WELL, improves decisions and strengthens relationships. Your team: Avoided conflict → escalated to personal attacks → damaged relationship → 5/10 grade. Other team: Addressed conflict early (Day 1) → listened to both sides → found win-win (quick primary research) → strengthened relationship → 8/10 grade. Difference: Conflict management. Managed well, conflict PRODUCTIVE: (1) Improves decisions (Priya perspective: quality, Rahul perspective: time → win-win solution: quick primary research combines both = BETTER than either pure primary or pure secondary), (2) Strengthens relationships (work through disagreement together = build trust), (3) Builds skills (team learns conflict resolution). Managed poorly (avoided or aggressive), conflict DESTRUCTIVE: damages relationships, destroys productivity, breaks teams. Do NOT avoid conflict. MANAGE it. Address early, listen actively, separate people from problem, find win-win. Turn disagreements into growth.'
         },
         {
           id: 12,
-          question: 'Day 1: Priya vs Rahul disagree on research method. When should you address this conflict?',
+          question: 'Day 1: Priya vs Rahul disagree on research. When address conflict?',
           options: [
-            'Ignore it - conflicts resolve themselves',
-            'Address EARLY (Day 1, within 24 hours) before escalation. Early = easier resolution (disagreement). Late = harder resolution (personal attacks, resentment).',
-            'Wait for them to resolve it themselves',
-            'Wait until it escalates, then blame someone'
+            'Ignore - resolves itself',
+            'Address EARLY (Day 1)',
+            'Wait for them to resolve',
+            'Wait until escalates'
           ],
           correct: 1,
-          explanation: 'Address conflicts EARLY (Day 1, within 24 hours), not late (Day 5+). Early intervention: Day 1 (disagreement on research method) → You facilitate: "I notice different views. Let us discuss. Priya, your perspective? Rahul, yours? Let us find solution." → Conflict resolved same day (found win-win) → Relationship preserved → Productivity maintained. Late/no intervention: Day 1 (disagreement) → Day 3 (personal attacks: "You are lazy!") → Day 5 (silent treatment) → Week 4 (damaged relationship, destroyed productivity, 5/10 grade). Why early is better: (1) Easier resolution (disagreement is easier to resolve than resentment), (2) Prevents escalation (stops before personal attacks), (3) Preserves relationship (address issue before damage). In B.Com teams, when you notice conflict (tension, disagreement, argument), address within 24 hours. Do NOT wait, avoid, or hope it resolves itself. Conflicts escalate if ignored. Early intervention prevents escalation. Address early, resolve quickly, move forward.'
+          explanation: 'Address conflicts EARLY (Day 1, within 24 hours), not late (Day 5+). Early intervention: Day 1 (disagreement on research method) → You facilitate: "I notice different views. Let\'s discuss. Priya, your perspective? Rahul, yours? Let\'s find solution." → Conflict resolved same day (found win-win) → Relationship preserved → Productivity maintained. Late/no intervention: Day 1 (disagreement) → Day 3 (personal attacks: "You\'re lazy!") → Day 5 (silent treatment) → Week 4 (damaged relationship, destroyed productivity, 5/10 grade). Why early better: (1) Easier resolution (disagreement easier to resolve than resentment), (2) Prevents escalation (stops before personal attacks), (3) Preserves relationship (address issue before damage). When notice conflict (tension, disagreement, argument), address within 24 hours. Do NOT wait, avoid, or hope it resolves itself. Conflicts escalate if ignored. Early intervention prevents escalation. Address early, resolve quickly, move forward.'
         },
         {
           id: 13,
-          question: 'Conflict escalated: Priya: "You are LAZY!" Rahul: "You are UNREALISTIC!" Personal attacks damage relationship. What does "separate people from problem" mean?',
+          question: 'Priya: "You\'re LAZY!" Rahul: "You\'re UNREALISTIC!" What does "separate people from problem" mean?',
           options: [
-            'Isolate people - remove them from team',
-            'Focus on ISSUE (research method), not personalities ("lazy," "unrealistic"). Reframe: Problem = research method. Goal = excellent report. Challenge = find method that ensures quality AND meets deadline.',
-            'Remove team members who cause conflict',
-            'Avoid people and work separately'
+            'Isolate people - remove them',
+            'Focus on ISSUE, not personalities',
+            'Remove members who cause conflict',
+            'Avoid people, work separately'
           ],
           correct: 1,
-          explanation: 'Separate people from problem = focus on ISSUE, not personalities. Conflict escalated because focus shifted from PROBLEM (research method) to PEOPLE (character attacks: "lazy," "unrealistic"). Result: Damaged relationship. Solution: Reframe conflict. You say: "Let us focus on the ISSUE (research method), not on each other. Priya is not unrealistic. Rahul is not lazy. We are all trying to deliver excellent report. We just have different views on HOW. Let us discuss the ISSUE." Reframe: (1) Problem = Research method (not Priya or Rahul as people), (2) Goal = Excellent report (shared goal, not personal victory), (3) Challenge = Find research method that ensures quality AND meets deadline (problem to solve TOGETHER, not battle to win). Result: Priya and Rahul stop attacking each other, focus on problem, brainstorm solutions, find win-win. Relationship preserved while solving issue. In B.Com conflict management, separate people from problem. Attack the PROBLEM, not the PERSON. Focus on shared goal, not personal blame. Preserve relationships while solving issues.'
+          explanation: 'Separate people from problem = focus on ISSUE, not personalities. Conflict escalated because focus shifted from PROBLEM (research method) to PEOPLE (character attacks: "lazy," "unrealistic"). Result: Damaged relationship. Solution: Reframe conflict. Say: "Let\'s focus on the ISSUE (research method), not on each other. Priya not unrealistic. Rahul not lazy. We\'re all trying to deliver excellent report. We just have different views on HOW. Let\'s discuss the ISSUE." Reframe: (1) Problem = Research method (not Priya or Rahul as people), (2) Goal = Excellent report (shared goal, not personal victory), (3) Challenge = Find research method that ensures quality AND meets deadline (problem to solve TOGETHER, not battle to win). Result: Priya and Rahul stop attacking each other, focus on problem, brainstorm solutions, find win-win. Relationship preserved while solving issue. Separate people from problem. Attack the PROBLEM, not the PERSON. Focus on shared goal, not personal blame. Preserve relationships while solving issues.'
         },
         {
           id: 14,
-          question: 'You try to resolve Priya-Rahul conflict: "Compromise: Do 50% primary, 50% secondary research." Priya: "I wanted 100% primary. I lose." Rahul: "I wanted 0% primary. I lose." Both dissatisfied. What is better than compromise?',
+          question: '"Compromise: 50% primary, 50% secondary." Priya: "I lose." Rahul: "I lose." What\'s better than compromise?',
           options: [
-            'Compromise is impossible - one side must win',
-            'Win-win solution: Satisfy BOTH interests. Priya interest = quality. Rahul interest = time. Win-win: Quick primary research (30 students online, 2 days). Priya gets quality. Rahul gets time. Both satisfied.',
-            'One side wins, one side loses',
-            'Compromise quality to keep peace'
+            'One side must win',
+            'Win-win - satisfy BOTH interests',
+            'One wins, one loses',
+            'Compromise quality for peace'
           ],
           correct: 1,
-          explanation: 'Win-win solutions satisfy BOTH parties interests, not compromise (both lose). Compromise: 50% primary, 50% secondary. Priya loses (wanted 100% primary). Rahul loses (wanted 0% primary). Both dissatisfied. Resentment builds. Win-win: Understand interests. Priya interest = QUALITY (reliable, current data). Rahul interest = TIME (meet deadline). Brainstorm options: (a) Quick primary research (30 students online, 2 days), (b) Primary + secondary (survey 30 for current, use secondary for historical), (c) Focus group (10 students, 2 hours, 1 day). Evaluate: Option (a) satisfies BOTH. Priya gets quality (primary data, current). Rahul gets time (2 days, not 3 weeks). Agree: Both say "This works for me." Win-win found. Result: Both satisfied, relationship preserved, excellent report (8/10). Win-win requires: (1) Identify interests (WHY they want what they want), (2) Creative brainstorming (explore options), (3) Collaborative evaluation (which satisfies both?). In B.Com conflict management, aim for win-win, not compromise. Win-win = both gain. Compromise = both lose.'
+          explanation: 'Win-win solutions = satisfy BOTH parties interests, not compromise (both lose). Compromise: 50% primary, 50% secondary. Priya loses (wanted 100% primary). Rahul loses (wanted 0% primary). Both dissatisfied. Resentment builds. Win-win: Understand interests. Priya interest = QUALITY (reliable, current data). Rahul interest = TIME (meet deadline). Brainstorm options: (a) Quick primary research (30 students online, 2 days), (b) Primary + secondary (survey 30 for current, use secondary for historical), (c) Focus group (10 students, 2 hours, 1 day). Evaluate: Option (a) satisfies BOTH. Priya gets quality (primary data, current). Rahul gets time (2 days, not 3 weeks). Agree: Both say "This works for me." Win-win found. Result: Both satisfied, relationship preserved, excellent report (8/10). Win-win requires: (1) Identify interests (WHY they want what they want), (2) Creative brainstorming (explore options), (3) Collaborative evaluation (which satisfies both?). Aim for win-win, not compromise. Win-win = both gain. Compromise = both lose.'
         },
         {
           id: 15,
-          question: 'Priya vs Rahul conflict. Which approach is best for conflict resolution?',
+          question: 'Priya vs Rahul conflict. Best approach for resolution?',
           options: [
-            'Aggressive: "Stop fighting! Both of you compromise. End of discussion!" (Forces solution, both feel unheard)',
-            'Collaborative problem-solving: Listen to both (understand interests), separate people from problem (focus on issue), find win-win (both satisfied). Preserves relationships, improves decisions.',
-            'Avoidance: "I will stay out of it. They will resolve it themselves." (Conflict escalates, damages team)',
-            'Competition: "One of you is right, one is wrong. I will decide who wins." (Win-lose, loser disengages)'
+            'Aggressive - force solution',
+            'Collaborative problem-solving',
+            'Avoidance - stay out',
+            'Competition - decide winner'
           ],
           correct: 1,
-          explanation: 'Collaborative problem-solving is best approach for conflict resolution. Process: (1) Listen actively to BOTH (Priya: "I want quality." Rahul: "I want time."), (2) Separate people from problem (focus on research method, not "lazy" or "unrealistic"), (3) Identify interests (Priya = quality, Rahul = time), (4) Brainstorm win-win options (quick primary research), (5) Agree on solution (both say "This works"). Result: Conflict resolved, both satisfied, relationship preserved, better decision (quick primary research > pure primary or pure secondary). Other approaches fail: (1) Aggressive (forces solution, both feel unheard, resentment builds), (2) Avoidance (conflict escalates, damages relationship), (3) Competition (win-lose, loser disengages, team weakens). In B.Com conflict management, use collaborative problem-solving. Listen, understand, separate issue from people, find win-win. Conflict becomes growth opportunity (better decisions, stronger relationships, learned skills). Collaborative > aggressive, avoidance, or competition.'
+          explanation: 'Collaborative problem-solving = best approach for conflict resolution. Process: (1) Listen actively to BOTH (Priya: "I want quality." Rahul: "I want time."), (2) Separate people from problem (focus on research method, not "lazy" or "unrealistic"), (3) Identify interests (Priya = quality, Rahul = time), (4) Brainstorm win-win options (quick primary research), (5) Agree on solution (both say "This works"). Result: Conflict resolved, both satisfied, relationship preserved, better decision (quick primary research > pure primary or pure secondary). Other approaches fail: (1) Aggressive (forces solution, both feel unheard, resentment builds), (2) Avoidance (conflict escalates, damages relationship), (3) Competition (win-lose, loser disengages, team weakens). Use collaborative problem-solving. Listen, understand, separate issue from people, find win-win. Conflict becomes growth opportunity (better decisions, stronger relationships, learned skills). Collaborative > aggressive, avoidance, or competition.'
         }
       ]
     },
@@ -1320,63 +1320,63 @@ Remote work is future. Master it now."
       questions: [
         {
           id: 16,
-          question: 'You send Slack message: "Can you send me the data?" Priya responds 2 days later: "What data?" This back-and-forth takes 4 days. What is async communication and how to do it well?',
+          question: 'Slack: "Send data?" Priya 2 days: "What data?" 4-day back-and-forth. What is async communication?',
           options: [
-            'Async = fast replies (respond within minutes)',
-            'Async = messages that do not require immediate response. Do it well: Detailed messages with FULL CONTEXT (what, which, when, format, deadline, why). Priya can respond immediately without back-and-forth.',
-            'Async = video calls (synchronous, not async)',
-            'Async = phone calls (synchronous, not async)'
+            'Fast replies within minutes',
+            'Detailed messages with full context',
+            'Video calls only',
+            'Phone calls only'
           ],
           correct: 1,
-          explanation: 'Async communication = messages that do not require immediate response (people respond when they are available, not instantly). Your message: "Can you send data?" is vague (no context). Priya needs clarification. Back-and-forth takes 4 days (message → 1 day → response → 1 day → clarification → 1 day → data → 1 day). Do async well: Detailed messages with FULL CONTEXT. Good message: "Hi Priya! Can you send marketing campaign data for Instagram ads (Jan-Mar 2024) in Excel format? Need metrics: reach, engagement, conversions, cost. Need by Friday 5 PM for client report. Let me know if questions. Thanks!" Includes: What (marketing data), which (Instagram), when (Jan-Mar 2024), format (Excel), metrics (reach, engagement, conversions, cost), deadline (Friday 5 PM), why (client report), open for questions. Priya can respond immediately (all info provided, no clarification needed). Result: 1-day turnaround (not 4 days). In B.Com remote work, master async: Detailed messages, full context, clear deadlines. Async is superpower: Work across time zones, think before responding, document for reference.'
+          explanation: 'Async communication = messages that don\'t require immediate response (people respond when available, not instantly). Your message: "Can you send data?" is vague (no context). Priya needs clarification. Back-and-forth takes 4 days. Do async well: Detailed messages with FULL CONTEXT. Good message: "Hi Priya! Can you send marketing campaign data for Instagram ads (Jan-Mar 2024) in Excel format? Need metrics: reach, engagement, conversions, cost. Need by Friday 5 PM for client report. Let me know if questions. Thanks!" Includes: What (marketing data), which (Instagram), when (Jan-Mar 2024), format (Excel), metrics (reach, engagement, conversions, cost), deadline (Friday 5 PM), why (client report), open for questions. Priya can respond immediately (all info provided, no clarification needed). Result: 1-day turnaround (not 4 days). Master async: Detailed messages, full context, clear deadlines. Async = superpower: Work across time zones, think before responding, document for reference.'
         },
         {
           id: 17,
-          question: 'In office: You SEE team working (visual awareness). Remote: You see NOBODY. You assume everyone is working. Reality: Priya is stuck, Rahul is blocked, Ankit is confused. You do not know. What should remote teams do?',
+          question: 'Office: SEE team. Remote: See NOBODY. Priya stuck, Rahul blocked. You don\'t know. What do?',
           options: [
-            'Under-communicate - people will ask if they need help',
-            'Over-communicate INTENTIONALLY: Daily updates (what I did, will do, blockers), document decisions, share progress, proactive questions. Prevent assumptions, delays, misalignment.',
-            'Avoid communication - focus on work',
-            'Only use email - send weekly updates'
+            'Under-communicate - they\'ll ask',
+            'Over-communicate INTENTIONALLY',
+            'Avoid communication - focus work',
+            'Email only - weekly updates'
           ],
           correct: 1,
-          explanation: 'Remote teams should OVER-COMMUNICATE intentionally (office communication happens naturally through visual awareness, remote requires intention). In office: You SEE Priya working, Rahul in meeting, Ankit at desk. You KNOW what everyone is doing. Remote: You see NOBODY. You ASSUME everyone is working. Reality: Priya is stuck (waiting for data from you, did not tell you), Rahul is blocked (needs approval, did not ask), Ankit is confused (unclear on task, did not clarify). You do not know because remote teams under-communicate. Solution: Over-communicate. (1) Daily updates (end of day, 5 mins, Slack): "Today I completed X, tomorrow I will do Y, blocked on Z (need data from Priya)." (2) Document decisions (meeting decision? Document in Notion). (3) Share progress (update task status: In Progress, Blocked, Done). (4) Proactive questions (unclear? Ask immediately, do not wait). (5) Visibility (share what you are working on). Result: Team knows what you are doing, blockers identified early, everyone aligned. In B.Com remote work, over-communicate. Default is under-communication. Intentionally share more. Transparency = trust = alignment.'
+          explanation: 'Remote teams should OVER-COMMUNICATE intentionally (office communication happens naturally through visual awareness, remote requires intention). In office: You SEE Priya working, Rahul in meeting, Ankit at desk. You KNOW what everyone doing. Remote: You see NOBODY. You ASSUME everyone working. Reality: Priya stuck (waiting for data from you, didn\'t tell you), Rahul blocked (needs approval, didn\'t ask), Ankit confused (unclear on task, didn\'t clarify). Don\'t know because remote teams under-communicate. Solution: Over-communicate. (1) Daily updates (end of day, 5 mins, Slack): "Today I completed X, tomorrow I\'ll do Y, blocked on Z (need data from Priya)." (2) Document decisions (meeting decision? Document in Notion). (3) Share progress (update task status: In Progress, Blocked, Done). (4) Proactive questions (unclear? Ask immediately, don\'t wait). (5) Visibility (share what you\'re working on). Result: Team knows what you\'re doing, blockers identified early, everyone aligned. Over-communicate. Default is under-communication. Intentionally share more. Transparency = trust = alignment.'
         },
         {
           id: 18,
-          question: 'Week 3: You never met team face-to-face. All communication is Slack text. You feel isolated. Team feels like strangers. How to build virtual rapport?',
+          question: 'Never met team. All Slack text. Feel isolated. Team = strangers. Build virtual rapport?',
           options: [
-            'Avoid personal topics - keep it professional',
-            'Build rapport through: Video-on meetings (see faces), virtual coffee chats (15 mins, casual, no agenda), team rituals (Friday show-and-tell), personal sharing (hobbies, interests). Know them as PEOPLE.',
-            'Text only - video is unnecessary',
-            'Minimal interaction - focus on work only'
+            'Avoid personal - stay professional',
+            'Video-on + virtual coffee chats',
+            'Text only - video unnecessary',
+            'Minimal interaction - work only'
           ],
           correct: 1,
-          explanation: 'Build virtual rapport through INTENTIONAL connection (office connection happens naturally, remote requires intention). Problem: All communication is Slack text. You never see faces. You do not know them as people. Result: Isolation, low trust, transactional relationships. Solution: (1) Video-on meetings (turn camera ON, see faces, read expressions, build connection - not audio-only), (2) Virtual coffee chats (schedule 15-min casual 1-on-1s, no agenda, just talk: "How was weekend? What hobbies? What are you watching?" - know them as PEOPLE), (3) Team rituals (Friday show-and-tell: share something you are proud of, Monday motivation: share goals, birthday celebrations: virtual cake), (4) Personal sharing (start meetings with 5 mins personal: "Any updates? How is everyone?"), (5) Informal channels (Slack #random for non-work chat: memes, jokes, life updates). Result: You know team as people, trust builds, engagement increases, isolation decreases, team feels connected despite distance. In B.Com remote work, build virtual rapport intentionally. Video-on, casual chats, team rituals, personal sharing. Connection = trust = engagement = retention.'
+          explanation: 'Build virtual rapport through INTENTIONAL connection (office connection happens naturally, remote requires intention). Problem: All communication is Slack text. Never see faces. Don\'t know them as people. Result: Isolation, low trust, transactional relationships. Solution: (1) Video-on meetings (turn camera ON, see faces, read expressions, build connection - not audio-only), (2) Virtual coffee chats (schedule 15-min casual 1-on-1s, no agenda, just talk: "How was weekend? What hobbies? What are you watching?" - know them as PEOPLE), (3) Team rituals (Friday show-and-tell: share something you\'re proud of, Monday motivation: share goals, birthday celebrations: virtual cake), (4) Personal sharing (start meetings with 5 mins personal: "Any updates? How is everyone?"), (5) Informal channels (Slack #random for non-work chat: memes, jokes, life updates). Result: Know team as people, trust builds, engagement increases, isolation decreases, team feels connected despite distance. Build virtual rapport intentionally. Video-on, casual chats, team rituals, personal sharing. Connection = trust = engagement = retention.'
         },
         {
           id: 19,
-          question: 'Your remote team spans Mumbai, Delhi, Bangalore (all IST). You schedule meeting: "Monday 10 AM." Only 3/5 people join. Priya and Rahul miss it. What went wrong? How to work across time zones?',
+          question: 'Meeting "Monday 10 AM." Only 3/5 join. Priya, Rahul miss. What went wrong?',
           options: [
-            'Ignore time zones - everyone should figure it out',
-            'Respect boundaries and schedule thoughtfully: (1) Specify time zone (10 AM IST, not just 10 AM), (2) Send calendar invite (auto-converts time), (3) Confirm attendance, (4) Record meeting (for those who miss), (5) Rotate times (fair to all).',
-            'Expect immediate responses regardless of time',
-            'Work 24/7 to accommodate all time zones'
+            'Ignore time zones - figure out',
+            'Specify time zone + calendar invite',
+            'Expect immediate responses always',
+            'Work 24/7 for all zones'
           ],
           correct: 1,
-          explanation: 'Work across time zones by respecting boundaries and scheduling thoughtfully. Problem: You said "Monday 10 AM" (ambiguous - whose time?). No calendar invite (manual time conversion errors). No confirmation (people forget). Result: 2 people miss meeting. Solution: (1) Specify time zone: "Monday 10 AM IST" (clear), (2) Send calendar invite (Google Calendar auto-converts to each person local time, sends reminders), (3) Confirm attendance (ask: "Can everyone make it?" - people reply "Yes" or suggest alternative), (4) Record meeting (for those who miss, they can watch later), (5) Rotate meeting times (if 10 AM IST is inconvenient for someone in different time zone, alternate with 3 PM IST next week - fair to all). Also respect: Work hours (do not message 11 PM expecting response), weekends (do not assign urgent tasks Saturday), personal time (do not expect 24/7 availability). In B.Com remote work, respect time zones and boundaries. Clear scheduling, calendar invites, confirmations, recordings, rotation. Respect prevents: Missed meetings, burnout, resentment, turnover.'
+          explanation: 'Work across time zones by respecting boundaries and scheduling thoughtfully. Problem: Said "Monday 10 AM" (ambiguous - whose time?). No calendar invite (manual time conversion errors). No confirmation (people forget). Result: 2 people miss meeting. Solution: (1) Specify time zone: "Monday 10 AM IST" (clear), (2) Send calendar invite (Google Calendar auto-converts to each person local time, sends reminders), (3) Confirm attendance (ask: "Can everyone make it?" - people reply "Yes" or suggest alternative), (4) Record meeting (for those who miss, they can watch later), (5) Rotate meeting times (if 10 AM IST inconvenient for someone in different time zone, alternate with 3 PM IST next week - fair to all). Also respect: Work hours (don\'t message 11 PM expecting response), weekends (don\'t assign urgent tasks Saturday), personal time (don\'t expect 24/7 availability). Respect time zones and boundaries. Clear scheduling, calendar invites, confirmations, recordings, rotation. Respect prevents: Missed meetings, burnout, resentment, turnover.'
         },
         {
           id: 20,
-          question: 'Your remote team uses 7 tools: Slack, Zoom, Notion, Asana, Google Drive, Email, WhatsApp. You are confused: Which for what? Important updates are lost. What is the solution?',
+          question: '7 tools: Slack, Zoom, Notion, Asana, Drive, Email, WhatsApp. Confused. Updates lost. Solution?',
           options: [
-            'Use all available tools - more is better',
-            'Choose RIGHT TOOL for each PURPOSE: Slack (chat), Zoom (meetings), Notion (docs + tasks), Drive (files), Email (external). Reduce 7 to 5. Agree on: Which tool for what, how often to check, where to find info.',
-            'Avoid tools - use only email',
-            'Use one tool only for everything'
+            'Use all tools - more better',
+            'RIGHT TOOL for each PURPOSE',
+            'Avoid tools - email only',
+            'One tool for everything'
           ],
           correct: 1,
-          explanation: 'Choose right tool for each purpose (not all tools, not one tool). Problem: 7 tools (Slack, Zoom, Notion, Asana, Drive, Email, WhatsApp). Confusion: Which for what? Result: Important updates lost (sent in wrong tool), duplicated work (tasks in Asana + Notion), frustration (learning 7 tools, switching between them). Solution: Agree as team on tool purpose. SLACK: Quick chat, questions, daily updates (check 3×/day). ZOOM: Meetings, face-to-face (schedule in advance, calendar invite, record). NOTION: Docs, knowledge base, project plans, tasks (single source of truth). GOOGLE DRIVE: File storage, sharing (organize in folders, permissions). EMAIL: External communication (clients, vendors). REDUCE 7 to 5: Remove Asana (use Notion for tasks), remove WhatsApp (use Slack for chat). AGREE ON: (1) Which tool for what purpose (write in team doc), (2) How often to check (Slack 3×/day, Email 2×/day, Notion 1×/day), (3) Where to find info (all project docs in Notion #project-name). Result: No more confusion, efficient collaboration. In B.Com remote work, right tools + clear purpose = productivity. Too many tools = chaos. Too few tools = limitations. Right balance = 5-6 tools with clear purpose.'
+          explanation: 'Choose right tool for each purpose (not all tools, not one tool). Problem: 7 tools (Slack, Zoom, Notion, Asana, Drive, Email, WhatsApp). Confusion: Which for what? Result: Important updates lost (sent in wrong tool), duplicated work (tasks in Asana + Notion), frustration (learning 7 tools, switching between them). Solution: Agree as team on tool purpose. SLACK: Quick chat, questions, daily updates (check 3×/day). ZOOM: Meetings, face-to-face (schedule in advance, calendar invite, record). NOTION: Docs, knowledge base, project plans, tasks (single source of truth). GOOGLE DRIVE: File storage, sharing (organize in folders, permissions). EMAIL: External communication (clients, vendors). REDUCE 7 to 5: Remove Asana (use Notion for tasks), remove WhatsApp (use Slack for chat). AGREE ON: (1) Which tool for what purpose (write in team doc), (2) How often to check (Slack 3×/day, Email 2×/day, Notion 1×/day), (3) Where to find info (all project docs in Notion #project-name). Result: No more confusion, efficient collaboration. Right tools + clear purpose = productivity. Too many tools = chaos. Too few tools = limitations. Right balance = 5-6 tools with clear purpose.'
         }
       ]
     },
@@ -1712,60 +1712,60 @@ Cross-functional collaboration is future. Master it now."
       questions: [
         {
           id: 21,
-          question: 'Your startup team: You (Business/Marketing), Priya (Tech/Developer), Rahul (Design/UI), Ankit (Engineering/Backend). Week 1: "We have all expertise!" Week 2: Chaos (different jargon, priorities, silos). What are cross-functional teams?',
+          question: 'Team: Business, Tech, Design, Engineering. Week 1: "All expertise!" Week 2: Chaos. What are cross-functional teams?',
           options: [
-            'Teams with same expertise (all business majors)',
-            'Teams with people from different departments/specialties (Business + Tech + Design + Engineering). Powerful (diverse expertise) but challenging (different languages, priorities). Need to translate, align, respect.',
-            'Teams with only managers',
-            'Teams from one department'
+            'Same expertise team',
+            'Different departments working together',
+            'Only managers',
+            'One department'
           ],
           correct: 1,
           explanation: 'Cross-functional teams = people from DIFFERENT departments/specialties working together. Your team: Business (you), Tech (Priya), Design (Rahul), Engineering (Ankit). Diverse expertise is POWERFUL: (1) Business understands customers, market, revenue, (2) Tech understands coding, systems, scalability, (3) Design understands user experience, visual appeal, usability, (4) Engineering understands infrastructure, performance, reliability. Together, you can build excellent product (all aspects covered). But diverse expertise is CHALLENGING: (1) Different jargon (CAC vs microservices vs wireframes vs backend), (2) Different priorities (customer acquisition vs bug fixing vs UI vs architecture), (3) Different perspectives (business vs tech vs design vs engineering). Result: Communication barriers, competing priorities, siloed thinking. Solution: Translate between domains, align around common goal, respect all perspectives, bridge communication gaps, focus on shared outcomes. In B.Com workplace, ALL companies have cross-functional teams (marketing + sales + product + engineering + finance + HR). Master cross-functional collaboration = excel in any company.'
         },
         {
           id: 22,
-          question: 'You (Business) say: "We need to optimize CAC through targeted ads." Priya (Tech) is confused: "What is CAC?" How should you work across functions?',
+          question: 'You: "Optimize CAC through ads." Priya confused: "What\'s CAC?" How work across functions?',
           options: [
-            'Use only your jargon - they should learn business terms',
-            'Learn to TRANSLATE between domains: Explain CAC = "Customer Acquisition Cost - cost to get 1 customer, currently ₹500." Ask Priya to explain tech terms simply. Build shared language.',
-            'Avoid communication - work in silos',
-            'Demand they adapt to your language'
+            'Use only your jargon',
+            'TRANSLATE between domains',
+            'Avoid communication - silos',
+            'Demand they adapt'
           ],
           correct: 1,
           explanation: 'Work across functions by TRANSLATING between domains (not using only your jargon or demanding they adapt). Problem: You say "CAC" (business jargon). Priya does not understand (she is tech, not business). Communication breaks down. Solution: TRANSLATE. Explain CAC: "Customer Acquisition Cost - how much we spend to get 1 customer. Currently ₹500/customer. Goal: Reduce to ₹300 by showing ads to right people." Priya understands. Similarly, when Priya says "microservices" (tech jargon), ASK for translation: "Can you explain simply?" Priya: "Breaking app into small parts. Each part does one thing. Easier to fix, scale." You understand. Translation requires: (1) Learn basics of other domains (10 hours learning tech basics), (2) Explain your jargon in simple terms + examples, (3) Ask for translation (do not stay confused), (4) Use analogies (API = waiter taking order to kitchen). Result: Shared language, understanding, collaboration, better decisions. In B.Com cross-functional work, be bridge builder. Translate between domains. Enable communication. Everyone understands everyone.'
         },
         {
           id: 23,
-          question: 'You (Business): "Priority #1: Customer acquisition!" Priya (Tech): "Priority #1: Fix bugs!" Rahul (Design): "Priority #1: Better UI!" Different priorities cause conflict. What should you do?',
+          question: 'You: "Priority: Acquisition!" Priya: "Priority: Bugs!" Rahul: "Priority: UI!" Conflict. What do?',
           options: [
-            'Let different priorities cause conflict - fight for your priority',
-            'Align priorities around COMMON GOAL: "Launch successful platform (1000 artisans, 10,000 customers, ₹10L GMV)." ALL priorities serve this goal. Create integrated roadmap (Month 1: Bugs, Month 2: UI, Month 3: Acquisition).',
-            'Ignore other priorities - focus only on yours',
-            'Let priorities lead to competition between departments'
+            'Fight for your priority',
+            'Align around COMMON GOAL',
+            'Ignore others - focus yours',
+            'Let departments compete'
           ],
           correct: 1,
           explanation: 'Align different priorities around COMMON GOAL that transcends departments. Problem: You want customer acquisition, Priya wants bug fixing, Rahul wants better UI. Competing priorities. Conflict. No progress. Solution: Find COMMON GOAL: "Launch successful e-commerce platform: 1000 artisans selling, 10,000 customers buying, ₹10L GMV, 8/10 satisfaction, 99% uptime, scalable to 100K users." Now align: How do ALL priorities serve common goal? (1) Customer acquisition (your priority) → Get 10,000 customers (serves common goal), (2) Bug fixing (Priya) → 99% uptime (serves common goal), (3) Better UI (Rahul) → 8/10 satisfaction (serves common goal). ALL priorities serve shared goal. Create integrated roadmap: Month 1 (fix critical bugs), Month 2 (improve UI), Month 3 (customer acquisition). Everyone gets their priority, but sequenced to serve common goal. Result: Alignment, collaboration, no conflict. In B.Com cross-functional teams, competing priorities are normal. Do NOT fight. ALIGN around common goal. Everyone contributes to shared success.'
         },
         {
           id: 24,
-          question: 'You (Business) think: "Customer acquisition is most important." Priya (Tech) thinks: "Bug fixing is most important." Who is right? What does respect for expertise mean?',
+          question: 'You: "Acquisition most important." Priya: "Bugs most important." Who\'s right? What is respect for expertise?',
           options: [
-            'You are right - defer to business expertise always',
-            'BOTH are right. Value EACH perspective for its unique contribution. Your perspective (need customers) + Priya perspective (need working app) = BETTER decision (fix bugs THEN get customers). Integrate perspectives.',
-            'Only trust your own expertise - ignore others',
-            'Ignore differences - everyone should think the same'
+            'You\'re right - business always',
+            'BOTH right - value each perspective',
+            'Trust only your expertise',
+            'Everyone should think same'
           ],
           correct: 1,
           explanation: 'Respect for expertise = value EACH perspective for its unique contribution. You think customer acquisition is most important (business perspective: no customers = no business). Priya thinks bug fixing is most important (tech perspective: app crashes = customers leave). Who is right? BOTH. Both perspectives are VALUABLE: (1) Your perspective is valid (need customers to validate product, generate revenue), (2) Priya perspective is valid (need working app or customers will leave). Respecting both leads to BETTER decision: "Fix critical bugs (Week 1-2) THEN do customer acquisition (Week 3-4). We get working app + customers." Integrated solution is BETTER than either pure customer acquisition (with buggy app, customers leave) or pure bug fixing (with no customers, no validation). In B.Com cross-functional teams, respect ALL expertise. Business brings market understanding. Tech brings technical feasibility. Design brings user experience. Engineering brings scalability. ALL are valuable. Integrate perspectives. Better decisions emerge from diverse expertise, not single perspective.'
         },
         {
           id: 25,
-          question: 'You (Business) want 1000 users (YOUR KPI). Priya (Tech) wants 99% uptime (HER KPI). Each department optimizes for THEIR goal. Result: Silos, territorial thinking. What does cross-functional success require?',
+          question: 'You want 1000 users. Priya wants 99% uptime. Each optimizes THEIR goal. Silos. What\'s needed?',
           options: [
-            'Avoiding other departments - focus on your work',
-            'Focus on SHARED OUTCOMES: "Launch successful platform (1000 artisans, 10,000 customers, ₹10L GMV, 8/10 satisfaction, 99% uptime)." Everyone contributes to shared outcome. Celebrate together.',
-            'Territorial thinking - defend your department',
-            'Working in silos - each department separate'
+            'Avoid other departments',
+            'Focus on SHARED OUTCOMES',
+            'Defend your department',
+            'Work in silos'
           ],
           correct: 1,
           explanation: 'Cross-functional success requires focus on SHARED OUTCOMES, not individual department outcomes. Problem: You optimize for YOUR KPI (1000 users), Priya optimizes for HER KPI (99% uptime), Rahul for HIS (8/10 satisfaction), Ankit for HIS (10K requests/second). Individual optimization. Territorial thinking. Silos. Result: Suboptimal product (each department does their part well, but parts do not integrate). Solution: Define SHARED OUTCOME: "Launch successful platform: 1000 artisans selling, 10,000 customers buying, ₹10L GMV, 8/10 satisfaction, 99% uptime, scalable to 100K users." Everyone contributes to SHARED outcome: You (customer acquisition), Priya (reliability), Rahul (satisfaction), Ankit (scalability). Celebrate SHARED success: "WE launched successfully! 1000 artisans, 10,000 customers, ₹10L GMV! WE did this together!" (Not: "MY marketing got 10,000 customers" - territorial.) Result: Alignment, collaboration, integrated product, shared celebration. In B.Com cross-functional work, shift from "MY department outcome" to "OUR shared outcome." Optimize for shared success. Celebrate together. Cross-functional team wins as ONE team, not separate departments.'
@@ -2143,60 +2143,60 @@ Strong teams are BUILT, not born. Build intentionally."
       questions: [
         {
           id: 26,
-          question: 'Your team (5 members) has NO TRUST. People do not open up, ask for help, or share struggles. You want to build trust. What does team trust require?',
+          question: 'Team: NO TRUST. Don\'t open up, ask help, share struggles. Build trust. What\'s needed?',
           options: [
-            'Time only - trust builds automatically over time',
-            'VULNERABILITY + RELIABILITY: Share struggles/fears/mistakes (be human), deliver on commitments (be reliable). Trust = Vulnerability + Reliability.',
-            'Perfection - never make mistakes, always be perfect',
-            'Avoiding mistakes - hide all errors and struggles'
+            'Time only - builds automatically',
+            'VULNERABILITY + RELIABILITY',
+            'Perfection - never make mistakes',
+            'Hide all errors and struggles'
           ],
           correct: 1,
           explanation: 'Team trust requires VULNERABILITY + RELIABILITY (not just time, perfection, or hiding mistakes). Trust = Vulnerability + Reliability. VULNERABILITY: Share your struggles, fears, mistakes. Be HUMAN. Example: Team meeting, you say: "I made mistake last week (campaign typo). I felt terrible. I was scared you would judge me. But I learned: Always double-check." Team sees: You are human (not perfect robot), you are vulnerable (willing to admit mistakes). Trust begins. Others share: Priya: "I am struggling with personal issue (family problem)." Team supports: "We are here for you." Vulnerability creates CONNECTION. RELIABILITY: Do what you say. Be consistent. You promise to help Priya → You help. You promise to review Rahul work → You review. You show up on time. You deliver on commitments. Team sees: You are RELIABLE (can be trusted). Trust deepens. Vulnerability + Reliability = TRUST. Trust enables collaboration. In B.Com teams (study groups, project teams, internship teams), build trust by being vulnerable (share struggles) and reliable (deliver on commitments). Without trust, team cannot collaborate effectively.'
         },
         {
           id: 27,
-          question: 'Your team works together on projects but feels disconnected (do not know each other as humans). What does effective team building involve?',
+          question: 'Team works together but feels disconnected. Don\'t know each other as humans. Effective team building?',
           options: [
-            'Work tasks only - just focus on getting work done',
-            'Creating CONNECTION and SHARED IDENTITY: Team lunches (know each other as humans), team offsites (create memories), team identity (name, values, goals, rituals, story). Build team, not just work group.',
-            'Forcing fun - mandatory fun activities that people do not enjoy',
-            'Avoiding personal topics - keep everything professional'
+            'Work tasks only - focus work',
+            'CONNECTION + SHARED IDENTITY',
+            'Forcing fun - mandatory activities',
+            'Avoid personal - stay professional'
           ],
           correct: 1,
           explanation: 'Effective team building involves creating CONNECTION and SHARED IDENTITY (not just work tasks, forced fun, or avoiding personal topics). CONNECTION: Create shared experiences. (1) Team lunches (weekly, Friday, 1 hour, casual, no work talk - get to know each other as HUMANS: "Where are you from? What hobbies? What are your goals?"), (2) Team offsites (quarterly, 1 day, fun activities - escape room, hiking, cooking class - create MEMORIES), (3) Team challenges (monthly, work challenge - compete as TEAM vs other teams), (4) Team volunteering (quarterly, help NGO - shared purpose). Shared experiences create: Connection (know each other), memories (shared stories), identity (we are team that does things together). SHARED IDENTITY: (1) Team NAME ("Growth Hackers"), (2) Team VALUES ("Experiment boldly, learn fast, support always"), (3) Team GOALS ("Achieve 10M impressions by year-end"), (4) Team RITUALS (Monday kickoff, Friday wins, monthly lunch), (5) Team STORY ("We started as 5 disconnected individuals, became high-performing team"). Identity creates: Commitment (people care about team), pride (people are proud), cohesion (people feel connected). In B.Com teams, build connection (spend time together as humans) and identity (name, values, goals, rituals). Team building transforms work group into cohesive team.'
         },
         {
           id: 28,
-          question: 'Your team completes successful campaign (1M impressions, 10K conversions). Manager asks: "Should we celebrate?" Some say: "No time, move to next project." Why should you celebrate team wins?',
+          question: 'Successful campaign: 1M impressions, 10K conversions. Some: "No time, next project." Why celebrate wins?',
           options: [
-            'Show off to other teams - make them jealous',
-            'Build MORALE and TEAM IDENTITY: Recognize all contributions (everyone feels valued), create shared memories (we did this together), build winning culture (motivates future wins). Celebrate big AND small wins.',
-            'Create competition within team - reward only top performer',
-            'Waste time - celebrations are not productive'
+            'Show off - make others jealous',
+            'Build MORALE + TEAM IDENTITY',
+            'Reward only top performer',
+            'Waste time - not productive'
           ],
           correct: 1,
           explanation: 'Celebrate team wins to build MORALE and TEAM IDENTITY (not to show off, create internal competition, or waste time). When team succeeds (campaign: 1M impressions, 10K conversions), CELEBRATE TOGETHER. Team meeting: "WE did this! Priya (email), Rahul (ads), Ankit (content), Sarah (analytics), Me (social media) - ALL contributed. This is TEAM win!" Order pizza, play music, share stories: "What was your favorite moment?" Everyone feels: (1) RECOGNIZED (their contribution mattered), (2) CONNECTED (we did this together), (3) PROUD (we are good team). Celebration builds: (1) MORALE (people feel good, energized, motivated), (2) IDENTITY (we are winning team, we celebrate together), (3) MOTIVATION (people want more wins). Celebrate ALL wins (big AND small): Campaign success (big win), Priya finished difficult project (small win), team hit deadline (small win). Frequent celebration maintains high morale. In B.Com teams, celebrate every win (project completion, good grade, successful presentation). Recognition builds morale. Shared celebration builds identity. Winning culture motivates excellence. Teams that celebrate together perform better (higher morale = higher performance).'
         },
         {
           id: 29,
-          question: 'Priya (team member) is struggling (family issue - stressed, distracted, sad). Team notices. How should you support team members?',
+          question: 'Priya struggling (family issue - stressed, sad). Team notices. How support team members?',
           options: [
-            'Do their work for them - take over all their tasks',
-            'Offer HELP and ENCOURAGEMENT: "Priya, take Friday off. We will cover your work." "We are here for you." Support beyond work - care about them as HUMANS. Build resilience.',
-            'Criticize them - "You are not performing well"',
-            'Ignore struggles - "Not my problem, focus on work"'
+            'Do all their work',
+            'Offer HELP + ENCOURAGEMENT',
+            'Criticize - "Not performing well"',
+            'Ignore - "Not my problem"'
           ],
           correct: 1,
           explanation: 'Support team members by offering HELP and ENCOURAGEMENT (not doing all their work, criticizing, or ignoring). Priya is struggling (family issue - stressed, distracted, sad). Team supports: You: "Priya, take Friday off. We will cover your work." Rahul: "I will handle your email campaign." Ankit: "I will help with your project." Sarah: "Let me know if you need anything." Priya (tearful): "Thank you. I feel supported." Support creates: (1) TRUST (people know team will help when they struggle), (2) RESILIENCE (team can handle adversity together), (3) LOYALTY (people do not want to leave supportive team). Support goes BEYOND WORK. Care about team members as HUMANS (not just work output). When someone struggles (personal issue, work overwhelm, mistake), support them. When YOU make mistake (campaign has error), team supports: "It is okay. We all make mistakes. Let us fix this together." You feel: Supported (not alone), safe (can make mistakes), grateful (team has my back). In B.Com teams, support each other through: (1) Personal struggles (family issues, health problems, stress), (2) Work challenges (difficult projects, tight deadlines, mistakes), (3) Academic pressure (exams, assignments, presentations). Supportive teams are resilient teams. Resilient teams perform better under pressure.'
         },
         {
           id: 30,
-          question: 'Your team has NO IDENTITY (no name, no values, no goals, no rituals, no story). People feel disconnected. Manager: "Build team identity." What does team identity create?',
+          question: 'Team: NO IDENTITY (no name, values, goals, rituals). Disconnected. What does identity create?',
           options: [
-            'Division - creates us vs them mentality',
-            'COHESION and COMMITMENT: People feel connected (we are ONE team), committed (care about team success), proud (proud to be on team). Identity transforms individuals into unified team.',
-            'Exclusivity - excludes others from team',
-            'Problems - creates unnecessary complexity'
+            'Division - us vs them',
+            'COHESION + COMMITMENT',
+            'Exclusivity - excludes others',
+            'Problems - unnecessary complexity'
           ],
           correct: 1,
           explanation: 'Team identity creates COHESION and COMMITMENT (not division, exclusivity, or problems). Team creates IDENTITY: (1) Team NAME: "Growth Hackers" (reflects who we are - focus on growth), (2) Team VALUES: "Experiment boldly, learn fast, support always, celebrate together" (what we believe in), (3) Team GOALS: "Achieve 10M impressions, 100K conversions, 8/10 team satisfaction by year-end" (what we are trying to achieve together), (4) Team RITUALS: Monday kickoff (15 mins, share goals for week), Friday wins (15 mins, share 1 win each), monthly team lunch (1 hour, no work talk), quarterly offsite (1 day, fun activity) - repeated practices that build connection, (5) Team STORY: "We started as 5 disconnected individuals. We built trust, connection, cohesion. We became high-performing team. We are Growth Hackers" (our journey). Identity creates: (1) COHESION (people feel CONNECTED to team - we are ONE unit, not 5 individuals), (2) COMMITMENT (people CARE about team success - not just individual success), (3) PRIDE (people are PROUD to be on team - "I am Growth Hacker"). Result: Team is no longer 5 individuals. Team is ONE unit with shared identity. In B.Com teams, build identity: Create team name (reflects who you are), define values (what you believe), set goals (what you are achieving together), establish rituals (how you work together), craft story (your journey). Identity transforms disconnected individuals into cohesive, committed team.'

@@ -155,63 +155,63 @@ Drop a comment - what is your biggest listening challenge? Let us fix it! Peace!
       questions: [
         {
           id: 1,
-          question: 'Your Business Law professor says "Section 10 will definitely be on the exam" but you were checking Instagram. You missed it. What is the core problem?',
+          question: 'Prof says "Section 10 = exam!" You missed it checking Instagram. What\'s wrong?',
           options: [
-            'The professor spoke too quietly',
-            'You were fake listening - physically present but mentally absent',
-            'You need better notes from classmates',
-            'The topic is too hard'
+            'Professor too quiet',
+            'Fake listening - body here, mind gone',
+            'Need classmate notes',
+            'Topic too hard'
           ],
           correct: 1,
-          explanation: 'Fake listening is when you HEAR words but your brain is elsewhere (phone, daydreaming, lunch plans). You can be in class for 3 hours but learn ZERO if you are not mentally present. Active listening requires 100% mental presence - phone on airplane mode, focusing on speaker, mentally paraphrasing what they say. Professors emphasize what THEY think is exam-critical (YouTube does not know this!). Miss it in class = re-learn at 2 AM.'
+          explanation: 'Fake listening = hearing but brain elsewhere (phone, daydreaming). Body in class, mind absent = zero learning. Active listening = 100% mental presence. Phone off, focus on speaker, paraphrase mentally. Prof knows exam-critical stuff - YouTube doesn\'t! Miss it = 2 AM cramming.'
         },
         {
           id: 2,
-          question: 'After a 60-minute lecture, you cannot recall a single key concept. Your classmate can explain 5 main points. What did they do differently?',
+          question: '60-min lecture done. You remember nothing. Classmate explains 5 points. How?',
           options: [
-            'They are naturally smarter',
-            'They used active listening - Cornell notes, mental paraphrasing every 10 min, asked clarifying questions',
-            'They recorded the lecture',
-            'They sat in the front row'
+            'Naturally smarter',
+            'Active listening - Cornell notes + mental paraphrasing',
+            'Recorded everything',
+            'Sat front row'
           ],
           correct: 1,
-          explanation: 'Active listening is not passive absorption - it is ACTIVE processing. Cornell method: Left = main concepts, Right = details, Bottom = your 3-sentence summary. Mental paraphrasing every 10 min: "Prof said consideration is essential - so basically no one-sided contracts." Asking questions: "What happens if consideration is inadequate?" These techniques force your brain to PROCESS, not just HEAR. Your classmate learned in class, you have to re-learn at home. Same 60 minutes, different outcomes!'
+          explanation: 'Active listening = ACTIVE processing, not passive. Cornell notes: left = concepts, right = details, bottom = summary. Mental paraphrasing every 10 min: "Prof said consideration = essential, so no one-sided contracts." Ask questions: "What if consideration inadequate?" Forces brain to PROCESS, not just hear. Same 60 min, different results!'
         },
         {
           id: 3,
-          question: 'Job interview question: "Tell me about a time you failed." You answer: "I am a fast learner and team player." What went wrong?',
+          question: 'Interview: "Tell me about a failure." You: "I\'m a fast learner." What\'s wrong?',
           options: [
-            'You gave a perfect answer',
-            'You did not actively listen - answered generic "strengths" not the ACTUAL question about failure',
-            'The interviewer was unclear',
-            'You were too nervous'
+            'Perfect answer',
+            'Didn\'t listen - asked failure, gave strengths',
+            'Interviewer unclear',
+            'Too nervous'
           ],
           correct: 1,
-          explanation: 'Active listening in interviews = answer what they ASKED, not what you PREPARED. They asked about FAILURE, you answered about STRENGTHS (you were on autopilot, not listening). Pro tip: Take 2-second pause before answering - shows you are processing the actual question, not regurgitating prepared script. Interviewers spot fake listening instantly. Active listening = you address their specific question with relevant example.'
+          explanation: 'Active listening = answer what they ASKED, not what you PREPARED. They asked FAILURE, you answered STRENGTHS (autopilot, not listening). Pro tip: 2-second pause before answering - shows processing actual question, not script. Interviewers spot fake listening instantly. Active listening = address their specific question with relevant example.'
         },
         {
           id: 4,
-          question: 'Your professor explains a concept for 10 minutes. You took detailed notes but cannot explain it to your friend. What is missing?',
+          question: 'Prof explains 10 min. You took notes but can\'t explain to friend. Missing what?',
           options: [
-            'You need more notes',
-            'You did passive transcription, not active processing - should have paraphrased in your own words',
-            'The concept is too difficult',
-            'You need to re-read your notes'
+            'Need more notes',
+            'Passive transcription, not active processing',
+            'Concept too difficult',
+            'Need to re-read'
           ],
           correct: 1,
-          explanation: 'Detailed notes ≠ understanding. You were a transcription machine, not a learner. Active listening requires PARAPHRASING: after each concept, mentally rephrase in YOUR words. "Section 10: consideration essential" → "Basically, contracts need both sides to give something valuable, no freebies." If you cannot paraphrase, you did not listen actively. Test: Can you teach this to a 10-year-old? If no, you only copied words, did not process meaning.'
+          explanation: 'Detailed notes ≠ understanding. You were transcription machine, not learner. Active listening = PARAPHRASING: after each concept, mentally rephrase in YOUR words. "Section 10: consideration essential" → "Basically, contracts need both sides to give something valuable, no freebies." Can\'t paraphrase = didn\'t listen actively. Test: Can teach this to 10-year-old? No = only copied words, didn\'t process meaning.'
         },
         {
           id: 5,
-          question: 'Your friend says "I am so stressed about placements." You reply "Me too! By the way, new iPhone launched!" What listening mistake did you make?',
+          question: 'Friend: "Stressed about placements." You: "Me too! New iPhone launched!" Mistake?',
           options: [
-            'You were being supportive',
-            'You made it about YOU and dismissed their feelings (failed to reflect emotion)',
-            'You tried to cheer them up',
-            'You changed to a lighter topic'
+            'Being supportive',
+            'Made it about YOU, dismissed their feelings',
+            'Tried to cheer up',
+            'Changed topic'
           ],
           correct: 1,
-          explanation: 'Active listening in personal contexts requires: (1) Pause YOUR agenda (stop thinking about your placement stress), (2) Reflect their emotion: "Sounds really overwhelming," (3) Ask open question: "What is stressing you most?", (4) THEN offer support. You failed step 1 (made it about you) and step 2 (dismissed feelings). Result: Friend feels unheard, relationship weakens. Active listening builds deep connections - people remember who made them feel HEARD.'
+          explanation: 'Active listening = (1) Pause YOUR agenda (stop thinking about your stress), (2) Reflect emotion: "Sounds overwhelming," (3) Ask open question: "What stresses you most?" (4) THEN offer support. You failed steps 1-2 (made it about you, dismissed feelings). Result: Friend feels unheard, relationship weakens. Active listening builds deep connections - people remember who made them feel HEARD.'
         }
       ]
     },
@@ -495,63 +495,63 @@ PRESENTATION DAY: Arrive 15 mins early. Test tech. Do power pose in restroom. 4-
       questions: [
         {
           id: 6,
-          question: 'You are presenting your Financial Management project. 2 minutes in, you completely forget your next point. Your mind goes blank. What should you do?',
+          question: 'Financial project presentation. 2 min in, mind goes blank. What to do?',
           options: [
-            'Panic, apologize profusely, and ask to start over',
-            'Pause for 3 seconds, glance at your notes/slide, then continue: "Now, let us move to the next key point..."',
-            'Fill the silence with "um, uh, like" while frantically trying to remember',
-            'Skip to the conclusion immediately to end the embarrassment'
+            'Panic and start over',
+            '3-second pause, check notes, continue',
+            'Fill with "um, uh" sounds',
+            'Skip to conclusion'
           ],
           correct: 1,
-          explanation: 'A 3-second pause feels like eternity to YOU, but to the audience, it signals you are thinking (confidence signal). Briefly checking notes is professional, not a failure - even TED speakers do this. Apologizing draws attention to the mistake; moving forward confidently makes the audience forget it happened. Filler words ("um, uh") make you sound unprepared and amplify the awkwardness.'
+          explanation: '3-second pause feels like eternity to YOU, but audience sees thinking (confidence signal). Checking notes = professional, not failure. TED speakers do this! Apologizing draws attention to mistake; moving forward confidently makes audience forget it happened. Filler words ("um, uh") = unprepared, amplify awkwardness.'
         },
         {
           id: 7,
-          question: 'Your professor asks: "How does your GST analysis account for the 2024 rate changes?" You did NOT research 2024 changes. What is your BEST response?',
+          question: 'Prof: "How does your GST analysis handle 2024 changes?" You didn\'t research. Best response?',
           options: [
-            'Bluff: "The 2024 changes align with my analysis, so the conclusions remain valid."',
-            'Deflect: "That is outside the scope of this presentation."',
-            'Honest + Proactive: "That is an excellent question. My research focused on 2022-2023 data, so I have not analyzed the 2024 changes yet. I would be happy to research that and share my findings with you by Friday."',
-            'Panic: "I... I am not sure. I did not cover that."'
+            'Bluff alignment with analysis',
+            'Deflect as outside scope',
+            'Honest + offer to research by Friday',
+            'Panic and admit unsure'
           ],
           correct: 2,
-          explanation: 'Bluffing is dangerous - if the professor knows the answer (they usually do), you lose ALL credibility. Deflecting sounds defensive and dismissive. Panicking shows lack of composure. The honest + proactive approach demonstrates: (1) Intellectual humility (admitting knowledge gaps), (2) Professionalism (offering to follow up), (3) Confidence (not rattled by the question). Professors RESPECT this - they are testing your character, not just your knowledge.'
+          explanation: 'Bluffing = dangerous. Prof knows answer = lose ALL credibility. Deflecting = defensive, dismissive. Panicking = lack of composure. Honest + proactive shows: (1) Intellectual humility (admitting gaps), (2) Professionalism (follow-up offer), (3) Confidence (not rattled). Professors RESPECT this - testing character, not just knowledge.'
         },
         {
           id: 8,
-          question: 'You notice 3 students in the back row are on their phones, clearly not paying attention. How should you respond?',
+          question: '3 students in back row on phones, not listening. How to respond?',
           options: [
-            'Call them out: "Excuse me, can you please put your phones away?"',
-            'Ignore them and continue - you cannot control the audience',
-            'Use an engagement technique: Ask a question to the room, make eye contact with attentive students, or move closer to the back (proximity effect)',
-            'Get flustered and lose confidence, thinking "My presentation is boring"'
+            'Call them out directly',
+            'Ignore and continue',
+            'Use engagement techniques - ask question, move closer',
+            'Get flustered and lose confidence'
           ],
           correct: 2,
-          explanation: 'Calling them out creates confrontation and disrupts flow - you lose more attention. Ignoring them is passive, but getting flustered is worse (affects YOUR performance). The best approach: Use engagement techniques to recapture attention without confrontation. Ask a question ("Raise your hand if you have used Tally"), move toward the back (people pay more attention when speaker is near), or make eye contact with engaged students (positive reinforcement). Reality check: In ANY presentation, 10-20% will zone out - that is normal. Focus on the 80% who ARE listening.'
+          explanation: 'Calling out = confrontation, disrupts flow, lose more attention. Ignoring = passive, but getting flustered = worse (affects YOUR performance). Best approach: Engagement techniques without confrontation. Ask question ("Raise hand if used Tally"), move toward back (people pay attention when speaker near), eye contact with engaged students. Reality: ANY presentation, 10-20% zone out = normal. Focus on 80% who ARE listening.'
         },
         {
           id: 9,
-          question: 'You are presenting and realize your slide deck is out of order - Slide 5 is showing when you are on Point 2. What do you do?',
+          question: 'Slide deck out of order - Slide 5 showing during Point 2. What to do?',
           options: [
-            'Stop presenting, apologize, and spend 2 minutes fixing the slides while the audience waits',
-            'Continue speaking confidently and say: "Apologies for the slide order - let me explain this concept without the visual for now" and keep going',
-            'Panic and say: "I am so sorry, this always happens to me, technology hates me"',
-            'Blame someone else: "Whoever set up this projector messed up my presentation"'
+            'Stop and fix slides for 2 min',
+            'Continue confidently, explain without visual',
+            'Panic about technology hating you',
+            'Blame projector setup person'
           ],
           correct: 1,
-          explanation: 'Stopping to fix slides kills momentum and makes the audience uncomfortable - they are watching you fumble, not learning. Panicking or blaming others destroys your credibility and professionalism. The pro move: Acknowledge briefly ("Apologies for the slide order"), then CONTINUE speaking confidently. Your content matters more than slides. Slides are support tools, not the presentation itself. This shows composure under pressure - a trait employers and professors value. Bonus: Have a backup plan (PDF on phone, printed notes) for tech failures.'
+          explanation: 'Stopping to fix = kills momentum, audience uncomfortable watching you fumble. Panicking/blaming = destroys credibility, professionalism. Pro move: Acknowledge briefly ("Apologies for slide order"), then CONTINUE confidently. Content matters more than slides. Slides = support tools, not presentation itself. Shows composure under pressure - employers/professors value this. Bonus: Backup plan (PDF on phone, printed notes) for tech failures.'
         },
         {
           id: 10,
-          question: 'Which opening is MOST effective for a B.Com presentation on "E-commerce Taxation Challenges"?',
+          question: 'Best opening for "E-commerce Taxation" B.Com presentation?',
           options: [
-            '"Hello everyone. Today I will talk about e-commerce taxation challenges. Let us begin with the definition..."',
-            '"Good morning. My name is Priya, and I am presenting on e-commerce taxation. I have 3 main points to cover..."',
-            '"In 2023, Amazon paid ZERO income tax in India despite ₹20,000 crore revenue. How? Today, I will reveal the 3 tax loopholes e-commerce giants exploit - and why this matters to YOU as future accountants."',
-            '"E-commerce taxation is a very important and interesting topic that affects many businesses in India and around the world..."'
+            '"Hello everyone. Today I will talk about e-commerce taxation challenges."',
+            '"Good morning. My name is Priya. I have 3 main points to cover."',
+            '"Amazon paid ZERO tax despite ₹20,000 crore revenue. How? I\'ll reveal 3 loopholes."',
+            '"E-commerce taxation is very important and interesting topic."'
           ],
           correct: 2,
-          explanation: 'Option 1 is boring and generic - audience zones out immediately. Option 2 is slightly better (structure preview) but still lacks impact. Option 4 is vague and uses weak words ("very important," "interesting") without substance. Option 3 is the WINNER because it uses: (1) Shocking stat (₹20,000 crore, zero tax), (2) Curiosity gap ("How?"), (3) Promise of value ("3 loopholes"), (4) Personal relevance ("matters to YOU"). This hijacks attention in the first 10 seconds. Rule: Your opening should make the audience think "I NEED to hear this" not "Oh, another boring presentation."'
+          explanation: 'Option 1 = boring, generic, audience zones out immediately. Option 2 = slightly better (structure preview) but lacks impact. Option 4 = vague, weak words ("very important," "interesting") without substance. Option 3 = WINNER: (1) Shocking stat (₹20,000 crore, zero tax), (2) Curiosity gap ("How?"), (3) Promise of value ("3 loopholes"), (4) Personal relevance. Hijacks attention in first 10 seconds. Rule: Opening should make audience think "I NEED to hear this" not "Oh, another boring presentation."'
         }
       ]
     },
@@ -863,63 +863,63 @@ Use the structure: Opening (1 sentence) + Body (2-3 sentences) + Closing (thank 
       questions: [
         {
           id: 11,
-          question: 'You need to email your professor requesting a meeting to discuss your low grade. Which subject line is BEST?',
+          question: 'Email prof about low grade meeting. Best subject line?',
           options: [
             'Hey',
-            'Request for Meeting to Discuss Grade - Priya Sharma, Roll No. 2023-045',
+            'Meeting Request - Grade Discussion - Priya Sharma, Roll 2023-045',
             'URGENT: NEED TO TALK ASAP!!!',
             'Question'
           ],
           correct: 1,
-          explanation: 'Option 2 is the winner because it follows the [Purpose] - [Your Name/Identifier] formula. The professor knows: (1) What you want (meeting), (2) Why (discuss grade), (3) Who you are (name + roll number). This gets opened and prioritized. Option 1 is too vague. Option 3 sounds desperate and unprofessional (ALL CAPS + exclamation marks). Option 4 is generic - "Question" about what? Specific subject lines get 3x higher open rates.'
+          explanation: 'Option 2 = winner. [Purpose] - [Name/Identifier] formula. Prof knows: (1) What you want (meeting), (2) Why (grade discussion), (3) Who you are (name + roll number). Gets opened and prioritized. Option 1 = too vague. Option 3 = desperate, unprofessional (ALL CAPS + exclamation marks). Option 4 = generic. Specific subject lines get 3x higher open rates.'
         },
         {
           id: 12,
-          question: 'You are emailing a potential internship supervisor. Which opening is MOST professional?',
+          question: 'Emailing internship supervisor. Most professional opening?',
           options: [
-            'Hey! Hope you are doing great!',
-            'Dear Mr. Kapoor, I am writing to express my interest in the Financial Analyst internship position advertised on LinkedIn.',
-            'Hiya! I saw your internship post and I am super interested!',
-            'To Whom It May Concern, I humbly beseech you to consider my application...'
+            'Hey! Hope you\'re doing great!',
+            'Dear Mr. Kapoor, writing to express interest in Financial Analyst internship on LinkedIn.',
+            'Hiya! Saw your post, super interested!',
+            'To Whom It May Concern, humbly beseech you...'
           ],
           correct: 1,
-          explanation: 'Option 2 is professional-friendly: "Dear Mr. Kapoor" (respectful), states purpose immediately (internship interest), mentions source (LinkedIn). Option 1 is too casual ("Hey," "Hope you are doing great" is filler). Option 3 is unprofessional ("Hiya," "super"). Option 4 is overly formal and outdated ("humbly beseech" sounds like a Victorian letter). Modern professionalism = CLEAR + RESPECTFUL, not flowery.'
+          explanation: 'Option 2 = professional-friendly: "Dear Mr. Kapoor" (respectful), states purpose immediately (internship interest), mentions source (LinkedIn). Option 1 = too casual ("Hey," "Hope you\'re doing great" = filler). Option 3 = unprofessional ("Hiya," "super"). Option 4 = overly formal, outdated ("humbly beseech" = Victorian letter). Modern professionalism = CLEAR + RESPECTFUL, not flowery.'
         },
         {
           id: 13,
-          question: 'Your professor has not responded to your email in 3 days. What should you do?',
+          question: 'Prof hasn\'t responded to email in 3 days. What to do?',
           options: [
-            'Send 3 follow-up emails in one day to show you are serious',
-            'Wait one more day (total 4 days/96 hours), then send ONE polite follow-up acknowledging their busy schedule',
-            'Assume they are ignoring you and give up',
-            'Go to their office unannounced and demand a response'
+            'Send 3 follow-ups in one day',
+            'Wait 1 more day, send ONE polite follow-up',
+            'Assume they\'re ignoring you, give up',
+            'Go to office unannounced, demand response'
           ],
           correct: 1,
-          explanation: 'Option 2 is the professional approach. Wait 48-96 hours (professors are busy), then send ONE follow-up: "Dear Professor, I wanted to follow up on my email from [date]. I understand you have a busy schedule. Thank you." Option 1 is annoying (3 emails = spam). Option 3 is defeatist (they might have just missed it). Option 4 is confrontational and disrespectful. ONE follow-up = persistent. THREE follow-ups = entitled.'
+          explanation: 'Option 2 = professional approach. Wait 48-96 hours (professors busy), then ONE follow-up: "Dear Professor, follow up on email from [date]. Understand busy schedule. Thank you." Option 1 = annoying (3 emails = spam). Option 3 = defeatist (might have missed it). Option 4 = confrontational, disrespectful. ONE follow-up = persistent. THREE follow-ups = entitled.'
         },
         {
           id: 14,
-          question: 'You wrote an email at 1 AM requesting an assignment extension. When should you send it?',
+          question: 'Wrote extension email at 1 AM. When to send it?',
           options: [
-            'Send immediately at 1 AM (shows urgency)',
-            'Use "Schedule Send" to send at 8 AM the next morning',
-            'Wait until 11 PM the next night to send',
-            'Send at 6 AM to show you are an early riser'
+            'Send immediately at 1 AM',
+            'Schedule Send at 8 AM next morning',
+            'Wait until 11 PM next night',
+            'Send at 6 AM to show early rising'
           ],
           correct: 1,
-          explanation: 'Option 2 is the smart move. Sending at 1 AM signals: "I procrastinated and am now panicking" (bad look). Use Gmail is "Schedule Send" feature to send at 8-10 AM (professional hours). This shows you are organized, not desperate. Option 3 (11 PM) has the same problem as 1 AM. Option 4 (6 AM) is slightly better but still looks desperate. Best window: 8 AM - 6 PM on weekdays.'
+          explanation: 'Option 2 = smart move. Sending at 1 AM signals: "I procrastinated, now panicking" (bad look). Use Gmail "Schedule Send" feature at 8-10 AM (professional hours). Shows organized, not desperate. Option 3 (11 PM) = same problem as 1 AM. Option 4 (6 AM) = slightly better but still looks desperate. Best window: 8 AM - 6 PM weekdays.'
         },
         {
           id: 15,
-          question: 'Which email body is MOST effective for requesting an extension?',
+          question: 'Most effective email body for requesting assignment extension?',
           options: [
-            '"I am so sorry, but I was really busy with other stuff and did not manage my time well. If possible, maybe you could consider giving me an extension? No pressure though!"',
-            '"I am writing to request a 48-hour extension for the Cost Accounting assignment. I underestimated the complexity of the variance analysis section. I have completed 70% of the work and will submit high-quality analysis by Friday. Thank you for considering my request."',
-            '"Hi, I need more time for the assignment because I have been stressed lately. Can I get an extension? Let me know ASAP. Thanks!"',
-            '"I humbly request that you grant me the gracious favor of additional time to complete the assignment, as I have encountered unforeseen circumstances that have impeded my progress."'
+            '"Sorry, busy with other stuff, maybe consider extension? No pressure!"',
+            '"Request 48-hour extension for Cost Accounting. Underestimated variance analysis complexity. 70% complete, high-quality by Friday."',
+            '"Hi, need more time, stressed lately. Extension? ASAP. Thanks!"',
+            '"Humbly request gracious favor of additional time due to unforeseen circumstances."'
           ],
           correct: 1,
-          explanation: 'Option 2 uses the Reason-Request-Reassurance framework perfectly. Reason: "I underestimated the complexity" (accountability, not excuses). Request: "48-hour extension" (specific, not vague). Reassurance: "70% complete, high-quality by Friday" (shows commitment). Option 1 is weak ("maybe," "if possible," "no pressure" = uncertain). Option 3 is too casual ("Hi," "ASAP," vague reasons). Option 4 is overly formal and wordy ("humbly request," "gracious favor" = outdated). Clear + Accountable + Committed = 85% approval rate.'
+          explanation: 'Option 2 = Reason-Request-Reassurance framework perfectly. Reason: "Underestimated complexity" (accountability, not excuses). Request: "48-hour extension" (specific, not vague). Reassurance: "70% complete, high-quality by Friday" (shows commitment). Option 1 = weak ("maybe," "if possible," "no pressure" = uncertain). Option 3 = too casual ("Hi," "ASAP," vague reasons). Option 4 = overly formal, wordy ("humbly request," "gracious favor" = outdated). Clear + Accountable + Committed = 85% approval rate.'
         }
       ]
     },
@@ -1249,63 +1249,63 @@ Watch the recording. You will cringe - that is growth. Note: Fidgeting? Slouchin
       questions: [
         {
           id: 16,
-          question: 'You are in a virtual interview for an accounting internship. Where should you look to create the best impression of eye contact?',
+          question: 'Virtual interview for accounting internship. Where to look for best eye contact?',
           options: [
-            'At the interviewer on your screen (where their face appears)',
-            'At your webcam (the camera lens) when speaking, at the screen when listening',
-            'At your notes to show you are prepared',
-            'Alternate between the ceiling and your keyboard'
+            'At interviewer on screen',
+            'At webcam when speaking, screen when listening',
+            'At notes to show prepared',
+            'Alternate ceiling and keyboard'
           ],
           correct: 1,
-          explanation: 'Option 2 is correct. When SPEAKING, look at your webcam (camera lens) - this creates the illusion of direct eye contact for the interviewer. When LISTENING, you can look at the screen naturally. Looking at the screen while speaking makes it appear to the interviewer that you are looking down or away, which signals evasiveness or lack of confidence. This is the #1 virtual interview mistake B.Com students make.'
+          explanation: 'Option 2 = correct. When SPEAKING, look at webcam (camera lens) - creates illusion of direct eye contact for interviewer. When LISTENING, look at screen naturally. Looking at screen while speaking = appears looking down/away, signals evasiveness/lack of confidence. #1 virtual interview mistake B.Com students make.'
         },
         {
           id: 17,
-          question: 'During your Financial Management presentation, you notice the professor leaning back in their chair and checking their phone. What should you do?',
+          question: 'Financial Management presentation. Prof leaning back, checking phone. What to do?',
           options: [
-            'Continue presenting for another 10 minutes as planned - they are probably just multitasking',
-            'Stop immediately and ask: "Am I boring you?"',
-            'Wrap up your current point quickly and ask: "Would you like me to clarify anything, or should I move to the summary?"',
-            'Speak louder and faster to regain their attention'
+            'Continue presenting 10 more minutes',
+            'Stop and ask "Am I boring you?"',
+            'Wrap up quickly, ask "Clarify anything or move to summary?"',
+            'Speak louder and faster'
           ],
           correct: 2,
-          explanation: 'Option 3 is the professional response. Leaning back + checking phone = disengagement signals. Ignoring these (Option 1) wastes everyone is time. Calling them out (Option 2) is confrontational. Speaking louder/faster (Option 4) is annoying. The smart move: Acknowledge the signal by wrapping up and offering to clarify or summarize. This shows emotional intelligence - you can READ the room and ADAPT. Employers value this skill.'
+          explanation: 'Option 3 = professional response. Leaning back + checking phone = disengagement signals. Ignoring (Option 1) = wastes everyone\'s time. Calling out (Option 2) = confrontational. Speaking louder/faster (Option 4) = annoying. Smart move: Acknowledge signal by wrapping up, offering to clarify/summarize. Shows emotional intelligence - READ room and ADAPT. Employers value this skill.'
         },
         {
           id: 18,
-          question: 'You are explaining your B.Com project in an interview. Which hand gesture strategy is MOST effective?',
+          question: 'Explaining B.Com project in interview. Most effective hand gesture strategy?',
           options: [
-            'Keep your hands completely still on your lap throughout the entire explanation',
-            'Use purposeful gestures at chest level: "Three key findings" (hold up 3 fingers), "Revenue growth" (upward hand motion)',
-            'Keep your hands in your pockets to look casual and relaxed',
-            'Wave your hands constantly above your head to show enthusiasm'
+            'Keep hands still on lap',
+            'Use purposeful gestures at chest level',
+            'Keep hands in pockets',
+            'Wave hands constantly above head'
           ],
           correct: 1,
-          explanation: 'Option 2 is the winner. Purposeful gestures at CHEST LEVEL (the "power zone") amplify your message without distracting. Counting on fingers, showing growth with upward motion = visual + verbal = 2x retention. Option 1 (still hands) looks robotic. Option 3 (hands in pockets) signals you are hiding something or insecure. Option 4 (excessive gestures above head) is distracting and aggressive. Rule: Gestures should SUPPORT your words, not compete with them.'
+          explanation: 'Option 2 = winner. Purposeful gestures at CHEST LEVEL ("power zone") amplify message without distracting. Counting on fingers, showing growth with upward motion = visual + verbal = 2x retention. Option 1 (still hands) = robotic. Option 3 (hands in pockets) = hiding something, insecure. Option 4 (excessive gestures above head) = distracting, aggressive. Rule: Gestures SUPPORT words, not compete with them.'
         },
         {
           id: 19,
-          question: 'Before your Big 4 firm interview, you have 2 minutes alone in the waiting room. What should you do to boost your confidence?',
+          question: 'Big 4 interview, 2 min alone in waiting room. How to boost confidence?',
           options: [
-            'Sit quietly and review your notes one more time',
-            'Stand in a "power pose" (feet wide, hands on hips, chest out) for 2 full minutes',
-            'Scroll through Instagram to distract yourself from nerves',
-            'Practice your answers by whispering to yourself'
+            'Sit quietly, review notes',
+            'Power pose - feet wide, hands on hips, chest out',
+            'Scroll Instagram to distract',
+            'Whisper practice answers'
           ],
           correct: 1,
-          explanation: 'Option 2 is scientifically proven to work. Power posing for 2 minutes increases testosterone (confidence hormone) by 20% and decreases cortisol (stress hormone) by 25% (Amy Cuddy, Harvard). Your body language affects your BRAIN chemistry, which affects your PERFORMANCE. Option 1 (reviewing notes) adds stress. Option 3 (Instagram) distracts but does not build confidence. Option 4 (whispering) might look odd if someone walks in. Power pose in private = instant confidence boost.'
+          explanation: 'Option 2 = scientifically proven. Power posing 2 minutes increases testosterone (confidence hormone) 20%, decreases cortisol (stress hormone) 25% (Amy Cuddy, Harvard). Body language affects BRAIN chemistry, which affects PERFORMANCE. Option 1 (reviewing notes) = adds stress. Option 3 (Instagram) = distracts but doesn\'t build confidence. Option 4 (whispering) = might look odd if someone walks in. Power pose in private = instant confidence boost.'
         },
         {
           id: 20,
-          question: 'You say "I am very excited about this internship opportunity" but your face is blank and your tone is flat. What message does the interviewer receive?',
+          question: 'Say "I\'m excited about internship" but face blank, tone flat. What message received?',
           options: [
-            'You are excited (they believe your words)',
-            'You are lying or not actually interested (they believe your body language and tone)',
+            'You are excited (believe words)',
+            'You are lying/not interested (believe body language)',
             'You are professional and composed',
             'You are nervous but sincere'
           ],
           correct: 1,
-          explanation: 'Option 2 is the reality. The 93% Rule: 7% words, 38% tone, 55% body language. When your WORDS say one thing but your BODY/TONE say another, people believe your body. Blank face + flat tone = "This person is lying or does not care." Your brain cannot fake enthusiasm - if you do not FEEL it, your body will not SHOW it. Solution: Before saying "I am excited," think of something that genuinely excites you (the learning opportunity, the company culture, the team). Your face will naturally light up, and your tone will match. Authenticity > Acting.'
+          explanation: 'Option 2 = reality. 93% Rule: 7% words, 38% tone, 55% body language. When WORDS say one thing but BODY/TONE say another, people believe your body. Blank face + flat tone = "This person lying or doesn\'t care." Brain cannot fake enthusiasm - if you don\'t FEEL it, body won\'t SHOW it. Solution: Before saying "I\'m excited," think of something genuinely exciting (learning opportunity, company culture, team). Face naturally lights up, tone matches. Authenticity > Acting.'
         }
       ]
     },
@@ -1613,63 +1613,63 @@ At project start, agree: 'If we have a conflict, we will (1) Take a 24-hour cool
       questions: [
         {
           id: 21,
-          question: 'Your group project is due in 3 days. Priya says: "Arjun, your work is terrible. I am redoing everything." Arjun replies: "You are so controlling!" The WhatsApp group erupts. What should you do FIRST?',
+          question: 'Group project due in 3 days. Priya: "Arjun\'s work terrible!" Arjun: "You\'re controlling!" WhatsApp erupts. What first?',
           options: [
-            'Take sides with whoever you think is right',
-            'Message both privately: "Let us take 24 hours to cool down, then meet tomorrow to discuss this calmly"',
-            'Tell them both: "You need to calm down and be professional"',
-            'Ignore it and hope they work it out themselves'
+            'Take sides with right person',
+            'Message both privately: "24 hours cool down, meet tomorrow"',
+            'Tell both "Calm down, be professional"',
+            'Ignore, hope they work it out'
           ],
           correct: 1,
-          explanation: 'Option 2 is the de-escalation move. When emotions are high (fight-or-flight mode), logic is low. You cannot problem-solve when people are angry. Step 1: Lower the temperature with a cooling-off period. Step 2: Separate conversations (private messages, not group chat - that reignites the fight). Option 1 (taking sides) alienates someone. Option 3 ("calm down") is dismissive and escalates conflict. Option 4 (ignoring) lets the problem fester and the project fails. De-escalate FIRST, problem-solve SECOND.'
+          explanation: 'Option 2 = de-escalation move. When emotions high (fight-or-flight mode), logic is low. Can\'t problem-solve when people angry. Step 1: Lower temperature with cooling-off period. Step 2: Separate conversations (private messages, not group chat - reignites fight). Option 1 (taking sides) = alienates someone. Option 3 ("calm down") = dismissive, escalates conflict. Option 4 (ignoring) = problem festers, project fails. De-escalate FIRST, problem-solve SECOND.'
         },
         {
           id: 22,
-          question: 'You meet with Arjun privately. He says: "Priya dismissed my work without even reading it. I feel disrespected." What is your BEST response?',
+          question: 'Meet Arjun privately. He: "Priya dismissed my work without reading. Feel disrespected." Best response?',
           options: [
-            '"You are overreacting. Priya is just trying to get a good grade."',
-            '"So what I am hearing is, you feel your contribution was dismissed without fair feedback. Is that right?"',
-            '"Well, maybe your work was not up to standard. You should have tried harder."',
-            '"Forget about Priya. Let us just focus on finishing the project."'
+            '"You\'re overreacting. Priya wants good grade."',
+            '"So you feel contribution dismissed without fair feedback. Right?"',
+            '"Maybe work not up to standard. Try harder."',
+            '"Forget Priya. Focus on finishing project."'
           ],
           correct: 1,
-          explanation: 'Option 2 uses active listening: Paraphrase to confirm understanding ("So what I am hearing is...") and validate feelings ("you feel..."). This is NOT agreeing with Arjun - it is showing you UNDERSTAND his perspective. People calm down when they feel HEARD. Option 1 ("overreacting") invalidates feelings and escalates conflict. Option 3 (blaming Arjun) takes sides and breaks trust. Option 4 (dismissing the issue) ignores the root problem - the conflict will resurface. Listen 80%, talk 20%. Understand BEFORE you problem-solve.'
+          explanation: 'Option 2 = active listening: Paraphrase to confirm understanding ("So you feel...") and validate feelings. NOT agreeing with Arjun - showing you UNDERSTAND his perspective. People calm down when feel HEARD. Option 1 ("overreacting") = invalidates feelings, escalates conflict. Option 3 (blaming Arjun) = takes sides, breaks trust. Option 4 (dismissing issue) = ignores root problem - conflict resurfaces. Listen 80%, talk 20%. Understand BEFORE problem-solve.'
         },
         {
           id: 23,
-          question: 'After listening to both Priya and Arjun separately, you realize the REAL problem is not "lazy" vs "controlling." What is the root cause?',
+          question: 'After listening to both separately, real problem isn\'t "lazy" vs "controlling." Root cause?',
           options: [
-            'Priya and Arjun have incompatible personalities and should not work together',
-            'No clear quality standards were defined upfront, and there is no process for giving constructive feedback',
-            'Arjun is genuinely lazy and Priya is genuinely controlling',
-            'The professor assigned a bad group project'
+            'Incompatible personalities, shouldn\'t work together',
+            'No clear quality standards, no feedback process',
+            'Arjun genuinely lazy, Priya genuinely controlling',
+            'Professor assigned bad group project'
           ],
           correct: 1,
-          explanation: 'Option 2 identifies the ROOT CAUSE. The fight is NEVER about what it seems. "Lazy" vs "Controlling" = surface symptoms. The REAL issues: (1) No agreed-upon quality standards (What does "good work" mean?), (2) No feedback process (How do we give constructive criticism?), (3) Unclear roles (Who decides if work is acceptable?). Fix these SYSTEMS, and the conflict resolves. Option 1 (incompatible personalities) is a cop-out - any personalities can work together with clear systems. Option 3 (blaming individuals) does not solve the problem. Option 4 (blaming professor) is deflection. Address root causes, not symptoms.'
+          explanation: 'Option 2 = ROOT CAUSE. Fight is NEVER about what it seems. "Lazy" vs "Controlling" = surface symptoms. REAL issues: (1) No agreed quality standards (What\'s "good work"?), (2) No feedback process (How give constructive criticism?), (3) Unclear roles (Who decides if work acceptable?). Fix these SYSTEMS, conflict resolves. Option 1 (incompatible personalities) = cop-out - any personalities work together with clear systems. Option 3 (blaming individuals) = doesn\'t solve problem. Option 4 (blaming professor) = deflection. Address root causes, not symptoms.'
         },
         {
           id: 24,
-          question: 'You propose a solution: "Priya, lower your standards. Arjun, work harder. Let us compromise." Both seem unhappy. What went wrong?',
+          question: 'Propose: "Priya lower standards, Arjun work harder, let\'s compromise." Both unhappy. What\'s wrong?',
           options: [
-            'Compromise is always the best solution in conflicts',
-            'You did not give them enough time to think about it',
-            'Compromise means everyone loses a little. You need a WIN-WIN solution where both get what they NEED',
-            'You should have taken Priya is side since she cares more about quality'
+            'Compromise always best solution',
+            'Not enough time to think',
+            'Compromise = everyone loses. Need WIN-WIN solution',
+            'Should take Priya\'s side for quality'
           ],
           correct: 2,
-          explanation: 'Option 3 is correct. Compromise = everyone loses a little (Priya lowers standards = unhappy, Arjun works harder without clarity = unhappy). Win-Win = creative solution where BOTH get what they NEED. Example: (1) Define quality standards TOGETHER (3 criteria everyone agrees on), (2) Set mini-deadlines with check-ins (Priya gets structure, Arjun gets clarity), (3) Use feedback template: 2 strengths + 1 improvement (constructive, not harsh). Now Priya gets quality assurance AND Arjun gets clear expectations. Both win. Option 1 is false - compromise often leaves everyone dissatisfied. Option 2 misses the point. Option 4 (taking sides) is not conflict resolution.'
+          explanation: 'Option 3 = correct. Compromise = everyone loses little (Priya lowers standards = unhappy, Arjun works harder without clarity = unhappy). Win-Win = creative solution where BOTH get what they NEED. Example: (1) Define quality standards TOGETHER (3 criteria everyone agrees), (2) Set mini-deadlines with check-ins (Priya gets structure, Arjun gets clarity), (3) Use feedback template: 2 strengths + 1 improvement (constructive, not harsh). Now Priya gets quality assurance AND Arjun gets clear expectations. Both win. Option 1 = false - compromise often leaves everyone dissatisfied. Option 2 = misses point. Option 4 (taking sides) = not conflict resolution.'
         },
         {
           id: 25,
-          question: 'Your group resolves the conflict successfully. What should you do to PREVENT future conflicts in this project?',
+          question: 'Group resolves conflict successfully. What to do to PREVENT future conflicts?',
           options: [
-            'Nothing - the conflict is resolved, so you are done',
-            'Avoid working with Priya and Arjun in future projects',
-            'Create a Conflict Resolution Agreement: (1) Feedback is private, not in group chat, (2) 24-hour cooling-off period if upset, (3) Decisions by majority vote, (4) Assume positive intent',
-            'Just hope everyone learned their lesson and will behave better'
+            'Nothing - conflict resolved, done',
+            'Avoid working with Priya and Arjun',
+            'Create Conflict Resolution Agreement with rules',
+            'Hope everyone learned lesson'
           ],
           correct: 2,
-          explanation: 'Option 3 is the prevention strategy. The best conflict resolution is PREVENTION through SYSTEMS. A Conflict Resolution Agreement establishes RULES for future conflicts: (1) Private feedback (no public humiliation), (2) Cooling-off period (no fighting in the heat of the moment), (3) Decision-making process (no dictators), (4) Positive intent assumption (no one is sabotaging). Write this down. Next conflict? You have a PROCESS, not chaos. Option 1 (doing nothing) guarantees the conflict will resurface under stress. Option 2 (avoiding people) is not practical or professional. Option 4 (hope) is not a strategy. Build systems, not hope.'
+          explanation: 'Option 3 = prevention strategy. Best conflict resolution = PREVENTION through SYSTEMS. Conflict Resolution Agreement establishes RULES: (1) Private feedback (no public humiliation), (2) Cooling-off period (no fighting in heat of moment), (3) Decision-making process (no dictators), (4) Positive intent assumption (no one sabotaging). Write this down. Next conflict? You have PROCESS, not chaos. Option 1 (doing nothing) = guarantees conflict resurfaces under stress. Option 2 (avoiding people) = not practical/professional. Option 4 (hope) = not strategy. Build systems, not hope.'
         }
       ]
     },
@@ -2009,63 +2009,63 @@ Do this transformation in 1 week. Present to a friend. Ask: 'Was this engaging o
       questions: [
         {
           id: 26,
-          question: 'You have 25 slides for a 10-minute B.Com project presentation. The judges look bored by Slide 5. What is your main problem?',
+          question: '25 slides for 10-min B.Com presentation. Judges bored by Slide 5. Main problem?',
           options: [
-            'Your content is not interesting enough',
-            'You have too many slides - you should have 8-10 slides MAX (1 minute per slide)',
-            'You need to speak faster to cover all slides',
-            'The judges are just not paying attention'
+            'Content not interesting',
+            'Too many slides - need 8-10 MAX',
+            'Need to speak faster',
+            'Judges not paying attention'
           ],
           correct: 1,
-          explanation: 'Option 2 is correct. The 10-Slide Maximum rule: For a 10-minute presentation, create 8-10 slides MAX (1 minute per slide). 25 slides = 24 seconds per slide = you either rush (audience confused) or run over time (get cut off). Quality > Quantity. Judges zone out when you rapid-fire through slides. Option 1 blames content (likely not the issue). Option 3 (speak faster) makes it worse - audience cannot process. Option 4 ignores the real problem. Solution: Cut slides in half, spend more time on each, go deeper not wider.'
+          explanation: 'Option 2 = correct. 10-Slide Maximum rule: 10-minute presentation = 8-10 slides MAX (1 minute per slide). 25 slides = 24 seconds per slide = rush (audience confused) or run over time (get cut off). Quality > Quantity. Judges zone out when rapid-fire through slides. Option 1 = blames content (likely not issue). Option 3 (speak faster) = makes worse - audience can\'t process. Option 4 = ignores real problem. Solution: Cut slides in half, spend more time on each, go deeper not wider.'
         },
         {
           id: 27,
-          question: 'Which slide design follows the 1-6-6 Rule (1 idea, max 6 words/line, max 6 lines)?',
+          question: 'Which slide design follows 1-6-6 Rule (1 idea, max 6 words/line, max 6 lines)?',
           options: [
-            'Title: Methodology | Bullet points: We used Python 3.8 with TensorFlow 2.0 to build an LSTM neural network model with 3 hidden layers...',
-            'Title: 40% More Accurate Than Traditional Models | Visual: Comparison chart | Text: Tested on 5 years of data',
-            'Title: Introduction | 15 bullet points explaining your entire project',
-            'Title: Results | Full paragraph of text explaining all your findings'
+            'Title: Methodology | Long bullet points about Python, TensorFlow, LSTM...',
+            'Title: 40% More Accurate | Visual chart | Text: Tested 5 years data',
+            'Title: Introduction | 15 bullet points explaining entire project',
+            'Title: Results | Full paragraph explaining all findings'
           ],
           correct: 1,
-          explanation: 'Option 2 is the winner. It follows the 1-6-6 Rule: (1) ONE idea (accuracy improvement), (2) Title has 6 words, (3) Supporting text is minimal (6 words). The VISUAL (chart) does the heavy lifting. Your MOUTH explains the details. Option 1 violates the rule (too much text, multiple ideas). Option 3 (15 bullets) is Death by PowerPoint. Option 4 (paragraph) means audience reads instead of listens. Rule: If your slides can stand alone without you, you are doing it wrong. Slides SUPPORT you, they do not REPLACE you.'
+          explanation: 'Option 2 = winner. Follows 1-6-6 Rule: (1) ONE idea (accuracy improvement), (2) Title = 6 words, (3) Supporting text = minimal (6 words). VISUAL (chart) does heavy lifting. Your MOUTH explains details. Option 1 = violates rule (too much text, multiple ideas). Option 3 (15 bullets) = Death by PowerPoint. Option 4 (paragraph) = audience reads instead of listens. Rule: If slides can stand alone without you, you\'re doing it wrong. Slides SUPPORT you, don\'t REPLACE you.'
         },
         {
           id: 28,
-          question: 'You are presenting your Financial Analysis project. Which opening is MOST effective?',
+          question: 'Presenting Financial Analysis project. Most effective opening?',
           options: [
-            '"Hello everyone. My name is Rahul. Today I will present my project on financial ratio analysis. Let me start with the introduction..."',
-            '"Financial ratio analysis is a very important topic in accounting and finance that helps companies understand their performance..."',
-            '"In 2023, 40% of Indian startups failed due to poor financial planning. Today, I will show you the 3 ratios that could have saved them."',
-            '"Good morning. I have prepared a comprehensive presentation covering all aspects of financial ratio analysis. Let us begin with the definition..."'
+            '"Hello everyone. My name is Rahul. Today I present on financial ratio analysis..."',
+            '"Financial ratio analysis is very important topic in accounting and finance..."',
+            '"In 2023, 40% of Indian startups failed due to poor financial planning. Today I show you 3 ratios that could have saved them."',
+            '"Good morning. I have comprehensive presentation covering all aspects of financial ratio analysis..."'
           ],
           correct: 2,
-          explanation: 'Option 3 is the HOOK that wins. It uses: (1) Shocking stat (40% failed), (2) Relevance (startups = relatable), (3) Promise of value (3 ratios that save companies), (4) Curiosity gap (which ratios?). This hijacks attention in 10 seconds. Option 1 is generic and boring. Option 2 is vague ("very important" = weak language). Option 4 is a data dump threat ("comprehensive" = "I will bore you for 10 minutes"). Rule: Your opening should make the audience think "I NEED to hear this" not "Oh no, another boring presentation." Lead with IMPACT, not introduction.'
+          explanation: 'Option 3 = HOOK that wins. Uses: (1) Shocking stat (40% failed), (2) Relevance (startups = relatable), (3) Promise of value (3 ratios that save companies), (4) Curiosity gap (which ratios?). Hijacks attention in 10 seconds. Option 1 = generic, boring. Option 2 = vague ("very important" = weak language). Option 4 = data dump threat ("comprehensive" = "I\'ll bore you for 10 minutes"). Rule: Opening should make audience think "I NEED to hear this" not "Oh no, another boring presentation." Lead with IMPACT, not introduction.'
         },
         {
           id: 29,
-          question: 'Your slide has this title: "Methodology: Data Collection and Analysis Process." How should you REFRAME it to lead with impact?',
+          question: 'Slide title: "Methodology: Data Collection and Analysis Process." How to reframe for impact?',
           options: [
-            'Keep it as is - methodology is important',
-            '"5 Years of Real Market Data: 10,000+ Transactions Analyzed"',
-            '"Data Collection: A Comprehensive Overview"',
+            'Keep as is - methodology important',
+            '"5 Years Real Market Data: 10,000+ Transactions Analyzed"',
+            '"Data Collection: Comprehensive Overview"',
             '"Methodology Section"'
           ],
           correct: 1,
-          explanation: 'Option 2 leads with IMPACT. It tells judges: (1) Scale (5 years, 10,000+ transactions), (2) Quality (real market data), (3) Credibility (comprehensive analysis). This is interesting. Option 1 ("Methodology") is boring - judges do not care about process until they care about results. Option 3 adds "comprehensive" but is still process-focused. Option 4 is even more generic. Rule: Reframe every slide title to answer "Why should I care?" Put the BENEFIT first (credibility, scale, quality), technical details second. Judges remember outcomes, not methods.'
+          explanation: 'Option 2 = leads with IMPACT. Tells judges: (1) Scale (5 years, 10,000+ transactions), (2) Quality (real market data), (3) Credibility (comprehensive analysis). This = interesting. Option 1 ("Methodology") = boring - judges don\'t care about process until they care about results. Option 3 = adds "comprehensive" but still process-focused. Option 4 = even more generic. Rule: Reframe every slide title to answer "Why should I care?" Put BENEFIT first (credibility, scale, quality), technical details second. Judges remember outcomes, not methods.'
         },
         {
           id: 30,
-          question: 'During Q&A, a judge asks: "What are the limitations of your AI model?" You did NOT prepare for this question. What should you do?',
+          question: 'Q&A: Judge asks "What are limitations of your AI model?" You didn\'t prepare. What to do?',
           options: [
-            'Bluff: "There are no major limitations. The model is quite robust."',
-            'Panic: "Um... I... I am not sure. I did not think about that."',
-            'Pause 2 seconds, then: "That is an excellent question. The main limitation I have identified is that the model requires 3+ years of historical data. For newer companies, we would need alternative approaches. I am exploring transfer learning as a potential solution."',
-            'Deflect: "That is outside the scope of this presentation."'
+            'Bluff: "No major limitations, model is robust"',
+            'Panic: "Um... I\'m not sure, didn\'t think about that"',
+            'Pause 2 sec, acknowledge, answer honestly, show awareness',
+            'Deflect: "Outside scope of presentation"'
           ],
           correct: 2,
-          explanation: 'Option 3 is the professional response. It uses the Pause-Paraphrase-Answer technique: (1) PAUSE (2 sec - shows you are thinking, not bluffing), (2) ACKNOWLEDGE ("excellent question" - shows respect), (3) ANSWER honestly (admits limitation), (4) SHOW AWARENESS (exploring solutions). This demonstrates intellectual humility and critical thinking - judges RESPECT this. Option 1 (bluffing) is dangerous - if judges know the answer, you lose all credibility. Option 2 (panic) shows lack of preparation. Option 4 (deflect) sounds defensive. Rule: Honesty + Awareness > Bluffing. Every model has limitations - acknowledging them shows maturity.'
+          explanation: 'Option 3 = professional response. Uses Pause-Paraphrase-Answer technique: (1) PAUSE (2 sec - shows thinking, not bluffing), (2) ACKNOWLEDGE ("excellent question" - shows respect), (3) ANSWER honestly (admits limitation), (4) SHOW AWARENESS (exploring solutions). Demonstrates intellectual humility and critical thinking - judges RESPECT this. Option 1 (bluffing) = dangerous - if judges know answer, lose all credibility. Option 2 (panic) = shows lack of preparation. Option 4 (deflect) = sounds defensive. Rule: Honesty + Awareness > Bluffing. Every model has limitations - acknowledging them shows maturity.'
         }
       ]
     },

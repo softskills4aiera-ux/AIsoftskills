@@ -285,63 +285,63 @@ Write it down. By Day 7, you will have dissected 7 arguments. You will start see
       questions: [
         {
           id: 1,
-          question: 'Your professor argues: "All successful entrepreneurs dropped out of college. Mark Zuckerberg dropped out. Therefore, you should drop out to become successful." What is wrong with this argument?',
+          question: 'Professor argues: "All successful entrepreneurs dropped out of college. Mark Zuckerberg dropped out. Therefore, you should drop out to become successful." What is wrong?',
           options: [
             'Nothing - it is logically sound',
-            'The first premise is false (not ALL successful entrepreneurs dropped out), making it unsound',
-            'The conclusion is unpopular',
-            'It uses too many examples'
+            'First premise is false (not ALL successful entrepreneurs dropped out), making it unsound',
+            'Conclusion is unpopular',
+            'Uses too many examples'
           ],
           correct: 1,
-          explanation: 'The argument is VALID in structure (if premises were true, conclusion would follow), but UNSOUND because the first premise is FALSE. Reality: Most successful entrepreneurs (Ratan Tata, Mukesh Ambani, Narayana Murthy) DID complete their education. The argument cherry-picks one example (Zuckerberg) and generalizes falsely. This is also "Survivorship Bias" - we hear about dropouts who succeeded, not the millions who failed. In B.Com, always check: Are the premises ACTUALLY true? Valid structure + false premises = unsound argument = reject it.'
+          explanation: 'Argument = VALID in structure (if premises true, conclusion follows), but UNSOUND because first premise FALSE. Reality: Most successful entrepreneurs (Ratan Tata, Mukesh Ambani, Narayana Murthy) DID complete education. Cherry-picks one example (Zuckerberg), generalizes falsely. Also "Survivorship Bias" - hear about dropouts who succeeded, not millions who failed. Always check: Are premises ACTUALLY true? Valid structure + false premises = unsound = reject.'
         },
         {
           id: 2,
-          question: 'During a Business Ethics debate, Arjun says: "Professor Mehta is argument about CSR is wrong because she has never run a business." What fallacy is this?',
+          question: 'During Business Ethics debate, Arjun says: "Professor Mehta argument about CSR is wrong because she has never run a business." What fallacy is this?',
           options: [
             'Straw Man',
-            'Ad Hominem (attacking the person, not the argument)',
+            'Ad Hominem (attacking person, not argument)',
             'False Dichotomy',
             'Appeal to Emotion'
           ],
           correct: 1,
-          explanation: 'This is Ad Hominem - attacking Professor Mehta is credentials (never run a business) instead of addressing her ARGUMENT about CSR. Why it is flawed: Her lack of business experience does not automatically make her argument wrong. You must evaluate the ARGUMENT itself (is her reasoning sound? is her evidence strong?), not her background. In B.Com, you will encounter this in group projects ("You are just a 2nd year, what do you know?") and job interviews. Always respond: "Let us focus on the argument, not the person." Evaluate ideas on merit, not credentials.'
+          explanation: 'Ad Hominem = attacking Professor Mehta credentials (never run business) instead of addressing her ARGUMENT about CSR. Why flawed: Her lack of business experience doesn\'t automatically make argument wrong. Must evaluate ARGUMENT itself (reasoning sound? evidence strong?), not background. In B.Com, encounter this in group projects ("You\'re just 2nd year, what do you know?") and interviews. Always respond: "Let\'s focus on argument, not person." Evaluate ideas on merit, not credentials.'
         },
         {
           id: 3,
-          question: 'Your classmate argues: "The government wants to regulate fintech. So they want to completely ban all digital payments and take us back to cash-only economy!" What fallacy is this?',
+          question: 'Classmate argues: "Government wants to regulate fintech. So they want to completely ban all digital payments and take us back to cash-only economy!" What fallacy?',
           options: [
             'Ad Hominem',
-            'Straw Man (misrepresenting the opposing view to attack it)',
+            'Straw Man (misrepresenting opposing view to attack it)',
             'Anecdotal Evidence',
             'Appeal to Authority'
           ],
           correct: 1,
-          explanation: 'This is Straw Man - your classmate MISREPRESENTED the government is position. Government said "regulate fintech" (set rules, ensure safety), NOT "ban all digital payments." By exaggerating to an extreme ("cash-only economy"), they made the position easier to attack. This fallacy is common in B.Com debates and case studies. How to spot it: Ask "Did they actually say that, or are you exaggerating?" How to counter: "The proposal is for regulation, not a complete ban. Let us discuss the actual policy, not an extreme version of it." Always address the REAL argument, not a distorted version.'
+          explanation: 'Straw Man = classmate MISREPRESENTED government position. Government said "regulate fintech" (set rules, ensure safety), NOT "ban all digital payments." By exaggerating to extreme ("cash-only economy"), made position easier to attack. Common in B.Com debates and case studies. Spot it: Ask "Did they actually say that, or are you exaggerating?" Counter: "Proposal is for regulation, not complete ban. Let\'s discuss actual policy, not extreme version." Always address REAL argument, not distorted version.'
         },
         {
           id: 4,
-          question: 'You are analyzing a business proposal that says: "Either we invest ₹50 lakhs in this marketing campaign, or our sales will drop to zero." What is the logical flaw?',
+          question: 'Analyzing business proposal that says: "Either we invest ₹50 lakhs in this marketing campaign, or our sales will drop to zero." What is logical flaw?',
           options: [
-            'The numbers are too specific',
+            'Numbers are too specific',
             'False Dichotomy - presents only 2 extreme options when many alternatives exist',
             'It is too pessimistic',
-            'The conclusion is unclear'
+            'Conclusion is unclear'
           ],
           correct: 1,
-          explanation: 'This is False Dichotomy - presenting only 2 EXTREME options (invest ₹50L OR sales drop to ZERO) when many alternatives exist. Reality: You could invest ₹20L (smaller campaign), improve product quality, optimize pricing, enhance customer service, use organic marketing, etc. This fallacy pressures you into a binary choice to manipulate your decision. In B.Com, you will see this in: Business proposals ("Invest now or lose the opportunity forever"), Career advice ("Do MBA or you will not get promoted"), Financial decisions ("Buy insurance or risk bankruptcy"). Always ask: "What other options exist?" Reject false dichotomies.'
+          explanation: 'False Dichotomy = presenting only 2 EXTREME options (invest ₹50L OR sales drop to ZERO) when many alternatives exist. Reality: Could invest ₹20L (smaller campaign), improve product quality, optimize pricing, enhance customer service, use organic marketing, etc. Fallacy pressures you into binary choice to manipulate decision. In B.Com: Business proposals ("Invest now or lose opportunity forever"), Career advice ("Do MBA or won\'t get promoted"), Financial decisions ("Buy insurance or risk bankruptcy"). Always ask: "What other options exist?" Reject false dichotomies.'
         },
         {
           id: 5,
-          question: 'A financial advisor says: "This mutual fund returned 40% last year. The fund manager is highly experienced and well-respected. Therefore, you should invest all your savings here." Is this argument sound?',
+          question: 'Financial advisor says: "This mutual fund returned 40% last year. Fund manager is highly experienced and well-respected. Therefore, invest all your savings here." Is this argument sound?',
           options: [
-            'Yes - it has good evidence and a clear conclusion',
+            'Yes - has good evidence and clear conclusion',
             'No - past performance ≠ future results, and appeal to authority (respected manager) does not guarantee returns. Need more evidence.',
             'Yes - experienced managers always deliver good returns',
             'No - because 40% is too high to be true'
           ],
           correct: 1,
-          explanation: 'This argument is UNSOUND for multiple reasons: (1) Post Hoc Fallacy: "It returned 40% last year, so it will return 40% this year" - past performance ≠ future results. (2) Appeal to Authority: "Manager is respected" ≠ guaranteed returns. Credentials do not eliminate risk. (3) Missing critical evidence: What is the fund is risk profile? Expense ratio? Market conditions? Diversification? In B.Com Financial Management, you learn: Evaluate investments on fundamentals (risk, return, diversification), not past performance or manager reputation alone. Always demand: Risk assessment, fee structure, market analysis, diversification strategy. Logical reasoning = better financial decisions.'
+          explanation: 'Argument UNSOUND for multiple reasons: (1) Post Hoc Fallacy: "Returned 40% last year, so will return 40% this year" - past performance ≠ future results. (2) Appeal to Authority: "Manager respected" ≠ guaranteed returns. Credentials don\'t eliminate risk. (3) Missing critical evidence: Fund risk profile? Expense ratio? Market conditions? Diversification? In B.Com Financial Management: Evaluate investments on fundamentals (risk, return, diversification), not past performance or manager reputation alone. Always demand: Risk assessment, fee structure, market analysis, diversification strategy. Logical reasoning = better financial decisions.'
         }
       ]
     },
@@ -656,63 +656,63 @@ This 10-minute analysis will save you 10 hours of wasted effort on wrong solutio
       questions: [
         {
           id: 6,
-          question: 'Your B.Com group project is behind schedule. Your team says: "We need to work 12 hours daily to catch up!" Before implementing this solution, what should you do FIRST?',
+          question: 'B.Com group project behind schedule. Team says: "We need to work 12 hours daily to catch up!" Before implementing, what should do FIRST?',
           options: [
             'Agree and start working 12 hours immediately',
-            'Use the 5 Whys to identify the ROOT CAUSE of why you are behind (unclear roles? skill gaps? communication issues?)',
-            'Ask the professor for an extension',
-            'Blame the team member who is slowest'
+            'Use 5 Whys to identify ROOT CAUSE of why behind (unclear roles? skill gaps? communication issues?)',
+            'Ask professor for extension',
+            'Blame team member who is slowest'
           ],
           correct: 1,
-          explanation: 'Option 2 is correct - diagnose BEFORE you solve. "Working 12 hours daily" treats the SYMPTOM (time pressure), not the ROOT CAUSE. Apply 5 Whys: "Why are we behind?" → "Tasks not done on time." → "Why?" → "Unclear who is responsible." → "Why?" → "No role definition." ROOT CAUSE: No role clarity. Solution: 1-hour meeting to define roles + task matrix (fixes root cause) vs 12-hour days (exhausting, does not fix the real problem). In B.Com, 80% of project failures come from solving the wrong problem. Always analyze first, solve second.'
+          explanation: 'Diagnose BEFORE solve. "Working 12 hours" = treats SYMPTOM (time pressure), not ROOT CAUSE. 5 Whys reveals: No role clarity = real problem. Fix: 1-hour meeting to define roles (fixes root) vs 12-hour days (exhausting, doesn\'t fix real problem). 80% of project failures = solving wrong problem. Analyze first, solve second.'
         },
         {
           id: 7,
-          question: 'You scored 45% in your Cost Accounting exam. Which approach uses proper problem analysis?',
+          question: 'Scored 45% in Cost Accounting exam. Which approach uses proper problem analysis?',
           options: [
-            '"I need to study harder next time" (vague solution)',
+            '"Need to study harder next time" (vague solution)',
             'Use 5W+H: WHAT happened? (Failed variance analysis questions.) WHY? (Memorized formulas without understanding concepts.) ROOT CAUSE: Passive study method. SOLUTION: Switch to Feynman Technique + practice problems.',
-            '"The exam was too hard" (blame external factors)',
-            '"I will study 10 hours daily" (treat symptom with more time)'
+            '"Exam was too hard" (blame external factors)',
+            '"Will study 10 hours daily" (treat symptom with more time)'
           ],
           correct: 1,
-          explanation: 'Option 2 demonstrates systematic problem analysis using 5W+H to define the problem precisely, then 5 Whys to find the root cause (passive study method), then proposing a targeted solution (Feynman Technique). Option 1 is vague (what does "study harder" mean?). Option 3 is blame-shifting (does not help you improve). Option 4 treats the symptom (time) not the cause (method). In B.Com, students who analyze WHY they failed (concept gaps? time management? study method?) improve 2x faster than those who just "study harder." Diagnosis > Effort.'
+          explanation: 'Option 2 = systematic analysis. 5W+H defines problem precisely, 5 Whys finds root cause (passive study method), then targeted solution (Feynman Technique). Option 1 = vague. Option 3 = blame-shifting. Option 4 = treats symptom (time) not cause (method). Students who analyze WHY failed improve 2x faster than "study harder." Diagnosis > Effort.'
         },
         {
           id: 8,
-          question: 'Your team identifies these issues: (A) Project is 40% complete, (B) Team is stressed, (C) Quality is low, (D) Deadline is approaching. Which are SYMPTOMS vs ROOT CAUSES?',
+          question: 'Team identifies issues: (A) Project 40% complete, (B) Team stressed, (C) Quality low, (D) Deadline approaching. Which are SYMPTOMS vs ROOT CAUSES?',
           options: [
             'All are root causes that need fixing',
             'A, B, C, D are all SYMPTOMS. Root causes might be: unclear roles, no quality standards, poor communication.',
-            'Only D is a symptom, others are root causes',
-            'They are all the same thing'
+            'Only D is symptom, others are root causes',
+            'They are all same thing'
           ],
           correct: 1,
-          explanation: 'Option 2 is correct. A, B, C, D are all SYMPTOMS (effects you can observe). The ROOT CAUSES (reasons WHY these symptoms exist) might be: Unclear roles (why 40% complete), No quality standards (why quality is low), Poor communication (why team is stressed), No planning (why deadline is tight). Treating symptoms = temporary relief ("Work harder!" = team more stressed). Treating root causes = permanent fix ("Define roles clearly" = progress improves, stress reduces). In B.Com problem-solving, always ask: "Is this a symptom or a cause?" Symptoms are visible effects. Causes are hidden reasons. Fix causes, symptoms disappear.'
+          explanation: 'A, B, C, D = all SYMPTOMS (visible effects). ROOT CAUSES = Unclear roles, No quality standards, Poor communication, No planning. Treating symptoms = temporary relief ("Work harder!" = more stress). Treating root causes = permanent fix ("Define roles" = progress improves). Always ask: "Symptom or cause?" Fix causes, symptoms disappear.'
         },
         {
           id: 9,
-          question: 'You face this problem: "I cannot get a job." This problem is too complex and overwhelming. What should you do?',
+          question: 'Face this problem: "I cannot get a job." Problem is too complex and overwhelming. What should do?',
           options: [
             'Give up - it is too big to solve',
             'Apply Problem Decomposition: Break into sub-problems (Resume, Skills, Applications, Interview Prep, Networking), solve each systematically',
-            'Just apply to 100 companies randomly and hope for the best',
-            'Wait for the perfect opportunity to come to you'
+            'Just apply to 100 companies randomly and hope for best',
+            'Wait for perfect opportunity to come to you'
           ],
           correct: 1,
-          explanation: 'Option 2 uses Problem Decomposition - breaking a complex, overwhelming problem into 5 manageable sub-problems. "Get a job" (impossible) becomes: (1) Fix resume (actionable), (2) Build skills (actionable), (3) Apply strategically (actionable), (4) Prepare for interviews (actionable), (5) Network (actionable). Now you have a SYSTEM, not chaos. Option 1 (give up) is defeatist. Option 3 (random applications) is inefficient. Option 4 (wait) is passive. In B.Com, complex problems (career planning, business analysis, project management) require decomposition. Break big problems into small parts, solve each part, make progress.'
+          explanation: 'Problem Decomposition = breaking overwhelming problem into manageable sub-problems. "Get a job" becomes: (1) Fix resume, (2) Build skills, (3) Apply strategically, (4) Interview prep, (5) Network. Now have SYSTEM, not chaos. Option 1 = defeatist. Option 3 = inefficient. Option 4 = passive. Complex problems require decomposition. Break big into small, solve each, make progress.'
         },
         {
           id: 10,
-          question: 'Your team says: "We FEEL like we are way behind on the project." What should you do before proposing solutions?',
+          question: 'Team says: "We FEEL like we are way behind on project." What should do before proposing solutions?',
           options: [
             'Trust their feelings and immediately propose working longer hours',
-            'Gather DATA: Quantify tasks (12/30 done), interview team members (what is blocking you?), analyze patterns (5 tasks blocked by unclear requirements)',
+            'Gather DATA: Quantify tasks (12/30 done), interview team members (what blocking you?), analyze patterns (5 tasks blocked by unclear requirements)',
             'Ignore their feelings - feelings do not matter in business',
             'Tell them to stop complaining and just work harder'
           ],
           correct: 1,
-          explanation: 'Option 2 is data-driven diagnosis. Feelings ("we are behind") are subjective and often inaccurate. DATA reveals the REAL problem. Quantify: 40% done (not "way behind" - you are almost half done!). Interview: 5 tasks blocked by unclear requirements (this is the bottleneck, not time). Analyze: Spending 1 hour clarifying requirements unblocks 5 tasks (high ROI). Now you have an accurate diagnosis and targeted solution. Option 1 (trust feelings) leads to wrong solutions. Option 3 (ignore feelings) is insensitive. Option 4 (work harder) treats symptoms. In B.Com business analysis, data > feelings. Always quantify before solving.'
+          explanation: 'Data-driven diagnosis. Feelings = subjective, often inaccurate. DATA reveals REAL problem. Quantify: 40% done (almost half!). Interview: 5 tasks blocked by unclear requirements (bottleneck, not time). Fix: 1 hour clarifying requirements unblocks 5 tasks. Option 1 = wrong solutions. Option 3 = insensitive. Option 4 = treats symptoms. Data > feelings. Always quantify before solving.'
         }
       ]
     },
@@ -1038,51 +1038,51 @@ Write them ALL down. Do not judge yet. After 30 mins, take a break. Then pick th
       questions: [
         {
           id: 11,
-          question: 'Your college fest committee is stuck on fundraising. Last year: bake sale raised ₹50K. This year: need ₹5 lakhs. Someone suggests: "Let us do a BIGGER bake sale!" You want to apply SCAMPER. Which is the best creative alternative?',
+          question: 'College fest committee stuck on fundraising. Last year: bake sale raised ₹50K. This year: need ₹5L. Someone suggests: "Let us do BIGGER bake sale!" Apply SCAMPER. Best creative alternative?',
           options: [
-            'Make more cookies and sell them at higher prices (Modify)',
+            'Make more cookies, sell at higher prices (Modify)',
             'COMBINE virtual talent show + corporate sponsorships + alumni networking + entry fees for multiple revenue streams',
-            'Eliminate the bake sale completely and do nothing',
+            'Eliminate bake sale completely, do nothing',
             'Substitute bake sale with another traditional fundraiser (car wash)'
           ],
           correct: 1,
-          explanation: 'Option 2 uses SCAMPER is COMBINE principle most effectively - merging multiple revenue streams (talent show + sponsors + alumni + fees) to reach ₹5L goal. This is creative because it breaks the "one fundraiser" assumption. Option 1 (Modify) is incremental, not creative - bigger bake sale might raise ₹80K, not ₹5L. Option 3 (Eliminate) is not a solution. Option 4 (Substitute) replaces one traditional method with another (still conventional). In B.Com, creative solutions often come from COMBINING unrelated concepts: Tech + Finance = Fintech. Entertainment + CSR = Sponsored events. Learn to merge ideas across domains.'
+          explanation: 'Option 2 = SCAMPER COMBINE principle - merging multiple revenue streams (talent show + sponsors + alumni + fees) to reach ₹5L. Breaks "one fundraiser" assumption. Option 1 = incremental (bigger bake sale = ₹80K, not ₹5L). Option 3 = not solution. Option 4 = still conventional. Creative solutions = COMBINING unrelated concepts: Tech + Finance = Fintech. Merge ideas across domains.'
         },
         {
           id: 12,
-          question: 'Your team is brainstorming marketing ideas for a new product. Arjun suggests: "Let us partner with Instagram influencers." Priya immediately responds: "That will not work. Influencers are too expensive." What is wrong with this approach?',
+          question: 'Team brainstorming marketing ideas for new product. Arjun suggests: "Partner with Instagram influencers." Priya immediately responds: "That will not work. Influencers too expensive." What is wrong?',
           options: [
             'Nothing - Priya is being realistic about budget constraints',
-            'Priya violated Brainstorming Rule #1: NO CRITICISM during ideation. This kills creativity and momentum.',
-            'Arjun is idea was too wild and needed immediate critique',
-            'The team should have voted on the idea first'
+            'Priya violated Brainstorming Rule #1: NO CRITICISM during ideation. Kills creativity and momentum.',
+            'Arjun idea was too wild, needed immediate critique',
+            'Team should have voted on idea first'
           ],
           correct: 1,
-          explanation: 'Option 2 is correct. Brainstorming Rule #1: Defer judgment - NO criticism during ideation (first 30 mins). Priya is immediate "That will not work" killed the idea before it could evolve. What if the team had built on it? "Yes, and we can find micro-influencers (cheaper)" → "Yes, and we can offer product exchange instead of payment" → "Yes, and we can target college influencers (free)." One "bad" idea could have sparked 3 practical ones. Criticism during ideation = creativity death. Save evaluation for AFTER you have 50 ideas. In B.Com group projects, teams that defer judgment generate 3X more innovative solutions.'
+          explanation: 'Brainstorming Rule #1: NO criticism during ideation. Priya "That won\'t work" killed idea before it could evolve. Could have built on it: "Yes, and micro-influencers (cheaper)" → "Yes, and product exchange" → "Yes, and college influencers (free)." One "bad" idea sparks 3 practical ones. Criticism during ideation = creativity death. Teams that defer judgment generate 3X more solutions.'
         },
         {
           id: 13,
-          question: 'You need to differentiate yourself in campus placements. Traditional approach: "Build resume, practice interviews, apply to companies." This is what ALL 200 students are doing. How can you use lateral thinking?',
+          question: 'Need to differentiate yourself in campus placements. Traditional: "Build resume, practice interviews, apply to companies." ALL 200 students doing this. How use lateral thinking?',
           options: [
-            'Do the same thing but work harder (more applications, more practice)',
-            'Reframe: "What do recruiters NEED that others are not providing?" → Create a portfolio website showcasing B.Com projects with measurable impact',
-            'Give up - if everyone is doing it, there is no way to stand out',
-            'Copy what the top student did last year'
+            'Do same thing but work harder (more applications, more practice)',
+            'Reframe: "What do recruiters NEED that others not providing?" → Create portfolio website showcasing B.Com projects with measurable impact',
+            'Give up - if everyone doing it, no way to stand out',
+            'Copy what top student did last year'
           ],
           correct: 1,
-          explanation: 'Option 2 uses lateral thinking - reframing from "How do I compete?" to "What unique value can I offer?" Traditional: Submit resume (like 200 others). Lateral: Create portfolio website with case studies, financial models, data visualizations (only YOU have this). Recruiters need proof of skills - you are providing it proactively. This is creative differentiation. Option 1 (work harder) is not creative - more of the same. Option 3 (give up) is defeatist. Option 4 (copy) is not original. In B.Com placements, lateral thinking = standing out. Ask: "What are others NOT doing that I can do?" Create your own category.'
+          explanation: 'Lateral thinking = reframe from "How compete?" to "What unique value can I offer?" Traditional: Submit resume (like 200 others). Lateral: Create portfolio website with case studies, financial models, data visualizations (only YOU have this). Recruiters need proof - you provide it proactively. Option 1 = not creative. Option 3 = defeatist. Option 4 = not original. Ask: "What are others NOT doing?" Create your own category.'
         },
         {
           id: 14,
-          question: 'Your team assumes: "Students will not pay for college events - they expect everything free." How should you challenge this assumption creatively?',
+          question: 'Team assumes: "Students will not pay for college events - they expect everything free." How should challenge this assumption creatively?',
           options: [
-            'Accept the assumption - students are broke, so keep events free',
-            'Test the assumption: Survey 100 students "Would you pay ₹100 for a fest with entertainment + charity + prizes?" If 70% say yes, your assumption was WRONG.',
-            'Ignore students and only target corporates for funding',
+            'Accept assumption - students are broke, keep events free',
+            'Test assumption: Survey 100 students "Would you pay ₹100 for fest with entertainment + charity + prizes?" If 70% say yes, assumption was WRONG.',
+            'Ignore students, only target corporates for funding',
             'Charge ₹500 to prove students will pay (no testing)'
           ],
           correct: 1,
-          explanation: 'Option 2 is the creative approach - TEST your assumptions before accepting them as truth. Survey reveals: 70% of students WILL pay ₹100 for value (entertainment + charity + prizes). Your assumption was WRONG. Now you have a new revenue stream (2000 students × ₹100 = ₹2L) you never considered. Option 1 (accept assumption) limits creativity. Option 3 (ignore students) misses opportunity. Option 4 (no testing) is risky. In B.Com, challenge assumptions about: "Customers will not pay premium prices" (test it), "This market is saturated" (maybe not), "Traditional methods are best" (maybe not). Test assumptions = unlock creative opportunities.'
+          explanation: 'TEST assumptions before accepting as truth. Survey reveals: 70% WILL pay ₹100 for value (entertainment + charity + prizes). Assumption WRONG. New revenue stream: 2000 students × ₹100 = ₹2L. Option 1 = limits creativity. Option 3 = misses opportunity. Option 4 = risky. Challenge assumptions: "Customers won\'t pay premium" (test it), "Market saturated" (maybe not). Test assumptions = unlock creative opportunities.'
         },
         {
           id: 15,
@@ -1094,7 +1094,7 @@ Write them ALL down. Do not judge yet. After 30 mins, take a break. Then pick th
             'Copying what another college did exactly'
           ],
           correct: 1,
-          explanation: 'Option 2 demonstrates concept combination - merging ideas from different domains (tech, entertainment, business, community) to create an innovative solution. Each element alone is not new, but the COMBINATION is creative. Virtual platform (tech) enables scale. Talent show (entertainment) attracts students. Corporate sponsors (business) provide funding. Alumni network (community) adds donations + recruiting. Result: ₹7.5L raised (vs ₹50K traditional). In B.Com, innovation often comes from combination: Accounting + AI = Automated auditing. Finance + Social Media = Fintech apps. Your skills + Market needs = Career opportunities. Learn to connect dots across domains.'
+          explanation: 'Concept combination = merging ideas from different domains (tech, entertainment, business, community) to create innovative solution. Each element alone not new, but COMBINATION is creative. Result: ₹7.5L raised (vs ₹50K traditional). Innovation from combination: Accounting + AI = Automated auditing. Finance + Social Media = Fintech apps. Your skills + Market needs = Career opportunities. Connect dots across domains.'
         }
       ]
     },
@@ -1410,19 +1410,19 @@ Total: 3.5 hours. You will have a confident, data-driven decision. No more analy
       questions: [
         {
           id: 16,
-          question: 'You have 3 job offers. You list 10 pros and cons for each, but after 5 hours you still cannot decide. What is happening?',
+          question: 'Have 3 job offers. List 10 pros and cons for each, but after 5 hours still cannot decide. What is happening?',
           options: [
-            'You need more information to make the right choice',
-            'Analysis paralysis - overthinking is preventing decision. You need a Decision Matrix with WEIGHTED criteria to cut through the noise.',
-            'You should just follow your gut feeling',
-            'You should ask more people for their opinions'
+            'Need more information to make right choice',
+            'Analysis paralysis - overthinking preventing decision. Need Decision Matrix with WEIGHTED criteria to cut through noise.',
+            'Should just follow gut feeling',
+            'Should ask more people for opinions'
           ],
           correct: 1,
-          explanation: 'Option 2 identifies analysis paralysis - when overthinking prevents decision-making. More information (Option 1) will not help - you are drowning in data already. Gut feeling (Option 3) ignores the analysis you did. More opinions (Option 4) adds confusion. Solution: Decision Matrix with WEIGHTED criteria. Example: Rate each job on Learning (weight 10/10), Salary (weight 7/10), Work-life (weight 9/10). Calculate weighted scores. Highest score wins. This cuts through analysis paralysis by forcing systematic evaluation based on YOUR priorities, not endless deliberation. In B.Com, analysis paralysis affects: Career choices, specialization decisions, internship selection. Framework > overthinking.'
+          explanation: 'Analysis paralysis = overthinking prevents decision. More info won\'t help - drowning in data already. Solution: Decision Matrix with WEIGHTED criteria. Rate each job on Learning (weight 10/10), Salary (7/10), Work-life (9/10). Calculate weighted scores. Highest wins. Cuts through paralysis by forcing systematic evaluation based on YOUR priorities, not endless deliberation. Framework > overthinking.'
         },
         {
           id: 17,
-          question: 'You are deciding between Big 4 (₹6 LPA, prestigious) and Startup (₹4.5 LPA, high learning). Using the 10-10-10 Rule, which insight is MOST valuable?',
+          question: 'Deciding between Big 4 (₹6 LPA, prestigious) and Startup (₹4.5 LPA, high learning). Using 10-10-10 Rule, which insight MOST valuable?',
           options: [
             '10 minutes: Big 4 feels exciting (prestige, high salary)',
             '10 years: Startup might offer ₹50L equity + entrepreneurial skills vs Big 4 burnout and limited skills diversity',
@@ -1430,35 +1430,35 @@ Total: 3.5 hours. You will have a confident, data-driven decision. No more analy
             '10 people: Ask 10 friends what they think'
           ],
           correct: 1,
-          explanation: 'Option 2 (10 years perspective) is most valuable because it reveals LONG-TERM consequences you are ignoring in the excitement of the moment. Big 4 feels great in 10 minutes (prestige!), but in 10 years? Potential burnout, health issues, regret about not taking risks. Startup feels uncertain in 10 minutes (lower salary), but in 10 years? Equity payout, entrepreneurial skills, diverse network. The 10-10-10 Rule prevents short-term thinking. In B.Com, students often choose based on 10-minute feelings (prestige, peer pressure) and regret it in 10 months (burnout, wrong fit). Always consider: How will this decision affect me in 10 YEARS? Long-term thinking = better decisions.'
+          explanation: '10 years perspective = reveals LONG-TERM consequences ignored in moment excitement. Big 4 feels great in 10 minutes (prestige!), but in 10 years? Potential burnout, health issues, regret. Startup feels uncertain in 10 minutes (lower salary), but in 10 years? Equity payout, entrepreneurial skills, diverse network. 10-10-10 Rule prevents short-term thinking. Always consider: How will this affect me in 10 YEARS? Long-term thinking = better decisions.'
         },
         {
           id: 18,
-          question: 'You create a pros-cons list for a job offer. Pros: 5 items. Cons: 3 items. Pros win, right? What is wrong with this approach?',
+          question: 'Create pros-cons list for job offer. Pros: 5 items. Cons: 3 items. Pros win, right? What is wrong with this approach?',
           options: [
-            'Nothing - more pros means it is a good decision',
-            'You did not WEIGHT the pros and cons. One critical con (70-hour weeks = weight 9/10) might outweigh 5 minor pros (prestige = weight 4/10).',
-            'You should have listed more pros to be sure',
+            'Nothing - more pros means it is good decision',
+            'Did not WEIGHT pros and cons. One critical con (70-hour weeks = weight 9/10) might outweigh 5 minor pros (prestige = weight 4/10).',
+            'Should have listed more pros to be sure',
             'Cons always matter more than pros'
           ],
           correct: 1,
-          explanation: 'Option 2 is correct - counting pros vs cons is flawed because not all items are equal. Example: Big 4 has 5 pros (salary, prestige, training, resume, stability) vs 3 cons (70-hour weeks, burnout, repetitive work). Traditional counting: 5 vs 3 = Big 4 wins. But WEIGHTED analysis: If "70-hour weeks" is critical to you (weight 9/10) and "prestige" is minor (weight 4/10), that ONE con might outweigh multiple pros. Always weight based on YOUR priorities. In B.Com decision-making, weight reveals what truly matters. A job with 10 minor pros and 1 critical con (destroys work-life balance) = bad choice. Quality > quantity in pros-cons analysis.'
+          explanation: 'Counting pros vs cons = flawed because not all items equal. Example: Big 4 has 5 pros vs 3 cons. Traditional: 5 vs 3 = Big 4 wins. But WEIGHTED: If "70-hour weeks" critical (weight 9/10) and "prestige" minor (weight 4/10), that ONE con outweighs multiple pros. Always weight based on YOUR priorities. Job with 10 minor pros + 1 critical con (destroys work-life balance) = bad choice. Quality > quantity.'
         },
         {
           id: 19,
-          question: 'You are deciding between MBA (₹20L cost, 2 years) and Job (₹5 LPA, immediate income). This is a BIG decision. What should you do BEFORE deciding?',
+          question: 'Deciding between MBA (₹20L cost, 2 years) and Job (₹5 LPA, immediate income). BIG decision. What should do BEFORE deciding?',
           options: [
             'Decide immediately based on gut feeling - big decisions need quick action',
-            'Test with small experiments: Talk to 5 MBA grads and 5 working professionals, compare their career trajectories, ROI, satisfaction. Gather DATA before committing.',
-            'Avoid the decision - maybe a better option will appear',
+            'Test with small experiments: Talk to 5 MBA grads and 5 working professionals, compare career trajectories, ROI, satisfaction. Gather DATA before committing.',
+            'Avoid decision - maybe better option will appear',
             'Follow what most B.Com students do (if 70% do MBA, you should too)'
           ],
           correct: 1,
-          explanation: 'Option 2 is correct - test BIG decisions with small experiments before fully committing. MBA costs ₹20L and 2 years - this is not reversible. Gather data: Talk to MBA grads (What was ROI? Worth it? Regrets?). Talk to working professionals (Career growth without MBA? Salary progression?). Compare: MBA grads at Year 5 (salary, role, satisfaction) vs non-MBA at Year 5. This DATA informs your decision. Option 1 (gut feeling) is risky for ₹20L decisions. Option 3 (avoid) is passive. Option 4 (follow others) ignores YOUR goals. In B.Com, test big decisions: Internship before full-time, freelance before quitting job, part-time course before full MBA. Testing reduces regret by 80%.'
+          explanation: 'Test BIG decisions with small experiments before committing. MBA = ₹20L + 2 years - not reversible. Gather data: Talk to MBA grads (ROI? Worth it? Regrets?). Talk to working professionals (Career growth without MBA? Salary progression?). Compare: MBA grads at Year 5 vs non-MBA at Year 5. DATA informs decision. Option 1 = risky for ₹20L. Option 3 = passive. Option 4 = ignores YOUR goals. Testing reduces regret by 80%.'
         },
         {
           id: 20,
-          question: 'Your parents want you to join Big 4 (prestige). Your friends want you to join startup (cool). You want family business (comfort). How should you decide?',
+          question: 'Parents want you to join Big 4 (prestige). Friends want you to join startup (cool). You want family business (comfort). How should decide?',
           options: [
             'Choose Big 4 to make parents happy - family approval matters most',
             'Clarify YOUR priorities first (rank: learning, salary, work-life, growth, stability), then use Decision Matrix based on YOUR values, not others',
@@ -1466,7 +1466,7 @@ Total: 3.5 hours. You will have a confident, data-driven decision. No more analy
             'Flip a coin - all options are equally good'
           ],
           correct: 1,
-          explanation: 'Option 2 is the systematic approach - clarify YOUR priorities FIRST, then decide based on YOUR values. If learning is your #1 priority, startup wins (10/10 learning) despite lower salary. If work-life balance is #1, family business wins (9/10 balance). If prestige is #1, Big 4 wins. The key: This is YOUR career, YOUR life, YOUR decision. Choosing to please parents (Option 1) or friends (Option 3) leads to regret ("I should have followed my gut"). Coin flip (Option 4) is abdicating responsibility. In B.Com career decisions, external pressure is intense. Resist it. Use frameworks to make decisions based on YOUR priorities, then own the outcome. You cannot please everyone - please yourself first.'
+          explanation: 'Clarify YOUR priorities FIRST, then decide based on YOUR values. If learning = #1 priority, startup wins (10/10 learning). If work-life balance = #1, family business wins (9/10 balance). If prestige = #1, Big 4 wins. This is YOUR career, YOUR life, YOUR decision. Choosing to please parents or friends = leads to regret. In B.Com career decisions, external pressure intense. Use frameworks based on YOUR priorities, then own outcome. Cannot please everyone - please yourself first.'
         }
       ]
     },
@@ -1779,63 +1779,63 @@ Result: 80% fewer surprises, 50% less stress, 90% higher success rate. Risk asse
       questions: [
         {
           id: 21,
-          question: 'You are planning a college fest. You identify "Rain" as a risk. How should you quantify it to prioritize against other risks?',
+          question: 'Planning college fest. Identify "Rain" as risk. How should quantify it to prioritize against other risks?',
           options: [
             'Just note "Rain is a risk" and move on',
             'Calculate Risk Score: Probability (30% in monsoon) × Impact (₹1.5L loss if outdoor events cancel) = ₹45,000 expected loss',
             'Assume rain will not happen and ignore it',
-            'Ask others if they think rain is a big risk'
+            'Ask others if they think rain is big risk'
           ],
           correct: 1,
-          explanation: 'Option 2 uses the Risk Formula (Risk = Probability × Impact) to quantify the risk numerically. Rain probability = 30% (based on weather data for monsoon season). Impact = ₹1.5L (outdoor events canceled, 500 students disappointed, reputation damage). Risk Score = 0.30 × ₹150,000 = ₹45,000 expected loss. This number lets you compare rain risk against other risks (performer cancellation = ₹40K, food shortage = ₹20K, sound failure = ₹1K) and prioritize systematically. Option 1 (just noting) does not help prioritization. Option 3 (ignore) is optimism bias. Option 4 (ask others) is subjective. In B.Com projects, quantify EVERY risk using Probability × Impact. This transforms vague worry into actionable priorities.'
+          explanation: 'Risk Formula = Probability × Impact. Rain probability = 30%. Impact = ₹1.5L (outdoor events canceled). Risk Score = 0.30 × ₹150,000 = ₹45,000 expected loss. This number lets you compare against other risks (performer cancellation = ₹40K, food shortage = ₹20K, sound failure = ₹1K) and prioritize systematically. Quantify EVERY risk. Transforms vague worry into actionable priorities.'
         },
         {
           id: 22,
-          question: 'You plot risks on a Risk Matrix. "Performer cancellation" is Low Probability (20%) but High Impact (₹2L loss). Which zone is this, and what should you do?',
+          question: 'Plot risks on Risk Matrix. "Performer cancellation" is Low Probability (20%) but High Impact (₹2L loss). Which zone, and what should do?',
           options: [
-            'Green Zone - Accept the risk, do nothing',
+            'Green Zone - Accept risk, do nothing',
             'Orange Zone - Prepare contingency plan (contract with cancellation clause, book 2 backup performers)',
             'Red Zone - Address immediately with full mitigation',
             'Yellow Zone - Just monitor, no action needed'
           ],
           correct: 1,
-          explanation: 'Option 2 correctly identifies this as Orange Zone (Low Probability + High Impact) and prescribes the right action: Prepare contingency. You cannot eliminate performer cancellation risk (they might get sick, have emergencies), but you CAN prepare. How? (1) Contract with cancellation clause (penalty if they cancel), (2) Book 2 backup performers (ready to step in), (3) Confirm attendance 48 hours before event. This reduces both probability (20% → 5% with contract) and impact (₹2L → ₹50K with backups). Red Zone (Option 3) is for High Probability + High Impact (like rain in monsoon). Yellow Zone (Option 4) is High Probability + Low Impact. Green Zone (Option 1) is Low Probability + Low Impact. In B.Com risk management, Orange Zone risks need contingency plans, not full mitigation or acceptance.'
+          explanation: 'Orange Zone (Low Probability + High Impact) = Prepare contingency. Can\'t eliminate performer cancellation risk, but CAN prepare. How? (1) Contract with cancellation clause, (2) Book 2 backup performers, (3) Confirm attendance 48 hours before. Reduces probability (20% → 5%) and impact (₹2L → ₹50K). Orange Zone risks need contingency plans, not full mitigation or acceptance.'
         },
         {
           id: 23,
-          question: 'You are assessing risks for your college fest. You brainstorm randomly and identify 5 risks. Your friend uses Risk Categories and identifies 22 risks. Why?',
+          question: 'Assessing risks for college fest. You brainstorm randomly, identify 5 risks. Friend uses Risk Categories, identifies 22 risks. Why?',
           options: [
-            'Your friend is overthinking and being paranoid',
+            'Friend is overthinking and being paranoid',
             'Risk Categories (Financial, Operational, External, Reputational) ensure systematic identification. Random brainstorming misses 50% of risks.',
             'Your 5 risks are enough - more risks = more worry',
-            'Your friend copied risks from the internet'
+            'Friend copied risks from internet'
           ],
           correct: 1,
-          explanation: 'Option 2 is correct - systematic categorization identifies more risks than random brainstorming. When you ask "What could go wrong?" your brain jumps to obvious risks (rain, performer cancellation) and misses less obvious ones (payment delays, vendor no-show, government restrictions, negative social media). Risk Categories force you to think through EACH area: Financial (sponsorship falls through, budget overrun, low ticket sales), Operational (vendor no-show, equipment failure, staff shortage), External (weather, competitor events, government restrictions), Reputational (poor quality, safety incidents, negative publicity). Result: 20+ risks identified vs 5 from random brainstorming. In B.Com project management, comprehensive risk identification = better risk management. Missing risks = being blindsided.'
+          explanation: 'Systematic categorization identifies more risks than random brainstorming. "What could go wrong?" = brain jumps to obvious risks (rain, performer cancellation), misses less obvious (payment delays, vendor no-show, government restrictions, negative social media). Risk Categories force thinking through EACH area: Financial, Operational, External, Reputational. Result: 20+ risks vs 5 random. Comprehensive identification = better management. Missing risks = being blindsided.'
         },
         {
           id: 24,
-          question: 'Sound system failure has 10% probability and ₹10K impact (Risk Score = ₹1K). Prevention (backup sound system) costs ₹50K. What should you do?',
+          question: 'Sound system failure has 10% probability and ₹10K impact (Risk Score = ₹1K). Prevention (backup sound system) costs ₹50K. What should do?',
           options: [
             'Spend ₹50K on backup system - better safe than sorry',
-            'ACCEPT the risk. Prevention (₹50K) costs 50x more than the risk (₹1K). If sound fails, rent backup equipment for ₹10K.',
-            'Transfer the risk by buying insurance',
-            'Avoid the risk by canceling all events that need sound'
+            'ACCEPT risk. Prevention (₹50K) costs 50x more than risk (₹1K). If sound fails, rent backup equipment for ₹10K.',
+            'Transfer risk by buying insurance',
+            'Avoid risk by canceling all events that need sound'
           ],
           correct: 1,
-          explanation: 'Option 2 demonstrates smart risk management - ACCEPT low-priority risks where mitigation costs exceed the risk itself. Risk Score = ₹1,000 (10% × ₹10K). Prevention = ₹50,000 (buying backup system). This is 50x more expensive than the risk! Better strategy: Accept the risk. If sound fails (10% chance), rent backup equipment for ₹10K (1-time cost vs ₹50K upfront). You save ₹40K. The 4 mitigation strategies are: (1) AVOID (eliminate risk), (2) REDUCE (lower probability/impact), (3) TRANSFER (insurance), (4) ACCEPT (do nothing). Use ACCEPT for Green Zone risks (Low Probability + Low Impact) where mitigation is too expensive. In B.Com, do not over-invest in preventing low-impact risks. Focus resources on Red/Orange Zone risks.'
+          explanation: 'ACCEPT low-priority risks where mitigation costs exceed risk itself. Risk Score = ₹1,000. Prevention = ₹50,000 (50x more expensive!). Better: Accept risk. If sound fails (10% chance), rent backup for ₹10K (1-time cost vs ₹50K upfront). Save ₹40K. Use ACCEPT for Green Zone risks (Low Probability + Low Impact) where mitigation too expensive. Don\'t over-invest in low-impact risks. Focus on Red/Orange Zone.'
         },
         {
           id: 25,
-          question: 'You assess risks 2 months before your college fest. 1 week before the fest, weather forecast changes from 30% rain to 60% rain. What should you do?',
+          question: 'Assess risks 2 months before college fest. 1 week before fest, weather forecast changes from 30% rain to 60% rain. What should do?',
           options: [
-            'Stick to your original risk assessment - you already planned for 30% rain',
-            'Update your Risk Register: Rain is now Red Zone (60% probability, ₹1.5L impact = ₹90K risk). Immediately execute backup plan (book indoor venues).',
-            'Ignore the new forecast - weather predictions are often wrong',
-            'Cancel the fest to avoid all risk'
+            'Stick to original risk assessment - already planned for 30% rain',
+            'Update Risk Register: Rain now Red Zone (60% probability, ₹1.5L impact = ₹90K risk). Immediately execute backup plan (book indoor venues).',
+            'Ignore new forecast - weather predictions often wrong',
+            'Cancel fest to avoid all risk'
           ],
           correct: 1,
-          explanation: 'Option 2 demonstrates continuous risk monitoring - risk assessment is NOT one-time, it is ongoing. Original assessment: Rain = 30% probability, ₹1.5L impact = ₹45K risk (Orange Zone - prepare contingency). Updated assessment: Rain = 60% probability, ₹1.5L impact = ₹90K risk (Red Zone - address immediately). Action: Execute your backup plan NOW (book indoor venues, create refund policy, communicate to attendees). Waiting until fest day = too late. Option 1 (stick to original) ignores new data. Option 3 (ignore forecast) is optimism bias. Option 4 (cancel) is overreaction. In B.Com project management, schedule weekly risk reviews. Ask: Have probabilities changed? Have new risks emerged? Are mitigation plans working? Update your Risk Register and adjust plans. Continuous monitoring prevents surprises.'
+          explanation: 'Continuous risk monitoring = risk assessment NOT one-time, it\'s ongoing. Original: Rain = 30%, ₹1.5L impact = ₹45K (Orange Zone). Updated: Rain = 60%, ₹1.5L impact = ₹90K (Red Zone). Action: Execute backup plan NOW (book indoor venues, create refund policy, communicate). Option 1 = ignores new data. Option 3 = optimism bias. Option 4 = overreaction. Schedule weekly risk reviews. Update Risk Register, adjust plans. Continuous monitoring prevents surprises.'
         }
       ]
     },
@@ -2165,63 +2165,63 @@ Stop treating symptoms. Find the root cause. Fix it once. Move on with your life
       questions: [
         {
           id: 26,
-          question: 'You failed Accounting 3 times (45%, 48%, 42%). After each failure, you tried: Study 2 more hours, buy premium notes, hire tutor. Still failing. What is the problem?',
+          question: 'Failed Accounting 3 times (45%, 48%, 42%). After each failure, tried: Study 2 more hours, buy premium notes, hire tutor. Still failing. What is problem?',
           options: [
-            'You are not trying hard enough - need to study even more hours',
-            'You are treating SYMPTOMS (study hours, notes quality), not the ROOT CAUSE (study method: memorization vs application)',
-            'Accounting is too hard for you - consider dropping the subject',
-            'You need an even better tutor'
+            'Not trying hard enough - need to study even more hours',
+            'Treating SYMPTOMS (study hours, notes quality), not ROOT CAUSE (study method: memorization vs application)',
+            'Accounting too hard for you - consider dropping subject',
+            'Need even better tutor'
           ],
           correct: 1,
-          explanation: 'Option 2 identifies the core issue - treating symptoms instead of root causes. Studying more hours (symptom fix) does not work if your study METHOD is wrong (memorization instead of application). Buying premium notes (symptom fix) does not help if you are not understanding concepts. The ROOT CAUSE might be: "I memorize formulas without understanding. I cannot apply concepts to new scenarios." Fix: Change study method (solve 50 varied problems, teach concepts to friends, explain WHY formulas work). This addresses the root cause. Result: 78% next exam. In B.Com, recurring problems signal you are fixing symptoms, not root causes. Use 5 Whys or Fishbone Diagram to find the real issue.'
+          explanation: 'Treating symptoms instead of root causes. Studying more hours (symptom fix) doesn\'t work if study METHOD wrong (memorization vs application). Buying premium notes doesn\'t help if not understanding concepts. ROOT CAUSE: "I memorize formulas without understanding. Can\'t apply to new scenarios." Fix: Change study method (solve 50 varied problems, teach concepts, explain WHY formulas work). Result: 78% next exam. Recurring problems = fixing symptoms, not root causes. Use 5 Whys or Fishbone.'
         },
         {
           id: 27,
-          question: 'You are using the 5 Whys technique for a failed exam. You ask "Why did I fail?" and get "I did not study enough." What should you do next?',
+          question: 'Using 5 Whys technique for failed exam. Ask "Why did I fail?" and get "I did not study enough." What should do next?',
           options: [
-            'Stop here - you found the root cause (low study hours)',
-            'Ask "Why did I not study enough?" and continue asking "Why?" 4 more times to drill deeper to the ROOT CAUSE',
-            'Implement the fix: Study 2 more hours/day',
+            'Stop here - found root cause (low study hours)',
+            'Ask "Why did I not study enough?" and continue asking "Why?" 4 more times to drill deeper to ROOT CAUSE',
+            'Implement fix: Study 2 more hours/day',
             'Ask 5 different people why you failed'
           ],
           correct: 1,
-          explanation: 'Option 2 is correct - "I did not study enough" is a SYMPTOM, not the root cause. The 5 Whys technique requires asking "Why?" 5 times to drill deeper. Continue: Why did I not study enough? → "I procrastinated." Why did I procrastinate? → "I found studying boring." Why was it boring? → "I was just reading passively, not engaging." Why passive reading? → "I did not know active study techniques." ROOT CAUSE: "I lack active study techniques (problem-solving, teaching, practice exams)." Fix: Learn and apply active techniques. If you stopped at "I did not study enough" (Option 1), you would study more hours using the SAME bad method (passive reading) and still fail. In B.Com, surface-level answers are symptoms. Keep asking "Why?" until you hit the root.'
+          explanation: '"I didn\'t study enough" = SYMPTOM, not root cause. 5 Whys requires asking "Why?" 5 times to drill deeper. Continue: Why didn\'t study enough? → "Procrastinated." Why? → "Found studying boring." Why boring? → "Just reading passively." Why passive? → "Didn\'t know active study techniques." ROOT CAUSE: "Lack active study techniques." If stopped at "didn\'t study enough," would study more hours using SAME bad method and still fail. Surface answers = symptoms. Keep asking "Why?" until hit root.'
         },
         {
           id: 28,
-          question: 'You create a Fishbone Diagram for failed exams. You identify 5 categories: Study Method, Time Management, Concept Gaps, Exam Technique, External Factors. What is the purpose of using categories?',
+          question: 'Create Fishbone Diagram for failed exams. Identify 5 categories: Study Method, Time Management, Concept Gaps, Exam Technique, External Factors. What is purpose of using categories?',
           options: [
-            'To make the diagram look organized and professional',
-            'To ensure COMPREHENSIVE analysis - categories prevent tunnel vision and help you explore ALL potential root causes, not just the obvious ones',
+            'To make diagram look organized and professional',
+            'To ensure COMPREHENSIVE analysis - categories prevent tunnel vision and help explore ALL potential root causes, not just obvious ones',
             'To confuse yourself with too many options',
-            'Categories are not important - just list any causes randomly'
+            'Categories not important - just list any causes randomly'
           ],
           correct: 1,
-          explanation: 'Option 2 is correct - categories ensure comprehensive root cause analysis. Without categories, you might focus on ONE obvious cause ("I did not study enough") and miss OTHER root causes (exam anxiety, poor time management during exam, weak specific topics, calculation errors). Fishbone categories force you to explore: Study Method (memorization vs understanding?), Time Management (ran out of time?), Concept Gaps (weak in Cost Accounting?), Exam Technique (misread questions?), External Factors (stress, health issues?). For EACH category, brainstorm 3-5 potential causes. Then gather evidence to identify which are actual root causes. Example: You discover 80% of errors were in "application questions" (Study Method category), not time management or concept gaps. This data-driven approach prevents fixing the wrong problem. In B.Com problem-solving, systematic categorization > random brainstorming.'
+          explanation: 'Categories = ensure comprehensive root cause analysis. Without categories, might focus on ONE obvious cause ("didn\'t study enough"), miss OTHER root causes (exam anxiety, poor time management, weak specific topics, calculation errors). Fishbone categories force exploring: Study Method, Time Management, Concept Gaps, Exam Technique, External Factors. For EACH category, brainstorm 3-5 potential causes. Gather evidence to identify actual root causes. Systematic categorization > random brainstorming.'
         },
         {
           id: 29,
-          question: 'You hypothesize: "I fail exams because I memorize without understanding." Before implementing a fix (concept-based learning), what should you do?',
+          question: 'Hypothesize: "I fail exams because I memorize without understanding." Before implementing fix (concept-based learning), what should do?',
           options: [
-            'Immediately start concept-based learning - the hypothesis is obviously correct',
-            'TEST the hypothesis: Take a practice exam and try to explain WHY each answer is correct (not just WHAT). If you struggle to explain WHY, hypothesis is confirmed.',
-            'Ask your friends if they think your hypothesis is correct',
-            'Ignore the hypothesis and try a different fix'
+            'Immediately start concept-based learning - hypothesis obviously correct',
+            'TEST hypothesis: Take practice exam and try to explain WHY each answer correct (not just WHAT). If struggle to explain WHY, hypothesis confirmed.',
+            'Ask friends if they think hypothesis is correct',
+            'Ignore hypothesis and try different fix'
           ],
           correct: 1,
-          explanation: 'Option 2 is correct - always TEST your root cause hypothesis before implementing fixes. Why? You might be wrong. If you assume "memorization" is the issue but the REAL root cause is "calculation errors," you will waste 4 weeks on concept-based learning (which you already have) instead of fixing calculations. Testing: Take a practice exam. For each question, explain WHY the answer is correct. If you struggle to explain WHY (even though you know WHAT), hypothesis is confirmed (weak understanding). If you explain WHY perfectly but still get wrong answers, hypothesis is WRONG (maybe root cause is calculation accuracy, time management, or exam anxiety). Testing prevents wasting time fixing the wrong problem. In B.Com, verify root causes with evidence before investing time/money in fixes.'
+          explanation: 'Always TEST root cause hypothesis before implementing fixes. Might be wrong. If assume "memorization" is issue but REAL root cause is "calculation errors," waste 4 weeks on concept-based learning instead of fixing calculations. Testing: Take practice exam. Explain WHY answer correct. If struggle to explain WHY (even know WHAT), hypothesis confirmed. If explain WHY perfectly but still wrong answers, hypothesis WRONG. Testing prevents fixing wrong problem. Verify root causes with evidence before investing time/money.'
         },
         {
           id: 30,
-          question: 'After Root Cause Analysis, you discover: "I fail because I memorize formulas without understanding concepts." You implement a fix (concept-based learning). Next exam: 78% (up from 42%). What should you do now?',
+          question: 'After Root Cause Analysis, discover: "I fail because I memorize formulas without understanding concepts." Implement fix (concept-based learning). Next exam: 78% (up from 42%). What should do now?',
           options: [
             'Celebrate and move on - problem is solved',
-            'MONITOR results: Track next 2-3 exams to ensure problem does not recur. If it recurs, your root cause analysis was incomplete (there might be additional root causes).',
+            'MONITOR results: Track next 2-3 exams to ensure problem does not recur. If recurs, root cause analysis was incomplete (might be additional root causes).',
             'Go back to memorization - it is easier',
-            'Stop studying - you already proved you can score 78%'
+            'Stop studying - already proved can score 78%'
           ],
           correct: 1,
-          explanation: 'Option 2 is correct - Root Cause Analysis is iterative, not one-time. You scored 78% (great!), but you need to MONITOR next 2-3 exams to ensure the problem does not recur. If Exam 3: 75%, Exam 4: 80% → Problem is SOLVED permanently. Root cause fix worked. If Exam 3: 50% (problem recurs) → Your root cause analysis was INCOMPLETE. There might be additional root causes (exam anxiety, time management, specific topic gaps). Go back to Fishbone Diagram, investigate other categories. Example: You fixed Study Method (memorization → understanding), but you still have Time Management issues (running out of time during exams). Fix that too. In B.Com, recurring problems after "fixing" them signal incomplete root cause analysis. Monitor, iterate, and refine until the problem is permanently solved.'
+          explanation: 'Root Cause Analysis = iterative, not one-time. Scored 78% (great!), but MONITOR next 2-3 exams to ensure doesn\'t recur. If Exam 3: 75%, Exam 4: 80% → Problem SOLVED permanently. If Exam 3: 50% (recurs) → Root cause analysis INCOMPLETE. Might be additional root causes (exam anxiety, time management, specific topic gaps). Go back to Fishbone, investigate other categories. Recurring problems after "fixing" = incomplete analysis. Monitor, iterate, refine until permanently solved.'
         }
       ]
     },

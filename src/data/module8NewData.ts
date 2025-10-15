@@ -229,63 +229,63 @@ Stress management = essential life skill. Master it now."
       questions: [
         {
           id: 1,
-          question: 'You push through stress for 4 weeks (study all night, skip meals, no exercise). Week 5: Headaches, stomach pain, getting sick often, sleep problems. Doctor: "Chronic stress is damaging your health." How does chronic stress affect you?',
+          question: '4 weeks all-nighters. Now: headaches, sick often, brain fog. What is happening?',
           options: [
-            'Nothing, stress is harmless',
-            'DAMAGES PHYSICAL and MENTAL HEALTH - high blood pressure, weak immunity, digestive issues, anxiety, depression, impairs memory and focus',
-            'Only affects mood temporarily',
-            'Only affects work performance'
+            'Just tired, totally normal',
+            'Chronic stress damaging body + mind',
+            'Only mood, no big deal',
+            'Just work performance affected'
           ],
           correct: 1,
-          explanation: 'Chronic stress DAMAGES PHYSICAL and MENTAL HEALTH (not harmless, not just mood, not just work). Doctor: "Chronic stress is serious." PHYSICAL HEALTH: Stress hormones (cortisol) - short-term help you focus, long-term damage health: High blood pressure (heart disease risk), Weakened immune system (getting sick often - 3 colds in 1 month), Digestive issues (stomach pain, IBS), Sleep problems (cannot fall asleep, wake up tired), Headaches (tension headaches), Fatigue (chronic exhaustion). MENTAL HEALTH: Anxiety (racing thoughts, worry, panic), Depression (sadness, hopelessness, loss of interest), Irritability (short temper, conflicts). COGNITIVE FUNCTION: Impaired memory (studied but cannot recall during exam), Poor focus (cannot concentrate), Impaired decision making (making mistakes). Problem: You thought stress is just "feeling busy" (harmless). But chronic stress (4+ weeks) is MEDICAL CONDITION that damages health. You cannot just "push through." You need stress management (deep breathing, exercise, boundaries, support) to protect health. In B.Com, take stress seriously. Chronic stress = health risk. Manage stress early (before serious damage). Prevention > cure.'
+          explanation: 'Chronic stress = physical damage. Body breaks: high BP, weak immunity, stomach issues, anxiety, memory loss. Not just busy—medical condition. Need stress tools (breathing, exercise, boundaries) to protect health. Manage early, not push through!'
         },
         {
           id: 2,
-          question: 'Before exam, you feel anxious (racing heart, sweating, cannot think). Friend: "Try 4-7-8 breathing." You: "Does breathing actually help?" How does deep breathing help with stress?',
+          question: 'Exam panic: racing heart, sweating, blank mind. Does 4-7-8 breathing actually work?',
           options: [
-            'Wastes time when you should study',
-            'ACTIVATES RELAXATION RESPONSE - slows heart rate, reduces blood pressure, reduces cortisol in 2 minutes (instant stress relief)',
-            'Is just a trendy wellness fad',
-            'Helps you avoid the real problem'
+            'Nope, total waste of time',
+            'Yes! Slows heart, drops cortisol in 2min',
+            'Just trendy wellness BS',
+            'Avoids the real problem'
           ],
           correct: 1,
-          explanation: 'Deep breathing ACTIVATES RELAXATION RESPONSE (not wastes time, not trendy fad, not avoidance). Friend: "4-7-8 breathing reduces stress in 2 minutes." How? PHYSIOLOGY: When stressed: Sympathetic nervous system activates (fight-or-flight: fast heart rate, high blood pressure, stress hormones released). When deep breathing: Parasympathetic nervous system activates (rest-and-digest: heart rate slows, blood pressure decreases, stress hormones reduce). 4-7-8 TECHNIQUE: (1) Inhale nose 4 seconds (belly expands), (2) Hold 7 seconds, (3) Exhale mouth 8 seconds (long, slow). Repeat 4 cycles (2 minutes). EFFECT: Heart rate slows (from 100 bpm to 70 bpm), Blood pressure decreases (from 140/90 to 120/80), Cortisol reduces (stress hormone decreases), Relaxation response activates (feel calmer, think clearer). Before exam: 2 minutes breathing → calm nerves, clear mind, better performance. This is NOT placebo. This is PHYSIOLOGICAL RESPONSE (activates parasympathetic nervous system). In B.Com, use deep breathing: Before exams, before interviews, when overwhelmed, daily practice. 2 minutes = instant stress relief. Free, no side effects, scientifically proven. Deep breathing = essential stress management tool.'
+          explanation: 'Breathing activates relaxation mode. Inhale 4s, hold 7s, exhale 8s. Heart slows, BP drops, cortisol cuts. 2 minutes = instant calm, clearer thinking. Not placebo—actual physiological response. Use before exams, interviews, anytime overwhelmed. Free stress relief!'
         },
         {
           id: 3,
-          question: 'You are stressed about exams and job search. Friend: "Exercise helps stress!" You: "I am too stressed to exercise. I need to study!" Is exercise effective for stress management?',
+          question: 'Too stressed to exercise, need to study more. Does exercise actually help stress?',
           options: [
-            'No, exercise makes stress worse',
-            'YES - Exercise is POWERFUL STRESS RELIEVER - releases endorphins, breaks rumination, improves sleep (30 min/day reduces stress significantly)',
-            'Exercise is optional, not important',
-            'Exercise is too tiring when stressed'
+            'Nope, makes stress worse',
+            'Yes! Releases endorphins, breaks worry loops',
+            'Optional, not really important',
+            'Too tiring when stressed'
           ],
           correct: 1,
-          explanation: 'Exercise is POWERFUL STRESS RELIEVER (not makes worse, not optional, not too tiring). Friend: "You are too stressed NOT to exercise. Exercise reduces stress more effectively than studying more." How? (1) ENDORPHINS: Exercise releases endorphins (natural mood boosters, reduce pain, reduce stress). 30 minutes running = endorphin release = feel calmer, happier. (2) BREAKS RUMINATION: When stressed, you ruminate (worry about exams, job search, repeat same worries). Exercise breaks rumination (focus on body, breathing, movement - mental break from worries). (3) IMPROVES SLEEP: Exercise improves sleep quality (deeper sleep, fall asleep faster). Better sleep = better stress management, better memory, better performance. (4) BUILDS CONFIDENCE: Achieve fitness goals (run 5K, do 20 pushups) = confidence = "I can achieve goals, I can handle stress." (5) SOCIAL: Group exercise (gym class, team sports) = social support = reduces stress. RECOMMENDATION: 30 minutes/day, 5 days/week. Types: Cardio (running, cycling - best for stress), Yoga (exercise + relaxation), Walking (simple, accessible). In B.Com, prioritize exercise (not "I am too busy"). You are too busy NOT to exercise. 30 minutes exercise > 30 minutes extra study (exercise improves focus, memory, reduces stress - better exam performance). Exercise = essential stress management (not optional).'
+          explanation: 'Too stressed NOT to exercise. 30min releases endorphins (natural mood boost), breaks rumination (stops worry spiral), improves sleep. Exercise beats extra study time—better focus, memory, performance. Too busy? Exercise = essential stress tool, not optional!'
         },
         {
           id: 4,
-          question: 'You are stressed. How do you cope? (A) Study all night, skip meals, isolate, social media 4 hours/day OR (B) Talk to friend, exercise 30 min, cook healthy meal, journal. What is HEALTHY COPING?',
+          question: 'Stressed. Cope how? (A) All-nighters, junk food, 4hr Instagram. (B) Talk, exercise, journal.',
           options: [
-            'A: Substance use, isolation, all-nighters',
-            'B: EXERCISE, TALKING, CREATING - healthy coping reduces stress (talk provides support, exercise releases endorphins, hobbies provide break)',
-            'A: Isolation protects from stress',
-            'A: Avoidance is best strategy'
+            'A: Isolation keeps stress away',
+            'B: Talk/exercise/create cuts stress',
+            'A: Avoidance works best',
+            'Both work equally fine'
           ],
           correct: 1,
-          explanation: 'Healthy coping = B: EXERCISE, TALKING, CREATING (not substance use, not isolation, not avoidance). Option A (UNHEALTHY COPING): All-nighters (no sleep - worsens stress, impairs memory), Skip meals (low energy - worsens performance), Isolate (no support - worsens mental health), Social media 4 hours (wastes time - increases anxiety). Result: Stress INCREASES. Unhealthy coping feels good short-term (social media distracts you) but worsens stress long-term. Stress spiral: Stress → unhealthy coping → more stress → more unhealthy coping → burnout. Option B (HEALTHY COPING): Talk to friend (sharing reduces stress, provides support, gives perspective), Exercise 30 minutes (releases endorphins, breaks stress cycle), Cook healthy meal (good nutrition - improves energy, mood), Journal (write worries - reduces rumination, clarifies thoughts). Result: Stress DECREASES. Healthy coping actually reduces stress (not just distracts). Other healthy coping: Nature (outdoors - reduces cortisol), Creative outlets (draw, write, music - expresses emotions), Hobbies (read, cook, games - provides break, enjoyment). In B.Com, build healthy coping toolkit. When stressed: Talk, exercise, create, nature, hobbies (NOT: isolate, substance use, excessive screens, procrastinate). Healthy coping = reduces stress, improves well-being. Unhealthy coping = worsens stress, damages health.'
+          explanation: 'Option A = stress spiral (feels good now, worse later). All-nighters kill memory, isolation worsens mental health, screens increase anxiety. Option B = actually reduces stress. Talk gives support, exercise releases endorphins, journal clears mind. Build healthy toolkit: talk, move, create—NOT isolate, scroll, avoid!'
         },
         {
           id: 5,
-          question: 'You are overwhelmed by stress (exams, job search, family pressure). You think: "I should handle this alone. Asking for help is weakness." What should you do when overwhelmed?',
+          question: 'Overwhelmed. Exams, job hunt, family pressure. "Should handle alone. Help = weakness." Do what?',
           options: [
-            'Push through alone (asking help is weakness)',
-            'SEEK SUPPORT from others - friends, family, counselor (seeking support is STRENGTH, not weakness - everyone needs help sometimes)',
-            'Hide stress from everyone',
-            'Quit everything immediately'
+            'Push through alone, never ask help',
+            'Seek support—friends, counselor, groups',
+            'Hide it from everyone',
+            'Quit everything now'
           ],
           correct: 1,
-          explanation: 'When overwhelmed: SEEK SUPPORT (not push through alone, not hide, not quit). You think: "Asking for help is weakness." WRONG. Seeking support is STRENGTH (not weakness). Friend: "Why did not you tell us you are struggling? We could have helped! Shared notes, studied together, talked, supported you. You did not have to suffer alone!" SUPPORT OPTIONS: (1) FRIENDS/FAMILY: Share stress ("I am overwhelmed by exams and job search. I need support"). They provide: Listening (reduces stress), Practical help (share notes, review resume), Perspective ("Everyone feels this way. You will get through it"). (2) COUNSELOR/THERAPIST: Professional help for chronic stress (>4 weeks), anxiety/depression symptoms, difficulty coping. College counseling = free, confidential, no stigma. (3) STUDY GROUP: Share academic burden (study together, clarify doubts, accountability, social support). (4) CAREER SERVICES: Job search support (resume review, interview practice, job leads - reduces uncertainty). (5) SUPPORT GROUPS: Talk to peers facing same stress ("I am not alone. Others understand"). Support reduces stress, provides resources, prevents burnout. Isolation increases stress, no perspectives, no help. In B.Com, build support system BEFORE crisis. Know who to call when stressed. Seeking help = smart, not weak. Everyone needs support sometimes. Do not suffer alone. Support = stress buffer.'
+          explanation: 'Asking for help = strength, not weakness. Talk to friends (emotional support), counselor (free, confidential, coping strategies), study groups (shared burden), career services (resume/interview help). Build support BEFORE crisis. Shared stress = lighter load. Everyone needs help sometimes!'
         }
       ]
     },
@@ -629,63 +629,63 @@ Work-life balance = essential skill. Master it now."
       questions: [
         {
           id: 6,
-          question: 'You think: "Work-life balance = 8 hours work, 8 hours personal, 8 hours sleep (equal time daily, 50-50 split)." Manager: "Balance is not equal time. Some days need more work, some more personal." What is work-life balance?',
+          question: '"Balance = 8hr work, 8hr personal, 8hr sleep daily." Right?',
           options: [
-            'Perfect 50-50 time split every day',
-            'RIGHT PRIORITIES and BOUNDARIES - work gets time (M-F 9-6), life gets time (evenings, weekends) - flexible, long-term balance',
-            'No work at all (only life)',
-            'All work all the time'
+            'Yes, perfect 50-50 daily split',
+            'No—flexible priorities + boundaries',
+            'No work at all, only life',
+            'All work, all the time'
           ],
           correct: 1,
-          explanation: 'Work-life balance = RIGHT PRIORITIES and BOUNDARIES (not 50-50 split, not no work, not all work). Manager: "Balance is not equal time (8 hours work, 8 hours personal, 8 hours sleep - rigid, impractical). Balance is right priorities at right time." WEEKLY BALANCE (more useful than daily): Monday-Friday: More work (9 hours/day = 45 hours work). Saturday-Sunday: More personal (0 hours Saturday, 2 hours Sunday = 2 hours work). Weekly total: 47 hours work, 35 hours personal. Not equal (47≠35), but BALANCED (work gets done during week, life gets lived on weekends). SEASONAL BALANCE: Exam month: More study (12 hours/day). Post-exam month: More life (6 hours/day study, 6 hours personal). Balance principles: (1) FLEXIBLE (some days more work, some more personal - adapt to priorities), (2) BOUNDARIES (work 9-6, personal 6-10 PM, weekend rest - clear separation), (3) LONG-TERM (over weeks/months, both work and life get adequate time). Balance is NOT: 50-50 daily (rigid), Always equal (some seasons need more work, some more rest). Balance IS: Right priorities at right time (deadline week = more work, post-deadline = more rest). Work gets done AND life gets lived. In B.Com, think weekly/monthly balance (not daily 50-50). Flexible priorities + Clear boundaries = sustainable balance.'
+          explanation: 'Balance not 50-50 daily split. Flexible priorities + clear boundaries. Some days more work, some more life. Think weekly/monthly, not daily. Work M-F 9-6, life evenings/weekends. Exams = more study, post-exams = more chill. Sustainable long-term beats rigid daily!'
         },
         {
           id: 7,
-          question: 'You work 13 hours/day, 7 days/week (no boundaries). Month 3: Burned out, exhausted, performance dropping. How do BOUNDARIES help?',
+          question: '13hr/day, 7 days/week. Month 3: burned out, performance tanking. Why set boundaries?',
           options: [
-            'Boundaries limit success and career growth',
-            'PROTECT ENERGY and PREVENT BURNOUT - work ends at 6 PM (forces focus during work, protects personal time for rest/recovery)',
-            'Boundaries help you avoid work',
-            'Boundaries are for lazy people'
+            'Boundaries limit career success',
+            'Protect energy, prevent burnout',
+            'Boundaries help avoid work',
+            'Boundaries = lazy'
           ],
           correct: 1,
-          explanation: 'Boundaries PROTECT ENERGY and PREVENT BURNOUT (not limit success, not avoid work, not lazy). You work 13 hours/day (no boundaries). Result: Burned out (Month 3: exhausted, cannot focus, poor performance). Manager: "You work 13 hours but output = same as colleagues who work 9 hours (with boundaries). Why? DIMINISHING RETURNS: Hours 1-8: High productivity. Hours 9-13: Low productivity (exhausted, mistakes, redo work). Boundaries would help." SET BOUNDARIES: Work 9 AM-6 PM (9 hours). At 6 PM: Work ENDS. Personal 6-10 PM (exercise, hobbies, relationships). Weekend: Saturday zero work. HOW BOUNDARIES HELP: (1) FORCES FOCUS during work hours (9-6 is finite - work efficiently, no time wasting). 13 hours feels infinite (procrastinate, distracted, inefficient). (2) PROTECTS PERSONAL TIME for rest/recovery (6-10 PM: exercise improves focus, hobbies reduce stress, sleep recharges). Without personal time: No recovery, burnout. (3) SUSTAINABLE PERFORMANCE (work 9 hours/day × 365 days = sustainable long-term vs work 13 hours × 90 days = burnout, quit). (4) BETTER WORK QUALITY (9 hours focused > 13 hours exhausted). With boundaries: Work time is productive (focused, energized). Personal time is restorative (rest, recover, relationships). No burnout. Better performance. In B.Com, boundaries are not limiting. Boundaries are ENABLING (enable sustainable high performance). Set boundaries early. Protect them. Your career longevity depends on it.'
+          explanation: 'Boundaries force focus (9-6 finite = work efficiently). Protect personal time (6-10pm rest = recharge). 9hr focused > 13hr exhausted. Same output, no burnout. Work time productive, personal time restorative. Sustainable long-term performance. Boundaries enable success, not limit it!'
         },
         {
           id: 8,
-          question: 'You work hard all week. Saturday: Exhausted. You think: "I should rest." Then guilt: "But I have work! Rest = lazy!" You work Saturday (achieve nothing - too tired). Should rest be EARNED or SCHEDULED?',
+          question: 'Saturday exhausted. "Should rest" but guilt: "Rest = lazy!" Work Saturday (achieve nothing). Earned or scheduled rest?',
           options: [
-            'Rest should be EARNED only (work hard, then deserve rest)',
-            'Rest should be SCHEDULED and PROTECTED like work - block on calendar (6:30 PM exercise, Saturday rest day), non-negotiable, no guilt',
-            'Rest is optional (only when exhausted)',
-            'Rest is when you have time (flexible, low priority)'
+            'Earned—work hard first, then deserve',
+            'Scheduled—block calendar, non-negotiable',
+            'Optional—only when exhausted',
+            'When you have time (flexible)'
           ],
           correct: 1,
-          explanation: 'Rest should be SCHEDULED and PROTECTED (not earned only, not optional, not when you have time). You think: "Rest must be earned (work hard, then rest)." WRONG. Rest must be SCHEDULED (rest to work well, not work well to rest). Problem with "earned rest": You never feel you earned it (always more work to do), guilt prevents rest (even when exhausted), burnout inevitable (no rest until collapse). FIX: SCHEDULE REST (like work meetings - blocked on calendar, non-negotiable). DAILY REST: 6:30-7 PM exercise (blocked on calendar, do not cancel, do not skip - as non-negotiable as work meeting). 8-9 PM hobbies (blocked, protected). WEEKLY REST: Saturday full rest day (blocked, zero work). When work conflicts: "Sorry, I have commitment 6:30 PM (exercise). Can we finish this before 6 PM?" Most times: Can finish before 6 PM (work focused). Sometimes: Cannot finish. Do tomorrow (not all work is truly urgent). PROTECT SCHEDULED REST. Why schedule rest? (1) GUARANTEES REST HAPPENS (not "when I have time" - never happens), (2) ELIMINATES GUILT (rest is scheduled - it is SUPPOSED to happen), (3) EQUAL STATUS (rest = as important as work meeting), (4) SUSTAINABLE (consistent rest = no burnout). In B.Com, schedule rest. Block on calendar. Protect it. Rest is not earned. Rest is REQUIRED (for performance, health, relationships). Schedule rest = actually rest. "When I have time" rest = never rest.'
+          explanation: 'Schedule rest like work meetings—block calendar, protect it. Daily: 6:30pm exercise (non-negotiable). Weekly: Saturday rest. "When I have time" = never happens. Scheduled = guarantees rest, kills guilt, prevents burnout. Rest to work well, not work well to rest. Rest = required, not earned!'
         },
         {
           id: 9,
-          question: 'Manager: "Can you work Saturday?" You want to say no (need rest day) but worry: "Saying no = avoiding opportunity, limiting career growth." Does saying NO help or hurt?',
+          question: 'Manager: "Work Saturday?" You need rest but worry "No = limits career." Help or hurt?',
           options: [
-            'Saying no avoids opportunities and limits career growth',
-            'Saying NO PROTECTS TIME for PRIORITIES - rest Saturday (recover energy for better M-F performance) vs work Saturday (exhausted, poor performance)',
-            'Saying no is rude and unprofessional',
-            'Saying no limits your growth'
+            'Hurts—avoids opportunities',
+            'Helps—protects rest = better M-F performance',
+            'Rude and unprofessional',
+            'Limits growth'
           ],
           correct: 1,
-          explanation: 'Saying NO PROTECTS TIME for PRIORITIES (not avoids opportunity, not rude, not limits growth). Manager: "Work Saturday?" You want to say no (need rest). But worry: "Saying no = bad impression, limits career." WRONG. Saying no = smart strategy. HOW TO SAY NO: "I have prior commitment Saturday (rest day - I need to recharge for high performance next week). Can we plan better this week to finish by Friday? Or I can do this Monday morning?" Manager: "OK, let us prioritize this week." You said no to Saturday work. You said yes to: (1) REST (Saturday recovery - recharge energy, prevent burnout), (2) BETTER PERFORMANCE (rested → energized Monday → better work quality next week vs exhausted Monday → poor work quality), (3) SUSTAINABLE PACE (can work long-term vs burnout in 3 months). Saying no to Saturday work = saying yes to sustainable high performance. Result: You protect rest, come back energized, perform better M-F than colleagues who worked Saturday (they are exhausted Monday, you are energized). Manager notices: "Your M-F performance is excellent. You are right to protect your weekends." Saying NO helps when: (1) Protects priorities (health, relationships, rest > non-essential work), (2) Prevents overwhelm (manageable commitments), (3) Enables quality (do few things well > many things poorly). In B.Com, learn to say NO. Politely, professionally, with alternative. Saying no = protect energy = better performance. Not avoiding opportunity. Smart prioritization.'
+          explanation: 'Saying no protects priorities. "I have Saturday commitment (rest day for better M-F performance). Can we finish Friday or do Monday?" Rest Saturday = energized Monday = better work than exhausted colleagues. Protect rest = sustainable high performance. Say no politely + offer alternative. Smart prioritization, not avoiding opportunity!'
         },
         {
           id: 10,
-          question: 'You achieve work-life balance: Work 9-6 (focused), personal 6-10 PM (exercise, hobbies, relationships), Saturday rest. What does balance improve?',
+          question: 'Got balance: Work 9-6, exercise 6:30pm, hobbies 8pm, Saturday rest. What improves?',
           options: [
-            'Nothing (balance reduces performance)',
-            'BOTH PERFORMANCE and WELL-BEING - work better (focused, energized, creative), live better (health, relationships, joy, fulfillment)',
-            'Only mood (no other benefits)',
-            'Only physical health (no other benefits)'
+            'Nothing, balance kills performance',
+            'Both work AND life—focused, energized, happier',
+            'Only mood',
+            'Only physical health'
           ],
           correct: 1,
-          explanation: 'Balance improves BOTH PERFORMANCE and WELL-BEING (not nothing, not just mood, not just health). You achieve balance: Work 9-6, personal 6-10 PM, Saturday rest. Results: PERFORMANCE IMPROVEMENTS: (1) BETTER FOCUS (rest recharges brain - work 9 hours focused > 13 hours exhausted), (2) HIGHER PRODUCTIVITY (complete same work in 9 hours that took 13 hours before - efficiency improves), (3) BETTER DECISIONS (rested mind thinks clearly - fewer mistakes), (4) MORE CREATIVITY (best ideas come during rest, not during work - breakthrough insights during Saturday rest), (5) SUSTAINABLE (can maintain 9 hours/day long-term vs 13 hours/day burns out in 3 months). WELL-BEING IMPROVEMENTS: (1) BETTER HEALTH (exercise 6:30 PM daily - fitness, energy, sleep), (2) STRONGER RELATIONSHIPS (Friday dinners, date nights - maintain love, friendships), (3) MORE JOY (hobbies 8 PM - guitar, cooking, reading - fulfillment, happiness), (4) LOWER STRESS (rest reduces stress, prevents burnout), (5) HIGHER LIFE SATISFACTION (have work AND life - fulfilled, happy, balanced). Manager: "Your work quality improved after setting boundaries! Also, you seem happier, healthier." Partner: "I am happy we have time together now!" Balance is WIN-WIN: Better work performance (focused, productive, creative, sustainable) AND better life (health, relationships, joy, fulfillment). Not trade-off (work OR life). Both improve simultaneously. In B.Com, balance is not luxury. Balance is PERFORMANCE STRATEGY (work better) AND LIFE STRATEGY (live better). Achieve both.'
+          explanation: 'Balance = win-win. WORK: better focus, higher productivity, clearer decisions, more creativity, sustainable long-term. LIFE: better health, stronger relationships, more joy, less stress, higher satisfaction. Not trade-off (work OR life). Both improve together. Balance = performance strategy + life strategy!'
         }
       ]
     },
@@ -1042,63 +1042,63 @@ Mental health matters. Break the stigma now."
       questions: [
         {
           id: 11,
-          question: 'Friend Rohan: "I think I am depressed." Rohan: "But depression = weakness. I should not need help." You: "NO! Mental health is just as important as physical health!" What is mental health?',
+          question: 'Rohan: "Depression = weakness. Should not need help." Is he right?',
           options: [
-            'Mental health issues are weakness and character flaws',
-            'Mental health is AS IMPORTANT as physical health - depression/anxiety are MEDICAL CONDITIONS (brain chemistry), not weakness - need treatment',
-            'Mental health is only for some people',
-            'Mental health problems are not real'
+            'Yes, mental health issues = weakness',
+            'No—mental health = medical condition',
+            'Mental health only for some people',
+            'Mental health problems not real'
           ],
           correct: 1,
-          explanation: 'Mental health is AS IMPORTANT as physical health (not weakness, not only for some, mental health problems ARE real). Rohan thinks: "Depression = weakness." WRONG. Depression is MEDICAL CONDITION (like diabetes, hypertension). Caused by: Brain chemistry imbalance (serotonin, dopamine), Genetics (family history), Stress (chronic stress triggers depression), Life events (trauma, loss). NOT caused by: Weakness, Character flaw, Being dramatic, Not trying hard enough. If Rohan had broken leg: Would see doctor (no shame), Get treatment (cast, rest, pain meds), Friends support ("Get well soon!"). Rohan has depression: Same: Medical condition (needs professional treatment: therapy, possibly medication), Same: Not his fault (brain chemistry, not choice), Same: Treatable (therapy works, 80% of people improve with treatment). But stigma says: "Seeing counselor = crazy, should handle alone, weakness." TRUTH: Seeing counselor = smart (taking care of mental health, like seeing doctor for physical health), Depression needs professional help (cannot "push through" clinical depression - need therapy), Seeking help = strength (not weakness). In B.Com, understand: Mental health = physical health. Depression/anxiety/mental illness = medical conditions (need professional treatment, not shame, not stigma). Break stigma. Normalize help-seeking. Mental health matters.'
+          explanation: 'Depression = medical condition (like diabetes). Brain chemistry imbalance, not weakness. Broken leg = see doctor, no shame. Depression = same, see therapist, no shame. Therapy works, 80% improve. Seeking help = strength. Mental health = physical health. Break stigma!'
         },
         {
           id: 12,
-          question: 'Your friend: Month 1: Cheerful. Month 2: Always sad, withdrawn (skips classes, avoids friends), sleep changes (sleeps all day), quit cricket team, grades dropping (8.0→6.5 GPA). What are these?',
+          question: 'Friend: Was cheerful. Now: sad daily, withdraws, sleeps all day, quit cricket, GPA drops 8.0→6.5. What is this?',
           options: [
-            'Normal happiness, nothing concerning',
-            'WARNING SIGNS of mental health struggles - persistent sadness, withdrawal, sleep changes, lost interest, grades dropping (needs professional help)',
-            'Just occasional stress (normal)',
-            'Just being busy with studies'
+            'Normal, nothing concerning',
+            'Warning signs—needs professional help',
+            'Just occasional stress',
+            'Just busy with studies'
           ],
           correct: 1,
-          explanation: 'These are WARNING SIGNS of mental health struggles (not normal, not just stress, not just busy). Friend shows: (1) EMOTIONAL: Persistent sadness (2+ months, every day - not just occasional sad day), (2) BEHAVIORAL: Withdrawal (avoids friends, skips classes - was social before), Lost interest (quit cricket - was active before), (3) PHYSICAL: Sleep changes (sleeps all day or cannot sleep - was normal sleep before), (4) ACADEMIC: Grades dropping (8.0 → 6.5 GPA - significant decline). These are WARNING SIGNS of DEPRESSION. Early signs you missed (Month 1-2): Withdrawal, sadness, sleep changes, lost interest. If recognized early (Month 1): Could have talked to friend ("You seem different. Are you OK?"), Encouraged help early (college counseling - treat mild depression), Prevented worsening (Month 3: severe depression, suicidal thoughts). By Month 3: Signs are severe (in bed 3 days, suicidal thoughts - crisis!). Late recognition = crisis intervention. Early recognition = prevention. OTHER WARNING SIGNS to know: Irritability, hopelessness, appetite changes, fatigue, difficulty concentrating, self-harm, substance use, suicidal thoughts (ALARMING - seek help IMMEDIATELY). In B.Com, learn warning signs. Notice in yourself and friends. If you/friend show warning signs (especially persistent for 2+ weeks): Encourage professional help (college counseling, crisis hotline if suicidal). Early recognition = early help = better outcomes. You can save lives by recognizing signs early.'
+          explanation: 'Warning signs of depression: persistent sadness (2+ months), withdrawal (avoids friends), sleep changes, lost interest (quit cricket), grades drop. Early recognition = early help. Talk: "You seem different. OK?" Encourage counseling. Recognize early, prevent crisis. If 2+ weeks, seek help!'
         },
         {
           id: 13,
-          question: 'You feel: Persistent sadness (3 weeks, every day), cannot sleep, lost interest in hobbies, grades dropping, thoughts "Everything is pointless." What should you do?',
+          question: '3 weeks: sad daily, no sleep, lost interest, grades drop, "Everything pointless." What do?',
           options: [
-            'Hide it from everyone (do not want to burden others)',
-            'SEEK PROFESSIONAL HELP and SUPPORT - college counseling (free, confidential), talk to friends/family (reduce isolation), therapy if needed',
-            'Just tough it out alone (should be strong)',
-            'Ignore it (it will go away on its own)'
+            'Hide it—burden others',
+            'Seek help—college counseling, talk to friends',
+            'Tough it out alone',
+            'Ignore it, goes away'
           ],
           correct: 1,
-          explanation: 'If struggling mentally: SEEK PROFESSIONAL HELP and SUPPORT (not hide, not tough it out, not ignore). You show warning signs: Persistent sadness (3 weeks - clinical threshold is 2+ weeks), Sleep problems, Lost interest, Grades dropping, Hopelessness ("Everything is pointless"). These are symptoms of DEPRESSION. You need: (1) PROFESSIONAL HELP: College counseling (FREE, confidential, professional therapists - book appointment now). Therapy helps: 80% of people improve with treatment. Do NOT wait (depression worsens if untreated). Do NOT try to handle alone (depression needs professional help, cannot just "push through"). (2) SUPPORT: Talk to friends/family ("I am struggling. I need support"). They provide: Listening (reduces isolation), Support (you are not alone), Encouragement (help you get professional help). Do NOT hide (isolation worsens depression). Do NOT burden others (your struggles ARE important, friends WANT to help). (3) SELF-CARE: Sleep 8 hours, exercise 30 min (helps mood), social connection, reduce stress. Supplements therapy (not replacement). (4) CRISIS HELP: If suicidal thoughts develop: Call crisis hotline immediately (24/7, suicide prevention), Go to hospital if emergency, Tell someone (do not stay alone). Seeking help is STRENGTH (not weakness). Depression is TREATABLE (therapy works). Early help = easier recovery. In B.Com, if you feel depressed/anxious for 2+ weeks: Seek help (college counseling, do not wait). Do not suffer alone. Mental health matters. Get help. You deserve to feel better.'
+          explanation: 'Symptoms of depression (2+ weeks = clinical). Get college counseling (FREE, confidential). 80% improve with therapy. Talk to friends/family ("Struggling, need support"). Not burden—they want to help. If suicidal thoughts: Call crisis hotline NOW. Seeking help = strength. Depression treatable. Get help, feel better!'
         },
         {
           id: 14,
-          question: 'Friend: "I think I am depressed." How should you support? (A) "Just think positive! Smile!" OR (B) "Thank you for sharing. This sounds hard. Your feelings are valid. Have you considered counselor? I am here for you."',
+          question: 'Friend: "Depressed." Support how? (A) "Think positive! Smile!" (B) "Feelings valid. Counselor? Here for you."',
           options: [
-            'A: Fix their problems yourself (give advice, make them happy)',
-            'B: LISTEN WITHOUT JUDGMENT - validate feelings, encourage professional help, stay connected (do NOT: toxic positivity, minimize, judge)',
-            'A: Avoid the topic (uncomfortable)',
-            'A: Minimize feelings (everyone gets sad, stop being dramatic)'
+            'A: Fix problems, give advice',
+            'B: Listen, validate, encourage help',
+            'A: Avoid topic',
+            'A: Minimize—everyone sad'
           ],
           correct: 1,
-          explanation: 'Support by: B: LISTEN WITHOUT JUDGMENT (not fix problems, not avoid, not minimize). Friend shares: "I think I am depressed." Option A responses (HARMFUL): "Just think positive! Smile!" (TOXIC POSITIVITY - minimizes their struggle, implies they are choosing to be sad), "You are being dramatic! Everyone gets sad!" (JUDGMENT - invalidates feelings, increases shame), "You have good life! Why depressed?" (INVALIDATION - guilt-trips, misunderstands depression). Result: Friend feels WORSE (judged, misunderstood, not supported). Withdraws ("I should not have shared"). Option B response (SUPPORTIVE): "Thank you for sharing. This sounds really hard. Your feelings are valid. Have you considered talking to counselor? College counseling is free, confidential. They can really help. I will go with you if you want. I am here for you." Components: (1) THANK (for trusting you), (2) VALIDATE ("This is hard" - acknowledge their struggle), (3) NORMALIZE ("Your feelings are valid" - not dramatic, not wrong to feel this way), (4) ENCOURAGE HELP (counselor - professional treatment, offer to go with them), (5) STAY CONNECTED ("I am here for you" - ongoing support). Result: Friend feels HEARD (someone understands), SUPPORTED (not alone), HOPEFUL (there is help). More likely to seek professional help. In B.Com, learn to support friends: Listen without judgment, validate feelings, encourage professional help, stay connected. Do NOT: Give toxic positivity, minimize feelings, judge, try to fix (you are friend, not therapist). Support = listen, validate, encourage help. You can make difference.'
+          explanation: 'Option A (toxic positivity) = friend feels worse, withdraws. Option B = friend feels heard, supported, hopeful. Thank them for sharing, validate ("This is hard"), normalize feelings, encourage counselor (offer to go), stay connected. Listen without judgment, not fix. Support = validate + encourage help!'
         },
         {
           id: 15,
-          question: 'You help friend with depression. Good! But what about YOUR mental health? You: High stress, poor sleep (5 hours), no exercise, isolated, no hobbies, study 14 hours/day. What is SELF-CARE?',
+          question: 'You help friend. But YOUR health: 5hr sleep, no exercise, isolated, study 14hr/day. What is self-care?',
           options: [
-            'Self-care is being selfish',
-            'SELF-CARE = SLEEP, EXERCISE, CONNECTION, BOUNDARIES, HOBBIES - prevention (protect mental health before crisis, build reserves)',
-            'Self-care is avoiding responsibility',
-            'Self-care is only when already stressed/depressed'
+            'Selfish',
+            'Sleep, exercise, connect, boundaries, hobbies',
+            'Avoiding responsibility',
+            'Only when stressed'
           ],
           correct: 1,
-          explanation: 'Self-care = SLEEP, EXERCISE, CONNECTION, BOUNDARIES, HOBBIES (not selfish, not avoiding responsibility, not only when stressed). You helped friend Rohan. Good. But YOUR mental health? You have risk factors: High stress ✓, Poor sleep (5 hours) ✓, No exercise ✓, Social isolation ✓, No joy ✓, Overwork (14 hours/day) ✓. You are at HIGH RISK for depression, anxiety, burnout. You need SELF-CARE (prevention, not just treatment). DAILY SELF-CARE: (1) SLEEP: 8 hours/night (improves mood, reduces anxiety/depression risk, better emotional regulation), (2) EXERCISE: 30 min/day (releases endorphins - natural antidepressants, reduces anxiety, improves mood), (3) SOCIAL CONNECTION: Talk to friends/family daily (reduces isolation - risk factor for depression, provides support, improves mental health), (4) HOBBIES: 1 hour/day (joy, meaning, identity beyond work/study), (5) BOUNDARIES: Study 10 hours max (prevent burnout - risk factor for depression), (6) MINDFULNESS: 10 min/day meditation (reduces rumination - risk factor for anxiety, improves mood), (7) NUTRITION: Regular meals, balanced diet (brain needs fuel - skipping meals worsens mood). Self-care is not selfish. Self-care is PREVENTION (protect mental health before crisis happens). Think: Mental health bank account. Self-care = deposits (build reserves: good sleep, exercise, social support, joy). Stress = withdrawals. Keep deposits > withdrawals (prevent bankruptcy/crisis). In B.Com, practice self-care DAILY (not just when crisis). Build mental health reserves. Prevent depression, anxiety, burnout. You cannot pour from empty cup (help others if you are mentally healthy yourself). Self-care = foundation for everything.'
+          explanation: 'You are at HIGH RISK (poor sleep, no exercise, isolated, overwork). Self-care = prevention, not selfish. Daily: 8hr sleep, 30min exercise, talk to friends, hobbies, study max 10hr. Mental health bank: self-care = deposits (build reserves), stress = withdrawals. Keep deposits bigger. Cannot pour from empty cup. Self-care = foundation!'
         }
       ]
     },
@@ -1449,63 +1449,63 @@ Start today."
       questions: [
         {
           id: 16,
-          question: 'You study 14 hours/day, sleep 5 hours/night. Month 3: GPA drops 7.5→6.8 (despite studying MORE!). Friend studies 10 hours/day, sleeps 8 hours. GPA improves 7.5→8.2. What is recommended sleep?',
+          question: 'Study 14hr/day, sleep 5hr. GPA drops 7.5→6.8. Friend studies 10hr, sleeps 8hr. GPA 7.5→8.2. Why?',
           options: [
-            '4-5 hours (sacrifice sleep for study)',
-            '8 HOURS NON-NEGOTIABLE - brain consolidates learning during sleep (without sleep: study→forget; with sleep: study→remember)',
-            '10-12 hours (oversleep)',
-            'Whatever works (flexible, no target)'
+            'Sacrifice sleep for more study',
+            '8hr sleep—brain consolidates learning',
+            'Oversleep 10-12 hours',
+            'Whatever works, flexible'
           ],
           correct: 1,
-          explanation: 'Recommended sleep = 8 HOURS (not 4-5, not 10-12, not "whatever"). You sleep 5 hours, study 14 hours. Result: GPA 7.5 → 6.8 (DROPS despite studying MORE!). Why? Brain needs sleep to CONSOLIDATE LEARNING. Without sleep: You study → brain cannot consolidate → you forget next day. With sleep: You study → brain consolidates during sleep → you remember. Sleep deprivation effects: Cannot focus (brain fog, study 14 hours but mind wanders - wasted time), Cannot remember (no memory consolidation), Cannot perform (exhausted, weak immune system - sick 3×/2 months). Friend: Sleeps 8 hours, studies 10 hours. GPA 7.5 → 8.2 (IMPROVES!). Why? With 8 hours sleep: Can focus (alert, sharp brain, study effectively), Can remember (sleep consolidates memory), High energy (refreshed, sustained attention), Rarely sick (strong immune system). LESSON: You studied 14 hours × 90 days = 1260 hours POOR QUALITY (exhausted, unfocused). Friend studied 10 hours × 90 days = 900 hours HIGH QUALITY (focused, energized). 900 high-quality hours > 1260 low-quality hours. Sleep is not wasted time. Sleep is PRODUCTIVE time (brain consolidates learning, body recovers). 8 hours sleep + 10 hours focused study > 5 hours sleep + 14 hours foggy study. In B.Com, sleep 8 hours non-negotiable. Wind-down routine: Stop studying 10 PM, no screens, 4-7-8 breathing, lights out 10:30 PM, wake 7 AM. Benefits (1 week): Focus improves 50%, memory improves, energy increases, grades improve. Your grades depend on sleep. Protect 8 hours.'
+          explanation: 'Brain needs 8hr sleep to consolidate learning. No sleep = study then forget. With sleep = study then remember. 5hr sleep + 14hr foggy study < 8hr sleep + 10hr focused study. Sleep = productive time (brain consolidates). Protect 8 hours non-negotiable!'
         },
         {
           id: 17,
-          question: 'You: No exercise (too tired, no time). Result: Exhausted, cannot focus, stressed, poor sleep. Classmate: Exercise 30 min/day. Result: High energy, sharp focus. What is exercise frequency?',
+          question: 'No exercise (too tired). Result: exhausted, no focus, stress, bad sleep. 30min exercise daily better?',
           options: [
-            'Only when feel like it (optional, flexible)',
-            '30 MINUTES DAILY (5-7 days/week) - boosts energy, improves focus 50%, reduces stress, improves sleep (PERFORMANCE STRATEGY)',
-            'Daily 2 hours mandatory (extreme)',
-            'Not needed for students (waste of time)'
+            'Optional, when feel like it',
+            'Yes—30min daily boosts energy, focus',
+            '2 hours daily mandatory',
+            'Not needed, waste time'
           ],
           correct: 1,
-          explanation: 'Exercise frequency = 30 MINUTES DAILY (not optional, not 2 hours, not "not needed"). You: No exercise. "Too tired. No time." Month 2: Exhausted constantly (no energy), Cannot focus (sit 14 hours studying, brain foggy after 2 hours), High stress (anxiety, irritability - no stress outlet), Cannot fall asleep (lie in bed 2 hours, mind racing), Sick often (weak immune system). PARADOX: You do not exercise because "too tired." But NO EXERCISE CAUSES TIREDNESS! Exercise BOOSTS energy (increases blood flow, oxygen to brain, releases endorphins). You are in NEGATIVE SPIRAL: Tired → no exercise → more tired. Classmate: Exercise 30 min/day (morning run before breakfast). Result: High energy (vitality all day - paradox!), Sharp focus (study effectively, brain oxygenated), Low stress (anxiety processed, calm), Good sleep (fall asleep fast, sleep deep), Rarely sick (strong immune system). Exercise benefits: Energy INCREASES (blood flow + oxygen + endorphins), Focus IMPROVES (study after exercise: 50% better focus), Stress REDUCES (exercise processes stress hormones), Sleep IMPROVES (physical tiredness + stress relief = sleep better), Mood IMPROVES (endorphins = natural antidepressants), Health IMPROVES (immune system, stamina, prevent disease). INVESTMENT: 30 min exercise = SAVES study time (because focus improves → study effectively in LESS time). 30 min exercise + 9.5 hours focused study > 0 min exercise + 10 hours foggy study. In B.Com, exercise 30 min daily (morning 7:15-7:45 AM). Options: Run/jog, bodyweight (push-ups, squats), yoga, sports. Choose what you ENJOY (sustainable). Start small (15 min), build to 30 min. Exercise is not wasting time. Exercise is PERFORMANCE STRATEGY. Make non-negotiable.'
+          explanation: 'Paradox: no exercise CAUSES tiredness! 30min daily boosts blood flow, oxygen, endorphins. Energy increases, focus improves 50%, stress drops, sleep improves. 30min exercise + 9.5hr focused study > 0min exercise + 10hr foggy study. Exercise = performance strategy, not waste. Make non-negotiable!'
         },
         {
           id: 18,
-          question: 'Your diet: Skip breakfast, burger+fries lunch (₹80), instant noodles dinner. Coffee 5 cups. Result: Brain fog, crash after lunch, grades dropping. What is good nutrition?',
+          question: 'Diet: skip breakfast, burger lunch, noodles dinner, 5 coffees. Result: brain fog, crashes, grades drop. Fix?',
           options: [
-            'Supplements only (quick, convenient)',
-            'REAL FOOD (complex carbs: oats/rice, protein: eggs/dal, healthy fats: nuts, vitamins: fruits/vegetables) NOT junk (burger, noodles, energy drinks)',
-            'Whatever is fast (junk food, skip meals)',
-            'Skip meals to save time (focus on study)'
+            'Supplements only',
+            'Real food—oats, eggs, dal, rice, veggies',
+            'Whatever fast, junk food',
+            'Skip meals, save time'
           ],
           correct: 1,
-          explanation: 'Good nutrition = REAL FOOD (not supplements only, not junk, not skip meals). Your diet: Breakfast: Skip (no time), Lunch: Burger + fries + soda (₹80 - 800 calories, high fat/sugar, ZERO nutrients), Snacks: Chips, energy drinks, Dinner: Instant noodles at 11 PM (high sodium, no nutrients, processed). Daily: 2000 calories but ZERO nutrition (no fruits, vegetables, protein, vitamins). Coffee: 5 cups/day (mask exhaustion). Month 2 effects: Energy crashes (sugar spike after lunch → crash 2-4 PM, cannot focus), Brain fog (brain needs nutrients: omega-3, vitamins, minerals - you eat junk), Always exhausted (no nutrients to fuel body), Weak immune system (sick 3× in 2 months - no nutrients), Poor performance (grades dropping - brain cannot function without fuel). Friend: "Brain = 2% body weight but uses 20% energy! Brain needs: Complex carbs (oats, rice - sustained energy), Protein (eggs, dal, paneer - brain building blocks), Healthy fats (nuts, avocado - brain function), Vitamins/minerals (fruits, vegetables - immune system). You eat: Sugar, fat, processed food (crash, fog, no nutrients)." FIX: REAL FOOD (simple, affordable, nutritious). BREAKFAST: Oats + banana + eggs (₹50 - sustained energy). LUNCH: Dal rice + vegetable + curd (₹90 - nutrients, same price as burger but HEALTHY). SNACKS: Fruits + nuts (₹50 - no crash). DINNER: Roti + vegetable + dal (₹80 - balanced). Total: ₹270/day (SAME as junk food but NUTRITIOUS!). Benefits (2 weeks): Energy stable (no crash), Focus improves (brain has fuel), Fewer headaches, Stronger immune system, Better mood. In B.Com, eat REAL FOOD. Not expensive (dal rice eggs = nutritious). Quality food = quality performance.'
+          explanation: 'Junk food = calories but ZERO nutrients. Brain needs complex carbs (oats, rice), protein (eggs, dal), healthy fats (nuts), vitamins (fruits, veggies). Real food = same price! Oats + eggs ₹50. Dal rice ₹90. Energy stable, focus improves, brain has fuel. Quality food = quality performance!'
         },
         {
           id: 19,
-          question: 'Your hydration: Water 2 glasses/day, Coffee 5 cups, Energy drinks 2 cans. Result: Headaches 4×/week, cannot focus, exhausted. Research: 1-2% dehydration = 10-20% cognitive decline! What is hydration?',
+          question: '2 glasses water/day, 5 coffees, 2 energy drinks. Headaches 4×/week, no focus. 1% dehydration = 10-20% cognitive drop!',
           options: [
-            'Drink only when thirsty (flexible)',
-            '8 GLASSES WATER DAILY (2 liters) - carry bottle, drink 1 glass/hour (NOT coffee/energy drinks - they DEHYDRATE). Immediate benefits: headaches gone, focus improves 25%!',
-            'Coffee and energy drinks count (convenient)',
-            'Ignore it (not important)'
+            'Drink only when thirsty',
+            '8 glasses water daily—NOT coffee/energy drinks',
+            'Coffee and energy drinks count',
+            'Not important, ignore'
           ],
           correct: 1,
-          explanation: 'Hydration = 8 GLASSES WATER DAILY (not only when thirsty, coffee/energy drinks do NOT count, hydration IS important). Your hydration: Water: 2 glasses/day (500 mL - need 2-3 liters!), Coffee: 5 cups/day (caffeine DEHYDRATES), Energy drinks: 2 cans/day (sugar + caffeine DEHYDRATE), Soda: 1 can with lunch. Net: CHRONICALLY DEHYDRATED. Month 2 effects: Cannot focus (brain is 75% water - dehydration impairs cognitive function), Headaches 4×/week (dehydration common cause), Brain fog (sluggish thinking), Memory problems (dehydration affects memory), Exhausted (dehydration causes tiredness), Poor exam performance (dehydrated → headache during exam → cannot focus → poor score). RESEARCH: 1-2% dehydration → 10-20% cognitive decline! You: Chronically 5% dehydrated (coffee + energy drinks dehydrate). Cognitive performance: DOWN 25%! (You could score 25% HIGHER if hydrated! From 75/100 to 94/100 just by DRINKING WATER!). FIX: 8 glasses water/day (2 liters). ROUTINE: Morning: 2 glasses (upon waking - rehydrate after sleep), Throughout day: 6 glasses (1 glass/hour during study - carry bottle, set reminder), Before bed: No water 1 hour before sleep (prevent bathroom wake-ups). STRATEGY: Carry 1-liter bottle, refill 2×/day, drink BEFORE thirsty (thirst = already dehydrated). REDUCE: Coffee 5 → 2 cups/day, Energy drinks 2 → 0, Soda 1 → 0. Replace with WATER. BENEFITS (IMMEDIATE - after 1 day!): Headaches disappear, Energy increases, Focus improves 25%! (instant performance boost). During exams: Bring water bottle to exam hall (hydrated = better focus, 25% better performance). In B.Com, easiest fix: Carry bottle, drink 8 glasses/day. 25% improvement for free! Do not sabotage yourself with dehydration.'
+          explanation: 'Coffee/energy drinks DEHYDRATE. Brain = 75% water. Dehydration = headaches, brain fog, poor focus. 8 glasses water daily (2 liters). Carry bottle, 1 glass/hour. Benefits IMMEDIATE: headaches gone, focus up 25%! Could score 75→94 just by drinking water. Easiest fix for free performance boost!'
         },
         {
           id: 20,
-          question: 'Month 3: You neglect physical health (sleep 5hrs, junk food, no exercise). Result: GPA 7.5→6.8, sick 3×, exhausted, anxious. Doctor: "Physical health affects EVERYTHING." How does physical health affect you?',
+          question: 'Neglect health: 5hr sleep, junk food, no exercise. GPA 7.5→6.8, sick 3×, exhausted, anxious. Physical health affects what?',
           options: [
-            'Body only (muscles, weight, appearance)',
-            'MENTAL PERFORMANCE and OVERALL WELL-BEING - affects: academic performance (focus, memory, grades), mental health (mood, anxiety, depression), energy (vitality, function), long-term health',
-            'Nothing (physical and mental separate)',
-            'Appearance only (looks, fitness)'
+            'Body only—muscles, weight',
+            'Mental performance + overall well-being',
+            'Nothing, separate from mental',
+            'Appearance only'
           ],
           correct: 1,
-          explanation: 'Physical health affects MENTAL PERFORMANCE and OVERALL WELL-BEING (not body only, not appearance only, not nothing - EVERYTHING is connected). You neglected physical health for 3 months: Sleep 5 hours (need 8), Junk food (no nutrients), No exercise (sedentary 16 hours/day), Dehydrated (coffee, not water). Month 3 results: ACADEMIC PERFORMANCE AFFECTED: GPA 7.5 → 6.8 (DROPPED despite studying MORE hours!), Cannot focus (brain fog - brain needs sleep, nutrients, oxygen), Cannot remember (poor sleep prevents memory consolidation), Study 14 hours but LOW QUALITY (exhausted, unfocused, wasted time). MENTAL HEALTH AFFECTED: Anxious constantly (poor sleep + poor nutrition worsens anxiety), Irritable (snap at friends, family - blood sugar swings + exhaustion), Low mood (no endorphins from exercise, risk depression), Cannot handle stress (no stress outlet, no coping resources). PHYSICAL HEALTH AFFECTED: Sick 3× in 2 months (weak immune system - poor sleep + poor nutrition), Exhausted constantly (no energy - dehydration + no exercise + poor sleep), Lost 5 kg weight (skipping meals, stress), Cannot climb 3 floors (no stamina, weak). LIFE QUALITY AFFECTED: Cannot enjoy life (too exhausted, too stressed), Relationships suffer (irritable, no time for friends), Miss opportunities (sick days, low energy, cannot participate). Doctor: "Physical health = FOUNDATION for everything. Without it: Cannot study effectively, Cannot perform academically, Cannot maintain mental health, Cannot function in life. With it: Study effectively (focused, energized), Perform well (grades improve), Mental health good (mood stable, anxiety low), Life quality high (energy, happiness, fulfillment)." Classmate: Prioritizes physical health (sleep 8 hours, healthy food, exercise 30 min, hydrated). Result: GPA 7.5 → 8.2 (IMPROVED), High energy, Good mood, Rarely sick, Thriving. In B.Com, physical health is not luxury. Physical health is FOUNDATION (enables academic success, mental health, life quality). Health FIRST. Then academics. Health = investment in performance.'
+          explanation: 'Physical health = FOUNDATION for everything. Affects: academics (focus, memory, grades drop), mental health (anxiety, mood, depression risk), energy (exhausted, no vitality), life quality (cannot enjoy, relationships suffer). Prioritize health: 8hr sleep, real food, 30min exercise, hydrate. GPA improves, energy up, mood stable. Health FIRST, then academics. Health = investment in performance!'
         }
       ]
     },
@@ -1856,63 +1856,63 @@ Resilience = essential skill. Build it now."
       questions: [
         {
           id: 21,
-          question: 'You failed Financial Accounting. Week 1: Devastated ("I am failure"). Week 2: Given up (skip classes, stop studying). Month 2: Still in bed. Classmate also failed but Week 8: Passed supplementary (bounced back!). What is resilience?',
+          question: 'Failed exam. You: Month 2, still in bed. Classmate: Failed too, Week 8 passed supplementary. What is resilience?',
           options: [
-            'Never failing (avoid all failures)',
-            'BOUNCING BACK from setbacks - fail → feel emotions → reframe (failure = feedback) → learn → improve → try again → succeed (resilience = recover, persist)',
-            'Avoiding all challenges (stay safe)',
-            'Being perfect (never make mistakes)'
+            'Never failing',
+            'Bouncing back—fail, learn, try again, succeed',
+            'Avoiding challenges',
+            'Being perfect'
           ],
           correct: 1,
-          explanation: 'Resilience = BOUNCING BACK from setbacks (not never failing, not avoiding challenges, not being perfect). You failed Financial Accounting. Your response: Week 1: Devastated. Week 2: Given up. Month 2: Still in bed (cannot bounce back). Classmate also failed. Classmate response: Week 1: Disappointed (felt emotions). Week 2: Analyzed failure ("I memorized without understanding. I need to practice problems."). Week 3-8: Studied differently (understood concepts, practiced 100 problems, sought professor help). Supplementary exam: Passed 72/100! (Bounced back, succeeded!). DIFFERENCE: You: No resilience (one failure → collapse → still stuck 2 months later). Classmate: Has resilience (one failure → feel emotions → analyze → learn → improve → try again → pass. 8 weeks total.). Resilience is NOT: Never failing (impossible - everyone fails), Avoiding challenges (resilient people FACE challenges), Being perfect (resilient people make mistakes, learn, improve). Resilience IS: BOUNCING BACK (fail → recover → try again), LEARNING (failure = feedback, extract lessons), PERSISTING (keep trying despite setbacks), GROWING (setbacks make you stronger, wiser). Process: Fail → Feel emotions (cry, be sad - OK, but 1 day not 30) → Reframe (failure = feedback, not final) → Analyze (what went wrong? How to improve?) → Take action (make plan, study) → Try again (supplementary exam) → Succeed (pass!). In B.Com, resilience is ESSENTIAL. You will fail many times (exams, job rejections, startup failures, relationships). Resilience = ability to bounce back every time (fail → learn → try again → eventually succeed). Not never failing. Bouncing back from failures.'
+          explanation: 'Resilience = bouncing back. Process: Fail → feel emotions (1 day, not 30) → reframe (failure = feedback) → analyze (what went wrong?) → learn → try again → succeed. Classmate: analyzed, studied differently, passed in 8 weeks. You: stuck 2 months. Resilience = recover and persist. Everyone fails. Resilient people bounce back!'
         },
         {
           id: 22,
-          question: 'You failed exam. You think: "I am failure. I am stupid. I should quit B.Com." (Final verdict). Friend: "Failure is FEEDBACK!" How should you view failure?',
+          question: 'Failed exam. Think: "I am failure, stupid, should quit." Friend: "Failure is feedback!" View failure how?',
           options: [
-            'Failure = final verdict (end of story, defines you forever)',
-            'Failure = FEEDBACK and LEARNING OPPORTUNITY - tells you: what went wrong (study method), how to improve (practice problems), that you CAN improve (try again, pass)',
-            'Failure = weakness (you are weak, not good enough)',
-            'Failure = to avoid at all costs (never try risky things)'
+            'Final verdict, defines you forever',
+            'Feedback—what went wrong, how to improve',
+            'Weakness, not good enough',
+            'Avoid at all costs'
           ],
           correct: 1,
-          explanation: 'View failure as: FEEDBACK and LEARNING OPPORTUNITY (not final verdict, not weakness, not to avoid). You failed Financial Accounting (35/100). Your interpretation: "I am failure. I am stupid. I cannot do B.Com. I should quit." (FINAL VERDICT - failure defines you, no hope, no recovery). WRONG. Failure is FEEDBACK (information about what to improve). Financial Accounting failure feedback: WHAT went wrong: (1) Study method ineffective (you memorized formulas without understanding concepts - rote learning fails), (2) Time management poor (studied last 2 days before exam, not throughout semester - cramming ineffective), (3) Exam strategy weak (panicked during exam, mind went blank, could not recall - no exam practice). HOW to improve: (1) Understand concepts (not just memorize - understand WHY formulas work, practice applying), (2) Study consistently (2 hours/day throughout semester, not 20 hours last 2 days - spaced learning better), (3) Practice exams (do 10 practice exams, build exam skills, reduce panic). THAT you CAN improve: Failure is not permanent (failed this time because of wrong method. With right method, can pass next time). Supplementary exam: Study differently (understand, practice, consistent) → Pass! Failure tells you: What to fix (method, timing, strategy), How to fix (understand, practice, consistency), That you can fix (improvable, not permanent). Failure is NOT: Final (end, no hope), Identity (you ARE failure), Permanent (always fail). Failure IS: Feedback (data, information), Temporary (this time, not next time if improve), Learning opportunity (learn what does not work, try what works). In B.Com, reframe every failure. Ask: What is this teaching me? How can I improve? Then: Learn, improve, try again. Failure = feedback = growth.'
+          explanation: 'Failure = feedback, not final verdict. Tells you: WHAT went wrong (study method), HOW to improve (understand concepts, practice problems, study consistently), THAT you can improve (not permanent). Analyze, learn, try again differently → pass! Failure temporary, not identity. Reframe: What is this teaching me? How improve? Then learn, try again!'
         },
         {
           id: 23,
-          question: 'You think: "I am not smart enough for B.Com. I do not have talent for accounting. I cannot do this." (Fixed mindset). Friend: "You can GROW!" What is growth mindset?',
+          question: '"Not smart enough for B.Com. No talent for accounting. Cannot do this." Fixed mindset. Growth mindset?',
           options: [
-            'Challenges are threats (avoid them, stay safe)',
-            'CHALLENGES = OPPORTUNITIES TO GROW - intelligence GROWS through effort (not fixed). "I cannot do accounting YET" (can learn). Failure = need more effort/better strategy',
-            'Challenges are failures waiting to happen (avoid)',
-            'Challenges are to avoid (only do what you are already good at)'
+            'Challenges are threats, avoid',
+            'Challenges = grow—intelligence grows through effort',
+            'Challenges = failures, avoid',
+            'Only do what already good at'
           ],
           correct: 1,
-          explanation: 'Growth mindset = CHALLENGES = OPPORTUNITIES TO GROW (not threats, not failures, not to avoid). You think: "I am not smart enough for B.Com. I do not have talent for accounting. I cannot do this." This is FIXED MINDSET (believe: Intelligence is fixed, you either have it or do not, failure proves you do not have it, cannot improve). Result: Give up (if you do not have talent, why try?). GROWTH MINDSET (need to build): "I am not good at accounting YET. But I can LEARN. Intelligence is not fixed. Intelligence GROWS through: Effort (study more, practice more), Learning (understand concepts, not just memorize), Persistence (keep trying despite setbacks), Better strategies (improve study method, seek help)." You failed because: Wrong study method (can improve method), Not enough practice (can practice more), Did not understand (can seek help, learn). NOT because: "Not smart enough" (you CAN grow smarter through effort!). GROWTH MINDSET PRINCIPLES: (1) Add YET ("I cannot do accounting YET" - implies can learn eventually), (2) Focus on PROCESS (not "I am smart/stupid" but "I used wrong method, I can improve method"), (3) Embrace CHALLENGES (challenges = opportunities to grow, not threats to avoid), (4) Learn from CRITICISM (professor feedback = valuable information, not personal attack), (5) Celebrate EFFORT (studied 50 hours? Celebrate! Even if failed, effort matters - process > results). With growth mindset: Challenges = exciting (opportunity to grow, learn, improve), Failure = feedback (need more effort/better strategy, can improve), Persist (if can grow, worth trying). In B.Com, build growth mindset. You CAN grow abilities (through effort, practice, learning). Accounting is not talent (either have or do not). Accounting is SKILL (can learn, build, master through practice). Add YET. Embrace challenges. Keep growing.'
+          explanation: 'Growth mindset: "Cannot do accounting YET." Intelligence GROWS through effort, practice, learning. Add YET. Focus on process (not "smart/stupid" but "wrong method, can improve"). Embrace challenges (opportunities to grow). Failure = need better strategy. Accounting = SKILL (can learn), not talent (have or not). Keep growing!'
         },
         {
           id: 24,
-          question: 'You failed exam. Your self-talk: "I am so stupid! I am failure! I am worthless!" Result: Feel worse, stay in bed, give up. Friend: "Be KIND to yourself!" What is self-compassion?',
+          question: 'Failed. Self-talk: "So stupid! Failure! Worthless!" Result: worse, bed, give up. Self-compassion?',
           options: [
-            'Being soft (low standards, accept failure without improving)',
-            'TREATING YOURSELF WITH KINDNESS - talk to yourself like friend (kind, understanding, encouraging) NOT harsh. Self-compassion fuels motivation. Harsh talk fuels shame/giving up',
-            'Low standards (do not try to improve)',
-            'Giving up (accept failure, do not try again)'
+            'Being soft, low standards',
+            'Treat yourself with kindness like friend',
+            'Low standards, no improvement',
+            'Giving up, accept failure'
           ],
           correct: 1,
-          explanation: 'Self-compassion = TREATING YOURSELF WITH KINDNESS (not being soft, not low standards, not giving up). You failed exam. Your self-talk: "I am so stupid! I should have studied harder! I am failure! I am worthless!" (HARSH, critical, mean). Result: Feel WORSE (shame, hopelessness), Paralyzed (cannot function, stay in bed), Give up (if worthless, why try?). Harsh self-talk makes failure WORSE (not better). SELF-COMPASSIONATE TALK: "I failed Financial Accounting. I feel disappointed. That is OK (everyone fails sometimes). This does not mean I am stupid (I am learning, I made mistakes, I can improve). I am human (humans make mistakes, that is part of learning). I can learn from this (what went wrong? How can I improve?). I can try again (supplementary exam, I will study differently, I can pass). I believe in myself (I am capable, one failure does not define me)." (KIND, understanding, encouraging). Result: Feel BETTER (supported, not alone), Motivated (encouragement helps you get up, take action), Persist (if you believe in yourself, worth trying again). Self-compassion is NOT: Low standards (accepting failure without improving - NO, you STILL try to improve, but you are KIND while doing it), Being soft (letting yourself off hook - NO, you STILL take responsibility, analyze, improve, but you are KIND not HARSH). Self-compassion IS: Being kind to yourself WHILE learning, improving, trying again (kindness fuels motivation, harshness fuels shame). Like talking to friend who failed: Would you say "You are stupid! You are failure!"? NO. You would say: "That is hard. But you can learn. You can try again. I believe in you." (Kind, encouraging). Talk to YOURSELF same way. In B.Com, practice self-compassion. When you fail: Be your own friend (kind, understanding, encouraging). Harsh self-talk = stay stuck. Kind self-talk = bounce back, try again, succeed.'
+          explanation: 'Self-compassion = talk to yourself like friend. Kind, understanding, encouraging NOT harsh. "Failed. Disappointed. OK—everyone fails. Not stupid—learning, can improve. Can try again. Believe in myself." Kindness fuels motivation. Harsh talk fuels shame/giving up. Be your own friend. Kind self-talk = bounce back, try again, succeed!'
         },
         {
           id: 25,
-          question: 'You failed exam. You isolate (avoid friends, lie to parents, face alone). Month 2: Still stuck. Classmate failed, told friends/family, got support. Week 8: Passed! How to build resilience?',
+          question: 'Failed. You: isolate, Month 2 stuck. Classmate: told friends/family, Week 8 passed. Build resilience how?',
           options: [
-            'Face challenges in isolation (be tough alone)',
-            'SUPPORT NETWORK and PRACTICE - close friends (encourage), family (believe in you), mentor (guide), peer support (not alone) + practice bouncing back from setbacks',
-            'Avoid all challenges (prevent failures)',
-            'Be tough alone (do not need anyone)'
+            'Face alone, be tough',
+            'Support network + practice bouncing back',
+            'Avoid all challenges',
+            'Be tough, need no one'
           ],
           correct: 1,
-          explanation: 'Build resilience through: SUPPORT NETWORK and PRACTICE (not isolation, not avoiding challenges, not tough alone). You failed exam. Your response: Isolate (avoid friends - ashamed, lie to parents - cannot tell truth, face alone - no support). Result: Month 2: Still stuck (no encouragement, no perspective, no help, cannot bounce back). Classmate failed exam. Classmate response: Week 1: Told friend ("I failed. I feel terrible."). Friend: "That is hard. But one failure does not define you. You can try again. I am here." (Support, encouragement). Week 2: Told parents ("I failed Financial Accounting."). Parents: "We are disappointed. But we believe in you. You can pass supplementary. We will support you." (Support, belief). Week 3: Talked to professor ("I failed. Can you help?"). Professor: "Let me help you understand concepts. Come to office hours." (Guidance, help). Week 3-8: Studied with support (friends encouraged, parents believed, professor helped). Supplementary: Passed 72/100! (Bounced back with support!). DIFFERENCE: You (isolated): No support → stuck, cannot bounce back. Classmate (sought support): Support → encouraged, helped, bounced back, succeeded. BUILD RESILIENCE: (1) SUPPORT NETWORK: Close friends (3-5 who listen, encourage when you fail), Family (tell truth, get support and belief), Mentor (professor, senior - perspective, advice, guidance), Peer support (classmates who struggle - share, "I am not alone"). (2) PRACTICE: Every setback = practice bouncing back (use coping strategies, reframe, take action, seek support, self-compassion). Build resilience muscle (like gym: every rep builds strength. Every bounce back builds resilience). Resilience is SKILL (not innate - can learn, build, strengthen through practice). In B.Com, build support network (BEFORE failure, so when fail, have people to call). Do not face setbacks alone (isolation = stuck. Support = bounce back). Practice bouncing back (every setback = training. Build capacity over time). Resilience = support + practice.'
+          explanation: 'Build resilience: SUPPORT NETWORK (friends encourage, family believes, mentor guides, peer support—not alone) + PRACTICE bouncing back (every setback = practice). Isolated = stuck. Support = bounce back. Build network BEFORE failure. Every setback trains resilience muscle. Resilience = SKILL (can learn, build, strengthen). Support + practice = resilience!'
         }
       ]
     },
@@ -2270,63 +2270,63 @@ Start tomorrow morning."
       questions: [
         {
           id: 26,
-          question: 'You think: "Mindfulness = empty mind (no thoughts), be calm always, meditate 1 hour." You try. Fail (thoughts keep coming!). Friend: "Mindfulness is NOT that!" What IS mindfulness?',
+          question: 'Mindfulness = empty mind, no thoughts, calm always, 1hr meditate? Try. Fail (thoughts come!). What IS mindfulness?',
           options: [
-            'Emptying mind completely (no thoughts ever)',
-            'PRESENT MOMENT AWARENESS WITHOUT JUDGMENT - being HERE NOW, noticing thoughts without judgment, gently returning when mind wanders (NOT stopping thoughts)',
-            'Relaxation only (just feel calm)',
-            'Avoiding thoughts (never think)'
+            'Empty mind, no thoughts',
+            'Present moment awareness without judgment',
+            'Relaxation only',
+            'Avoiding thoughts'
           ],
           correct: 1,
-          explanation: 'Mindfulness = PRESENT MOMENT AWARENESS WITHOUT JUDGMENT (not empty mind, not just relaxation, not avoiding thoughts). You think: "Mindfulness = empty mind (stop all thoughts), be calm always, meditate 1 hour in monastery." You try: Sit, try to empty mind. Result: Thoughts keep coming! ("Am I doing this right? This is boring. I have assignment..."). You think: "I failed! I cannot do mindfulness!" WRONG. Mindfulness is NOT: Emptying mind (impossible - brain produces 6000 thoughts/day, cannot stop), Never having thoughts (unrealistic - thoughts are normal, natural), Always being calm (not goal - can be mindful and feel anxious, sad, happy - any emotion), 1 hour meditation (not required - 5 min is enough). Mindfulness IS: PRESENT MOMENT (being HERE, NOW - not past, not future. Right now reading this question), AWARENESS (noticing when mind wanders to past/future - "Oh, mind is worrying about exam"), WITHOUT JUDGMENT (not "I failed! I am bad at this!" - just "Mind wandered. OK. Return to breath"), GENTLY RETURNING (when mind wanders, gently guide back - like puppy runs away, gently call back. Patient, kind, repeat 20 times). Example: Studying mindfully. BEFORE (no mindfulness): Read → mind wanders ("What if I fail?") → anxiety → cannot focus → give up. AFTER (with mindfulness): Read → mind wanders ("What if I fail?") → NOTICE ("Mind is worrying") → NO JUDGMENT ("That is OK") → RETURN ("Back to reading") → continue. Not stopping mind wander (still happens!). But: Notice faster (was lost 15 min, now notice in 10 sec), Return effectively (back to study, not spiral into anxiety). Result: Better focus. In B.Com, mindfulness is simple: Present, aware, non-judgmental, return when wander. Not empty mind, not perfection. Just notice, return. Practice = training mind.'
+          explanation: 'Mindfulness = being HERE NOW, noticing thoughts without judgment, gently returning when mind wanders. NOT stopping thoughts (impossible). Mind wanders ("Worrying exam") → NOTICE ("Mind worrying") → NO JUDGMENT ("OK") → RETURN ("Back to reading"). Notice faster, return effectively. Simple: present, aware, non-judgmental, return. Practice = training mind!'
         },
         {
           id: 27,
-          question: 'Meditation: You sit, focus on breath. 10 seconds later: Mind wanders ("I have assignment due!"). You think: "I FAILED! I cannot meditate!" Friend: "Mind wandering is NORMAL!" What should you do when mind wanders?',
+          question: 'Meditate 10 sec. Mind wanders ("Assignment due!"). "FAILED! Cannot meditate!" Mind wandering normal?',
           options: [
-            'You failed meditation (give up, you are bad at this)',
-            'GENTLY RETURN to focus - notice mind wandered (no judgment), gently return to breath (like guiding puppy back - patient, kind). Mind wanders 20×/5 min is NORMAL!',
-            'Give up (meditation is not for you)',
-            'Force control (fight mind, stop thoughts, be harsh)'
+            'You failed, give up',
+            'Gently return—notice, no judgment, return',
+            'Give up, not for you',
+            'Force control, fight mind'
           ],
           correct: 1,
-          explanation: 'When mind wanders: GENTLY RETURN (not "you failed", not give up, not force control). You meditate: Sit, close eyes, focus on breath. 10 seconds later: Mind wanders ("I have assignment due! What if I fail exam? I should have studied yesterday!"). You think: "I FAILED! Mind should not wander! I am bad at meditation!" WRONG. Mind wandering is NORMAL (not failure). Brain produces 6000 thoughts/day. Mind job is to THINK (like heart job is to beat). Mind will wander (always, everyone, even meditation experts). THAT IS OK. Meditation is NOT: Never let mind wander (impossible), Empty mind completely (unrealistic), Stay focused 5 min straight first time (takes training). Meditation IS: Notice when mind wanders ("Oh, I am thinking about assignment" - awareness!), No judgment ("I failed!" - NO. "Mind wandered" - neutral observation, OK), Gently return to breath (like guiding puppy back when runs away - patient, gentle, kind. Not harsh "Bad puppy!", just "Come back" gently), Repeat (mind wanders again after 10 sec - notice, return. Repeat 20 times in 5 min meditation - NORMAL!). THAT IS THE PRACTICE: Every time mind wanders and you NOTICE and RETURN = 1 REP (like gym: 1 bicep curl). 20 reps in 5 min = SUCCESSFUL meditation session (not failed session!). Training mind to: Notice faster (was lost in thought 15 min, now notice in 10 sec), Return easier (build habit of returning). Week 1: Mind wanders every 10 sec (notice, return 30 times - OK!). Week 12: Mind wanders every 2 min (notice, return 2-3 times - improvement! But still wanders - NORMAL.). In B.Com, when mind wanders: Do NOT say "I failed!" DO say "Mind wandered (normal). Gently return." Be patient, be kind (to yourself, to your mind). Mind is learning (like child learning to walk - falls 100 times, that is OK, keep practicing). Wandering is not failure. Wandering is opportunity to practice returning. Gently return.'
+          explanation: 'Mind wandering = NORMAL (not failure). Brain thinks 6000 thoughts/day. Notice mind wandered → NO judgment ("Mind wandered, OK") → GENTLY return to breath (like puppy, patient, kind) → Repeat. Wander 20× in 5min = NORMAL! Every notice + return = 1 rep. Training mind. Week 1: wander every 10sec. Week 12: every 2min. Improvement! Gently return!'
         },
         {
           id: 28,
-          question: 'You want to start mindfulness. You think: "I need 1 hour daily, perfect quiet room, monastery." You have none. Friend: "Start SIMPLE!" What should you start with?',
+          question: 'Start mindfulness: "Need 1hr daily, perfect quiet room, monastery." Have none. Start with what?',
           options: [
-            '1 hour meditation sessions (need serious commitment)',
-            '2-5 MINUTES BREATH FOCUS - sit anywhere, close eyes, notice breath, mind wanders (normal), gently return. Daily. That is ALL. Simple. Doable. Builds over time.',
-            'Complex techniques (advanced practices first)',
-            'Perfection (perfect meditation or do not start)'
+            '1 hour sessions, serious commitment',
+            '2-5min breath focus—sit anywhere, daily',
+            'Complex advanced techniques first',
+            'Perfect meditation or do not start'
           ],
           correct: 1,
-          explanation: 'Start mindfulness with: 2-5 MINUTES BREATH FOCUS (not 1 hour, not complex, not perfection). You think: "To meditate, I need: 1 hour daily (serious time commitment), Perfect quiet room (no noise, no distractions), Monastery or teacher (expert guidance), Complex techniques (mantras, visualizations, advanced practices), Perfection (never let mind wander)." You have: Noisy hostel, 10 min free time, no teacher, no idea what to do. You think: "I cannot meditate. I do not have requirements." WRONG. You CAN meditate. Requirements: 2-5 minutes (have this!), Anywhere (chair, bed, floor - do not need monastery), Just breath (no complex technique, just notice breath), Imperfect (mind WILL wander - that is OK, that is practice!). START SIMPLE: Day 1-7 (Week 1): 2 MINUTES daily. Sit (chair, bed, anywhere). Close eyes. Notice breath (air in, air out). Mind will wander (10 sec later: "Am I doing right? I have assignment..."). Notice ("Mind wandered"). Gently return (back to breath). Repeat (wander → notice → return × 10 times in 2 min). THAT IS IT. 2 minutes. Day 8-14 (Week 2): 3 minutes daily (build up). Day 15-30 (Week 3-4): 5 minutes daily (sustainable practice). SIMPLE is better than perfect: 2 min imperfect daily meditation × 365 days = 730 min = 12 hours mind training! Better than: 1 hour perfect meditation × 1 day, then give up (too hard, too much) = 1 hour total. Consistency > duration. Simple > complex. Imperfect daily > perfect never. In B.Com, start SIMPLE. 2-5 min breath focus. Sit. Breathe. Notice. Return. Daily. That is ALL. Build from there. Do not wait for "perfect conditions" (will never come). Start imperfect NOW. 2 minutes daily changes everything over time.'
+          explanation: 'Start SIMPLE: 2-5min breath focus. Anywhere (chair, bed, floor). Notice breath. Mind wanders (normal) → notice → return. Daily. Week 1: 2min. Week 4: 5min. 2min imperfect daily × 365 days = 12hrs training! Better than 1hr perfect × 1 day, then quit. Consistency beats duration. Simple beats perfect. Start NOW!'
         },
         {
           id: 29,
-          question: 'You practice mindfulness: When stressed (exam coming → meditate 20 min). When calm (no stress → no meditation). Week 10: Still anxious, cannot focus. Friend: "Meditate DAILY!" What should practice be?',
+          question: 'Meditate when stressed (exam → 20min). Calm? No meditation. Week 10: Still anxious, no focus. Practice how?',
           options: [
-            'Only when stressed (reactive - meditate when anxious)',
-            'DAILY CONSISTENT PRACTICE - 5 min every morning (preventive, training) - builds trained mind over time (NOT just when stressed - daily habit like brushing teeth)',
-            'Long sessions only (1 hour when have time)',
-            'Occasional (meditate sometimes when remember)'
+            'Only when stressed, reactive',
+            '5min daily—preventive training, habit',
+            '1hr sessions when have time',
+            'Occasional, when remember'
           ],
           correct: 1,
-          explanation: 'Mindfulness practice should be: DAILY CONSISTENT (not only when stressed, not long sessions only, not occasional). You practice: When stressed (exam coming → anxiety → meditate 20 min to calm down). When calm (no exam, no stress → no meditation - "Do not need it now"). Week 10: Still very anxious (baseline anxiety 7/10), still cannot focus (mind wanders every 2 min), meditation does NOT seem to work ("I meditated 10 times but still anxious!"). Friend: "You meditate only when STRESSED (reactive). Mindfulness needs DAILY PRACTICE (preventive, training)." REACTIVE (your approach): Stressed → meditate → calm temporarily → stop meditating → stressed again (yo-yo, not sustainable). PREVENTIVE (daily practice): Meditate daily (even when calm) → build trained mind over time → anxiety baseline REDUCES (not just temporarily calm, but less anxious overall). ANALOGY: Exercise (reactive): "I will exercise only when sick/fat" → exercise when crisis → improve temporarily → stop → get sick/fat again. Exercise (preventive): Exercise daily (even when healthy) → build strong body over time → rarely get sick, stay fit. Mindfulness same: DAILY PRACTICE (5 min every morning, whether stressed or calm - habit like brushing teeth, non-negotiable) builds: Trained mind (notice thoughts faster, return easier, focus better), Lower baseline anxiety (Week 1: 7/10, Week 4: 5/10, Week 12: 3/10 - gradual reduction from daily practice), Better focus (can study 1 hour straight - mind trained to stay present), Resilience (when stress comes, can handle better - have trained mind). CONSISTENCY > intensity: 5 min daily × 90 days = 450 min = 7.5 hours mind training (builds trained mind). 1 hour occasional × 3 times = 3 hours total (not enough to train mind). In B.Com, meditate DAILY (not just when stressed). 5 min every morning (after wake, before phone). Daily consistency = train mind = anxiety reduces, focus improves, calm builds. Not reactive (meditate when crisis). Preventive (daily training).'
+          explanation: 'REACTIVE (only when stressed) = calm temporarily, then stressed again (yo-yo). PREVENTIVE (5min daily even when calm) = builds trained mind, anxiety baseline drops. Week 1: 7/10. Week 12: 3/10. Focus improves. 5min daily × 90 days = 7.5hrs training! Daily habit like brushing teeth. Consistency beats intensity. Meditate DAILY, not just crisis!'
         },
         {
           id: 30,
-          question: 'You meditate 5 min daily for 12 weeks. Results: Anxiety 7/10→3/10, focus 5 min→1 hour, fall asleep 1 hour→15 min, exam performance excellent. Friend: "Coincidence?" What are mindfulness benefits?',
+          question: '5min daily × 12 weeks. Anxiety 7→3, focus 5min→1hr, sleep 1hr→15min, exams excellent. Coincidence?',
           options: [
-            'Nothing proven (no real benefits, just trendy)',
-            'REDUCES STRESS and IMPROVES FOCUS - anxiety down 50%, focus improves dramatically, better sleep, better performance (research-proven, brain changes)',
-            'Only relaxation (just feel calm temporarily)',
-            'Just trendy (no substance, fad)'
+            'Nothing proven, just trendy',
+            'Reduces stress, improves focus—proven',
+            'Only relaxation, temporary',
+            'Just trendy fad'
           ],
           correct: 1,
-          explanation: 'Mindfulness benefits: REDUCES STRESS and IMPROVES FOCUS (not nothing, not just relaxation, not trendy fad - PROVEN benefits). You practice: 5 min daily meditation × 12 weeks (84 days). Results: ANXIETY: Week 1: 7/10 (high anxiety, constant worry). Week 4: 5/10 (noticeable reduction, mind calmer). Week 12: 3/10 (manageable anxiety, can handle stress). Reduction: 57% anxiety reduction! FOCUS: Week 1: Can focus 5 min before mind wanders. Week 4: Can focus 30 min straight. Week 12: Can focus 1 hour straight (mind present, actually learning). Improvement: 12× focus improvement! SLEEP: Week 1: Lie in bed 1 hour before falling asleep (mind racing). Week 12: Fall asleep 15 min (mind quiet, calm). Improvement: 4× faster sleep! PERFORMANCE: Exam preparation: Mind present during study (actually learn, not just "study"). Exam day: 4-7-8 breathing before exam (calm nerves, sharp focus). Result: Excellent exam performance (can think clearly, remember well, no panic). GPA improves. RESEARCH PROOF: Brain scans show: Mindfulness meditation changes brain structure (increases gray matter in areas for: focus, emotional regulation, self-awareness. Decreases gray matter in amygdala - anxiety center!). Studies show: 8 weeks mindfulness reduces anxiety 50%, improves focus 40%, reduces depression symptoms, improves sleep, lowers stress hormones (cortisol). This is NOT placebo, NOT coincidence. This is BRAIN CHANGE from training. You: Trained mind 5 min daily × 12 weeks. Brain adapted (stronger focus areas, weaker anxiety areas). Result: Less anxious, better focus, better sleep, better performance. In B.Com, mindfulness benefits are PROVEN (research, brain scans, your experience). 5 min daily = reduce stress, improve focus, better performance. Not trendy, not placebo. Real brain training, real benefits. Invest 5 min/day. Reap massive benefits.'
+          explanation: 'PROVEN benefits, not coincidence! 57% anxiety reduction. 12× focus improvement. 4× faster sleep. Brain scans show: mindfulness changes brain structure (increases gray matter in focus areas, decreases amygdala—anxiety center). 8 weeks reduces anxiety 50%, improves focus 40%. NOT placebo. REAL brain training. 5min daily = reduce stress, improve focus, better performance. Invest 5min/day, reap massive benefits!'
         }
       ]
     },

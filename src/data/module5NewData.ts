@@ -217,19 +217,19 @@ Stop assuming. Start empathizing. Build products users actually want."
       questions: [
         {
           id: 1,
-          question: 'You are building a budgeting app for B.Com students. You assume they need 20 expense categories, investment tracking, and tax planning. Launch: 5 downloads, 0 users. What went wrong?',
+          question: 'Building budgeting app for B.Com students. Assume they need 20 expense categories, investment tracking, tax planning. Launch: 5 downloads, 0 users. What went wrong?',
           options: [
-            'You needed better marketing',
-            'You lacked empathy - you built what YOU thought they need, not what they ACTUALLY need (simple bill splitting, "Can I afford weekend plans?")',
+            'Needed better marketing',
+            'Lacked empathy - built what YOU thought they need, not what they ACTUALLY need (simple bill splitting, "Can I afford weekend plans?")',
             'Students do not care about budgeting',
-            'The app needed more features'
+            'App needed more features'
           ],
           correct: 1,
-          explanation: 'You lacked empathy - the ability to deeply understand user needs, emotions, and context. You assumed students need complex financial tracking because YOU are interested in finance. Reality: Most students want simplicity (3 categories: food, transport, fun), not complexity (20 categories). They struggle with bill splitting (emotional pain: awkwardness), not investment tracking (irrelevant: they have ₹500, not ₹5 lakhs). Empathy requires: (1) Interview 20-30 users BEFORE building, (2) Ask "What is your biggest money struggle?" (3) Observe behavior (they split bills on WhatsApp, not apps). In B.Com entrepreneurship, empathy = product-market fit. Build for THEIR reality, not YOUR assumptions.'
+          explanation: 'Lacked empathy = ability to deeply understand user needs, emotions, context. Assumed students need complex financial tracking because YOU interested in finance. Reality: Most want simplicity (3 categories: food, transport, fun), not complexity (20 categories). They struggle with bill splitting (emotional pain: awkwardness), not investment tracking (irrelevant: have ₹500, not ₹5L). Empathy requires: Interview 20-30 users BEFORE building. Ask "Biggest money struggle?" Observe behavior. Build for THEIR reality, not YOUR assumptions.'
         },
         {
           id: 2,
-          question: 'After interviewing 20 B.Com students about budgeting, you create an Empathy Map. You notice: They SAY "Budgeting is important" but DO "Forget to log expenses." What should you design for?',
+          question: 'After interviewing 20 B.Com students about budgeting, create Empathy Map. Notice: They SAY "Budgeting is important" but DO "Forget to log expenses." What should design for?',
           options: [
             'What they SAY - build detailed budgeting features',
             'What they DO - design for actual behavior (make logging effortless: 30 seconds, 3 categories, auto-reminders)',
@@ -237,35 +237,35 @@ Stop assuming. Start empathizing. Build products users actually want."
             'Ignore the contradiction'
           ],
           correct: 1,
-          explanation: 'Design for what users DO (behavior), not what they SAY (intentions). Empathy Map has 4 quadrants: Think, Feel, Say, Do. Students SAY "budgeting is important" (aspirational, polite answer in interviews). But they DO "forget to log expenses" (actual behavior reveals: too much friction, not motivated). If you design for SAY, you build complex features nobody uses. If you design for DO, you remove friction: 3 categories (not 20), 30-second logging (not 10 minutes), auto-reminders (because they forget). In B.Com product design, behavior > intentions. Observe what users actually do, not what they say they will do.'
+          explanation: 'Design for what users DO (behavior), not what they SAY (intentions). Students SAY "budgeting important" (aspirational, polite answer). But DO "forget to log expenses" (actual behavior: too much friction, not motivated). Design for SAY = build complex features nobody uses. Design for DO = remove friction: 3 categories (not 20), 30-second logging (not 10 minutes), auto-reminders. Behavior > intentions. Observe what users actually do, not what they say they will do.'
         },
         {
           id: 3,
           question: 'Student tells you: "Your budgeting app is too complicated." You respond: "But I added a tutorial! Did you watch it?" What is wrong with this response?',
           options: [
-            'Nothing - you are helping them understand the app',
-            'You are listening to RESPOND (defend your design) instead of listening to UNDERSTAND (learn the real problem: too many categories, not lack of tutorial)',
-            'You should have added more tutorials',
-            'You are being too polite'
+            'Nothing - you are helping them understand app',
+            'Listening to RESPOND (defend your design) instead of listening to UNDERSTAND (learn real problem: too many categories, not lack of tutorial)',
+            'Should have added more tutorials',
+            'Being too polite'
           ],
           correct: 1,
-          explanation: 'You are listening to RESPOND (defensive, trying to justify your design) instead of listening to UNDERSTAND (curious, trying to learn the real problem). Active listening requires: (1) Ask "Can you show me where you got stuck?" (2) Observe them using the app, (3) Ask "What would simple look like to you?" They show: "I saw 20 categories, felt overwhelmed, closed the app." The problem is NOT lack of tutorial. It is too many categories. Solution: Reduce to 3 categories (food, transport, fun). You only discover this by listening to UNDERSTAND. In B.Com, suspend your ego, stop defending, start learning. User feedback is gold, not criticism.'
+          explanation: 'Listening to RESPOND (defensive, justify design) instead of listening to UNDERSTAND (curious, learn real problem). Active listening: (1) Ask "Show me where you got stuck?" (2) Observe them using app, (3) Ask "What would simple look like?" They show: "Saw 20 categories, felt overwhelmed, closed app." Problem NOT lack of tutorial. It\'s too many categories. Solution: Reduce to 3. Suspend ego, stop defending, start learning. User feedback = gold, not criticism.'
         },
         {
           id: 4,
-          question: 'You interview students in a classroom. They say "We use an app for bill splitting." You observe them in their hostel. Reality: They split bills on WhatsApp (messy, 10 messages, forgotten payments). Why is observation important?',
+          question: 'Interview students in classroom. They say "We use an app for bill splitting." Observe them in hostel. Reality: They split bills on WhatsApp (messy, 10 messages, forgotten payments). Why is observation important?',
           options: [
-            'Observation is not important - interviews are enough',
-            'Observation reveals what users actually DO (WhatsApp, manual calculation, awkwardness) vs what they SAY (we use an app). Design for reality, not polite answers.',
+            'Observation not important - interviews are enough',
+            'Observation reveals what users actually DO (WhatsApp, manual calculation, awkwardness) vs what they SAY (we use app). Design for reality, not polite answers.',
             'Observation wastes time',
             'Students are lying in interviews'
           ],
           correct: 1,
-          explanation: 'Observation reveals BEHAVIOR (what users actually do) vs interviews reveal INTENTIONS (what users say they do). In classroom (formal setting), students give polite, generic answers: "We use an app." In hostel (natural context), you observe reality: They use WhatsApp (messy, error-prone), manually calculate splits (₹500 ÷ 3 = ?), forget to pay, feel awkward following up. This observation reveals the REAL pain point: Awkwardness + manual calculation. Solution: Build an app that auto-calculates, sends reminders, integrates with WhatsApp. In B.Com user research, spend a day with 5 users in their natural environment. Watch: How do they currently solve this problem? What friction stops them? Observation > interviews.'
+          explanation: 'Observation = reveals BEHAVIOR (what users actually do) vs interviews = INTENTIONS (what users say). In classroom (formal), students give polite answers: "We use app." In hostel (natural), observe reality: Use WhatsApp (messy, error-prone), manually calculate splits, forget to pay, feel awkward following up. Reveals REAL pain point: Awkwardness + manual calculation. Solution: Build app that auto-calculates, sends reminders, integrates with WhatsApp. Observation > interviews.'
         },
         {
           id: 5,
-          question: 'Student says: "I do not budget, I just wing it." Your first thought: "That is irresponsible." What should you do instead to practice empathy?',
+          question: 'Student says: "I do not budget, I just wing it." Your first thought: "That is irresponsible." What should do instead to practice empathy?',
           options: [
             'Judge them and tell them to be more responsible',
             'Suspend judgment and ask: "Tell me more. Why do you wing it?" Understand THEIR reality (budgeting feels like homework, no time, just check balance before weekend plans)',
@@ -273,7 +273,7 @@ Stop assuming. Start empathizing. Build products users actually want."
             'Ignore their opinion'
           ],
           correct: 1,
-          explanation: 'Suspend judgment - set aside YOUR values (budgeting is good!) to understand THEIR reality (budgeting is boring, I have exams/assignments/internships, no time for 10 minutes/day categorizing). Ask: "Why do you wing it?" They reveal: "I just check my balance before weekend plans. That is all I need." Insight: They do not lack discipline. They lack time and motivation. Your complex app (20 categories, 10 minutes/day) does not fit their reality. They need a simple app (3 categories, 30 seconds/day, "Can I afford weekend plans?" indicator). In B.Com empathy, curiosity > judgment. Understand users deeply, even when their behavior differs from your preferences. This understanding reveals: Build for THEIR reality, not YOUR ideals.'
+          explanation: 'Suspend judgment = set aside YOUR values (budgeting good!) to understand THEIR reality (budgeting boring, have exams/assignments/internships, no time for 10 minutes/day categorizing). Ask: "Why wing it?" They reveal: "Just check balance before weekend plans. That\'s all I need." Insight: Don\'t lack discipline. Lack time and motivation. Your complex app doesn\'t fit their reality. Need simple app (3 categories, 30 seconds/day, "Can I afford weekend plans?" indicator). Curiosity > judgment. Build for THEIR reality, not YOUR ideals.'
         }
       ]
     },
@@ -577,63 +577,63 @@ Creativity is not magic. It is a PROCESS. Ideation techniques = 10× more ideas.
       questions: [
         {
           id: 6,
-          question: 'Your team is brainstorming fundraising ideas for a college fest. Priya suggests: "Sell old textbooks." Rahul immediately says: "That will not work - students will not donate books." What mistake did Rahul make?',
+          question: 'Team brainstorming fundraising ideas for college fest. Priya suggests: "Sell old textbooks." Rahul immediately says: "That will not work - students will not donate books." What mistake did Rahul make?',
           options: [
             'Nothing - he is being realistic and saving time',
-            'He judged the idea during DIVERGENCE phase (generation). Ideation rule: Generate 50 ideas WITHOUT criticism for 60 minutes, THEN evaluate. Early judgment kills creativity.',
-            'He should have criticized the idea more harshly',
-            'He should have found one perfect idea instead'
+            'Judged idea during DIVERGENCE phase (generation). Ideation rule: Generate 50 ideas WITHOUT criticism for 60 minutes, THEN evaluate. Early judgment kills creativity.',
+            'Should have criticized idea more harshly',
+            'Should have found one perfect idea instead'
           ],
           correct: 1,
-          explanation: 'Rahul violated the cardinal rule of ideation: Defer judgment during divergence. Ideation has 2 phases: (1) DIVERGE (generate 50+ ideas without criticism for 60 minutes), (2) CONVERGE (evaluate and select top 10). Rahul judged during divergence ("That will not work"). Result: Priya stopped sharing ideas. Team generated only 1 idea (sponsorships). If Rahul had said "Interesting! What else?" (defer judgment), Priya would have shared 10+ more ideas (crowdfunding, food festival, workshops). Wild idea (sell textbooks) might spark viable idea (textbook rental platform). In B.Com brainstorming, separate generation from evaluation. Criticism during generation = creativity death. Generate 50, THEN evaluate.'
+          explanation: 'Violated ideation rule: Defer judgment during divergence. Ideation = 2 phases: (1) DIVERGE (generate 50+ ideas without criticism), (2) CONVERGE (evaluate, select top 10). Rahul judged during divergence ("Won\'t work"). Result: Priya stopped sharing. Team generated only 1 idea. If said "Interesting! What else?" Priya would share 10+ more ideas. Wild idea (sell textbooks) might spark viable idea (textbook rental platform). Separate generation from evaluation. Criticism during generation = creativity death. Generate 50, THEN evaluate.'
         },
         {
           id: 7,
-          question: 'During ideation for a business idea, someone suggests: "What if we create a dating app for B.Com students?" You think: "That is too wild and unconventional." What should you do?',
+          question: 'During ideation for business idea, someone suggests: "What if we create dating app for B.Com students?" You think: "That is too wild and unconventional." What should do?',
           options: [
             'Reject it immediately - stick to conventional business ideas',
-            'WELCOME the wild idea! Write it down. Wild ideas spark innovation. "Dating app" might spark "Networking app" or "Mentorship platform" (viable). Evaluate later, not now.',
-            'Criticize it to keep the team focused on realistic ideas',
+            'WELCOME wild idea! Write it down. Wild ideas spark innovation. "Dating app" might spark "Networking app" or "Mentorship platform" (viable). Evaluate later, not now.',
+            'Criticize it to keep team focused on realistic ideas',
             'Ignore it and move on to safer ideas'
           ],
           correct: 1,
-          explanation: 'Wild ideas are GOLD in ideation, not waste. Why? (1) Wild ideas spark innovation. "Dating app" (wild) → "Networking app for B.Com students" (interesting) → "Mentorship platform connecting students with alumni" (viable, scalable). (2) Wild ideas break mental barriers. Once you say "dating app," your brain thinks "Okay, we are thinking big. What else is possible?" (3) Some wild ideas are actually viable when refined. Airbnb was wild ("Rent strangers\' homes?"), now $100B company. In B.Com ideation, welcome ALL ideas during divergence (60 minutes). Write down "dating app." After 60 minutes, evaluate: Is this viable? Can we refine it? Wild → refined = innovation. Reject wild ideas = miss breakthrough opportunities.'
+          explanation: 'Wild ideas = GOLD in ideation. Why? (1) Spark innovation. "Dating app" → "Networking app" → "Mentorship platform connecting students with alumni" (viable, scalable). (2) Break mental barriers. Once say "dating app," brain thinks "We\'re thinking big. What else possible?" (3) Some wild ideas actually viable when refined. Airbnb was wild ("Rent strangers\' homes?"), now $100B company. Welcome ALL ideas during divergence. Wild → refined = innovation. Reject wild = miss breakthrough.'
         },
         {
           id: 8,
           question: 'Priya suggests: "Food stalls to raise money." Rahul responds: "Yes, BUT food stalls only raise ₹20K. We need ₹2L." What is wrong with "Yes, BUT"?',
           options: [
             'Nothing - Rahul is being realistic about revenue',
-            '"Yes, BUT" is criticism disguised as agreement. It KILLS the idea. Better: "Yes, AND what if we do a food FESTIVAL with ₹50 entry fee?" This BUILDS on the idea (₹20K → ₹1L).',
+            '"Yes, BUT" is criticism disguised as agreement. KILLS idea. Better: "Yes, AND what if we do food FESTIVAL with ₹50 entry fee?" BUILDS on idea (₹20K → ₹1L).',
             'Rahul should have said "No" directly',
-            '"Yes, BUT" is the best way to improve ideas'
+            '"Yes, BUT" is best way to improve ideas'
           ],
           correct: 1,
-          explanation: '"Yes, BUT" is criticism disguised as agreement. It kills ideas instead of building them. Rahul said "Yes, BUT" (criticism: food stalls are not enough). Result: Idea is killed. Better response: "Yes, AND what if we do a food FESTIVAL with ₹50 entry fee?" (Building: ₹50 × 2000 students = ₹1L revenue). Then: "Yes, AND what if we sell merchandise at the festival?" (Building: +₹50K). Then: "Yes, AND what if we live-stream it?" (Building: +₹50K virtual tickets). One idea (food stalls, ₹20K) → 4 ideas (food festival + entry + merchandise + live-stream = ₹2.2L) through "Yes, AND." In B.Com brainstorming, ban "Yes, BUT." Only allow "Yes, AND." This multiplies ideas instead of killing them.'
+          explanation: '"Yes, BUT" = criticism disguised as agreement. Kills ideas instead of building them. Rahul said "Yes, BUT" (criticism: food stalls not enough). Result: Idea killed. Better: "Yes, AND food FESTIVAL with ₹50 entry?" (Building: ₹50 × 2000 = ₹1L). Then: "Yes, AND sell merchandise?" (+₹50K). Then: "Yes, AND live-stream?" (+₹50K virtual tickets). One idea (₹20K) → 4 ideas (₹2.2L) through "Yes, AND." Ban "Yes, BUT." Only allow "Yes, AND." Multiplies ideas instead of killing.'
         },
         {
           id: 9,
-          question: 'Your team is stuck with 1 fundraising idea (sponsorships). You ask: "What are ALL possible ways to raise ₹2 lakhs?" (not "What is the ONE best way?"). What type of thinking is this?',
+          question: 'Team stuck with 1 fundraising idea (sponsorships). You ask: "What are ALL possible ways to raise ₹2 lakhs?" (not "What is ONE best way?"). What type of thinking?',
           options: [
             'Convergent thinking - narrowing to one answer',
-            'Divergent thinking - generating MANY diverse ideas (crowdfunding, workshops, food festival, hackathon, alumni donations, merchandise, job fair, etc.) before selecting the best',
+            'Divergent thinking - generating MANY diverse ideas (crowdfunding, workshops, food festival, hackathon, alumni donations, merchandise, job fair, etc.) before selecting best',
             'Linear thinking - following established rules',
             'Traditional thinking - using proven methods only'
           ],
           correct: 1,
-          explanation: 'Divergent thinking generates MANY diverse ideas by exploring broadly. "What are ALL possible ways?" (divergent) vs "What is the ONE best way?" (convergent). Divergent thinking: Crowdfunding, workshops, food festival, hackathon, alumni donations, merchandise, job fair, sell services, rent spaces, online fundraiser, sponsorship packages, talent show, Shark Tank competition, etc. (50+ ideas). Then convergent thinking: Evaluate 50 ideas, select top 10 based on feasibility/impact/effort. Divergent generates options. Convergent selects best option. You need BOTH, but divergent comes FIRST. In B.Com problem-solving, always diverge first (generate 50 ideas), then converge (select top 10). Skipping divergence = limited options.'
+          explanation: 'Divergent thinking = generates MANY diverse ideas by exploring broadly. "What are ALL possible ways?" (divergent) vs "What is ONE best way?" (convergent). Divergent: Crowdfunding, workshops, food festival, hackathon, alumni donations, merchandise, job fair, sell services, rent spaces, online fundraiser, sponsorship packages, talent show, Shark Tank competition (50+ ideas). Then convergent: Evaluate 50, select top 10. Divergent generates options. Convergent selects best. Need BOTH, but divergent comes FIRST. Always diverge first (generate 50), then converge (select 10). Skipping divergence = limited options.'
         },
         {
           id: 10,
-          question: 'Your team generated 50 fundraising ideas in 60 minutes. Your friend says: "That is too many ideas. It is confusing. We should have just found 1 good idea and executed it." What is wrong with this thinking?',
+          question: 'Team generated 50 fundraising ideas in 60 minutes. Friend says: "That is too many ideas. It is confusing. We should have just found 1 good idea and executed it." What is wrong with this thinking?',
           options: [
-            'Your friend is right - 50 ideas waste time',
-            'Quantity breeds quality. The BEST ideas (food festival ₹1L, hackathon ₹50K, workshops ₹2L) came from ideas 31-50 (wild ideas). If you stopped at idea 1 (sponsorships ₹30K), you would miss the gold.',
-            '50 ideas are unnecessary - 5 ideas are enough',
+            'Friend is right - 50 ideas waste time',
+            'Quantity breeds quality. BEST ideas (food festival ₹1L, hackathon ₹50K, workshops ₹2L) came from ideas 31-50 (wild ideas). If stopped at idea 1 (sponsorships ₹30K), would miss gold.',
+            '50 ideas unnecessary - 5 ideas enough',
             'Too many ideas confuse execution'
           ],
           correct: 1,
-          explanation: 'Quantity breeds quality in ideation. Why? (1) First 10 ideas are obvious (sponsorships, donations, bake sale) - everyone thinks of these. (2) Ideas 11-30 are interesting (food festival, workshops, hackathon). (3) Ideas 31-50 are wild (rent college spaces, sell exam notes, dating app) - some are GOLD when refined. Example: Idea 35: "Hackathon" (wild) → Refined: "₹500 entry, 100 participants = ₹50K + attracts tech sponsors (₹1L)." Total: ₹1.5L from one "wild" idea. If you stopped at idea 1 (sponsorships, ₹30K), you would miss this. In B.Com, push through 50 ideas. The best ideas come AFTER the obvious ones. Quantity → Quality.'
+          explanation: 'Quantity breeds quality in ideation. Why? (1) First 10 ideas = obvious (sponsorships, donations, bake sale). (2) Ideas 11-30 = interesting (food festival, workshops, hackathon). (3) Ideas 31-50 = wild (rent college spaces, sell exam notes, dating app) - some GOLD when refined. Example: Idea 35: "Hackathon" → Refined: "₹500 entry, 100 participants = ₹50K + attracts tech sponsors (₹1L)." Total: ₹1.5L from one "wild" idea. If stopped at idea 1 (₹30K), would miss this. Push through 50. Best ideas come AFTER obvious ones. Quantity → Quality.'
         }
       ]
     },
@@ -987,15 +987,15 @@ Stop building. Start prototyping. Test in 1 day, not 4 months."
       questions: [
         {
           id: 11,
-          question: 'You have an idea for a study planner app. Your friend says: "Spend 4 months coding it perfectly, then launch." You say: "No, I will create a paper prototype in 2 hours and test it first." What is the purpose of prototyping?',
+          question: 'Have idea for study planner app. Friend says: "Spend 4 months coding it perfectly, then launch." You say: "No, I will create paper prototype in 2 hours and test first." What is purpose of prototyping?',
           options: [
-            'Make a perfect product that impresses everyone',
+            'Make perfect product that impresses everyone',
             'Test ideas QUICKLY (2 hours, ₹0) and CHEAPLY (paper, not code) to learn what users want BEFORE investing months and lakhs in development',
             'Impress stakeholders with professional designs',
             'Waste time drawing instead of building'
           ],
           correct: 1,
-          explanation: 'Prototyping tests ideas quickly and cheaply BEFORE expensive development. Paper prototype: 2 hours, ₹0 investment. Test with 5 users. Learn: "Students want simple to-do list, not complex planner." Pivot immediately. Cost: 4 hours, ₹0. Without prototyping: Code for 4 months, ₹2 lakhs. Launch. Learn: "Too complicated." Cost: 4 months, ₹2L (cannot pivot, already invested). Prototyping = risk management. Test assumptions with cheap prototypes (paper, wireframes) before expensive development (code, design). Fail fast and cheap (Day 1, ₹0) instead of slow and expensive (Month 4, ₹2L). In B.Com entrepreneurship, prototype EVERY idea before building. Save time, money, and heartbreak.'
+          explanation: 'Prototyping = tests ideas quickly and cheaply BEFORE expensive development. Paper prototype: 2 hours, ₹0. Test with 5 users. Learn: "Students want simple to-do list, not complex planner." Pivot immediately. Cost: 4 hours, ₹0. Without prototyping: Code 4 months, ₹2L. Launch. Learn: "Too complicated." Cost: 4 months, ₹2L (can\'t pivot, already invested). Prototyping = risk management. Test with cheap prototypes (paper, wireframes) before expensive development (code, design). Fail fast and cheap (Day 1, ₹0) vs slow and expensive (Month 4, ₹2L). Prototype EVERY idea before building. Save time, money, heartbreak.'
         },
         {
           id: 12,
@@ -1007,7 +1007,7 @@ Stop building. Start prototyping. Test in 1 day, not 4 months."
             'Skip prototypes entirely and just build'
           ],
           correct: 1,
-          explanation: 'Start with LOW-fidelity prototypes (paper, hand-drawn, rough). Why? (1) Fast: 2 hours to create (vs 2 weeks for high-fidelity). (2) Cheap: ₹0 (vs ₹50K for polished design). (3) Tests concept: "Do users want a study planner?" (not "Is the design pretty?"). (4) Easy to change: Redraw a screen in 5 minutes (vs re-code in 2 days). (5) Focuses feedback: Users focus on concept, not colors. High-fidelity too early = wasted effort if concept is wrong. Progression: Paper (test concept) → Wireframe (test flow) → MVP (test product) → Full product (scale). Each step increases fidelity ONLY after validating previous step. In B.Com, start rough, refine based on feedback. Low-fidelity = fast learning.'
+          explanation: 'Start with LOW-fidelity (paper, hand-drawn, rough). Why? (1) Fast: 2 hours (vs 2 weeks for high-fidelity). (2) Cheap: ₹0 (vs ₹50K polished). (3) Tests concept: "Do users want study planner?" (not "Is design pretty?"). (4) Easy to change: Redraw screen in 5 minutes (vs re-code in 2 days). (5) Focuses feedback: Users focus on concept, not colors. Progression: Paper (test concept) → Wireframe (test flow) → MVP (test product) → Full product (scale). Each step increases fidelity ONLY after validating previous. Start rough, refine based on feedback. Low-fidelity = fast learning.'
         },
         {
           id: 13,
@@ -1019,7 +1019,7 @@ Stop building. Start prototyping. Test in 1 day, not 4 months."
             'Fail publicly to embarrass yourself'
           ],
           correct: 1,
-          explanation: 'Fail fast and cheap means: Learn from failures quickly (Day 1) and cheaply (₹0) so you can pivot immediately. Your paper prototype failed (students do not want study planner). Cost: 4 hours, ₹0. Learning: No market for this idea. Decision: Pivot to new idea (bill-splitting app, course finder). You failed on Day 1 (fast) with ₹0 investment (cheap). You can pivot immediately. Without prototyping: Code for 4 months, invest ₹2L, launch, discover "no market." You failed on Month 4 (slow) with ₹2L investment (expensive). Too late to pivot. Prototyping enables cheap failures (₹0) that lead to fast pivots. In B.Com entrepreneurship, fail fast and cheap on 10 ideas to find 1 winner. Better than failing slow and expensive on 1 idea.'
+          explanation: 'Fail fast and cheap = learn from failures quickly (Day 1) and cheaply (₹0) so can pivot immediately. Paper prototype failed (students don\'t want study planner). Cost: 4 hours, ₹0. Learning: No market. Decision: Pivot to new idea (bill-splitting app, course finder). Failed Day 1 (fast) with ₹0 (cheap). Can pivot immediately. Without prototyping: Code 4 months, invest ₹2L, launch, discover "no market." Failed Month 4 (slow) with ₹2L (expensive). Too late to pivot. Prototyping enables cheap failures (₹0) that lead to fast pivots. Fail fast and cheap on 10 ideas to find 1 winner. Better than failing slow and expensive on 1 idea.'
         },
         {
           id: 14,
@@ -1031,7 +1031,7 @@ Stop building. Start prototyping. Test in 1 day, not 4 months."
             'Wait until it is perfect, then test with users'
           ],
           correct: 1,
-          explanation: 'Test with REAL USERS (B.Com students) EARLY (Day 1) and OFTEN (every iteration). Why? (1) Real users tell you what they actually need ("simple to-do list, not complex planner"). (2) Early testing (Day 1) prevents building wrong thing (4 months wasted). (3) Often testing (every iteration) ensures you are on track. Testing with experts (designers, developers) tells you if execution is good, not if concept is right. Testing with yourself = confirmation bias. Testing with real users = reality check. In B.Com product development, test paper prototype with 5 users on Day 1 (4 hours after starting). Learn what they want BEFORE investing months in development. Early user feedback = product-market fit.'
+          explanation: 'Test with REAL USERS (B.Com students) EARLY (Day 1) and OFTEN (every iteration). Why? (1) Real users tell what they actually need ("simple to-do list, not complex planner"). (2) Early testing (Day 1) prevents building wrong thing (4 months wasted). (3) Often testing (every iteration) ensures on track. Testing with experts = tells if execution good, not if concept right. Testing with yourself = confirmation bias. Testing with real users = reality check. Test paper prototype with 5 users on Day 1 (4 hours after starting). Learn what they want BEFORE investing months. Early user feedback = product-market fit.'
         },
         {
           id: 15,
@@ -1043,7 +1043,7 @@ Stop building. Start prototyping. Test in 1 day, not 4 months."
             'Skip to high-fidelity immediately to save time'
           ],
           correct: 1,
-          explanation: 'Prototype fidelity progresses from LOW to HIGH as you validate and learn. Version 0.1 (paper, ₹0): Test concept. If it fails, pivot (₹0 loss). If it succeeds, proceed. Version 0.2 (wireframe, ₹0): Test flow. Refine. Version 0.3 (MVP, ₹20K): Test product with real users. If they love it, scale. Version 1.0 (full product, ₹50K): Polish and launch. Each stage increases fidelity (and cost) ONLY after validating previous stage. Why? Risk management. Do not invest ₹50K in high-fidelity until you validate concept (paper, ₹0). In B.Com, start with cheapest prototype (paper), progressively increase investment as you gain confidence. Low → High fidelity = smart risk management.'
+          explanation: 'Prototype fidelity = progresses from LOW to HIGH as you validate and learn. Version 0.1 (paper, ₹0): Test concept. If fails, pivot (₹0 loss). If succeeds, proceed. Version 0.2 (wireframe, ₹0): Test flow. Refine. Version 0.3 (MVP, ₹20K): Test product. If they love it, scale. Version 1.0 (full product, ₹50K): Polish and launch. Each stage increases fidelity (and cost) ONLY after validating previous. Why? Risk management. Don\'t invest ₹50K in high-fidelity until validate concept (paper, ₹0). Start with cheapest prototype (paper), progressively increase investment as gain confidence. Low → High fidelity = smart risk management.'
         }
       ]
     },
@@ -1362,15 +1362,15 @@ Stop assuming. Start testing. Build what users actually want."
       questions: [
         {
           id: 16,
-          question: 'You assume: "B.Com students need resume templates." You built 50 templates (2 months, ₹1L). Launch: 15% adoption. What was the purpose of user testing, and when should you have done it?',
+          question: 'Assume: "B.Com students need resume templates." Built 50 templates (2 months, ₹1L). Launch: 15% adoption. What was purpose of user testing, and when should have done it?',
           options: [
             'Testing confirms you are right - test after building to celebrate success',
             'Testing VALIDATES or INVALIDATES assumptions. Test BEFORE building (Day 1, offer templates to 20 students, measure adoption). If 15%, pivot immediately (save 2 months, ₹1L).',
             'Testing impresses users with your hard work',
-            'Testing wastes time - assumptions are usually correct'
+            'Testing wastes time - assumptions usually correct'
           ],
           correct: 1,
-          explanation: 'User testing validates or invalidates assumptions BEFORE you invest time and money. Your assumption: "Students need templates." Test BEFORE building: Offer 5 templates to 20 students (1 day, ₹0). Measure: 3/20 use them (15%). Hypothesis INVALIDATED. Pivot: Build resume review service instead (what 85% actually need). Cost: 1 day, ₹0. Without testing: Build templates (2 months, ₹1L), launch, discover 15% adoption. Cost: 2 months, ₹1L (too late to pivot). Testing on Day 1 saves you from expensive mistakes on Day 60. In B.Com entrepreneurship, test EVERY assumption before building. Assumptions = expensive. Testing = cheap insurance.'
+          explanation: 'User testing = validates or invalidates assumptions BEFORE invest time and money. Assumption: "Students need templates." Test BEFORE building: Offer 5 templates to 20 students (1 day, ₹0). Measure: 3/20 use them (15%). Hypothesis INVALIDATED. Pivot: Build resume review service (what 85% actually need). Cost: 1 day, ₹0. Without testing: Build templates (2 months, ₹1L), launch, discover 15% adoption. Cost: 2 months, ₹1L (too late to pivot). Testing Day 1 saves from expensive mistakes Day 60. Test EVERY assumption before building. Assumptions = expensive. Testing = cheap insurance.'
         },
         {
           id: 17,
@@ -1382,7 +1382,7 @@ Stop assuming. Start testing. Build what users actually want."
             'What they WANT - focus on aspirations'
           ],
           correct: 1,
-          explanation: 'Trust what users DO (behavior), not what they SAY (words). Users say "Yes, templates sound useful" (polite, socially acceptable answer). But you observe: They download template, stare at it for 5 minutes, get confused ("How do I customize this?"), give up, Google "resume review services." Behavior reveals: They do not know HOW to use templates. They need GUIDANCE (reviews), not TOOLS (templates). In user testing, always observe behavior: Watch their screen (what do they click?), watch their face (confusion? frustration?), watch their actions (complete task? give up?). Behavior reveals truth. Words reveal politeness. In B.Com product testing, design for what users DO, not what they SAY.'
+          explanation: 'Trust what users DO (behavior), not what they SAY (words). Users say "Yes, templates sound useful" (polite answer). But observe: Download template, stare 5 minutes, get confused ("How customize this?"), give up, Google "resume review services." Behavior reveals: Don\'t know HOW to use templates. Need GUIDANCE (reviews), not TOOLS (templates). Always observe behavior: Watch screen (what click?), watch face (confusion? frustration?), watch actions (complete task? give up?). Behavior = truth. Words = politeness. Design for what users DO, not what they SAY.'
         },
         {
           id: 18,
@@ -1394,7 +1394,7 @@ Stop assuming. Start testing. Build what users actually want."
             'Ignore negative feedback - they do not understand your vision'
           ],
           correct: 1,
-          explanation: 'Negative feedback is a VALUABLE LEARNING OPPORTUNITY, not failure. 15/20 students said "not useful" (75% rejection). This is GOLD. They told you: (1) What NOT to build (templates), (2) What TO build (reviews), (3) On Day 1 (when pivoting is cheap: ₹0), not Day 60 (when pivoting is expensive: ₹1L already invested). Response: "Thank you! This saves me from wasting 2 months and ₹1L. Tell me more: What would resume reviews look like?" Negative feedback = free consulting. Users tell you exactly what to build. Listen, pivot, succeed. In B.Com, embrace negative feedback early (Day 1) when pivoting is cheap. Avoid it = waste months building wrong thing.'
+          explanation: 'Negative feedback = VALUABLE LEARNING OPPORTUNITY, not failure. 15/20 said "not useful" (75% rejection). This is GOLD. They told you: (1) What NOT to build (templates), (2) What TO build (reviews), (3) On Day 1 (when pivoting cheap: ₹0), not Day 60 (when pivoting expensive: ₹1L already invested). Response: "Thank you! This saves me from wasting 2 months and ₹1L. Tell me more: What would resume reviews look like?" Negative feedback = free consulting. Users tell exactly what to build. Listen, pivot, succeed. Embrace negative feedback early (Day 1) when pivoting cheap. Avoid it = waste months building wrong thing.'
         },
         {
           id: 19,
@@ -1406,7 +1406,7 @@ Stop assuming. Start testing. Build what users actually want."
             'Hypotheses are final conclusions, not tests'
           ],
           correct: 1,
-          explanation: 'Clear hypothesis makes testing measurable and actionable. Hypothesis: "Students will use templates to create resumes." Test: Offer templates to 20 students. Measure: 3/20 used them (15%). Decision: Hypothesis INVALIDATED (15% is too low). Pivot. Without hypothesis, testing is vague: "Let me see if students like it." Result: Vague feedback ("It is okay, I guess"). No clear decision (should I build this? Pivot? Add features?). With hypothesis, testing is clear: 15% adoption = hypothesis failed, pivot to reviews. In B.Com, write 3-5 clear, testable hypotheses before testing. This focuses your testing and enables data-driven decisions (not gut feelings).'
+          explanation: 'Clear hypothesis = makes testing measurable and actionable. Hypothesis: "Students will use templates to create resumes." Test: Offer templates to 20 students. Measure: 3/20 used them (15%). Decision: Hypothesis INVALIDATED (15% too low). Pivot. Without hypothesis, testing vague: "Let me see if students like it." Result: Vague feedback ("It\'s okay, I guess"). No clear decision. With hypothesis, testing clear: 15% adoption = hypothesis failed, pivot to reviews. Write 3-5 clear, testable hypotheses before testing. Focuses testing, enables data-driven decisions (not gut feelings).'
         },
         {
           id: 20,
@@ -1418,7 +1418,7 @@ Stop assuming. Start testing. Build what users actually want."
             'Test with only experts (professors, career counselors)'
           ],
           correct: 1,
-          explanation: 'Test with REAL TARGET USERS in REAL CONTEXT. Target users: B.Com students actively job hunting (not your friends, not yourself, not random people). Real context: They are ACTUALLY creating resumes, preparing for interviews (not hypothetical: "Imagine you are job hunting"). Why? (1) They give honest feedback (friends are polite: "It is great!"). (2) They have the actual problem (job hunting), so their feedback is relevant. (3) They reveal real behavior (get confused by templates, need reviews). Testing with yourself = confirmation bias. Testing with friends = polite feedback. Testing with experts = academic feedback. Testing with real users = truth. In B.Com, always test with 20+ target users in real context. Their feedback = product-market fit.'
+          explanation: 'Test with REAL TARGET USERS in REAL CONTEXT. Target users: B.Com students actively job hunting (not friends, not yourself, not random people). Real context: ACTUALLY creating resumes, preparing for interviews (not hypothetical: "Imagine job hunting"). Why? (1) Give honest feedback (friends polite: "It\'s great!"). (2) Have actual problem (job hunting), so feedback relevant. (3) Reveal real behavior (get confused by templates, need reviews). Testing with yourself = confirmation bias. Testing with friends = polite feedback. Testing with experts = academic feedback. Testing with real users = truth. Always test with 20+ target users in real context. Their feedback = product-market fit.'
         }
       ]
     },
@@ -1745,7 +1745,7 @@ Stop waiting for perfect. Start shipping good enough. Iterate to great."
             'Iteration wastes time - better to wait for perfect'
           ],
           correct: 1,
-          explanation: 'Iteration is the path from good to great, not a sign of failure. Your competitor started at 5/10 (worse than your 6/10) but iterated 4 times based on user feedback. Each iteration improved: V1.1 added time estimates (7/10), V1.2 added grouping (8/10), V1.3 added priority (8.5/10), V1.4 added collaboration (9/10). They went from 5/10 to 9/10 in 3 months through iteration. You stayed at 6/10 because you thought "iteration = failure." Reality: Iteration = progress. Each version builds on learnings from previous version. In B.Com product development, embrace iteration. Ship V1.0 (good enough), gather feedback, iterate weekly. V1.0 → V1.10 in 10 weeks = 10 improvements. Waiting for perfect = 0 improvements.'
+          explanation: 'Iteration = path from good to great, not sign of failure. Competitor started 5/10 (worse than your 6/10) but iterated 4 times based on user feedback. Each iteration improved: V1.1 added time estimates (7/10), V1.2 added grouping (8/10), V1.3 added priority (8.5/10), V1.4 added collaboration (9/10). Went from 5/10 to 9/10 in 3 months through iteration. You stayed at 6/10 because thought "iteration = failure." Reality: Iteration = progress. Each version builds on learnings from previous. Embrace iteration. Ship V1.0 (good enough), gather feedback, iterate weekly. V1.0 → V1.10 in 10 weeks = 10 improvements. Waiting for perfect = 0 improvements.'
         },
         {
           id: 22,
@@ -1757,7 +1757,7 @@ Stop waiting for perfect. Start shipping good enough. Iterate to great."
             'Make V1.1 worse by removing features'
           ],
           correct: 1,
-          explanation: 'Each iteration BUILDS ON learnings from previous iteration, not starts from scratch. V1.0 has 4 features (add task, view list, check off, progress). Users love these (6/10 satisfaction). Users want time estimates. V1.1 = Keep 4 features + ADD time estimates (5th feature). Do not rebuild from scratch (waste time). Do not remove features (users love them). ADD based on feedback. Result: V1.1 (5 features) > V1.0 (4 features). Satisfaction: 6/10 → 7/10. Each iteration is incremental improvement, not complete overhaul. In B.Com, iteration means: Keep what works, add what is missing, remove what does not work. Build on learnings, not start over.'
+          explanation: 'Each iteration BUILDS ON learnings from previous, not starts from scratch. V1.0 has 4 features (add task, view list, check off, progress). Users love these (6/10 satisfaction). Users want time estimates. V1.1 = Keep 4 features + ADD time estimates (5th feature). Don\'t rebuild from scratch (waste time). Don\'t remove features (users love them). ADD based on feedback. Result: V1.1 (5 features) > V1.0 (4 features). Satisfaction: 6/10 → 7/10. Each iteration = incremental improvement, not complete overhaul. Iteration means: Keep what works, add what\'s missing, remove what doesn\'t work. Build on learnings, not start over.'
         },
         {
           id: 23,
@@ -1769,7 +1769,7 @@ Stop waiting for perfect. Start shipping good enough. Iterate to great."
             'Ship without any testing'
           ],
           correct: 1,
-          explanation: 'Ship "good enough to learn from users" (6/10), not "perfect" (10/10). Why? (1) You learn faster: Ship V1.0 at 6/10 in Month 1, get feedback ("want time estimates"), iterate. (2) You improve faster: V1.0 (6/10) → V1.1 (7/10) → V1.2 (8/10) → V1.3 (9/10) in 3 months. (3) Users guide you: They tell you what to build next. Waiting for perfect: Month 1-6 (building, trying to reach 10/10), Month 6 (launch at 8/10), competitor already at 9/10 (they shipped 6/10 in Month 1, iterated). Perfectionism delays learning. In B.Com, ship at 6-7/10 (good enough), iterate weekly based on feedback. Reach 9/10 in 3 months (vs waiting 6 months for 8/10). Good enough + iteration > perfect + waiting.'
+          explanation: 'Ship "good enough to learn from users" (6/10), not "perfect" (10/10). Why? (1) Learn faster: Ship V1.0 at 6/10 in Month 1, get feedback ("want time estimates"), iterate. (2) Improve faster: V1.0 (6/10) → V1.1 (7/10) → V1.2 (8/10) → V1.3 (9/10) in 3 months. (3) Users guide you: Tell what to build next. Waiting for perfect: Month 1-6 (building, trying reach 10/10), Month 6 (launch at 8/10), competitor already 9/10 (shipped 6/10 in Month 1, iterated). Perfectionism delays learning. Ship at 6-7/10 (good enough), iterate weekly. Reach 9/10 in 3 months (vs waiting 6 months for 8/10). Good enough + iteration > perfect + waiting.'
         },
         {
           id: 24,
@@ -1781,7 +1781,7 @@ Stop waiting for perfect. Start shipping good enough. Iterate to great."
             'You should never finish - keep iterating forever without shipping'
           ],
           correct: 1,
-          explanation: 'Iteration mindset = learn and improve continuously (weekly small releases), not get it right first time (quarterly big releases). You plan V2.0 with 10 features in 3 months. Problem: (1) Slow learning (you learn once every 3 months). (2) High risk (what if 8/10 features are not important? You wasted 3 months). (3) Scattered focus (10 features at once = none are excellent). Better: V1.1 with 1 feature (time estimates) next week. Measure: Did satisfaction improve? (6/10 → 7/10? Yes!). Learn: Time estimates are high-impact. V1.2 with 1 feature (grouping) week after. Iterate weekly. Result: 12 iterations in 3 months (vs 1 big release). You learn 12×, improve 12×. In B.Com, continuous small iterations > infrequent big releases. Weekly learning > quarterly learning.'
+          explanation: 'Iteration mindset = learn and improve continuously (weekly small releases), not get it right first time (quarterly big releases). Plan V2.0 with 10 features in 3 months. Problem: (1) Slow learning (learn once every 3 months). (2) High risk (what if 8/10 features not important? Wasted 3 months). (3) Scattered focus (10 features at once = none excellent). Better: V1.1 with 1 feature (time estimates) next week. Measure: Satisfaction improve? (6/10 → 7/10? Yes!). Learn: Time estimates high-impact. V1.2 with 1 feature (grouping) week after. Iterate weekly. Result: 12 iterations in 3 months (vs 1 big release). Learn 12×, improve 12×. Continuous small iterations > infrequent big releases. Weekly learning > quarterly learning.'
         },
         {
           id: 25,
@@ -1793,7 +1793,7 @@ Stop waiting for perfect. Start shipping good enough. Iterate to great."
             'Too slow - skip measuring and learning, just build'
           ],
           correct: 1,
-          explanation: 'Build-Measure-Learn cycle repeats CONTINUOUSLY, not once. Why? (1) User needs evolve: V1.0 users want time estimates. V1.1 users want grouping. V1.2 users want priority. V1.3 users want collaboration. Needs change as product matures. (2) Competition evolves: Competitor adds new features. You must iterate to stay ahead. (3) You learn: Each cycle teaches you what users value. 10 cycles = 10 lessons. Stop iterating = stop learning = stagnate. Competitor iterates 24 times/year (weekly). You iterate 2 times/year (6-month releases). They learn 12× faster, improve 12× faster, grow 12× faster. In B.Com, make Build-Measure-Learn your default process. After every release, measure, learn, build next iteration. Never stop. Continuous iteration = continuous improvement = market leadership.'
+          explanation: 'Build-Measure-Learn cycle = repeats CONTINUOUSLY, not once. Why? (1) User needs evolve: V1.0 users want time estimates. V1.1 users want grouping. V1.2 users want priority. V1.3 users want collaboration. Needs change as product matures. (2) Competition evolves: Competitor adds new features. Must iterate to stay ahead. (3) You learn: Each cycle teaches what users value. 10 cycles = 10 lessons. Stop iterating = stop learning = stagnate. Competitor iterates 24 times/year (weekly). You iterate 2 times/year (6-month releases). They learn 12× faster, improve 12× faster, grow 12× faster. Make Build-Measure-Learn default process. After every release, measure, learn, build next iteration. Never stop. Continuous iteration = continuous improvement = market leadership.'
         }
       ]
     },
@@ -2113,63 +2113,63 @@ Stop building for technology. Start building for users."
       questions: [
         {
           id: 26,
-          question: 'You want to build a financial app for B.Com students. Which approach is user-centered design?',
+          question: 'Want to build financial app for B.Com students. Which approach is user-centered design?',
           options: [
-            'Start with technology: "I want to use AI and ML. What problem can I apply it to? Financial planning!" Build AI app with portfolio optimization, tax planning, retirement calculator.',
-            'Start with users: Interview 20 students. "What financial problems do you have?" Answer: "Bill splitting, overspending tracking." Build simple bill splitter and budget tracker (no AI needed).',
-            'Designer decides everything based on their expertise',
-            'Ignore users and build what is technically impressive'
+            'Start with technology (AI/ML), find problem to fit it',
+            'Start with users: Interview students, discover problems (bill splitting, overspending), build solutions',
+            'Designer decides everything based on expertise',
+            'Ignore users, build what is technically impressive'
           ],
           correct: 1,
-          explanation: 'User-centered design starts with USERS (what problems do they have?), THEN finds technology to solve those problems. You interviewed 20 students and discovered their real problems: bill splitting (not portfolio optimization), overspending tracking (not tax planning). You build features that solve THEIR problems (bill splitter, budget tracker), not features YOU think are cool (AI, ML). Technology-first approach (start with AI, find problem to fit) leads to impressive but useless products (10 downloads, 1 user). User-first approach (start with user problems, find technology to solve) leads to simple but useful products (5 million users like SplitWise). In B.Com product development, always start with user research. Interview 20-50 users. Ask: "What problems do you have?" NOT: "Would you use my AI app?" Build solutions for THEIR problems, not showcases for YOUR technology.'
+          explanation: 'User-centered design = starts with USERS (what problems?), THEN finds technology to solve. Interviewed 20 students, discovered real problems: bill splitting (not portfolio optimization), overspending tracking (not tax planning). Build features that solve THEIR problems (bill splitter, budget tracker), not features YOU think cool (AI, ML). Technology-first (start with AI, find problem to fit) = impressive but useless (10 downloads, 1 user). User-first (start with user problems, find technology) = simple but useful (5 million users like SplitWise). Always start with user research. Interview 20-50 users. Ask: "What problems?" NOT: "Would you use my AI app?" Build solutions for THEIR problems, not showcases for YOUR technology.'
         },
         {
           id: 27,
           question: 'You are building a study planner app. When should you involve users?',
           options: [
-            'Only at the end after launch to get feedback',
-            'Throughout entire process: Week 1 (interview users), Week 3 (show prototype), Week 4 (test MVP), Week 5-52 (gather feedback, iterate weekly). Users involved from start to finish.',
-            'Never - you are the expert, you know what users need',
-            'Once at start to get initial ideas, then build in isolation'
+            'Only at end after launch to get feedback',
+            'Throughout entire process: Interview, prototype, test MVP, iterate weekly. Users involved from start to finish.',
+            'Never - you are expert, you know what users need',
+            'Once at start to get ideas, then build in isolation'
           ],
           correct: 1,
-          explanation: 'User-centered design involves users THROUGHOUT the entire process, not just at launch. Week 1: Interview 20 users ("What study problems do you have?" Answer: "Forgetting deadlines, procrastination"). Week 2: Brainstorm solutions WITH users ("Would deadline reminders help?" Yes!). Week 3: Show paper prototype to 10 users, refine based on feedback. Week 4: Build MVP, test with 30 users. Week 5-52: Launch, gather feedback, iterate weekly. Users are involved from Week 1 to Week 52. Why? (1) Early involvement prevents building wrong product (if you had interviewed users in Week 1, you would not have built portfolio optimization for broke students). (2) Continuous involvement enables iteration (users tell you what to improve each week). In B.Com, make user involvement continuous. Do not build for 3 months in isolation, then launch. Build for 1 week, test with users, iterate. Repeat 12 times in 3 months. 12 cycles of user feedback > 0 cycles.'
+          explanation: 'User-centered design = involves users THROUGHOUT entire process, not just at launch. Week 1: Interview 20 users ("What study problems?" Answer: "Forgetting deadlines, procrastination"). Week 2: Brainstorm solutions WITH users ("Would deadline reminders help?" Yes!). Week 3: Show paper prototype to 10 users, refine. Week 4: Build MVP, test with 30 users. Week 5-52: Launch, gather feedback, iterate weekly. Users involved from Week 1 to Week 52. Why? (1) Early involvement prevents building wrong product. (2) Continuous involvement enables iteration (users tell what to improve each week). Make user involvement continuous. Don\'t build 3 months in isolation, then launch. Build 1 week, test with users, iterate. Repeat 12 times in 3 months. 12 cycles of user feedback > 0 cycles.'
         },
         {
           id: 28,
           question: 'Your AI financial app requires high-speed internet, latest phone, and financial knowledge. Only 10% of students can use it. What does accessibility mean in user-centered design?',
           options: [
-            'Accessibility is only for people with disabilities - not relevant here',
-            'Design usable by EVERYONE: Works on 2G internet (not just 5G), works on 3-year-old phones (not just latest), uses simple language (not jargon). Result: 90% of students can use it = 9× larger market.',
-            'Accessibility is an extra feature you add later if you have time',
-            'Accessibility is optional - focus on core features first'
+            'Accessibility only for people with disabilities - not relevant here',
+            'Design usable by EVERYONE: Works on 2G internet, 3-year-old phones, simple language. Result: 90% can use it = 9× larger market.',
+            'Accessibility is extra feature you add later if time',
+            'Accessibility optional - focus on core features first'
           ],
           correct: 1,
-          explanation: 'Accessibility means designing for EVERYONE, not just able-bodied, wealthy, urban, English-speaking users. Your AI app is accessible to only 10% of students (requires high-speed internet = urban bias, latest phone = wealth bias, financial knowledge = education bias, English-only = language bias). Accessible design: (1) Works on 2G internet (rural students can use), (2) Works on 3-year-old phones (low-income students can use), (3) Simple language, no jargon (all education levels can use), (4) Supports Hindi, Tamil, Telugu (all language speakers can use). Result: 90% of students can use it. Accessibility is NOT "nice to have." It is BUSINESS STRATEGY. 10% market (your app) vs 90% market (accessible app) = 9× larger market. SplitWise has 5 million users because they designed for accessibility. Your AI app has 1 user because you designed for 10%. In B.Com, accessibility = inclusivity = larger market = more revenue. Design for diverse users (all income levels, internet speeds, languages, abilities) from Day 1.'
+          explanation: 'Accessibility = designing for EVERYONE, not just able-bodied, wealthy, urban, English-speaking users. Your AI app accessible to only 10% (requires high-speed internet = urban bias, latest phone = wealth bias, financial knowledge = education bias, English-only = language bias). Accessible design: (1) Works on 2G internet (rural students), (2) Works on 3-year-old phones (low-income students), (3) Simple language, no jargon (all education levels), (4) Supports Hindi, Tamil, Telugu (all language speakers). Result: 90% can use it. Accessibility NOT "nice to have." It\'s BUSINESS STRATEGY. 10% market (your app) vs 90% market (accessible app) = 9× larger market. SplitWise has 5M users because designed for accessibility. Your AI app has 1 user because designed for 10%. Accessibility = inclusivity = larger market = more revenue. Design for diverse users from Day 1.'
         },
         {
           id: 29,
           question: 'You tested your financial app with 10 urban, English-speaking, tech-savvy B.Com students. All loved it! You launch. Rural students complain: "Requires too much internet data." Hindi-speaking students complain: "English-only, cannot understand." Why should you test with diverse users?',
           options: [
-            'Testing with diverse users wastes time - one type of user is enough',
-            'Test with diverse users to avoid bias and ensure inclusivity: Urban + rural (different internet), English + Hindi speakers (language accessibility), tech-savvy + non-tech-savvy (different comfort levels). Diverse testing reveals hidden biases.',
-            'Testing with diverse users complicates the product',
-            'Testing with diverse users delays launch - better to launch fast'
+            'Testing with diverse users wastes time - one type enough',
+            'Test with diverse users to avoid bias: Urban + rural, English + Hindi speakers, tech-savvy + non-tech-savvy. Reveals hidden biases.',
+            'Testing with diverse users complicates product',
+            'Testing with diverse users delays launch - better launch fast'
           ],
           correct: 1,
-          explanation: 'Testing with only ONE type of user (urban, English-speaking, tech-savvy) creates BIAS. Your app works for them (high-speed internet, understand English, comfortable with tech). But it FAILS for others (rural = slow internet, Hindi speakers = cannot understand, non-tech-savvy = confused by interface). You did not discover these issues because you did not test with diverse users. Diverse testing reveals: (1) Urban bias (your app requires high-speed internet, rural students have 2G), (2) Language bias (English-only, 60% of students prefer Hindi/regional languages), (3) Tech bias (assumes tech comfort, many students struggle with complex interfaces), (4) Wealth bias (assumes latest phone, many have 3-year-old phones). Test with diverse users: Urban + rural, English + Hindi + regional languages, tech-savvy + non-tech-savvy, high-income + low-income. Result: You design inclusive product that works for 90% of students, not just 10%. In B.Com, diverse testing = larger market. SplitWise tested with diverse users, discovered need for multi-language support, added 10 languages, reached 5 million users. Test diverse, design inclusive, win big.'
+          explanation: 'Testing with only ONE type of user (urban, English-speaking, tech-savvy) = creates BIAS. App works for them (high-speed internet, understand English, comfortable with tech). But FAILS for others (rural = slow internet, Hindi speakers = can\'t understand, non-tech-savvy = confused). Didn\'t discover these issues because didn\'t test with diverse users. Diverse testing reveals: (1) Urban bias (requires high-speed internet, rural have 2G), (2) Language bias (English-only, 60% prefer Hindi/regional), (3) Tech bias (assumes tech comfort, many struggle), (4) Wealth bias (assumes latest phone, many have 3-year-old). Test with diverse users: Urban + rural, English + Hindi + regional, tech-savvy + non-tech-savvy, high-income + low-income. Result: Design inclusive product that works for 90%, not just 10%. Diverse testing = larger market. Test diverse, design inclusive, win big.'
         },
         {
           id: 30,
           question: 'Your AI financial app has 95% AI accuracy, 50ms latency, O(log n) efficiency. You are proud! But only 1 user. What is the success metric in user-centered design?',
           options: [
-            'Technical performance: AI accuracy, latency, algorithm efficiency - these prove the app is excellent',
-            'User satisfaction and outcomes: Does it help users achieve their goal? (Afford weekend plans?) Satisfaction 8/10? Task completion 95%? Retention 80%? These metrics prove the app is useful.',
+            'Technical performance: AI accuracy, latency, algorithm efficiency',
+            'User satisfaction and outcomes: Help users achieve goal? Satisfaction 8/10? Task completion 95%? Retention 80%? These prove app useful.',
             'Budget: Did you build it under budget?',
             'Speed: Did you launch fast?'
           ],
           correct: 1,
-          explanation: 'User-centered design measures USER METRICS (satisfaction, task completion, retention), NOT tech metrics (AI accuracy, latency, efficiency). Your AI is 95% accurate. Impressive! But users do not care. They care: Does this help me afford weekend plans? (No, it shows portfolio optimization.) Then it is useless. Tech metrics matter to DEVELOPERS (you are proud of 95% accuracy). User metrics matter to USERS (they want to achieve their goal: afford plans). SplitWise has basic tech (simple calculator, no AI, no ML). But user metrics: Satisfaction 8.5/10, task completion 95% (users successfully split bills), time to value 30 seconds (instant value), retention 80% (users come back weekly). They optimize for user metrics. You optimize for tech metrics. They have 5 million users. You have 1 user. In B.Com product development, measure what matters to USERS: (1) Satisfaction (rate 1-10), (2) Task completion (did they achieve goal?), (3) Time to value (how long to get value?), (4) Retention (do they come back?), (5) NPS (would they recommend?). Optimize for these, not for AI accuracy. Users do not care about your algorithms. They care about solving their problems.'
+          explanation: 'User-centered design = measures USER METRICS (satisfaction, task completion, retention), NOT tech metrics (AI accuracy, latency, efficiency). Your AI is 95% accurate. Impressive! But users don\'t care. They care: Does this help me afford weekend plans? (No, shows portfolio optimization.) Then useless. Tech metrics matter to DEVELOPERS (proud of 95% accuracy). User metrics matter to USERS (want to achieve goal: afford plans). SplitWise has basic tech (simple calculator, no AI, no ML). But user metrics: Satisfaction 8.5/10, task completion 95%, time to value 30 seconds, retention 80%. They optimize for user metrics. You optimize for tech metrics. They have 5M users. You have 1 user. Measure what matters to USERS: (1) Satisfaction (rate 1-10), (2) Task completion (achieve goal?), (3) Time to value (how long get value?), (4) Retention (come back?), (5) NPS (recommend?). Optimize for these, not AI accuracy. Users don\'t care about algorithms. They care about solving problems.'
         }
       ]
     },

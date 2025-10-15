@@ -237,63 +237,63 @@ Drop a comment telling me which strategy you will try first - I reply to everyon
       questions: [
         {
           id: 1,
-          question: 'You spend 8 hours re-reading your Financial Accounting notes but still blank out in exams. What is the core problem?',
+          question: '8 hours re-reading Financial Accounting notes, still blank in exams. Core problem?',
           options: [
-            'You need to study even more hours',
-            'You are using passive learning instead of active recall',
-            'The textbook is too difficult',
-            'You need better highlighters'
+            'Need more study hours',
+            'Using passive learning, not active recall',
+            'Textbook too difficult',
+            'Need better highlighters'
           ],
           correct: 1,
-          explanation: 'Re-reading creates a fluency illusion where your brain recognizes information but cannot retrieve it under exam pressure. Active recall (testing yourself without looking) forces your brain to practice retrieval, which is exactly what exams test. Harvard research shows active recall improves retention by 50% compared to passive re-reading.'
+          explanation: 'Re-reading = fluency illusion - brain recognizes info but can\'t retrieve under exam pressure. Active recall (testing yourself without looking) = forces brain to practice retrieval, exactly what exams test. Harvard research: active recall improves retention 50% vs passive re-reading.'
         },
         {
           id: 2,
-          question: 'Your friend explains Break-Even Analysis using a momo stall example instead of just the formula. What technique is this?',
+          question: 'Friend explains Break-Even Analysis using momo stall example, not just formula. What technique?',
           options: [
             'Memorization technique',
-            'Feynman Technique - explaining concepts simply',
+            'Feynman Technique - explain simply',
             'Note-taking shortcut',
             'Exam trick'
           ],
           correct: 1,
-          explanation: 'The Feynman Technique involves explaining concepts as if teaching a beginner, using real-world examples instead of jargon. If you cannot explain it simply, you do not truly understand it - this reveals knowledge gaps before the exam does. Named after Nobel laureate Richard Feynman, it transforms surface-level memorization into deep understanding.'
+          explanation: 'Feynman Technique = explain concepts as if teaching beginner, using real-world examples instead of jargon. If you can\'t explain it simply, you don\'t truly understand it - reveals knowledge gaps before exam does. Named after Nobel laureate Richard Feynman, transforms surface-level memorization into deep understanding.'
         },
         {
           id: 3,
-          question: 'You studied Cost Accounting formulas for 10 hours straight last night. By exam day (3 days later), you have forgotten 80%. What should you have done instead?',
+          question: 'Studied Cost Accounting formulas 10 hours straight last night. Exam day (3 days later), forgot 80%. What instead?',
           options: [
-            'Study for 15 hours instead',
-            'Use spaced repetition - review at increasing intervals (Day 1, 2, 4, 7, 14)',
-            'Highlight the formulas in different colors',
+            'Study 15 hours instead',
+            'Use spaced repetition - review at intervals (Day 1, 2, 4, 7, 14)',
+            'Highlight formulas in different colors',
             'Make longer notes'
           ],
           correct: 1,
-          explanation: 'The Ebbinghaus Forgetting Curve shows we forget 80% of crammed information within 48 hours. Spaced repetition combats this by reviewing material at strategic intervals (Day 1, 2, 4, 7, 14), strengthening memory pathways each time. Each review takes LESS time but knowledge retention becomes permanent, making it far more efficient than cramming.'
+          explanation: 'Ebbinghaus Forgetting Curve = we forget 80% of crammed info within 48 hours. Spaced repetition combats this by reviewing material at strategic intervals (Day 1, 2, 4, 7, 14), strengthening memory pathways each time. Each review takes LESS time but knowledge retention becomes permanent, making it far more efficient than cramming.'
         },
         {
           id: 4,
-          question: 'After 2 hours of "studying" with your phone nearby, you realize you barely remember anything. What is the fix?',
+          question: '2 hours "studying" with phone nearby, barely remember anything. What\'s the fix?',
           options: [
-            'Study for longer hours',
-            'Use Pomodoro: 25 min deep focus + 5 min active break, repeat',
+            'Study longer hours',
+            'Use Pomodoro: 25 min focus + 5 min break',
             'Drink more coffee',
             'Study at night instead'
           ],
           correct: 1,
-          explanation: 'Your brain cannot sustain deep focus for hours - attention naturally wavers. The Pomodoro Technique works with your biology: 25 minutes of phone-free deep focus, then a 5-minute active break (walk/stretch, NOT scrolling). After 4 cycles, take a longer break. This delivers 100 minutes of quality focus in 2 hours versus 8 hours of distracted pseudo-studying.'
+          explanation: 'Brain cannot sustain deep focus for hours - attention naturally wavers. Pomodoro Technique works with your biology: 25 minutes phone-free deep focus, then 5-minute active break (walk/stretch, NOT scrolling). After 4 cycles, longer break. Delivers 100 minutes quality focus in 2 hours vs 8 hours distracted pseudo-studying.'
         },
         {
           id: 5,
-          question: 'You have 7 chapters to study but only 3 days left. Past papers show 3 chapters give 70% of marks. What should you do?',
+          question: '7 chapters to study, only 3 days left. Past papers show 3 chapters give 70% marks. What to do?',
           options: [
-            'Study all chapters equally to be safe',
-            'Apply 80/20 rule - master the 3 high-value chapters first',
-            'Skip studying and hope for the best',
-            'Just read summaries of all chapters'
+            'Study all chapters equally',
+            'Apply 80/20 rule - master 3 high-value chapters first',
+            'Skip studying, hope for best',
+            'Just read summaries of all'
           ],
           correct: 1,
-          explanation: 'The Pareto Principle (80/20 rule) states that 20% of topics typically yield 80% of marks. Identify these by analyzing past 5 years of question papers - patterns always emerge. Master high-priority topics first to secure most marks, then tackle the rest if time permits. This strategic approach beats equal time distribution, especially under time constraints.'
+          explanation: 'Pareto Principle (80/20 rule) = 20% of topics typically yield 80% of marks. Identify these by analyzing past 5 years question papers - patterns always emerge. Master high-priority topics first to secure most marks, then tackle rest if time permits. Strategic approach beats equal time distribution, especially under time constraints.'
         }
       ]
     },
@@ -559,63 +559,63 @@ Drop a comment - which technique will you try first? Let us turn that sieve brai
       questions: [
         {
           id: 6,
-          question: 'You need to memorize 50 sections of the Companies Act. You try repeating "Section 2 definitions, Section 3 formation" 100 times but forget by next day. What is the best memory technique?',
+          question: 'Need to memorize 50 Companies Act sections. Repeat 100 times but forget next day. Best technique?',
           options: [
             'Repeat 200 times instead',
-            'Use Memory Palace - place each section at locations in your house',
-            'Highlight the sections in different colors',
-            'Just read the textbook again'
+            'Use Memory Palace - place sections at house locations',
+            'Highlight sections in different colors',
+            'Just read textbook again'
           ],
           correct: 1,
-          explanation: 'The Memory Palace (Method of Loci) leverages your brain spatial memory superpower - you never forget where rooms in your house are. By placing each section at familiar locations (gate=Section 2, living room=Section 3), you create a mental map that is almost impossible to forget. This technique is used by memory champions worldwide.'
+          explanation: 'Memory Palace (Method of Loci) = leverages brain\'s spatial memory superpower - you never forget where rooms in your house are. By placing each section at familiar locations (gate=Section 2, living room=Section 3), create mental map almost impossible to forget. Technique used by memory champions worldwide.'
         },
         {
           id: 7,
-          question: 'Your mnemonic for liquidity ratios is "Can Quails Cry?" (Current, Quick, Cash Ratio). Why does this silly phrase work better than just memorizing the list?',
+          question: 'Mnemonic for liquidity ratios: "Can Quails Cry?" (Current, Quick, Cash). Why better than memorizing list?',
           options: [
-            'It is easier to spell',
-            'Your brain remembers patterns and stories far better than random lists',
-            'It takes less time to write',
-            'It sounds professional'
+            'Easier to spell',
+            'Brain remembers patterns and stories better than random lists',
+            'Takes less time to write',
+            'Sounds professional'
           ],
           correct: 1,
-          explanation: 'Your brain evolved to remember stories, not lists. "Can Quails Cry?" creates a narrative pattern that engages multiple memory pathways (auditory, emotional, visual). Random lists like "Current Ratio Quick Ratio Cash Ratio" have no pattern, so your brain treats each as separate facts. Mnemonics hijack your story-memory system for boring lists.'
+          explanation: 'Brain evolved to remember stories, not lists. "Can Quails Cry?" creates narrative pattern engaging multiple memory pathways (auditory, emotional, visual). Random lists like "Current Ratio Quick Ratio Cash Ratio" have no pattern, so brain treats each as separate facts. Mnemonics hijack story-memory system for boring lists.'
         },
         {
           id: 8,
-          question: 'You are trying to memorize financial ratio formulas. Instead of 50 separate facts, you group them as "All Liquidity Ratios divide by Current Liabilities". What technique is this?',
+          question: 'Memorizing financial ratio formulas. Instead of 50 separate facts, group as "All Liquidity Ratios divide by Current Liabilities." What technique?',
           options: [
-            'Chunking - grouping by pattern to reduce cognitive load',
+            'Chunking - group by pattern to reduce cognitive load',
             'Highlighting',
             'Speed reading',
             'Repetition'
           ],
           correct: 0,
-          explanation: 'Chunking reduces cognitive load by finding patterns. Your brain can hold 7±2 items in short-term memory - that is why phone numbers are chunked (9876-543-210 not 9876543210). By recognizing that ALL liquidity ratios use "Current Liabilities" as denominator, you remember ONE pattern instead of THREE separate formulas. This is how experts think!'
+          explanation: 'Chunking = reduces cognitive load by finding patterns. Brain can hold 7±2 items in short-term memory - that\'s why phone numbers chunked (9876-543-210 not 9876543210). By recognizing ALL liquidity ratios use "Current Liabilities" as denominator, remember ONE pattern instead of THREE separate formulas. This is how experts think!'
         },
         {
           id: 9,
-          question: 'You made flashcards for accounting steps. Instead of just re-reading them daily, you cover the answer and try to recall from memory. What is this technique called and why does it work?',
+          question: 'Made flashcards for accounting steps. Instead of re-reading daily, cover answer and recall from memory. What technique?',
           options: [
             'Passive review - saves time',
-            'Active Recall - strengthens retrieval pathways by forcing your brain to work',
-            'Highlighting - makes important points stand out',
+            'Active Recall - strengthens retrieval pathways',
+            'Highlighting - makes points stand out',
             'Summary writing - condenses information'
           ],
           correct: 1,
-          explanation: 'Active Recall is THE most powerful study technique (proven by 100+ studies). When you RETRIEVE information from memory (vs just recognizing it while re-reading), you strengthen the neural pathways. Exams test RETRIEVAL, not recognition. Practice what you will perform! Re-reading feels easier but creates fluency illusion - you think you know it, but exam day proves otherwise.'
+          explanation: 'Active Recall = THE most powerful study technique (proven by 100+ studies). When you RETRIEVE information from memory (vs just recognizing while re-reading), strengthen neural pathways. Exams test RETRIEVAL, not recognition. Practice what you will perform! Re-reading feels easier but creates fluency illusion - think you know it, exam day proves otherwise.'
         },
         {
           id: 10,
-          question: 'You learned Corporate Law Section 2 today. According to spaced repetition science, when should you review it again for maximum retention?',
+          question: 'Learned Corporate Law Section 2 today. According to spaced repetition science, when to review for maximum retention?',
           options: [
             'Tomorrow, then Day 4, then Day 7, then Day 14',
             'Every day for 30 days straight',
-            'Never - you already know it',
-            'Only the night before the exam'
+            'Never - already know it',
+            'Only night before exam'
           ],
           correct: 0,
-          explanation: 'The Ebbinghaus Forgetting Curve shows you forget 50% within 24 hours. Spaced Repetition fights this by reviewing at STRATEGIC intervals (Day 1, 2, 4, 7, 14). Each review BEFORE you forget strengthens the memory pathway. Daily review is overkill (wastes time). Cramming the night before only gets info into short-term memory. Spaced repetition = permanent memory with minimal time investment.'
+          explanation: 'Ebbinghaus Forgetting Curve = forget 50% within 24 hours. Spaced Repetition fights this by reviewing at STRATEGIC intervals (Day 1, 2, 4, 7, 14). Each review BEFORE you forget strengthens memory pathway. Daily review = overkill (wastes time). Cramming night before = only gets info into short-term memory. Spaced repetition = permanent memory with minimal time investment.'
         }
       ]
     },
@@ -890,63 +890,63 @@ Drop a comment - what is your biggest info processing struggle? I will reply to 
       questions: [
         {
           id: 11,
-          question: 'You have 10 research papers for your GST assignment. You start reading Paper 1 word-by-word from page 1. After 2 hours, you realize 80% is irrelevant. What should you have done?',
+          question: '10 research papers for GST assignment. Read Paper 1 word-by-word from page 1. After 2 hours, 80% irrelevant. What should have done?',
           options: [
             'Read even more carefully',
-            'Use SQ3R - Survey first (skim abstract/headings) to check relevance BEFORE deep reading',
+            'Use SQ3R - Survey first (skim abstract/headings) before deep reading',
             'Just use Wikipedia instead',
-            'Copy the introduction and hope for the best'
+            'Copy introduction and hope for best'
           ],
           correct: 1,
-          explanation: 'SQ3R (Survey, Question, Read, Recite, Review) saves massive time by having you SURVEY (skim) first to determine if a source is even relevant to your research question. Most students waste hours reading irrelevant papers cover-to-cover. Survey 10 sources in 20 minutes, keep only 5 relevant ones, THEN deep-read those. This is how researchers actually work.'
+          explanation: 'SQ3R (Survey, Question, Read, Recite, Review) saves massive time by SURVEY (skim) first to check if source relevant to research question. Most students waste hours reading irrelevant papers cover-to-cover. Survey 10 sources in 20 minutes, keep only 5 relevant ones, THEN deep-read those. How researchers actually work.'
         },
         {
           id: 12,
-          question: 'You highlighted 50 paragraphs in a research paper but cannot remember ANY of it the next day. What went wrong?',
+          question: 'Highlighted 50 paragraphs in research paper but cannot remember ANY next day. What went wrong?',
           options: [
-            'You need to highlight in more colors',
-            'You did passive reading - should have used RECITE step (summarize from memory in your own words)',
-            'The paper was too difficult',
-            'You need to read it 10 more times'
+            'Need to highlight in more colors',
+            'Did passive reading - should use RECITE step',
+            'Paper was too difficult',
+            'Need to read 10 more times'
           ],
           correct: 1,
-          explanation: 'Highlighting is PASSIVE - it creates fluency illusion (you recognize highlighted text but cannot recall it). The RECITE step in SQ3R forces ACTIVE processing: close the paper, write a 3-sentence summary from memory. This is retrieval practice (same as active recall). If you cannot recite it, you did not learn it. Highlighting 50 paragraphs = learning ZERO paragraphs.'
+          explanation: 'Highlighting = PASSIVE - creates fluency illusion (recognize highlighted text but can\'t recall it). RECITE step in SQ3R forces ACTIVE processing: close paper, write 3-sentence summary from memory. This = retrieval practice (same as active recall). If can\'t recite it, didn\'t learn it. Highlighting 50 paragraphs = learning ZERO paragraphs.'
         },
         {
           id: 13,
-          question: 'You are organizing research notes for your Business Economics assignment. You have facts from 5 sources but zero original insights. How do you create A-grade analysis?',
+          question: 'Organizing research notes for Business Economics assignment. Facts from 5 sources but zero original insights. How to create A-grade analysis?',
           options: [
-            'Just list all the facts from each source',
-            'Use Synthesis Pyramid - find PATTERNS across sources, then create YOUR insight',
-            'Copy-paste the best-sounding paragraphs',
-            'Add more sources to make it look impressive'
+            'Just list all facts from each source',
+            'Use Synthesis Pyramid - find PATTERNS across sources, create YOUR insight',
+            'Copy-paste best-sounding paragraphs',
+            'Add more sources to look impressive'
           ],
           correct: 1,
-          explanation: 'The Synthesis Pyramid goes: Level 1 (Base) = Facts from sources, Level 2 (Middle) = Patterns ACROSS sources, Level 3 (Top) = YOUR original insight connecting the dots. Example: If 3 sources ALL mention "digital infrastructure gap" for GST compliance, YOUR synthesis = "The real GST barrier is not tax policy but digital divide." This is how you go from C-grade (I listed stuff) to A-grade (I analyzed and synthesized).'
+          explanation: 'Synthesis Pyramid: Level 1 (Base) = Facts from sources, Level 2 (Middle) = Patterns ACROSS sources, Level 3 (Top) = YOUR original insight connecting dots. Example: If 3 sources ALL mention "digital infrastructure gap" for GST compliance, YOUR synthesis = "Real GST barrier is not tax policy but digital divide." This = how go from C-grade (I listed stuff) to A-grade (I analyzed and synthesized).'
         },
         {
           id: 14,
-          question: 'You have notes from 8 sources but they are a chaotic mess. You cannot find anything when writing. What framework organizes this?',
+          question: 'Notes from 8 sources but chaotic mess. Cannot find anything when writing. What framework organizes this?',
           options: [
             'Just ctrl+F to search',
-            'Use 5W+H framework - organize by Who/What/When/Where/Why/How in a table',
+            'Use 5W+H framework - organize by Who/What/When/Where/Why/How in table',
             'Highlight everything in different colors',
             'Start over from scratch'
           ],
           correct: 1,
-          explanation: 'The 5W+H framework (Who, What, When, Where, Why, How) creates STRUCTURE from chaos. Make a table: each row = 1 source, columns = Who is affected? What is the finding? Why does it matter? How does it work? Now you can instantly see patterns (3 sources mention same "Who"), compare findings, and synthesize. Without structure, your notes are just random paragraphs you will never re-read. Structure = usable knowledge.'
+          explanation: '5W+H framework (Who, What, When, Where, Why, How) = creates STRUCTURE from chaos. Make table: each row = 1 source, columns = Who affected? What finding? Why matter? How work? Now instantly see patterns (3 sources mention same "Who"), compare findings, synthesize. Without structure, notes = random paragraphs you\'ll never re-read. Structure = usable knowledge.'
         },
         {
           id: 15,
-          question: 'Your friend finishes research assignments 3X faster than you with better quality. They mention using "strategic reading, not reading everything." What do they mean?',
+          question: 'Friend finishes research assignments 3X faster with better quality. Mentions "strategic reading, not reading everything." What do they mean?',
           options: [
-            'They skip all the hard parts',
-            'They use SQ3R - Survey to filter out 50% irrelevant sources, Question to read only for answers, not cover-to-cover',
+            'They skip all hard parts',
+            'They use SQ3R - Survey to filter 50% irrelevant sources, Question to read for answers only',
             'They use ChatGPT for everything',
             'They are just naturally smarter'
           ],
           correct: 1,
-          explanation: 'Strategic reading means: (1) Survey 10 sources, eliminate 5 irrelevant ones (saved 50% time), (2) Question: write 3 specific questions you need answered, (3) Read ONLY to find those answers, skip everything else. Most students read 100% of every source (massive time waste). Pros read 20% of every source strategically. SQ3R is literally how McKinsey consultants, academics, and researchers process information at scale.'
+          explanation: 'Strategic reading = (1) Survey 10 sources, eliminate 5 irrelevant ones (saved 50% time), (2) Question: write 3 specific questions you need answered, (3) Read ONLY to find those answers, skip everything else. Most students read 100% of every source (massive time waste). Pros read 20% of every source strategically. SQ3R = how McKinsey consultants, academics, researchers process information at scale.'
         }
       ]
     },
@@ -1225,43 +1225,43 @@ Drop a comment - what skill are you going to transfer? Let us level up! Peace!`
       questions: [
         {
           id: 16,
-          question: 'You aced Financial Accounting but struggle with Cost Accounting, even though both use double-entry systems. What is the problem?',
+          question: 'Aced Financial Accounting but struggle with Cost Accounting, even though both use double-entry systems. What is problem?',
           options: [
             'Cost Accounting is just harder',
-            'You learned Financial Accounting at surface level (steps) not principle level (WHY it works)',
-            'You need to study more hours',
+            'Learned Financial Accounting at surface level (steps) not principle level (WHY)',
+            'Need to study more hours',
             'They are completely different subjects'
           ],
           correct: 1,
-          explanation: 'When you learn at SURFACE level (memorize steps: "debit assets, credit liabilities"), you cannot transfer to new contexts. When you learn at PRINCIPLE level ("debit = what comes IN, credit = what goes OUT"), that rule works in Financial, Cost, Tax, and even personal budgeting. Surface learning = re-learn everything. Principle learning = transfer instantly. This is why some students breeze through accounting while others struggle - same content, different depth.'
+          explanation: 'Learn at SURFACE level (memorize steps: "debit assets, credit liabilities") = can\'t transfer to new contexts. Learn at PRINCIPLE level ("debit = what comes IN, credit = what goes OUT") = rule works in Financial, Cost, Tax, even personal budgeting. Surface learning = re-learn everything. Principle learning = transfer instantly. Why some students breeze through accounting while others struggle - same content, different depth.'
         },
         {
           id: 17,
-          question: 'Your friend says "Statistics and Business Analytics are basically the same - just different data." How can you use this insight to transfer your Statistics knowledge?',
+          question: 'Friend says "Statistics and Business Analytics basically same - just different data." How to use this insight to transfer Statistics knowledge?',
           options: [
             'Ignore it - they are completely different',
-            'Identify the core principle (mean, median work for ALL data - exam scores or sales trends)',
+            'Identify core principle (mean, median work for ALL data - exam scores or sales trends)',
             'Just memorize Analytics formulas separately',
-            'Wait for the teacher to explain everything'
+            'Wait for teacher to explain everything'
           ],
           correct: 1,
-          explanation: 'Skill transfer happens when you identify CORE PRINCIPLES that work across contexts. Mean, median, standard deviation are NOT "Statistics formulas" - they are universal data analysis tools. You already know HOW to calculate them from Statistics. In Analytics, you just apply them to business data (customer age distribution, sales variance). Same tool, different application. Recognizing this saves you 50% learning time!'
+          explanation: 'Skill transfer = identify CORE PRINCIPLES that work across contexts. Mean, median, standard deviation are NOT "Statistics formulas" - they are universal data analysis tools. Already know HOW to calculate them from Statistics. In Analytics, just apply them to business data (customer age distribution, sales variance). Same tool, different application. Recognizing this saves 50% learning time!'
         },
         {
           id: 18,
-          question: 'You learned Break-Even Analysis in Cost Accounting. Where else can you apply the SAME principle (Fixed costs + Variable costs, find revenue = costs point)?',
+          question: 'Learned Break-Even Analysis in Cost Accounting. Where else can apply SAME principle (Fixed costs + Variable costs, find revenue = costs point)?',
           options: [
-            'Nowhere - it only works in Cost Accounting',
+            'Nowhere - only works in Cost Accounting',
             'Personal finance, startup planning, freelancing - anywhere with costs vs revenue',
             'Only in other accounting subjects',
             'Just memorize it for exams'
           ],
           correct: 1,
-          explanation: 'Break-Even is a UNIVERSAL principle: "At what point do earnings cover expenses?" This applies to: (1) Personal budget (monthly salary vs expenses), (2) Freelancing (how many projects to cover living costs?), (3) Startup (units to sell before profit). Students who see it as "just a Cost Accounting formula" miss 90% of its value. Experts transfer it to LIFE decisions. This is metacognition - thinking "where ELSE can I use this?"'
+          explanation: 'Break-Even = UNIVERSAL principle: "At what point do earnings cover expenses?" Applies to: (1) Personal budget (monthly salary vs expenses), (2) Freelancing (how many projects to cover living costs?), (3) Startup (units to sell before profit). Students who see it as "just Cost Accounting formula" miss 90% of value. Experts transfer it to LIFE decisions. This = metacognition - thinking "where ELSE can I use this?"'
         },
         {
           id: 19,
-          question: 'You are learning Business Analytics after completing Statistics. Instead of starting from scratch, what is the smartest transfer approach?',
+          question: 'Learning Business Analytics after completing Statistics. Instead of starting from scratch, what is smartest transfer approach?',
           options: [
             'Forget Statistics - Analytics is new',
             'Create analogies: "Mean in Statistics = Average sales in Analytics, Standard deviation = Sales volatility"',
@@ -1269,11 +1269,11 @@ Drop a comment - what skill are you going to transfer? Let us level up! Peace!`
             'Ask teacher to re-teach everything'
           ],
           correct: 1,
-          explanation: 'Analogies are transfer bridges connecting new knowledge to existing knowledge. When you say "Standard deviation = sales volatility," your brain goes "OH! I already know standard deviation from Statistics - I just apply it to sales data!" This is 10X faster than treating Analytics as a new subject. Research shows students who build analogies learn 3X faster with better retention because they leverage existing neural pathways instead of building new ones from scratch.'
+          explanation: 'Analogies = transfer bridges connecting new knowledge to existing knowledge. When say "Standard deviation = sales volatility," brain goes "OH! Already know standard deviation from Statistics - just apply it to sales data!" This = 10X faster than treating Analytics as new subject. Research: students who build analogies learn 3X faster with better retention because leverage existing neural pathways instead of building new ones from scratch.'
         },
         {
           id: 20,
-          question: 'After learning Economics supply-demand curves, you realize they are similar to Marketing pricing strategies. What skill are you demonstrating?',
+          question: 'After learning Economics supply-demand curves, realize they are similar to Marketing pricing strategies. What skill are you demonstrating?',
           options: [
             'Memorization',
             'Pattern recognition - seeing same principle (price affects demand) across different subjects',
@@ -1281,7 +1281,7 @@ Drop a comment - what skill are you going to transfer? Let us level up! Peace!`
             'Guessing'
           ],
           correct: 1,
-          explanation: 'Pattern recognition is THE core skill of experts. Beginners see "10 different subjects." Experts see "3 principles applied 10 ways." When you recognize that Economics supply-demand = Marketing pricing strategy = SAME principle (higher price → lower demand), you have just unlocked transfer. Now you can predict: "This principle probably works in Real Estate, E-commerce, Freelancing too!" One principle learned, infinite applications. This is how you become a FAST learner.'
+          explanation: 'Pattern recognition = THE core skill of experts. Beginners see "10 different subjects." Experts see "3 principles applied 10 ways." When recognize Economics supply-demand = Marketing pricing strategy = SAME principle (higher price → lower demand), just unlocked transfer. Now can predict: "This principle probably works in Real Estate, E-commerce, Freelancing too!" One principle learned, infinite applications. How you become FAST learner.'
         }
       ]
     },
@@ -1559,55 +1559,55 @@ Drop a comment - what skill are you learning agile-style? Let us crush it! Peace
       questions: [
         {
           id: 21,
-          question: 'Your boss needs you productive in Tally ERP by Monday (4 days). Your classmate took a 3-month course. What is the agile approach?',
+          question: 'Boss needs you productive in Tally ERP by Monday (4 days). Classmate took 3-month course. What is agile approach?',
           options: [
-            'Panic and say you need more time',
-            'Learn ONLY the 20% of Tally you need for your job (invoices, vouchers) using 70% doing, 20% asking colleagues, 10% tutorials',
+            'Panic and say need more time',
+            'Learn ONLY 20% of Tally needed for job (invoices, vouchers) using 70% doing, 20% asking colleagues, 10% tutorials',
             'Watch all 50 Tally tutorial videos this weekend',
-            'Tell boss you cannot do it'
+            'Tell boss cannot do it'
           ],
           correct: 1,
-          explanation: 'Learning Agility is about SPEED + EFFECTIVENESS. You do NOT need to know 100% of Tally - identify the 20% that delivers 80% of your job tasks. Use the 70-20-10 model: 70% hands-on practice (create dummy invoices), 20% asking experienced colleagues (shortcuts, common errors), 10% watching targeted tutorials (ONLY what you need). By focusing on Minimum Viable Skill, you are productive in days while others wait months for "complete knowledge."'
+          explanation: 'Learning Agility = SPEED + EFFECTIVENESS. Do NOT need to know 100% of Tally - identify 20% that delivers 80% of job tasks. Use 70-20-10 model: 70% hands-on practice (create dummy invoices), 20% asking experienced colleagues (shortcuts, common errors), 10% watching targeted tutorials (ONLY what you need). By focusing on Minimum Viable Skill, productive in days while others wait months for "complete knowledge."'
         },
         {
           id: 22,
-          question: 'You watched 10 hours of Excel tutorials but still cannot create the report your boss needs. What went wrong?',
+          question: 'Watched 10 hours of Excel tutorials but still cannot create report boss needs. What went wrong?',
           options: [
             'Excel is too hard',
-            'You did passive learning (watching) instead of active doing (70% experimentation)',
-            'You need 20 more hours of tutorials',
-            'You should give up'
+            'Did passive learning (watching) instead of active doing (70% experimentation)',
+            'Need 20 more hours of tutorials',
+            'Should give up'
           ],
           correct: 1,
-          explanation: 'The 70-20-10 model shows that 70% of real learning comes from DOING, not watching. Watching 10 hours = you recognize features but cannot execute. Agile approach: Watch 5-min tutorial on pivot tables → PAUSE → Create 3 pivot tables yourself → Make mistakes → Debug → Repeat. By hour 2, you have DONE 20+ practice examples vs watched 10 hours of theory. Experience beats observation 10:1.'
+          explanation: '70-20-10 model: 70% of real learning comes from DOING, not watching. Watching 10 hours = recognize features but can\'t execute. Agile approach: Watch 5-min tutorial on pivot tables → PAUSE → Create 3 pivot tables yourself → Make mistakes → Debug → Repeat. By hour 2, DONE 20+ practice examples vs watched 10 hours of theory. Experience beats observation 10:1.'
         },
         {
           id: 23,
-          question: 'Your colleague learned PowerBI in 2 days and is already creating dashboards. You are on Day 5 of a Udemy course still watching videos. What is their secret?',
+          question: 'Colleague learned PowerBI in 2 days and already creating dashboards. You are on Day 5 of Udemy course still watching videos. What is their secret?',
           options: [
             'They are naturally gifted',
-            'They used Just-In-Time Learning - learned ONLY what they needed for their specific dashboard, not entire PowerBI',
+            'Used Just-In-Time Learning - learned ONLY what needed for specific dashboard, not entire PowerBI',
             'They cheated',
             'They already knew PowerBI'
           ],
           correct: 1,
-          explanation: 'Just-In-Time Learning is THE agility hack. Instead of learning "everything about PowerBI" (overwhelming, slow), they asked: "What do I need for THIS dashboard?" (bar charts, filters). They learned ONLY those 2 features, built the dashboard, then learned more features AS needed later. You are learning breadth-first (entire course). They learned depth-first (specific need). In fast-paced jobs, depth-first wins every time.'
+          explanation: 'Just-In-Time Learning = THE agility hack. Instead of learning "everything about PowerBI" (overwhelming, slow), they asked: "What do I need for THIS dashboard?" (bar charts, filters). Learned ONLY those 2 features, built dashboard, then learned more features AS needed later. You = learning breadth-first (entire course). They = learned depth-first (specific need). In fast-paced jobs, depth-first wins every time.'
         },
         {
           id: 24,
-          question: 'You tried creating a Tally invoice and got error messages 5 times. You feel like giving up. What should you do?',
+          question: 'Tried creating Tally invoice and got error messages 5 times. Feel like giving up. What should do?',
           options: [
-            'Give up - you are not cut out for this',
-            'Embrace the Experimentation Loop - each error teaches you something, Google it, fix it, try again',
-            'Wait for a teacher to show you the perfect way',
-            'Avoid Tally and stick to what you know'
+            'Give up - not cut out for this',
+            'Embrace Experimentation Loop - each error teaches something, Google it, fix it, try again',
+            'Wait for teacher to show perfect way',
+            'Avoid Tally and stick to what know'
           ],
           correct: 1,
-          explanation: 'Learning Agility requires being COMFORTABLE with failure. Each error is DATA, not disaster. Try → Fail → Google error → Fix → Try again. By attempt #6, you understand Tally vouchers better than someone who watched 10 tutorials but never tried. McKinsey consultants learn client industries this way - they do NOT wait for perfect knowledge, they experiment on the job and iterate. Fast failure = fast learning. Perfection paralysis = no progress.'
+          explanation: 'Learning Agility = being COMFORTABLE with failure. Each error = DATA, not disaster. Try → Fail → Google error → Fix → Try again. By attempt #6, understand Tally vouchers better than someone who watched 10 tutorials but never tried. McKinsey consultants learn client industries this way - do NOT wait for perfect knowledge, experiment on job and iterate. Fast failure = fast learning. Perfection paralysis = no progress.'
         },
         {
           id: 25,
-          question: 'In the 70-20-10 learning model, where does the MOST learning happen?',
+          question: 'In 70-20-10 learning model, where does MOST learning happen?',
           options: [
             'From reading textbooks and watching courses (70%)',
             'From hands-on experience and doing challenging tasks (70%)',
@@ -1615,7 +1615,7 @@ Drop a comment - what skill are you learning agile-style? Let us crush it! Peace
             'From group study (70%)'
           ],
           correct: 1,
-          explanation: '70% of learning comes from EXPERIENCE - doing challenging tasks, making mistakes, solving real problems. Only 10% comes from formal learning (courses, books). This is why internships teach more than textbooks, why "learning by doing" beats "learning by watching." For Tally, Excel, coding: 1 hour of practice > 10 hours of tutorials. The 70-20-10 model is backed by decades of corporate learning research - experience is the ultimate teacher.'
+          explanation: '70% of learning = EXPERIENCE - doing challenging tasks, making mistakes, solving real problems. Only 10% = formal learning (courses, books). Why internships teach more than textbooks, why "learning by doing" beats "learning by watching." For Tally, Excel, coding: 1 hour of practice > 10 hours of tutorials. 70-20-10 model backed by decades of corporate learning research - experience = ultimate teacher.'
         }
       ]
     },
@@ -1903,7 +1903,7 @@ Drop a comment - what is your improvement goal? Let us build systems, not just e
       questions: [
         {
           id: 26,
-          question: 'You have been stuck at 65% for 3 semesters despite studying hard. Your friend improved from 60% to 78% using "Kaizen." What does this mean?',
+          question: 'Stuck at 65% for 3 semesters despite studying hard. Friend improved from 60% to 78% using "Kaizen." What does this mean?',
           options: [
             'Study 10 hours before exams instead of 5',
             'Improve 1% daily through small systematic changes (better method, not more hours)',
@@ -1911,47 +1911,47 @@ Drop a comment - what is your improvement goal? Let us build systems, not just e
             'Give up and accept 65%'
           ],
           correct: 1,
-          explanation: 'Kaizen is Japanese for "continuous improvement" - instead of giant one-time efforts (study 10 hours before finals), make TINY daily improvements (1% better focus, 1% better retention method, 1% better time management). These compound exponentially. Math: 1.01^365 = 37X better in a year. Your friend did not study 3X harder - they improved their SYSTEM 1% daily. Week 1: added Pomodoro (1% focus), Week 2: used flashcards (1% retention). Result: 18% grade jump from micro-improvements!'
+          explanation: 'Kaizen = Japanese for "continuous improvement" - instead of giant one-time efforts (study 10 hours before finals), make TINY daily improvements (1% better focus, 1% better retention method, 1% better time management). These compound exponentially. Math: 1.01^365 = 37X better in year. Friend didn\'t study 3X harder - improved SYSTEM 1% daily. Week 1: added Pomodoro (1% focus), Week 2: used flashcards (1% retention). Result: 18% grade jump from micro-improvements!'
         },
         {
           id: 27,
-          question: 'You tried a new study method for Financial Accounting. How do you know if it ACTUALLY worked using PDCA cycle?',
+          question: 'Tried new study method for Financial Accounting. How to know if ACTUALLY worked using PDCA cycle?',
           options: [
             'Just feel like it worked',
-            'PLAN the method → DO it for 1 week → CHECK results (mock test score) → ACT (keep if better, change if not)',
+            'PLAN method → DO it for 1 week → CHECK results (mock test score) → ACT (keep if better, change if not)',
             'Keep doing it forever without checking',
             'Ask friends if they think it works'
           ],
           correct: 1,
-          explanation: 'PDCA (Plan-Do-Check-Act) is the scientific method for improvement. PLAN: "I will use active recall for journal entries this week." DO: Execute daily. CHECK: Sunday mock test - did accuracy improve? 60% → 70% = YES! ACT: Keep active recall, add spaced repetition next week. Without CHECK step, you are guessing. Data beats feelings. This is how Toyota, athletes, and top students improve - they MEASURE everything, adjust based on data, iterate weekly.'
+          explanation: 'PDCA (Plan-Do-Check-Act) = scientific method for improvement. PLAN: "I will use active recall for journal entries this week." DO: Execute daily. CHECK: Sunday mock test - did accuracy improve? 60% → 70% = YES! ACT: Keep active recall, add spaced repetition next week. Without CHECK step, you\'re guessing. Data beats feelings. How Toyota, athletes, top students improve - MEASURE everything, adjust based on data, iterate weekly.'
         },
         {
           id: 28,
-          question: 'You solved 100 practice problems but your ratio analysis score is still 40%. What is wrong with your practice approach?',
+          question: 'Solved 100 practice problems but ratio analysis score still 40%. What is wrong with practice approach?',
           options: [
-            'You need to solve 200 problems',
-            'You did random practice (easy + hard mixed) - should do DELIBERATE practice (focus ONLY on ratios until mastery)',
+            'Need to solve 200 problems',
+            'Did random practice (easy + hard mixed) - should do DELIBERATE practice (focus ONLY on ratios until mastery)',
             'Ratios are just too hard',
-            'You need a tutor'
+            'Need a tutor'
           ],
           correct: 1,
-          explanation: 'Random practice = you practice what you are already good at (comfortable, but no growth). Deliberate Practice = (1) Identify weakness (ratios = 40%), (2) Focus ONLY on that (solve 10 ratio problems DAILY), (3) Get feedback (why did I get it wrong?), (4) Iterate (try harder ratios). In 2 weeks, ratios jump to 75%! This is how athletes train - they do not "play casually," they drill WEAK skills until they become strengths. Your 100 random problems had maybe 10 ratio problems - not enough focused reps!'
+          explanation: 'Random practice = practice what already good at (comfortable, but no growth). Deliberate Practice = (1) Identify weakness (ratios = 40%), (2) Focus ONLY on that (solve 10 ratio problems DAILY), (3) Get feedback (why wrong?), (4) Iterate (try harder ratios). In 2 weeks, ratios jump to 75%! How athletes train - don\'t "play casually," drill WEAK skills until become strengths. Your 100 random problems had maybe 10 ratio problems - not enough focused reps!'
         },
         {
           id: 29,
-          question: 'You set a goal to improve from 65% to 75% but 3 months later you are still at 66%. What critical element was missing?',
+          question: 'Set goal to improve from 65% to 75% but 3 months later still at 66%. What critical element was missing?',
           options: [
-            'You are not smart enough',
-            'No tracking + accountability - goals stayed in your head, no data to show what works, no one checking on you',
-            'The goal was too ambitious',
-            'You need to study more hours'
+            'Not smart enough',
+            'No tracking + accountability - goals stayed in head, no data to show what works, no one checking',
+            'Goal was too ambitious',
+            'Need to study more hours'
           ],
           correct: 1,
-          explanation: 'Goals without tracking = flying blind. Goals without accountability = easy to ignore. You need BOTH. Tracking: Weekly spreadsheet (study hours, methods used, mock test scores) reveals patterns - "Active recall works! Re-reading does not!" Accountability: Share goal with study partner, weekly check-ins, small consequences (miss target = buy friend coffee). Research shows publicly committed goals are 65% more likely to succeed. Your 65→75 goal failed because it was invisible (only in your head) and unmeasured (no data).'
+          explanation: 'Goals without tracking = flying blind. Goals without accountability = easy to ignore. Need BOTH. Tracking: Weekly spreadsheet (study hours, methods used, mock test scores) reveals patterns - "Active recall works! Re-reading doesn\'t!" Accountability: Share goal with study partner, weekly check-ins, small consequences (miss target = buy friend coffee). Research: publicly committed goals 65% more likely to succeed. Your 65→75 goal failed because invisible (only in head) and unmeasured (no data).'
         },
         {
           id: 30,
-          question: 'If you improve just 1% every day for a full year, what is your total improvement?',
+          question: 'If improve just 1% every day for full year, what is total improvement?',
           options: [
             '365% (1% x 365 days)',
             '37X better (3,700% due to compounding)',
@@ -1959,7 +1959,7 @@ Drop a comment - what is your improvement goal? Let us build systems, not just e
             '10% total'
           ],
           correct: 1,
-          explanation: 'This is the POWER of compounding! 1% daily improvement compounds exponentially: 1.01^365 = 37.78 (you are 37X better!). Not 365% (that would be linear addition). Real example: Day 1 you retain 40% of what you study. Improve 1% daily. Day 365 you retain 1,480% (basically photographic memory!). This is why Kaizen (tiny daily improvements) beats "study 10 hours before finals" (one-time massive effort). Small consistent upgrades > big inconsistent bursts. Toppers use this - they are not 10X smarter, they improve 1% daily for 3 years!'
+          explanation: 'This = POWER of compounding! 1% daily improvement compounds exponentially: 1.01^365 = 37.78 (you are 37X better!). Not 365% (that would be linear addition). Real example: Day 1 retain 40% of what study. Improve 1% daily. Day 365 retain 1,480% (basically photographic memory!). Why Kaizen (tiny daily improvements) beats "study 10 hours before finals" (one-time massive effort). Small consistent upgrades > big inconsistent bursts. Toppers use this - not 10X smarter, improve 1% daily for 3 years!'
         }
       ]
     },
