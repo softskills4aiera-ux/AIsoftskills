@@ -644,7 +644,7 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
                     ? 'bg-white text-gray-900 shadow-lg font-semibold' 
                     : isCompleted
                     ? 'bg-green-500/30 text-green-300 font-medium'
-                    : 'bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-blue-600 hover:to-purple-700 font-medium shadow-md'
+                    : 'bg-gradient-to-r from-blue-500 to-green-500 text-white hover:from-blue-600 hover:to-green-600 font-medium shadow-md'
                 }`}
               >
                 <Icon size={18} />
@@ -1798,7 +1798,7 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                           onClick={handleSkipChallenge}
-                          className="bg-gray-500 hover:bg-gray-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300"
+                          className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 shadow-lg"
                         >
                           Skip Challenge
                         </motion.button>
@@ -2091,7 +2091,7 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                           onClick={handleSkipChallenge}
-                          className="bg-gray-500 hover:bg-gray-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300"
+                          className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 shadow-lg"
                         >
                           Skip Challenge
                         </motion.button>
@@ -2292,17 +2292,55 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
           </div>
 
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
-            <div className="mb-4 p-3 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
-              <p className="text-blue-800 dark:text-blue-200 font-medium">
-                📊 Assessment Progress: {assessment.questions.length} questions total
-              </p>
-            </div>
+            {/* Progress Tracking */}
+            {(() => {
+              const answeredCount = Object.keys(assessmentAnswers).length;
+              const totalQuestions = assessment.questions.length;
+              const allQuestionsAnswered = assessment.questions.every(q => assessmentAnswers[q.id]);
+              const progressPercentage = (answeredCount / totalQuestions) * 100;
+              
+              return (
+                <div className="mb-6 space-y-4">
+                  {/* Progress Bar */}
+                  <div className="bg-gray-200 dark:bg-gray-700 rounded-full h-3 overflow-hidden">
+                    <div 
+                      className="bg-gradient-to-r from-blue-500 to-green-500 h-3 rounded-full transition-all duration-500 ease-out"
+                      style={{ width: `${progressPercentage}%` }}
+                    ></div>
+                  </div>
+                  
+                  {/* Progress Text */}
+                  <div className="flex justify-between items-center">
+                    <p className="text-lg font-medium text-gray-700 dark:text-gray-300">
+                      📊 Progress: {answeredCount}/{totalQuestions} questions answered
+                    </p>
+                    <span className={`px-3 py-1 rounded-full text-sm font-medium ${
+                      allQuestionsAnswered 
+                        ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300' 
+                        : 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300'
+                    }`}>
+                      {allQuestionsAnswered ? '✅ Ready to Submit' : '⚠️ Incomplete'}
+                    </span>
+                  </div>
+                  
+                  {/* Warning Message */}
+                  {!allQuestionsAnswered && (
+                    <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 p-4 rounded-lg">
+                      <p className="text-yellow-800 dark:text-yellow-200 font-medium">
+                        ⚠️ Please answer all {totalQuestions} questions before submitting. 
+                        You have answered {answeredCount} out of {totalQuestions} questions.
+                      </p>
+                    </div>
+                  )}
+                </div>
+              );
+            })()}
             {/* Pagination Controls */}
             <div className="mb-6 flex justify-between items-center">
               <button
                 onClick={() => setCurrentAssessmentQuestion(Math.max(0, currentAssessmentQuestion - 5))}
                 disabled={currentAssessmentQuestion === 0}
-                className="px-4 py-2 bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-300 dark:hover:bg-gray-500 transition-colors"
+                className="px-4 py-2 bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:bg-gray-400 disabled:text-gray-600 transition-colors shadow-md"
               >
                 ← Previous 5
               </button>
@@ -2312,7 +2350,7 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
               <button
                 onClick={() => setCurrentAssessmentQuestion(Math.min(assessment.questions.length - 5, currentAssessmentQuestion + 5))}
                 disabled={currentAssessmentQuestion >= assessment.questions.length - 5}
-                className="px-4 py-2 bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-300 dark:hover:bg-gray-500 transition-colors"
+                className="px-4 py-2 bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:bg-gray-400 disabled:text-gray-600 transition-colors shadow-md"
               >
                 Next 5 →
               </button>
@@ -2338,9 +2376,7 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
                         return (
                           <label key={optionIndex} className={`flex items-start space-x-4 cursor-pointer p-4 rounded-lg transition-colors border-2 ${
                             isSelected 
-                              ? isCorrect 
-                                ? 'bg-green-50 dark:bg-green-900/30 border-green-400 dark:border-green-500' 
-                                : 'bg-red-50 dark:bg-red-900/30 border-red-400 dark:border-red-500'
+                              ? 'bg-blue-50 dark:bg-blue-900/30 border-blue-400 dark:border-blue-500' 
                               : 'hover:bg-gray-100 dark:hover:bg-gray-600 border-transparent hover:border-blue-300 dark:hover:border-blue-600'
                           }`}>
                             <div className="flex items-center gap-3">
@@ -2352,18 +2388,7 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
                                 onChange={() => handleAssessmentAnswer(question.id, option)}
                                 className="w-5 h-5 mt-0.5 text-blue-600 flex-shrink-0"
                               />
-                              {isSelected && (
-                                <span className={`font-bold text-lg ${
-                                  isCorrect 
-                                    ? 'text-green-600 dark:text-green-400' 
-                                    : 'text-red-600 dark:text-red-400'
-                                }`}>
-                                  {isCorrect ? '✓' : '✗'}
-                                </span>
-                              )}
-                              {!isSelected && isCorrectOption && hasAnswer && (
-                                <span className="text-green-600 dark:text-green-400 font-bold text-lg">✓</span>
-                              )}
+                              {/* Visual feedback removed during assessment - will show in results */}
                             </div>
                             <span className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed flex-1">{option}</span>
                           </label>
@@ -2371,22 +2396,7 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
                       })}
                     </div>
                     
-                    {/* Show explanation if question has one and user has selected an answer */}
-                    {question.explanation && assessmentAnswers[question.id] && (
-                      <div className="mt-6 p-5 bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 rounded-lg">
-                        <p className="text-base font-bold text-blue-800 dark:text-blue-300 mb-3">
-                          💡 Explanation:
-                        </p>
-                        <div className="text-lg text-blue-700 dark:text-blue-200 leading-relaxed">
-                          {question.explanation.split(/[.!?]+/).filter(s => s.trim().length > 10).slice(0, 4).map((point, idx) => (
-                            <div key={idx} className="flex items-start gap-2 mb-2">
-                              <span className="text-blue-600 dark:text-blue-400 font-bold mt-1">•</span>
-                              <span className="flex-1">{point.trim()}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
+                    {/* Explanations are hidden during assessment - will show in results view */}
                   </div>
                 );
               })}
@@ -2398,29 +2408,45 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setCurrentView('subtopic-select')}
-                className="bg-gray-500 hover:bg-gray-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center gap-2"
+                className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center gap-2 shadow-lg"
               >
                 <ArrowLeft size={20} />
                 Back to Subtopics
               </motion.button>
               
               {/* Submit Assessment Button */}
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={handleAssessmentSubmit}
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center gap-2"
-              >
-                Submit Assessment
-                <ArrowRight size={20} />
-              </motion.button>
+              {(() => {
+                const allQuestionsAnswered = assessment.questions.every(q => assessmentAnswers[q.id]);
+                const answeredCount = Object.keys(assessmentAnswers).length;
+                const totalQuestions = assessment.questions.length;
+                
+                return (
+                  <motion.button
+                    whileHover={allQuestionsAnswered ? { scale: 1.05 } : {}}
+                    whileTap={allQuestionsAnswered ? { scale: 0.95 } : {}}
+                    onClick={allQuestionsAnswered ? handleAssessmentSubmit : () => {}}
+                    disabled={!allQuestionsAnswered}
+                    className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center gap-2 ${
+                      allQuestionsAnswered
+                        ? 'bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white cursor-pointer shadow-lg'
+                        : 'bg-gray-400 text-gray-600 cursor-not-allowed'
+                    }`}
+                  >
+                    {allQuestionsAnswered 
+                      ? 'Submit Assessment' 
+                      : `Answer ${totalQuestions - answeredCount} more questions`
+                    }
+                    <ArrowRight size={20} />
+                  </motion.button>
+                );
+              })()}
               
               {/* Back to Module Overview Button */}
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setCurrentView('intro')}
-                className="bg-gray-500 hover:bg-gray-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center gap-2"
+                className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center gap-2 shadow-lg"
               >
                 Module Overview
                 <ArrowRight size={20} />
@@ -2452,12 +2478,119 @@ const ModuleTemplate: React.FC<ModuleTemplateProps> = ({
             </div>
           </div>
 
+          {/* Question-by-Question Review */}
+          <div className="space-y-6 mt-8">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white text-center mb-6">
+              📋 Question Review
+            </h3>
+            
+            {assessment.questions.map((question, index) => {
+              const userAnswer = assessmentAnswers[question.id];
+              const correctAnswer = question.options[question.correct];
+              const isCorrect = assessmentResults[question.id];
+              
+              return (
+                <div key={question.id} className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border-l-4 border-blue-500">
+                  <div className="flex items-start justify-between mb-4">
+                    <h4 className="text-xl font-bold text-gray-900 dark:text-white">
+                      Question {index + 1}
+                    </h4>
+                    <span className={`px-3 py-1 rounded-full text-sm font-bold ${
+                      isCorrect 
+                        ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300' 
+                        : 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300'
+                    }`}>
+                      {isCorrect ? '✓ Correct' : '✗ Incorrect'}
+                    </span>
+                  </div>
+                  
+                  <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                    {question.question}
+                  </p>
+                  
+                  <div className="space-y-3">
+                    {question.options.map((option, optionIndex) => {
+                      const isUserAnswer = option === userAnswer;
+                      const isCorrectOption = option === correctAnswer;
+                      
+                      return (
+                        <div key={optionIndex} className={`p-3 rounded-lg border-2 ${
+                          isUserAnswer && isCorrect
+                            ? 'bg-green-50 dark:bg-green-900/20 border-green-400 dark:border-green-500'
+                            : isUserAnswer && !isCorrect
+                            ? 'bg-red-50 dark:bg-red-900/20 border-red-400 dark:border-red-500'
+                            : isCorrectOption && !isUserAnswer
+                            ? 'bg-green-50 dark:bg-green-900/20 border-green-400 dark:border-green-500'
+                            : 'bg-gray-50 dark:bg-gray-700 border-gray-200 dark:border-gray-600'
+                        }`}>
+                          <div className="flex items-center gap-3">
+                            {isUserAnswer && (
+                              <span className={`font-bold text-lg ${
+                                isCorrect ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'
+                              }`}>
+                                {isCorrect ? '✓' : '✗'}
+                              </span>
+                            )}
+                            {isCorrectOption && !isUserAnswer && (
+                              <span className="text-green-600 dark:text-green-400 font-bold text-lg">✓</span>
+                            )}
+                            <span className={`text-lg ${
+                              isUserAnswer 
+                                ? isCorrect 
+                                  ? 'text-green-800 dark:text-green-200 font-semibold' 
+                                  : 'text-red-800 dark:text-red-200 font-semibold'
+                                : isCorrectOption
+                                ? 'text-green-800 dark:text-green-200 font-semibold'
+                                : 'text-gray-700 dark:text-gray-300'
+                            }`}>
+                              {option}
+                            </span>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                  
+                  {question.explanation && (
+                    <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 mt-4 border-l-4 border-blue-500">
+                      <p className="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-3 flex items-center gap-2">
+                        <span>💡</span>
+                        <span>Explanation:</span>
+                      </p>
+                      <div className="text-lg text-blue-800 dark:text-blue-200 space-y-2">
+                        {(() => {
+                          const sentences = question.explanation.split(/[.!?]+/).filter(s => s.trim().length > 5);
+                          if (sentences.length > 1) {
+                            return sentences.slice(0, 3).map((point, idx) => (
+                              <div key={idx} className="flex items-start gap-2">
+                                <span className="text-blue-600 dark:text-blue-400 font-bold mt-1">•</span>
+                                <span className="flex-1 leading-relaxed">{point.trim()}</span>
+                              </div>
+                            ));
+                          } else {
+                            const parts = question.explanation.split(/[,;]/).filter(s => s.trim().length > 5);
+                            return parts.slice(0, 2).map((point, idx) => (
+                              <div key={idx} className="flex items-start gap-2">
+                                <span className="text-blue-600 dark:text-blue-400 font-bold mt-1">•</span>
+                                <span className="flex-1 leading-relaxed">{point.trim()}</span>
+                              </div>
+                            ));
+                          }
+                        })()}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
           <div className="text-center mt-8">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setCurrentView('intro')}
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300"
+              className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300 shadow-lg"
             >
               Back to Module Overview
               <ArrowRight className="inline-block ml-2" size={20} />
