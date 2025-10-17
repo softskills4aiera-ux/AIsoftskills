@@ -351,91 +351,77 @@ Write it down. By Day 7, you will have dissected 7 arguments. You will start see
       contexts: {
         academic: {
           title: 'Academic Logic Mastery',
-          description: 'Your Business Economics professor assigns a case study: "Should India adopt Universal Basic Income (UBI)?" You must write a 1500-word argumentative essay evaluating 3 scholarly articles (2 pro-UBI, 1 anti-UBI). Your grade depends on your ability to identify logical fallacies, evaluate evidence quality, and build a sound argument. Due in 5 days.',
+          description: 'UBI essay: 3 articles, 1500w, 5 days. Identify fallacies, evaluate evidence, build sound argument. Grade depends on logical reasoning!',
           instructions: [
-            '1. Read and Annotate (Day 1, 3 hours): Read all 3 articles. For EACH argument, highlight: (a) Premises (what evidence do they provide?), (b) Conclusion (what are they claiming?), (c) Potential fallacies (mark with ❌). Use the Argument Anatomy Framework. Example: Article 1 claims "UBI will eliminate poverty [Conclusion] because Finland trial showed positive results [Premise]." Mark this - is one country is trial enough evidence?',
-            '2. Evaluate Each Argument (Day 2, 2 hours): For each article, apply the VALID vs SOUND test. Article 1: Is it VALID? (Does the conclusion follow from premises?) Is it SOUND? (Are the premises actually true? Is Finland trial representative of India?) Use the Evidence Quality Checklist: Sample size, source credibility, bias, recency, relevance. Write notes: "Article 1: Valid structure, but premise is weak (Finland ≠ India, different economies)."',
-            '3. Spot Fallacies (Day 2, 1 hour): Go through each article looking for the Top 5 fallacies. Article 2 (anti-UBI) says: "UBI supporters are idealistic dreamers who do not understand economics." Mark: Ad Hominem (attacking supporters, not the argument). Article 3 says: "Either we implement UBI, or poverty will never end." Mark: False Dichotomy (many anti-poverty programs exist). Document all fallacies with examples.',
-            '4. Build Your Argument (Day 3, 2 hours): Structure your essay using sound logic. Introduction: State your position (support/oppose UBI). Body Paragraph 1: Present strongest pro-UBI argument (valid + sound). Body Paragraph 2: Present strongest anti-UBI argument. Body Paragraph 3: Evaluate which argument is MORE sound (better evidence, fewer fallacies). Conclusion: Your reasoned position based on logical analysis. Use the framework: Clear premises → Logical structure → Sound conclusion.',
-            '5. Strengthen Your Evidence (Day 4, 1.5 hours): For YOUR argument, ensure: (1) Sample size is adequate (cite multiple studies, not one), (2) Sources are credible (RBI reports, peer-reviewed journals, not blogs), (3) Evidence is recent (2020+ data, not 1990s), (4) You address counterarguments (show you considered opposing views). This makes your argument SOUND and defensible.',
-            '6. Peer Review (Day 4, 1 hour): Have a classmate read your essay. Ask them: "Can you identify my premises and conclusion? Do you see any fallacies in my reasoning? Is my evidence strong?" If they spot flaws, revise. Fresh eyes catch logical errors you miss. This is how you build bulletproof arguments.',
-            '7. Final Polish (Day 5, 1 hour): Read your essay aloud. Check: (1) Is each paragraph is conclusion supported by sound premises? (2) Did you avoid fallacies? (3) Is your evidence high-quality? (4) Does your final conclusion follow logically from your analysis? Make final tweaks. Submit with confidence - you used logical reasoning, not just opinion.',
+            '• Day 1: Read 3 articles, highlight premises/conclusions/fallacies',
+            '• Day 2: Apply VALID vs SOUND test, evaluate evidence quality',
+            '• Day 2: Spot Top 5 fallacies—Ad Hominem, False Dichotomy—document',
+            '• Day 3: Build essay: intro, pro/anti args, evaluate, conclude',
+            '• Day 4-5: Strengthen evidence, peer review, polish—submit confident!',
             '',
             '🚫 Common Mistakes to Avoid:',
-            '• Cherry-picking evidence: Only citing studies that support YOUR view, ignoring contradictory evidence. Result: Unsound argument, professor docks points. Solution: Address counterarguments honestly, then explain why your position is stronger.',
-            '• Emotional reasoning: "UBI feels like the right thing to do, so it must work." Result: Feelings ≠ facts, weak argument. Solution: Base your position on DATA and LOGIC, not emotions.',
-            '• Missing fallacies in sources: Accepting articles at face value without checking for logical flaws. Result: You build YOUR argument on flawed foundations. Solution: Evaluate EVERY source for fallacies before citing it.',
-            '• Weak evidence: Citing one anecdote or outdated study. Result: Your argument is easy to dismantle. Solution: Use multiple recent, credible sources with adequate sample sizes.',
-            '• No clear structure: Rambling essay without clear premises → conclusion flow. Result: Professor cannot follow your logic. Solution: Each paragraph: State premise → Provide evidence → Draw mini-conclusion. Build systematically.'
+            '• Cherry-pick evidence—address counterarguments honestly',
+            '• Emotional reasoning—DATA + LOGIC, not feelings',
+            '• Miss fallacies—evaluate EVERY source',
+            '• Weak evidence—multiple recent credible sources',
+            '• No structure—premises → evidence → conclusion'
           ],
           successCriteria: [
-            '✅ You identify 5+ logical fallacies across the 3 articles (shows critical reading)',
-            '✅ Your essay has a clear argument structure (premises → logical flow → sound conclusion)',
-            '✅ You use high-quality evidence (multiple sources, recent data, credible sources)',
-            '✅ You address counterarguments fairly (shows intellectual honesty)',
-            '✅ Your argument is BOTH valid and sound (structure + truth)',
-            '✅ You receive a grade of 80%+ with feedback: "Excellent logical reasoning and critical analysis"',
-            '✅ You can defend your position in class discussion without relying on emotions',
-            '✅ You feel confident evaluating ANY argument in future B.Com courses'
+            '✅ 5+ fallacies identified',
+            '✅ Clear argument structure',
+            '✅ High-quality evidence used',
+            '✅ Counterarguments addressed',
+            '✅ 80%+, Professor praises logic!'
           ]
         },
         professional: {
           title: 'Professional Logic Excellence',
-          description: 'You are a Financial Analyst intern. Your manager asks you to evaluate a business proposal: "Company X wants us to invest ₹1 crore in their AI-powered stock trading platform. They claim 60% annual returns with zero risk." Your manager says: "Analyze this proposal. Is it sound? Present your findings to the partners tomorrow." Your logical reasoning will determine if the firm invests or rejects.',
+          description: 'Analyst intern: Evaluate ₹1Cr AI trading proposal (60% returns, zero risk). Present tomorrow. Logic determines invest/reject!',
           instructions: [
-            '1. Read the Proposal Critically (Day 1, 2 hours): Read the 20-page proposal. For EVERY claim, ask: Where is the evidence? Example: "60% annual returns" - based on what data? How many years? What market conditions? "Zero risk" - is this even possible? (Spoiler: NO investment is zero risk.) Highlight every claim that needs evidence. Use the Argument Anatomy Framework to identify their premises and conclusions.',
-            '2. Apply the VALID vs SOUND Test (Day 1, 1 hour): Break down their main argument. Premise 1: "Our AI model has 95% accuracy." Premise 2: "High accuracy = high returns." Conclusion: "Invest ₹1 crore for 60% returns." Is this VALID? (Does high accuracy guarantee high returns? NO - market conditions, execution, competition matter.) Is this SOUND? (Is 95% accuracy claim true? Need to verify.) Document: "Argument is INVALID - conclusion does not follow from premises."',
-            '3. Spot Fallacies (Day 1, 1.5 hours): Go through the proposal looking for red flags. Fallacy 1: "Our CEO is an IIT graduate and ex-Goldman Sachs analyst" (Appeal to Authority - credentials ≠ guaranteed success). Fallacy 2: "We had one client who made ₹50 lakhs in 3 months" (Anecdotal Evidence - one case ≠ proof). Fallacy 3: "Either invest now or miss this once-in-a-lifetime opportunity" (False Dichotomy + Urgency manipulation). Document all fallacies with page numbers.',
-            '4. Evaluate Evidence Quality (Day 1, 1 hour): Use the 5-Question Evidence Test for their claims. "60% returns" - Sample size? (They cite 1 year of data = insufficient.) Source? (Their own backtest = biased.) Recency? (2022 bull market data = not representative of bear markets.) Bias? (They profit if you invest = conflict of interest.) Relevance? (Backtests ≠ real trading.) Verdict: WEAK evidence. Document this.',
-            '5. Build Your Counter-Analysis (Day 2, 2 hours): Create a presentation for partners. Slide 1: "Proposal Claims vs Reality." Slide 2: "Logical Fallacies Identified" (list 5+ with examples). Slide 3: "Evidence Quality Issues" (weak sample size, bias, no independent verification). Slide 4: "Risk Assessment" (what they did NOT disclose: market risk, execution risk, regulatory risk). Slide 5: "Recommendation: REJECT" (explain why the argument is unsound). Use clear, logical structure.',
-            '6. Prepare for Pushback (Day 2, 1 hour): Partners might challenge you: "But the CEO is from Goldman Sachs!" Your response: "Credentials are valuable, but they do not eliminate risk. We need independent verification of their 60% return claim and a clear risk disclosure." Anticipate 5 questions partners might ask. Prepare logical, evidence-based responses. Do NOT rely on gut feeling - use your analysis.',
-            '7. Present Your Findings (Day 3): Walk partners through your logical analysis. Start: "I evaluated this proposal using logical reasoning and evidence quality frameworks. Here is what I found..." Present fallacies, evidence gaps, and risks systematically. End: "Based on this analysis, I recommend we REJECT this proposal and request: (1) Independent audit of returns, (2) 3+ years of data, (3) Clear risk disclosure. If they provide these, we can re-evaluate." Logical, professional, defensible.',
+            '• Day 1: Read proposal critically—question EVERY claim, evidence?',
+            '• Day 1: Apply VALID vs SOUND—"95% accuracy = returns?" Invalid!',
+            '• Day 1: Spot fallacies—Appeal to Authority, Anecdotal, False Dichotomy',
+            '• Day 1: Evaluate evidence quality—weak sample, biased, insufficient',
+            '• Day 2-3: Build analysis, prepare pushback, present—REJECT, saved ₹1Cr!',
             '',
             '🚫 Common Mistakes to Avoid:',
-            '• Accepting claims at face value: "They said 60% returns, so it must be true." Result: Firm loses ₹1 crore. Solution: Verify EVERY claim with evidence.',
-            '• Appeal to authority bias: "The CEO is from IIT/Goldman, so the proposal must be good." Result: Credentials ≠ sound business model. Solution: Evaluate the PROPOSAL, not the credentials.',
-            '• Ignoring missing information: They did not disclose risks, you did not ask. Result: Hidden risks materialize, firm suffers. Solution: Ask: "What are they NOT telling us?"',
-            '• Emotional decision-making: "This sounds exciting and innovative!" Result: Excitement ≠ sound investment. Solution: Base decisions on LOGIC and DATA, not feelings.',
-            '• No systematic framework: Relying on gut feeling to evaluate proposals. Result: Inconsistent, unreliable analysis. Solution: Use the Argument Anatomy + Evidence Quality frameworks EVERY time.'
+            '• Accept face value—verify EVERY claim',
+            '• Authority bias—evaluate PROPOSAL, not credentials',
+            '• Ignore missing info—ask "What NOT telling?"',
+            '• Emotional decision—LOGIC + DATA, not feelings',
+            '• No framework—use systematic analysis ALWAYS'
           ],
           successCriteria: [
-            '✅ You identify 5+ logical fallacies in the proposal (Appeal to Authority, Anecdotal Evidence, False Dichotomy, etc.)',
-            '✅ You evaluate evidence quality systematically (sample size, bias, recency, relevance)',
-            '✅ You present a clear logical analysis to partners (structured, evidence-based)',
-            '✅ Partners agree with your recommendation (your logic is persuasive)',
-            '✅ The firm avoids a bad investment (logical reasoning = saved ₹1 crore)',
-            '✅ Your manager gives feedback: "Excellent critical thinking and due diligence"',
-            '✅ You are trusted with future high-stakes analysis (reputation as logical thinker)',
-            '✅ You feel confident evaluating ANY business proposal logically'
+            '✅ 5+ fallacies identified',
+            '✅ Evidence evaluated systematically',
+            '✅ Clear logical analysis presented',
+            '✅ Partners agree, firm saved ₹1Cr',
+            '✅ Manager praises critical thinking!'
           ]
         },
         personal: {
           title: 'Personal Logic Application',
-          description: 'Your friend Rohan is considering dropping out of B.Com to "pursue his passion" in photography. He argues: "Steve Jobs dropped out and became a billionaire. College is a waste of time. I should follow my passion now." You sense flaws in his reasoning, but he is emotional and defensive. You need to help him think logically without damaging your friendship.',
+          description: 'Friend Rohan: "Jobs dropped out, billionaire. I should too!" Flawed reasoning, emotional. Help think logically, preserve friendship!',
           instructions: [
-            '1. Listen Without Judging (Day 1, 1 hour conversation): Meet Rohan. Let him explain his reasoning fully. Do NOT interrupt with "That is a bad idea!" Listen 80%, talk 20%. Take mental notes of his arguments: "Steve Jobs dropped out [Premise]. Jobs became successful [Premise]. Therefore, I should drop out [Conclusion]." Also note: Is he reasoning logically, or is emotion driving this? (Likely emotion: frustration with studies, fear of missing out on passion.)',
-            '2. Identify the Logical Flaws (Day 1, 30 mins alone): Analyze Rohan is argument privately. Fallacy 1: Survivorship Bias (we hear about Jobs who succeeded, not millions of dropouts who failed). Fallacy 2: False Analogy (Rohan ≠ Steve Jobs - different contexts, resources, timing). Fallacy 3: False Dichotomy ("Either drop out OR waste time" - what about pursuing photography WHILE completing B.Com?). Write these down. You will present them gently, not aggressively.',
-            '3. Ask Socratic Questions (Day 2, 1 hour conversation): Do NOT tell Rohan "You are wrong." Instead, ask questions that lead him to discover the flaws himself. "How many people drop out vs how many succeed like Jobs?" (Survivorship Bias.) "What resources did Jobs have that you might not?" (False Analogy.) "Could you pursue photography part-time while finishing B.Com?" (False Dichotomy.) Socratic method = he discovers flaws himself = more likely to change his mind.',
-            '4. Present Alternative Evidence (Day 2, during conversation): Share data gently: "I read that 90% of dropouts do not achieve their goals, while 70% of graduates have stable careers. What if you finish B.Com (2 years left) AND build your photography portfolio simultaneously? That way, you have a safety net." Use the Evidence Quality Checklist: Provide credible sources (studies, not anecdotes), recent data, large sample sizes. Logic + empathy = persuasive.',
-            '5. Help Him Build a Sound Argument (Day 3, 1 hour): If he still wants to pursue photography, help him make a LOGICAL plan, not an emotional one. Ask: "What are your premises? (1) I am passionate about photography. (2) I can build a career in it. Are these TRUE? How do you know?" Help him test Premise 2: "Can you freelance for 3 months while in college to test if you can make ₹20K/month? If yes, you have evidence. If no, you need more preparation." Turn emotion into logic.',
-            '6. Respect His Decision (Day 3): After presenting logical analysis, respect his choice. Say: "I have shared my logical concerns and the data. Ultimately, it is your decision. I will support you either way, but I want you to decide based on LOGIC, not just emotion." This preserves your friendship while helping him think critically. You cannot force logic on someone, but you can offer it.',
+            '• Day 1: Listen 80%, notes—"Jobs dropout → success → I dropout"',
+            '• Day 1: Identify flaws privately—Survivorship Bias, False Analogy, False Dichotomy',
+            '• Day 2: Socratic questions—"How many succeed? Jobs resources?"—discovers flaws',
+            '• Day 2: Share data gently—"90% fail, 70% graduates stable"—logic + empathy',
+            '• Day 3: Help logical plan, respect decision—test ₹20K/mo 3mo first!',
             '',
             '🚫 Common Mistakes to Avoid:',
-            '• Being judgmental: "You are being stupid. Dropping out is a terrible idea." Result: Rohan gets defensive, stops listening. Solution: Ask questions, do not attack.',
-            '• Using your own anecdotes: "My cousin dropped out and failed, so you will too." Result: Anecdotal evidence fallacy - you are committing the same error Rohan is making. Solution: Use DATA and STUDIES, not personal stories.',
-            '• Ignoring emotions: "Let us just look at the facts." Result: Rohan feels dismissed, logic will not penetrate. Solution: Acknowledge feelings first ("I can see you are passionate about photography"), THEN introduce logic.',
-            '• Forcing your conclusion: "You MUST stay in college." Result: Rohan rebels against being told what to do. Solution: Help him reach a LOGICAL conclusion himself through Socratic questioning.',
-            '• No alternative options: Presenting only "Stay in college" vs "Drop out." Result: False dichotomy. Solution: Offer third options: "Finish B.Com + build photography portfolio simultaneously."'
+            '• Judgmental "stupid"—ask questions, don\'t attack',
+            '• Own anecdotes—DATA + STUDIES, not stories',
+            '• Ignore emotions—acknowledge feelings THEN logic',
+            '• Force conclusion—Socratic questioning, he discovers',
+            '• No alternatives—"B.Com + photography" third option'
           ],
           successCriteria: [
-            '✅ You identify 3-5 logical fallacies in Rohan is reasoning (Survivorship Bias, False Analogy, False Dichotomy)',
-            '✅ You use Socratic questions (not lectures) to help him discover flaws himself',
-            '✅ You provide high-quality evidence (studies, data) not anecdotes',
-            '✅ You help him build a LOGICAL plan (test photography income for 3 months) instead of an emotional one',
-            '✅ Rohan says: "You helped me think this through logically. I did not consider those points"',
-            '✅ He makes a more informed decision (stay in college + pursue photography, or drop out with a tested plan)',
-            '✅ Your friendship is preserved (you helped without judging)',
-            '✅ You feel confident using logical reasoning to help others make better decisions'
+            '✅ 3-5 fallacies identified',
+            '✅ Socratic questions, not lectures',
+            '✅ High-quality evidence, not anecdotes',
+            '✅ Logical plan built (test 3mo)',
+            '✅ Friendship preserved, helped think!'
           ]
         }
       }
@@ -722,91 +708,77 @@ This 10-minute analysis will save you 10 hours of wasted effort on wrong solutio
       contexts: {
         academic: {
           title: 'Academic Problem Analysis Mastery',
-          description: 'Your B.Com group project on "Financial Statement Analysis" is failing. Deadline: 5 days. Current status: 40% complete (12/30 tasks done). Team is panicking and proposing random solutions. You need to diagnose the REAL problem using systematic analysis, then propose targeted solutions that actually work.',
+          description: 'Group project failing: 40% done, 5 days left. Team panicking. Diagnose REAL problem, propose targeted solutions!',
           instructions: [
-            '1. Define the Problem Using 5W+H (Day 1, 1 hour): Call an emergency team meeting. Document: WHAT is happening? (12/30 tasks done, 8 blocked, 10 not started.) WHERE? (Research and analysis sections incomplete.) WHEN did it start? (Week 2, after we stopped daily check-ins.) WHO is affected? (All 4 members stressed.) WHY? (Unclear who owns which tasks.) HOW severe? (Critical - 30% of grade at risk.) Write this down. Now you have a PRECISE problem definition, not vague "project is failing."',
-            '2. Apply the 5 Whys (Day 1, 30 mins): Start with the symptom, drill down. "Why are we at 40%?" → "Tasks not done on time." "Why?" → "People do not know their responsibilities." "Why?" → "We did not define roles clearly." "Why?" → "We assumed everyone knew their part." "Why?" → "We had no kickoff meeting with role assignment." ROOT CAUSE: No role definition process. Write this down. This is what you will FIX.',
-            '3. Decompose the Problem (Day 1, 30 mins): Break "Project failing" into sub-problems. (1) Requirements Clarity: 5 tasks blocked due to unclear requirements (20% of issue). (2) Role Confusion: 8 tasks have unclear ownership (30%). (3) Communication Gaps: No daily updates, people work in silos (30%). (4) Skill Gaps: 2 tasks need Excel skills we lack (20%). Now you have 4 specific sub-problems to solve, not one overwhelming mess.',
-            '4. Gather Data (Day 1, 1 hour): Interview each team member privately. "What is blocking you?" Document: Arjun - "Unclear requirements for Section 3." Priya - "Waiting for Arjun is research." Neha - "No feedback on my draft." Analyze patterns: 5 tasks blocked by unclear requirements (biggest bottleneck). 3 tasks blocked by dependencies. 2 by skill gaps. This DATA shows the priority: Fix requirements first.',
-            '5. Verify Root Cause (Day 2, 30 mins): Test your diagnosis. Ask: "If we fix unclear roles and requirements, will we succeed?" Walk through: Define roles → Everyone knows their tasks → No duplication → Blockers removed → Progress accelerates. YES, this will work. You have found the REAL problem. Now propose solutions: (1) 1-hour role definition meeting, (2) Clarify requirements with professor (30 mins), (3) Daily 10-min check-ins, (4) Peer review system for quality.',
-            '6. Implement Solutions (Day 2-5): Execute your targeted solutions. Day 2: Role meeting + requirements clarification. Day 3-5: Daily check-ins + execute tasks. Track progress: Are blocked tasks unblocking? Is team stress reducing? Adjust if needed. By Day 5, submit a quality project. Your systematic analysis saved the project.',
+            '• Day 1: Define 5W+H—12/30 tasks, 8 blocked, unclear roles',
+            '• Day 1: Apply 5 Whys—ROOT: No role definition process',
+            '• Day 1: Decompose—4 sub-problems: requirements, roles, communication, skills',
+            '• Day 1: Gather data—interview team, identify biggest bottleneck',
+            '• Day 2-5: Implement—role meeting, clarify, daily check-ins—project saved!',
             '',
             '🚫 Common Mistakes to Avoid:',
-            '• Solution jumping: Proposing "work 12 hours daily" without diagnosing WHY you are behind. Result: Exhaustion, problem persists. Solution: Always diagnose first (5W+H + 5 Whys) before proposing solutions.',
-            '• Vague problem definition: "The project is not going well." Result: Vague solutions that do not work. Solution: Be specific - quantify (40% done), identify blockers (unclear requirements), pinpoint timing (started Week 2).',
-            '• Treating symptoms: "We are stressed" → "Let us take a break." Result: Temporary relief, problem returns. Solution: Find root cause of stress (unclear roles) and fix THAT.',
-            '• No data gathering: Making decisions based on feelings ("I feel like we are behind"). Result: Inaccurate diagnosis. Solution: Quantify tasks, interview team, analyze patterns.',
-            '• Ignoring patterns: This is the 3rd project with the same issue, but you never analyzed WHY. Result: Problems recur. Solution: After solving, document: "Root cause was X. Prevention: Do Y upfront next time."'
+            '• Solution jump—diagnose first, 5W+H + 5 Whys',
+            '• Vague problem—be specific, quantify, identify blockers',
+            '• Treat symptoms—find root cause, fix THAT',
+            '• No data—quantify tasks, interview team',
+            '• Ignore patterns—document root cause, prevent next time'
           ],
           successCriteria: [
-            '✅ You define the problem precisely using 5W+H (not vague "project failing")',
-            '✅ You identify the root cause using 5 Whys (unclear roles, not "lack of time")',
-            '✅ You decompose the problem into 4 sub-problems and prioritize (requirements clarity = biggest bottleneck)',
-            '✅ You gather data by interviewing team members and quantifying tasks',
-            '✅ Your solutions are targeted (fix requirements, define roles) not generic (work harder)',
-            '✅ The project is completed successfully by Day 5 (systematic analysis = success)',
-            '✅ Your professor comments: "This team diagnosed and solved their issues professionally"',
-            '✅ You feel confident analyzing ANY complex problem systematically in future'
+            '✅ Problem defined precisely using 5W+H',
+            '✅ Root cause found: unclear roles',
+            '✅ 4 sub-problems decomposed, prioritized',
+            '✅ Data gathered, team interviewed',
+            '✅ Day 5: Project completed, Professor praises!'
           ]
         },
         professional: {
           title: 'Professional Problem Analysis Excellence',
-          description: 'You are a Business Analyst intern at a consulting firm. A client (retail chain with 50 stores) reports: "Our sales dropped 20% in Q3. We need to fix this immediately." Your manager assigns you to diagnose the problem and present findings to the client in 3 days. Your problem analysis will determine the solution strategy and your credibility.',
+          description: 'Analyst intern: Client sales -20% Q3, ₹2Cr loss. Diagnose + present in 3 days. Your analysis = solution strategy!',
           instructions: [
-            '1. Define the Problem Using 5W+H (Day 1, 2 hours): Interview the client. WHAT happened? (Sales dropped 20% in Q3 vs Q2.) WHERE? (All stores or specific regions? Online or offline?) WHEN exactly? (July? August? September? Gradual or sudden?) WHO is affected? (All product categories or specific ones?) WHY do they think it happened? (Their hypothesis - verify later.) HOW severe? (₹2 crore revenue loss.) Document everything. Precise definition = accurate diagnosis.',
-            '2. Gather Data (Day 1, 3 hours): Request: (1) Sales data by store, product category, month. (2) Customer feedback/complaints. (3) Competitor activity in Q3. (4) Marketing spend and campaigns. (5) Operational changes (new suppliers? staff changes?). Analyze the data: Which stores dropped most? (North region: -30%. South region: -10%.) Which products? (Electronics: -40%. Groceries: -5%.) When? (August specifically: -35%. July/Sept: -10%.) Patterns emerge: North region + Electronics + August = focus area.',
-            '3. Apply 5 Whys (Day 1, 1 hour): Start with the specific symptom. "Why did North region electronics sales drop 40% in August?" → "Customers bought from competitors." "Why?" → "Competitors had a sale." "Why did customers not return in Sept?" → "We lost trust due to stockouts." "Why stockouts?" → "Supplier delayed shipment." "Why?" → "We did not have backup suppliers." ROOT CAUSE: Single-supplier dependency + no contingency plan. This is fixable.',
-            '4. Decompose the Problem (Day 2, 1 hour): Break "20% sales drop" into sub-problems. (1) North Region Issue (40% of drop) - supplier problem. (2) Electronics Category Issue (30% of drop) - competitor pricing. (3) Customer Retention Issue (20% of drop) - lost trust from stockouts. (4) Marketing Issue (10% of drop) - low visibility in August. Now you have 4 specific problems to solve, each with different solutions.',
-            '5. Verify Root Causes with Data (Day 2, 2 hours): Test your hypotheses. Supplier issue: Check delivery logs (3 delays in August = stockouts). Competitor pricing: Mystery shop competitors (they offered 15% discount in August). Customer retention: Survey customers (40% said "I went to competitor due to stockout, never came back"). Marketing: Check campaign data (August spend was 50% lower than July). Your root causes are VERIFIED with data.',
-            '6. Build Your Presentation (Day 3, 2 hours): Create slides for client. Slide 1: Problem Summary (20% drop = ₹2 crore loss). Slide 2: Root Causes Identified (supplier dependency, competitor pricing, customer retention, marketing gap). Slide 3: Data Evidence (charts showing North region, August, electronics). Slide 4: Recommended Solutions (diversify suppliers, dynamic pricing, win-back campaign, increase August marketing). Slide 5: Expected Impact (recover 15% sales in Q4 = ₹1.5 crore). Logical, data-driven, actionable.',
-            '7. Present with Confidence (Day 3): Walk client through your systematic analysis. Start: "We used data-driven problem analysis to identify 4 root causes of your 20% sales drop." Present each root cause with supporting data. End: "By addressing these root causes, we project 15% sales recovery in Q4. Here is the implementation plan." Client sees: You did not guess - you ANALYZED. This builds trust and credibility.',
+            '• Day 1: Define 5W+H—20% drop, North region, electronics, August',
+            '• Day 1: Gather data—sales by store/category, patterns: North+Electronics+August',
+            '• Day 1: Apply 5 Whys—ROOT: Single-supplier, no contingency plan',
+            '• Day 2: Decompose—4 sub-problems: supplier, pricing, retention, marketing',
+            '• Day 2-3: Verify data, build presentation, present—recover 15% Q4!',
             '',
             '🚫 Common Mistakes to Avoid:',
-            '• Accepting client is diagnosis: "They said sales dropped due to economy." Result: You miss the real cause (supplier issues). Solution: Verify with data, do not assume.',
-            '• No data gathering: Proposing solutions based on intuition. Result: Wrong solutions, client loses trust. Solution: Always gather data first (sales reports, customer feedback, competitor analysis).',
-            '• Treating all symptoms equally: Spending equal effort on all regions when North region is the main issue. Result: Diluted effort. Solution: Prioritize based on data (North region = 40% of drop = focus here first).',
-            '• Vague recommendations: "Improve marketing." Result: Client does not know what to do. Solution: Specific actions - "Increase August marketing spend by 50%, focus on electronics category, run win-back campaign."',
-            '• No verification: Proposing root causes without data evidence. Result: Client questions your credibility. Solution: Every root cause = supporting data (delivery logs, competitor pricing, customer surveys).'
+            '• Accept client diagnosis—verify with data',
+            '• No data—gather sales, feedback, competitor analysis',
+            '• Treat all equal—prioritize North region (40% drop)',
+            '• Vague recommendations—specific actions',
+            '• No verification—every root cause = data evidence'
           ],
           successCriteria: [
-            '✅ You define the problem precisely (20% drop, North region, electronics, August)',
-            '✅ You identify 4 verified root causes with data evidence',
-            '✅ You decompose the complex problem into manageable sub-problems',
-            '✅ You present a data-driven analysis to the client (charts, evidence, logic)',
-            '✅ Client approves your recommendations (your analysis is credible)',
-            '✅ Your manager gives feedback: "Excellent problem analysis and client presentation"',
-            '✅ You are assigned more high-stakes client projects (reputation as strong analyst)',
-            '✅ You feel confident diagnosing ANY business problem systematically'
+            '✅ Problem defined precisely: 20%, North, electronics, Aug',
+            '✅ 4 root causes verified with data',
+            '✅ Complex problem decomposed',
+            '✅ Data-driven analysis presented',
+            '✅ Client approves, Manager praises!'
           ]
         },
         personal: {
           title: 'Personal Problem Analysis',
-          description: 'You have been feeling unmotivated and stressed for the past 2 months. Your grades dropped from 75% to 60%. You are sleeping poorly, avoiding friends, and procrastinating on assignments. You tell yourself: "I just need to work harder." But this is treating the symptom, not diagnosing the root cause. You need systematic problem analysis to understand what is REALLY wrong.',
+          description: 'Unmotivated 2mo: Grades 75%→60%, poor sleep, avoiding friends. "Work harder" treats symptom. Diagnose ROOT cause!',
           instructions: [
-            '1. Define the Problem Using 5W+H (Week 1, 1 hour alone): Be honest with yourself. WHAT is happening? (Grades dropped 15%, sleeping 5 hours/night, avoiding social events, procrastinating.) WHERE? (Affecting academics, health, relationships.) WHEN did it start? (2 months ago, after semester started.) WHO is affected? (You, your grades, your friendships.) WHY might this be happening? (Stress? Burnout? Unclear goals?) HOW severe? (Moderate to severe - affecting multiple life areas.) Write this down. Seeing it on paper = clarity.',
-            '2. Apply 5 Whys (Week 1, 30 mins): Start with the symptom. "Why are my grades dropping?" → "I am procrastinating on assignments." "Why?" → "I feel overwhelmed by the workload." "Why overwhelmed?" → "I have no clear study schedule or priorities." "Why no schedule?" → "I did not plan my semester - just reacting to deadlines." "Why no planning?" → "I thought I could handle it like last semester (I cannot - workload increased)." ROOT CAUSE: No semester planning system for increased workload.',
-            '3. Decompose the Problem (Week 1, 30 mins): Break "Feeling unmotivated and stressed" into parts. (1) Academic Problem: No study schedule, unclear priorities (40% of issue). (2) Health Problem: Poor sleep due to late-night cramming (30%). (3) Social Problem: Avoiding friends due to guilt about grades (20%). (4) Mental Health Problem: Burnout from reactive mode (10%). Now you have 4 specific areas to address, not one overwhelming "I am a mess."',
-            '4. Gather Data (Week 1, 1 hour): Track your time for 3 days. How many hours studying? (4 hours, but 2 hours on phone = only 2 productive hours.) How many hours sleeping? (5-6 hours.) How many social interactions? (Zero.) What triggers procrastination? (Opening Instagram when starting assignments.) This DATA reveals patterns: You are not lazy - you are distracted and sleep-deprived. Different diagnosis = different solution.',
-            '5. Identify Root Causes (Week 2, 1 hour): Analyze your data. Root Cause 1: No time-blocking system (you study reactively, not proactively). Root Cause 2: Phone addiction during study time (Instagram = 2 hours lost daily). Root Cause 3: Poor sleep hygiene (studying until 2 AM = 5-hour sleep = brain fog = poor retention). Root Cause 4: Social isolation (guilt about grades → avoid friends → more stress → worse grades = negative spiral). These are FIXABLE.',
-            '6. Test Your Diagnosis (Week 2, 30 mins): Ask: "If I fix these root causes, will I feel better and perform better?" Hypothesis: Time-blocking + phone discipline + 7-hour sleep + reconnect with friends = better grades + less stress + more motivation. This makes logical sense. Now implement solutions: (1) Create weekly time-block schedule, (2) Use app blocker during study time, (3) Sleep by 11 PM (7-hour minimum), (4) Meet friends once a week (even if you feel guilty). Test for 2 weeks.',
-            '7. Monitor and Adjust (Week 3-4): Track: Are grades improving? (Yes - 65% on recent test.) Sleep better? (Yes - 7 hours/night.) Less stressed? (Yes - time-blocking reduces overwhelm.) Friends reconnected? (Yes - met twice, felt supported.) Your diagnosis was CORRECT. The root causes were: No planning system, phone distraction, poor sleep, social isolation. NOT "I am lazy" or "I need to work harder." Systematic analysis = lasting improvement.',
+            '• Week 1: Define 5W+H—grades -15%, 5hr sleep, procrastinating',
+            '• Week 1: Apply 5 Whys—ROOT: No semester planning system',
+            '• Week 1: Decompose—4 problems: academic, health, social, mental',
+            '• Week 1: Gather data—track 3 days, 2hr phone = distracted',
+            '• Week 2-4: Implement, monitor—time-block, app blocker, 7hr sleep, friends—65%→70%!',
             '',
             '🚫 Common Mistakes to Avoid:',
-            '• Self-blame without analysis: "I am just lazy and unmotivated." Result: You feel worse, do not fix the real problem. Solution: Analyze systematically - often the root cause is a SYSTEM issue (no schedule, poor sleep), not a character flaw.',
-            '• Vague self-diagnosis: "I am stressed." Result: Vague solutions ("relax more"). Solution: Be specific - WHAT is causing stress? (Unclear priorities? Overcommitment? Poor time management?) Fix the cause.',
-            '• Treating symptoms: "I will just sleep more" without addressing WHY you are sleeping poorly (late-night cramming due to no schedule). Result: Symptom returns. Solution: Fix root cause (create study schedule) and symptom disappears.',
-            '• No data tracking: Relying on feelings ("I feel like I am not productive"). Result: Inaccurate diagnosis. Solution: Track time for 3 days - data reveals the truth (2 hours on phone, only 2 hours productive).',
-            '• Ignoring patterns: This is the 2nd semester you felt this way, but you never analyzed WHY. Result: Problem recurs. Solution: After solving, document: "Root cause was no planning system. Prevention: Create semester schedule in Week 1 next time."'
+            '• Self-blame—analyze SYSTEM issue, not character',
+            '• Vague "stressed"—be specific, fix cause',
+            '• Treat symptoms—fix root cause first',
+            '• No tracking—track 3 days, data reveals truth',
+            '• Ignore patterns—document root cause, prevent next'
           ],
           successCriteria: [
-            '✅ You define your problem precisely using 5W+H (not vague "I am stressed")',
-            '✅ You identify 3-4 root causes using 5 Whys (no planning, phone distraction, poor sleep, isolation)',
-            '✅ You decompose the problem into 4 sub-problems (academic, health, social, mental health)',
-            '✅ You gather data by tracking time for 3 days (reveals phone = 2 hours lost)',
-            '✅ Your solutions are targeted (time-blocking, app blocker, sleep schedule) not generic ("work harder")',
-            '✅ Your grades improve within 2 weeks (65% → 70%+) and stress reduces',
-            '✅ You reconnect with friends and feel supported (social isolation fixed)',
-            '✅ You feel confident using systematic analysis for future personal challenges'
+            '✅ Problem defined: 5W+H, not vague',
+            '✅ Root causes: planning, phone, sleep, isolation',
+            '✅ 4 sub-problems decomposed',
+            '✅ Data tracked 3 days: 2hr phone lost',
+            '✅ Grades 65%→70%, friends reconnected!'
           ]
         }
       }
@@ -1104,92 +1076,77 @@ Write them ALL down. Do not judge yet. After 30 mins, take a break. Then pick th
       contexts: {
         academic: {
           title: 'Academic Creative Problem-Solving',
-          description: 'Your B.Com Marketing professor assigns: "Create an innovative marketing campaign for a local business with ZERO budget." Traditional approaches (flyers, social media posts) are what everyone will do. You need a creative solution that stands out and actually works. You have 2 weeks.',
+          description: 'Marketing campaign: ZERO budget. Traditional = flyers, social media. Need creative solution that stands out. 2 weeks!',
           instructions: [
-            '1. Apply SCAMPER to Generate Ideas (Week 1, Day 1, 1 hour): Take the traditional approach (flyers, social media) and run through SCAMPER. S (Substitute): Replace flyers with QR codes on college campus. C (Combine): Merge social media + student influencers + user-generated content contest. A (Adapt): Adapt viral TikTok challenges to the business. M (Modify): Modify social media posts to interactive stories/polls. P (Put to use): Repurpose student projects as case studies for the business. E (Eliminate): Eliminate paid ads, go 100% organic. R (Reverse): Instead of business promoting itself, get CUSTOMERS to promote it (referral rewards). Write down 20+ ideas.',
-            '2. Brainstorm with "No Criticism" Rule (Week 1, Day 2, 30 mins): Get 3 classmates. Set timer: 30 minutes. Goal: 50 ideas. Rules: No criticism, wild ideas welcome, build on each other ("Yes, and..."). Ideas: "Flash mob at mall," "Collaborate with food bloggers," "Create Instagram filter with business logo," "Student ambassador program," "Guerrilla marketing stunts," "Partner with other local businesses for cross-promotion." Quantity over quality. Write EVERYTHING down.',
-            '3. Challenge 3 Assumptions (Week 1, Day 3, 1 hour): List assumptions. Assumption 1: "Zero budget = limited options." Challenge: "What if zero budget is an ADVANTAGE? (Forces creativity, authenticity, grassroots marketing)." Assumption 2: "Students will not help for free." Challenge: "What if we offered them portfolio-building opportunity + recommendation letter?" Assumption 3: "Social media organic reach is dead." Challenge: "What if we created SHAREABLE content (contest, challenge, emotional story)?" Test these by researching case studies of zero-budget viral campaigns.',
-            '4. Use Lateral Thinking - Reframe the Problem (Week 1, Day 4, 1 hour): Traditional: "How do we market with zero budget?" Lateral: "Who ELSE benefits if this business succeeds?" Local community benefits (jobs, local economy). Students benefit (portfolio projects). Influencers benefit (content). Reframe: "How do we create a campaign where everyone wins?" Solution: "Student-Led Community Marketing Initiative" - students create content (portfolio), business gets marketing (free), community supports local business (feel-good). Win-win-win.',
-            '5. Combine Top 3 Ideas (Week 1, Day 5, 2 hours): From your 50 ideas, pick top 3. Idea 1: User-generated content contest ("Share your experience with [Business], win ₹500"). Idea 2: Student influencer partnerships (10 students with 1000+ followers promote for portfolio credit). Idea 3: Guerrilla marketing (flash mob, QR code treasure hunt on campus). COMBINE: "Launch UGC contest promoted by student influencers, with flash mob kickoff event." This is your creative campaign.',
-            '6. Create Implementation Plan (Week 2, Day 1-2, 3 hours): Detail your campaign. Week 1: Recruit 10 student influencers (offer portfolio credit + recommendation). Week 2: Launch UGC contest (₹500 prize for best content). Week 3: Flash mob at college (create buzz). Week 4: Compile results (reach, engagement, sales impact). Create a presentation deck with visuals, timeline, expected impact. This is your submission.',
-            '7. Present Your Creative Solution (Week 2, Day 3): Present to professor. Start: "Traditional marketing requires budget. I created a zero-budget campaign using creative problem-solving." Walk through: SCAMPER process, brainstorming (50 ideas), assumption challenges, concept combination. Show your campaign: UGC contest + influencers + flash mob. End: "Expected reach: 10,000 students. Cost: ₹500 (prize). This demonstrates creativity, strategic thinking, and execution planning." Your creative approach = A grade.',
+            '• Day 1: Apply SCAMPER—QR codes, influencers, UGC contest—20+ ideas',
+            '• Day 2: Brainstorm 50 ideas—no criticism, wild welcome',
+            '• Day 3: Challenge 3 assumptions—zero budget = advantage?',
+            '• Day 4: Lateral thinking—reframe "everyone wins" solution',
+            '• Week 2: Combine top 3, implement, present—A grade!',
             '',
             '🚫 Common Mistakes to Avoid:',
-            '• Sticking to traditional methods: "Let us just do social media posts." Result: Same as everyone else, does not stand out. Solution: Use SCAMPER to generate 20+ alternatives.',
-            '• Criticizing during brainstorming: "That is a dumb idea." Result: Creativity dies, team shuts down. Solution: Defer judgment - save criticism for AFTER ideation.',
-            '• Not testing assumptions: Assuming "zero budget = impossible" without exploring creative alternatives. Result: Limited thinking. Solution: Challenge assumption - "What if zero budget forces better creativity?"',
-            '• One idea only: Generating 1-2 ideas and stopping. Result: Missing better alternatives. Solution: Generate 50 ideas (quantity), then pick best 5 (quality).',
-            '• No combination: Keeping ideas separate instead of merging them. Result: Incremental, not innovative. Solution: Combine your top 3 ideas into one powerful campaign.'
+            '• Stick traditional—use SCAMPER, 20+ alternatives',
+            '• Criticize during brainstorm—defer judgment',
+            '• No test assumptions—challenge "zero = impossible"',
+            '• One idea only—generate 50, pick best 5',
+            '• No combination—combine top 3, powerful campaign'
           ],
           successCriteria: [
-            '✅ You generate 50+ ideas using SCAMPER and brainstorming (quantity achieved)',
-            '✅ You challenge 3 assumptions and test them (zero budget = advantage, students will help)',
-            '✅ You combine multiple concepts (UGC contest + influencers + flash mob) into one innovative campaign',
-            '✅ Your campaign is creative AND feasible (zero budget, high impact)',
-            '✅ You present a detailed implementation plan (timeline, tactics, expected results)',
-            '✅ Professor gives feedback: "Excellent creative thinking and strategic planning"',
-            '✅ You receive an A grade (90%+) for innovation and execution quality',
-            '✅ You feel confident applying creative problem-solving to future B.Com projects'
+            '✅ 50+ ideas using SCAMPER, brainstorming',
+            '✅ 3 assumptions challenged, tested',
+            '✅ UGC + influencers + flash mob combined',
+            '✅ Campaign creative, feasible, zero budget',
+            '✅ A grade, Professor praises innovation!'
           ]
         },
         professional: {
           title: 'Professional Creative Innovation',
-          description: 'You are a Marketing intern at a startup. The company is product launch is failing - only 100 sales in Month 1 (goal was 1000). Traditional marketing (Facebook ads, email campaigns) is not working. Your manager says: "We tried everything. I do not know what else to do." You need to generate creative solutions that break through the noise. Budget: ₹50,000. Deadline: 30 days to hit 500 sales or the product gets discontinued.',
+          description: 'Marketing intern: Product launch failing, 100/1000 sales. Traditional not working. Manager: "Tried everything!" Budget ₹50K, 30 days to hit 500 or discontinued!',
           instructions: [
-            '1. Apply SCAMPER to Current Approach (Day 1, 2 hours): Analyze what is NOT working. Current: Facebook ads (low ROI), email campaigns (2% open rate). Apply SCAMPER. S (Substitute): Replace Facebook ads with TikTok/Instagram Reels (Gen Z is there). C (Combine): Combine product with influencer unboxing + user reviews + giveaway. A (Adapt): Adapt viral challenge format to your product. M (Modify): Modify email campaigns to personalized video messages. E (Eliminate): Eliminate generic ads, focus on storytelling. R (Reverse): Instead of company promoting product, get USERS to promote it (referral program). Generate 15+ alternatives.',
-            '2. Brainstorm with Team (Day 1, 1 hour): Gather marketing team + sales team + product team (diverse perspectives = better ideas). Set timer: 30 mins. Goal: 50 ideas. No criticism. Wild ideas welcome. Ideas: "Partner with micro-influencers," "Create a viral challenge," "Offer early-bird discount," "Build a community on Discord," "User-generated content contest," "Guerrilla marketing stunts," "Partner with complementary brands," "Create educational content series." Write all 50 down.',
-            '3. Challenge Assumptions (Day 2, 1.5 hours): List assumptions. Assumption 1: "We need big influencers (expensive)." Challenge: "What if micro-influencers (1K-10K followers) have BETTER engagement?" Research: Micro-influencers have 7% engagement vs 1% for mega-influencers. Insight: Go micro. Assumption 2: "Customers will not create content for us." Challenge: "What if we incentivized it?" Test: Offer ₹500 for best user review video. Result: 50 submissions. Assumption 3: "We need more budget." Challenge: "What if we reallocated existing ₹50K more creatively?" Insight: ₹50K on 10 micro-influencers (₹5K each) vs ₹50K on Facebook ads (low ROI).',
-            '4. Use Lateral Thinking - Reframe (Day 2, 1 hour): Traditional: "How do we sell 500 units?" Lateral: "Who ELSE benefits if our product succeeds?" Influencers benefit (content). Customers benefit (solve their problem). Complementary brands benefit (cross-promotion). Reframe: "How do we create a campaign where influencers, customers, and partners all win?" Solution: "Influencer Partnership Program" - 10 influencers get free product + ₹5K for authentic review. Their followers buy (500 sales). Influencers get content + income. You hit target. Win-win-win.',
-            '5. Combine Top 5 Ideas (Day 3, 2 hours): From 50 ideas, pick top 5 based on: feasibility, cost, impact. Idea 1: Micro-influencer partnerships (10 influencers × ₹5K). Idea 2: User-generated content contest (₹500 prize). Idea 3: Referral program (₹100 discount for referrer + referee). Idea 4: Educational content series (solve customer problem, build trust). Idea 5: Limited-time launch offer (urgency). COMBINE into one integrated campaign. Execute all 5 simultaneously for maximum impact.',
-            '6. Create Campaign Plan (Day 4-5, 4 hours): Build detailed plan. Week 1: Recruit 10 micro-influencers, launch UGC contest, create educational content. Week 2: Influencers post reviews, contest submissions come in, referral program goes live. Week 3: Launch offer announced, urgency created. Week 4: Measure results, optimize. Create presentation for manager with timeline, budget breakdown (₹50K allocation), expected ROI (500 sales = ₹5L revenue vs ₹50K spend = 10X ROI).',
-            '7. Present and Execute (Day 6-30): Present to manager: "Traditional marketing is not working. I used creative problem-solving (SCAMPER, brainstorming, lateral thinking) to generate this integrated campaign." Show the plan. Get approval. Execute. Track daily: Sales, engagement, influencer reach. Adjust based on data. By Day 30, hit 500+ sales. Your creative thinking saved the product.',
+            '• Day 1: SCAMPER—TikTok, micro-influencers, UGC, referrals—15+ alternatives',
+            '• Day 1: Brainstorm team—50 ideas, no criticism, wild welcome',
+            '• Day 2: Challenge assumptions—micro > mega influencers (7% vs 1%)',
+            '• Day 2: Lateral thinking—reframe "everyone wins" partnership program',
+            '• Day 3-30: Combine top 5, plan, execute, track—500+ sales!',
             '',
             '🚫 Common Mistakes to Avoid:',
-            '• Doing more of what is not working: "Let us increase Facebook ad spend." Result: Throwing good money after bad. Solution: If it is not working, try something DIFFERENT (creative alternatives).',
-            '• Immediate criticism: "Influencers are too expensive." Result: Idea dies before evolving into "micro-influencers" (affordable). Solution: Defer judgment during brainstorming.',
-            '• Not testing assumptions: Assuming "customers will not create content" without testing. Result: Miss UGC opportunity. Solution: Test with small experiment (offer ₹500 prize, see response).',
-            '• One-dimensional thinking: Only trying one approach (influencers OR contest OR referrals). Result: Limited impact. Solution: COMBINE multiple tactics for integrated campaign.',
-            '• No measurement: Launching creative campaign without tracking results. Result: Cannot prove ROI. Solution: Track metrics daily (sales, reach, engagement), show data to manager.'
+            '• More of same—try something DIFFERENT',
+            '• Immediate criticism—defer judgment',
+            '• No test assumptions—small experiment first',
+            '• One approach only—COMBINE multiple tactics',
+            '• No measurement—track daily: sales, reach, engagement'
           ],
           successCriteria: [
-            '✅ You generate 50+ ideas using SCAMPER and brainstorming',
-            '✅ You challenge 3 assumptions and find insights (micro-influencers > mega-influencers)',
-            '✅ You combine top 5 ideas into one integrated campaign',
-            '✅ You create a detailed implementation plan with budget and timeline',
-            '✅ You achieve 500+ sales in 30 days (creative solutions = business results)',
-            '✅ Manager gives feedback: "Your creative thinking saved this product launch"',
-            '✅ You are promoted or given more strategic projects (reputation as innovator)',
-            '✅ You feel confident generating creative solutions for any business challenge'
+            '✅ 50+ ideas: SCAMPER, brainstorming',
+            '✅ 3 assumptions challenged, insights found',
+            '✅ Top 5 combined, integrated campaign',
+            '✅ Implementation plan: budget, timeline',
+            '✅ 500+ sales, Manager praises, promoted!'
           ]
         },
         personal: {
           title: 'Personal Creative Problem-Solving',
-          description: 'You want to build a side income (₹10K/month) while in B.Com, but traditional options (tutoring, freelancing) are saturated and low-paying. You need a creative approach that leverages YOUR unique skills and interests. You have 1 month to test and validate an idea.',
+          description: 'Side income ₹10K/mo while B.Com. Traditional (tutoring, freelancing) saturated, low-paying. Need creative approach. 1 month to test!',
           instructions: [
-            '1. List Your Assets (Week 1, Day 1, 1 hour): What do you have that others do not? Skills: Excel, financial modeling, content creation? Interests: Finance, investing, personal finance? Network: 500 college friends, 200 LinkedIn connections? Time: 10 hours/week available? Resources: Laptop, internet, college resources? Write everything down. Creative solutions come from combining YOUR unique assets in new ways.',
-            '2. Apply SCAMPER to Traditional Options (Week 1, Day 2, 1 hour): Traditional: Tutoring (₹500/hour, 20 hours/month = ₹10K, but time-intensive). Apply SCAMPER. S (Substitute): Replace 1-on-1 tutoring with group sessions (5 students × ₹300 = ₹1500/hour). C (Combine): Combine tutoring + recorded videos + study materials (sell as package). M (Modify): Modify from "teach students" to "teach working professionals" (they pay more - ₹2000/hour). E (Eliminate): Eliminate in-person, go 100% online (serve students across India). R (Reverse): Instead of you finding students, let students find YOU (create YouTube channel, they come to you). Generate 15+ alternatives.',
-            '3. Brainstorm 50 Ideas (Week 1, Day 3, 1 hour): Set timer: 30 mins. No criticism. Wild ideas welcome. Ideas: "Create a personal finance Instagram page," "Sell Excel templates for B.Com students," "Start a podcast on career advice," "Create Notion templates for study planning," "Offer resume review services," "Build a newsletter on investing for students," "Create online course on Udemy," "Freelance financial modeling on Fiverr," "Start a blog with affiliate marketing," "Create TikTok content on money tips." Write 50 ideas, even crazy ones.',
-            '4. Challenge Your Assumptions (Week 1, Day 4, 1 hour): Assumption 1: "I need to be an expert to teach." Challenge: "What if I am just 2 steps ahead of my audience? (I can teach 1st years as a 3rd year.)" Assumption 2: "People will not pay for my content." Challenge: "What if I provided real value? (Excel templates that save 5 hours of work = worth ₹500.)" Assumption 3: "I need a big audience first." Challenge: "What if I started with 10 paying customers, then scaled?" Test by creating 1 product (Excel template), selling to 10 friends for ₹100 each. If it works, scale.',
-            '5. Combine Top 3 Ideas (Week 2, Day 1, 2 hours): From 50 ideas, pick top 3 based on: your skills, market demand, scalability. Idea 1: Excel templates for B.Com students. Idea 2: Instagram page on personal finance tips. Idea 3: Resume review service. COMBINE: "Personal Finance Instagram Page that promotes Excel Templates + Resume Reviews." Content attracts audience (free value), templates + services generate income (₹10K/month). This is your creative side hustle.',
-            '6. Test with MVP (Week 2-3, 10 hours): Create Minimum Viable Product. Week 2: Create 1 Excel template (budget tracker for students), post 5 Instagram reels (personal finance tips), offer resume reviews (₹200/resume). Week 3: Promote to 50 friends, ask for feedback. Goal: Get 10 paying customers (₹2K revenue). If it works, you have validated your idea. If not, adjust based on feedback.',
-            '7. Scale or Pivot (Week 4): If you hit ₹2K in Week 3, scale: Create 3 more templates, post daily on Instagram, increase prices (₹300/template, ₹500/resume review). Goal: 20 customers × ₹500 avg = ₹10K/month. If you did NOT hit ₹2K, pivot: Try a different combination from your 50 ideas. Creativity requires experimentation - not every idea works, but systematic testing finds winners.',
+            '• Week 1 Day 1: List YOUR assets—skills, interests, network, time',
+            '• Week 1 Day 2: SCAMPER traditional—group sessions, online, YouTube—15+ alternatives',
+            '• Week 1 Day 3: Brainstorm 50 ideas—Instagram, templates, resume, podcast',
+            '• Week 1 Day 4: Challenge assumptions—test 1 product, 10 friends',
+            '• Week 2-4: Combine top 3, MVP, test, scale or pivot—₹10K/mo!',
             '',
             '🚫 Common Mistakes to Avoid:',
-            '• Analysis paralysis: Generating 50 ideas but never testing any. Result: Zero income. Solution: Pick top 3, test with MVP in Week 2.',
-            '• Perfectionism: "I will launch when my product is perfect." Result: You never launch. Solution: Launch MVP (80% ready), get feedback, improve iteratively.',
-            '• Not leveraging your assets: Trying to do what everyone else does (tutoring) instead of using YOUR unique combination (B.Com knowledge + Excel skills + content creation). Result: Commoditized, low-paying. Solution: Combine YOUR assets creatively.',
-            '• Ignoring market demand: Creating what YOU want without checking if others will pay. Result: No customers. Solution: Survey 20 people - "Would you pay ₹200 for a resume review?" Validate before building.',
-            '• Giving up after first failure: First idea does not work, you quit. Result: Miss the winning idea. Solution: Test 3-5 ideas systematically. Creativity requires experimentation.'
+            '• Analysis paralysis—pick top 3, test Week 2',
+            '• Perfectionism—launch MVP 80%, iterate',
+            '• Not leverage assets—combine YOUR unique skills',
+            '• Ignore market—survey 20, validate before building',
+            '• Give up first fail—test 3-5 ideas systematically'
           ],
           successCriteria: [
-            '✅ You generate 50+ ideas using SCAMPER, brainstorming, and lateral thinking',
-            '✅ You challenge 3 assumptions and test them with small experiments',
-            '✅ You combine your top 3 ideas into one unique side hustle',
-            '✅ You launch an MVP and get 10 paying customers in Week 3 (idea validated)',
-            '✅ You earn ₹2K-10K in Month 1 (creative solution = income)',
-            '✅ You build a scalable system (templates, content, services) that can grow',
-            '✅ You feel confident that you can create income opportunities creatively (not just traditional jobs)',
-            '✅ Your side hustle becomes a portfolio piece for job interviews (shows initiative and creativity)'
+            '✅ 50+ ideas: SCAMPER, brainstorming, lateral',
+            '✅ 3 assumptions challenged, tested',
+            '✅ Top 3 combined, unique side hustle',
+            '✅ MVP launched, 10 customers Week 3',
+            '✅ ₹2K-10K Month 1, scalable system built!'
           ]
         }
       }
@@ -1476,92 +1433,77 @@ Total: 3.5 hours. You will have a confident, data-driven decision. No more analy
       contexts: {
         academic: {
           title: 'Academic Decision Mastery',
-          description: 'You must choose your B.Com specialization: (1) Finance (high-paying jobs, competitive), (2) Marketing (creative, diverse roles), (3) Accounting (stable, professional certifications). This decision affects your career for 5+ years. You have 3 days to decide. You are torn and keep changing your mind.',
+          description: 'Choose B.Com specialization: Finance/Marketing/Accounting. 5+ years impact. 3 days to decide. Torn, changing mind!',
           instructions: [
-            '1. Clarify YOUR Priorities (Day 1, 1 hour): Write down what matters MOST to you in a career. Rank 1-5: ___ High salary potential, ___ Creative work, ___ Job stability, ___ Work-life balance, ___ Continuous learning, ___ Entrepreneurship potential. Be honest. If salary is #1 for you, own it. If creativity is #1, own that. Your priorities = your decision criteria. Do not rank based on what you THINK you should value - rank based on what you ACTUALLY value.',
-            '2. Create a Decision Matrix (Day 1, 2 hours): Build a table. Rows: Finance, Marketing, Accounting. Columns: Your criteria (Salary, Creativity, Stability, Work-life, Learning, Entrepreneurship). Weight each criterion (1-10 based on your priorities). Rate each specialization (1-10) on each criterion. Example: Finance - Salary (9/10), Creativity (4/10), Stability (7/10). Marketing - Salary (6/10), Creativity (9/10), Stability (6/10). Accounting - Salary (7/10), Creativity (3/10), Stability (9/10). Calculate weighted scores. Highest score = best fit for YOU.',
-            '3. Apply 10-10-10 Rule (Day 1, 1 hour): For each specialization, imagine: 10 MINUTES after choosing: How do you feel? (Finance = excited about money. Marketing = excited about creativity. Accounting = comfortable with stability.) 10 MONTHS into the specialization: Are you enjoying the coursework? (Finance = loving financial modeling? Marketing = loving campaign projects? Accounting = bored with repetitive entries?) 10 YEARS into your career: Where are you? (Finance = investment banker, high stress, high pay? Marketing = brand manager, creative, moderate pay? Accounting = CA, stable, respected?) Write this down for each option.',
-            '4. Gather Data - Talk to Seniors (Day 2, 2 hours): Find 2 seniors in EACH specialization (Finance, Marketing, Accounting). Ask: "What is the reality vs the perception?" "What do you wish you knew before choosing?" "What are the job prospects?" "Would you choose this again?" Document their insights. This is real-world data, not assumptions. Example insight: "Finance has high-paying jobs, but competition is brutal - top 10% get great roles, rest struggle." This changes your evaluation.',
-            '5. Test Your Assumptions (Day 2, 1 hour): List your assumptions. Assumption 1: "Finance = guaranteed high salary." Test: Research average B.Com Finance grad salaries (₹4-6 LPA, not ₹10L+). Assumption 2: "Marketing = creative freedom." Test: Talk to marketers (reality: 80% execution, 20% creativity). Assumption 3: "Accounting = boring." Test: Research forensic accounting, management accounting (not just data entry). Challenge your assumptions with data.',
-            '6. Make Your Decision (Day 3, 1 hour): Review your Decision Matrix (which scored highest?), 10-10-10 analysis (which aligns with long-term goals?), senior insights (which has better reality?). Make your choice based on DATA, not emotion or external pressure. Write down: "I choose [X] because [3 reasons based on my priorities and data]." This clarity = confidence.',
-            '7. Own Your Decision (Day 3 onwards): After choosing, stop second-guessing. You used a systematic framework. You gathered data. You made an informed choice. If doubts arise, re-read your analysis. Remind yourself: "I chose based on MY priorities and available data. I own this decision." Confidence comes from knowing you decided systematically, not impulsively.',
+            '• Day 1: Clarify YOUR priorities—rank salary/creativity/stability/balance honestly',
+            '• Day 1: Decision Matrix—weight criteria, rate each, calculate scores',
+            '• Day 1: Apply 10-10-10—10 mins/10 months/10 years each option',
+            '• Day 2: Talk to 6 seniors (2 each)—reality vs perception',
+            '• Day 2-3: Test assumptions, make decision, own it—no second-guessing!',
             '',
             '🚫 Common Mistakes to Avoid:',
-            '• Choosing based on others priorities: "My parents want me to do Finance, so I will." Result: Regret in 10 months when you realize you hate it. Solution: Clarify YOUR priorities first, decide based on YOUR values.',
-            '• No weighting: Counting pros vs cons without weighting importance. Result: Minor pros outweigh critical cons. Solution: Weight each pro/con based on YOUR priorities (work-life balance = 9/10 for you? Weight it heavily).',
-            '• Short-term thinking: Choosing Finance because "₹6 LPA sounds great right now." Result: Ignoring 10-year consequences (burnout? Limited skills?). Solution: Apply 10-10-10 Rule - think long-term.',
-            '• Not testing assumptions: Assuming "Finance = guaranteed wealth" without researching reality. Result: Disappointed when reality differs. Solution: Talk to seniors, research data, test assumptions.',
-            '• Analysis paralysis: Spending 3 days re-analyzing the same data. Result: Stress, no decision. Solution: Set deadline - "I will decide by Day 3, 6 PM." Use frameworks to decide, then commit.'
+            '• Others priorities—decide YOUR values',
+            '• No weighting—weight by importance',
+            '• Short-term thinking—10-10-10 Rule',
+            '• No test assumptions—research reality',
+            '• Analysis paralysis—set deadline, commit'
           ],
           successCriteria: [
-            '✅ You clarify YOUR priorities (ranked 1-5) before evaluating options',
-            '✅ You create a Decision Matrix with weighted criteria and calculate scores',
-            '✅ You apply 10-10-10 Rule to consider long-term consequences',
-            '✅ You gather data by talking to 6 seniors (2 from each specialization)',
-            '✅ You test 3 assumptions and adjust your evaluation based on findings',
-            '✅ You make a confident decision within 3 days (no analysis paralysis)',
-            '✅ You can articulate WHY you chose this (3 data-backed reasons)',
-            '✅ You feel confident and at peace with your choice (no second-guessing)'
+            '✅ YOUR priorities clarified, ranked',
+            '✅ Decision Matrix: weighted, scored',
+            '✅ 10-10-10 Rule applied',
+            '✅ 6 seniors interviewed',
+            '✅ Day 3: Confident decision made!'
           ]
         },
         professional: {
           title: 'Professional Decision Excellence',
-          description: 'You are a Business Analyst at a consulting firm. Your client (manufacturing company) must decide: (1) Automate production (₹50L investment, 30% cost savings, 20 jobs lost), (2) Expand to new market (₹40L investment, 50% revenue growth potential, high risk), (3) Status quo (no investment, no growth, safe). You must analyze and recommend a decision to the CEO in 2 days.',
+          description: 'Analyst: Client must decide—Automate (₹50L, 30% savings, 20 jobs lost), Expand (₹40L, 50% growth, high risk), or Status quo. Recommend to CEO in 2 days!',
           instructions: [
-            '1. Build a Decision Matrix (Day 1, 3 hours): Create a comprehensive matrix. Rows: Automation, Expansion, Status Quo. Columns: Financial ROI, Risk level, Employee impact, Market competitiveness, Implementation complexity, Time to ROI. Weight criteria based on CEO priorities (ask: "What matters most to you?"). If CEO says "Profitability is #1," weight Financial ROI as 10/10. Rate each option 1-10 on each criterion. Calculate weighted scores. This gives you a data-driven recommendation.',
-            '2. Apply 10-10-10 for Each Option (Day 1, 1 hour): Automation - 10 minutes: Exciting (cost savings!). 10 months: 20 employees laid off, bad PR, union issues? 10 years: 30% cost savings = ₹5 crore saved, competitive advantage. Expansion - 10 minutes: Risky (₹40L investment). 10 months: New market traction, 50% revenue growth? 10 years: Diversified revenue, market leader in 2 regions. Status Quo - 10 minutes: Safe. 10 months: Competitors innovating, you are stagnant. 10 years: Market share lost, company irrelevant. Document insights for each timeline.',
-            '3. Weighted Pros-Cons (Day 1, 1.5 hours): For each option, list pros and cons with weights. Automation Pro: "₹5 crore savings over 5 years" (Weight: 10/10 - critical). Automation Con: "20 jobs lost, bad PR" (Weight: 7/10 - significant but manageable). Expansion Pro: "50% revenue growth" (Weight: 9/10). Expansion Con: "High risk, might fail" (Weight: 8/10). Status Quo Pro: "No risk" (Weight: 3/10 - not valuable). Status Quo Con: "Competitors will overtake us" (Weight: 9/10 - critical). Calculate weighted totals. Which option has highest weighted pros minus weighted cons?',
-            '4. Gather Data (Day 1, 2 hours): Research: (1) Automation ROI case studies (other manufacturers who automated - what was their experience?), (2) New market analysis (is there demand? Who are competitors?), (3) Status quo risk (what happens if we do nothing? Competitor analysis). Interview: Talk to operations head (automation feasibility?), sales head (expansion potential?), HR head (employee impact?). Data > assumptions.',
-            '5. Test Assumptions (Day 2, 1 hour): Assumption 1: "Automation will save 30%." Test: Request detailed cost analysis from automation vendor. Verify with industry benchmarks. Assumption 2: "New market has 50% growth potential." Test: Commission market research (₹50K investment to validate ₹40L decision = smart). Assumption 3: "Status quo is safe." Test: Analyze competitor moves - are they automating/expanding? If yes, status quo = falling behind. Verify every assumption.',
-            '6. Build Recommendation (Day 2, 3 hours): Create presentation for CEO. Slide 1: Decision Framework Used (Matrix, 10-10-10, Weighted Pros-Cons). Slide 2: Analysis Summary (scores for each option). Slide 3: Data Evidence (ROI calculations, market research, case studies). Slide 4: Risk Assessment (what could go wrong for each option?). Slide 5: Recommendation (based on analysis, recommend Option X because...). Slide 6: Implementation Plan (if CEO approves). Logical, data-driven, defensible.',
-            '7. Present with Confidence (Day 2): Walk CEO through your systematic analysis. Start: "I evaluated 3 options using decision frameworks and data analysis." Present matrix, 10-10-10, pros-cons. Show data evidence. Address risks. End: "Based on this analysis, I recommend [Option X] because it aligns with your priority (profitability) and has the highest weighted score (X points). Here is the implementation plan." CEO sees: You did not guess - you ANALYZED. Decision made.',
+            '• Day 1: Decision Matrix—weight CEO priorities, rate each, calculate',
+            '• Day 1: Apply 10-10-10 each option—10 mins/months/years consequences',
+            '• Day 1: Weighted pros-cons—calculate totals, highest wins',
+            '• Day 1: Gather data—ROI studies, market analysis, interviews',
+            '• Day 2: Test assumptions, build presentation, present—CEO approves!',
             '',
             '🚫 Common Mistakes to Avoid:',
-            '• Recommending based on gut: "I feel like automation is the way to go." Result: CEO questions your credibility. Solution: Use Decision Matrix + data to support your recommendation.',
-            '• Ignoring CEO priorities: Recommending expansion (growth) when CEO prioritizes profitability (automation). Result: Misaligned recommendation. Solution: Weight criteria based on CEO priorities, not yours.',
-            '• Not considering 10-year impact: Recommending status quo (safe now) without considering 10-year consequences (company becomes irrelevant). Solution: Apply 10-10-10 Rule.',
-            '• Weak data: "I think automation will save 30%." Result: CEO asks "Based on what?" and you have no answer. Solution: Gather data - vendor quotes, industry benchmarks, case studies.',
-            '• No risk assessment: Recommending expansion without addressing "What if the new market fails?" Result: CEO sees you as naive. Solution: For each option, list risks and mitigation strategies.'
+            '• Gut feeling—Decision Matrix + data',
+            '• Ignore CEO priorities—weight their priorities',
+            '• Ignore 10-year—apply 10-10-10 Rule',
+            '• Weak data—vendor quotes, benchmarks, studies',
+            '• No risk assessment—list risks, mitigation'
           ],
           successCriteria: [
-            '✅ You create a comprehensive Decision Matrix with weighted criteria aligned to CEO priorities',
-            '✅ You apply 10-10-10 Rule to reveal long-term consequences of each option',
-            '✅ You gather data (ROI calculations, market research, case studies) to support your analysis',
-            '✅ You test 3 assumptions and verify with data before recommending',
-            '✅ You present a clear, data-driven recommendation to the CEO',
-            '✅ CEO approves your recommendation and implementation plan',
-            '✅ Your manager gives feedback: "Excellent strategic analysis and decision framework"',
-            '✅ You feel confident making high-stakes business decisions systematically'
+            '✅ Decision Matrix: CEO priorities weighted',
+            '✅ 10-10-10 applied, long-term revealed',
+            '✅ Data gathered: ROI, research, studies',
+            '✅ 3 assumptions tested, verified',
+            '✅ CEO approves, Manager praises!'
           ]
         },
         personal: {
           title: 'Personal Decision Wisdom',
-          description: 'You are deciding: Should you do an MBA (₹20L cost, 2 years, career boost) or start working (₹5 LPA, immediate income, experience)? Your parents say MBA. Your gut says work. You have been torn for 2 months. This indecision is causing stress and missed opportunities. You need to decide in 1 week using a systematic framework.',
+          description: 'MBA (₹20L, 2yr) vs Job (₹5 LPA, immediate)? Parents say MBA. Gut says work. Torn 2 months. Decide in 1 week!',
           instructions: [
-            '1. Clarify YOUR Life Goals (Day 1, 1 hour): Before deciding MBA vs Job, ask: What do I want in 5 years? (Senior role in corporate? Entrepreneurship? Work-life balance? High income?) Write down your 5-year vision. Now evaluate: Which path (MBA or Job) gets me closer to MY vision? If your goal is entrepreneurship, maybe Job (learn business operations) + online courses > MBA (expensive, theoretical). If your goal is senior corporate role, maybe MBA (fast-track) > Job (slow climb). Your goals = your decision criteria.',
-            '2. Create a Decision Matrix (Day 1, 2 hours): Rows: MBA, Job. Columns: Career growth speed, Income (5-year total), Learning, Network, Debt burden, Opportunity cost, Flexibility. Weight based on YOUR priorities. Example: If you value "No debt" highly (weight 9/10), MBA scores low (₹20L debt). If you value "Fast career growth" (weight 10/10), MBA scores high (2 years → senior roles). Calculate weighted scores. Which wins based on YOUR values?',
-            '3. Apply 10-10-10 Rule (Day 2, 1 hour): MBA path - 10 minutes: Excited (prestige, learning). 10 months: Stressed (₹20L debt, tough coursework, no income). 10 years: Senior role, ₹25 LPA, but ₹20L debt repaid? Job path - 10 minutes: Uncertain (no MBA = less prestigious?). 10 months: Earning ₹5 LPA, learning on the job, no debt. 10 years: ₹12-15 LPA (slower growth), but ₹30L saved (no MBA cost + 2 years income), practical experience. Which aligns with your 10-year vision?',
-            '4. Gather Data - Talk to 10 People (Day 2-3, 3 hours): Talk to 5 MBA grads: "Was it worth ₹20L? ROI? Regrets?" Talk to 5 working professionals without MBA: "Career growth? Salary progression? Do you regret not doing MBA?" Document: MBA grads say "Worth it IF you get into top companies (50% do). Otherwise, debt burden is heavy." Working professionals say "Slower growth, but practical skills and zero debt. Some regret not doing MBA, some do not." This data informs your decision.',
-            '5. Test Your Assumptions (Day 4, 1 hour): Assumption 1: "MBA = guaranteed high salary." Test: Research average MBA grad salaries (₹8-12 LPA, not ₹20L+). Factor in ₹20L debt. Net benefit? Assumption 2: "Without MBA, I cannot reach senior roles." Test: LinkedIn search - how many senior managers do not have MBA? (Answer: 40%). MBA helps but is not mandatory. Assumption 3: "I need to decide NOW." Test: Can you work for 2 years, save ₹10L, then do MBA with less debt? Maybe waiting is smarter. Challenge every assumption.',
-            '6. Make Your Decision (Day 5, 1 hour): Review all your analysis: Decision Matrix (which scored higher?), 10-10-10 (which aligns with long-term vision?), Data from 10 people (what is the reality?), Tested assumptions (which are true?). Make your choice based on THIS, not external pressure. Write: "I choose [MBA/Job] because: (1) [Reason based on my priorities], (2) [Reason based on data], (3) [Reason based on long-term vision]." This clarity = confidence.',
-            '7. Create a Plan B (Day 5, 30 mins): No decision is permanent. Plan B: If you choose Job, you can do MBA later (part-time or after 2-3 years). If you choose MBA, you can pivot careers if it does not work out. Having a Plan B reduces decision anxiety. You are not locked in forever - you are choosing the best path based on current data. Flexibility = peace of mind.',
+            '• Day 1: Clarify 5-year goals—which path gets you closer?',
+            '• Day 1: Decision Matrix—weight YOUR priorities, calculate scores',
+            '• Day 2: Apply 10-10-10—10 mins/months/years each path',
+            '• Day 2-3: Talk to 10 people (5 MBA, 5 working)—reality?',
+            '• Day 4-5: Test assumptions, decide, Plan B—confidence, peace!',
             '',
             '🚫 Common Mistakes to Avoid:',
-            '• Following others: "Most B.Com students do MBA, so I should too." Result: You ignore YOUR goals and priorities. Solution: Decide based on YOUR 5-year vision, not peer pressure.',
-            '• Ignoring debt burden: "₹20L debt is fine, I will earn it back." Result: 5 years of EMI stress, limited financial freedom. Solution: Factor debt into Decision Matrix (weight it heavily if you value financial freedom).',
-            '• Short-term thinking: Choosing Job because "I want income NOW" without considering 10-year career trajectory. Result: Slower growth, regret later. Solution: Apply 10-10-10 Rule.',
-            '• Not testing assumptions: Assuming "MBA = guaranteed success" without researching ROI data. Result: Disappointed when reality differs. Solution: Talk to 10 people, research data, test assumptions.',
-            '• Analysis paralysis: Spending 2 months deliberating. Result: Missed opportunities (job offers expire, MBA deadlines pass). Solution: Set deadline - "I will decide by Day 5." Use frameworks to decide, then commit.'
+            '• Follow others—YOUR 5-year vision',
+            '• Ignore debt—factor ₹20L heavily',
+            '• Short-term thinking—10-10-10 Rule',
+            '• No test—talk 10 people, research',
+            '• Analysis paralysis—deadline Day 5, commit'
           ],
           successCriteria: [
-            '✅ You clarify your 5-year life goals before evaluating MBA vs Job',
-            '✅ You create a Decision Matrix with weighted criteria based on YOUR priorities',
-            '✅ You apply 10-10-10 Rule to consider long-term consequences (10 years)',
-            '✅ You gather data by talking to 10 people (5 MBA grads, 5 working professionals)',
-            '✅ You test 3 assumptions and adjust your evaluation based on findings',
-            '✅ You make a confident decision within 1 week (no analysis paralysis)',
-            '✅ You can articulate WHY you chose this path (3 data-backed reasons)',
-            '✅ You feel at peace with your decision (no regret, no second-guessing)'
+            '✅ 5-year goals clarified',
+            '✅ Decision Matrix: YOUR priorities weighted',
+            '✅ 10-10-10 applied (10 years)',
+            '✅ 10 people interviewed',
+            '✅ Week 1: Confident decision, peace!'
           ]
         }
       }
@@ -1845,92 +1787,77 @@ Result: 80% fewer surprises, 50% less stress, 90% higher success rate. Risk asse
       contexts: {
         academic: {
           title: 'Academic Project Risk Mastery',
-          description: 'You have a major group project (40% of final grade, due in 4 weeks): Create a business plan for a startup idea, present to 3 industry judges. Your group: 5 members (you, Priya, Rahul, Anjali, Karan). You are excited but have not assessed risks. Last year, 30% of groups failed this project due to unforeseen problems. You need to identify and mitigate ALL major risks to ensure success.',
+          description: 'Group project: 40% grade, 4 weeks, 5 members. Last year 30% failed. Identify + mitigate ALL risks!',
           instructions: [
-            '1. Identify Risks Using Categories (Week 1, Day 1, 2 hours): Create 4 categories and brainstorm 3-5 risks per category. CATEGORY 1 - Team Risks: (1) Member drops out (sick, family emergency), (2) Unequal contribution (some members do not pull weight), (3) Conflict over ideas (disagreements paralyze progress), (4) Scheduling conflicts (cannot find common meeting times). CATEGORY 2 - Content Risks: (1) Weak business idea (judges reject it as unviable), (2) Insufficient research (data is shallow, not convincing), (3) Plagiarism accusation (accidentally used unattributed sources), (4) Misunderstanding requirements (built wrong deliverable). CATEGORY 3 - Execution Risks: (1) Technical issues during presentation (laptop crashes, file corrupted), (2) Poor presentation skills (nervous, unclear, boring), (3) Running out of time (presentation is 20 mins, you have 40 slides), (4) Missing deadline (submitted late, 20% penalty). CATEGORY 4 - External Risks: (1) Professor changes requirements mid-project, (2) Industry judges are tougher than expected, (3) Competing group has same idea (judges compare). Result: 15 risks identified systematically.',
-            '2. Quantify Each Risk (Week 1, Day 2, 2 hours): For EACH of the 15 risks, estimate Probability (%) and Impact (grade points lost or project failure). Example: Risk: "Member drops out" - Probability: 20% (1 in 5 groups faces this), Impact: 8/10 (major disruption, quality drops, might fail project). Risk Score: 0.20 × 8 = 1.6. Risk: "Laptop crashes during presentation" - Probability: 10%, Impact: 6/10 (can recover but stressful). Risk Score: 0.10 × 6 = 0.6. Calculate Risk Score for all 15 risks. Document in spreadsheet.',
-            '3. Plot on Risk Matrix (Week 1, Day 3, 1 hour): Create 2×2 matrix (Probability: Low/High, Impact: Low/High). Plot all 15 risks. RED ZONE (High Probability + High Impact): "Unequal contribution" (60% probability, 7/10 impact), "Weak business idea" (40% probability, 9/10 impact). ORANGE ZONE (Low Probability + High Impact): "Member drops out" (20% probability, 8/10 impact), "Plagiarism accusation" (10% probability, 10/10 impact - automatic fail). YELLOW ZONE (High Probability + Low Impact): "Scheduling conflicts" (70% probability, 3/10 impact). GREEN ZONE (Low Probability + Low Impact): "Professor changes requirements" (5% probability, 4/10 impact). Visual prioritization complete.',
-            '4. Mitigate RED and ORANGE Risks (Week 1, Days 4-5, 4 hours): For each high-priority risk, choose mitigation strategy. RED Risk 1: "Unequal contribution" (60%, 7/10) → REDUCE: Create contribution tracking system (Google Doc with tasks assigned, deadlines, weekly check-ins). Set expectation: "Everyone contributes equally or we escalate to professor." Probability drops to 20%. RED Risk 2: "Weak business idea" (40%, 9/10) → REDUCE: Validate idea in Week 1. Survey 50 potential customers. Interview 3 industry experts. Pivot if idea is weak. Probability drops to 10%. ORANGE Risk 1: "Member drops out" (20%, 8/10) → REDUCE: Cross-train team (everyone knows 2 sections of project, not just 1). If someone drops, others can cover. Impact drops to 4/10. ORANGE Risk 2: "Plagiarism accusation" (10%, 10/10) → AVOID: Use Turnitin to check all content. Cite EVERY source. Zero tolerance for copy-paste. Probability drops to 2%. Document mitigation plans.',
-            '5. Create Risk Register (Week 1, Day 6, 2 hours): Build spreadsheet. Columns: Risk Description, Category, Probability (%), Impact (1-10), Risk Score, Priority (Red/Orange/Yellow/Green), Mitigation Strategy, Owner (who is responsible?), Status (Open/In Progress/Mitigated). Example Row: "Unequal contribution | Team | 60% → 20% (after mitigation) | 7/10 | 1.4 | RED | Contribution tracking + weekly check-ins | Priya | In Progress." Populate all 15 risks. This is your risk management dashboard.',
-            '6. Monitor Risks Weekly (Weeks 2-4, 30 mins/week): Every Monday, review Risk Register as a team. Ask: (1) Have any risks materialized? (If yes, execute mitigation plan.) (2) Have probabilities changed? (Example: Week 3, Karan misses 2 meetings → "Member drops out" probability increases from 20% to 40%. Address immediately.) (3) Are mitigation plans working? (Contribution tracking → everyone is contributing equally? Yes? Great.) (4) Any NEW risks? (Week 3: You discover judges prefer tech startups, your idea is retail → NEW RISK: "Idea mismatch with judges" → Pivot or reframe idea). Update Risk Register. Adjust plans. This weekly review keeps you proactive.',
-            '7. Execute Presentation Day Contingencies (Week 4, Day 7): For presentation day, prepare for technical risks. Contingency Plan: (1) Save presentation in 3 places (laptop, USB, cloud), (2) Arrive 30 mins early to test equipment, (3) Have printed backup slides (if projector fails), (4) Assign backup presenter (if main presenter is sick). Result: When Rahul\'s laptop crashes 5 minutes before presentation, you calmly switch to USB backup. Judges do not even notice. You present flawlessly. Grade: A.',
+            '• Week 1 Day 1: Identify 4 categories—Team, Content, Execution, External—15 risks',
+            '• Week 1 Day 2: Quantify each—Probability × Impact = Risk Score',
+            '• Week 1 Day 3: Plot Risk Matrix—prioritize Red/Orange zones',
+            '• Week 1 Day 4-5: Mitigate Red/Orange—tracking, validation, Turnitin, cross-train',
+            '• Week 1-4: Risk Register, weekly reviews, contingencies—A grade!',
             '',
             '🚫 Common Mistakes to Avoid:',
-            '• Random brainstorming: Identifying 5 obvious risks (laptop crash, member drops out) and missing 10 others (plagiarism, weak idea, unequal contribution). Solution: Use Risk Categories to systematically identify 15-20 risks.',
-            '• No quantification: Knowing "member drops out is a risk" but not quantifying probability (20%) or impact (8/10). Result: Cannot prioritize. Solution: Calculate Risk Score for EVERY risk.',
-            '• Treating all risks equally: Spending 2 hours preventing laptop crash (₹1K impact) while ignoring weak business idea (project failure). Solution: Use Risk Matrix to prioritize. Focus on RED/ORANGE zones.',
-            '• No mitigation: Identifying risks but not planning mitigation. When risk materializes, you panic. Solution: For each RED/ORANGE risk, document mitigation strategy and assign owner.',
-            '• One-time assessment: Assessing risks in Week 1, never revisiting. Week 3: Member starts missing meetings (risk probability increased), but you do not notice until too late. Solution: Weekly risk reviews.'
+            '• Random brainstorm—use 4 categories, 15-20 risks',
+            '• No quantification—calculate Risk Score EVERY risk',
+            '• Treat all equal—prioritize Red/Orange zones',
+            '• No mitigation—document strategy, assign owner',
+            '• One-time only—weekly reviews, update register'
           ],
           successCriteria: [
-            '✅ You identify 15-20 risks using 4 categories (Team, Content, Execution, External)',
-            '✅ You quantify EVERY risk (Probability × Impact = Risk Score)',
-            '✅ You plot risks on Risk Matrix and prioritize (Red/Orange/Yellow/Green)',
-            '✅ You mitigate all RED and ORANGE risks with documented strategies',
-            '✅ You create a Risk Register with 15 risks, owners, and status tracking',
-            '✅ You conduct weekly risk reviews (4 weeks) and update the register',
-            '✅ Your group project succeeds with zero major surprises',
-            '✅ You receive A grade and feedback: "Excellent risk management and execution"'
+            '✅ 15-20 risks: 4 categories',
+            '✅ Every risk quantified: Probability × Impact',
+            '✅ Risk Matrix: Red/Orange prioritized',
+            '✅ Red/Orange mitigated, strategies documented',
+            '✅ A grade, zero surprises!'
           ]
         },
         professional: {
           title: 'Professional Risk Excellence',
-          description: 'You are a Junior Business Analyst at a consulting firm. Your client (e-commerce startup, ₹50L revenue/month) wants to launch a new product category (electronics) in 3 months. Your manager assigns you: "Conduct risk assessment for this launch. Identify all major risks, quantify them, and present mitigation plan to the CEO." This is your first solo risk assessment. Success = CEO approves launch. Failure = CEO cancels launch (and questions your competence).',
+          description: 'Analyst: Client launches electronics (₹50L revenue/mo). Assess risks, quantify, present mitigation to CEO. Success = approval!',
           instructions: [
-            '1. Identify Risks Using Categories (Week 1, 3 hours): Use 4 business risk categories. CATEGORY 1 - Financial Risks: (1) Low sales (electronics do not sell, ₹20L inventory stuck), (2) High return rate (defective products, 30% returns vs 5% for other categories), (3) Payment gateway issues (checkout failures, lost sales), (4) Supplier payment terms (they demand 100% upfront, cash flow strain). CATEGORY 2 - Operational Risks: (1) Supplier delays (electronics arrive late, miss launch date), (2) Quality issues (products are defective, customer complaints), (3) Logistics challenges (electronics are fragile, 20% damage in transit), (4) Inventory management (overstocking or understocking). CATEGORY 3 - Market Risks: (1) Competitor launches same category (price war), (2) Low customer demand (market research was wrong), (3) Regulatory issues (electronics need certifications, you do not have them), (4) Economic downturn (recession, customers cut discretionary spending). CATEGORY 4 - Reputational Risks: (1) Negative reviews (poor quality products damage brand), (2) Data breach (customer payment info stolen), (3) Poor customer service (electronics need tech support, you are not ready), (4) Social media backlash (viral complaint about defective product). Result: 16 risks identified.',
-            '2. Quantify Each Risk (Week 1, 4 hours): For EACH risk, estimate Probability (%) and Impact (₹ loss). Example: Risk: "Low sales" - Probability: 30% (new category, uncertain demand), Impact: ₹20L (inventory stuck + marketing spend wasted). Risk Score: 0.30 × ₹20L = ₹6L expected loss. Risk: "Supplier delays" - Probability: 20% (supplier is new, unproven), Impact: ₹5L (miss launch date, lost revenue + reputation damage). Risk Score: 0.20 × ₹5L = ₹1L. Risk: "Data breach" - Probability: 5% (you have security measures), Impact: ₹50L (lawsuits + brand damage + customer loss). Risk Score: 0.05 × ₹50L = ₹2.5L. Calculate for all 16 risks. Document in Excel.',
-            '3. Plot on Risk Matrix (Week 1, 1 hour): Create matrix. RED ZONE: "Low sales" (30%, ₹20L), "High return rate" (25%, ₹15L). ORANGE ZONE: "Data breach" (5%, ₹50L), "Supplier delays" (20%, ₹5L), "Regulatory issues" (15%, ₹10L). YELLOW ZONE: "Payment gateway issues" (40%, ₹2L). GREEN ZONE: "Economic downturn" (10%, ₹3L - low probability, you cannot control it). Prioritize: Focus mitigation on RED (₹6L + ₹3.75L = ₹9.75L total risk) and ORANGE zones (₹2.5L + ₹1L + ₹1.5L = ₹5L total risk).',
-            '4. Mitigate RED and ORANGE Risks (Week 2, 8 hours): RED Risk 1: "Low sales" (30%, ₹20L) → REDUCE: (a) Pilot test: Launch with 50 products (not 500) to test demand. Investment: ₹2L (not ₹20L). (b) Pre-orders: Gauge demand before ordering inventory. (c) Marketing: ₹5L campaign targeting electronics buyers. Probability drops to 10%, Impact drops to ₹2L. RED Risk 2: "High return rate" (25%, ₹15L) → REDUCE: (a) Quality check: Inspect 100% of products before shipping. (b) Supplier guarantee: Contract clause - supplier covers defective products. (c) Clear product descriptions: Reduce "not as expected" returns. Probability drops to 10%, Impact drops to ₹5L. ORANGE Risk 1: "Data breach" (5%, ₹50L) → TRANSFER: Buy cyber insurance (₹50K premium covers ₹50L loss). ORANGE Risk 2: "Supplier delays" (20%, ₹5L) → REDUCE: (a) Contract with penalty clause (₹1L penalty if late). (b) Backup supplier (ready to step in). Probability drops to 5%. ORANGE Risk 3: "Regulatory issues" (15%, ₹10L) → AVOID: Get all certifications BEFORE launch (BIS certification for electronics). Probability drops to 2%. Document all mitigation plans with costs and timelines.',
-            '5. Build Risk Register (Week 2, 2 hours): Create professional Excel sheet. Columns: Risk ID, Risk Description, Category, Probability (%), Impact (₹), Risk Score (₹), Priority, Mitigation Strategy, Cost of Mitigation, Owner, Timeline, Status. Example Row: "R001 | Low sales - electronics do not sell | Financial | 30% → 10% | ₹20L → ₹2L | ₹6L → ₹0.2L | RED | Pilot test (50 products) + pre-orders + ₹5L marketing | ₹7L | Priya (Marketing) | Week 3-6 | In Progress." Populate all 16 risks. Add summary: Total Risk (before mitigation): ₹14.75L. Total Risk (after mitigation): ₹3.2L. Mitigation investment: ₹8L. Net benefit: ₹11.55L risk reduced.',
-            '6. Present to CEO (Week 3, 1 hour): Create presentation. Slide 1: Executive Summary (16 risks identified, ₹14.75L total risk, ₹8L mitigation investment → ₹3.2L residual risk). Slide 2: Risk Matrix (visual - RED/ORANGE/YELLOW/GREEN zones). Slide 3: Top 5 Risks (Low sales, High return rate, Data breach, Supplier delays, Regulatory issues) with mitigation plans. Slide 4: Cost-Benefit Analysis (₹8L mitigation investment prevents ₹11.55L expected loss → ROI 145%). Slide 5: Recommendation (Launch with mitigation plans in place. Residual risk ₹3.2L is acceptable given ₹50L+ revenue potential). Slide 6: Risk Monitoring Plan (weekly reviews for 6 months post-launch). Present confidently. CEO asks tough questions: "What if sales are even lower?" You answer: "We mitigated with pilot test. If 50 products do not sell, we stop at ₹2L loss, not ₹20L." CEO approves launch. Your manager gives feedback: "Excellent risk assessment. Very thorough."',
-            '7. Monitor Post-Launch (Months 1-3, weekly reviews): After launch, track risks. Week 4: Sales are strong (pilot test worked!). Week 8: Return rate is 12% (higher than 5% target but lower than 30% worst-case). Investigate: Some products have minor defects. Action: Tighten quality checks, negotiate with supplier. Week 12: Data breach attempt detected (security measures worked, no breach). Update Risk Register weekly. By Month 3: Electronics category = ₹15L revenue/month, 8% return rate, zero major issues. CEO emails: "Great risk management. You prevented multiple disasters." Promotion discussion begins.',
+            '• Week 1: Identify 4 categories—Financial, Operational, Market, Reputational—16 risks',
+            '• Week 1: Quantify each—Probability × Impact = ₹ Risk Score',
+            '• Week 1: Plot Risk Matrix—Red/Orange prioritized',
+            '• Week 2: Mitigate Red/Orange—pilot test, quality, insurance, certifications',
+            '• Week 2-3: Risk Register, present CEO, monitor—₹15L revenue, CEO praises!',
             '',
             '🚫 Common Mistakes to Avoid:',
-            '• Incomplete risk identification: Identifying 5 obvious risks (low sales, supplier delays) and missing 11 others (data breach, regulatory issues, quality problems). Solution: Use 4 Risk Categories to systematically identify 15-20 risks.',
-            '• Vague quantification: "Low sales is a big risk." How big? ₹5L? ₹20L? Cannot prioritize without numbers. Solution: Quantify EVERY risk (Probability × Impact = Risk Score in ₹).',
-            '• No cost-benefit analysis: Recommending ₹10L mitigation for ₹2L risk. CEO rejects as wasteful. Solution: Calculate ROI for mitigation (₹8L investment prevents ₹11.55L loss = 145% ROI).',
-            '• Weak presentation: Showing CEO a 50-row Excel sheet. CEO is confused, rejects proposal. Solution: Create visual presentation (Risk Matrix, Top 5 Risks, Cost-Benefit Analysis). Make it CEO-friendly.',
-            '• No post-launch monitoring: Assessing risks pre-launch, never monitoring post-launch. Week 8: Return rate spikes to 25%, you do not notice until Month 3 (too late). Solution: Weekly risk reviews for 6 months post-launch.'
+            '• Incomplete ID—use 4 categories, 15-20 risks',
+            '• Vague quantification—quantify in ₹ EVERY risk',
+            '• No cost-benefit—calculate ROI mitigation',
+            '• Weak presentation—visual slides, CEO-friendly',
+            '• No post-launch—weekly reviews 6 months'
           ],
           successCriteria: [
-            '✅ You identify 15-20 risks using 4 business categories (Financial, Operational, Market, Reputational)',
-            '✅ You quantify EVERY risk in ₹ (Probability × Impact = Risk Score)',
-            '✅ You create a Risk Matrix and prioritize (Red/Orange/Yellow/Green)',
-            '✅ You mitigate RED and ORANGE risks with cost-benefit analysis (ROI 145%)',
-            '✅ You build a professional Risk Register with 16 risks, costs, owners, timelines',
-            '✅ You present to CEO with visual slides and get approval for launch',
-            '✅ You monitor risks weekly post-launch and prevent 3 major issues',
-            '✅ CEO and manager give feedback: "Excellent risk assessment and management"'
+            '✅ 15-20 risks: 4 business categories',
+            '✅ Every risk quantified in ₹',
+            '✅ Risk Matrix created, prioritized',
+            '✅ Red/Orange mitigated, ROI 145%',
+            '✅ CEO approves, Manager praises!'
           ]
         },
         personal: {
           title: 'Personal Decision Risk Wisdom',
-          description: 'You are considering a major life decision: Quit your stable job (₹6 LPA, 9-5, boring but safe) to start a business (online tutoring platform for B.Com students). You are excited about entrepreneurship but terrified of failure. Your savings: ₹5 lakhs (enough for 10 months). Your parents are against it ("Too risky!"). Your friends are split (some say "Go for it!", others say "Are you crazy?"). You need to assess risks systematically before deciding.',
+          description: 'Quit job (₹6 LPA, safe) for business (tutoring platform)? Excited but terrified. ₹5L savings = 10mo. Parents against. Assess risks!',
           instructions: [
-            '1. Identify Risks Using Categories (Week 1, 2 hours): Use 4 personal risk categories. CATEGORY 1 - Financial Risks: (1) Business fails, ₹5L savings depleted, (2) No income for 12 months (vs ₹6 LPA job), (3) Cannot find job again (1-year gap in resume), (4) Debt (need to borrow ₹3L if business takes longer). CATEGORY 2 - Career Risks: (1) Resume gap hurts future employability, (2) Skills become outdated (not working in industry), (3) Network weakens (lose corporate connections), (4) Age factor (30 years old, harder to restart career). CATEGORY 3 - Personal Risks: (1) Stress and anxiety (financial pressure, uncertainty), (2) Relationship strain (partner worried about money), (3) Social pressure (parents disappointed, friends judge), (4) Health issues (stress-induced, no health insurance without job). CATEGORY 4 - Business Risks: (1) Low customer demand (students do not pay for tutoring), (2) High competition (100+ tutoring platforms exist), (3) Execution challenges (you are not a marketer/salesperson), (4) Regulatory issues (need to register business, pay taxes). Result: 16 risks identified.',
-            '2. Quantify Each Risk (Week 1, 3 hours): For EACH risk, estimate Probability (%) and Impact (scale 1-10, where 10 = life-altering negative impact). Example: Risk: "Business fails, ₹5L depleted" - Probability: 60% (most startups fail in Year 1), Impact: 8/10 (major financial setback, but not life-ending). Risk Score: 0.60 × 8 = 4.8. Risk: "Cannot find job again" - Probability: 30% (1-year gap is concerning but not disqualifying), Impact: 9/10 (career derailed). Risk Score: 0.30 × 9 = 2.7. Risk: "Relationship strain" - Probability: 40% (partner is already worried), Impact: 7/10 (serious but repairable). Risk Score: 0.40 × 7 = 2.8. Calculate for all 16 risks.',
-            '3. Plot on Risk Matrix (Week 1, 1 hour): Create matrix. RED ZONE: "Business fails, ₹5L depleted" (60%, 8/10), "Low customer demand" (50%, 7/10). ORANGE ZONE: "Cannot find job again" (30%, 9/10), "Relationship strain" (40%, 7/10), "Stress and anxiety" (70%, 5/10). YELLOW ZONE: "Skills become outdated" (60%, 4/10). GREEN ZONE: "Regulatory issues" (10%, 3/10 - manageable). Prioritize: Focus on RED and ORANGE zones (highest risk to your life).',
-            '4. Mitigate RED and ORANGE Risks (Week 2, 5 hours): RED Risk 1: "Business fails, ₹5L depleted" (60%, 8/10) → REDUCE: (a) Validate idea BEFORE quitting: Spend 3 months (evenings/weekends) building MVP (Minimum Viable Product) while still employed. Get 50 paying customers. If validation fails, do not quit job. (b) Reduce burn rate: Start business part-time (not full-time) for first 6 months. Keep job, work on business evenings/weekends. If business grows to ₹3 LPA revenue, THEN quit job. Probability drops to 30%, Impact drops to 4/10 (only ₹1L invested, not ₹5L). RED Risk 2: "Low customer demand" (50%, 7/10) → REDUCE: (a) Pre-sell: Get 100 students to pay ₹5000 upfront for 6-month tutoring. Revenue: ₹5L (covers your expenses for 10 months). This validates demand BEFORE you quit. (b) Niche down: Instead of "B.Com tutoring" (broad, competitive), focus on "CA Foundation tutoring" (narrow, less competition). Probability drops to 20%. ORANGE Risk 1: "Cannot find job again" (30%, 9/10) → REDUCE: (a) Keep skills updated: Take 1 online course/month (finance, marketing, tech). (b) Network actively: Attend 2 industry events/month. Stay visible. (c) Plan B: If business fails after 12 months, you have updated skills + network → finding job is easier. Probability drops to 15%, Impact drops to 6/10. ORANGE Risk 2: "Relationship strain" (40%, 7/10) → REDUCE: (a) Communicate: Sit with partner, share Risk Register, show mitigation plans. (b) Set boundaries: "I will try business for 12 months. If revenue < ₹3 LPA by Month 12, I will get a job. Deal?" Clear expectations reduce anxiety. Probability drops to 20%.',
-            '5. Create Risk Register (Week 2, 2 hours): Build spreadsheet. Columns: Risk Description, Category, Probability (%), Impact (1-10), Risk Score, Priority, Mitigation Strategy, Status. Example Row: "Business fails, ₹5L depleted | Financial | 60% → 30% | 8/10 → 4/10 | 4.8 → 1.2 | RED | Validate idea for 3 months while employed, start part-time, pre-sell to 100 students | In Progress." Populate all 16 risks. Summary: Total Risk (before mitigation): 35.2 (sum of all risk scores). Total Risk (after mitigation): 12.8. Risk reduced by 64%.',
-            '6. Make Decision (Week 3, 1 hour): Review Risk Register. Original decision: "Quit job immediately, start business full-time." Risk Score: 35.2 (HIGH). Mitigated decision: "Validate idea for 3 months while employed → Pre-sell to 100 students → Start part-time for 6 months → If revenue ≥ ₹3 LPA, quit job and go full-time." Risk Score: 12.8 (MODERATE, acceptable). Decision: Proceed with mitigated plan. You do NOT quit job immediately. You validate first. This reduces risk by 64% while preserving the opportunity.',
-            '7. Execute and Monitor (Months 1-12): Month 1-3 (Validation Phase): Build MVP (tutoring website) while working 9-5 job. Work evenings/weekends (6 PM - 11 PM, 5 hours/day). Launch MVP. Get 20 paying students (₹1L revenue). Validation: Demand exists! Month 4-9 (Part-Time Phase): Continue job, scale business to 80 students (₹4L revenue). Quit job. Month 10-12 (Full-Time Phase): Focus 100% on business. Scale to 200 students (₹10L revenue). Result: Business is profitable. Risk mitigation worked. You avoided "quit job immediately, business fails, ₹5L depleted" disaster. Instead: Validated demand, built revenue, THEN quit job. Smart risk management.',
+            '• Week 1: Identify 4 categories—Financial, Career, Personal, Business—16 risks',
+            '• Week 1: Quantify each—Probability × Impact = Risk Score',
+            '• Week 1: Plot Risk Matrix—Red/Orange prioritized',
+            '• Week 2: Mitigate Red/Orange—validate 3mo while employed, part-time, pre-sell',
+            '• Week 3-Mo 12: Risk Register, validate→part-time→full-time—₹10L revenue!',
             '',
             '🚫 Common Mistakes to Avoid:',
-            '• Impulsive decision: Quitting job immediately without validating business idea. Result: Business fails, ₹5L depleted, cannot find job (resume gap). Solution: Validate FIRST (3 months while employed), THEN decide.',
-            '• Ignoring personal risks: Focusing only on business risks (demand, competition) and ignoring personal risks (relationship strain, stress, health). Result: Business succeeds but relationship fails. Solution: Assess ALL 4 categories (Financial, Career, Personal, Business).',
-            '• No mitigation: Identifying risks but not planning mitigation. "Business might fail. Oh well, I will deal with it." Result: When business fails, you are unprepared (no savings, no Plan B, no job prospects). Solution: Mitigate RED/ORANGE risks BEFORE taking the leap.',
-            '• All-or-nothing thinking: "Either I quit job and go full-time, or I do not start business at all." Result: You take massive risk or no risk. Solution: Gradual approach (validate part-time → pre-sell → scale → THEN quit job). Reduces risk by 64%.',
-            '• No monitoring: Making decision based on Week 1 risk assessment, never revisiting. Month 6: Business is not growing (demand lower than expected), but you do not adjust. Result: You burn through ₹5L savings. Solution: Monthly risk reviews. If risks materialize (low demand), pivot or exit early (save ₹3L).'
+            '• Impulsive quit—validate FIRST 3mo employed',
+            '• Ignore personal risks—assess ALL 4 categories',
+            '• No mitigation—plan before leap',
+            '• All-or-nothing—gradual approach, 64% risk reduced',
+            '• No monitoring—monthly reviews, pivot if needed'
           ],
           successCriteria: [
-            '✅ You identify 15-20 risks using 4 categories (Financial, Career, Personal, Business)',
-            '✅ You quantify EVERY risk (Probability × Impact = Risk Score)',
-            '✅ You plot risks on Risk Matrix and prioritize (Red/Orange/Yellow/Green)',
-            '✅ You mitigate RED and ORANGE risks (reduce total risk by 64%)',
-            '✅ You create a Risk Register with 16 risks and mitigation strategies',
-            '✅ You make a data-driven decision (validate first, then quit job - not impulsive)',
-            '✅ You execute the mitigated plan (3-month validation, 6-month part-time, then full-time)',
-            '✅ Your business succeeds (₹10L revenue in 12 months) with minimal personal/financial damage'
+            '✅ 15-20 risks: 4 categories',
+            '✅ Every risk quantified',
+            '✅ Risk Matrix prioritized',
+            '✅ Red/Orange mitigated, 64% reduced',
+            '✅ ₹10L revenue, minimal damage!'
           ]
         }
       }
@@ -2231,89 +2158,77 @@ Stop treating symptoms. Find the root cause. Fix it once. Move on with your life
       contexts: {
         academic: {
           title: 'Academic Root Cause Mastery',
-          description: 'You keep failing Statistics exams (4 attempts: 38%, 42%, 40%, 39%). After each failure, you tried different "fixes": Study 3 more hours/day, buy ₹3000 coaching, change study location, use different textbook. Nothing works. You are frustrated and considering dropping Statistics (required for B.Com degree). This is a RECURRING problem - clear signal you are fixing symptoms, not the root cause. You need Root Cause Analysis to break this failure cycle.',
+          description: 'Failing Statistics 4× (38%, 42%, 40%, 39%). Tried fixes: more hours, coaching, location, textbook. Nothing works. RECURRING problem—find ROOT cause!',
           instructions: [
-            '1. Apply 5 Whys (Week 1, Day 1, 1 hour): Start with the problem, ask "Why?" 5 times. Problem: "I failed Statistics exam (39%)." Why? "I could not solve probability questions." Why? "I did not understand the concepts." Why? "The textbook explanations were confusing." Why? "I did not seek alternative explanations (videos, professor office hours, study groups)." Why? "I assumed textbook was the only resource and did not know how to learn differently." ROOT CAUSE: "I rely on a single learning resource (textbook) without seeking alternative explanations when I do not understand. I lack meta-learning skills (knowing HOW to learn)." This is deeper than "I did not study enough" (symptom).',
-            '2. Create Fishbone Diagram (Week 1, Day 2, 2 hours): Organize potential root causes into 5 categories. CATEGORY 1 - Study Method: Passive reading vs active problem-solving? Memorization vs understanding? No practice exams? CATEGORY 2 - Learning Resources: Only using textbook? Not watching videos? Not attending office hours? CATEGORY 3 - Concept Gaps: Weak math foundation (algebra, calculus)? Skipped prerequisite topics? CATEGORY 4 - Exam Technique: Misreading questions? Calculation errors? Time management during exam? CATEGORY 5 - External Factors: Math anxiety? Negative self-talk ("I am bad at math")? Distractions while studying? For EACH category, brainstorm 3-5 potential causes. Result: 20 potential root causes identified.',
-            '3. Gather Evidence (Week 1, Days 3-4, 4 hours): Do not guess - collect DATA. STEP 1: Analyze your 4 exam answer sheets. Which questions did you get wrong? Pattern: 80% of errors were in "probability and distributions" (specific topics), not across all topics. 15% were calculation errors. 5% were time management. INSIGHT: Root cause is NOT "I am bad at Statistics" - it is "I am weak in specific topics (probability, distributions)." STEP 2: Compare with toppers. Talk to 3 students who scored 75%+. Ask: "How did you study probability?" Their answer: "We watched 10 YouTube videos (Khan Academy, StatQuest), solved 50 problems, formed a study group to teach each other." INSIGHT: Toppers use MULTIPLE learning resources, not just textbook. STEP 3: Talk to professor. Ask: "What are common mistakes in probability questions?" Professor: "Students memorize formulas but do not understand WHEN to use which formula. They struggle with word problems." INSIGHT: Confirms root cause - weak conceptual understanding + reliance on single resource (textbook).',
-            '4. Test Root Cause Hypothesis (Week 1, Day 5, 2 hours): Hypothesis: "I fail because I rely on textbook only and do not understand probability concepts deeply." Test: Pick 5 probability questions. For EACH question: (1) Solve it, (2) Explain WHY you chose that formula (not just WHAT formula), (3) Explain what the answer MEANS in real-world context. RESULT: You solve 2/5 correctly. For the other 3, you struggle to explain WHY you chose the formula. You realize: "I memorized formulas but do not understand WHEN to use them." Hypothesis CONFIRMED. Root cause is weak conceptual understanding + single learning resource.',
-            '5. Implement Root Cause Fix (Weeks 2-4, 3 weeks): Now that root cause is verified, implement a fix that addresses IT (not symptoms). ROOT CAUSE: "Weak probability concepts + reliance on single resource (textbook)." FIX: (1) Watch 15 YouTube videos on probability (Khan Academy, StatQuest, 3Blue1Brown). Take notes. Pause and solve examples. (2) Solve 60 probability problems from 3 sources (textbook, past exams, online problem sets). Focus on VARIED problems, not repetitive. (3) Join a study group (3 students). Each week, teach 2 probability concepts to the group. Teaching = deep understanding. (4) Attend professor office hours 2x/week. Ask: "WHY does this formula work? WHEN do I use it?" (5) Take 4 full-length practice exams under timed conditions. Review errors, identify patterns. Timeline: 3 weeks, 2 hours/day. This fix targets the ROOT CAUSE (concepts + resources), not symptoms (study hours).',
-            '6. Monitor Results (Week 5 onwards): Take Exam 5. Result: 72% (up from 39%!). Problem is IMPROVING. But monitor next 2 exams to ensure it does not recur. Exam 6: 75%. Exam 7: 78%. Pattern: Consistent improvement, no recurrence. ROOT CAUSE FIX WORKED. You broke the failure cycle by addressing the real issue (learning method + resources), not symptoms (study hours, coaching, location).',
+            '• Week 1 Day 1: Apply 5 Whys—ROOT: Single resource, lack meta-learning',
+            '• Week 1 Day 2: Fishbone Diagram—5 categories, 20 potential causes',
+            '• Week 1 Day 3-4: Gather evidence—analyze exams, talk toppers, professor',
+            '• Week 1 Day 5: Test hypothesis—solve 5, explain WHY each',
+            '• Week 2-5: Fix root cause—YouTube, 60 problems, study group—72%→78%!',
             '',
             '🚫 Common Mistakes to Avoid:',
-            '• Stopping at surface-level "Why": Asking "Why did I fail?" → "I did not study enough" → STOP. This is a symptom, not root cause. Keep asking "Why?" 4 more times to drill deeper.',
-            '• No evidence gathering: Guessing root cause ("I think it is study hours") without analyzing exam answer sheets, talking to toppers, or consulting professor. Result: Fix the wrong problem.',
-            '• Not testing hypothesis: Assuming your root cause is correct without testing. Result: Waste 3 weeks on wrong fix (e.g., studying more hours when root cause is learning method).',
-            '• Symptom fixes: Studying 3 more hours/day using the SAME bad method (passive textbook reading). More hours of bad method = still failing. Fix the method, not the hours.',
-            '• Giving up too early: After 1 week of root cause fix, you score 50% (slight improvement) and conclude "Root cause analysis does not work." Reality: You need 3-4 weeks for deep fixes (learning method) to show results. Monitor, iterate, persist.'
+            '• Surface-level Why—ask 5 times, drill deeper',
+            '• No evidence—analyze exams, talk toppers, professor',
+            '• No test hypothesis—test before 3-week fix',
+            '• Symptom fixes—fix method, not hours',
+            '• Give up early—3-4 weeks for deep fixes'
           ],
           successCriteria: [
-            '✅ You apply 5 Whys and drill to ROOT CAUSE (not surface-level symptoms)',
-            '✅ You create Fishbone Diagram with 5 categories and 20 potential causes',
-            '✅ You gather evidence (analyze 4 exam answer sheets, talk to 3 toppers, consult professor)',
-            '✅ You test root cause hypothesis (solve 5 questions, explain WHY for each)',
-            '✅ You implement root cause fix (multiple learning resources, 60 problems, study group, office hours, 4 practice exams)',
-            '✅ You monitor results: Exam 5 (72%), Exam 6 (75%), Exam 7 (78%) - consistent improvement',
-            '✅ Problem does NOT recur - you broke the failure cycle permanently',
-            '✅ You can explain: "I failed because I relied on single resource and lacked deep understanding. I fixed it by using multiple resources and teaching concepts to others."'
+            '✅ 5 Whys: ROOT CAUSE found',
+            '✅ Fishbone: 5 categories, 20 causes',
+            '✅ Evidence: exams, toppers, professor',
+            '✅ Hypothesis tested: 5 questions',
+            '✅ 72%→78%, cycle broken permanently!'
           ]
         },
         professional: {
           title: 'Professional Root Cause Excellence',
-          description: 'You are a Junior Marketing Analyst at an e-commerce company. Problem: Customer complaints have TRIPLED in the last 3 months (from 50/month to 150/month). Your manager tried quick fixes: (1) Hired 2 more customer service reps (complaints still 150/month), (2) Extended support hours to 24/7 (complaints still 145/month), (3) Offered ₹500 discount to complainers (complaints still 140/month, now losing ₹70K/month). Nothing works. Your manager assigns you: "Do Root Cause Analysis. Find WHY complaints are increasing. Present findings and fix in 2 weeks." This is your chance to demonstrate problem-solving skills.',
+          description: 'Marketing Analyst: Complaints tripled (50→150/mo). Manager tried fixes: more reps, 24/7, discounts. Nothing works. Do Root Cause Analysis, present in 2 weeks!',
           instructions: [
-            '1. Apply 5 Whys (Week 1, Day 1, 2 hours): Problem: "Customer complaints tripled (50 → 150/month)." Why? "Customers are unhappy with product quality." Why? "Products are arriving damaged." Why? "Packaging is insufficient for fragile items." Why? "We switched to cheaper packaging 3 months ago to cut costs." Why? "Finance team mandated 20% cost reduction without consulting operations." ROOT CAUSE: "Cost-cutting decision (cheaper packaging) was made without impact analysis on product quality and customer satisfaction. No cross-functional communication between Finance and Operations." This is deeper than "customers are unhappy" (symptom).',
-            '2. Create Fishbone Diagram (Week 1, Days 2-3, 4 hours): Organize potential causes into 5 categories. CATEGORY 1 - Product Quality: Defective products? Damaged in shipping? Wrong items sent? CATEGORY 2 - Customer Service: Slow response times? Rude agents? Unresolved issues? CATEGORY 3 - Operations: Poor packaging? Shipping delays? Warehouse errors? CATEGORY 4 - Communication: Unclear product descriptions? Misleading marketing? No order tracking? CATEGORY 5 - External Factors: Increased competition? Seasonal issues? Supply chain problems? For EACH category, brainstorm 3-5 potential causes. Result: 25 potential root causes.',
-            '3. Gather Evidence (Week 1, Days 4-5, 6 hours): Collect DATA from multiple sources. STEP 1: Analyze 150 complaints. Categorize: 80 complaints (53%) = "Product arrived damaged." 40 complaints (27%) = "Wrong item sent." 20 complaints (13%) = "Slow delivery." 10 complaints (7%) = "Rude customer service." INSIGHT: 53% are packaging/damage issues - this is the PRIMARY root cause. STEP 2: Interview warehouse manager. "What changed 3 months ago?" Answer: "Finance mandated cheaper packaging (₹10/box → ₹4/box). We warned that fragile items need better packaging, but were overruled." INSIGHT: Root cause confirmed - cost-cutting decision without impact analysis. STEP 3: Inspect packaging. Old packaging: Double-layered cardboard + bubble wrap. New packaging: Single-layer cardboard, no bubble wrap. Test: Drop test from 1 meter. Old packaging: Product intact. New packaging: Product breaks. INSIGHT: New packaging is INSUFFICIENT for fragile items. STEP 4: Calculate cost of complaints. 80 damaged products/month × ₹500 refund = ₹40K/month lost. ₹500 discounts to all 150 complainers = ₹75K/month. Total: ₹115K/month. Savings from cheaper packaging: ₹6/box × 1000 boxes/month = ₹6K/month. NET LOSS: ₹109K/month. The "cost-saving" is actually COSTING money!',
-            '4. Test Root Cause Hypothesis (Week 1, Day 6, 2 hours): Hypothesis: "Complaints increased because cheaper packaging causes product damage." Test: Run a pilot. For 1 week, use OLD packaging (₹10/box) for 100 orders. Track complaints. Result: 2 complaints out of 100 orders (2% complaint rate, same as 3 months ago). For comparison: New packaging = 15 complaints out of 100 orders (15% complaint rate). HYPOTHESIS CONFIRMED. Cheaper packaging is the root cause of increased complaints.',
-            '5. Build Solution (Week 2, Days 1-3, 6 hours): Present findings to management. SLIDE 1: Problem - Complaints tripled (50 → 150/month). Previous fixes failed (more reps, 24/7 support, discounts). SLIDE 2: Root Cause Analysis - Used 5 Whys + Fishbone + Evidence gathering. ROOT CAUSE: Cheaper packaging (₹4/box) causes 53% of complaints (product damage). SLIDE 3: Evidence - Analyzed 150 complaints, interviewed warehouse manager, tested packaging, ran pilot (old packaging = 2% complaints, new packaging = 15% complaints). SLIDE 4: Cost Analysis - Cheaper packaging saves ₹6K/month but costs ₹115K/month in refunds and discounts. NET LOSS: ₹109K/month. SLIDE 5: Recommendation - Revert to old packaging (₹10/box) for fragile items. Keep new packaging for non-fragile items. Estimated result: Complaints drop to 60/month (down from 150), save ₹100K/month. SLIDE 6: Implementation Plan - Week 1: Order old packaging. Week 2: Train warehouse staff. Week 3: Monitor complaint rates. Present to CEO and CFO.',
-            '6. Implement and Monitor (Week 2, Days 4-7 + Month 1-3): CEO approves recommendation. Implement: Revert to old packaging for fragile items. Monitor results. Month 1: Complaints drop to 70/month (down from 150). Month 2: Complaints drop to 55/month. Month 3: Complaints stabilize at 50/month (back to baseline). ROOT CAUSE FIX WORKED. Problem solved permanently. Your manager gives feedback: "Excellent root cause analysis. You saved the company ₹100K/month and improved customer satisfaction. Promotion discussion begins."',
+            '• Week 1 Day 1: Apply 5 Whys—ROOT: Cheaper packaging, no impact analysis',
+            '• Week 1 Day 2-3: Fishbone—5 categories, 25 potential causes',
+            '• Week 1 Day 4-5: Evidence—analyze 150 complaints, interview, test, calculate ₹109K loss',
+            '• Week 1 Day 6: Test hypothesis—pilot old packaging, 2% vs 15%',
+            '• Week 2-Mo 3: Present CEO, implement, monitor—50/mo, saved ₹100K!',
             '',
             '🚫 Common Mistakes to Avoid:',
-            '• Treating symptoms: Hiring more customer service reps (symptom fix) when root cause is product damage (packaging issue). More reps cannot fix damaged products.',
-            '• No cross-functional investigation: Only talking to customer service team, not warehouse/operations/finance. Result: Miss the root cause (packaging decision made by finance).',
-            '• Not quantifying impact: Saying "complaints increased" without calculating cost (₹115K/month loss). Without numbers, management will not prioritize the fix.',
-            '• Weak evidence: Guessing "packaging is the issue" without testing (pilot with old packaging). Management needs DATA, not guesses.',
-            '• No monitoring: Implementing fix and assuming it worked without tracking complaints for 3 months. If complaints do not drop, your root cause analysis was wrong.'
+            '• Treat symptoms—more reps cannot fix damaged products',
+            '• No cross-functional—talk warehouse, operations, finance',
+            '• No quantify—calculate ₹115K/month cost',
+            '• Weak evidence—test pilot, need DATA',
+            '• No monitoring—track 3 months, confirm worked'
           ],
           successCriteria: [
-            '✅ You apply 5 Whys and identify ROOT CAUSE (cheaper packaging decision without impact analysis)',
-            '✅ You create Fishbone Diagram with 5 categories and 25 potential causes',
-            '✅ You gather evidence (analyze 150 complaints, interview warehouse manager, test packaging, run pilot)',
-            '✅ You test root cause hypothesis (pilot: old packaging = 2% complaints, new packaging = 15% complaints)',
-            '✅ You quantify impact (₹115K/month loss from complaints vs ₹6K/month savings from cheaper packaging = ₹109K net loss)',
-            '✅ You present data-driven recommendation to CEO/CFO and get approval',
-            '✅ You implement fix and monitor: Complaints drop from 150/month to 50/month over 3 months',
-            '✅ Manager gives feedback: "Excellent root cause analysis. Saved ₹100K/month. Promotion discussion."'
+            '✅ 5 Whys: ROOT packaging decision',
+            '✅ Fishbone: 5 categories, 25 causes',
+            '✅ Evidence: 150 analyzed, pilot tested',
+            '✅ Hypothesis confirmed: 2% vs 15%',
+            '✅ 150→50/mo, saved ₹100K, promotion!'
           ]
         },
         personal: {
           title: 'Personal Root Cause Wisdom',
-          description: 'You have a RECURRING problem: You procrastinate on important tasks (assignments, job applications, skill-building) and then panic at the last minute. This has happened 10+ times in the past year. Each time, you "fix" it: Set earlier deadlines (still procrastinate), use productivity apps (ignore them after 2 days), tell friends to hold you accountable (they give up after 3 reminders). Nothing works. You are frustrated and feel like you lack discipline. But the problem is NOT lack of discipline - it is that you are treating symptoms, not the root cause. You need Root Cause Analysis to break this procrastination cycle.',
+          description: 'RECURRING procrastination 10+ times/year. Tried fixes: earlier deadlines, apps, accountability. Nothing works. NOT discipline—find ROOT cause!',
           instructions: [
-            '1. Apply 5 Whys (Week 1, 2 hours): Problem: "I procrastinate on important tasks." Why? "I feel overwhelmed by the task size." Why? "I do not break tasks into smaller steps." Why? "I do not know how to break tasks down effectively." Why? "I was never taught task decomposition skills." Why? "I rely on motivation (which is inconsistent) instead of systems (which are consistent)." ROOT CAUSE: "I lack task decomposition skills and rely on motivation instead of systems. When motivation is low (which is often), I procrastinate." This is deeper than "I am lazy" or "I lack discipline" (symptoms).',
-            '2. Create Fishbone Diagram (Week 1, 3 hours): Organize potential causes into 5 categories. CATEGORY 1 - Task Management: No task breakdown? No clear next action? Overwhelmed by task size? CATEGORY 2 - Motivation: Waiting for "the right mood"? No intrinsic interest in task? Fear of failure? CATEGORY 3 - Environment: Too many distractions (phone, social media)? No dedicated workspace? Noisy environment? CATEGORY 4 - Energy/Health: Low energy? Poor sleep? Unhealthy diet? CATEGORY 5 - Mindset: Perfectionism (task must be perfect, so I delay)? Negative self-talk ("I am bad at this")? All-or-nothing thinking ("If I cannot do it perfectly, I will not start")? For EACH category, brainstorm 3-5 potential causes. Result: 20 potential root causes.',
-            '3. Gather Evidence (Week 1, 4 hours): Track your behavior for 1 week. STEP 1: Log every time you procrastinate. Note: (1) What task? (2) Why did you delay? (3) What were you doing instead? RESULT after 1 week: You procrastinated on 8 tasks. Pattern: 6 times (75%) = "Task felt overwhelming, did not know where to start." 2 times (25%) = "Distracted by phone/social media." INSIGHT: PRIMARY root cause is task overwhelm (lack of decomposition), not distractions. STEP 2: Compare with productive people. Talk to 3 friends who do NOT procrastinate. Ask: "How do you approach big tasks?" Their answer: "We break tasks into tiny steps (10-15 mins each). We focus on starting, not finishing. We use time-blocking (dedicate 1 hour, no distractions)." INSIGHT: Productive people use SYSTEMS (task decomposition, time-blocking), not motivation. STEP 3: Reflect on past successes. When did you NOT procrastinate? Answer: "When I had clear, small next actions (e.g., \'Write introduction paragraph\' vs \'Write entire essay\')." INSIGHT: Confirms root cause - lack of task decomposition.',
-            '4. Test Root Cause Hypothesis (Week 2, 2 hours): Hypothesis: "I procrastinate because I do not break tasks into small, actionable steps." Test: Pick 2 tasks you are procrastinating on. TASK 1 (Control): Do NOT break it down. Try to start. Result: You delay for 2 hours, feel overwhelmed, give up. TASK 2 (Test): Break it into 10 tiny steps (10-15 mins each). Write: "Step 1: Open document. Step 2: Write 1 sentence. Step 3: Research 1 source..." Try to start. Result: You complete Step 1 in 2 minutes. Then Step 2. Then Step 3. After 30 minutes, you have completed 3 steps and feel momentum. HYPOTHESIS CONFIRMED. Task decomposition eliminates procrastination.',
-            '5. Implement Root Cause Fix (Weeks 2-4, 3 weeks): ROOT CAUSE: "I lack task decomposition skills and rely on motivation instead of systems." FIX: (1) Learn task decomposition. For EVERY task, break it into steps so small that each step takes 10-15 minutes. Example: "Apply for internship" → Step 1: Find 1 company (10 mins). Step 2: Read job description (5 mins). Step 3: Write 1 paragraph of cover letter (15 mins). Etc. (2) Use time-blocking. Schedule 1-hour blocks for important tasks. During the block: Phone off, no social media, focus on 1 step. (3) Focus on STARTING, not finishing. Tell yourself: "I will just do Step 1 (10 mins)." Once you start, momentum carries you. (4) Track progress. Use a checklist. Check off each step. Visual progress = motivation. (5) Remove distractions. Use app blockers (Freedom, Cold Turkey) to block social media during work blocks. Timeline: 3 weeks of practicing this system.',
-            '6. Monitor Results (Weeks 3-6): Track: How many tasks did you procrastinate on? Week 1 (before fix): 8 tasks procrastinated. Week 3 (after fix): 2 tasks procrastinated (75% improvement). Week 6: 1 task procrastinated (87% improvement). ROOT CAUSE FIX WORKED. You broke the procrastination cycle by addressing the real issue (lack of task decomposition + reliance on motivation), not symptoms (lack of discipline).',
+            '• Week 1: Apply 5 Whys—ROOT: Lack task decomposition + rely motivation',
+            '• Week 1: Fishbone—5 categories, 20 potential causes',
+            '• Week 1: Evidence—track 1 week, 75% overwhelm, talk 3 productive friends',
+            '• Week 2: Test hypothesis—Task 1 no breakdown = delay. Task 2 breakdown = start 2min',
+            '• Week 2-6: Fix—10-15min steps, time-blocking, app blockers—87% improvement!',
             '',
             '🚫 Common Mistakes to Avoid:',
-            '• Blaming yourself: "I am lazy. I lack discipline." This is learned helplessness. Root cause is NOT your character - it is lack of task decomposition SKILLS (fixable!).',
-            '• Symptom fixes: Setting earlier deadlines (symptom fix) when root cause is task overwhelm. Earlier deadlines do not help if you still do not know how to break tasks down.',
-            '• No evidence gathering: Guessing "I procrastinate because I am distracted" without tracking your behavior for 1 week. Evidence shows: 75% of procrastination is task overwhelm, only 25% is distractions.',
-            '• Not testing hypothesis: Assuming task decomposition will work without testing on 2 tasks. Testing confirms it works BEFORE you invest 3 weeks in the system.',
-            '• Relying on motivation: "I will start when I feel motivated." Motivation is inconsistent. Systems (task decomposition, time-blocking) work even when motivation is low.'
+            '• Blame yourself—NOT character, lack SKILLS fixable',
+            '• Symptom fixes—earlier deadlines not help if overwhelmed',
+            '• No evidence—track 1 week, 75% overwhelm found',
+            '• No test—test 2 tasks before 3-week system',
+            '• Rely motivation—systems work when motivation low'
           ],
           successCriteria: [
-            '✅ You apply 5 Whys and identify ROOT CAUSE (lack of task decomposition skills + reliance on motivation)',
-            '✅ You create Fishbone Diagram with 5 categories and 20 potential causes',
-            '✅ You gather evidence (track procrastination for 1 week, talk to 3 productive friends, reflect on past successes)',
-            '✅ You test root cause hypothesis (Task 1 without decomposition = procrastinate 2 hours. Task 2 with decomposition = start in 2 minutes)',
-            '✅ You implement root cause fix (task decomposition, time-blocking, focus on starting, checklist, app blockers)',
-            '✅ You monitor results: Procrastination drops from 8 tasks/week to 1 task/week (87% improvement)',
-            '✅ You break the procrastination cycle permanently by using systems, not motivation',
-            '✅ You can explain: "I procrastinated because I lacked task decomposition skills. I fixed it by breaking every task into 10-15 minute steps and using time-blocking."'
+            '✅ 5 Whys: ROOT task decomposition + motivation',
+            '✅ Fishbone: 5 categories, 20 causes',
+            '✅ Evidence: 1 week tracked, 75% overwhelm',
+            '✅ Hypothesis tested: breakdown = start 2min',
+            '✅ 8→1 tasks/week, 87% improvement, cycle broken!'
           ]
         }
       }
